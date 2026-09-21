@@ -1590,7 +1590,7 @@
     "messageformat": "扫描您手机上的 Tellomi 应用中的此二维码"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "在您的手机上打开Signal"
+    "messageformat": "在您的手机上打开Tellomi"
   },
   "icu:Install__instructions__2": {
     "messageformat": "点击{settings}，然后点击{linkedDevices}"
@@ -6989,7 +6989,7 @@
     "messageformat": "点击前往 App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "在您的手机上打开Signal"
+    "messageformat": "在您的手机上打开Tellomi"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
     "messageformat": "请在您的手机上打开 Tellomi，否则您的账户将会很快被删除。当您成功打开 Tellomi 后，此消息将会消失。<learnMoreLink>了解更多</learnMoreLink>"

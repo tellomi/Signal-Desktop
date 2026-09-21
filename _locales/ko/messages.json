@@ -114,10 +114,10 @@
     "messageformat": "알 수 없는 그룹"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Signal을 열 수 없음"
+    "messageformat": "Tellomi을 열 수 없음"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "문제를 해결하려면 고객지원 페이지의 복구 가이드를 확인하거나 Tellomi 고객 지원팀으로 문의해 주세요.\n\n지금 바로 Signal을 사용해야 한다면, 데이터를 삭제하고 이 데스크톱을 다시 연동해 보세요. 원하는 경우 휴대폰의 메시지 기록을 이전할 수 있습니다."
+    "messageformat": "문제를 해결하려면 고객지원 페이지의 복구 가이드를 확인하거나 Tellomi 고객 지원팀으로 문의해 주세요.\n\n지금 바로 Tellomi을 사용해야 한다면, 데이터를 삭제하고 이 데스크톱을 다시 연동해 보세요. 원하는 경우 휴대폰의 메시지 기록을 이전할 수 있습니다."
   },
   "icu:databaseError": {
     "messageformat": "데이터베이스 오류"
@@ -129,16 +129,16 @@
     "messageformat": "모든 데이터 영구 삭제"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "이 기기의 모든 메시지 기록과 미디어가 영구적으로 삭제됩니다. 휴대폰에 저장된 데이터는 삭제되지 않습니다.\n\n기기를 다시 연동하면 Signal을 계속 사용할 수 있으며, 원하는 경우 휴대폰의 메시지 기록을 이전할 수 있습니다."
+    "messageformat": "이 기기의 모든 메시지 기록과 미디어가 영구적으로 삭제됩니다. 휴대폰에 저장된 데이터는 삭제되지 않습니다.\n\n기기를 다시 연동하면 Tellomi을 계속 사용할 수 있으며, 원하는 경우 휴대폰의 메시지 기록을 이전할 수 있습니다."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "데이터베이스 버전이 이 버전의 Signal과 일치하지 않습니다. 컴퓨터에서 최신 버전 Signal을 열었는지 확인하세요."
+    "messageformat": "데이터베이스 버전이 이 버전의 Tellomi과 일치하지 않습니다. 컴퓨터에서 최신 버전 Tellomi을 열었는지 확인하세요."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "OS 암호화 키링 백엔드가 {previousBackend}에서 {currentBackend}(으)로 변경되어 데이터베이스 암호화 키에 접근할 수 없습니다. 이 문제는 데스크톱 환경(예: GNOME 및 KDE 간)이 변경될 때 발생할 수 있습니다.\n\n이전 데스크톱 환경으로 전환하세요."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "OS 암호화 키링 백엔드가 {previousBackend}에서 {currentBackend}(으)로 변경되어 데이터베이스 암호화 키에 접근할 수 없습니다. 이 문제는 데스크톱 환경(예: GNOME 및 KDE 간)이 변경될 때 발생할 수 있습니다.\n\n이전 데스크톱 환경으로 전환하거나 --password-store=\"{previousBackendFlag}\" 명령줄 플래그로 Signal을 실행해 보세요."
+    "messageformat": "OS 암호화 키링 백엔드가 {previousBackend}에서 {currentBackend}(으)로 변경되어 데이터베이스 암호화 키에 접근할 수 없습니다. 이 문제는 데스크톱 환경(예: GNOME 및 KDE 간)이 변경될 때 발생할 수 있습니다.\n\n이전 데스크톱 환경으로 전환하거나 --password-store=\"{previousBackendFlag}\" 명령줄 플래그로 Tellomi을 실행해 보세요."
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -507,10 +507,10 @@
     "messageformat": "{name} 님과의 안전 번호를 다른 기기에서 미인증 상태로 표시했습니다."
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "확인하려고 하시는 안전 번호가 변경되었습니다. {name1} 님으로 새 안전 번호를 검토하세요. 이 변경 사항은 누군가가 내 통신 내용을 가로채려고 했을 수도, {name2} 님이 단순히 Signal을 다시 설치했을 수도 있습니다."
+    "messageformat": "확인하려고 하시는 안전 번호가 변경되었습니다. {name1} 님으로 새 안전 번호를 검토하세요. 이 변경 사항은 누군가가 내 통신 내용을 가로채려고 했을 수도, {name2} 님이 단순히 Tellomi을 다시 설치했을 수도 있습니다."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "다음 사용자는 Signal을 다시 설치했거나 장치를 변경했을 수 있습니다. 받는 사람을 클릭하여 새로운 안전 번호를 확인하세요. 이 작업은 선택 사항입니다."
+    "messageformat": "다음 사용자는 Tellomi을 다시 설치했거나 장치를 변경했을 수 있습니다. 받는 사람을 클릭하여 새로운 안전 번호를 확인하세요. 이 작업은 선택 사항입니다."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "보류 중인 메시지 보내기"
@@ -627,16 +627,16 @@
     "messageformat": "이 채팅에 대한 암호화가 자동 인증되었습니다 "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "전화번호를 통해 연결된 사용자의 경우, Signal은 키 투명성이라는 프로세스를 사용하여 연결이 안전한지 자동으로 확인할 수 있습니다. 보안을 강화하려면 이전 화면의 숫자를 대조하거나, 상대방 기기의 코드를 스캔하여 종단간 암호화를 수동으로 인증해 주세요."
+    "messageformat": "전화번호를 통해 연결된 사용자의 경우, Tellomi은 키 투명성이라는 프로세스를 사용하여 연결이 안전한지 자동으로 확인할 수 있습니다. 보안을 강화하려면 이전 화면의 숫자를 대조하거나, 상대방 기기의 코드를 스캔하여 종단간 암호화를 수동으로 인증해 주세요."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "이 채팅에 자동 인증을 사용할 수 없음"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "Signal이 이 채팅의 암호화를 자동으로 인증할 수 없습니다. {name} 님이 전화번호 또는 전화번호 개인정보보호 설정을 변경하여 발생한 문제일 수 있습니다. 이전 화면의 숫자를 대조하거나, 상대방 기기의 코드를 스캔하여 종단간 암호화를 수동으로 인증해 주세요."
+    "messageformat": "Tellomi이 이 채팅의 암호화를 자동으로 인증할 수 없습니다. {name} 님이 전화번호 또는 전화번호 개인정보보호 설정을 변경하여 발생한 문제일 수 있습니다. 이전 화면의 숫자를 대조하거나, 상대방 기기의 코드를 스캔하여 종단간 암호화를 수동으로 인증해 주세요."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "Signal은 상대방과 전화번호를 통해 연결한 채팅에서만 자동으로 암호화를 인증할 수 있습니다. 사용자 이름이나 공통으로 속한 그룹을 통해 채팅을 시작한 경우, 이전 화면의 숫자를 대조하거나 상대방 기기에 있는 코드를 스캔하여 종단간 암호화를 인증해 주세요."
+    "messageformat": "Tellomi은 상대방과 전화번호를 통해 연결한 채팅에서만 자동으로 암호화를 인증할 수 있습니다. 사용자 이름이나 공통으로 속한 그룹을 통해 채팅을 시작한 경우, 이전 화면의 숫자를 대조하거나 상대방 기기에 있는 코드를 스캔하여 종단간 암호화를 인증해 주세요."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "확인"
@@ -678,7 +678,7 @@
     "messageformat": "이제 암호화를 자동 인증할 수 있어요"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "전화번호를 통해 연결된 연락처의 경우, Signal은 키 투명성이라는 프로세스를 사용하여 연결이 안전한지 자동으로 확인할 수 있습니다. 하지만 더 강력한 보안을 원한다면, QR 코드를 사용하거나 안전 번호를 대조하여 수동으로 연결을 인증하는 것도 가능합니다."
+    "messageformat": "전화번호를 통해 연결된 연락처의 경우, Tellomi은 키 투명성이라는 프로세스를 사용하여 연결이 안전한지 자동으로 확인할 수 있습니다. 하지만 더 강력한 보안을 원한다면, QR 코드를 사용하거나 안전 번호를 대조하여 수동으로 연결을 인증하는 것도 가능합니다."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "계속"
@@ -909,13 +909,13 @@
     "messageformat": "전화번호로 검색"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Signal에 오신 것을 환영합니다"
+    "messageformat": "Tellomi에 오신 것을 환영합니다"
   },
   "icu:whatsNew": {
     "messageformat": "이 업데이트의 {whatsNew} 보기"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Signal은 비영리단체입니다"
+    "messageformat": "Tellomi은 비영리단체입니다"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "새로운 기능"
@@ -1029,10 +1029,10 @@
     "messageformat": "알림 끄기"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal을 업데이트하지 못했습니다. <retryUpdateButton>업데이트를 다시 시도</retryUpdateButton>하거나 {url} 링크를 방문하여 수동으로 설치하세요. 그런 다음 <contactSupportLink>지원팀</contactSupportLink>에 이 문제에 관해 문의해 주세요."
+    "messageformat": "Tellomi을 업데이트하지 못했습니다. <retryUpdateButton>업데이트를 다시 시도</retryUpdateButton>하거나 {url} 링크를 방문하여 수동으로 설치하세요. 그런 다음 <contactSupportLink>지원팀</contactSupportLink>에 이 문제에 관해 문의해 주세요."
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal을 업데이트하지 못했습니다. {url} 링크를 방문하여 수동으로 설치하세요. 그런 다음 <contactSupportLink>지원팀</contactSupportLink>에 이 문제에 관해 문의해 주세요."
+    "messageformat": "Tellomi을 업데이트하지 못했습니다. {url} 링크를 방문하여 수동으로 설치하세요. 그런 다음 <contactSupportLink>지원팀</contactSupportLink>에 이 문제에 관해 문의해 주세요."
   },
   "icu:readOnlyVolume": {
     "messageformat": "Tellomi Desktop이 macOS 검역에 걸렸을 가능성이 크며 자동 업데이트할 수 없습니다. 탐색기를 사용하여 {app} 앱을 {folder} 폴더로 이동하세요."
@@ -1080,7 +1080,7 @@
     "messageformat": "이 기기에서 대화가 삭제됩니다."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "이 메시지는 최신 Signal을 설치한 모두에게서 삭제됩니다. 멤버는 내가 메시지를 삭제했다는 것을 확인할 수 있습니다."
+    "messageformat": "이 메시지는 최신 Tellomi을 설치한 모두에게서 삭제됩니다. 멤버는 내가 메시지를 삭제했다는 것을 확인할 수 있습니다."
   },
   "icu:from": {
     "messageformat": "보낸이:"
@@ -1122,7 +1122,7 @@
     "messageformat": "{nickname}<muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "''{title}'은(는) 사용자가 본인을 위해 Signal에 설정한 프로필 이름입니다."
+    "messageformat": "''{title}'은(는) 사용자가 본인을 위해 Tellomi에 설정한 프로필 이름입니다."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "검증됨"
@@ -1449,7 +1449,7 @@
     "messageformat": "자세히 알아보기"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal은 종단간 암호화를 사용하며, 때에 따라 대화 세션을 새로고침해야 할 수 있습니다. 이 과정은 보안에 영향을 주지 않지만, 간혹 메시지가 수신되지 않을 수 있습니다. 이런 경우 상대방에게 메시지 재전송을 요청해 주세요."
+    "messageformat": "Tellomi은 종단간 암호화를 사용하며, 때에 따라 대화 세션을 새로고침해야 할 수 있습니다. 이 과정은 보안에 영향을 주지 않지만, 간혹 메시지가 수신되지 않을 수 있습니다. 이런 경우 상대방에게 메시지 재전송을 요청해 주세요."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "고객 지원에 문의하기"
@@ -1476,7 +1476,7 @@
     "messageformat": "{sender} 님이 전화번호를 변경했어요"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "연락처에 있는 사용자가 Signal에 가입함"
+    "messageformat": "연락처에 있는 사용자가 Tellomi에 가입함"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} 님과 {conversationTitle} 님은 같은 계정입니다. 두 대화의 메시지 기록을 여기서 확인하세요."
@@ -1566,7 +1566,7 @@
     "messageformat": "미디어를 다운로드할 수 없음"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "데스크톱과 휴대폰의 인터넷 연결을 확인하세요. 휴대폰에서 Signal을 연 다음 다시 다운로드해 보세요."
+    "messageformat": "데스크톱과 휴대폰의 인터넷 연결을 확인하세요. 휴대폰에서 Tellomi을 연 다음 다시 다운로드해 보세요."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "이 미디어는 더 이상 휴대폰에서 사용할 수 없으며, 다운로드할 수 없습니다."
@@ -1590,7 +1590,7 @@
     "messageformat": "휴대전화의 Tellomi 앱에서 이 코드를 스캔하세요."
   },
   "icu:Install__instructions__1": {
-    "messageformat": "휴대전화에서 Signal을 여세요."
+    "messageformat": "휴대전화에서 Tellomi을 여세요."
   },
   "icu:Install__instructions__2": {
     "messageformat": "{settings} 및 {linkedDevices}을(를) 차례로 탭하세요."
@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>예기치 못한 오류가 발생했어요.</paragraph><paragraph>다시 시도해 주세요.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal에서 현재 네트워크를 사용하여 이 기기를 연동할 수 없습니다."
+    "messageformat": "Tellomi에서 현재 네트워크를 사용하여 이 기기를 연동할 수 없습니다."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "재시도"
@@ -1641,7 +1641,7 @@
     "messageformat": "기기 이름"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "이 기기 이름을 변경하려면 휴대폰에서 Signal을 연 다음 설정 > 연동 기기로 이동하세요"
+    "messageformat": "이 기기 이름을 변경하려면 휴대폰에서 Tellomi을 연 다음 설정 > 연동 기기로 이동하세요"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "이모지 피부색"
@@ -1833,7 +1833,7 @@
     "messageformat": "자동 키 인증"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "이 기능을 활성화하면 Signal이 1:1 대화의 암호화를 자동으로 인증하려고 시도합니다."
+    "messageformat": "이 기능을 활성화하면 Tellomi이 1:1 대화의 암호화를 자동으로 인증하려고 시도합니다."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "자세히 알아보기"
@@ -1851,7 +1851,7 @@
     "messageformat": "현재 연동 기기 수가 한도에 도달했습니다. 일부 기기를 해제한 후 다시 시도해 주세요."
   },
   "icu:installTooOld": {
-    "messageformat": "휴대전화를 연동하려면 기기에서 Signal을 업데이트하세요."
+    "messageformat": "휴대전화를 연동하려면 기기에서 Tellomi을 업데이트하세요."
   },
   "icu:installErrorHeader": {
     "messageformat": "오류가 발생했습니다!"
@@ -2076,16 +2076,16 @@
     "messageformat": "{count, plural, other {{count,number}명이 이 통화에 참여 중입니다.}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal에서 {person} 님에게 전화를 겁니다"
+    "messageformat": "Tellomi에서 {person} 님에게 전화를 겁니다"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal에서 {first} 님과 {second} 님에게 전화를 겁니다"
+    "messageformat": "Tellomi에서 {first} 님과 {second} 님에게 전화를 겁니다"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal에서 {first} 님, {second} 님, {third} 님에게 전화를 겁니다"
+    "messageformat": "Tellomi에서 {first} 님, {second} 님, {third} 님에게 전화를 겁니다"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, other {Signal에서 {first} 님, {second} 님 외 {others,number}명에게 전화를 겁니다.}}"
+    "messageformat": "{others, plural, other {Tellomi에서 {first} 님, {second} 님 외 {others,number}명에게 전화를 겁니다.}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} 님에게 알림이 갑니다."
@@ -2139,10 +2139,10 @@
     "messageformat": "다시 연결 중…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "연결이 끊어졌습니다. Signal이 다시 연결합니다."
+    "messageformat": "연결이 끊어졌습니다. Tellomi이 다시 연결합니다."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal이 {window} 창을 공유하고 있습니다."
+    "messageformat": "Tellomi이 {window} 창을 공유하고 있습니다."
   },
   "icu:calling__presenting--info--unknown": {
     "messageformat": "Tellomi 화면 공유를 사용 중입니다."
@@ -2166,7 +2166,7 @@
     "messageformat": "권한이 필요합니다"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal에서 컴퓨터 화면 녹화를 하려면 권한이 필요합니다."
+    "messageformat": "Tellomi에서 컴퓨터 화면 녹화를 하려면 권한이 필요합니다."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "시스템 환경 설정으로 이동하세요."
@@ -2175,7 +2175,7 @@
     "messageformat": "왼쪽 하단의 자물쇠 아이콘을 클릭하고 컴퓨터의 비밀번호를 입력하세요."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "오른쪽에서 Tellomi 옆의 체크 박스를 선택하세요. 목록에 Signal이 표시되지 않으면 +를 클릭하여 추가하세요."
+    "messageformat": "오른쪽에서 Tellomi 옆의 체크 박스를 선택하세요. 목록에 Tellomi이 표시되지 않으면 +를 클릭하여 추가하세요."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "시스템 환경 설정 열기"
@@ -2205,10 +2205,10 @@
     "messageformat": "선택한 텍스트에 서식 지정 팝업 표시"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "다음에 Signal을 시작할 때 맞춤법 검사가 활성화됩니다."
+    "messageformat": "다음에 Tellomi을 시작할 때 맞춤법 검사가 활성화됩니다."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "다음에 Signal을 시작할 때 맞춤법 검사가 비활성화됩니다."
+    "messageformat": "다음에 Tellomi을 시작할 때 맞춤법 검사가 비활성화됩니다."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "시스템 트레이로 최소화"
@@ -2355,7 +2355,7 @@
     "messageformat": "어제 {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signal에서 수신 메시지를 처리하는 데 문제가 있을 수 있습니다."
+    "messageformat": "Tellomi에서 수신 메시지를 처리하는 데 문제가 있을 수 있습니다."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "메시지 본문이 너무 깁니다."
@@ -2607,7 +2607,7 @@
     "messageformat": "클릭하여 업데이트 다운로드"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signal을 업데이트하지 못했습니다. 클릭하여 다시 시도하세요."
+    "messageformat": "Tellomi을 업데이트하지 못했습니다. 클릭하여 다시 시도하세요."
   },
   "icu:autoUpdateRestartButtonLabel": {
     "messageformat": "Tellomi 재시작"
@@ -2754,7 +2754,7 @@
     "messageformat": "후원 내역을 보려면 모바일에서 이 메시지를 탭하세요"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} 님이 나를 대신해 Signal을 후원했어요"
+    "messageformat": "{sender} 님이 나를 대신해 Tellomi을 후원했어요"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "후원 내용을 열람하려면 휴대전화를 확인하세요."
@@ -2811,7 +2811,7 @@
     "messageformat": "지지와 성원에 감사드립니다!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "{name} 님을 대신해 Signal에 후원금을 보냈어요. 해당 사용자는 Tellomi 후원 사실을 프로필 배지로 표시할 수 있어요."
+    "messageformat": "{name} 님을 대신해 Tellomi에 후원금을 보냈어요. 해당 사용자는 Tellomi 후원 사실을 프로필 배지로 표시할 수 있어요."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "스티커 팩을 설치할 수 없음"
@@ -3150,13 +3150,13 @@
     "messageformat": "{contact} 님이 처리하거나 표시할 수 없는 메시지를 보냈습니다. 이는 메시지에서 새로운 Tellomi 기능을 사용하기 때문입니다."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "이제 최신 버전의 Signal을 이용하고 계시네요. {contact} 님에게 다시 메시지를 보내달라고 요청해보세요."
+    "messageformat": "이제 최신 버전의 Tellomi을 이용하고 계시네요. {contact} 님에게 다시 메시지를 보내달라고 요청해보세요."
   },
   "icu:Message--from-me-unsupported-message": {
     "messageformat": "기기 중 하나에서 처리하거나 표시할 수 없는 메시지를 보냈습니다. 이는 메시지에서 새로운 Tellomi 기능을 사용하기 때문입니다."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "최신 버전의 Signal을 사용 중이므로 앞으로는 이와 같은 메시지도 정상적으로 동기화됩니다."
+    "messageformat": "최신 버전의 Tellomi을 사용 중이므로 앞으로는 이와 같은 메시지도 정상적으로 동기화됩니다."
   },
   "icu:Message--update-signal": {
     "messageformat": "시그널 최신 버전으로 업데이트"
@@ -3426,7 +3426,7 @@
     "messageformat": "대화를 읽지 않음으로 표시"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "스티커 팩 생성기를 사용하려면 휴대전화와 데스크톱에서 Signal을 설치하고 계정을 연결하세요."
+    "messageformat": "스티커 팩 생성기를 사용하려면 휴대전화와 데스크톱에서 Tellomi을 설치하고 계정을 연결하세요."
   },
   "icu:Reactions--remove": {
     "messageformat": "반응 삭제"
@@ -3444,16 +3444,16 @@
     "messageformat": "안전 팁"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Signal에서 보낸 채팅에 답하지 마세요"
+    "messageformat": "Tellomi에서 보낸 채팅에 답하지 마세요"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Signal은 절대 사용자의 등록 코드나 PIN, 복구 키를 요청하는 메시지를 보내지 않습니다. Signal을 사칭하는 채팅에 절대 답장하지 마세요."
+    "messageformat": "Tellomi은 절대 사용자의 등록 코드나 PIN, 복구 키를 요청하는 메시지를 보내지 않습니다. Tellomi을 사칭하는 채팅에 절대 답장하지 마세요."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "이름과 사진 검토"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "'이름이 인증되지 않음'과 같은 경고 메시지에 주의하세요. Signal의 프로필 이름은 각 사용자가 직접 설정합니다."
+    "messageformat": "'이름이 인증되지 않음'과 같은 경고 메시지에 주의하세요. Tellomi의 프로필 이름은 각 사용자가 직접 설정합니다."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "사기 주의"
@@ -3462,16 +3462,16 @@
     "messageformat": "답장을 유도하려는 모호한 메시지에는 응답하지 마시고, 금전 관련 제안이나 의심스러운 웹 링크에 유의하세요."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Signal에서 보낸 채팅에 답하지 마세요"
+    "messageformat": "Tellomi에서 보낸 채팅에 답하지 마세요"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Signal은 절대 사용자의 등록 코드나 PIN, 복구 키를 요청하는 메시지를 보내지 않습니다. Tellomi 또는 Tellomi 지원팀을 사칭하는 채팅에 답장하지 마세요. 악의적인 사용자가 가짜 이름을 설정해 계정 해킹을 시도할 수 있습니다."
+    "messageformat": "Tellomi은 절대 사용자의 등록 코드나 PIN, 복구 키를 요청하는 메시지를 보내지 않습니다. Tellomi 또는 Tellomi 지원팀을 사칭하는 채팅에 답장하지 마세요. 악의적인 사용자가 가짜 이름을 설정해 계정 해킹을 시도할 수 있습니다."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "이름과 사진 검토"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "'이름이 인증되지 않음'과 같은 경고 메시지에 주의하세요. Signal의 프로필 이름은 각 사용자가 직접 설정합니다. 새 요청을 보낸 사람이 누구인지 확실하지 않다면, 무시하는 편이 더 안전합니다."
+    "messageformat": "'이름이 인증되지 않음'과 같은 경고 메시지에 주의하세요. Tellomi의 프로필 이름은 각 사용자가 직접 설정합니다. 새 요청을 보낸 사람이 누구인지 확실하지 않다면, 무시하는 편이 더 안전합니다."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "암호화폐 또는 금융 사기"
@@ -3552,13 +3552,13 @@
     "messageformat": "스팸으로 신고할까요?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "해당 사용자에 대한 스팸 신고가 Signal에 전달됩니다. Signal은 대화 내용을 확인할 수 없습니다."
+    "messageformat": "해당 사용자에 대한 스팸 신고가 Tellomi에 전달됩니다. Tellomi은 대화 내용을 확인할 수 없습니다."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "그룹 초대를 보낸 해당 사용자에 대한 스팸 신고가 Signal에 전달됩니다. Signal은 대화 내용을 확인할 수 없습니다."
+    "messageformat": "그룹 초대를 보낸 해당 사용자에 대한 스팸 신고가 Tellomi에 전달됩니다. Tellomi은 대화 내용을 확인할 수 없습니다."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "그룹 초대를 보낸 {name} 님에 대한 스팸 신고가 Signal에 전달됩니다. Signal은 대화 내용을 확인할 수 없습니다."
+    "messageformat": "그룹 초대를 보낸 {name} 님에 대한 스팸 신고가 Tellomi에 전달됩니다. Tellomi은 대화 내용을 확인할 수 없습니다."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "스팸 신고"
@@ -3600,7 +3600,7 @@
     "messageformat": "요청을 수락할까요?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "신뢰할 수 있는 사람의 요청만 수락하세요. <bold>Signal은 절대</bold> 등록 코드나 PIN, 복구 키를 요청하는 메시지를 보내지 않습니다."
+    "messageformat": "신뢰할 수 있는 사람의 요청만 수락하세요. <bold>Tellomi은 절대</bold> 등록 코드나 PIN, 복구 키를 요청하는 메시지를 보내지 않습니다."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "계속"
@@ -3654,16 +3654,16 @@
     "messageformat": "이름이 인증되지 않음"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Signal이 운영하는 유일한 공식 채널입니다."
+    "messageformat": "Tellomi이 운영하는 유일한 공식 채널입니다."
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "공식 채팅"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Signal이 운영하는 유일한 공식 채널. 최신 소식과 릴리스 노트를 확인하세요."
+    "messageformat": "Tellomi이 운영하는 유일한 공식 채널. 최신 소식과 릴리스 노트를 확인하세요."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Signal이 운영하는 유일한 공식 채널입니다."
+    "messageformat": "Tellomi이 운영하는 유일한 공식 채널입니다."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "최신 소식과 릴리스 노트를 확인하세요."
@@ -3729,10 +3729,10 @@
     "messageformat": "응답하지 않은 영상 통화"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal이 계속 실행 중입니다."
+    "messageformat": "Tellomi이 계속 실행 중입니다."
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal이 알림 영역에서 계속 실행됩니다. Tellomi 설정에서 이 설정을 변경할 수 있습니다."
+    "messageformat": "Tellomi이 알림 영역에서 계속 실행됩니다. Tellomi 설정에서 이 설정을 변경할 수 있습니다."
   },
   "icu:incomingAudioCall": {
     "messageformat": "수신 음성 통화"
@@ -3951,7 +3951,7 @@
     "messageformat": "통화 링크 복사"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Signal을 통해 통화 링크 공유"
+    "messageformat": "Tellomi을 통해 통화 링크 공유"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "{name} 님을 통화 그룹에서 내보낼까요?"
@@ -4722,7 +4722,7 @@
     "messageformat": "Tellomi 후원하기"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} 님은 Signal을 후원 중입니다"
+    "messageformat": "{name} 님은 Tellomi을 후원 중입니다"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "메시지를 동기화하는 중"
@@ -4839,7 +4839,7 @@
     "messageformat": "계정 조치 필요"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "이 계정을 계속 사용하려면 휴대폰에서 Signal을 열어야 합니다. 휴대폰에서 Signal을 열지 않으면 계정이 곧 삭제됩니다. <learnMoreLink>자세히 알아보기</learnMoreLink>"
+    "messageformat": "이 계정을 계속 사용하려면 휴대폰에서 Tellomi을 열어야 합니다. 휴대폰에서 Tellomi을 열지 않으면 계정이 곧 삭제됩니다. <learnMoreLink>자세히 알아보기</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "미디어를 복원할 수 없음"
@@ -4863,10 +4863,10 @@
     "messageformat": "첨부 파일 또는 투표 추가"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "상대방이 Signal을 사용하지 않습니다."
+    "messageformat": "상대방이 Tellomi을 사용하지 않습니다."
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Tellomi Desktop은 Signal을 사용하지 않는 연락처로 메시지를 보낼 수 없습니다. 더 안전한 대화를 위해 상대방에게 Tellomi 설치를 요청해 보세요."
+    "messageformat": "Tellomi Desktop은 Tellomi을 사용하지 않는 연락처로 메시지를 보낼 수 없습니다. 더 안전한 대화를 위해 상대방에게 Tellomi 설치를 요청해 보세요."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "연락처 등록 상태 확인 중"
@@ -5127,10 +5127,10 @@
     "messageformat": "차단 해제"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "해당 사용자에 대한 스팸 신고가 Signal에 전달됩니다. Signal은 대화 내용을 확인할 수 없습니다."
+    "messageformat": "해당 사용자에 대한 스팸 신고가 Tellomi에 전달됩니다. Tellomi은 대화 내용을 확인할 수 없습니다."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "이 그룹 초대를 보낸 해당 사용자에 대한 스팸 신고가 Signal에 전달됩니다. Signal은 대화 내용을 확인할 수 없습니다."
+    "messageformat": "이 그룹 초대를 보낸 해당 사용자에 대한 스팸 신고가 Tellomi에 전달됩니다. Tellomi은 대화 내용을 확인할 수 없습니다."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "스팸 신고"
@@ -5178,7 +5178,7 @@
     "messageformat": "별칭"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "별칭과 메모는 Signal에 종단간 암호화로 저장되며, 나에게만 표시됩니다."
+    "messageformat": "별칭과 메모는 Tellomi에 종단간 암호화로 저장되며, 나에게만 표시됩니다."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "이름"
@@ -5566,7 +5566,7 @@
     "messageformat": "안전 팁"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "신중하게 요청을 검토하세요. Signal에서 같은 이름을 가진 다른 연락처를 찾았습니다. <reviewRequestLink>요청 검토</reviewRequestLink>"
+    "messageformat": "신중하게 요청을 검토하세요. Tellomi에서 같은 이름을 가진 다른 연락처를 찾았습니다. <reviewRequestLink>요청 검토</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, other {그룹 멤버 {count,number}명의 이름이 같습니다. <reviewRequestLink>멤버 검토</reviewRequestLink>}}"
@@ -6001,7 +6001,7 @@
     "messageformat": "변경 사항을 저장하지 말고 삭제할까요?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Signal을 닫고 이 통화를 종료할까요?"
+    "messageformat": "Tellomi을 닫고 이 통화를 종료할까요?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "나중에"
@@ -6191,7 +6191,7 @@
     "messageformat": "이 기기는 연동 기기입니다"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "계정 설정을 관리하려면 기본 사용 기기에서 Signal을 열어 주세요."
+    "messageformat": "계정 설정을 관리하려면 기본 사용 기기에서 Tellomi을 열어 주세요."
   },
   "icu:Preferences--zoom": {
     "messageformat": "확대/축소"
@@ -6353,7 +6353,7 @@
     "messageformat": "대화 기록을 내보낼 수 없음"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Signal은 디스크에 파일을 쓸 권한이 없어 대화 기록을 내보낼 수 없습니다. 디스크 사용 권한을 변경하거나 시스템 설정을 업데이트한 다음 내보내기를 다시 시도해 보세요."
+    "messageformat": "Tellomi은 디스크에 파일을 쓸 권한이 없어 대화 기록을 내보낼 수 없습니다. 디스크 사용 권한을 변경하거나 시스템 설정을 업데이트한 다음 내보내기를 다시 시도해 보세요."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "백업을 내보내는 중"
@@ -6368,7 +6368,7 @@
     "messageformat": "백업 폴더를 휴대폰 저장 공간으로 이전하세요"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "휴대폰에 Signal을 새로 설치하세요"
+    "messageformat": "휴대폰에 Tellomi을 새로 설치하세요"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "'복원 또는 이전'을 탭한 다음 '기기 백업'을 선택하세요"
@@ -6638,10 +6638,10 @@
     "messageformat": "Tellomi 안전 백업"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Signal의 안전한 종단간 암호화 저장 공간 서비스를 이용한 자동 백업. 휴대폰으로 시작해 보세요. <learnMoreLink>자세히 알아보기</learnMoreLink>."
+    "messageformat": "Tellomi의 안전한 종단간 암호화 저장 공간 서비스를 이용한 자동 백업. 휴대폰으로 시작해 보세요. <learnMoreLink>자세히 알아보기</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "새 휴대폰을 사용하거나 Signal을 다시 설치할 때 데이터를 잃지 않도록 메시지 기록을 백업하세요."
+    "messageformat": "새 휴대폰을 사용하거나 Tellomi을 다시 설치할 때 데이터를 잃지 않도록 메시지 기록을 백업하세요."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "백업 세부 정보"
@@ -6731,7 +6731,7 @@
     "messageformat": "내 복구 키"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "이 키는 계정과 데이터를 복원하는 데 필요합니다. 안전한 곳에 보관해 두고 다른 사람과 절대 공유하지 마세요. Signal은 사용자에게 복구 키를 요구하는 메시지를 절대 보내지 않습니다. <learnMoreLink>자세히 알아보기.</learnMoreLink>"
+    "messageformat": "이 키는 계정과 데이터를 복원하는 데 필요합니다. 안전한 곳에 보관해 두고 다른 사람과 절대 공유하지 마세요. Tellomi은 사용자에게 복구 키를 요구하는 메시지를 절대 보내지 않습니다. <learnMoreLink>자세히 알아보기.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "복구 키를 공유하지 마세요"
@@ -6746,7 +6746,7 @@
     "messageformat": "복구 키 공유하지 않기"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "다른 사람과 복구 키를 공유하지 마세요. 복구 키를 공유하면 다른 사람이 내 계정을 탈취할 수 있습니다. Signal은 사용자에게 복구 키를 요구하는 메시지를 <strong>절대</strong> 보내지 않습니다. Signal을 사칭하는 채팅에 절대 답장하지 마세요. <learnMoreLink>자세히 알아보기.</learnMoreLink>"
+    "messageformat": "다른 사람과 복구 키를 공유하지 마세요. 복구 키를 공유하면 다른 사람이 내 계정을 탈취할 수 있습니다. Tellomi은 사용자에게 복구 키를 요구하는 메시지를 <strong>절대</strong> 보내지 않습니다. Tellomi을 사칭하는 채팅에 절대 답장하지 마세요. <learnMoreLink>자세히 알아보기.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "복구 키를 확인하세요"
@@ -6758,7 +6758,7 @@
     "messageformat": "키를 안전하게 보관하세요"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "키를 분실할 경우 Signal은 백업을 복원하도록 도와드릴 수 없습니다. 안전한 곳에 키를 보관해 두고, 다른 사람과 공유하지 마세요."
+    "messageformat": "키를 분실할 경우 Tellomi은 백업을 복원하도록 도와드릴 수 없습니다. 안전한 곳에 키를 보관해 두고, 다른 사람과 공유하지 마세요."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "계속"
@@ -6839,7 +6839,7 @@
     "messageformat": "전화번호"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "내 전화번호를 볼 수 있고, Signal에서 내 전화번호로 나한테 연락할 수 있는 사람을 선택하세요."
+    "messageformat": "내 전화번호를 볼 수 있고, Tellomi에서 내 전화번호로 나한테 연락할 수 있는 사람을 선택하세요."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "변경"
@@ -6869,10 +6869,10 @@
     "messageformat": "전화번호로 나를 찾을 수 있는 사람"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "내 전화번호가 있는 사람은 내가 Signal을 사용 중임을 알 수 있으며, 나와 대화를 시작할 수 있습니다."
+    "messageformat": "내 전화번호가 있는 사람은 내가 Tellomi을 사용 중임을 알 수 있으며, 나와 대화를 시작할 수 있습니다."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "내가 메시지를 보내는 사용자 또는 기존 대화 기록이 있는 사용자를 제외하고는 아무도 Signal에서 나를 볼 수 없습니다."
+    "messageformat": "내가 메시지를 보내는 사용자 또는 기존 대화 기록이 있는 사용자를 제외하고는 아무도 Tellomi에서 나를 볼 수 없습니다."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "모두"
@@ -6884,7 +6884,7 @@
     "messageformat": "계속할까요?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "''{settingTitle}'을 ''{nobodyLabel}'로 변경하면 다른 사람이 Signal에서 나를 찾기가 어려워집니다."
+    "messageformat": "''{settingTitle}'을 ''{nobodyLabel}'로 변경하면 다른 사람이 Tellomi에서 나를 찾기가 어려워집니다."
   },
   "icu:Preferences--messaging": {
     "messageformat": "메시징"
@@ -6947,7 +6947,7 @@
     "messageformat": "설정"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "적용하려면 Signal을 다시 시작하세요"
+    "messageformat": "적용하려면 Tellomi을 다시 시작하세요"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "언어를 적용하려면 앱을 다시 시작해야 합니다."
@@ -6962,13 +6962,13 @@
     "messageformat": "화면 보안"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "이 컴퓨터에서 Signal의 스크린샷을 사용하지 못하도록 방지하여 개인정보 보호를 강화하세요."
+    "messageformat": "이 컴퓨터에서 Tellomi의 스크린샷을 사용하지 못하도록 방지하여 개인정보 보호를 강화하세요."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "화면 보안을 비활성화할까요?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "이 옵션을 비활성화하면 Microsoft Windows가 Signal의 스크린샷을 캡처하여 개인정보 보호가 보장되지 않는 기능에 사용할 수 있습니다."
+    "messageformat": "이 옵션을 비활성화하면 Microsoft Windows가 Tellomi의 스크린샷을 캡처하여 개인정보 보호가 보장되지 않는 기능에 사용할 수 있습니다."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "비활성화하기"
@@ -6989,19 +6989,19 @@
     "messageformat": "App Store로 이동"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "휴대전화에서 Signal을 여세요."
+    "messageformat": "휴대전화에서 Tellomi을 여세요."
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "휴대폰에서 Signal을 열지 않으면 계정이 곧 삭제됩니다. Signal을 열면 이 메시지는 사라집니다. <learnMoreLink>자세히 알아보기</learnMoreLink>"
+    "messageformat": "휴대폰에서 Tellomi을 열지 않으면 계정이 곧 삭제됩니다. Tellomi을 열면 이 메시지는 사라집니다. <learnMoreLink>자세히 알아보기</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "휴대 전화에서 Signal을 열어 계정을 활성 상태로 유지하세요."
+    "messageformat": "휴대 전화에서 Tellomi을 열어 계정을 활성 상태로 유지하세요."
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "더 알아보기"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal에 기술적 문제가 발생했습니다. 문제를 최대한 신속하게 처리하겠습니다."
+    "messageformat": "Tellomi에 기술적 문제가 발생했습니다. 문제를 최대한 신속하게 처리하겠습니다."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "업데이트 필요"
@@ -7016,13 +7016,13 @@
     "messageformat": "업데이트 필요"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Signal을 계속 사용하려면 최신 버전으로 업데이트해야 합니다."
+    "messageformat": "Tellomi을 계속 사용하려면 최신 버전으로 업데이트해야 합니다."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "다운로드({downloadSize})"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Signal을 다시 시작하여 업데이트를 설치하세요."
+    "messageformat": "Tellomi을 다시 시작하여 업데이트를 설치하세요."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
     "messageformat": "Tellomi 데스크톱을 업데이트하지 못했습니다. 하지만 새 버전을 이용할 수 있습니다. {downloadUrl}(으)로 이동하여 새 버전을 수동으로 설치한 다음 지원 팀에 연락하거나 이 문제에 관한 버그를 신고하세요."
@@ -7334,7 +7334,7 @@
     "messageformat": "PIN을 생성하세요"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "PIN을 사용하면 계정을 간편하게 복원하고, Signal에 저장된 정보를 안전하게 암호화하여 보호할 수 있습니다. <learnMore>자세히 알아보기</learnMore>"
+    "messageformat": "PIN을 사용하면 계정을 간편하게 복원하고, Tellomi에 저장된 정보를 안전하게 암호화하여 보호할 수 있습니다. <learnMore>자세히 알아보기</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "PIN을 생성하세요"
@@ -7403,7 +7403,7 @@
     "messageformat": "업데이트 필요"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "등록을 계속하려면 최신 버전 Signal로 업데이트해 주세요."
+    "messageformat": "등록을 계속하려면 최신 버전 Tellomi로 업데이트해 주세요."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "업데이트"
@@ -7433,7 +7433,7 @@
     "messageformat": "지원팀에 문의"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signal을 종료하지 못했습니다.",
+    "messageformat": "Tellomi을 종료하지 못했습니다.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7460,7 +7460,7 @@
     "messageformat": "애플리케이션 작동이 중단되었습니다."
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal이 작동 중단 후 다시 실행되었습니다. Signal이 해당 문제를 검토할 수 있도록 작동 중단 보고서를 제출해 주세요."
+    "messageformat": "Tellomi이 작동 중단 후 다시 실행되었습니다. Tellomi이 해당 문제를 검토할 수 있도록 작동 중단 보고서를 제출해 주세요."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "전송"
@@ -8135,7 +8135,7 @@
     "messageformat": "QR 코드와 링크를 초기화했으며, 사용자 이름은 {username}입니다."
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Signal에서 나와 대화하려면 휴대전화로 이 QR 코드를 스캔하세요.",
+    "messageformat": "Tellomi에서 나와 대화하려면 휴대전화로 이 QR 코드를 스캔하세요.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8418,7 +8418,7 @@
     "messageformat": "링크 복사"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Signal을 통해 링크 공유"
+    "messageformat": "Tellomi을 통해 링크 공유"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "링크 삭제"
@@ -8481,13 +8481,13 @@
     "messageformat": "이 설정을 바꾸려면 '내 전화번호를 볼 수 있는 사람'을 '없음'으로 설정하세요."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Signal의 프로필 이름은 해당 계정 보유자가 선택합니다."
+    "messageformat": "Tellomi의 프로필 이름은 해당 계정 보유자가 선택합니다."
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Signal은 프로필 이름과 사진을 별도로 인증할 수 없습니다."
+    "messageformat": "Tellomi은 프로필 이름과 사진을 별도로 인증할 수 없습니다."
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Signal은 사용자에게 먼저 연락하여 등록 코드나 PIN, 복구 키를 요구하지 않습니다."
+    "messageformat": "Tellomi은 사용자에게 먼저 연락하여 등록 코드나 PIN, 복구 키를 요구하지 않습니다."
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "사칭 계정에 유의하세요"
@@ -8517,7 +8517,7 @@
     "messageformat": "비영리의 원칙을 지킵니다"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "후원을 통해 Signal의 개인정보 보호 메시지 서비스를 지지하고, 독립적인 운영과 광고 없는 환경을 유지할 수 있도록 힘을 보태주세요. <readMoreLink>자세히 알아보기</readMoreLink>"
+    "messageformat": "후원을 통해 Tellomi의 개인정보 보호 메시지 서비스를 지지하고, 독립적인 운영과 광고 없는 환경을 유지할 수 있도록 힘을 보태주세요. <readMoreLink>자세히 알아보기</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "후원하기"
@@ -8541,16 +8541,16 @@
     "messageformat": "개인 정보는 비공개로 유지됩니다."
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Signal은 독립적인 비영리단체로, 메시지와 통화의 프라이버시 보호를 핵심 가치로 삼고 있습니다. 광고도, 추적도, 감시도 없습니다. Signal의 사명을 지지하신다면 지금 후원해 주세요."
+    "messageformat": "Tellomi은 독립적인 비영리단체로, 메시지와 통화의 프라이버시 보호를 핵심 가치로 삼고 있습니다. 광고도, 추적도, 감시도 없습니다. Tellomi의 사명을 지지하신다면 지금 후원해 주세요."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "후원하면 프로필에 표시되는 배지를 받을 수 있어요."
   },
   "icu:PreferencesDonations__privacy-modal-list-2": {
-    "messageformat": "개인정보 보호는 Signal의 사명입니다."
+    "messageformat": "개인정보 보호는 Tellomi의 사명입니다."
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Signal은 비영리단체입니다."
+    "messageformat": "Tellomi은 비영리단체입니다."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Tellomi 로고 스타일의 하트 아이콘"
@@ -8568,7 +8568,7 @@
     "messageformat": "후원자 FAQ"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "영수증은 여러 기기에서 동기화되지 않습니다. Signal을 다시 설치했다면 이전 후원 영수증은 사용할 수 없습니다."
+    "messageformat": "영수증은 여러 기기에서 동기화되지 않습니다. Tellomi을 다시 설치했다면 이전 후원 영수증은 사용할 수 없습니다."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "영수증 없음"
@@ -8598,7 +8598,7 @@
     "messageformat": "신용카드 또는 체크카드"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "신용카드 또는 체크카드 세부 정보를 입력하세요. Signal은 개인 정보를 수집하거나 저장하지 않습니다. <learnMoreLink>자세히 알아보기</learnMoreLink>"
+    "messageformat": "신용카드 또는 체크카드 세부 정보를 입력하세요. Tellomi은 개인 정보를 수집하거나 저장하지 않습니다. <learnMoreLink>자세히 알아보기</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "카드 번호"
@@ -8610,7 +8610,7 @@
     "messageformat": "MM/YY"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Signal에 {formattedCurrencyAmount} 후원하기"
+    "messageformat": "Tellomi에 {formattedCurrencyAmount} 후원하기"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "잘못된 카드 번호입니다."
@@ -8811,7 +8811,7 @@
     "messageformat": "지지와 성원에 감사드립니다!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Signal에서 후원자 배지를 받았어요! 프로필에 표시하여 Signal을 응원하는 마음을 표현해 보세요."
+    "messageformat": "Tellomi에서 후원자 배지를 받았어요! 프로필에 표시하여 Tellomi을 응원하는 마음을 표현해 보세요."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "프로필에 표시"
@@ -8823,7 +8823,7 @@
     "messageformat": "통화는 어땠나요?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "피드백을 주시면 Signal의 통화를 개선하는 데 도움이 됩니다. 개인 식별 정보는 저장되지 않습니다."
+    "messageformat": "피드백을 주시면 Tellomi의 통화를 개선하는 데 도움이 됩니다. 개인 식별 정보는 저장되지 않습니다."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "문제가 있었음"
@@ -8874,7 +8874,7 @@
     "messageformat": "문제 설명"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "문제와 관련된 모든 세부 정보를 포함해 주세요. 여기에서 공유하는 모든 내용은 비공개로 유지되며 Signal의 통화를 개선하는 데에만 사용됩니다."
+    "messageformat": "문제와 관련된 모든 세부 정보를 포함해 주세요. 여기에서 공유하는 모든 내용은 비공개로 유지되며 Tellomi의 통화를 개선하는 데에만 사용됩니다."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "어떤 문제가 있었는지 알려주세요."
@@ -8898,7 +8898,7 @@
     "messageformat": "보기"
   },
   "icu:CallQualitySurvey__ConfirmSubmission__PrivacyNote": {
-    "messageformat": "Signal에 공유되는 정보는 앱의 기본적인 사용 정보에 한하며, 통화 내용은 수집되지 않습니다."
+    "messageformat": "Tellomi에 공유되는 정보는 앱의 기본적인 사용 정보에 한하며, 통화 내용은 수집되지 않습니다."
   },
   "icu:CallDiagnosticWindow__title": {
     "messageformat": "진단 정보"
@@ -8955,11 +8955,11 @@
     "messageformat": "Tellomi 데스크톱의 현재 데이터가 모두 삭제됩니다. 이 작업이 완료되면 QR 코드를 스캔하여 휴대폰의 메시지 기록을 가져올 수 있습니다."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "이 버전에는 Signal의 원활한 실행을 위한 일부 기능 업데이트와 버그 수정이 다수 포함되어 있습니다.",
+    "messageformat": "이 버전에는 Tellomi의 원활한 실행을 위한 일부 기능 업데이트와 버그 수정이 다수 포함되어 있습니다.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "추가적인 사소한 변경 사항과 버그 수정, 성능 업데이트가 적용되었습니다. Signal을 이용해 주셔서 감사합니다!",
+    "messageformat": "추가적인 사소한 변경 사항과 버그 수정, 성능 업데이트가 적용되었습니다. Tellomi을 이용해 주셔서 감사합니다!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -8979,7 +8979,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "사소한 변경 사항과 버그 수정 및 성능 개선. Signal을 이용해 주셔서 감사합니다!",
+    "messageformat": "사소한 변경 사항과 버그 수정 및 성능 개선. Tellomi을 이용해 주셔서 감사합니다!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.24--1": {

@@ -507,7 +507,7 @@
     "messageformat": "您標記了  {name} 在另一台設備上的安全碼為未驗證狀態"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "你嘗試驗證的安全號碼已變更。 請使用{name1}來檢查新的安全碼。 請記住，此變更可能意味著有人試圖攔截你的通訊，或者{name2}只是重新安裝了Signal。"
+    "messageformat": "你嘗試驗證的安全號碼已變更。 請使用{name1}來檢查新的安全碼。 請記住，此變更可能意味著有人試圖攔截你的通訊，或者{name2}只是重新安裝了Tellomi。"
   },
   "icu:safetyNumberChangeDialog__message": {
     "messageformat": "以下的聯絡人可能已重新安裝 Tellomi 或更換裝置。請點選接收者以確認新安全碼。這是選擇性的。"
@@ -1002,10 +1002,10 @@
     "messageformat": "如要傳送語音訊息，請允許 Tellomi 桌面版使用裝置的麥克風。"
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "要撥打電話時，必須允許Signal 電腦版連結你的麥克風。"
+    "messageformat": "要撥打電話時，必須允許Tellomi 電腦版連結你的麥克風。"
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "要撥打視訊電話時，必須允許Signal 電腦版連結你的相機。"
+    "messageformat": "要撥打視訊電話時，必須允許Tellomi 電腦版連結你的相機。"
   },
   "icu:allowAccess": {
     "messageformat": "允許存取"
@@ -1080,7 +1080,7 @@
     "messageformat": "此訊息將會永久從這個裝置中移除。"
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "如果聊天中的每個人都使用最新版本的Signal，則該訊息將被刪除。 他們將能夠看到你刪除了一則訊息。"
+    "messageformat": "如果聊天中的每個人都使用最新版本的Tellomi，則該訊息將被刪除。 他們將能夠看到你刪除了一則訊息。"
   },
   "icu:from": {
     "messageformat": "來自"
@@ -1449,7 +1449,7 @@
     "messageformat": "了解更多"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal使用點對點加密，有時可能需要刷新你的聊天會話。 這不會影響你聊天的安全性，但是你可能錯過了此聯絡人的訊息，可以要求他們重新傳送。"
+    "messageformat": "Tellomi使用點對點加密，有時可能需要刷新你的聊天會話。 這不會影響你聊天的安全性，但是你可能錯過了此聯絡人的訊息，可以要求他們重新傳送。"
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "聯絡支援"
@@ -2076,13 +2076,13 @@
     "messageformat": "{count, plural, other {{count,number} 人現已在此通話中}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal會給{person}打電話"
+    "messageformat": "Tellomi會給{person}打電話"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal會去電給 {first} 和 {second}"
+    "messageformat": "Tellomi會去電給 {first} 和 {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal會去電給 {first}、{second}，及 {third}"
+    "messageformat": "Tellomi會去電給 {first}、{second}，及 {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
     "messageformat": "{others, plural, other {Tellomi 將會撥號給 {first}、{second} 和其他 {others,number} 位使用者}}"
@@ -2526,7 +2526,7 @@
     "messageformat": "{atUsername} 不是有效的用戶名稱。請確保你已輸入完整的用戶名稱，以及隨後的一組數字。"
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "找不到使用者。\"{phoneNumber}\" 不是 Signal的使用者。"
+    "messageformat": "找不到使用者。\"{phoneNumber}\" 不是 Tellomi的使用者。"
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "找不到使用者。\"{phoneNumber}\" 不是有效的電話號碼。"
@@ -2547,13 +2547,13 @@
     "messageformat": "已達群組人數上限"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal群組最多可以有{max,number}個成員。"
+    "messageformat": "Tellomi群組最多可以有{max,number}個成員。"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "已達到推薦成員數上限"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal群組在{max,number}個成員或更少的情況下表現最佳。 新增更多成員將導致傳送和接收訊息的延遲。"
+    "messageformat": "Tellomi群組在{max,number}個成員或更少的情況下表現最佳。 新增更多成員將導致傳送和接收訊息的延遲。"
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "為群組取一個名稱"
@@ -2601,7 +2601,7 @@
     "messageformat": "再重試更新"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "點擊重新啟動Signal"
+    "messageformat": "點擊重新啟動Tellomi"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "點擊下載更新"
@@ -4113,7 +4113,7 @@
     "messageformat": "未知連結版本"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "此版本的Signal 電腦版不支援此連結。"
+    "messageformat": "此版本的Tellomi 電腦版不支援此連結。"
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "無法加入群組"
@@ -4863,10 +4863,10 @@
     "messageformat": "新增附件或投票"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "此人沒有使用Signal"
+    "messageformat": "此人沒有使用Tellomi"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Tellomi 電腦版不支援訊息傳遞給非Signal聯絡人。 要求此人安裝Signal以獲得更安全的訊息傳遞體驗。"
+    "messageformat": "Tellomi 電腦版不支援訊息傳遞給非Tellomi聯絡人。 要求此人安裝Tellomi以獲得更安全的訊息傳遞體驗。"
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "檢查聯絡人的註冊狀態"
@@ -5617,7 +5617,7 @@
     "messageformat": "驗證以繼續傳送訊息"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "為了協助防止Signal上的垃圾訊息，請完成驗證。"
+    "messageformat": "為了協助防止Tellomi上的垃圾訊息，請完成驗證。"
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "驗證後，你可以繼續進行訊息傳送。 任何暫停的訊息將自動傳送。"

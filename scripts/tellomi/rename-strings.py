@@ -15,7 +15,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 OLD, NEW = "Signal", "Tellomi"
-WORD = re.compile(rf"\b{OLD}\b")
+# 不能用 \b：Python 的 \w 含 CJK，「打开Signal」里 "开" 与 "S" 之间没有词界，中日韩文案会整片漏掉（2026-09-22 owner 在配对页看见的）。
+WORD = re.compile(rf"(?<![A-Za-z0-9_]){OLD}(?![A-Za-z0-9_])")
 URL_HINTS = ("signal.org", "signal.me", "://")
 ORG_HINTS = ("501", "nonprofit", "non-profit", "非营利", "非牟利", "llc", "foundation", "signal messenger", "donat", "捐款", "捐赠", "版权", "copyright")
 PROTO_HINTS = ("signal protocol", "signal 协议")

@@ -63,7 +63,7 @@
     "messageformat": "ઉચ્ચ ગુણવત્તાના મીડિયા મોકલવાથી વધુ ડેટા વપરાશે."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Signalને દાન આપો"
+    "messageformat": "Tellomiને દાન આપો"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
     "messageformat": "<bold>લિંક કરેલા ડિવાઇસ</bold> તમને તમારા કોઈ પણ વધારાના ડિવાઇસ પર તમારા Tellomi એકાઉન્ટ અને મેસેજને સુરક્ષિત રીતે ઍક્સેસ કરવાની મંજૂરી આપે છે."
@@ -117,7 +117,7 @@
     "messageformat": "Tellomi ખોલી શકાતું નથી"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "સમસ્યાને ઉકેલવામાં મદદ કરવા માટે, સપોર્ટ પેજ પરની રિકવરી માર્ગદર્શિકાને અનુસરો અથવા સમસ્યાને ઉકેલવામાં મદદ માટે Tellomi સપોર્ટનો સંપર્ક કરો.\n\nજો તમારે તરત જ Signalનો ઉપયોગ કરવાની જરૂર હોય, તો તમે તમારો ડેટા ડિલીટ કરીને આ ડેસ્કટોપને ફરીથી લિંક કરી શકો છો. તમારી પાસે તમારા ફોનમાંથી મેસેજ હિસ્ટ્રી ટ્રાન્સફર કરવાનો વિકલ્પ હશે."
+    "messageformat": "સમસ્યાને ઉકેલવામાં મદદ કરવા માટે, સપોર્ટ પેજ પરની રિકવરી માર્ગદર્શિકાને અનુસરો અથવા સમસ્યાને ઉકેલવામાં મદદ માટે Tellomi સપોર્ટનો સંપર્ક કરો.\n\nજો તમારે તરત જ Tellomiનો ઉપયોગ કરવાની જરૂર હોય, તો તમે તમારો ડેટા ડિલીટ કરીને આ ડેસ્કટોપને ફરીથી લિંક કરી શકો છો. તમારી પાસે તમારા ફોનમાંથી મેસેજ હિસ્ટ્રી ટ્રાન્સફર કરવાનો વિકલ્પ હશે."
   },
   "icu:databaseError": {
     "messageformat": "ડેટાબેઝની ખામી"
@@ -129,16 +129,16 @@
     "messageformat": "બધા ડેટા કાયમીરૂપે ડિલીટ કરો"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "તમારી બધી મેસેજ હિસ્ટ્રી અને મીડિયા આ ડિવાઇસ પરથી કાયમીરૂપે ડિલીટ કરવામાં આવશે. આ તમારા ફોનમાંથી કોઈ પણ ડેટાને ડિલીટ નહીં કરે.\n\nતમે આ ડિવાઇસ પર Signalને ફરીથી લિંક કર્યા પછી જ તેનો ઉપયોગ કરી શકશો. તમારી પાસે તમારા ફોનમાંથી મેસેજ હિસ્ટ્રી ટ્રાન્સફર કરવાનો વિકલ્પ હશે."
+    "messageformat": "તમારી બધી મેસેજ હિસ્ટ્રી અને મીડિયા આ ડિવાઇસ પરથી કાયમીરૂપે ડિલીટ કરવામાં આવશે. આ તમારા ફોનમાંથી કોઈ પણ ડેટાને ડિલીટ નહીં કરે.\n\nતમે આ ડિવાઇસ પર Tellomiને ફરીથી લિંક કર્યા પછી જ તેનો ઉપયોગ કરી શકશો. તમારી પાસે તમારા ફોનમાંથી મેસેજ હિસ્ટ્રી ટ્રાન્સફર કરવાનો વિકલ્પ હશે."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "તમારા ડેટાબેઝનું વર્ઝન Signalના આ વર્ઝન સાથે મેચ થતું નથી. ખાતરી કરો કે તમે તમારા કમ્પ્યૂટર પર Signalનું લેટેસ્ટ વર્ઝન ખોલી રહ્યાં છો."
+    "messageformat": "તમારા ડેટાબેઝનું વર્ઝન Tellomiના આ વર્ઝન સાથે મેચ થતું નથી. ખાતરી કરો કે તમે તમારા કમ્પ્યૂટર પર Tellomiનું લેટેસ્ટ વર્ઝન ખોલી રહ્યાં છો."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "ડેટાબેઝ એન્ક્રિપ્શન કી ઍક્સેસ કરવામાં અસમર્થ કારણ કે OS એન્ક્રિપ્શન કીરીંગ બેકએન્ડ {previousBackend}માંથી {currentBackend} માં બદલાઈ ગયું છે. આ તો થઈ શકે છે જો ડેસ્કટોપ એન્વાયર્નમેન્ટ બદલાય, ઉદાહરણ તરીકે GNOME અને KDE વચ્ચે.\n\nકૃપા કરીને પહેલાંના ડેસ્કટોપ એન્વાયર્નમેન્ટ પર સ્વિચ કરો."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "ડેટાબેઝ એન્ક્રિપ્શન કી ઍક્સેસ કરવામાં અસમર્થ કારણ કે OS એન્ક્રિપ્શન કીરીંગ બેકએન્ડ {previousBackend}માંથી {currentBackend}માં બદલાઈ ગયું છે. આ તો થઈ શકે છે જો ડેસ્કટોપ એન્વાયર્નમેન્ટ બદલાય, ઉદાહરણ તરીકે GNOME અને KDE વચ્ચે.\n\nકૃપા કરીને પહેલાંના ડેસ્કટોપ એન્વાયર્નમેન્ટ પર સ્વિચ કરો અથવા કમાન્ડ લાઇન ફ્લેગ --password-store=\"{previousBackendFlag}\" સાથે Signalને રન કરવાનો પ્રયાસ કરો"
+    "messageformat": "ડેટાબેઝ એન્ક્રિપ્શન કી ઍક્સેસ કરવામાં અસમર્થ કારણ કે OS એન્ક્રિપ્શન કીરીંગ બેકએન્ડ {previousBackend}માંથી {currentBackend}માં બદલાઈ ગયું છે. આ તો થઈ શકે છે જો ડેસ્કટોપ એન્વાયર્નમેન્ટ બદલાય, ઉદાહરણ તરીકે GNOME અને KDE વચ્ચે.\n\nકૃપા કરીને પહેલાંના ડેસ્કટોપ એન્વાયર્નમેન્ટ પર સ્વિચ કરો અથવા કમાન્ડ લાઇન ફ્લેગ --password-store=\"{previousBackendFlag}\" સાથે Tellomiને રન કરવાનો પ્રયાસ કરો"
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -1080,7 +1080,7 @@
     "messageformat": "આ મેસેજ આ ડિવાઇસમાંથી ડિલીટ કરવામાં આવશે."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "જો દરેક વ્યક્તિ પાસે Signalનું તાજેતરનું વર્ઝન હશે તો આ મેસેજ ચેટમાં રહેલ દરેક માટે ડિલીટ કરવામાં આવશે. તેઓ જોઈ શકશે કે તમે મેસેજ ડિલીટ કર્યો છે."
+    "messageformat": "જો દરેક વ્યક્તિ પાસે Tellomiનું તાજેતરનું વર્ઝન હશે તો આ મેસેજ ચેટમાં રહેલ દરેક માટે ડિલીટ કરવામાં આવશે. તેઓ જોઈ શકશે કે તમે મેસેજ ડિલીટ કર્યો છે."
   },
   "icu:from": {
     "messageformat": "માંથી:"
@@ -1122,7 +1122,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "“{title}” એ આ વ્યક્તિએ Signalમાં પોતાના માટે સેટ કરેલું પ્રોફાઇલ નેમ છે."
+    "messageformat": "“{title}” એ આ વ્યક્તિએ Tellomiમાં પોતાના માટે સેટ કરેલું પ્રોફાઇલ નેમ છે."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "ચકાસણી"
@@ -2601,7 +2601,7 @@
     "messageformat": "અપડેટ કરવાનો ફરી પ્રયાસ કરો"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Signalને રિસ્ટાર્ટ કરવા ક્લિક કરો"
+    "messageformat": "Tellomiને રિસ્ટાર્ટ કરવા ક્લિક કરો"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "અપડેટ ડાઉનલોડ કરવા ક્લિક કરો"
@@ -2754,7 +2754,7 @@
     "messageformat": "તમારું દાન જોવા માટે મોબાઇલ પર આ મેસેજને ટૅપ કરો"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender}એ તમારા વતી Signalને દાન આપ્યું"
+    "messageformat": "{sender}એ તમારા વતી Tellomiને દાન આપ્યું"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "આ દાન ખોલવા માટે તમારો ફોન તપાસો"
@@ -2811,7 +2811,7 @@
     "messageformat": "તમારા સપોર્ટ બદલ આભાર!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "તમે {name} વતી Signalને દાન આપ્યું છે. તેમની પ્રોફાઇલ પર તેમનો સપોર્ટ બતાવવાનો વિકલ્પ તેઓને આપવામાં આવશે."
+    "messageformat": "તમે {name} વતી Tellomiને દાન આપ્યું છે. તેમની પ્રોફાઇલ પર તેમનો સપોર્ટ બતાવવાનો વિકલ્પ તેઓને આપવામાં આવશે."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "સ્ટીકર પેક ઈન્સ્ટોલ કરી શકાયું નથી"
@@ -3453,7 +3453,7 @@
     "messageformat": "નામ અને ફોટાને રિવ્યૂ કરો"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "\"નામ વેરિફાય થયેલ નથી\" નોટિસ તપાસો. દરેકજણ Signalમાં તેમનું પોતાનું પ્રોફાઇલ નેમ સેટ કરે છે."
+    "messageformat": "\"નામ વેરિફાય થયેલ નથી\" નોટિસ તપાસો. દરેકજણ Tellomiમાં તેમનું પોતાનું પ્રોફાઇલ નેમ સેટ કરે છે."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "કૌભાંડથી સચેત રહો"
@@ -3471,7 +3471,7 @@
     "messageformat": "નામ અને ફોટાને રિવ્યૂ કરો"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "\"નામ વેરિફાય થયેલ નથી\" નોટિસ તપાસો. દરેકજણ Signalમાં તેમનું પોતાનું પ્રોફાઇલ નેમ અને ફોટો સેટ કરે છે. જો તમને ખાતરી ન હોય કે વિનંતી કોની છે, તો તેને અવગણવી જ સલામત છે."
+    "messageformat": "\"નામ વેરિફાય થયેલ નથી\" નોટિસ તપાસો. દરેકજણ Tellomiમાં તેમનું પોતાનું પ્રોફાઇલ નેમ અને ફોટો સેટ કરે છે. જો તમને ખાતરી ન હોય કે વિનંતી કોની છે, તો તેને અવગણવી જ સલામત છે."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "ક્રિપ્ટો અથવા પૈસાને લગતા સ્કેમ"
@@ -3552,13 +3552,13 @@
     "messageformat": "સ્પામ તરીકે રિપોર્ટ કરવા છે?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signalને જાણ કરવામાં આવશે કે આ વ્યક્તિ સ્પામ મોકલતા હોઈ શકે છે. Tellomi કોઈ પણ ચેટની કન્ટેન્ટ જોઈ શકતું નથી."
+    "messageformat": "Tellomiને જાણ કરવામાં આવશે કે આ વ્યક્તિ સ્પામ મોકલતા હોઈ શકે છે. Tellomi કોઈ પણ ચેટની કન્ટેન્ટ જોઈ શકતું નથી."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signalને જાણ કરવામાં આવશે કે જે વ્યક્તિએ તમને આ ગ્રૂપમાં આમંત્રિત કર્યા છે, તે સ્પામ મોકલતા હોઈ શકે છે. Tellomi કોઈ પણ ચેટની કન્ટેન્ટ જોઈ શકતું નથી."
+    "messageformat": "Tellomiને જાણ કરવામાં આવશે કે જે વ્યક્તિએ તમને આ ગ્રૂપમાં આમંત્રિત કર્યા છે, તે સ્પામ મોકલતા હોઈ શકે છે. Tellomi કોઈ પણ ચેટની કન્ટેન્ટ જોઈ શકતું નથી."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signalને જાણ કરવામાં આવશે કે {name}, જેમણે તમને આ ગ્રૂપમાં આમંત્રિત કર્યા છે, તે સ્પામ મોકલતા હોઈ શકે છે. Tellomi કોઈ પણ ચેટની કન્ટેન્ટ જોઈ શકતું નથી."
+    "messageformat": "Tellomiને જાણ કરવામાં આવશે કે {name}, જેમણે તમને આ ગ્રૂપમાં આમંત્રિત કર્યા છે, તે સ્પામ મોકલતા હોઈ શકે છે. Tellomi કોઈ પણ ચેટની કન્ટેન્ટ જોઈ શકતું નથી."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "સ્પામ તરીકે જાણ કરો"
@@ -3660,10 +3660,10 @@
     "messageformat": "સત્તાવાર ચેટ"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Signalની એકમાત્ર સત્તાવાર ચેટ. સમાચાર અને રિલીઝ નોંધ સાથે અપ ટૂ ડેટ રહો."
+    "messageformat": "Tellomiની એકમાત્ર સત્તાવાર ચેટ. સમાચાર અને રિલીઝ નોંધ સાથે અપ ટૂ ડેટ રહો."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Signalની એકમાત્ર સત્તાવાર ચેટ."
+    "messageformat": "Tellomiની એકમાત્ર સત્તાવાર ચેટ."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "સમાચાર અને રિલીઝ નોંધ સાથે અપ ટૂ ડેટ રહો."
@@ -4722,7 +4722,7 @@
     "messageformat": "Tellomi ને ફાળો આપો"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} Signalને સપોર્ટ કરે છે"
+    "messageformat": "{name} Tellomiને સપોર્ટ કરે છે"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "મેસેજ સિંક થઈ રહ્યાં છે"
@@ -5127,10 +5127,10 @@
     "messageformat": "અનબ્લૉક કરો"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "Signalને જાણ કરવામાં આવશે કે આ વ્યક્તિ સ્પામ મોકલતા હોઈ શકે છે. Tellomi કોઈ પણ ચેટની કન્ટેન્ટ જોઈ શકતું નથી."
+    "messageformat": "Tellomiને જાણ કરવામાં આવશે કે આ વ્યક્તિ સ્પામ મોકલતા હોઈ શકે છે. Tellomi કોઈ પણ ચેટની કન્ટેન્ટ જોઈ શકતું નથી."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "Signalને જાણ કરવામાં આવશે કે જે વ્યક્તિએ તમને આ ગ્રૂપમાં આમંત્રિત કર્યા છે, તે સ્પામ મોકલતા હોઈ શકે છે. Tellomi કોઈ પણ ચેટનું કન્ટેન્ટ જોઈ શકતું નથી."
+    "messageformat": "Tellomiને જાણ કરવામાં આવશે કે જે વ્યક્તિએ તમને આ ગ્રૂપમાં આમંત્રિત કર્યા છે, તે સ્પામ મોકલતા હોઈ શકે છે. Tellomi કોઈ પણ ચેટનું કન્ટેન્ટ જોઈ શકતું નથી."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "સ્પામ તરીકે જાણ કરો"
@@ -5178,7 +5178,7 @@
     "messageformat": "ઉપનામ"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "ઉપનામો અને નોંધને Signalની એન્ડ-ટૂ-એન્ડ એન્ક્રિપ્ટેડ સ્ટોરેજ સેવાનો ઉપયોગ કરીને સ્ટોર કરવામાં આવે છે. તે ફક્ત તમને જ દેખાય છે."
+    "messageformat": "ઉપનામો અને નોંધને Tellomiની એન્ડ-ટૂ-એન્ડ એન્ક્રિપ્ટેડ સ્ટોરેજ સેવાનો ઉપયોગ કરીને સ્ટોર કરવામાં આવે છે. તે ફક્ત તમને જ દેખાય છે."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "પહેલું નામ"
@@ -5431,7 +5431,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {Signalના લેટેસ્ટ વર્ઝન પરના ગ્રૂપના સભ્યો જોશે કે તમે આ મેસેજ ડિલીટ કર્યો છે.} other {Signalના લેટેસ્ટ વર્ઝન પરના ગ્રૂપના સભ્યો જોશે કે તમે આ મેસેજ ડિલીટ કર્યા છે.}}"
+    "messageformat": "{count, plural, one {Tellomiના લેટેસ્ટ વર્ઝન પરના ગ્રૂપના સભ્યો જોશે કે તમે આ મેસેજ ડિલીટ કર્યો છે.} other {Tellomiના લેટેસ્ટ વર્ઝન પરના ગ્રૂપના સભ્યો જોશે કે તમે આ મેસેજ ડિલીટ કર્યા છે.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "ડિલીટ કરો"
@@ -5566,7 +5566,7 @@
     "messageformat": "સલામતી ટિપ્સ"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "વિનંતીઓને કાળજીપૂર્વક રિવ્યૂ કરો. Signalને સરખાં નામનો બીજો સંપર્ક મળ્યો. <reviewRequestLink>વિનંતીને રિવ્યૂ કરો</reviewRequestLink>"
+    "messageformat": "વિનંતીઓને કાળજીપૂર્વક રિવ્યૂ કરો. Tellomiને સરખાં નામનો બીજો સંપર્ક મળ્યો. <reviewRequestLink>વિનંતીને રિવ્યૂ કરો</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} ગ્રૂપના સભ્યનું નામ સરખું છે. <reviewRequestLink>સભ્યોને રિવ્યૂ કરો</reviewRequestLink>} other {{count,number} ગ્રૂપના સભ્યોના નામ સરખા છે. <reviewRequestLink>સભ્યોને રિવ્યૂ કરો</reviewRequestLink>}}"
@@ -6101,7 +6101,7 @@
     "messageformat": "સામાન્ય"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Signalને દાન આપો"
+    "messageformat": "Tellomiને દાન આપો"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "દેખાવ"
@@ -6368,7 +6368,7 @@
     "messageformat": "તમારા બેકઅપ ફોલ્ડરને તમારા ફોનના સ્ટોરેજમાં ટ્રાન્સફર કરો"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "તમારા ફોન પર Signalની નવી કૉપિ ઇન્સ્ટોલ કરો"
+    "messageformat": "તમારા ફોન પર Tellomiની નવી કૉપિ ઇન્સ્ટોલ કરો"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "\"રિસ્ટોર અથવા ટ્રાન્સફર કરો\" પર ટેપ કરો અને \"ડિવાઇસ પર બેકઅપ\" પસંદ કરો"
@@ -6638,10 +6638,10 @@
     "messageformat": "Tellomi સુરક્ષિત બેકઅપ"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Signalની સુરક્ષિત, એન્ડ-ટૂ-એન્ડ એન્ક્રિપ્ટેડ સ્ટોરેજ સેવા સાથે ઓટોમેટિક બેકઅપ. તમારા ફોન પર શરૂઆત કરો. <learnMoreLink>વધુ જાણો.</learnMoreLink>"
+    "messageformat": "Tellomiની સુરક્ષિત, એન્ડ-ટૂ-એન્ડ એન્ક્રિપ્ટેડ સ્ટોરેજ સેવા સાથે ઓટોમેટિક બેકઅપ. તમારા ફોન પર શરૂઆત કરો. <learnMoreLink>વધુ જાણો.</learnMoreLink>"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "તમારી મેસેજ હિસ્ટ્રીનું બેકઅપ લો જેથી જ્યારે તમે નવો ફોન લો અથવા Signalને ફરીથી ઇન્સ્ટોલ કરો ત્યારે તમે ક્યારેય ડેટા ગુમાવશો નહીં."
+    "messageformat": "તમારી મેસેજ હિસ્ટ્રીનું બેકઅપ લો જેથી જ્યારે તમે નવો ફોન લો અથવા Tellomiને ફરીથી ઇન્સ્ટોલ કરો ત્યારે તમે ક્યારેય ડેટા ગુમાવશો નહીં."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "બેકઅપની વિગતો"
@@ -6695,7 +6695,7 @@
     "messageformat": "એન્ડ-ટૂ-એન્ડ એન્ક્રિપ્ટેડ બેકઅપ બનાવો જેને તમે તમારા ફોન પર રિસ્ટોર કરી શકો. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "બેકઅપ રિસ્ટોર કરવા માટે, તમારા ફોન પર Signalની નવી કૉપિ ઇન્સ્ટોલ કરો. ઍપ ખોલો અને &quot;રિસ્ટોર અથવા ટ્રાન્સફર કરો&quot; પર ટેપ કરો. <learnMoreLink>વધુ જાણો.</learnMoreLink>"
+    "messageformat": "બેકઅપ રિસ્ટોર કરવા માટે, તમારા ફોન પર Tellomiની નવી કૉપિ ઇન્સ્ટોલ કરો. ઍપ ખોલો અને &quot;રિસ્ટોર અથવા ટ્રાન્સફર કરો&quot; પર ટેપ કરો. <learnMoreLink>વધુ જાણો.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "ફોલ્ડર પસંદ કરો"
@@ -6962,13 +6962,13 @@
     "messageformat": "સ્ક્રીન સુરક્ષા"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "વધારાની ગોપનીયતા માટે આ કમ્પ્યુટર પર Signalના સ્ક્રીનશોટ અટકાવો."
+    "messageformat": "વધારાની ગોપનીયતા માટે આ કમ્પ્યુટર પર Tellomiના સ્ક્રીનશોટ અટકાવો."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "સ્ક્રીન સુરક્ષા અક્ષમ કરીએ?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "જો અક્ષમ હોય, તો આ Microsoft Windowsને Signalના સ્ક્રીનશોટ કેપ્ચર કરવાની અને ખાનગી ન હોય તેવા ફીચર માટે તેનો ઉપયોગ કરવાની મંજૂરી આપી શકે છે."
+    "messageformat": "જો અક્ષમ હોય, તો આ Microsoft Windowsને Tellomiના સ્ક્રીનશોટ કેપ્ચર કરવાની અને ખાનગી ન હોય તેવા ફીચર માટે તેનો ઉપયોગ કરવાની મંજૂરી આપી શકે છે."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "અક્ષમ કરો"
@@ -7016,13 +7016,13 @@
     "messageformat": "અપડેટ કરવું જરૂરી છે"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Signalનો ઉપયોગ ચાલુ રાખવા માટે, તમારે નવીનતમ વર્ઝન પર અપડેટ કરવું ફરજિયાત છે."
+    "messageformat": "Tellomiનો ઉપયોગ ચાલુ રાખવા માટે, તમારે નવીનતમ વર્ઝન પર અપડેટ કરવું ફરજિયાત છે."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "{downloadSize} ડાઉનલોડ કરો"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "અપડેટ ઇન્સ્ટોલ કરવા માટે Signalને ફરીથી શરૂ કરો."
+    "messageformat": "અપડેટ ઇન્સ્ટોલ કરવા માટે Tellomiને ફરીથી શરૂ કરો."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
     "messageformat": "Tellomi Desktop અપડેટ થવામાં નિષ્ફળ રહ્યું, પરંતુ એક નવું વર્ઝન ઉપલબ્ધ છે. {downloadUrl} પર જાઓ અને નવું વર્ઝન જાતે ઇન્સ્ટોલ કરો, પછી કાં તો સપોર્ટનો સંપર્ક કરો અથવા આ સમસ્યા વિશે બગ ફાઇલ કરો."
@@ -7358,7 +7358,7 @@
     "messageformat": "ચેતવણી"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "જો તમે પિનને અક્ષમ કરો છો, તો જ્યારે તમે Signalને ફરીથી રજીસ્ટર કરશો ત્યારે તમે તમામ ડેટા ગુમાવશો. જ્યારે પિન અક્ષમ હોય ત્યારે તમે રજીસ્ટ્રેશન લૉક ચાલુ કરી શકતા નથી."
+    "messageformat": "જો તમે પિનને અક્ષમ કરો છો, તો જ્યારે તમે Tellomiને ફરીથી રજીસ્ટર કરશો ત્યારે તમે તમામ ડેટા ગુમાવશો. જ્યારે પિન અક્ષમ હોય ત્યારે તમે રજીસ્ટ્રેશન લૉક ચાલુ કરી શકતા નથી."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "પિન અક્ષમ કરો"
@@ -7403,7 +7403,7 @@
     "messageformat": "અપડેટ જરૂરી છે"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "રજીસ્ટ્રેશન ચાલુ રાખવા માટે, કૃપા કરીને Signalના નવીનતમ વર્ઝન પર અપડેટ કરો."
+    "messageformat": "રજીસ્ટ્રેશન ચાલુ રાખવા માટે, કૃપા કરીને Tellomiના નવીનતમ વર્ઝન પર અપડેટ કરો."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "અપડેટ"
@@ -7453,14 +7453,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Signalનું એક નવું વર્ઝન પહેલેથી જ ઇન્સ્ટોલ કરેલું છે. શું તમે ખરેખર આગળ વધવા માગો છો?",
+    "messageformat": "Tellomiનું એક નવું વર્ઝન પહેલેથી જ ઇન્સ્ટોલ કરેલું છે. શું તમે ખરેખર આગળ વધવા માગો છો?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "એપ્લિકેશન ક્રેશ થઈ ગઈ"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Tellomi ક્રેશ થયા પછી ફરી સ્ટાર્ટ થઈ. તમે Signalને સમસ્યા વિશે તપાસ કરવામાં મદદ કરવા ક્રેશ રિપોર્ટ સબમિટ કરી શકો છો."
+    "messageformat": "Tellomi ક્રેશ થયા પછી ફરી સ્ટાર્ટ થઈ. તમે Tellomiને સમસ્યા વિશે તપાસ કરવામાં મદદ કરવા ક્રેશ રિપોર્ટ સબમિટ કરી શકો છો."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "મોકલો"
@@ -8241,7 +8241,7 @@
     "messageformat": "પિન સાચો છે. અમે તમને પછી ફરીથી યાદ કરાવીશું."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Tellomi હવે ટૂંક સમયમાં તમારા ડિવાઇસના {OS} વર્ઝનને સપોર્ટ કરશે નહીં. Signalનો ઉપયોગ ચાલુ રાખવા માટે, તમારા કમ્પ્યુટરની ઓપરેટિંગ સિસ્ટમને {expirationDate} સુધીમાં અપડેટ કરો. <learnMoreLink>વધુ જાણો</learnMoreLink>"
+    "messageformat": "Tellomi હવે ટૂંક સમયમાં તમારા ડિવાઇસના {OS} વર્ઝનને સપોર્ટ કરશે નહીં. Tellomiનો ઉપયોગ ચાલુ રાખવા માટે, તમારા કમ્પ્યુટરની ઓપરેટિંગ સિસ્ટમને {expirationDate} સુધીમાં અપડેટ કરો. <learnMoreLink>વધુ જાણો</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
     "messageformat": "Tellomi ડેસ્કટોપ હવે આ કમ્પ્યુટર પર કામ કરતું નથી. Tellomi ડેસ્કટોપનો ફરીથી ઉપયોગ કરવા માટે, તમારા કમ્પ્યુટરની {OS}નું વર્ઝન અપડેટ કરો. <learnMoreLink>વધુ જાણો</learnMoreLink>"
@@ -8541,7 +8541,7 @@
     "messageformat": "તમારી માહિતી ખાનગી છે"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "એક સ્વતંત્ર બિનનફાકારક સંસ્થા તરીકે, Tellomi ખાનગી મેસેજિંગ અને કૉલ માટે પ્રતિબદ્ધ છે. કોઈ જાહેરાતો નહીં, કોઈ પગેરું નહીં, કોઈ દેખરેખ નહીં. Signalને સપોર્ટ આપવા માટે આજે જ દાન આપો."
+    "messageformat": "એક સ્વતંત્ર બિનનફાકારક સંસ્થા તરીકે, Tellomi ખાનગી મેસેજિંગ અને કૉલ માટે પ્રતિબદ્ધ છે. કોઈ જાહેરાતો નહીં, કોઈ પગેરું નહીં, કોઈ દેખરેખ નહીં. Tellomiને સપોર્ટ આપવા માટે આજે જ દાન આપો."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "દાન કરતી વખતે તમારી પ્રોફાઇલ પર એક વૈકલ્પિક બૅજ મેળવો"
@@ -8568,7 +8568,7 @@
     "messageformat": "દાતા માટેની પ્રશ્નોત્તરી"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "રસીદો બધા ડિવાઇસ પર સિંક થતી નથી. જો તમે Signalને ફરીથી ઇન્સ્ટોલ કર્યું હોય, તો અગાઉના દાનની રસીદો ઉપલબ્ધ નહીં રહે."
+    "messageformat": "રસીદો બધા ડિવાઇસ પર સિંક થતી નથી. જો તમે Tellomiને ફરીથી ઇન્સ્ટોલ કર્યું હોય, તો અગાઉના દાનની રસીદો ઉપલબ્ધ નહીં રહે."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "કોઈ રસીદ નથી"
@@ -8769,7 +8769,7 @@
     "messageformat": "તમારા દાનમાં એક ભૂલ આવી"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "તમારા દાનની પ્રક્રિયા થઈ ન હોય એવું બની શકે. તમારી રસીદો તપાસવા અને પુષ્ટિ કરવા માટે \"Signalને દાન આપો\" અને પછી \"દાનની રસીદ\" પર ક્લિક કરો."
+    "messageformat": "તમારા દાનની પ્રક્રિયા થઈ ન હોય એવું બની શકે. તમારી રસીદો તપાસવા અને પુષ્ટિ કરવા માટે \"Tellomiને દાન આપો\" અને પછી \"દાનની રસીદ\" પર ક્લિક કરો."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "ફરી પ્રયાસ કરો અથવા તમારા દાનને પૂર્ણ કરવામાં મદદ માટે સપોર્ટને ડીબગ લૉગ સબમિટ કરો. ડીબગ લૉગ અમને સમસ્યાને ઉકેલવામાં અને તેને ઠીક કરવામાં મદદ કરે છે અને તેમાં ઓળખ થઈ શકે તેવી માહિતી શામેલ હોતી નથી."
@@ -8823,7 +8823,7 @@
     "messageformat": "તમારો કૉલ કેવો રહ્યો?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "આ અમને Signalમાં કૉલને બહેતર બનાવવામાં મદદ કરે છે. કોઈ વ્યક્તિગત રીતે ઓળખી શકાય તેવી માહિતી સંગ્રહિત કરવામાં આવશે નહીં."
+    "messageformat": "આ અમને Tellomiમાં કૉલને બહેતર બનાવવામાં મદદ કરે છે. કોઈ વ્યક્તિગત રીતે ઓળખી શકાય તેવી માહિતી સંગ્રહિત કરવામાં આવશે નહીં."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "સમસ્યાઓ હતી"
@@ -8874,7 +8874,7 @@
     "messageformat": "સમસ્યાઓનું વર્ણન"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "કૃપા કરીને સમસ્યાને લગતી કોઈ પણ વિગતો શામેલ કરો. તમે અહીં જે કંઈ પણ શેર કરશો તે ખાનગી રાખવામાં આવશે અને તેનો ઉપયોગ ફક્ત Signalમાં કૉલને બહેતર બનાવવામાં મદદ માટે કરવામાં આવશે."
+    "messageformat": "કૃપા કરીને સમસ્યાને લગતી કોઈ પણ વિગતો શામેલ કરો. તમે અહીં જે કંઈ પણ શેર કરશો તે ખાનગી રાખવામાં આવશે અને તેનો ઉપયોગ ફક્ત Tellomiમાં કૉલને બહેતર બનાવવામાં મદદ માટે કરવામાં આવશે."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "કૃપા કરીને તમારી સમસ્યાનું વર્ણન કરો"
@@ -8955,7 +8955,7 @@
     "messageformat": "Tellomi ડેસ્કટોપ પરના બધા હાલના ડેટા ડિલીટ થઈ જશે. પછી તમે QR કોડ સ્કેન કરી શકો છો અને તમારા ફોનમાંથી તમારી મેસેજ હિસ્ટ્રીને ટ્રાન્સફર કરી શકો છો."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "આ વર્ઝનમાં Signalને સરસ રીતે ચાલતું રાખવા માટે નાના ફેરફારો અને ભૂલ સુધાર શામેલ છે.",
+    "messageformat": "આ વર્ઝનમાં Tellomiને સરસ રીતે ચાલતું રાખવા માટે નાના ફેરફારો અને ભૂલ સુધાર શામેલ છે.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
@@ -8979,7 +8979,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "નાના ફેરફારો, ભૂલ સુધારા અને પ્રદર્શનમાં વધારો. Signalનો ઉપયોગ કરવા બદલ આભાર!",
+    "messageformat": "નાના ફેરફારો, ભૂલ સુધારા અને પ્રદર્શનમાં વધારો. Tellomiનો ઉપયોગ કરવા બદલ આભાર!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.24--1": {

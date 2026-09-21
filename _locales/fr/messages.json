@@ -3531,7 +3531,7 @@
     "messageformat": "Les membres pourront de nouveau vous ajouter à ce groupe."
   },
   "icu:MessageRequests--block-and-report-spam-success-toast": {
-    "messageformat": "Signalé comme spam et bloqué."
+    "messageformat": "Tellomié comme spam et bloqué."
   },
   "icu:MessageRequests--block-direct-confirm-title": {
     "messageformat": "Bloquer {title} ?"
@@ -3570,7 +3570,7 @@
     "messageformat": "Vous avez accepté l’invitation par message de {name}. S’il s’agit d’une erreur, choisissez l’une des actions suivantes."
   },
   "icu:MessageRequests--report-spam-success-toast": {
-    "messageformat": "Signalé comme spam."
+    "messageformat": "Tellomié comme spam."
   },
   "icu:MessageRequests--delete": {
     "messageformat": "Supprimer"
@@ -7640,7 +7640,7 @@
     "messageformat": "Vous avez accepté l'invitation par message de {userProfileName}"
   },
   "icu:MessageRequestResponseNotification__Message--Reported": {
-    "messageformat": "Signalé comme spam"
+    "messageformat": "Tellomié comme spam"
   },
   "icu:MessageRequestResponseNotification__Message--Blocked": {
     "messageformat": "Vous avez bloqué ce contact."

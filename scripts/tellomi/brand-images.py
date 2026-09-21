@@ -55,6 +55,23 @@ def main() -> int:
 
     shutil.copy(out / "desktop/png/512x512.png", img / "signal-logo-desktop-linux.png")
 
+    # 代码里内联的标：配对二维码中心（BrandedQRCode）用 ts/components/tellomiMark.std.ts
+    (HERE / "ts/components/tellomiMark.std.ts").write_text(
+        "// Tellomi 品牌标（docs/brand/logo.svg，viewBox 0 0 1024 1024，fill-rule evenodd）。\n"
+        "// 由 clients/desktop/scripts/tellomi/brand-images.py 生成，不要手改；换标只换 logo.svg 再跑一次。\n"
+        "export const TELLOMI_MARK_SIZE = 1024;\n"
+        "export const TELLOMI_MARK_PATHS: ReadonlyArray<string> = [\n"
+        + "".join("  '" + d.replace("'", "\\'") + "',\n" for d in re.findall(r'<path d="([^"]+)"', logo_svg))
+        + "];\n", encoding="utf-8")
+
+    # 安全提示插画里画着 Signal 标的那一张（safety-tip-dont-respond.svg：圆里的 #566b98 路径）→ 换成 Tellomi 标
+    tip = img / "safety-tips/safety-tip-dont-respond.svg"
+    t = tip.read_text(encoding="utf-8")
+    t2 = re.sub(r'<path fill="#566b98" d="[^"]*"[^>]*/>',
+                f'<g fill="#566b98" fill-rule="evenodd" transform="translate(96 69) scale(0.04297)">{paths}</g>', t, count=1)
+    if t2 != t:
+        tip.write_text(t2, encoding="utf-8")
+
     err = Image.open(out / "desktop/png/128x128.png").convert("RGBA")
     d = ImageDraw.Draw(err); d.ellipse((84, 84, 124, 124), fill="#E53935", outline="#FFFFFF", width=4)
     d.rounded_rectangle((101, 92, 107, 110), radius=2, fill="#FFFFFF"); d.ellipse((100, 113, 108, 121), fill="#FFFFFF")

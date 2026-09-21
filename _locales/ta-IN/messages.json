@@ -510,7 +510,7 @@
     "messageformat": "நீங்கள் சரிபார்க்க முயற்சிக்கும் பாதுகாப்பு எண் மாறிவிட்டது. உங்கள் புதிய பாதுகாப்பு எண்ணை {name1} உடன் மதிப்பாய்வு செய்யவும். நினைவில் கொள்ளுங்கள், இந்த மாற்றம் யாராவது உங்கள் தகவல்தொடர்புகளை இடைமறிக்க முயற்சிக்கிறார்கள் அல்லது {name2} வெறுமனே Tellomi சிக்னலை மீண்டும் நிறுவியிருக்கலாம்."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "பின்வரும் நபர்கள் Signalஐ மீண்டும் நிறுவியிருக்கலாம் அல்லது டிவைஸ்களை மாற்றியிருக்கலாம். புதிய பாதுகாப்பு எண்ணை உறுதிப்படுத்த ஒரு பெறுநரை கிளிக் செய்யவும். இது விருப்பத்தேர்வு."
+    "messageformat": "பின்வரும் நபர்கள் Tellomiஐ மீண்டும் நிறுவியிருக்கலாம் அல்லது டிவைஸ்களை மாற்றியிருக்கலாம். புதிய பாதுகாப்பு எண்ணை உறுதிப்படுத்த ஒரு பெறுநரை கிளிக் செய்யவும். இது விருப்பத்தேர்வு."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "நிலுவையில் உள்ள செய்திகளை அனுப்பவும்"
@@ -519,7 +519,7 @@
     "messageformat": "மதிப்பாய்வு செய்க"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Signalஐ மீண்டும் நிறுவிய அல்லது டிவைஸ்களை மாற்றிய {count,number} இணைப்பு உங்களிடம் உள்ளது. விரும்பினால் அவர்களின் பாதுகாப்பு எண்களை அனுப்பும் முன் மதிப்பாய்வு செய்யலாம்.} other {சிக்னலை மீண்டும் நிறுவிய அல்லது டிவைஸ்களை மாற்றிய {count,number} இணைப்புகள் உங்களிடம் உள்ளன. அவர்களின் பாதுகாப்பு எண்களை அனுப்பும் முன் நீங்கள் விருப்பத்தேர்வாக மதிப்பாய்வு செய்யலாம்.}}"
+    "messageformat": "{count, plural, one {Tellomiஐ மீண்டும் நிறுவிய அல்லது டிவைஸ்களை மாற்றிய {count,number} இணைப்பு உங்களிடம் உள்ளது. விரும்பினால் அவர்களின் பாதுகாப்பு எண்களை அனுப்பும் முன் மதிப்பாய்வு செய்யலாம்.} other {சிக்னலை மீண்டும் நிறுவிய அல்லது டிவைஸ்களை மாற்றிய {count,number} இணைப்புகள் உங்களிடம் உள்ளன. அவர்களின் பாதுகாப்பு எண்களை அனுப்பும் முன் நீங்கள் விருப்பத்தேர்வாக மதிப்பாய்வு செய்யலாம்.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "அனைத்து இணைப்புகளும் மதிப்பாய்வு செய்யப்பட்டுள்ளன, தொடருவதற்கு அனுப்பு என்பதைக் கிளிக் செய்யவும்."
@@ -2754,7 +2754,7 @@
     "messageformat": "உங்கள் நன்கொடையைக் காண மொபைலில் இந்த மெசேஜைத் தட்டவும்"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "உங்கள் சார்பாக Signalக்கு {sender} நன்கொடை அளித்துள்ளார்"
+    "messageformat": "உங்கள் சார்பாக Tellomiக்கு {sender} நன்கொடை அளித்துள்ளார்"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "இந்த நன்கொடையைத் திறக்க உங்கள் மொபைலைச் சரிபார்க்கவும்"
@@ -2811,7 +2811,7 @@
     "messageformat": "உங்கள் ஆதரவுக்கு நன்றி!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "{name} சார்பாக Signalக்கு நன்கொடை அளித்துள்ளீர்கள். அவர்களின் புரொஃபைலில் தங்கள் ஆதரவைக் காட்ட அவர்களுக்கு விருப்பம் வழங்கப்படும்."
+    "messageformat": "{name} சார்பாக Tellomiக்கு நன்கொடை அளித்துள்ளீர்கள். அவர்களின் புரொஃபைலில் தங்கள் ஆதரவைக் காட்ட அவர்களுக்கு விருப்பம் வழங்கப்படும்."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "ஸ்டிக்கர் பேக் நிறுவ முடியவில்லை"
@@ -3426,7 +3426,7 @@
     "messageformat": "சாட் படிக்காததாகக் குறிக்கப்பட்டது"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "ஸ்டிக்கர் பேக் கிரியேட்டரைப் பயன்படுத்த உங்கள் ஃபோன் மற்றும் டெஸ்க்டாப்பில் Signalஐ அமைக்கவும்"
+    "messageformat": "ஸ்டிக்கர் பேக் கிரியேட்டரைப் பயன்படுத்த உங்கள் ஃபோன் மற்றும் டெஸ்க்டாப்பில் Tellomiஐ அமைக்கவும்"
   },
   "icu:Reactions--remove": {
     "messageformat": "எதிர்வினையை அகற்று"
@@ -4722,7 +4722,7 @@
     "messageformat": "Tellomi-க்கு நன்கொடை அளி"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} Signalஐ ஆதரிக்கிறார்"
+    "messageformat": "{name} Tellomiஐ ஆதரிக்கிறார்"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "மெசேஜ்களை ஒத்திசைக்கிறது"
@@ -6947,7 +6947,7 @@
     "messageformat": "அமைக்கவும்"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "பயன்படுத்த Signalஐ ரீஸ்டார்ட் செய்யவும்"
+    "messageformat": "பயன்படுத்த Tellomiஐ ரீஸ்டார்ட் செய்யவும்"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "மொழியை மாற்ற, செயலியை ரீஸ்டார்ட் செய்ய வேண்டும்."
@@ -7016,13 +7016,13 @@
     "messageformat": "புதுப்பித்தல் தேவை"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Signalஐத் தொடர்ந்து பயன்படுத்த, சமீபத்திய பதிப்பிற்குப் புதுப்பிக்க வேண்டும்."
+    "messageformat": "Tellomiஐத் தொடர்ந்து பயன்படுத்த, சமீபத்திய பதிப்பிற்குப் புதுப்பிக்க வேண்டும்."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "{downloadSize} ஐ பதிவிறக்கு"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "புதுப்பிப்பை நிறுவ Signalஐ மறுதொடக்கம் செய்யவும்."
+    "messageformat": "புதுப்பிப்பை நிறுவ Tellomiஐ மறுதொடக்கம் செய்யவும்."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
     "messageformat": "Tellomi டெஸ்க்டாப்பை புதுப்பிக்க முடியவில்லை, ஆனால் புதிய பதிப்பு உள்ளது. {downloadUrl} க்குச் சென்று புதிய பதிப்பை கைமுறையாக நிறுவவும், பின்னர் ஆதரவைத் தொடர்புகொள்ளவும் அல்லது இந்தச் பிரச்சனைப் பற்றிய பிழையைப் பதிவு செய்யவும்."
@@ -8610,7 +8610,7 @@
     "messageformat": "MM/YY"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Signalக்கு {formattedCurrencyAmount} நன்கொடை அளிக்கவும்"
+    "messageformat": "Tellomiக்கு {formattedCurrencyAmount} நன்கொடை அளிக்கவும்"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "கார்டு எண் தவறாக உள்ளது"

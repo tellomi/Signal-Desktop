@@ -7358,7 +7358,7 @@
     "messageformat": "সতর্কবার্তা"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "আপনি যদি পিন নিষ্ক্রিয় করেন, তাহলে Signalএ -এ আবার নিবন্ধন করার সময় আপনার সব ডেটা মুছে যাবে। পিন নিষ্ক্রিয় থাকা অবস্থায় আপনি রেজিস্ট্রেশন লক চালু করতে পারবেন না।"
+    "messageformat": "আপনি যদি পিন নিষ্ক্রিয় করেন, তাহলে Tellomiএ -এ আবার নিবন্ধন করার সময় আপনার সব ডেটা মুছে যাবে। পিন নিষ্ক্রিয় থাকা অবস্থায় আপনি রেজিস্ট্রেশন লক চালু করতে পারবেন না।"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "পিন নিষ্ক্রিয় করুন"

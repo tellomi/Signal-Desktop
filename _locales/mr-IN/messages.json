@@ -3660,10 +3660,10 @@
     "messageformat": "अधिकृत चॅट"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Signalचे एकमेव अधिकृत चॅट. न्यूज आणि प्रकाशन टीप मिळवत राहा."
+    "messageformat": "Tellomiचे एकमेव अधिकृत चॅट. न्यूज आणि प्रकाशन टीप मिळवत राहा."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Signalचे एकमेव अधिकृत चॅट."
+    "messageformat": "Tellomiचे एकमेव अधिकृत चॅट."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "न्यूज आणि प्रकाशन टीप मिळवत राहा."
@@ -5130,7 +5130,7 @@
     "messageformat": "Tellomi सूचित करेल की कदाचित ही व्यक्ती स्पॅम पाठवत असेल. Tellomi कोणत्याही चॅट्सचा मजकूर पाहू शकत नाही."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "तुम्हाला या गटामध्ये बोलवणारी व्यक्ती कदाचित स्पॅम असू शकते अशी सूचना Signalला मिळेल. Tellomi कोणत्याही चॅट्सचा मजकूर पाहू शकत नाही."
+    "messageformat": "तुम्हाला या गटामध्ये बोलवणारी व्यक्ती कदाचित स्पॅम असू शकते अशी सूचना Tellomiला मिळेल. Tellomi कोणत्याही चॅट्सचा मजकूर पाहू शकत नाही."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "स्पॅम रिपोर्ट करा"
@@ -5431,7 +5431,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {Signalच्या नवीन आवृत्तीवरील गट सदस्यांना तुम्ही हा संदेश हटवल्याचे दिसेल.} other {Signalच्या नवीन आवृत्तीवरील गट सदस्यांना तुम्ही हे संदेश हटवल्याचे दिसेल.}}"
+    "messageformat": "{count, plural, one {Tellomiच्या नवीन आवृत्तीवरील गट सदस्यांना तुम्ही हा संदेश हटवल्याचे दिसेल.} other {Tellomiच्या नवीन आवृत्तीवरील गट सदस्यांना तुम्ही हे संदेश हटवल्याचे दिसेल.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "हटवा"
@@ -6695,7 +6695,7 @@
     "messageformat": "एक एण्ड-टू-एण्ड कूटबद्ध केलेले बॅकअप तयार करा जो तुम्ही तुमच्या फोनवर रीस्टोर करू शकता. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "बॅकअप पूर्ववत करण्यासाठी, तुमच्या फोनवर Signalची एक नवी आवृत्ती इन्स्टॉल करा. ॲप उघडा आणि &quot;रीस्टोर करा किंवा हस्तांतरण करा&quot; वर टॅप करा. <learnMoreLink>अधिक जाणून घ्या.</learnMoreLink>"
+    "messageformat": "बॅकअप पूर्ववत करण्यासाठी, तुमच्या फोनवर Tellomiची एक नवी आवृत्ती इन्स्टॉल करा. ॲप उघडा आणि &quot;रीस्टोर करा किंवा हस्तांतरण करा&quot; वर टॅप करा. <learnMoreLink>अधिक जाणून घ्या.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "एक फोल्डर निवडा"
@@ -6962,7 +6962,7 @@
     "messageformat": "स्क्रीन सुरक्षा"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "वाढीव गोपनीयतेसाठी या कंप्युटरवर Signalचे स्क्रीनशॉट काढता येण्याची सोय बंद करा."
+    "messageformat": "वाढीव गोपनीयतेसाठी या कंप्युटरवर Tellomiचे स्क्रीनशॉट काढता येण्याची सोय बंद करा."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "स्क्रीन सुरक्षितता निष्क्रिय करायची?"
@@ -8712,7 +8712,7 @@
     "messageformat": "देणगी यशस्वी ठरली, पण आम्हाला तुमच्या बॅज सेटिंग्ज अद्ययावत करता आल्या नाहीत"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "तुमच्या मोबाईल डिव्हाईसवरील तुमच्या बॅज सेटिंग्ज अद्ययावत करण्यासाठी, सेटिंग्ज → Signalला देणगी द्या → बॅजेसमध्ये जा."
+    "messageformat": "तुमच्या मोबाईल डिव्हाईसवरील तुमच्या बॅज सेटिंग्ज अद्ययावत करण्यासाठी, सेटिंग्ज → Tellomiला देणगी द्या → बॅजेसमध्ये जा."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "देणगी प्रक्रियेत व्यत्यय आला"
@@ -8769,7 +8769,7 @@
     "messageformat": "तुमच्या देणगीमध्ये एक त्रुटी उद्भवली"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "तुमच्या देणगीची प्रक्रिया कदाचित पार पडली नसेल. \"Signalला देणगी द्या\" आणि मग \"देणगीच्या पावत्या\" वर क्लिक करा आणि तुमच्या पावत्या तपासून खात्री करा."
+    "messageformat": "तुमच्या देणगीची प्रक्रिया कदाचित पार पडली नसेल. \"Tellomiला देणगी द्या\" आणि मग \"देणगीच्या पावत्या\" वर क्लिक करा आणि तुमच्या पावत्या तपासून खात्री करा."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "पुन्हा प्रयत्न करा किंवा तुमची देणगी प्रक्रिया पूर्ण करण्यास मदत मिळवण्यासाठी सपोर्टकडे एक डीबग लॉग सुपूर्द करा. डीबग लॉग आम्हाला समस्येचे निदान करण्यास आणि ती दुरुस्त करण्यास मदत करते, आणि त्यामध्ये ओळख उघड करणारी माहिती नसते."
@@ -8817,7 +8817,7 @@
     "messageformat": "प्रोफाइलवर दाखवा"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "तुम्ही तुमच्या मोबाईल डिव्हाईसवर सेटिंग्ज → Signalला देणगी द्या → बॅज मध्ये जाऊन त्या बदलू शकता"
+    "messageformat": "तुम्ही तुमच्या मोबाईल डिव्हाईसवर सेटिंग्ज → Tellomiला देणगी द्या → बॅज मध्ये जाऊन त्या बदलू शकता"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "तुमचा कॉल कसा होता?"

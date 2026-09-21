@@ -1476,7 +1476,7 @@
     "messageformat": "{sender} បានផ្លាស់ប្តូរលេខទូរសព្ទរបស់ពួកគេ"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "ចូលរួមទំនាក់ទំនងតាមSignal"
+    "messageformat": "ចូលរួមទំនាក់ទំនងតាមTellomi"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} និង {conversationTitle} គឺជាគណនីតែមួយ។ ប្រវត្តិសាររបស់អ្នកសម្រាប់ការជជែកទាំងពីរមាននៅទីនេះ។"
@@ -2322,7 +2322,7 @@
     "messageformat": "នាំចូលបញ្ជី​ទំនាក់ទំនង"
   },
   "icu:syncExplanation": {
-    "messageformat": "នាំចូលក្រុម និងបញ្ជីទំនាក់ទំនង Signalទាំងអស់ ពីទូរស័ព្ទរបស់អ្នក។"
+    "messageformat": "នាំចូលក្រុម និងបញ្ជីទំនាក់ទំនង Tellomiទាំងអស់ ពីទូរស័ព្ទរបស់អ្នក។"
   },
   "icu:syncNow": {
     "messageformat": "នាំចូលឥឡូវ"
@@ -2610,7 +2610,7 @@
     "messageformat": "Tellomi មិនអាចដំឡើងកំណែថ្មីបានទេ។ សូមចុចដើម្បីព្យាយាមម្តងទៀត។"
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "បើកSignal ឡើងវិញ"
+    "messageformat": "បើកTellomi ឡើងវិញ"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "មិនយកចិត្តទុកដាក់នឹងកំណែថ្មី"
