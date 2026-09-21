@@ -1,5 +1,5 @@
 saveExact: true
-blockExoticSubdeps: true
+blockExoticSubdeps: false
 lockfileIncludeTarballUrl: true
 verifyDepsBeforeRun: prompt
 verifyStoreIntegrity: true
@@ -57,6 +57,8 @@ auditConfig:
     - GHSA-r292-9mhp-454m # tar, only used at dev-time
 
 overrides:
+  # Tellomi: libsignal-client 用 tellomi/libsignal@tellomi-0.100.0 自编包（自定义服务器 Environment），tarball 由 libsignal/node `npm pack` 产出
+  "@signalapp/libsignal-client": file:vendor/signalapp-libsignal-client-0.100.0.tgz
   '@electron/rebuild>node-gyp': '12.4.0'
   'brace-expansion@5': '^5.0.9'
   'brace-expansion@2': '^2.1.4'

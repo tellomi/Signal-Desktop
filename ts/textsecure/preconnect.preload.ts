@@ -46,6 +46,26 @@ function resolveLibsignalNet(
     });
   }
 
+  // Tellomi: anything that is not Signal staging / a localhost mock server is our own
+  // self-hosted Signal-Server (e.g. https://chat.tellomi.app). libsignal-net only knows the
+  // hardcoded Signal environments, so we hand it the hostname + port explicitly; the TLS root
+  // comes from `certificateAuthority` when set, otherwise the platform trust store.
+  const parsed = new URL(url);
+  if (parsed.hostname !== 'chat.signal.org') {
+    log.info(`libsignal net environment resolved to custom server ${parsed.hostname}`);
+    return new Net.Net({
+      customServer: {
+        hostname: parsed.hostname,
+        chatPort: parsed.port ? parseInt(parsed.port, 10) : 443,
+        rootCertificateDer: certificateAuthority
+          ? pemToDer(certificateAuthority)
+          : undefined,
+        httpVersion: 2,
+      },
+      userAgent,
+    });
+  }
+
   log.info('libsignal net environment resolved to prod');
   return new Net.Net({
     env: Net.Environment.Production,
