@@ -63,7 +63,7 @@ export const upload = async ({
 }: UploadOptionsType): Promise<string> => {
   const headers = { 'User-Agent': getUserAgent(appVersion) };
 
-  const formUrl = new URL(BASE_URL);
+  const formUrl = new URL(`${BASE_URL}/`);   // Tellomi: BASE_URL has a path; keep the trailing slash so nginx location /debuglogs/ matches
 
   if (prefix !== undefined) {
     formUrl.searchParams.set('prefix', prefix);
