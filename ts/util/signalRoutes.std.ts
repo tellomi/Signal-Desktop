@@ -28,19 +28,14 @@ function toUrl(input: URL | string): URL | null {
 /**
  * List of protocols that are used by Signal routes.
  */
-const SignalRouteProtocols = ['https:', 'sgnl:', 'signalcaptcha:'] as const;
+// Tellomi: sgnl → tellomi, signalcaptcha → tellomicaptcha (docs/signal/LINKS_AND_SCHEMES.md)
+const SignalRouteProtocols = ['https:', 'tellomi:', 'tellomicaptcha:'] as const;
 
 /**
  * List of hostnames that are used by Signal routes.
  * This doesn't include app-only routes like `linkdevice` or `verify`.
  */
-const SignalRouteHostnames = [
-  'signal.me',
-  'signal.group',
-  'signal.link',
-  'signal.art',
-  'signaldonations.org',
-] as const;
+const SignalRouteHostnames = ['tell.cc', 'signaldonations.org'] as const;
 
 /**
  * Type to help maintain {@link SignalRouteHostnames}, real hostnames should go there.
@@ -229,8 +224,8 @@ const paramSchema = z.string().min(1);
  */
 const contactByPhoneNumberRoute = _route('contactByPhoneNumber', {
   patterns: [
-    _pattern('https:', 'signal.me', '{/}?', { hash: 'p/:phoneNumber' }),
-    _pattern('sgnl:', 'signal.me', '{/}?', { hash: 'p/:phoneNumber' }),
+    _pattern('https:', 'tell.cc', '{/}?', { hash: 'p/:phoneNumber' }),
+    _pattern('tellomi:', 'tell.cc', '{/}?', { hash: 'p/:phoneNumber' }),
   ],
   schema: z.object({
     phoneNumber: paramSchema, // E164 (with +)
@@ -241,10 +236,10 @@ const contactByPhoneNumberRoute = _route('contactByPhoneNumber', {
     };
   },
   toWebUrl(args) {
-    return new URL(`https://signal.me/#p/${args.phoneNumber}`);
+    return new URL(`https://tell.cc/#p/${args.phoneNumber}`);
   },
   toAppUrl(args) {
-    return new URL(`sgnl://signal.me/#p/${args.phoneNumber}`);
+    return new URL(`tellomi://tell.cc/#p/${args.phoneNumber}`);
   },
 });
 
@@ -262,10 +257,10 @@ export const contactByEncryptedUsernameRoute = _route(
   'contactByEncryptedUsername',
   {
     patterns: [
-      _pattern('https:', 'signal.me', '{/}?', {
+      _pattern('https:', 'tell.cc', '{/}?', {
         hash: 'eu/:encryptedUsername',
       }),
-      _pattern('sgnl:', 'signal.me', '{/}?', { hash: 'eu/:encryptedUsername' }),
+      _pattern('tellomi:', 'tell.cc', '{/}?', { hash: 'eu/:encryptedUsername' }),
     ],
     schema: z.object({
       encryptedUsername: paramSchema, // base64url (32 bytes of entropy + 16 bytes of big-endian UUID)
@@ -276,10 +271,10 @@ export const contactByEncryptedUsernameRoute = _route(
       };
     },
     toWebUrl(args) {
-      return new URL(`https://signal.me/#eu/${args.encryptedUsername}`);
+      return new URL(`https://tell.cc/#eu/${args.encryptedUsername}`);
     },
     toAppUrl(args) {
-      return new URL(`sgnl://signal.me/#eu/${args.encryptedUsername}`);
+      return new URL(`tellomi://tell.cc/#eu/${args.encryptedUsername}`);
     },
   }
 );
@@ -296,13 +291,13 @@ export const contactByEncryptedUsernameRoute = _route(
  */
 export const groupInvitesRoute = _route('groupInvites', {
   patterns: [
-    _pattern('https:', 'signal.group', '{/}?', {
+    _pattern('https:', 'tell.cc', '/g{/}?', {
       hash: ':inviteCode([^\\/]+)',
     }),
-    _pattern('sgnl:', 'signal.group', '{/}?', {
+    _pattern('tellomi:', 'tell.cc', '/g{/}?', {
       hash: ':inviteCode([^\\/]+)',
     }),
-    _pattern('sgnl:', 'joingroup', '{/}?', { hash: ':inviteCode([^\\/]+)' }),
+    _pattern('tellomi:', 'joingroup', '{/}?', { hash: ':inviteCode([^\\/]+)' }),
   ],
   schema: z.object({
     inviteCode: paramSchema, // base64url (GroupInviteLink proto)
@@ -313,10 +308,10 @@ export const groupInvitesRoute = _route('groupInvites', {
     };
   },
   toWebUrl(args) {
-    return new URL(`https://signal.group/#${args.inviteCode}`);
+    return new URL(`https://tell.cc/g#${args.inviteCode}`);
   },
   toAppUrl(args) {
-    return new URL(`sgnl://signal.group/#${args.inviteCode}`);
+    return new URL(`tellomi://tell.cc/g#${args.inviteCode}`);
   },
 });
 
@@ -333,7 +328,7 @@ export const groupInvitesRoute = _route('groupInvites', {
  * ```
  */
 export const linkDeviceRoute = _route('linkDevice', {
-  patterns: [_pattern('sgnl:', 'linkdevice', '{/}?', { search: ':params' })],
+  patterns: [_pattern('tellomi:', 'linkdevice', '{/}?', { search: ':params' })],
   schema: z.object({
     uuid: paramSchema, // base64url?
     pubKey: paramSchema, // percent-encoded base64 (with padding) of PublicKey with type byte included
@@ -353,7 +348,7 @@ export const linkDeviceRoute = _route('linkDevice', {
       pub_key: args.pubKey,
       capabilities: args.capabilities.join(','),
     });
-    return new URL(`sgnl://linkdevice?${params.toString()}`);
+    return new URL(`tellomi://linkdevice?${params.toString()}`);
   },
 });
 
@@ -369,7 +364,7 @@ export const linkDeviceRoute = _route('linkDevice', {
  */
 const captchaRoute = _route('captcha', {
   // needs `(.+)` to capture `.` in hostname
-  patterns: [_pattern('signalcaptcha:', ':captchaId(.+)', '{/}?', {})],
+  patterns: [_pattern('tellomicaptcha:', ':captchaId(.+)', '{/}?', {})],
   schema: z.object({
     captchaId: paramSchema, // opaque
   }),
@@ -379,7 +374,7 @@ const captchaRoute = _route('captcha', {
     };
   },
   toAppUrl(args) {
-    return new URL(`signalcaptcha://${args.captchaId}`);
+    return new URL(`tellomicaptcha://${args.captchaId}`);
   },
 });
 
@@ -394,8 +389,8 @@ const captchaRoute = _route('captcha', {
  */
 export const linkCallRoute = _route('linkCall', {
   patterns: [
-    _pattern('https:', 'signal.link', '/call{/}?', { hash: ':params' }),
-    _pattern('sgnl:', 'signal.link', '/call{/}?', { hash: ':params' }),
+    _pattern('https:', 'tell.cc', '/call{/}?', { hash: ':params' }),
+    _pattern('tellomi:', 'tell.cc', '/call{/}?', { hash: ':params' }),
   ],
   schema: z.object({
     key: paramSchema, // ConsonantBase16
@@ -408,11 +403,11 @@ export const linkCallRoute = _route('linkCall', {
   },
   toWebUrl(args) {
     const params = new URLSearchParams({ key: args.key });
-    return new URL(`https://signal.link/call/#${params.toString()}`);
+    return new URL(`https://tell.cc/call/#${params.toString()}`);
   },
   toAppUrl(args) {
     const params = new URLSearchParams({ key: args.key });
-    return new URL(`sgnl://signal.link/call/#${params.toString()}`);
+    return new URL(`tellomi://tell.cc/call/#${params.toString()}`);
   },
 });
 
@@ -429,8 +424,8 @@ export const linkCallRoute = _route('linkCall', {
  */
 export const artAddStickersRoute = _route('artAddStickers', {
   patterns: [
-    _pattern('https:', 'signal.art', '/addstickers{/}?', { hash: ':params' }),
-    _pattern('sgnl:', 'addstickers', '{/}?', { search: ':params' }),
+    _pattern('https:', 'tell.cc', '/s{/}?', { hash: ':params' }),
+    _pattern('tellomi:', 'addstickers', '{/}?', { search: ':params' }),
   ],
   schema: z.object({
     packId: paramSchema, // hexadecimal
@@ -450,14 +445,14 @@ export const artAddStickersRoute = _route('artAddStickers', {
       pack_id: args.packId,
       pack_key: args.packKey,
     });
-    return new URL(`https://signal.art/addstickers#${params.toString()}`);
+    return new URL(`https://tell.cc/s#${params.toString()}`);
   },
   toAppUrl(args) {
     const params = new URLSearchParams({
       pack_id: args.packId,
       pack_key: args.packKey,
     });
-    return new URL(`sgnl://addstickers?${params.toString()}`);
+    return new URL(`tellomi://addstickers?${params.toString()}`);
   },
 });
 
@@ -473,7 +468,7 @@ export const artAddStickersRoute = _route('artAddStickers', {
  */
 export const showConversationRoute = _route('showConversation', {
   patterns: [
-    _pattern('sgnl:', 'show-conversation', '{/}?', { search: ':params' }),
+    _pattern('tellomi:', 'show-conversation', '{/}?', { search: ':params' }),
   ],
   schema: z.object({
     token: paramSchema,
@@ -486,7 +481,7 @@ export const showConversationRoute = _route('showConversation', {
   },
   toAppUrl(args) {
     const params = new URLSearchParams({ token: args.token });
-    return new URL(`sgnl://show-conversation?${params.toString()}`);
+    return new URL(`tellomi://show-conversation?${params.toString()}`);
   },
 });
 
@@ -502,7 +497,7 @@ export const showConversationRoute = _route('showConversation', {
  */
 export const startCallLobbyRoute = _route('startCallLobby', {
   patterns: [
-    _pattern('sgnl:', 'start-call-lobby', '{/}?', { search: ':params' }),
+    _pattern('tellomi:', 'start-call-lobby', '{/}?', { search: ':params' }),
   ],
   schema: z.object({
     token: paramSchema,
@@ -515,7 +510,7 @@ export const startCallLobbyRoute = _route('startCallLobby', {
   },
   toAppUrl(args) {
     const params = new URLSearchParams({ token: args.token });
-    return new URL(`sgnl://start-call-lobby?${params.toString()}`);
+    return new URL(`tellomi://start-call-lobby?${params.toString()}`);
   },
 });
 
@@ -527,13 +522,13 @@ export const startCallLobbyRoute = _route('startCallLobby', {
  * // URL { "sgnl://show-window" }
  */
 export const showWindowRoute = _route('showWindow', {
-  patterns: [_pattern('sgnl:', 'show-window', '{/}?', {})],
+  patterns: [_pattern('tellomi:', 'show-window', '{/}?', {})],
   schema: z.object({}),
   parse() {
     return {};
   },
   toAppUrl() {
-    return new URL('sgnl://show-window');
+    return new URL('tellomi://show-window');
   },
 });
 
@@ -546,13 +541,13 @@ export const showWindowRoute = _route('showWindow', {
  * ```
  */
 export const cancelPresentingRoute = _route('cancelPresenting', {
-  patterns: [_pattern('sgnl:', 'cancel-presenting', '{/}?', {})],
+  patterns: [_pattern('tellomi:', 'cancel-presenting', '{/}?', {})],
   schema: z.object({}),
   parse() {
     return {};
   },
   toAppUrl() {
-    return new URL('sgnl://cancel-presenting');
+    return new URL('tellomi://cancel-presenting');
   },
 });
 
@@ -570,7 +565,7 @@ export const donationValidationCompleteRoute = _route(
   'donationValidationComplete',
   {
     patterns: [
-      _pattern('sgnl:', 'donation-validation-complete', '{/}?', {
+      _pattern('tellomi:', 'donation-validation-complete', '{/}?', {
         search: ':params',
       }),
     ],
@@ -586,7 +581,7 @@ export const donationValidationCompleteRoute = _route(
     toAppUrl(args) {
       const params = new URLSearchParams({ token: args.token });
       return new URL(
-        `sgnl://donation-validation-complete?${params.toString()}`
+        `tellomi://donation-validation-complete?${params.toString()}`
       );
     },
   }
@@ -604,7 +599,7 @@ export const donationValidationCompleteRoute = _route(
  */
 export const donationPaypalApprovedRoute = _route('donationPaypalApproved', {
   patterns: [
-    _pattern('sgnl:', 'paypal', '{/}?', {
+    _pattern('tellomi:', 'paypal', '{/}?', {
       search: `action=${PaypalAction.Approve}:params*`,
     }),
   ],
@@ -646,7 +641,7 @@ export const donationPaypalApprovedRoute = _route('donationPaypalApproved', {
  */
 export const donationPaypalCanceledRoute = _route('donationPaypalCanceled', {
   patterns: [
-    _pattern('sgnl:', 'paypal', '{/}?', {
+    _pattern('tellomi:', 'paypal', '{/}?', {
       search: `action=${PaypalAction.Cancel}:params*`,
     }),
   ],

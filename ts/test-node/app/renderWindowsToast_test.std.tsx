@@ -17,7 +17,7 @@ describe('renderWindowsToast', () => {
     });
 
     const expected = [
-      '<toast launch="sgnl://show-conversation?token=token" activationType="protocol">',
+      '<toast launch="tellomi://show-conversation?token=token" activationType="protocol">',
       '<visual>',
       '<binding template="ToastImageAndText02">',
       '<image id="1" src="file:///C:/temp/ab/abcd" hint-crop="circle"></image>',
@@ -41,7 +41,7 @@ describe('renderWindowsToast', () => {
     });
 
     const expected = [
-      '<toast launch="sgnl://show-conversation?token=token" activationType="protocol">',
+      '<toast launch="tellomi://show-conversation?token=token" activationType="protocol">',
       '<visual>',
       '<binding template="ToastText02">',
       '<text id="1">Alice</text>',
@@ -64,7 +64,7 @@ describe('renderWindowsToast', () => {
     });
 
     const expected = [
-      '<toast launch="sgnl://show-conversation?token=token" activationType="protocol">',
+      '<toast launch="tellomi://show-conversation?token=token" activationType="protocol">',
       '<visual>',
       '<binding template="ToastText02">',
       '<text id="1">Alice</text>',
@@ -87,7 +87,7 @@ describe('renderWindowsToast', () => {
     });
 
     const expected = [
-      '<toast launch="sgnl://show-window" activationType="protocol">',
+      '<toast launch="tellomi://show-window" activationType="protocol">',
       '<visual>',
       '<binding template="ToastText02">',
       '<text id="1">Alice</text>',
@@ -109,7 +109,7 @@ describe('renderWindowsToast', () => {
     });
 
     const expected = [
-      '<toast launch="sgnl://start-call-lobby?token=token" activationType="protocol">',
+      '<toast launch="tellomi://start-call-lobby?token=token" activationType="protocol">',
       '<visual>',
       '<binding template="ToastText02">',
       '<text id="1">Alice</text>',
@@ -131,7 +131,7 @@ describe('renderWindowsToast', () => {
     });
 
     const expected = [
-      '<toast launch="sgnl://cancel-presenting" activationType="protocol">',
+      '<toast launch="tellomi://cancel-presenting" activationType="protocol">',
       '<visual>',
       '<binding template="ToastText02">',
       '<text id="1">Alice</text>',

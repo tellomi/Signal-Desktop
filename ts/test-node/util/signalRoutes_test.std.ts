@@ -48,16 +48,16 @@ describe('signalRoutes', () => {
     // Charles Entertainment Cheese, what are you doing here?
     check('https://www.chuckecheese.com/#p/+1234567890', null);
     // Non-route signal urls
-    check('https://signal.me', null);
-    check('sgnl://signal.me/#p', null);
-    check('sgnl://signal.me/#p/', null);
-    check('sgnl://signal.me/p/+1234567890', null);
-    check('https://signal.me/?p/+1234567890', null);
+    check('https://tell.cc', null);
+    check('tellomi://tell.cc/#p', null);
+    check('tellomi://tell.cc/#p/', null);
+    check('tellomi://tell.cc/p/+1234567890', null);
+    check('https://tell.cc/?p/+1234567890', null);
   });
 
   it('normalize', () => {
     const check = createCheck({ isRoute: false, hasAppUrl: true });
-    check('http://username:password@signal.me:8888/#p/+1234567890', null);
+    check('http://username:password@tell.cc:8888/#p/+1234567890', null);
   });
 
   it('contactByPhoneNumber', () => {
@@ -66,10 +66,10 @@ describe('signalRoutes', () => {
       args: { phoneNumber: '+1234567890' },
     };
     const check = createCheck();
-    check('https://signal.me/#p/+1234567890', result);
-    check('https://signal.me#p/+1234567890', result);
-    check('sgnl://signal.me/#p/+1234567890', result);
-    check('sgnl://signal.me#p/+1234567890', result);
+    check('https://tell.cc/#p/+1234567890', result);
+    check('https://tell.cc#p/+1234567890', result);
+    check('tellomi://tell.cc/#p/+1234567890', result);
+    check('tellomi://tell.cc#p/+1234567890', result);
   });
 
   it('contactByEncryptedUsername', () => {
@@ -78,10 +78,10 @@ describe('signalRoutes', () => {
       args: { encryptedUsername: foo },
     };
     const check = createCheck();
-    check(`https://signal.me/#eu/${foo}`, result);
-    check(`https://signal.me#eu/${foo}`, result);
-    check(`sgnl://signal.me/#eu/${foo}`, result);
-    check(`sgnl://signal.me#eu/${foo}`, result);
+    check(`https://tell.cc/#eu/${foo}`, result);
+    check(`https://tell.cc#eu/${foo}`, result);
+    check(`tellomi://tell.cc/#eu/${foo}`, result);
+    check(`tellomi://tell.cc#eu/${foo}`, result);
   });
 
   it('groupInvites', () => {
@@ -90,12 +90,12 @@ describe('signalRoutes', () => {
       args: { inviteCode: fooNoSlash },
     };
     const check = createCheck();
-    check(`https://signal.group/#${fooNoSlash}`, result);
-    check(`https://signal.group#${fooNoSlash}`, result);
-    check(`sgnl://signal.group/#${fooNoSlash}`, result);
-    check(`sgnl://signal.group#${fooNoSlash}`, result);
-    check(`sgnl://joingroup/#${fooNoSlash}`, result);
-    check(`sgnl://joingroup#${fooNoSlash}`, result);
+    check(`https://tell.cc/g#${fooNoSlash}`, result);
+    check(`https://tell.cc/g#${fooNoSlash}`, result);
+    check(`tellomi://tell.cc/g#${fooNoSlash}`, result);
+    check(`tellomi://tell.cc/g#${fooNoSlash}`, result);
+    check(`tellomi://joingroup/#${fooNoSlash}`, result);
+    check(`tellomi://joingroup#${fooNoSlash}`, result);
   });
 
   it('linkDevice without capabilities', () => {
@@ -104,8 +104,8 @@ describe('signalRoutes', () => {
       args: { uuid: foo, pubKey: foo, capabilities: [] },
     };
     const check = createCheck({ hasWebUrl: false });
-    check(`sgnl://linkdevice/?uuid=${foo}&pub_key=${foo}`, result);
-    check(`sgnl://linkdevice?uuid=${foo}&pub_key=${foo}`, result);
+    check(`tellomi://linkdevice/?uuid=${foo}&pub_key=${foo}`, result);
+    check(`tellomi://linkdevice?uuid=${foo}&pub_key=${foo}`, result);
   });
 
   it('linkDevice with one capability', () => {
@@ -115,7 +115,7 @@ describe('signalRoutes', () => {
     };
     const check = createCheck({ hasWebUrl: false });
     check(
-      `sgnl://linkdevice/?uuid=${foo}&pub_key=${foo}&capabilities=backup`,
+      `tellomi://linkdevice/?uuid=${foo}&pub_key=${foo}&capabilities=backup`,
       result
     );
   });
@@ -127,7 +127,7 @@ describe('signalRoutes', () => {
     };
     const check = createCheck({ hasWebUrl: false });
     check(
-      `sgnl://linkdevice/?uuid=${foo}&pub_key=${foo}&capabilities=a%2Cb`,
+      `tellomi://linkdevice/?uuid=${foo}&pub_key=${foo}&capabilities=a%2Cb`,
       result
     );
   });
@@ -140,7 +140,7 @@ describe('signalRoutes', () => {
       args: { captchaId },
     };
     const check = createCheck({ hasWebUrl: false });
-    check(`signalcaptcha://${captchaId}`, result);
+    check(`tellomicaptcha://${captchaId}`, result);
   });
 
   it('captcha with a trailing slash', () => {
@@ -151,7 +151,7 @@ describe('signalRoutes', () => {
       args: { captchaId },
     };
     const check = createCheck({ hasWebUrl: false });
-    check(`signalcaptcha://${captchaId}/`, result);
+    check(`tellomicaptcha://${captchaId}/`, result);
   });
 
   it('linkCall', () => {
@@ -160,10 +160,10 @@ describe('signalRoutes', () => {
       args: { key: foo },
     };
     const check = createCheck();
-    check(`https://signal.link/call/#key=${foo}`, result);
-    check(`https://signal.link/call#key=${foo}`, result);
-    check(`sgnl://signal.link/call/#key=${foo}`, result);
-    check(`sgnl://signal.link/call#key=${foo}`, result);
+    check(`https://tell.cc/call/#key=${foo}`, result);
+    check(`https://tell.cc/call#key=${foo}`, result);
+    check(`tellomi://tell.cc/call/#key=${foo}`, result);
+    check(`tellomi://tell.cc/call#key=${foo}`, result);
   });
 
   it('artAddStickers', () => {
@@ -173,15 +173,15 @@ describe('signalRoutes', () => {
     };
     const check = createCheck();
     check(
-      `https://signal.art/addstickers/#pack_id=${foo}&pack_key=${foo}`,
+      `https://tell.cc/s/#pack_id=${foo}&pack_key=${foo}`,
       result
     );
     check(
-      `https://signal.art/addstickers#pack_id=${foo}&pack_key=${foo}`,
+      `https://tell.cc/s#pack_id=${foo}&pack_key=${foo}`,
       result
     );
-    check(`sgnl://addstickers/?pack_id=${foo}&pack_key=${foo}`, result);
-    check(`sgnl://addstickers?pack_id=${foo}&pack_key=${foo}`, result);
+    check(`tellomi://addstickers/?pack_id=${foo}&pack_key=${foo}`, result);
+    check(`tellomi://addstickers?pack_id=${foo}&pack_key=${foo}`, result);
   });
 
   it('showConversation', () => {
@@ -191,8 +191,8 @@ describe('signalRoutes', () => {
       key: 'showConversation',
       args: { token: foo },
     };
-    check(`sgnl://show-conversation/?${args1}`, result1);
-    check(`sgnl://show-conversation?${args1}`, result1);
+    check(`tellomi://show-conversation/?${args1}`, result1);
+    check(`tellomi://show-conversation?${args1}`, result1);
   });
 
   it('startCallLobby', () => {
@@ -201,8 +201,8 @@ describe('signalRoutes', () => {
       args: { token: foo },
     };
     const check = createCheck({ isRoute: true, hasWebUrl: false });
-    check(`sgnl://start-call-lobby/?token=${foo}`, result);
-    check(`sgnl://start-call-lobby?token=${foo}`, result);
+    check(`tellomi://start-call-lobby/?token=${foo}`, result);
+    check(`tellomi://start-call-lobby?token=${foo}`, result);
   });
 
   it('showWindow', () => {
@@ -211,8 +211,8 @@ describe('signalRoutes', () => {
       args: {},
     };
     const check = createCheck({ isRoute: true, hasWebUrl: false });
-    check('sgnl://show-window/', result);
-    check('sgnl://show-window', result);
+    check('tellomi://show-window/', result);
+    check('tellomi://show-window', result);
   });
 
   it('cancelPresenting', () => {
@@ -221,7 +221,7 @@ describe('signalRoutes', () => {
       args: {},
     };
     const check = createCheck({ isRoute: true, hasWebUrl: false });
-    check('sgnl://cancel-presenting/', result);
-    check('sgnl://cancel-presenting', result);
+    check('tellomi://cancel-presenting/', result);
+    check('tellomi://cancel-presenting', result);
   });
 });

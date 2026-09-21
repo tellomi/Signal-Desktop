@@ -2670,22 +2670,22 @@ app.on(
   }
 );
 
-if (!app.isDefaultProtocolClient('sgnl')) {
-  log.info('setting signal as the default app for the sgnl url scheme');
-  app.setAsDefaultProtocolClient('sgnl');
+if (!app.isDefaultProtocolClient('tellomi')) {
+  log.info('setting signal as the default app for the tellomi url scheme');
+  app.setAsDefaultProtocolClient('tellomi');
 } else {
   log.info(
-    'signal is already registered as the default app for the sgnl url scheme.'
+    'signal is already registered as the default app for the tellomi url scheme.'
   );
 }
-if (!app.isDefaultProtocolClient('signalcaptcha')) {
+if (!app.isDefaultProtocolClient('tellomicaptcha')) {
   log.info(
-    'setting signal as the default app for the signalcaptcha url scheme'
+    'setting signal as the default app for the tellomicaptcha url scheme'
   );
-  app.setAsDefaultProtocolClient('signalcaptcha');
+  app.setAsDefaultProtocolClient('tellomicaptcha');
 } else {
   log.info(
-    'signal is already registered as the default app for the sgnl url scheme.'
+    'signal is already registered as the default app for the tellomi url scheme.'
   );
 }
 
