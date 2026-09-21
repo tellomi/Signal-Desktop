@@ -150,6 +150,7 @@ export type StorageAccessType = {
   useRingrtcAdm: boolean;
   pni: string;
   version: string;
+  upstreamBase: string;   // Tellomi: upstream Signal-Desktop base the last run was built from (see util/tellomiVersion)
   linkPreviews: boolean;
   universalExpireTimer: number;
   retryPlaceholders: ReadonlyArray<RetryItemType>;
@@ -411,6 +412,7 @@ export const STORAGE_KEYS_TO_PRESERVE_AFTER_UNLINK = [
   'blockedMessageMigrationVersion',
   'chromiumRegistrationDoneEver',
   'version',
+  'upstreamBase',
   'number_id',
   'uuid_id',
   'pni',

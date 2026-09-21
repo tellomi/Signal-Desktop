@@ -6,6 +6,7 @@ import { createRoot } from 'react-dom/client';
 import PQueue from 'p-queue';
 import pMap from 'p-map';
 import { v7 as generateUuid } from 'uuid';
+import { TELLOMI_UPSTREAM_BASE, isTellomiVersion } from './util/tellomiVersion.std.ts';
 
 import * as Registration from './util/registration.preload.ts';
 import MessageReceiver from './textsecure/MessageReceiver.preload.ts';
@@ -431,6 +432,7 @@ async function startApp(): Promise<void> {
 
   let newVersion = false;
   let lastVersion: string | undefined;
+  let lastUpstreamBaseAtStartup: string = TELLOMI_UPSTREAM_BASE;   // Tellomi
 
   window.document.title = window.getTitle();
 
@@ -897,6 +899,15 @@ async function startApp(): Promise<void> {
     newVersion = !lastVersion || currentVersion !== lastVersion;
     await itemStorage.put('version', currentVersion);
 
+    // Tellomi: upstream migrations below compare against the upstream base we were built from (see
+    // ts/util/tellomiVersion.std.ts). A profile created by an upstream-versioned build (8.27.0 dev builds) carries its
+    // version as the base; a profile created by a Tellomi 0.x build has no upstream history and skips them.
+    const lastUpstreamBase: string =
+      itemStorage.get('upstreamBase') ??
+      (isTellomiVersion(lastVersion) ? TELLOMI_UPSTREAM_BASE : (lastVersion ?? TELLOMI_UPSTREAM_BASE));
+    await itemStorage.put('upstreamBase', TELLOMI_UPSTREAM_BASE);
+    lastUpstreamBaseAtStartup = lastUpstreamBase;
+
     if (newVersion && lastVersion) {
       log.info(
         `New version detected: ${currentVersion}; previous: ${lastVersion}`
@@ -928,7 +939,7 @@ async function startApp(): Promise<void> {
         );
       }
 
-      if (window.isBeforeVersion(lastVersion, '8.28.0-alpha')) {
+      if (window.isBeforeVersion(lastUpstreamBase, '8.28.0-alpha')) {
         await removeStorageKeyJobQueue.add({
           key: 'isDirectVp9Enabled',
         });
@@ -937,13 +948,13 @@ async function startApp(): Promise<void> {
         });
       }
 
-      if (window.isBeforeVersion(lastVersion, '6.45.0-alpha')) {
+      if (window.isBeforeVersion(lastUpstreamBase, '6.45.0-alpha')) {
         await removeStorageKeyJobQueue.add({
           key: 'previousAudioDeviceModule',
         });
       }
 
-      if (window.isBeforeVersion(lastVersion, '6.25.0-alpha')) {
+      if (window.isBeforeVersion(lastUpstreamBase, '6.25.0-alpha')) {
         await removeStorageKeyJobQueue.add({
           key: 'nextSignedKeyRotationTime',
         });
@@ -952,7 +963,7 @@ async function startApp(): Promise<void> {
         });
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v1.29.2-beta.1')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v1.29.2-beta.1')) {
         // Stickers flags
         await Promise.all([
           itemStorage.put('showStickersIntroduction', true),
@@ -960,34 +971,34 @@ async function startApp(): Promise<void> {
         ]);
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v1.32.0-beta.4')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v1.32.0-beta.4')) {
         drop(DataWriter.ensureFilePermissions());
       }
 
       if (
-        window.isBeforeVersion(lastVersion, 'v1.36.0-beta.1') &&
+        window.isBeforeVersion(lastUpstreamBase, 'v1.36.0-beta.1') &&
         window.isAfterVersion(lastVersion, 'v1.35.0-beta.1')
       ) {
         await StorageService.eraseAllStorageServiceState();
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v5.2.0')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v5.2.0')) {
         const legacySenderCertificateStorageKey = 'senderCertificateWithUuid';
         await removeStorageKeyJobQueue.add({
           key: legacySenderCertificateStorageKey,
         });
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v5.18.0')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v5.18.0')) {
         await itemStorage.remove('senderCertificate');
         await itemStorage.remove('senderCertificateNoE164');
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v5.19.0')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v5.19.0')) {
         await itemStorage.remove(GROUP_CREDENTIALS_KEY);
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v5.37.0-alpha')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v5.37.0-alpha')) {
         const legacyChallengeKey = 'challenge:retry-message-ids';
         await removeStorageKeyJobQueue.add({
           key: legacyChallengeKey,
@@ -996,51 +1007,51 @@ async function startApp(): Promise<void> {
         await DataWriter.clearAllErrorStickerPackAttempts();
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v5.51.0-beta.2')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v5.51.0-beta.2')) {
         await itemStorage.put('groupCredentials', []);
         await DataWriter.removeAllProfileKeyCredentials();
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v6.38.0-beta.1')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v6.38.0-beta.1')) {
         await itemStorage.remove('hasCompletedSafetyNumberOnboarding');
       }
 
       // This one should always be last - it could restart the app
-      if (window.isBeforeVersion(lastVersion, 'v5.30.0-alpha')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v5.30.0-alpha')) {
         await deleteAllLogs();
         window.SignalContext.restartApp();
         return;
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v7.3.0-beta.1')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v7.3.0-beta.1')) {
         await itemStorage.remove('lastHeartbeat');
         await itemStorage.remove('lastStartup');
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v7.8.0-beta.1')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v7.8.0-beta.1')) {
         await itemStorage.remove('sendEditWarningShown');
         await itemStorage.remove('formattingWarningShown');
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v7.21.0-beta.1')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v7.21.0-beta.1')) {
         await itemStorage.remove(
           'hasRegisterSupportForUnauthenticatedDelivery'
         );
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v7.33.0-beta.1')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v7.33.0-beta.1')) {
         await itemStorage.remove('masterKeyLastRequestTime');
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v7.43.0-beta.1')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v7.43.0-beta.1')) {
         await itemStorage.remove('primarySendsSms');
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v7.56.0-beta.1')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v7.56.0-beta.1')) {
         await itemStorage.remove('backupMediaDownloadIdle');
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v7.75.0-beta.1')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v7.75.0-beta.1')) {
         const hasAllChatsChatFolder = await DataReader.hasAllChatsChatFolder();
         if (!hasAllChatsChatFolder) {
           log.info('Creating "all chats" chat folder');
@@ -1051,7 +1062,7 @@ async function startApp(): Promise<void> {
         }
       }
 
-      if (window.isBeforeVersion(lastVersion, 'v7.91.0-beta.1')) {
+      if (window.isBeforeVersion(lastUpstreamBase, 'v7.91.0-beta.1')) {
         await itemStorage.remove('versionedExpirationTimer');
         await itemStorage.remove('callQualitySurveyCooldownDisabled');
         await itemStorage.remove('localDeleteWarningShown');
@@ -1101,7 +1112,7 @@ async function startApp(): Promise<void> {
     if (
       newVersion &&
       lastVersion &&
-      window.isBeforeVersion(lastVersion, 'v7.18.0-beta.1')
+      window.isBeforeVersion(lastUpstreamBase, 'v7.18.0-beta.1')
     ) {
       await encryptConversationAttachments();
       await Stickers.encryptLegacyStickers();
@@ -1447,14 +1458,16 @@ async function startApp(): Promise<void> {
     }
 
     if (newVersion && lastVersion) {
-      if (window.isBeforeVersion(lastVersion, 'v5.31.0')) {
+      // Tellomi: 同上，按上游基线比较（见 tellomiVersion.std.ts）；此处 itemStorage 里已是本次的基线，取启动时记下的那份
+      const lastUpstreamBase = lastUpstreamBaseAtStartup;
+      if (window.isBeforeVersion(lastUpstreamBase, 'v5.31.0')) {
         window.ConversationController.repairPinnedConversations();
       }
 
       // Existing accounts keep notifying for calls in muted chats; new installs
       // leave this unset, which means calls will not ring in muted chats.
       if (
-        window.isBeforeVersion(lastVersion, '8.29.0-alpha') &&
+        window.isBeforeVersion(lastUpstreamBase, '8.29.0-alpha') &&
         itemStorage.get('notifyForCallsIfMuted') == null
       ) {
         log.info(
