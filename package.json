@@ -543,10 +543,10 @@
       ]
     },
     "protocols": {
-      "name": "sgnl-url-scheme",
+      "name": "tellomi-url-scheme",
       "schemes": [
-        "sgnl",
-        "signalcaptcha"
+        "tellomi",
+        "tellomicaptcha"
       ]
     },
     "artifactBuildCompleted": "scripts/artifact-build-completed.mjs",
