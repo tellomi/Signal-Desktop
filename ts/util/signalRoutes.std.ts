@@ -280,6 +280,37 @@ export const contactByEncryptedUsernameRoute = _route(
 );
 
 /**
+ * Tellomi: contact by plain username (t.me-style share links `https://tell.cc/<username>`;
+ * the landing page turns the path into `tellomi://tell.cc/u#u/<username>`). The username is
+ * resolved client-side through the normal username-hash lookup, so it never hits our servers.
+ * @example
+ * ```ts
+ * contactByUsernameRoute.toWebUrl({ username: "ceshi.57" })
+ * // URL { "https://tell.cc/ceshi.57" }
+ * ```
+ */
+export const contactByUsernameRoute = _route('contactByUsername', {
+  patterns: [
+    _pattern('https:', 'tell.cc', '/u{/}?', { hash: 'u/:username' }),
+    _pattern('tellomi:', 'tell.cc', '/u{/}?', { hash: 'u/:username' }),
+  ],
+  schema: z.object({
+    username: z.string().regex(/^[a-zA-Z_][a-zA-Z0-9_]{2,31}\.[0-9]{2,9}$/),
+  }),
+  parse(result) {
+    return {
+      username: result.hash.groups.username,
+    };
+  },
+  toWebUrl(args) {
+    return new URL(`https://tell.cc/${args.username}`);
+  },
+  toAppUrl(args) {
+    return new URL(`tellomi://tell.cc/u#u/${args.username}`);
+  },
+});
+
+/**
  * Group invites
  * @example
  * ```ts
@@ -673,6 +704,7 @@ export const donationPaypalCanceledRoute = _route('donationPaypalCanceled', {
 const _allSignalRoutes = [
   contactByPhoneNumberRoute,
   contactByEncryptedUsernameRoute,
+  contactByUsernameRoute,
   groupInvitesRoute,
   linkDeviceRoute,
   captchaRoute,

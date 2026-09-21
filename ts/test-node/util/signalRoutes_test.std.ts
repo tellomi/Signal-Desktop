@@ -85,6 +85,20 @@ describe('signalRoutes', () => {
     check(`tellomi://tell.cc/u/#eu/${foo}`, result);
   });
 
+  it('contactByUsername', () => {
+    const result: ParsedSignalRoute = {
+      key: 'contactByUsername',
+      args: { username: 'ceshi.57' },
+    };
+    const check = createCheck();
+    check('https://tell.cc/u#u/ceshi.57', result);
+    check('https://tell.cc/u/#u/ceshi.57', result);
+    check('tellomi://tell.cc/u#u/ceshi.57', result);
+    const invalid = createCheck({ isRoute: false, hasAppUrl: false, hasWebUrl: false });
+    invalid('https://tell.cc/u#u/nope', null);   // 用户名必须带 .数字 后缀
+    invalid('https://tell.cc/u#u/', null);
+  });
+
   it('groupInvites', () => {
     const result: ParsedSignalRoute = {
       key: 'groupInvites',

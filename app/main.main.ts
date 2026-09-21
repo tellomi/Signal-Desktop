@@ -3054,6 +3054,11 @@ function handleSignalRoute(route: ParsedSignalRoute) {
       kind: 'encryptedUsername',
       value: route.args.encryptedUsername,
     });
+  } else if (route.key === 'contactByUsername') {
+    mainWindow.webContents.send('show-conversation-via-signal.me', {
+      kind: 'username',
+      value: route.args.username,
+    });
   } else if (route.key === 'showConversation') {
     mainWindow.webContents.send(
       'show-conversation-via-token',
