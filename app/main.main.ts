@@ -2670,6 +2670,12 @@ app.on(
   }
 );
 
+// Tellomi: register the legacy schemes too during the per-client migration (see docs/signal/LINKS_AND_SCHEMES.md)
+for (const legacyScheme of ['sgnl', 'signalcaptcha']) {
+  if (!app.isDefaultProtocolClient(legacyScheme)) {
+    app.setAsDefaultProtocolClient(legacyScheme);
+  }
+}
 if (!app.isDefaultProtocolClient('tellomi')) {
   log.info('setting signal as the default app for the tellomi url scheme');
   app.setAsDefaultProtocolClient('tellomi');

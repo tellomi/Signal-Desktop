@@ -546,7 +546,9 @@
       "name": "tellomi-url-scheme",
       "schemes": [
         "tellomi",
-        "tellomicaptcha"
+        "tellomicaptcha",
+        "sgnl",
+        "signalcaptcha"
       ]
     },
     "artifactBuildCompleted": "scripts/artifact-build-completed.mjs",

@@ -29,13 +29,15 @@ function toUrl(input: URL | string): URL | null {
  * List of protocols that are used by Signal routes.
  */
 // Tellomi: sgnl → tellomi, signalcaptcha → tellomicaptcha (docs/signal/LINKS_AND_SCHEMES.md)
-const SignalRouteProtocols = ['https:', 'tellomi:', 'tellomicaptcha:'] as const;
+// Tellomi: accept the legacy Signal scheme/hosts too, so each client can migrate on its own day;
+// generation (toWebUrl / toAppUrl) already emits the Tellomi forms.
+const SignalRouteProtocols = ['https:', 'tellomi:', 'tellomicaptcha:', 'sgnl:', 'signalcaptcha:'] as const;
 
 /**
  * List of hostnames that are used by Signal routes.
  * This doesn't include app-only routes like `linkdevice` or `verify`.
  */
-const SignalRouteHostnames = ['tell.cc', 'signaldonations.org'] as const;
+const SignalRouteHostnames = ['tell.cc', 'signal.me', 'signal.group', 'signal.link', 'signal.art', 'signaldonations.org'] as const;
 
 /**
  * Type to help maintain {@link SignalRouteHostnames}, real hostnames should go there.
@@ -225,7 +227,9 @@ const paramSchema = z.string().min(1);
 const contactByPhoneNumberRoute = _route('contactByPhoneNumber', {
   patterns: [
     _pattern('https:', 'tell.cc', '/u{/}?', { hash: 'p/:phoneNumber' }),
+    _pattern('https:', 'signal.me', '{/}?', { hash: 'p/:phoneNumber' }),
     _pattern('tellomi:', 'tell.cc', '/u{/}?', { hash: 'p/:phoneNumber' }),
+    _pattern('sgnl:', 'signal.me', '{/}?', { hash: 'p/:phoneNumber' }),
   ],
   schema: z.object({
     phoneNumber: paramSchema, // E164 (with +)
@@ -260,7 +264,9 @@ export const contactByEncryptedUsernameRoute = _route(
       _pattern('https:', 'tell.cc', '/u{/}?', {
         hash: 'eu/:encryptedUsername',
       }),
+      _pattern('https:', 'signal.me', '{/}?', { hash: 'eu/:encryptedUsername' }),
       _pattern('tellomi:', 'tell.cc', '/u{/}?', { hash: 'eu/:encryptedUsername' }),
+      _pattern('sgnl:', 'signal.me', '{/}?', { hash: 'eu/:encryptedUsername' }),
     ],
     schema: z.object({
       encryptedUsername: paramSchema, // base64url (32 bytes of entropy + 16 bytes of big-endian UUID)
@@ -328,7 +334,10 @@ export const groupInvitesRoute = _route('groupInvites', {
     _pattern('tellomi:', 'tell.cc', '/g{/}?', {
       hash: ':inviteCode([^\\/]+)',
     }),
+    _pattern('https:', 'signal.group', '{/}?', { hash: ':inviteCode([^\\/]+)' }),
+    _pattern('sgnl:', 'signal.group', '{/}?', { hash: ':inviteCode([^\\/]+)' }),
     _pattern('tellomi:', 'joingroup', '{/}?', { hash: ':inviteCode([^\\/]+)' }),
+    _pattern('sgnl:', 'joingroup', '{/}?', { hash: ':inviteCode([^\\/]+)' }),
   ],
   schema: z.object({
     inviteCode: paramSchema, // base64url (GroupInviteLink proto)
@@ -359,7 +368,10 @@ export const groupInvitesRoute = _route('groupInvites', {
  * ```
  */
 export const linkDeviceRoute = _route('linkDevice', {
-  patterns: [_pattern('tellomi:', 'linkdevice', '{/}?', { search: ':params' })],
+  patterns: [
+    _pattern('tellomi:', 'linkdevice', '{/}?', { search: ':params' }),
+    _pattern('sgnl:', 'linkdevice', '{/}?', { search: ':params' }),
+  ],
   schema: z.object({
     uuid: paramSchema, // base64url?
     pubKey: paramSchema, // percent-encoded base64 (with padding) of PublicKey with type byte included
@@ -379,7 +391,9 @@ export const linkDeviceRoute = _route('linkDevice', {
       pub_key: args.pubKey,
       capabilities: args.capabilities.join(','),
     });
-    return new URL(`tellomi://linkdevice?${params.toString()}`);
+    // Tellomi: keep emitting the legacy scheme in the pairing QR until Android/iOS accept tellomi://linkdevice
+    // (they scan this; the Desktop side already accepts both). Flip to tellomi:// in the same PR that updates them.
+    return new URL(`sgnl://linkdevice?${params.toString()}`);
   },
 });
 
@@ -395,7 +409,10 @@ export const linkDeviceRoute = _route('linkDevice', {
  */
 const captchaRoute = _route('captcha', {
   // needs `(.+)` to capture `.` in hostname
-  patterns: [_pattern('tellomicaptcha:', ':captchaId(.+)', '{/}?', {})],
+  patterns: [
+    _pattern('tellomicaptcha:', ':captchaId(.+)', '{/}?', {}),
+    _pattern('signalcaptcha:', ':captchaId(.+)', '{/}?', {}),
+  ],
   schema: z.object({
     captchaId: paramSchema, // opaque
   }),
@@ -421,7 +438,9 @@ const captchaRoute = _route('captcha', {
 export const linkCallRoute = _route('linkCall', {
   patterns: [
     _pattern('https:', 'tell.cc', '/call{/}?', { hash: ':params' }),
+    _pattern('https:', 'signal.link', '/call{/}?', { hash: ':params' }),
     _pattern('tellomi:', 'tell.cc', '/call{/}?', { hash: ':params' }),
+    _pattern('sgnl:', 'signal.link', '/call{/}?', { hash: ':params' }),
   ],
   schema: z.object({
     key: paramSchema, // ConsonantBase16
@@ -456,7 +475,9 @@ export const linkCallRoute = _route('linkCall', {
 export const artAddStickersRoute = _route('artAddStickers', {
   patterns: [
     _pattern('https:', 'tell.cc', '/s{/}?', { hash: ':params' }),
+    _pattern('https:', 'signal.art', '/addstickers{/}?', { hash: ':params' }),
     _pattern('tellomi:', 'addstickers', '{/}?', { search: ':params' }),
+    _pattern('sgnl:', 'addstickers', '{/}?', { search: ':params' }),
   ],
   schema: z.object({
     packId: paramSchema, // hexadecimal
@@ -500,6 +521,7 @@ export const artAddStickersRoute = _route('artAddStickers', {
 export const showConversationRoute = _route('showConversation', {
   patterns: [
     _pattern('tellomi:', 'show-conversation', '{/}?', { search: ':params' }),
+    _pattern('sgnl:', 'show-conversation', '{/}?', { search: ':params' }),
   ],
   schema: z.object({
     token: paramSchema,
@@ -529,6 +551,7 @@ export const showConversationRoute = _route('showConversation', {
 export const startCallLobbyRoute = _route('startCallLobby', {
   patterns: [
     _pattern('tellomi:', 'start-call-lobby', '{/}?', { search: ':params' }),
+    _pattern('sgnl:', 'start-call-lobby', '{/}?', { search: ':params' }),
   ],
   schema: z.object({
     token: paramSchema,

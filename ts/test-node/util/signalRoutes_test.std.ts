@@ -99,6 +99,20 @@ describe('signalRoutes', () => {
     invalid('https://tell.cc/u#u/', null);
   });
 
+  it('legacy Signal forms still parse (per-client migration)', () => {
+    const check = createCheck();
+    check('https://signal.me/#p/+1234567890', { key: 'contactByPhoneNumber', args: { phoneNumber: '+1234567890' } });
+    check('sgnl://signal.me/#p/+1234567890', { key: 'contactByPhoneNumber', args: { phoneNumber: '+1234567890' } });
+    check(`https://signal.me/#eu/${foo}`, { key: 'contactByEncryptedUsername', args: { encryptedUsername: foo } });
+    check(`https://signal.group/#${fooNoSlash}`, { key: 'groupInvites', args: { inviteCode: fooNoSlash } });
+    check(`sgnl://signal.group/#${fooNoSlash}`, { key: 'groupInvites', args: { inviteCode: fooNoSlash } });
+    const appOnly = createCheck({ hasWebUrl: false });
+    appOnly(`sgnl://linkdevice?uuid=${foo}&pub_key=${foo}`, { key: 'linkDevice', args: { uuid: foo, pubKey: foo, capabilities: [] } });
+    check(`https://signal.link/call/#key=${foo}`, { key: 'linkCall', args: { key: foo } });
+    check(`https://signal.art/addstickers/#pack_id=${foo}&pack_key=${foo}`, { key: 'artAddStickers', args: { packId: foo, packKey: foo } });
+    appOnly('signalcaptcha://123', { key: 'captcha', args: { captchaId: '123' } });
+  });
+
   it('groupInvites', () => {
     const result: ParsedSignalRoute = {
       key: 'groupInvites',
