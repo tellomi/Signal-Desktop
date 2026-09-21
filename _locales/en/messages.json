@@ -100,7 +100,7 @@
     "description": "The title of the preferences pane for donating to signal"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "<bold>Linked Devices</bold> let you access your Signal account and messages securely on any of your additional devices.",
+    "messageformat": "<bold>Linked Devices</bold> let you access your Tellomi account and messages securely on any of your additional devices.",
     "description": "Description of the Linked Devices Onboarding Dialog"
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
@@ -164,11 +164,11 @@
     "description": "Shown as the name of a group if we don't have any information about it"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Can’t Open Signal",
+    "messageformat": "Can’t Open Tellomi",
     "description": "Title of a popup if the app cannot start up properly"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "To help fix the issue, follow the recovery guide on the support page or contact Signal support to help fix the issue.\n\nIf you need to use Signal right away, you can delete your data and relink this desktop. You will have the option to transfer message history from your phone.",
+    "messageformat": "To help fix the issue, follow the recovery guide on the support page or contact Tellomi support to help fix the issue.\n\nIf you need to use Tellomi right away, you can delete your data and relink this desktop. You will have the option to transfer message history from your phone.",
     "description": "Description shown in a popup if the app cannot start up properly"
   },
   "icu:databaseError": {
@@ -184,11 +184,11 @@
     "description": "Header of a confirmation popup shown if the database cannot start up properly and the user selects 'delete data and restart'"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "All of your message history and media will be permanently deleted from this device. This will not delete any data from your phone.\n\nYou will be able to use Signal on this device after relinking it. You will have the option to transfer message history from your phone.",
+    "messageformat": "All of your message history and media will be permanently deleted from this device. This will not delete any data from your phone.\n\nYou will be able to use Tellomi on this device after relinking it. You will have the option to transfer message history from your phone.",
     "description": "Description of a confirmation popup shown if the database cannot start up properly and the user selects 'delete data and restart'"
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "The version of your database does not match this version of Signal. Make sure you are opening the newest version of Signal on your computer.",
+    "messageformat": "The version of your database does not match this version of Tellomi. Make sure you are opening the newest version of Tellomi on your computer.",
     "description": "Text in a popup shown if the app cannot start because the user started an older version of Signal"
   },
   "icu:databaseError__safeStorageBackendChange": {
@@ -256,7 +256,7 @@
     "description": "Application menu command to show all application windows"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Quit Signal",
+    "messageformat": "Quit Tellomi",
     "description": "Application menu command to close the application"
   },
   "icu:editMenuUndo": {
@@ -688,11 +688,11 @@
     "description": "Shown in the conversation history when we discover that the user marked a contact as not verified on another device."
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "The safety number you are trying to verify has changed. Please review your new safety number with {name1}. Remember, this change could mean that someone is trying to intercept your communication or that {name2} has simply reinstalled Signal.",
+    "messageformat": "The safety number you are trying to verify has changed. Please review your new safety number with {name1}. Remember, this change could mean that someone is trying to intercept your communication or that {name2} has simply reinstalled Tellomi.",
     "description": "Shown on the safety number screen when the user has selected to verify/unverify a contact's safety number, and we immediately discover a safety number change"
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "The following people may have reinstalled Signal or changed devices. Click a recipient to confirm their new safety number. This is optional.",
+    "messageformat": "The following people may have reinstalled Tellomi or changed devices. Click a recipient to confirm their new safety number. This is optional.",
     "description": "Shown on confirmation dialog when user attempts to send a message"
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
@@ -704,7 +704,7 @@
     "description": "Shown to enter 'review' mode if more than five contacts have changed safety numbers"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "You have {count, plural, one {# connection} other {# connections}} who may have reinstalled Signal or changed devices. You can optionally review their safety numbers before sending.",
+    "messageformat": "You have {count, plural, one {# connection} other {# connections}} who may have reinstalled Tellomi or changed devices. You can optionally review their safety numbers before sending.",
     "description": "Shown during an attempted send when more than five contacts have changed their safety numbers"
   },
   "icu:safetyNumberChangeDialog__post-review": {
@@ -847,7 +847,7 @@
     "description": "A title of an education modal in Key Transparency section of SafetyNumberViewer when verification was successful"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "For people you’re connected to by phone number, Signal can automatically confirm whether the connection is secure using a process called key transparency. For added security, verify end-to-end encryption manually by comparing the numbers on the previous screen or scanning the code on their device.",
+    "messageformat": "For people you’re connected to by phone number, Tellomi can automatically confirm whether the connection is secure using a process called key transparency. For added security, verify end-to-end encryption manually by comparing the numbers on the previous screen or scanning the code on their device.",
     "description": "A body of an education modal in Key Transparency section of SafetyNumberViewer when verification was successful"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
@@ -855,11 +855,11 @@
     "description": "A title of an education modal in Key Transparency section of SafetyNumberViewer when verification was unsuccessful"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "Signal can not automatically verify the encryption for this chat. This could be because {name} changed their phone number or their phone number privacy settings. Verify end-to-end encryption manually by comparing the numbers on the previous screen or scanning the code on their device.",
+    "messageformat": "Tellomi can not automatically verify the encryption for this chat. This could be because {name} changed their phone number or their phone number privacy settings. Verify end-to-end encryption manually by comparing the numbers on the previous screen or scanning the code on their device.",
     "description": "A body of an education modal in Key Transparency section of SafetyNumberViewer when verification was unsuccessful"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "Signal can only automatically verify the encryption in chats where you’re connected to someone via a phone number. If the chat was started with a username or a group in common, verify end-to-end encryption by comparing the numbers on the previous screen or scanning the code on their device.",
+    "messageformat": "Tellomi can only automatically verify the encryption in chats where you’re connected to someone via a phone number. If the chat was started with a username or a group in common, verify end-to-end encryption by comparing the numbers on the previous screen or scanning the code on their device.",
     "description": "A body of an education modal in Key Transparency section of SafetyNumberViewer when verification is unavailable"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
@@ -911,11 +911,11 @@
     "description": "Cancel button text in the dialog shown when an unexpected key transparency error occurs. Clicking it will close the dialog"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "Signal can now auto-verify encryption",
+    "messageformat": "Tellomi can now auto-verify encryption",
     "description": "Key Transparency Onboarding Dialog > Title"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "For contacts you’re connected to by phone number, Signal can automatically confirm whether the connection is secure using a process called key transparency. For added security, you can still verify connections manually using a QR code or by comparing safety numbers.",
+    "messageformat": "For contacts you’re connected to by phone number, Tellomi can automatically confirm whether the connection is secure using a process called key transparency. For added security, you can still verify connections manually using a QR code or by comparing safety numbers.",
     "description": "Key Transparency Onboarding Dialog > Description"
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
@@ -1124,7 +1124,7 @@
     "description": "Title of the window that pops up with Signal Desktop preferences in it"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "About Signal Desktop",
+    "messageformat": "About Tellomi Desktop",
     "description": "Item under the Help menu, which opens a small about window"
   },
   "icu:screenShareWindow": {
@@ -1148,7 +1148,7 @@
     "description": "Command in the tray icon menu, to quit the application"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop",
+    "messageformat": "Tellomi Desktop",
     "description": "Tooltip for the tray icon"
   },
   "icu:search": {
@@ -1220,7 +1220,7 @@
     "description": "Shown when search could be a valid phone number, with one sub-item that will kick off the search"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Welcome to Signal"
+    "messageformat": "Welcome to Tellomi"
   },
   "icu:whatsNew": {
     "messageformat": "See {whatsNew} in this update",
@@ -1339,15 +1339,15 @@
     "description": "Shown when the user represented is the current user."
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "To send voice messages, allow Signal Desktop to access your microphone.",
+    "messageformat": "To send voice messages, allow Tellomi Desktop to access your microphone.",
     "description": "Shown if the user attempts to send an audio message without audio permissions turned on"
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "For calling, you must allow Signal Desktop to access your microphone.",
+    "messageformat": "For calling, you must allow Tellomi Desktop to access your microphone.",
     "description": "Shown if the user attempts access the microphone for calling without audio permissions turned on"
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "For video calling, you must allow Signal Desktop to access your camera.",
+    "messageformat": "For video calling, you must allow Tellomi Desktop to access your camera.",
     "description": "Shown if the user attempts access the camera for video calling without video permissions turned on"
   },
   "icu:allowAccess": {
@@ -1379,15 +1379,15 @@
     "description": "Shown in a button when a conversation is unmuted and can be muted"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal couldn't update. <retryUpdateButton>Retry update</retryUpdateButton> or visit {url} to install it manually. Then, <contactSupportLink>contact support</contactSupportLink> about this problem",
+    "messageformat": "Tellomi couldn't update. <retryUpdateButton>Retry update</retryUpdateButton> or visit {url} to install it manually. Then, <contactSupportLink>contact support</contactSupportLink> about this problem",
     "description": "Shown if a general error happened while trying to install update package"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal couldn't update. Visit {url} to install it manually. Then, <contactSupportLink>contact support</contactSupportLink> about this problem",
+    "messageformat": "Tellomi couldn't update. Visit {url} to install it manually. Then, <contactSupportLink>contact support</contactSupportLink> about this problem",
     "description": "Shown if a general error happened while trying to install update package and manual update is required"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal Desktop is likely in a macOS quarantine, and will not be able to auto-update. Please try moving {app} to {folder} with Finder.",
+    "messageformat": "Tellomi Desktop is likely in a macOS quarantine, and will not be able to auto-update. Please try moving {app} to {folder} with Finder.",
     "description": "Shown on MacOS if running on a read-only volume and we cannot update"
   },
   "icu:ok": {
@@ -1437,7 +1437,7 @@
     "description": "Text shown in the confirmation dialog for deleting a message locally"
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "This message will be deleted for everyone in the chat if they’re on a recent version of Signal. They will be able to see that you deleted a message.",
+    "messageformat": "This message will be deleted for everyone in the chat if they’re on a recent version of Tellomi. They will be able to see that you deleted a message.",
     "description": "Text shown in the confirmation dialog for deleting a message for everyone"
   },
   "icu:from": {
@@ -1491,7 +1491,7 @@
     "description": "Title of conversation when there is a nickname, example: 'Jim (James Smith)'"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "“{title}” is the profile name this person set for themselves in Signal.",
+    "messageformat": "“{title}” is the profile name this person set for themselves in Tellomi.",
     "description": "Tooltip for the non-nickname title of a conversation."
   },
   "icu:AboutContactModal__verified": {
@@ -1511,7 +1511,7 @@
     "description": "Text of a row on About modal when there are no direct messages with a user"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal Connection",
+    "messageformat": "Tellomi Connection",
     "description": "Text of a button on About modal leading to an education modal"
   },
   "icu:AboutContactModal__system-contact": {
@@ -1927,7 +1927,7 @@
     "description": "Shown in timeline when session is automatically reset, to provide access to a popup info dialog"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal uses end-to-end encryption and it may need to refresh your chat session sometimes. This doesn’t affect your chat’s security but you may have missed a message from this contact and you can ask them to resend it.",
+    "messageformat": "Tellomi uses end-to-end encryption and it may need to refresh your chat session sometimes. This doesn’t affect your chat’s security but you may have missed a message from this contact and you can ask them to resend it.",
     "description": "Shown on explainer dialog available from chat session refreshed timeline events"
   },
   "icu:ChatRefresh--contactSupport": {
@@ -1963,7 +1963,7 @@
     "description": "Shown in timeline when a member of a conversation changes their phone number"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Contact joined Signal",
+    "messageformat": "Contact joined Tellomi",
     "description": "Shown in timeline when a contact joins Signal"
   },
   "icu:ConversationMerge--notification": {
@@ -2083,7 +2083,7 @@
     "description": "Title for modal saying that message's attachments cannot be downloaded from the primary device"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Check your desktop and phone’s internet connection. Open Signal on your phone, then try downloading again.",
+    "messageformat": "Check your desktop and phone’s internet connection. Open Tellomi on your phone, then try downloading again.",
     "description": "Body for modal saying that message's attachments cannot be downloaded from the primary device due to timeout"
   },
   "icu:BackfillFailureModal__body--not-found": {
@@ -2111,11 +2111,11 @@
     "description": "Button text for learn more button during error screen"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Scan this code in the Signal app on your phone",
+    "messageformat": "Scan this code in the Tellomi app on your phone",
     "description": "Title of the device link screen. Also used as alt text for the QR code on the device link screen"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Open Signal on your phone",
+    "messageformat": "Open Tellomi on your phone",
     "description": "Instructions on the device link screen"
   },
   "icu:Install__instructions__2": {
@@ -2139,7 +2139,7 @@
     "description": "Shown on the install screen if the QR code fails to load due to an unknown error"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal cannot link this device using your current network.",
+    "messageformat": "Tellomi cannot link this device using your current network.",
     "description": "Shown on the install screen if the QR code fails to load due to a network error"
   },
   "icu:Install__qr-failed-load__retry": {
@@ -2163,7 +2163,7 @@
     "description": "Title of the confirmation dialog shown while relinking Signal Desktop if the new account would delete local data"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "You’re attempting to link a different Signal account to this desktop. If you continue, all data currently in Signal Desktop will be deleted.",
+    "messageformat": "You’re attempting to link a different Tellomi account to this desktop. If you continue, all data currently in Tellomi Desktop will be deleted.",
     "description": "Body of the confirmation dialog shown while relinking Signal Desktop if the new account would delete local data"
   },
   "icu:Install__confirm-data-deletion__continue": {
@@ -2183,7 +2183,7 @@
     "description": "The label in settings panel shown for the user-provided name for this desktop instance"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "To change the name of this device, open Signal on your phone and navigate to Settings > Linked devices",
+    "messageformat": "To change the name of this device, open Tellomi on your phone and navigate to Settings > Linked devices",
     "description": "Shown in the Settings window below the read-only device name"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
@@ -2439,7 +2439,7 @@
     "description": "Preferences > Privacy Page > Key Transparency Checkbox > Label"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "When enabled, Signal will attempt to automatically verify the encryption of 1:1 chats.",
+    "messageformat": "When enabled, Tellomi will attempt to automatically verify the encryption of 1:1 chats.",
     "description": "Preferences > Privacy Page > Key Transparency Checkbox > Description"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
@@ -2462,7 +2462,7 @@
     "messageformat": "Sorry, you have too many devices linked already. Try removing some."
   },
   "icu:installTooOld": {
-    "messageformat": "Update Signal on this device to link your phone."
+    "messageformat": "Update Tellomi on this device to link your phone."
   },
   "icu:installErrorHeader": {
     "messageformat": "Something went wrong!"
@@ -2526,7 +2526,7 @@
     "description": "Error message when a call link has been revoked or expires."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal Call",
+    "messageformat": "Tellomi Call",
     "description": "Default title for Signal call links."
   },
   "icu:calling__call-link-delete-failed": {
@@ -2758,19 +2758,19 @@
     "description": "Shown in the calling lobby to describe people in the call when all are unknown contacts"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal will ring {person}",
+    "messageformat": "Tellomi will ring {person}",
     "description": "Shown in the calling lobby to describe who will be rung"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal will ring {first} and {second}",
+    "messageformat": "Tellomi will ring {first} and {second}",
     "description": "Shown in the calling lobby to describe who will be rang"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal will ring {first}, {second}, and {third}",
+    "messageformat": "Tellomi will ring {first}, {second}, and {third}",
     "description": "Shown in the calling lobby to describe who will be rang"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "Signal will ring {first}, {second}, and {others, plural, one {#} other {#}} others",
+    "messageformat": "Tellomi will ring {first}, {second}, and {others, plural, one {#} other {#}} others",
     "description": "Shown in the calling lobby to describe who will be rang"
   },
   "icu:calling__pre-call-info--will-notify-1": {
@@ -2842,15 +2842,15 @@
     "description": "Title for the share screen reconnecting notification"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Your connection was lost. Signal is reconnecting.",
+    "messageformat": "Your connection was lost. Tellomi is reconnecting.",
     "description": "Body text for the share screen reconnecting notification"
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal is sharing {window}.",
+    "messageformat": "Tellomi is sharing {window}.",
     "description": "Text that appears in the screen sharing controller to inform person that they are presenting"
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Signal screen sharing is active",
+    "messageformat": "Tellomi screen sharing is active",
     "description": "Text that appears in the screen sharing controller to inform person that they are presenting"
   },
   "icu:calling__presenting--reconnecting": {
@@ -2878,7 +2878,7 @@
     "description": "Shown as the title for the modal that requests screen recording permissions"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal needs permission to access your computer's screen recording.",
+    "messageformat": "Tellomi needs permission to access your computer's screen recording.",
     "description": "Shown as the description for the modal that requests screen recording permissions"
   },
   "icu:calling__presenting--permission-instruction-step1": {
@@ -2890,7 +2890,7 @@
     "description": "Shown as the description for the modal that requests screen recording permissions"
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "On the right, check the box next to Signal. If you don’t see Signal in the list, click the + to add it.",
+    "messageformat": "On the right, check the box next to Tellomi. If you don’t see Tellomi in the list, click the + to add it.",
     "description": "Shown as the description for the modal that requests screen recording permissions"
   },
   "icu:calling__presenting--permission-open": {
@@ -2906,7 +2906,7 @@
     "description": "Description of the always relay calls setting"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Relay all calls through the Signal server to avoid revealing your IP address to your contact. Enabling will reduce call quality.",
+    "messageformat": "Relay all calls through the Tellomi server to avoid revealing your IP address to your contact. Enabling will reduce call quality.",
     "description": "Details describing the always relay calls setting"
   },
   "icu:permissions": {
@@ -2930,11 +2930,11 @@
     "description": "Description of the text-formatting popover menu setting"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Spell check will be enabled the next time Signal starts.",
+    "messageformat": "Spell check will be enabled the next time Tellomi starts.",
     "description": "Shown when the user enables spellcheck to indicate that they must restart Signal."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Spell check will be disabled the next time Signal starts.",
+    "messageformat": "Spell check will be disabled the next time Tellomi starts.",
     "description": "Shown when the user disables spellcheck to indicate that they must restart Signal."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
@@ -2966,7 +2966,7 @@
     "description": "Header of the full-screen delete data confirmation screen"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Delete all data and messages from this version of Signal Desktop? Your Signal account and data on your phone or other linked devices will not be deleted.",
+    "messageformat": "Delete all data and messages from this version of Tellomi Desktop? Your Tellomi account and data on your phone or other linked devices will not be deleted.",
     "description": "Text describing what exactly will happen if the user clicks the button to delete all data"
   },
   "icu:deleteAllDataProgress": {
@@ -2978,7 +2978,7 @@
     "description": "Header in preferences for the section dealing with account deletion"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "This will delete your account info, profile, and all of your messages. You will also be removed from all Signal groups.",
+    "messageformat": "This will delete your account info, profile, and all of your messages. You will also be removed from all Tellomi groups.",
     "description": "Text describing what the delete account button will do."
   },
   "icu:deleteAccountButton": {
@@ -2990,11 +2990,11 @@
     "description": "Header for dialog shown when users choose to delete their account"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "This will delete your account info, profile, and all of your messages. You will also be removed from all Signal groups. The app will close after this process is complete.",
+    "messageformat": "This will delete your account info, profile, and all of your messages. You will also be removed from all Tellomi groups. The app will close after this process is complete.",
     "description": "Description of dialog shown when users choose to delete their account"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "You have obsolete data from a prior installation of Signal Desktop. If you choose to continue, it will be deleted and you will start from scratch.",
+    "messageformat": "You have obsolete data from a prior installation of Tellomi Desktop. If you choose to continue, it will be deleted and you will start from scratch.",
     "description": "Shown if user last ran Signal Desktop before October 2018"
   },
   "icu:deleteOldData": {
@@ -3069,7 +3069,7 @@
     "description": "Shown on a message which was deleted for everyone if the delete wasn't successfully sent to everyone"
   },
   "icu:expiredWarning": {
-    "messageformat": "This version of Signal Desktop has expired. Please upgrade to the latest version to continue messaging.",
+    "messageformat": "This version of Tellomi Desktop has expired. Please upgrade to the latest version to continue messaging.",
     "description": "Warning notification that this version of the app has expired"
   },
   "icu:upgrade": {
@@ -3085,7 +3085,7 @@
     "description": "Label for contact and group sync settings"
   },
   "icu:syncExplanation": {
-    "messageformat": "Import all Signal groups and contacts from your mobile device.",
+    "messageformat": "Import all Tellomi groups and contacts from your mobile device.",
     "description": "Explanatory text for sync settings"
   },
   "icu:syncNow": {
@@ -3129,7 +3129,7 @@
     "description": "Timestamp format string for displaying \"Yesterday\" and the time"
   },
   "icu:messageLoop": {
-    "messageformat": "Signal may be failing to process an incoming message.",
+    "messageformat": "Tellomi may be failing to process an incoming message.",
     "description": "Shown to non-production users if the same envelope timestamp is the first three times within an hour."
   },
   "icu:messageBodyTooLong": {
@@ -3349,7 +3349,7 @@
     "description": "Error message when you try to send an edit after message becomes too old"
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} is not a Signal user. Make sure you've entered the complete username.",
+    "messageformat": "{atUsername} is not a Tellomi user. Make sure you've entered the complete username.",
     "description": "Shown in dialog if username is not found. Note that 'username' will be the output of at-username, no @ symbol"
   },
   "icu:startConversation--username-not-valid": {
@@ -3357,7 +3357,7 @@
     "description": "Shown in dialog if username is invalid. Note that 'username' will be the output of at-username, no @ symbol"
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "User not found. \"{phoneNumber}\" is not a Signal user.",
+    "messageformat": "User not found. \"{phoneNumber}\" is not a Tellomi user.",
     "description": "Shown in dialog if phone number is not found."
   },
   "icu:startConversation--phone-number-not-valid": {
@@ -3385,7 +3385,7 @@
     "description": "Shown in the alert when you add the maximum number of group members"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal groups can have a maximum of {max, number} members.",
+    "messageformat": "Tellomi groups can have a maximum of {max, number} members.",
     "description": "Shown in the alert when you add the maximum number of group members"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
@@ -3393,7 +3393,7 @@
     "description": "Shown in the alert when you add the maximum recommended number of group members"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal groups perform best with {max, number} members or less. Adding more members will cause delays sending and receiving messages.",
+    "messageformat": "Tellomi groups perform best with {max, number} members or less. Adding more members will cause delays sending and receiving messages.",
     "description": "Shown in the alert when you add the maximum recommended number of group members"
   },
   "icu:setGroupMetadata__title": {
@@ -3433,13 +3433,13 @@
     "description": "Shown in the modal when we can't update a group"
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Click to relink Signal Desktop to your mobile device to continue messaging."
+    "messageformat": "Click to relink Tellomi Desktop to your mobile device to continue messaging."
   },
   "icu:unlinked": {
     "messageformat": "Unlinked"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Click to re-register and continue messaging. Signal Desktop is unregistered likely because you registered your phone number with Signal on a different device."
+    "messageformat": "Click to re-register and continue messaging. Tellomi Desktop is unregistered likely because you registered your phone number with Tellomi on a different device."
   },
   "icu:unregistered": {
     "messageformat": "No longer registered"
@@ -3451,17 +3451,17 @@
     "messageformat": "Retry update"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Click to restart Signal"
+    "messageformat": "Click to restart Tellomi"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Click to download update"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signal couldn’t update. Click to try again.",
+    "messageformat": "Tellomi couldn’t update. Click to try again.",
     "description": "Shown in update dialog when partial update fails and we have to ask user to download full update"
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Restart Signal"
+    "messageformat": "Restart Tellomi"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Ignore update"
@@ -3635,7 +3635,7 @@
     "description": "Shown in a message bubble if any attachments are left on message when too-large attachments are dropped"
   },
   "icu:message--call-link-description": {
-    "messageformat": "Use this link to join a Signal call",
+    "messageformat": "Use this link to join a Tellomi call",
     "description": "Shown in message previews for Signal call links."
   },
   "icu:donation--missing": {
@@ -3743,11 +3743,11 @@
     "description": "Button in the sticker pack manager on the installed stickers tab when you don't have any installed sticker packs. The button takes you to the All Stickers tab where you can install stickers."
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal Artist Series",
+    "messageformat": "Tellomi Artist Series",
     "description": "Shown in the sticker pack manager above the default sticker packs."
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "No Signal Artist stickers available",
+    "messageformat": "No Tellomi Artist stickers available",
     "description": "Shown in the sticker pack manager when there are no blessed sticker packs available."
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
@@ -3795,7 +3795,7 @@
     "description": "Sticker Manager > Installed Sticker Packs > Sticker Pack row > Drag Handle > Accessibility Label"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "Signal Artist Series sticker packs",
+    "messageformat": "Tellomi Artist Series sticker packs",
     "description": "Sticker Manager > Received Sticker Packs List > Accessibility Label"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
@@ -4175,19 +4175,19 @@
     "description": "When an incoming message is too long, and we refused to download it"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} sent you a message that can't be processed or displayed because it uses a new Signal feature."
+    "messageformat": "{contact} sent you a message that can't be processed or displayed because it uses a new Tellomi feature."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "You can ask {contact} to re-send this message now that you are using an up-to-date version of Signal."
+    "messageformat": "You can ask {contact} to re-send this message now that you are using an up-to-date version of Tellomi."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "One of your devices sent a message that can't be processed or displayed because it uses a new Signal feature."
+    "messageformat": "One of your devices sent a message that can't be processed or displayed because it uses a new Tellomi feature."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Future messages like this will be synchronized now that you are using an up-to-date version of Signal."
+    "messageformat": "Future messages like this will be synchronized now that you are using an up-to-date version of Tellomi."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Update Signal",
+    "messageformat": "Update Tellomi",
     "description": "Text for a button which will take user to Signal download page"
   },
   "icu:Message--tap-to-view--viewed": {
@@ -4543,7 +4543,7 @@
     "description": "A toast that shows up when user marks a conversation as unread"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Please set up Signal on your phone and desktop to use the Sticker Pack Creator",
+    "messageformat": "Please set up Tellomi on your phone and desktop to use the Sticker Pack Creator",
     "description": "The error message which appears when the user has not linked their account and attempts to use the Sticker Creator"
   },
   "icu:Reactions--remove": {
@@ -4567,11 +4567,11 @@
     "description": "Title of the safety tips modal"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Don’t respond to chats from Signal",
+    "messageformat": "Don’t respond to chats from Tellomi",
     "description": "Title of the signal chat safety tip"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Signal will never message you for your registration code, PIN, or recovery key. Never respond to a chat pretending to be Signal.",
+    "messageformat": "Tellomi will never message you for your registration code, PIN, or recovery key. Never respond to a chat pretending to be Tellomi.",
     "description": "Text of the signal chat safety tip"
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
@@ -4579,7 +4579,7 @@
     "description": "Title of the names and photos safety tip"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "Look out for the “Name not verified” notice. Everyone sets their own profile name in Signal.",
+    "messageformat": "Look out for the “Name not verified” notice. Everyone sets their own profile name in Tellomi.",
     "description": "Text of the names and photos safety tip"
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
@@ -4591,11 +4591,11 @@
     "description": "Text of the scams safety tip"
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Don’t respond to chats from Signal",
+    "messageformat": "Don’t respond to chats from Tellomi",
     "description": "Title of the safety tip"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Signal will never message you for your registration code, PIN, or recover key. Don't reply to chats pretending to be Signal or Signal Support. Bad actors set up fake names to try to take over your account.",
+    "messageformat": "Tellomi will never message you for your registration code, PIN, or recover key. Don't reply to chats pretending to be Tellomi or Tellomi Support. Bad actors set up fake names to try to take over your account.",
     "description": "Description of the safety tip"
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
@@ -4603,7 +4603,7 @@
     "description": "Title of the safety tip"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "Look out for the “Name not verified” notice. Everyone sets their own profile name and photo in Signal. If you’re unsure who a new request is from it’s safer to ignore it.",
+    "messageformat": "Look out for the “Name not verified” notice. Everyone sets their own profile name and photo in Tellomi. If you’re unsure who a new request is from it’s safer to ignore it.",
     "description": "Description of the safety tip"
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
@@ -4711,15 +4711,15 @@
     "description": "Shown as the title in the modal for reporting and maybe blocking a message request"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signal will be notified that this person may be sending spam. Signal can’t see the content of any chats.",
+    "messageformat": "Tellomi will be notified that this person may be sending spam. Tellomi can’t see the content of any chats.",
     "description": "Shown as the body in the modal for reporting and maybe blocking a message request in a direct conversation"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signal will be notified that the person who invited you to this group may be sending spam. Signal can’t see the content of any chats.",
+    "messageformat": "Tellomi will be notified that the person who invited you to this group may be sending spam. Tellomi can’t see the content of any chats.",
     "description": "Shown as the body in the modal for reporting and maybe blocking a message request in a group conversation when the contact is unknown"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signal will be notified that {name}, who invited you to this group, may be sending spam. Signal can’t see the content of any chats.",
+    "messageformat": "Tellomi will be notified that {name}, who invited you to this group, may be sending spam. Tellomi can’t see the content of any chats.",
     "description": "Shown as the body in the modal for reporting and maybe blocking a message request in a group conversation"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
@@ -4775,7 +4775,7 @@
     "description": "Title of confirmation dialog shown before accepting a message request"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "Only accept requests from people you trust. <bold>Signal will never</bold> message you for a registration code, PIN, or recovery key.",
+    "messageformat": "Only accept requests from people you trust. <bold>Tellomi will never</bold> message you for a registration code, PIN, or recovery key.",
     "description": "Body text of confirmation dialog shown before accepting a message request"
   },
   "icu:MessageRequests--continue": {
@@ -4847,7 +4847,7 @@
     "description": "Label for profile names and group names in the name verification warning in conversation hero"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "This is the official and only chat from Signal",
+    "messageformat": "This is the official and only chat from Tellomi",
     "description": "Text indicating that this is the official Signal conversation"
   },
   "icu:ConversationHero--signal-official-chat-title": {
@@ -4855,11 +4855,11 @@
     "description": "Text indicating that this is the official Signal conversation"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "The only official chat from Signal. Keep up to date with news and release notes.",
+    "messageformat": "The only official chat from Tellomi. Keep up to date with news and release notes.",
     "description": "Description text at the top of the official Signal conversation"
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "The only official chat from Signal.",
+    "messageformat": "The only official chat from Tellomi.",
     "description": "Description text at the bottom of the official Signal conversation"
   },
   "icu:ConversationHero--release-notes": {
@@ -4947,11 +4947,11 @@
     "description": "Shown in conversation history when your video call is missed or declined"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal is still running",
+    "messageformat": "Tellomi is still running",
     "description": "Shown in a notification title when Signal is minimized to tray"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal will keep running in the notification area. You can change this in Signal settings.",
+    "messageformat": "Tellomi will keep running in the notification area. You can change this in Tellomi settings.",
     "description": "Shown in a notification body when Signal is minimized to tray"
   },
   "icu:incomingAudioCall": {
@@ -5243,7 +5243,7 @@
     "description": "Menu item in the in-call info popup for call link calls. The action is to add the call link to the clipboard."
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Share call link via Signal",
+    "messageformat": "Share call link via Tellomi",
     "description": "Menu item in the in-call info popup for call link calls. Clicking the item opens the sharing dialog where you can send the call link to your Signal contacts or groups."
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
@@ -5459,7 +5459,7 @@
     "description": "This group link is no longer valid."
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "This link is not supported by this version of Signal Desktop.",
+    "messageformat": "This link is not supported by this version of Tellomi Desktop.",
     "description": "Shown if you click a group link and we can't get information about it"
   },
   "icu:GroupV2--join--link-revoked--title": {
@@ -6271,7 +6271,7 @@
     "description": "In the badge dialog. This button is shown under sustainer badges, taking users to some instructions"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} supports Signal",
+    "messageformat": "{name} supports Tellomi",
     "description": "Title of the badge dialog, which is shown when clicking on a person's Signal sustainer badge."
   },
   "icu:BackupImportScreen__title": {
@@ -6427,7 +6427,7 @@
     "description": "Title for modal shown when a user must use their idle primary device to retain their account"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "You must open Signal on your phone to continue using this account. If you do not open Signal on your phone, your account will be deleted soon. <learnMoreLink>Learn more</learnMoreLink>",
+    "messageformat": "You must open Tellomi on your phone to continue using this account. If you do not open Tellomi on your phone, your account will be deleted soon. <learnMoreLink>Learn more</learnMoreLink>",
     "description": "Description for modal shown when a user must use their idle primary device to retain their account. Learn more link will link to a support page"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
@@ -6459,11 +6459,11 @@
     "description": "Aria label for plus button that opens attachment menu"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "This person isn’t using Signal",
+    "messageformat": "This person isn’t using Tellomi",
     "description": "Title for the composition area for the SMS-only contact"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop does not support messaging non-Signal contacts. Ask this person to install Signal for a more secure messaging experience.",
+    "messageformat": "Tellomi Desktop does not support messaging non-Tellomi contacts. Ask this person to install Tellomi for a more secure messaging experience.",
     "description": "Body for the composition area for the SMS-only contact"
   },
   "icu:CompositionArea--sms-only__spinner-label": {
@@ -6811,11 +6811,11 @@
     "description": "This is the modal button to confirm unblock of a group"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "Signal will be notified that this person may be sending spam. Signal can’t see the content of any chats.",
+    "messageformat": "Tellomi will be notified that this person may be sending spam. Tellomi can’t see the content of any chats.",
     "description": "This is the modal content for confirming reporting a 1-1 chat as spam"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "Signal will be notified that the person who invited you to this group may be sending spam. Signal can't see the content of any chats.",
+    "messageformat": "Tellomi will be notified that the person who invited you to this group may be sending spam. Tellomi can't see the content of any chats.",
     "description": "This is the modal content for confirming reporting a group as spam"
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
@@ -6879,7 +6879,7 @@
     "description": "Title for the edit nickname and note modal"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Nicknames & notes are stored with Signal and end-to-end encrypted. They are only visible to you.",
+    "messageformat": "Nicknames & notes are stored with Tellomi and end-to-end encrypted. They are only visible to you.",
     "description": "Description for the edit nickname and note modal"
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
@@ -7216,7 +7216,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "Group members on the latest versions of Signal will see that you deleted {count, plural, one {this message} other {these messages}}.",
+    "messageformat": "Group members on the latest versions of Tellomi will see that you deleted {count, plural, one {this message} other {these messages}}.",
     "description": "delete selected messages > admin delete confirmation modal > description"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
@@ -7384,7 +7384,7 @@
     "description": "Toast message shown when trying to forward an empty or deleted message"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Use this link to join a Signal call: {url}",
+    "messageformat": "Use this link to join a Tellomi call: {url}",
     "description": "Draft message text for sharing a call link"
   },
   "icu:MessageRequestWarning__review-carefully": {
@@ -7396,7 +7396,7 @@
     "description": "Shown on the message request warning. Clicking this button will open a dialog with safety tips"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Review requests carefully. Signal found another contact with the same name. <reviewRequestLink>Review request</reviewRequestLink>",
+    "messageformat": "Review requests carefully. Tellomi found another contact with the same name. <reviewRequestLink>Review request</reviewRequestLink>",
     "description": "Shown in the timeline warning when you have a message request from someone with the same name as someone else"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
@@ -7440,7 +7440,7 @@
     "description": "Informational text displayed next to a contact on ContactSpoofingReviewDialog"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal Connection",
+    "messageformat": "Tellomi Connection",
     "description": "Text of a button on ContactSpoofingReviewDialog leading to an education modal"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
@@ -7464,7 +7464,7 @@
     "description": "Header in the captcha dialog"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "To help prevent spam on Signal, please complete verification.",
+    "messageformat": "To help prevent spam on Tellomi, please complete verification.",
     "description": "First paragraph in the captcha dialog"
   },
   "icu:CaptchaDialog__second-paragraph": {
@@ -7976,7 +7976,7 @@
     "description": "ConfirmationDialog text for discarding changes"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Close Signal and end the call?",
+    "messageformat": "Close Tellomi and end the call?",
     "description": "ConfirmationDialog title when trying to close the app while in a call."
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
@@ -8197,11 +8197,11 @@
     "description": "Title for system type settings"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login",
+    "messageformat": "Tellomi Login",
     "description": "Title for Signal Login part of Account settings"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "Your Signal Login is used to recover and restore your account. Keep these keys stored safely in a password manager you trust. <learnMoreLink>Learn more</learnMoreLink>.",
+    "messageformat": "Your Tellomi Login is used to recover and restore your account. Keep these keys stored safely in a password manager you trust. <learnMoreLink>Learn more</learnMoreLink>.",
     "description": "Footer for Signal Login part of Account settings"
   },
   "icu:Preferences--signal-login-description--learn-more": {
@@ -8229,7 +8229,7 @@
     "description": "Label of linked device section of Account settings"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "To manage your account settings, open Signal on your primary device.",
+    "messageformat": "To manage your account settings, open Tellomi on your primary device.",
     "description": "Description of linked device section of Account settings"
   },
   "icu:Preferences--zoom": {
@@ -8273,7 +8273,7 @@
     "description": "Title for advanced settings"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signal PIN",
+    "messageformat": "Tellomi PIN",
     "description": "Title for Signal PIN settings"
   },
   "icu:Preferences--pin-reminders--header": {
@@ -8445,7 +8445,7 @@
     "description": "Title of dialog shown when we attempted to save a file during export but got a permissions error"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Your chat history can’t be exported because Signal doesn’t have permission to write files to disk. Try changing your disk's permissions or updating your system settings and then export again.",
+    "messageformat": "Your chat history can’t be exported because Tellomi doesn’t have permission to write files to disk. Try changing your disk's permissions or updating your system settings and then export again.",
     "description": "Detail text in dialog shown when we attempted to save a file during export but got a permissions error"
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
@@ -8465,7 +8465,7 @@
     "description": "First step in instructions for users on how to restore their local chat history backup onto their phone"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Install a new copy of Signal on your phone",
+    "messageformat": "Install a new copy of Tellomi on your phone",
     "description": "Second step in instructions for users on how to restore their chat history backup onto their phone"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
@@ -8821,15 +8821,15 @@
     "description": "A second line shown under the contact's name in block list if we have a timestamp for that blocked contact or group"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signal Secure Backups",
+    "messageformat": "Tellomi Secure Backups",
     "description": "Feature name for message backups using the Signal service."
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automatic backups with Signal’s secure, end-to-end encrypted storage service. Get started on your phone. <learnMoreLink>Learn more</learnMoreLink>.",
+    "messageformat": "Automatic backups with Tellomi’s secure, end-to-end encrypted storage service. Get started on your phone. <learnMoreLink>Learn more</learnMoreLink>.",
     "description": "Description for message backups using the Signal service."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Back up your message history so you never lose data when you get a new phone or reinstall Signal.",
+    "messageformat": "Back up your message history so you never lose data when you get a new phone or reinstall Tellomi.",
     "description": "Section description in the main backup settings section which summarizes the message backup feature."
   },
   "icu:Preferences--backup-details__header": {
@@ -8869,15 +8869,15 @@
     "description": "Description of plan when it has been canceled (i.e. not going to renew but still active)"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "You can manage or cancel your Signal Secure Backups subscription on your phone.",
+    "messageformat": "You can manage or cancel your Tellomi Secure Backups subscription on your phone.",
     "description": "Note next to backups plan summary"
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "You can manage or upgrade Signal Secure Backups on your phone.",
+    "messageformat": "You can manage or upgrade Tellomi Secure Backups on your phone.",
     "description": "Note next to backups plan summary"
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "You can manage or renew your Signal Secure Backups subscription on your phone.",
+    "messageformat": "You can manage or renew your Tellomi Secure Backups subscription on your phone.",
     "description": "Note next to backups plan summary if we could not find their subscription"
   },
   "icu:Preferences--backup-created-at__label": {
@@ -8901,7 +8901,7 @@
     "description": "Description for on-device local message backups when the feature is off."
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "To restore a backup, install a new copy of Signal on your phone. Open the app and tap “Restore or transfer.” <learnMoreLink>Learn more.</learnMoreLink>",
+    "messageformat": "To restore a backup, install a new copy of Tellomi on your phone. Open the app and tap “Restore or transfer.” <learnMoreLink>Learn more.</learnMoreLink>",
     "description": "Description for how to restore on-device local message backups."
   },
   "icu:Preferences--local-backups-setup-folder": {
@@ -8949,7 +8949,7 @@
     "description": "Title for viewing the recovery (backup) key for local message backups."
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>",
+    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Tellomi will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>",
     "description": "Description for viewing the recovery (backup) key for local message backups."
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
@@ -8969,7 +8969,7 @@
     "description": "Button on the dialog warning the user not to paste their recovery key into a chat. Pressing it cancels the paste."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>",
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Tellomi will never message you</strong> for your recovery key. Never respond to a chat pretending to be Tellomi. <learnMoreLink>Learn more.</learnMoreLink>",
     "description": "Body of the confirmation dialog shown before allowing the user to paste their recovery key into a chat."
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
@@ -8985,7 +8985,7 @@
     "description": "Title of modal shown after you confirmed the recovery (backup) key for local on-device backups in settings"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Signal will not be able to help you restore your backup if you lose your key. Store it somewhere safe and secure, and do not share it with others.",
+    "messageformat": "Tellomi will not be able to help you restore your backup if you lose your key. Store it somewhere safe and secure, and do not share it with others.",
     "description": "Body text of modal shown after you confirmed the recovery (backup) key for local on-device backups in settings"
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
@@ -9053,7 +9053,7 @@
     "description": "If linux system has pkcheck and we were able to install .policy files, this is the dialog text the user will see on the polkit prompt before enabling backups"
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "This action could not be completed because system authentication failed. Please try again or open the Signal app on your mobile device and go to Backup Settings to view your recovery key.",
+    "messageformat": "This action could not be completed because system authentication failed. Please try again or open the Tellomi app on your mobile device and go to Backup Settings to view your recovery key.",
     "description": "Error shown in local backups settings when system authentication fails while trying to view the recovery key."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
@@ -9093,7 +9093,7 @@
     "description": "Title of Phone Number row in Privacy section of Preferences window"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Choose who can see your phone number and who can contact you on Signal with it.",
+    "messageformat": "Choose who can see your phone number and who can contact you on Tellomi with it.",
     "description": "Body of Phone Number row in Privacy section of Preferences window"
   },
   "icu:Preferences__pnp__row--button": {
@@ -9133,11 +9133,11 @@
     "description": "Title for the phone number discoverability setting row"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Anyone who has your phone number will see you're on Signal and can start chats with you.",
+    "messageformat": "Anyone who has your phone number will see you're on Tellomi and can start chats with you.",
     "description": "Description for the phone number discoverability setting row wth the value is everyone"
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Nobody will be able to see you're on Signal unless you message them or have an existing chat with them.",
+    "messageformat": "Nobody will be able to see you're on Tellomi unless you message them or have an existing chat with them.",
     "description": "Description for the phone number discoverability setting row wth the value is nobody"
   },
   "icu:Preferences__pnp__discoverability__everyone": {
@@ -9153,7 +9153,7 @@
     "description": "Title for the confirmation modal when turning the phone number discoverability setting to nobody"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "If you change “{settingTitle}” to “{nobodyLabel}” it will make it harder for people to find you on Signal.",
+    "messageformat": "If you change “{settingTitle}” to “{nobodyLabel}” it will make it harder for people to find you on Tellomi.",
     "description": "Description for the confirmation modal when turning the phone number discoverability setting to nobody"
   },
   "icu:Preferences--messaging": {
@@ -9237,7 +9237,7 @@
     "description": "Button to set language preference"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Restart Signal to apply",
+    "messageformat": "Restart Tellomi to apply",
     "description": "Title for restart Signal modal to apply language changes"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
@@ -9257,7 +9257,7 @@
     "description": "Label of checkbox in Settings > Privacy > Application"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Prevent screenshots of Signal on this computer for added privacy.",
+    "messageformat": "Prevent screenshots of Tellomi on this computer for added privacy.",
     "description": "Description of checkbox in Settings > Privacy > Application"
   },
   "icu:Preferences__content-protection__modal--title": {
@@ -9265,7 +9265,7 @@
     "description": "Title of confirm disabling screen security modal in Settings > Privacy > Application"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "If disabled, this may allow Microsoft Windows to capture screenshots of Signal and use them for features that may not be private.",
+    "messageformat": "If disabled, this may allow Microsoft Windows to capture screenshots of Tellomi and use them for features that may not be private.",
     "description": "Body of confirm disabling screen security modal in Settings > Privacy > Application"
   },
   "icu:Preferences__content-protection__modal--disable": {
@@ -9293,15 +9293,15 @@
     "description": "The action text of build expiration dialog when app is installed from the App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Open Signal on your phone",
+    "messageformat": "Open Tellomi on your phone",
     "description": "Title of a banner alerting users if their primary device (e.g. phone) has not been logged into recently."
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Your account will be deleted soon unless you open Signal on your phone. This message will go away if you've done it successfully. <learnMoreLink>Learn more</learnMoreLink>",
+    "messageformat": "Your account will be deleted soon unless you open Tellomi on your phone. This message will go away if you've done it successfully. <learnMoreLink>Learn more</learnMoreLink>",
     "description": "The text in a banner alerting users if their primary device (e.g. phone) has not been logged into recently. "
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Open Signal on your phone to keep your account active",
+    "messageformat": "Open Tellomi on your phone to keep your account active",
     "description": "The text in a banner alerting users if their primary device (e.g. phone) has not been logged into recently. "
   },
   "icu:IdlePrimaryDevice__learnMore": {
@@ -9309,7 +9309,7 @@
     "description": "The text in a link that will open a support page URL with more information"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal is experiencing technical difficulties. We are working hard to restore service as quickly as possible.",
+    "messageformat": "Tellomi is experiencing technical difficulties. We are working hard to restore service as quickly as possible.",
     "description": "The title of outage dialog during service outage."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
@@ -9317,7 +9317,7 @@
     "description": "The title of update dialog on install screen when app update is required before proceeding with backup import"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "To complete syncing your messages, update Signal desktop now.",
+    "messageformat": "To complete syncing your messages, update Tellomi desktop now.",
     "description": "The body of update dialog on install screen when app update is required before proceeding with backup import"
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
@@ -9329,7 +9329,7 @@
     "description": "The title of update dialog on install screen when user OS is unsupported"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "To continue using Signal, you must update to the latest version.",
+    "messageformat": "To continue using Tellomi, you must update to the latest version.",
     "description": "The body of update dialog on install screen when auto update is downloaded and available."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
@@ -9337,15 +9337,15 @@
     "description": "The text of a confirmation button in update dialog on install screen when manual update is ready to be downloaded."
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Restart Signal to install the update.",
+    "messageformat": "Restart Tellomi to install the update.",
     "description": "The body of the update dialog on install screen when manual update was downloaded."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal Desktop failed to update, but there is a new version available. Go to {downloadUrl} and install the new version manually, then either contact support or file a bug about this problem.",
+    "messageformat": "Tellomi Desktop failed to update, but there is a new version available. Go to {downloadUrl} and install the new version manually, then either contact support or file a bug about this problem.",
     "description": "The body of the update dialog on install screen when update cannot be installed."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Signal Logo",
+    "messageformat": "Tellomi Logo",
     "description": "Alt text for the signal logo at the top left of the standalone registration screens"
   },
   "icu:StandaloneRegistration--back": {
@@ -9393,7 +9393,7 @@
     "description": "Header of the standalone registration captcha screen"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "To help prevent spam on Signal, please complete verification. After verifying, you can continue with registration.",
+    "messageformat": "To help prevent spam on Tellomi, please complete verification. After verifying, you can continue with registration.",
     "description": "Description of the standalone registration captcha screen"
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
@@ -9713,7 +9713,7 @@
     "description": "Header for dialog shown when user has tried an incorrect PIN there are no remaining tries left"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "You’ve run out of PIN guesses, but you can still access your Signal account by creating a new PIN. For your privacy and security your account will be restored without any saved profile information or settings.",
+    "messageformat": "You’ve run out of PIN guesses, but you can still access your Tellomi account by creating a new PIN. For your privacy and security your account will be restored without any saved profile information or settings.",
     "description": "Description for dialog shown when user has tried an incorrect PIN there are no remaining tries left"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
@@ -9753,7 +9753,7 @@
     "description": "Header on screen asking user to create a new PIN"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "PINs can help you restore your account and keep your info encrypted with Signal. <learnMore>Learn More</learnMore>",
+    "messageformat": "PINs can help you restore your account and keep your info encrypted with Tellomi. <learnMore>Learn More</learnMore>",
     "description": "Description on screen asking user to create a new PIN"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
@@ -9785,7 +9785,7 @@
     "description": "Header on dialog shown when user chooses to disable the PIN entirely"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "If you disable the PIN, you will lose all data when you re-register Signal. You can not turn on Registration Lock while the PIN is disabled.",
+    "messageformat": "If you disable the PIN, you will lose all data when you re-register Tellomi. You can not turn on Registration Lock while the PIN is disabled.",
     "description": "Description on dialog shown when user chooses to disable the PIN entirely"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
@@ -9797,11 +9797,11 @@
     "description": "Cancel button on dialog shown when user chooses to disable the PIN entirely"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "About Signal PINs",
+    "messageformat": "About Tellomi PINs",
     "description": "Header on dialog showing more information about PINs"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "PINs keep your information stored with Signal encrypted so only you can access it. Your profile, settings and contacts will restore when you reinstall.",
+    "messageformat": "PINs keep your information stored with Tellomi encrypted so only you can access it. Your profile, settings and contacts will restore when you reinstall.",
     "description": "Header on dialog showing more information about PINs"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
@@ -9845,7 +9845,7 @@
     "description": "Header for dialog shown during registration if Desktop discovers it is out of date"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "To continue with registration, please update to the latest version of Signal.",
+    "messageformat": "To continue with registration, please update to the latest version of Tellomi.",
     "description": "Description for dialog shown during registration if Desktop discovers it is out of date"
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
@@ -9885,7 +9885,7 @@
     "description": "Button to contact support, on dialog shown during registration if something unexpected goes wrong"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signal cannot be closed.",
+    "messageformat": "Tellomi cannot be closed.",
     "description": "First line of the dialog displayed when Windows installer can't close application automatically and needs user intervention to complete the installation.",
     "ignoreUnused": true
   },
@@ -9910,7 +9910,7 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "A newer version of Signal is already installed. Are you sure you want to continue?",
+    "messageformat": "A newer version of Tellomi is already installed. Are you sure you want to continue?",
     "description": "A text of the dialog displayed when user tries to overwrite Signal installation with an older version.",
     "ignoreUnused": true
   },
@@ -9919,7 +9919,7 @@
     "description": "A title of the dialog displayed when starting an application after a recent crash"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal restarted after a crash. You can submit a crash report to help Signal investigate the issue.",
+    "messageformat": "Tellomi restarted after a crash. You can submit a crash report to help Tellomi investigate the issue.",
     "description": "The body of the dialog displayed when starting an application after a recent crash"
   },
   "icu:CrashReportDialog__submit": {
@@ -10059,7 +10059,7 @@
     "description": "Text of the first step of the instructions from MediaPermissionsModal"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Turn on “Signal”",
+    "messageformat": "Turn on “Tellomi”",
     "description": "Text of the second step of the instructions from MediaPermissionsModal"
   },
   "icu:MediaPermissionsModal__open": {
@@ -10187,7 +10187,7 @@
     "description": "Message request response notification button to learn more"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal Connections",
+    "messageformat": "Tellomi Connections",
     "description": "The phrase/term: 'Signal Connections'"
   },
   "icu:SignalConnectionsModal__header": {
@@ -10375,7 +10375,7 @@
     "description": "Modal title when hiding people from my stories"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "All Signal connections",
+    "messageformat": "All Tellomi connections",
     "description": "Input label to describe all signal connections"
   },
   "icu:StoriesSettings__mine__exclude--label": {
@@ -10479,7 +10479,7 @@
     "description": "Modal title for setting privacy for My Story"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Choose which Signal connections can view your story. You can always change this in privacy settings. <learnMoreLink>Learn more.</learnMoreLink>",
+    "messageformat": "Choose which Tellomi connections can view your story. You can always change this in privacy settings. <learnMoreLink>Learn more.</learnMoreLink>",
     "description": "Disclaimer on how changes to story settings work"
   },
   "icu:SendStoryModal__delete-story": {
@@ -10571,7 +10571,7 @@
     "description": "Context menu item to help debugging"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Enable view receipts to see who’s viewed your stories. Open the Signal app on your mobile device and navigate to Settings > Stories.",
+    "messageformat": "Enable view receipts to see who’s viewed your stories. Open the Tellomi app on your mobile device and navigate to Settings > Stories.",
     "description": "Instructions on how to enable read receipts"
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
@@ -10819,7 +10819,7 @@
     "description": "Text of toast displayed upon successful recovery of username"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Scan this QR code with your phone to chat with me on Signal.",
+    "messageformat": "Scan this QR code with your phone to chat with me on Tellomi.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -10919,7 +10919,7 @@
     "description": "Text of the secondary button on username megaphone"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "Verify your Signal PIN",
+    "messageformat": "Verify your Tellomi PIN",
     "description": "Title of Signal PIN reminder megaphone"
   },
   "icu:PinReminderMegaphone__body": {
@@ -10935,7 +10935,7 @@
     "description": "Text of the secondary button on Signal PIN reminder megaphone"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "Enter your Signal PIN",
+    "messageformat": "Enter your Tellomi PIN",
     "description": "Title of Signal PIN reminder dialog"
   },
   "icu:PinReminderModal__body": {
@@ -10959,15 +10959,15 @@
     "description": "Toast message when Signal PIN reminder was completed successfully."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal desktop will no longer support your computer’s version of {OS} soon. To keep using Signal, update your computer’s operating system by {expirationDate}. <learnMoreLink>Learn more</learnMoreLink>",
+    "messageformat": "Tellomi desktop will no longer support your computer’s version of {OS} soon. To keep using Tellomi, update your computer’s operating system by {expirationDate}. <learnMoreLink>Learn more</learnMoreLink>",
     "description": "Body of a dialog displayed on unsupported operating systems"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal desktop no longer works on this computer. To use Signal desktop again, update your computer’s version of {OS}. <learnMoreLink>Learn more</learnMoreLink>",
+    "messageformat": "Tellomi desktop no longer works on this computer. To use Tellomi desktop again, update your computer’s version of {OS}. <learnMoreLink>Learn more</learnMoreLink>",
     "description": "Body of a dialog displayed on unsupported operating systems"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal desktop no longer works on this computer. To use Signal desktop again, update your computer’s version of {OS}.",
+    "messageformat": "Tellomi desktop no longer works on this computer. To use Tellomi desktop again, update your computer’s version of {OS}.",
     "description": "Body of a dialog displayed on unsupported operating systems"
   },
   "icu:MessageMetadata__edited": {
@@ -11195,7 +11195,7 @@
     "description": "Call History > Call Link Details > Copy Link Button"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Share link via Signal",
+    "messageformat": "Share link via Tellomi",
     "description": "Call History > Call Link Details > Share Link via Signal Button"
   },
   "icu:CallLinkDetails__DeleteLink": {
@@ -11279,15 +11279,15 @@
     "description": "A toast displayed when user clicks disabled option in settings window"
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Profile names on Signal are chosen by their account holder:",
+    "messageformat": "Profile names on Tellomi are chosen by their account holder:",
     "description": "Description of how profile names work in the profile name warning modal for direct conversations"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Signal can’t verify names and photos",
+    "messageformat": "Tellomi can’t verify names and photos",
     "description": "List item in profile name warning modal for direct conversations"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Signal will never contact you for your registration code, PIN, or recovery key",
+    "messageformat": "Tellomi will never contact you for your registration code, PIN, or recovery key",
     "description": "List item in profile name warning modal for direct conversations"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
@@ -11375,7 +11375,7 @@
     "description": "List content item for the modal that explains donation information"
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "Heart icon in the style of the Signal logo",
+    "messageformat": "Heart icon in the style of the Tellomi logo",
     "description": "Accessibility label for the icon showed at the top of the modal that explains donation information"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
@@ -11435,7 +11435,7 @@
     "description": "When entering payment card details for a donation, this heading indicates the section for credit or debit cards."
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Enter your credit or debit card details. Signal does not collect or store your personal information. <learnMoreLink>Learn more</learnMoreLink>",
+    "messageformat": "Enter your credit or debit card details. Tellomi does not collect or store your personal information. <learnMoreLink>Learn more</learnMoreLink>",
     "description": "When entering payment card details for a donation, these instructions explain how to use the entry form and how payment information is protected."
   },
   "icu:DonateFlow__card-form-card-number": {
@@ -11475,7 +11475,7 @@
     "description": "When entering payment card CVC/CVV code, this error appears when the code entered did not include all digits in the CVC/CVV code."
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Get the Signal Boost badge for 30 days",
+    "messageformat": "Get the Tellomi Boost badge for 30 days",
     "description": "Info text above the payment card entry form when making a one time donation. Explains the in-app badge which you can receive after donating."
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
@@ -11719,7 +11719,7 @@
     "description": "Title shown in the 'thanks for your donation' modal"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "You've earned a donor badge from Signal! Display it on your profile to show off your support.",
+    "messageformat": "You've earned a donor badge from Tellomi! Display it on your profile to show off your support.",
     "description": "Description explaining the donor badge in the 'thanks for your donation' modal"
   },
   "icu:Donations__badge-modal--display-on-profile": {
@@ -11735,7 +11735,7 @@
     "description": "Call Quality Survey Dialog > How was your call? > Page Title"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "This helps us improve calls in Signal. No personally identifiable information will be stored.",
+    "messageformat": "This helps us improve calls in Tellomi. No personally identifiable information will be stored.",
     "description": "Call Quality Survey Dialog > How was your call? > Page Description"
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
@@ -11803,7 +11803,7 @@
     "description": "Call Quality Survey Dialog > What issues did you have? > Something else > Textarea > Accessibility Label"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Please include any details relevant to the issue. Anything you share here will be kept private and will only be used to help improve calls in Signal.",
+    "messageformat": "Please include any details relevant to the issue. Anything you share here will be kept private and will only be used to help improve calls in Tellomi.",
     "description": "Call Quality Survey Dialog > What issues did you have? > Something else > Textarea > Help Text"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
@@ -11891,7 +11891,7 @@
     "description": "Bullet point in relink dialog for what will happen if you link & sync"
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "If you have paid Signal Secure Backups, all of your media will be transferred. Otherwise, your last 45 days of media will be included.",
+    "messageformat": "If you have paid Tellomi Secure Backups, all of your media will be transferred. Otherwise, your last 45 days of media will be included.",
     "description": "Bullet point in relink dialog for what will happen if you link & sync"
   },
   "icu:MaybeTransferModal__transfer": {
@@ -11907,16 +11907,16 @@
     "description": "Title in confirmation dialog shown when user is unlinked and chose to delete data and relink"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "All current data in Signal Desktop will be deleted. You can then scan a QR code and transfer your message history from your phone.",
+    "messageformat": "All current data in Tellomi Desktop will be deleted. You can then scan a QR code and transfer your message history from your phone.",
     "description": "Description in confirmation dialog shown when user is unlinked and chose to delete data and relink"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "This version contains a number of small tweaks and bug fixes to keep Signal running smoothly.",
+    "messageformat": "This version contains a number of small tweaks and bug fixes to keep Tellomi running smoothly.",
     "description": "Release notes for releases that only include bug fixes",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Additional small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!",
+    "messageformat": "Additional small tweaks, bug fixes, and performance enhancements. Thanks for using Tellomi!",
     "description": "Release notes for releases that only include bug fixes",
     "ignoreUnused": true
   },
@@ -11941,7 +11941,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!",
+    "messageformat": "Small tweaks, bug fixes, and performance enhancements. Thanks for using Tellomi!",
     "description": "Release notes for releases that only include bug fixes",
     "ignoreUnused": true
   },
@@ -11958,7 +11958,7 @@
     "description": "(Deleted 2026/09/03) Release notes for 8.26"
   },
   "icu:WhatsNew__8.27--0": {
-    "messageformat": "This update introduces more granular settings to give you significantly more control over your Signal notifications. Now you can choose what appears on the app badge, adjust notification preferences for muted threads, and more! We also added a convenient button to restore the default notification settings if you ever make so many changes that you don't even know how to get ahold of yourself anymore.",
+    "messageformat": "This update introduces more granular settings to give you significantly more control over your Tellomi notifications. Now you can choose what appears on the app badge, adjust notification preferences for muted threads, and more! We also added a convenient button to restore the default notification settings if you ever make so many changes that you don't even know how to get ahold of yourself anymore.",
     "description": "Release notes for 8.27"
   }
 }

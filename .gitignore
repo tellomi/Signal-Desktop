@@ -49,3 +49,4 @@ ts/protobuf/*.d.ts
 /.zed
 *.sublime*
 *.map
+build/tellomi-strings-todo.txt

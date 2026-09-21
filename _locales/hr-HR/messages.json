@@ -114,7 +114,7 @@
     "messageformat": "Nepoznata grupa"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Nije moguće otvoriti Signal"
+    "messageformat": "Nije moguće otvoriti Tellomi"
   },
   "icu:cantOpenSignalError__detail": {
     "messageformat": "Slijedite upute za oporavak na stranici za podršku ili kontaktirajte korisničku podršku Signala kako bi vam pomogli riješiti problem.\n\nAko vam je odmah potreban pristup Signalu, možete izbrisati svoje podatke i ponovno povezati ovaj uređaj. Imat ćete opciju prijenosa povijesti poruka sa svog telefona."
@@ -129,7 +129,7 @@
     "messageformat": "Trajno brisanje svih podataka"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Vaša čitava povijest poruka i svi medijski zapisi bit će trajno izbrisani s ovog uređaja. Time se neće izbrisati podaci s vašeg mobilnog uređaja.\n\nMoći ćete koristiti Signal na ovom uređaju nakon ponovnog povezivanja. Imat ćete opciju prijenosa povijesti poruka sa svog telefona."
+    "messageformat": "Vaša čitava povijest poruka i svi medijski zapisi bit će trajno izbrisani s ovog uređaja. Time se neće izbrisati podaci s vašeg mobilnog uređaja.\n\nMoći ćete koristiti Tellomi na ovom uređaju nakon ponovnog povezivanja. Imat ćete opciju prijenosa povijesti poruka sa svog telefona."
   },
   "icu:databaseError__startOldVersion": {
     "messageformat": "Verzija vaše baze podataka ne odgovara ovoj verziji Signala. Provjerite jeste li pokrenuli najnoviju verziju Signala na svom računalu."
@@ -138,7 +138,7 @@
     "messageformat": "Nije moguće pristupiti ključu za šifriranje baze podataka jer se pozadina ključeva za šifriranje operacijskog sustava promijenila iz {previousBackend} u {currentBackend}. To se može dogoditi ako se promijeni okruženje radne površine, na primjer između GNOME i KDE.\n\nMolimo, prijeđite na prethodno okruženje radne površine."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Nije moguće pristupiti ključu za šifriranje baze podataka jer se pozadina ključeva za šifriranje operacijskog sustava promijenila iz {previousBackend} u {currentBackend}. To se može dogoditi ako se promijeni okruženje radne površine, na primjer između GNOME i KDE.\n\nMolimo, prijeđite na prethodno okruženje radne površine ili pokušajte pokrenuti Signal s oznakom naredbenog retka --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Nije moguće pristupiti ključu za šifriranje baze podataka jer se pozadina ključeva za šifriranje operacijskog sustava promijenila iz {previousBackend} u {currentBackend}. To se može dogoditi ako se promijeni okruženje radne površine, na primjer između GNOME i KDE.\n\nMolimo, prijeđite na prethodno okruženje radne površine ili pokušajte pokrenuti Tellomi s oznakom naredbenog retka --password-store=\"{previousBackendFlag}\""
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -183,7 +183,7 @@
     "messageformat": "Prikaži sve"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Zatvori Signal"
+    "messageformat": "Zatvori Tellomi"
   },
   "icu:editMenuUndo": {
     "messageformat": "Poništi"
@@ -507,10 +507,10 @@
     "messageformat": "Označili ste da vaš sigurnosni broj s {name} nije provjeren na drugom uređaju"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Sigurnosni broj koji pokušavate provjeriti promijenio se. Molimo pregledajte vaš novi sigurnosni broj s {name1}. Zapamtite, ova promjena može značiti da netko pokušava presresti vašu komunikaciju ili da je {name2} jednostavno ponovno instalirao/la Signal."
+    "messageformat": "Sigurnosni broj koji pokušavate provjeriti promijenio se. Molimo pregledajte vaš novi sigurnosni broj s {name1}. Zapamtite, ova promjena može značiti da netko pokušava presresti vašu komunikaciju ili da je {name2} jednostavno ponovno instalirao/la Tellomi."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Sljedeće osobe možda su ponovno instalirale Signal ili promijenile uređaje. Kliknite na primatelja kako biste potvrdili novi sigurnosni broj. Ovo nije obavezno."
+    "messageformat": "Sljedeće osobe možda su ponovno instalirale Tellomi ili promijenile uređaje. Kliknite na primatelja kako biste potvrdili novi sigurnosni broj. Ovo nije obavezno."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Pošaljite poruke na čekanju"
@@ -519,7 +519,7 @@
     "messageformat": "Pregled"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Imate {count,number} kontakt koji je možda ponovno instalirao Signal ili promijenio uređaje. Po želji možete pregledati njegove sigurnosne brojeve prije slanja.} few {Imate {count,number} kontakta koji su možda ponovno instalirali Signal ili promijenili uređaje. Po želji možete pregledati njihove sigurnosne brojeve prije slanja.} many {Imate {count,number} kontakata koji su možda ponovno instalirali Signal ili promijenili uređaje. Po želji možete pregledati njihove sigurnosne brojeve prije slanja.} other {Imate {count,number} kontakata koji su možda ponovno instalirali Signal ili promijenili uređaje. Po želji možete pregledati njihove sigurnosne brojeve prije slanja.}}"
+    "messageformat": "{count, plural, one {Imate {count,number} kontakt koji je možda ponovno instalirao Tellomi ili promijenio uređaje. Po želji možete pregledati njegove sigurnosne brojeve prije slanja.} few {Imate {count,number} kontakta koji su možda ponovno instalirali Tellomi ili promijenili uređaje. Po želji možete pregledati njihove sigurnosne brojeve prije slanja.} many {Imate {count,number} kontakata koji su možda ponovno instalirali Tellomi ili promijenili uređaje. Po želji možete pregledati njihove sigurnosne brojeve prije slanja.} other {Imate {count,number} kontakata koji su možda ponovno instalirali Tellomi ili promijenili uređaje. Po želji možete pregledati njihove sigurnosne brojeve prije slanja.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Svi kontakti su pregledani, kliknite Pošalji za nastavak."
@@ -627,16 +627,16 @@
     "messageformat": "Šifriranje je automatski provjereno za ovaj razgovor "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "Za osobe s kojima ste povezani putem broja telefona, Signal može automatski potvrditi je li veza sigurna pomoću postupka koji se naziva transparentnost ključa. Radi dodatne sigurnosti, ručno provjerite sveobuhvatno šifriranje usporedbom brojeva na prethodnom zaslonu ili skeniranjem koda na uređaju određenog korisnika."
+    "messageformat": "Za osobe s kojima ste povezani putem broja telefona, Tellomi može automatski potvrditi je li veza sigurna pomoću postupka koji se naziva transparentnost ključa. Radi dodatne sigurnosti, ručno provjerite sveobuhvatno šifriranje usporedbom brojeva na prethodnom zaslonu ili skeniranjem koda na uređaju određenog korisnika."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "Automatska provjera nije dostupna za ovaj razgovor"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "Signal ne može automatski provjeriti šifriranje ovog razgovora. Razlog tome može biti to što je {name} promijenio/la svoj broj telefona ili postavke privatnosti broja telefona. Sveobuhvatno šifriranje može se provjeriti ručno, usporedbom brojeva na prethodnom zaslonu, ili skeniranjem koda na uređaju tog korisnika."
+    "messageformat": "Tellomi ne može automatski provjeriti šifriranje ovog razgovora. Razlog tome može biti to što je {name} promijenio/la svoj broj telefona ili postavke privatnosti broja telefona. Sveobuhvatno šifriranje može se provjeriti ručno, usporedbom brojeva na prethodnom zaslonu, ili skeniranjem koda na uređaju tog korisnika."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "Signal može automatski provjeriti šifriranje samo za razgovore u kojima ste povezani s nekim putem broja telefona. Ako je razgovor započet s korisničkim imenom ili zajedničkom grupom, provjerite sveobuhvatno šifriranje usporedbom brojeva na prethodnom zaslonu ili skeniranjem koda na uređaju tog korisnika."
+    "messageformat": "Tellomi može automatski provjeriti šifriranje samo za razgovore u kojima ste povezani s nekim putem broja telefona. Ako je razgovor započet s korisničkim imenom ili zajedničkom grupom, provjerite sveobuhvatno šifriranje usporedbom brojeva na prethodnom zaslonu ili skeniranjem koda na uređaju tog korisnika."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "U redu"
@@ -675,10 +675,10 @@
     "messageformat": "Ne, hvala"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "Signal sada može automatski provjeriti sveobuhvatno šifriranje"
+    "messageformat": "Tellomi sada može automatski provjeriti sveobuhvatno šifriranje"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "Za kontakte s kojima ste povezani putem broja telefona, Signal može automatski potvrditi je li veza sigurna pomoću postupka koji se naziva transparentnost ključa. Radi dodatne sigurnosti, veze i dalje možete provjeriti ručno pomoću QR koda ili usporedbom sigurnosnih brojeva."
+    "messageformat": "Za kontakte s kojima ste povezani putem broja telefona, Tellomi može automatski potvrditi je li veza sigurna pomoću postupka koji se naziva transparentnost ključa. Radi dodatne sigurnosti, veze i dalje možete provjeriti ručno pomoću QR koda ili usporedbom sigurnosnih brojeva."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "Nastavi"
@@ -855,7 +855,7 @@
     "messageformat": "Zatvori"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal za Desktop"
+    "messageformat": "Tellomi za Desktop"
   },
   "icu:search": {
     "messageformat": "Pretraži"
@@ -909,13 +909,13 @@
     "messageformat": "Traži po broju telefona"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Dobrodošli u Signal"
+    "messageformat": "Dobrodošli u Tellomi"
   },
   "icu:whatsNew": {
     "messageformat": "Pogledajte {whatsNew} u ovom ažuriranju"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Signal je neprofitna organizacija"
+    "messageformat": "Tellomi je neprofitna organizacija"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "novosti"
@@ -1035,7 +1035,7 @@
     "messageformat": "Ažuriranje Signala nije uspjelo. Posjetite {url} da biste ga ručno instalirali. Zatim <contactSupportLink>kontaktirajte korisničku podršku</contactSupportLink> u vezi s ovim problemom"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal Desktop je vjerojatno u macOS karanteni i neće se moći automatski ažurirati. Pokušajte premjestiti {app} u {folder} pomoću programa Finder."
+    "messageformat": "Tellomi Desktop je vjerojatno u macOS karanteni i neće se moći automatski ažurirati. Pokušajte premjestiti {app} u {folder} pomoću programa Finder."
   },
   "icu:ok": {
     "messageformat": "U redu"
@@ -1137,7 +1137,7 @@
     "messageformat": "Nema direktnih poruka s korisnikom {name}"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal kontakt"
+    "messageformat": "Tellomi kontakt"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} je u kontaktima vašeg sustava"
@@ -1449,7 +1449,7 @@
     "messageformat": "Saznajte više"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal koristi sveobuhvatno šifriranje te je ponekad potrebno osvježiti sesiju razgovora. To ne utječe na sigurnost vašeg razgovora, ali moguće je da ste propustili poruku ovog kontakta, stoga možete zatražiti da je ponovno pošalje."
+    "messageformat": "Tellomi koristi sveobuhvatno šifriranje te je ponekad potrebno osvježiti sesiju razgovora. To ne utječe na sigurnost vašeg razgovora, ali moguće je da ste propustili poruku ovog kontakta, stoga možete zatražiti da je ponovno pošalje."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Kontaktirajte podršku"
@@ -1566,7 +1566,7 @@
     "messageformat": "Nije moguće preuzeti medijski zapis"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Provjerite svoje računalo i internetsku vezu svog telefona. Otvorite Signal na telefonu i ponovno pokušajte preuzeti privitke."
+    "messageformat": "Provjerite svoje računalo i internetsku vezu svog telefona. Otvorite Tellomi na telefonu i ponovno pokušajte preuzeti privitke."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Ovaj medijski zapis više nije dostupan na vašem telefonu, stoga ga nije moguće preuzeti."
@@ -1587,10 +1587,10 @@
     "messageformat": "Saznajte više"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Skenirajte ovaj kôd u aplikaciji Signal na vašem telefonu"
+    "messageformat": "Skenirajte ovaj kôd u aplikaciji Tellomi na vašem telefonu"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Otvorite Signal na vašem uređaju"
+    "messageformat": "Otvorite Tellomi na vašem uređaju"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Otvorite {settings} i dodirnite {linkedDevices}"
@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>Došlo je do neočekivane pogreške.</paragraph><paragraph>Pokušajte ponovno.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal ne može povezati ovaj uređaj zbog problema s povezivanjem na mrežu."
+    "messageformat": "Tellomi ne može povezati ovaj uređaj zbog problema s povezivanjem na mrežu."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Pokušajte ponovno"
@@ -1626,7 +1626,7 @@
     "messageformat": "Izbriši sve podatke?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "Pokušavate povezati drugi Signal korisnički račun s ovim računalom. Nastavite li, svi trenutni podaci Signala za desktop bit će izbrisani."
+    "messageformat": "Pokušavate povezati drugi Tellomi korisnički račun s ovim računalom. Nastavite li, svi trenutni podaci Signala za desktop bit će izbrisani."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "Nastavi"
@@ -1641,7 +1641,7 @@
     "messageformat": "Naziv uređaja"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Da biste promijenili ime ovog uređaja, otvorite Signal na svom telefonu i idite na Postavke > Povezani uređaji"
+    "messageformat": "Da biste promijenili ime ovog uređaja, otvorite Tellomi na svom telefonu i idite na Postavke > Povezani uređaji"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Boja kože za emojije"
@@ -1833,7 +1833,7 @@
     "messageformat": "Automatska provjera ključa"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "Ako omogućite ovu postavku, Signal će pokušati automatski provjeriti šifriranje privatnih razgovora."
+    "messageformat": "Ako omogućite ovu postavku, Tellomi će pokušati automatski provjeriti šifriranje privatnih razgovora."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "Saznajte više"
@@ -1851,7 +1851,7 @@
     "messageformat": "Nažalost, već imate previše povezanih uređaja. Pokušajte ukloniti neke."
   },
   "icu:installTooOld": {
-    "messageformat": "Ažurirajte Signal na ovom uređaju kako biste ga povezali sa svojim telefonom."
+    "messageformat": "Ažurirajte Tellomi na ovom uređaju kako biste ga povezali sa svojim telefonom."
   },
   "icu:installErrorHeader": {
     "messageformat": "Nešto je pošlo po zlu."
@@ -1902,7 +1902,7 @@
     "messageformat": "Poveznica na poziv više nije važeća."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal poziv"
+    "messageformat": "Tellomi poziv"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Brisanje poveznice nije uspjelo. Provjerite internetsku vezu i pokušajte ponovno."
@@ -2142,10 +2142,10 @@
     "messageformat": "Mrežna veza je prekinuta. Ponovno povezivanje u tijeku."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal dijeli {window}."
+    "messageformat": "Tellomi dijeli {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Omogućeno emitiranje zaslona za Signal"
+    "messageformat": "Omogućeno emitiranje zaslona za Tellomi"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Ponovno povezivanje…"
@@ -2166,7 +2166,7 @@
     "messageformat": "Potrebna je dozvola"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal treba dopuštenje za pristup snimanju zaslona vašeg računala."
+    "messageformat": "Tellomi treba dopuštenje za pristup snimanju zaslona vašeg računala."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Otvorite Postavke sustava"
@@ -2175,7 +2175,7 @@
     "messageformat": "Kliknite na ikonu lokota u donjem lijevom kutu i unesite vašu lozinku računala."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "S desne strane, potvrdite okvir uz Signal. Ako na popisu ne vidite Signal, kliknite + da biste ga dodali."
+    "messageformat": "S desne strane, potvrdite okvir uz Tellomi. Ako na popisu ne vidite Tellomi, kliknite + da biste ga dodali."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Otvorite Postavke sustava"
@@ -2205,10 +2205,10 @@
     "messageformat": "Prikaži skočni prozor za oblikovanje teksta kada je tekst odabran"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Provjera pravopisa bit će omogućena sljedeći put kada pokrenete Signal."
+    "messageformat": "Provjera pravopisa bit će omogućena sljedeći put kada pokrenete Tellomi."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Provjera pravopisa bit će onemogućena sljedeći put kada pokrenete Signal."
+    "messageformat": "Provjera pravopisa bit će onemogućena sljedeći put kada pokrenete Tellomi."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Smanji na sistemsku traku"
@@ -2232,7 +2232,7 @@
     "messageformat": "Izbriši sve podatke?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Želite izbrisati sve podatke i poruke s ove verzije Signala za desktop? Vaš Signal račun i podaci na vašem telefonu ili drugim povezanim uređajima neće biti izbrisani."
+    "messageformat": "Želite izbrisati sve podatke i poruke s ove verzije Signala za desktop? Vaš Tellomi račun i podaci na vašem telefonu ili drugim povezanim uređajima neće biti izbrisani."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Prekidanje veze i brisanje svih podataka…"
@@ -2322,7 +2322,7 @@
     "messageformat": "Uvoz kontakata"
   },
   "icu:syncExplanation": {
-    "messageformat": "Uvezite sve Signal grupe i kontakte sa svog mobilnog uređaja."
+    "messageformat": "Uvezite sve Tellomi grupe i kontakte sa svog mobilnog uređaja."
   },
   "icu:syncNow": {
     "messageformat": "Uvezi sada"
@@ -2355,7 +2355,7 @@
     "messageformat": "Jučer u {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signal možda nije u mogućnosti obraditi dolaznu poruku."
+    "messageformat": "Tellomi možda nije u mogućnosti obraditi dolaznu poruku."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Tijelo poruke je predugo."
@@ -2547,13 +2547,13 @@
     "messageformat": "Dosegnuta je maksimalna veličina grupe"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal grupe mogu imati najviše {max,number} članova."
+    "messageformat": "Tellomi grupe mogu imati najviše {max,number} članova."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Dosegnuto preporučeno ograničenje članova"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal grupe najbolje rade s {max,number} članova ili manje. Dodavanje više članova uzrokovat će kašnjenja u slanju i primanju poruka."
+    "messageformat": "Tellomi grupe najbolje rade s {max,number} članova ili manje. Dodavanje više članova uzrokovat će kašnjenja u slanju i primanju poruka."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Dodijelite naziv grupi"
@@ -2583,7 +2583,7 @@
     "messageformat": "Nije moguće ažurirati grupu. Provjerite internetsku vezu i pokušajte ponovo."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Za nastavak dopisivanja kliknite i ponovno povežite Signal Desktop s vašim mobilnim uređajem."
+    "messageformat": "Za nastavak dopisivanja kliknite i ponovno povežite Tellomi Desktop s vašim mobilnim uređajem."
   },
   "icu:unlinked": {
     "messageformat": "Prekinuta je veza"
@@ -2610,7 +2610,7 @@
     "messageformat": "Ažuriranje Signala nije uspjelo. Kliknite za ponovni pokušaj."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Ponovno pokreni Signal"
+    "messageformat": "Ponovno pokreni Tellomi"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Zanemari ažuriranje"
@@ -2742,7 +2742,7 @@
     "messageformat": "Dio privitaka je prevelik za prikazivanje."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Koristite ovu poveznicu da biste se pridružili Signal pozivu"
+    "messageformat": "Koristite ovu poveznicu da biste se pridružili Tellomi pozivu"
   },
   "icu:donation--missing": {
     "messageformat": "Nije moguće učitati podatke o donaciji"
@@ -3159,7 +3159,7 @@
     "messageformat": "Buduće poruke poput ove će sada biti sinkronizirane kada upotrebljavate najnoviju verziju Signala."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Ažuriraj Signal"
+    "messageformat": "Ažuriraj Tellomi"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Pregledano"
@@ -3426,7 +3426,7 @@
     "messageformat": "Razgovor je označen kao nepročitan"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Za korištenje alata za izradu naljepnica postavite Signal na telefonu i računalu"
+    "messageformat": "Za korištenje alata za izradu naljepnica postavite Tellomi na telefonu i računalu"
   },
   "icu:Reactions--remove": {
     "messageformat": "Ukloni reakciju"
@@ -3444,10 +3444,10 @@
     "messageformat": "Savjeti za sigurnost"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Ne odgovarajte porukama koje šalje Signal"
+    "messageformat": "Ne odgovarajte porukama koje šalje Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Signal vam nikada neće poslati poruku da traži vaš kôd za registraciju, PIN ili ključ za oporavak. Nikada ne odgovarajte na poruke koje se predstavljaju kao da su od Signala."
+    "messageformat": "Tellomi vam nikada neće poslati poruku da traži vaš kôd za registraciju, PIN ili ključ za oporavak. Nikada ne odgovarajte na poruke koje se predstavljaju kao da su od Signala."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "Pregledajte imena i fotografije"
@@ -3462,10 +3462,10 @@
     "messageformat": "Ignorirajte nejasne poruke koje vas potiču da odgovorite. Čuvajte se financijskih savjeta i sumnjivih poveznica."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Ne odgovarajte porukama koje šalje Signal"
+    "messageformat": "Ne odgovarajte porukama koje šalje Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Signal vam nikada neće poslati poruku da traži vaš kôd za registraciju, PIN ili ključ za oporavak. Ne odgovarajte na poruke koje se predstavljaju kao da su od Signala ili od korisničke podrške Signala. Zlonamjerni akteri postavljaju lažna imena kako bi pokušali preuzeti vaš račun."
+    "messageformat": "Tellomi vam nikada neće poslati poruku da traži vaš kôd za registraciju, PIN ili ključ za oporavak. Ne odgovarajte na poruke koje se predstavljaju kao da su od Signala ili od korisničke podrške Signala. Zlonamjerni akteri postavljaju lažna imena kako bi pokušali preuzeti vaš račun."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Pregledajte imena i fotografije"
@@ -3552,13 +3552,13 @@
     "messageformat": "Prijaviti kao neželjeni sadržaj?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signal će biti obaviješten da ova osoba možda šalje neželjene poruke. Signal ne može vidjeti sadržaj nijednog razgovora."
+    "messageformat": "Tellomi će biti obaviješten da ova osoba možda šalje neželjene poruke. Tellomi ne može vidjeti sadržaj nijednog razgovora."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signal će biti obaviješten da korisnik koji vas je pozvao u ovu grupu možda šalje neželjene poruke. Signal ne može vidjeti sadržaj nijednog razgovora."
+    "messageformat": "Tellomi će biti obaviješten da korisnik koji vas je pozvao u ovu grupu možda šalje neželjene poruke. Tellomi ne može vidjeti sadržaj nijednog razgovora."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signal će biti obaviješten da korisnik {name}, koji vas je pozvao u ovu grupu, možda šalje neželjene poruke. Signal ne može vidjeti sadržaj nijednog razgovora."
+    "messageformat": "Tellomi će biti obaviješten da korisnik {name}, koji vas je pozvao u ovu grupu, možda šalje neželjene poruke. Tellomi ne može vidjeti sadržaj nijednog razgovora."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Prijavi neželjeni sadržaj"
@@ -3600,7 +3600,7 @@
     "messageformat": "Sigurno želite prihvatiti zahtjev?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "Prihvatite samo zahtjeve koje vam šalju ljudi kojima vjerujete. <bold>Signal vas nikada</bold> neće kontaktirati da traži vaš kôd za registraciju, PIN ili ključ za oporavak."
+    "messageformat": "Prihvatite samo zahtjeve koje vam šalju ljudi kojima vjerujete. <bold>Tellomi vas nikada</bold> neće kontaktirati da traži vaš kôd za registraciju, PIN ili ključ za oporavak."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "Nastavi"
@@ -3729,10 +3729,10 @@
     "messageformat": "Propušteni video poziv"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal je i dalje aktivan u pozadini"
+    "messageformat": "Tellomi je i dalje aktivan u pozadini"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal obavijesti će i dalje biti aktivne. To možete promijeniti u postavkama Signala."
+    "messageformat": "Tellomi obavijesti će i dalje biti aktivne. To možete promijeniti u postavkama Signala."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Dolazni glasovni poziv"
@@ -4113,7 +4113,7 @@
     "messageformat": "Nepoznata verzija poveznice"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Poveznica nije podržana u ovoj verziji Signal Desktopa."
+    "messageformat": "Poveznica nije podržana u ovoj verziji Tellomi Desktopa."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Ne možete se pridružiti grupi"
@@ -4722,7 +4722,7 @@
     "messageformat": "Donirajte Signalu"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} podržava Signal"
+    "messageformat": "{name} podržava Tellomi"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "Sinkronizacija poruka u tijeku"
@@ -4839,7 +4839,7 @@
     "messageformat": "Morate se prijaviti u svoj račun"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Morate otvoriti Signal na svom telefonu kako biste nastavili koristiti ovaj račun. Ako ne otvorite Signal na svom telefonu, vaš račun će uskoro biti izbrisan. <learnMoreLink>Saznaj više</learnMoreLink>"
+    "messageformat": "Morate otvoriti Tellomi na svom telefonu kako biste nastavili koristiti ovaj račun. Ako ne otvorite Tellomi na svom telefonu, vaš račun će uskoro biti izbrisan. <learnMoreLink>Saznaj više</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Nije moguće vratiti medijske zapise"
@@ -4863,10 +4863,10 @@
     "messageformat": "Dodaj privitak ili anketu"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Osoba ne koristi Signal"
+    "messageformat": "Osoba ne koristi Tellomi"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop ne podržava razgovore s kontaktima koji ne koriste Signal. Zamolite osobu da instalira Signal radi sigurnijeg razmjene poruka."
+    "messageformat": "Tellomi Desktop ne podržava razgovore s kontaktima koji ne koriste Tellomi. Zamolite osobu da instalira Tellomi radi sigurnijeg razmjene poruka."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Provjera statusa registracije kontakta"
@@ -5127,10 +5127,10 @@
     "messageformat": "Odblokiraj"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "Signal će biti obaviješten da ova osoba možda šalje neželjene poruke. Signal ne može vidjeti sadržaj nijednog razgovora."
+    "messageformat": "Tellomi će biti obaviješten da ova osoba možda šalje neželjene poruke. Tellomi ne može vidjeti sadržaj nijednog razgovora."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "Signal će biti obaviješten da korisnik koji vas je pozvao u ovu grupu možda šalje neželjene poruke. Signal ne može vidjeti sadržaj nijednog razgovora."
+    "messageformat": "Tellomi će biti obaviješten da korisnik koji vas je pozvao u ovu grupu možda šalje neželjene poruke. Tellomi ne može vidjeti sadržaj nijednog razgovora."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "Prijavi neželjeni sadržaj"
@@ -5289,7 +5289,7 @@
     "messageformat": "Zahtjeva da administrator odobri pridruživanje novih članova putem poveznice grupe"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopiraj poveznicu Signal grupe u međuspremnik"
+    "messageformat": "Kopiraj poveznicu Tellomi grupe u međuspremnik"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Pretraži članove"
@@ -5557,7 +5557,7 @@
     "messageformat": "Nije moguće proslijediti prazne ili izbrisane poruke"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Koristite ovu poveznicu da biste se pridružili Signal pozivu: {url}"
+    "messageformat": "Koristite ovu poveznicu da biste se pridružili Tellomi pozivu: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "Pažljivo pregledajte zahtjeve"
@@ -5566,7 +5566,7 @@
     "messageformat": "Savjeti za sigurnost"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Pažljivo pregledajte zahtjeve. Signal je pronašao drugi kontakt s istim imenom. <reviewRequestLink>Pregledaj zahtjev</reviewRequestLink>"
+    "messageformat": "Pažljivo pregledajte zahtjeve. Tellomi je pronašao drugi kontakt s istim imenom. <reviewRequestLink>Pregledaj zahtjev</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} član grupe ima isto ime. <reviewRequestLink>Pregledaj članove</reviewRequestLink>} few {{count,number} člana grupe imaju isto ime. <reviewRequestLink>Pregledaj članove</reviewRequestLink>} many {{count,number} članova grupe ima isto ime. <reviewRequestLink>Pregledaj članove</reviewRequestLink>} other {{count,number} članova grupe ima isto ime. <reviewRequestLink>Pregledaj članove</reviewRequestLink>}}"
@@ -5599,7 +5599,7 @@
     "messageformat": "Nema drugih zajedničkih grupa"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal kontakt"
+    "messageformat": "Tellomi kontakt"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Nedavno je promijenio/la ime profila iz {oldName} u {newName}"
@@ -6001,7 +6001,7 @@
     "messageformat": "Želite li odbaciti ove promjene?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Želite li zatvoriti Signal i prekinuti poziv?"
+    "messageformat": "Želite li zatvoriti Tellomi i prekinuti poziv?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Ne sada"
@@ -6167,10 +6167,10 @@
     "messageformat": "Sustav"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "Tellomi Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "Signal Login možete koristiti za registraciju i oporavak računa. Ove ključeve spremite u upravitelju lozinki kojemu vjerujete. <learnMoreLink>Saznajte više</learnMoreLink>."
+    "messageformat": "Tellomi Login možete koristiti za registraciju i oporavak računa. Ove ključeve spremite u upravitelju lozinki kojemu vjerujete. <learnMoreLink>Saznajte više</learnMoreLink>."
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "Saznajte više"
@@ -6191,7 +6191,7 @@
     "messageformat": "Ovo je povezani uređaj"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "Otvorite Signal na svom glavnom uređaju za upravljanje postavkama računa."
+    "messageformat": "Otvorite Tellomi na svom glavnom uređaju za upravljanje postavkama računa."
   },
   "icu:Preferences--zoom": {
     "messageformat": "Zumiranje"
@@ -6224,7 +6224,7 @@
     "messageformat": "Napredno"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signal PIN"
+    "messageformat": "Tellomi PIN"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "PIN podsjetnici"
@@ -6353,7 +6353,7 @@
     "messageformat": "Nije moguće izvesti povijest razgovora"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Vaša povijest razgovora ne može se izvesti jer Signal nema dopuštenje za zapisivanje datoteka na disk. Pokušajte promijeniti dozvole diska ili ažurirati postavke sustava, a zatim ponovno pokušajte s izvozom."
+    "messageformat": "Vaša povijest razgovora ne može se izvesti jer Tellomi nema dopuštenje za zapisivanje datoteka na disk. Pokušajte promijeniti dozvole diska ili ažurirati postavke sustava, a zatim ponovno pokušajte s izvozom."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Izvoz sigurnosne kopije"
@@ -6731,7 +6731,7 @@
     "messageformat": "Vaš ključ za oporavak"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "Ovaj je ključ potreban za oporavak vašeg računa i vaših podataka. Spremite ga na sigurno mjesto i nemojte ga nikada dijeliti ni s kim. Signal vas nikada neće kontaktirati putem poruke da pita za vaš ključ za oporavak. <learnMoreLink>Saznajte više.</learnMoreLink>"
+    "messageformat": "Ovaj je ključ potreban za oporavak vašeg računa i vaših podataka. Spremite ga na sigurno mjesto i nemojte ga nikada dijeliti ni s kim. Tellomi vas nikada neće kontaktirati putem poruke da pita za vaš ključ za oporavak. <learnMoreLink>Saznajte više.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "Nemojte dijeliti ključ za oporavak"
@@ -6746,7 +6746,7 @@
     "messageformat": "Ne dijeli ključ"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Ne dijelite svoj ključ za oporavak ni s kim. Dijeljenjem ključa omogućit ćete drugima da preuzmu vaš račun. <strong>Signal vas nikada neće kontaktirati putem poruke</strong> da pita za vaš ključ za oporavak. Nikada ne odgovarajte na poruke koje se predstavljaju kao da su od Signala. <learnMoreLink>Saznajte više.</learnMoreLink>"
+    "messageformat": "Ne dijelite svoj ključ za oporavak ni s kim. Dijeljenjem ključa omogućit ćete drugima da preuzmu vaš račun. <strong>Tellomi vas nikada neće kontaktirati putem poruke</strong> da pita za vaš ključ za oporavak. Nikada ne odgovarajte na poruke koje se predstavljaju kao da su od Signala. <learnMoreLink>Saznajte više.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Potvrdite svoj ključ za oporavak"
@@ -6758,7 +6758,7 @@
     "messageformat": "Čuvajte svoj ključ"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Signal vam neće moći pomoći vratiti sigurnosnu kopiju ako izgubite svoj ključ. Čuvajte ga na sigurnom mjestu i nemojte ga dijeliti s drugima."
+    "messageformat": "Tellomi vam neće moći pomoći vratiti sigurnosnu kopiju ako izgubite svoj ključ. Čuvajte ga na sigurnom mjestu i nemojte ga dijeliti s drugima."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Nastavi"
@@ -6809,7 +6809,7 @@
     "messageformat": "Za omogućavanje sigurnosnog kopiranja potrebna je provjera autentičnosti."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "Ovu radnju nije bilo moguće izvršiti zbog pogreške sistema za potvrdu identiteta. Pokušajte ponovno ili otvorite aplikaciju Signal na mobilnom uređaju, a zatim otvorite Postavke sigurnosne kopije za prikazivanje vašeg ključa za oporavak."
+    "messageformat": "Ovu radnju nije bilo moguće izvršiti zbog pogreške sistema za potvrdu identiteta. Pokušajte ponovno ili otvorite aplikaciju Tellomi na mobilnom uređaju, a zatim otvorite Postavke sigurnosne kopije za prikazivanje vašeg ključa za oporavak."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "Došlo je do pogreške prilikom slanja zahtjeva sistema za potvrdu identiteta za ovu radnju."
@@ -6947,7 +6947,7 @@
     "messageformat": "Postavi"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Ponovno pokrenite Signal za promjenu"
+    "messageformat": "Ponovno pokrenite Tellomi za promjenu"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Za promjenu jezika potrebno je ponovno pokrenuti aplikaciju."
@@ -6989,25 +6989,25 @@
     "messageformat": "Dodirnite za otvaranje trgovine App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Otvorite Signal na vašem telefonu"
+    "messageformat": "Otvorite Tellomi na vašem telefonu"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Ako ne otvorite Signal na svom telefonu, vaš će račun uskoro biti izbrisan. Ova poruka će nestati čim to uspješno napravite. <learnMoreLink>Saznaj više</learnMoreLink>"
+    "messageformat": "Ako ne otvorite Tellomi na svom telefonu, vaš će račun uskoro biti izbrisan. Ova poruka će nestati čim to uspješno napravite. <learnMoreLink>Saznaj više</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Otvorite Signal na svom telefonu kako bi vaš račun ostao aktivan"
+    "messageformat": "Otvorite Tellomi na svom telefonu kako bi vaš račun ostao aktivan"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Saznajte više"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal ima tehničkih poteškoća. Naporno radimo na što bržem vraćanju usluge."
+    "messageformat": "Tellomi ima tehničkih poteškoća. Naporno radimo na što bržem vraćanju usluge."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Potrebno je ažuriranje"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Kako biste dovršili sinkronizaciju svojih poruka, ažurirajte Signal za desktop."
+    "messageformat": "Kako biste dovršili sinkronizaciju svojih poruka, ažurirajte Tellomi za desktop."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Ažuriraj"
@@ -7016,13 +7016,13 @@
     "messageformat": "Potrebno je ažuriranje"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Da biste nastavili koristiti Signal, ažurirajte aplikaciju na najnoviju verziju."
+    "messageformat": "Da biste nastavili koristiti Tellomi, ažurirajte aplikaciju na najnoviju verziju."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Preuzmi {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Ponovno pokrenite Signal za primjenu ažuriranja."
+    "messageformat": "Ponovno pokrenite Tellomi za primjenu ažuriranja."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
     "messageformat": "Ažuriranje Signala za Desktop nije uspjelo, ali je dostupna nova verzija. Idite na {downloadUrl} i ručno instalirajte novu verziju, a zatim kontaktirajte korisničku podršku ili prijavite pogrešku."
@@ -7304,7 +7304,7 @@
     "messageformat": "Nevažeći PIN"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "Ponestalo vam je pokušaja za unos PIN-a, ali i dalje možete pristupiti svom Signal računu stvaranjem novog PIN-a. Radi vaše privatnosti i sigurnosti, vaš će se račun oporaviti bez ikakvih spremljenih podataka ili postavki profila."
+    "messageformat": "Ponestalo vam je pokušaja za unos PIN-a, ali i dalje možete pristupiti svom Tellomi računu stvaranjem novog PIN-a. Radi vaše privatnosti i sigurnosti, vaš će se račun oporaviti bez ikakvih spremljenih podataka ili postavki profila."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "Stvori novi PIN"
@@ -7367,7 +7367,7 @@
     "messageformat": "Odustani"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "O Signal PIN-ovima"
+    "messageformat": "O Tellomi PIN-ovima"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
     "messageformat": "PIN-ovi omogućavaju šifriranje vaših podataka na Signalu tako da im samo vi možete pristupiti. Vaš profil, postavke i kontakti će biti vraćeni nakon ponovne instalacije."
@@ -7403,7 +7403,7 @@
     "messageformat": "Potrebno je ažuriranje"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "Da biste nastavili s registracijom, molimo ažurirajte Signal na najnoviju verziju."
+    "messageformat": "Da biste nastavili s registracijom, molimo ažurirajte Tellomi na najnoviju verziju."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "Ažuriraj"
@@ -7433,7 +7433,7 @@
     "messageformat": "Kontaktiraj podršku"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signal se ne može zatvoriti.",
+    "messageformat": "Tellomi se ne može zatvoriti.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7460,7 +7460,7 @@
     "messageformat": "Aplikacija se srušila"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal se ponovno pokrenuo nakon rušenja. Možete poslati izvješće o rušenju kako biste pomogli Signalu da istraži problem."
+    "messageformat": "Tellomi se ponovno pokrenuo nakon rušenja. Možete poslati izvješće o rušenju kako biste pomogli Signalu da istraži problem."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Pošalji"
@@ -7565,7 +7565,7 @@
     "messageformat": "Pritisnite gumb „{buttonName}“ ispod"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Uključite „Signal“"
+    "messageformat": "Uključite „Tellomi“"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Otvori postavke"
@@ -7661,7 +7661,7 @@
     "messageformat": "Saznajte više"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal kontakti"
+    "messageformat": "Tellomi kontakti"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} su ljudi kojima ste odlučili iskazati povjerenje, tako što ste:"
@@ -7802,7 +7802,7 @@
     "messageformat": "Sakrij priču od"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Svi Signal kontakti"
+    "messageformat": "Svi Tellomi kontakti"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Svi osim…"
@@ -7880,7 +7880,7 @@
     "messageformat": "Privatnost moje priče"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Odaberite Signal kontakte koji mogu pogledati vašu priču. To uvijek možete promijeniti u postavkama privatnosti. <learnMoreLink>Saznaj više.</learnMoreLink>"
+    "messageformat": "Odaberite Tellomi kontakte koji mogu pogledati vašu priču. To uvijek možete promijeniti u postavkama privatnosti. <learnMoreLink>Saznaj više.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Izbriši priču"
@@ -7949,7 +7949,7 @@
     "messageformat": "Preuzmi privitak"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Omogućite potvrde prikaza da biste vidjeli tko je pogledao vaše priče. Otvorite aplikaciju Signal na svom mobilnom uređaju i idite u Postavke > Priče."
+    "messageformat": "Omogućite potvrde prikaza da biste vidjeli tko je pogledao vaše priče. Otvorite aplikaciju Tellomi na svom mobilnom uređaju i idite u Postavke > Priče."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Još nema odgovora"
@@ -8211,7 +8211,7 @@
     "messageformat": "Odbaci"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "Potvrdite svoj Signal PIN"
+    "messageformat": "Potvrdite svoj Tellomi PIN"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "Povremeno ćemo zatražiti da potvrdite svoj PIN kako biste ga zapamtili."
@@ -8223,7 +8223,7 @@
     "messageformat": "Ne sada"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "Unesite svoj Signal PIN"
+    "messageformat": "Unesite svoj Tellomi PIN"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "Kako bismo vam pomogli da zapamtite vaš PIN, zamoliti ćemo vas da ga povremeno unesete. S vremenom ćemo vas rijeđe tražiti."
@@ -8241,13 +8241,13 @@
     "messageformat": "PIN je ispravan. Podsjetit ćemo vas ponovo kasnije."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal uskoro više neće biti kompatibilan s verzijom {OS} na vašem računalu. Da biste nastavili koristiti Signal, ažurirajte operacijski sustav vašeg računala do {expirationDate}. <learnMoreLink>Saznajte više</learnMoreLink>"
+    "messageformat": "Tellomi uskoro više neće biti kompatibilan s verzijom {OS} na vašem računalu. Da biste nastavili koristiti Tellomi, ažurirajte operacijski sustav vašeg računala do {expirationDate}. <learnMoreLink>Saznajte više</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal za desktop više nije kompatibilan s ovim računalom. Ažurirajte verziju {OS} na svom računalu da biste ponovno koristili Signal za desktop. <learnMoreLink>Saznajte više</learnMoreLink>"
+    "messageformat": "Tellomi za desktop više nije kompatibilan s ovim računalom. Ažurirajte verziju {OS} na svom računalu da biste ponovno koristili Tellomi za desktop. <learnMoreLink>Saznajte više</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal za desktop više nije kompatibilan s ovim računalom. Ažurirajte verziju {OS} na svom računalu da biste ponovno koristili Signal za desktop."
+    "messageformat": "Tellomi za desktop više nije kompatibilan s ovim računalom. Ažurirajte verziju {OS} na svom računalu da biste ponovno koristili Tellomi za desktop."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Uređeno"
@@ -8484,10 +8484,10 @@
     "messageformat": "Imena profila na Signalu biraju vlasnici računa:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Signal ne može potvrditi imena ni fotografije korisnika"
+    "messageformat": "Tellomi ne može potvrditi imena ni fotografije korisnika"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Signal vas nikada neće kontaktirati da traži vaš kôd za registraciju, PIN ili ključ za oporavak"
+    "messageformat": "Tellomi vas nikada neće kontaktirati da traži vaš kôd za registraciju, PIN ili ključ za oporavak"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "Budite oprezni s računima koje ljudi koriste kako bi se lažno predstavljali"
@@ -8517,7 +8517,7 @@
     "messageformat": "Ponosno neprofitna organizacija"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Podržite privatnu razmjenu poruka donacijom kako bi Signal ostao nezavisan i bez oglasa. <readMoreLink>Pročitajte više</readMoreLink>"
+    "messageformat": "Podržite privatnu razmjenu poruka donacijom kako bi Tellomi ostao nezavisan i bez oglasa. <readMoreLink>Pročitajte više</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Doniraj odmah"
@@ -8541,7 +8541,7 @@
     "messageformat": "Vaši podaci su privatni"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Kao nezavisna neprofitna organizacija, Signal garantira privatnost vaših poruka i poziva. Bez oglasa, bez pratitelja i bez nadzora. Donirajte već danas i podržite Signal."
+    "messageformat": "Kao nezavisna neprofitna organizacija, Tellomi garantira privatnost vaših poruka i poziva. Bez oglasa, bez pratitelja i bez nadzora. Donirajte već danas i podržite Tellomi."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Nakon donacije možete zakačiti značku podrške na svoj profil"
@@ -8550,7 +8550,7 @@
     "messageformat": "Vaša privatnost je naša misija"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Signal je neprofitna organizacija."
+    "messageformat": "Tellomi je neprofitna organizacija."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Ikona srca u stilu logotipa Signala"
@@ -8568,7 +8568,7 @@
     "messageformat": "Najčešća pitanja donatora"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Plaćanja se ne sinkroniziraju na različitim uređajima. Ako ste ponovno instalirali Signal, potvrde o prijašnjim donacijama neće biti dostupne."
+    "messageformat": "Plaćanja se ne sinkroniziraju na različitim uređajima. Ako ste ponovno instalirali Tellomi, potvrde o prijašnjim donacijama neće biti dostupne."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Nema računa"
@@ -8598,7 +8598,7 @@
     "messageformat": "Kreditna ili debitna kartica"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Unesite podatke o svojoj kreditnoj ili debitnoj kartici. Signal ne prikuplja niti pohranjuje vaše osobne podatke. <learnMoreLink>Saznajte više</learnMoreLink>"
+    "messageformat": "Unesite podatke o svojoj kreditnoj ili debitnoj kartici. Tellomi ne prikuplja niti pohranjuje vaše osobne podatke. <learnMoreLink>Saznajte više</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Broj kartice"
@@ -8886,7 +8886,7 @@
     "messageformat": "Odaberite za nastavak"
   },
   "icu:CallQualitySurvey__ConfirmSubmission__PageTitle": {
-    "messageformat": "Pomozite nam poboljšati Signal"
+    "messageformat": "Pomozite nam poboljšati Tellomi"
   },
   "icu:CallQualitySurvey__ConfirmSubmission__PageDescriptionWithDiagnosticLink": {
     "messageformat": "Slanjem ćete podijeliti svoje povratne informacije zajedno s <diagnosticInfoLink>dijagnostičkim informacijama o vašem pozivu</diagnosticInfoLink>. Po želji možete podijeliti zapisnik otklanjanja pogreške kako biste nam pomogli poboljšati kvalitetu poziva."
@@ -8959,7 +8959,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Dodatna mala podešavanja, ispravci bugova i poboljšanje performansa aplikacije. Hvala vam što koristite Signal!",
+    "messageformat": "Dodatna mala podešavanja, ispravci bugova i poboljšanje performansa aplikacije. Hvala vam što koristite Tellomi!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -8979,7 +8979,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Manja podešavanja, ispravci grešaka i poboljšanje rada aplikacije. Hvala vam što koristite Signal!",
+    "messageformat": "Manja podešavanja, ispravci grešaka i poboljšanje rada aplikacije. Hvala vam što koristite Tellomi!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.24--1": {

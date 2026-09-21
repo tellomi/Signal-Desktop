@@ -63,10 +63,10 @@
     "messageformat": "A nagyfelbontású média nagyobb adathasználatot igényel."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Adomány a Signal számára"
+    "messageformat": "Adomány a Tellomi számára"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "A <bold>Kapcsolt eszközök</bold> funkcióval biztonságosan hozzáférhetsz a Signal-fiókodhoz és az üzeneteidhez bármelyik további eszközödön."
+    "messageformat": "A <bold>Kapcsolt eszközök</bold> funkcióval biztonságosan hozzáférhetsz a Tellomi-fiókodhoz és az üzeneteidhez bármelyik további eszközödön."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "Asztali számítógépet, táblagépet vagy további telefont is csatlakoztathatsz."
@@ -114,10 +114,10 @@
     "messageformat": "Ismeretlen csoport"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "A Signal nem nyitható meg"
+    "messageformat": "A Tellomi nem nyitható meg"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "A probléma megoldásához kövesd a támogatási oldalon található helyreállítási útmutatót, vagy lépj kapcsolatba a Signal ügyfélszolgálatával.\n\nHa azonnal használnod kell a Signalt, törölheted az adataidat, és újra összekapcsolhatod ezt az asztali számítógépet. Lehetőséged lesz az üzenetek előzményeinek átvitelére a telefonodról."
+    "messageformat": "A probléma megoldásához kövesd a támogatási oldalon található helyreállítási útmutatót, vagy lépj kapcsolatba a Tellomi ügyfélszolgálatával.\n\nHa azonnal használnod kell a Signalt, törölheted az adataidat, és újra összekapcsolhatod ezt az asztali számítógépet. Lehetőséged lesz az üzenetek előzményeinek átvitelére a telefonodról."
   },
   "icu:databaseError": {
     "messageformat": "Adatbázishiba"
@@ -132,7 +132,7 @@
     "messageformat": "Az összes üzenetelőzmény és médiafájl véglegesen törlésre kerül erről az eszközről. Ez nem törli az adatokat a telefonodról.\n\nAz újbóli összekapcsolás után használhatod a Signalt ezen az eszközön. Lehetőséged lesz az üzenetek előzményeinek átvitelére a telefonodról."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Az adatbázisod verziója nem egyezik a Signal ezen verziójával. Győződj meg róla, hogy a Signal legújabb verzióját nyitod meg a számítógépeden."
+    "messageformat": "Az adatbázisod verziója nem egyezik a Tellomi ezen verziójával. Győződj meg róla, hogy a Tellomi legújabb verzióját nyitod meg a számítógépeden."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Nem lehet hozzáférni az adatbázis titkosítási kulcsához, mert az operációs rendszer titkosítási kulcstartó háttérrendszere {previousBackend} értékről {currentBackend} értékre változott. Ez akkor fordulhat elő, ha az asztali környezet megváltozik, például a GNOME és a KDE között.\n\nKérjük, válts az előző asztali környezetre."
@@ -627,16 +627,16 @@
     "messageformat": "A titkosítás ellenőrzése automatikus ennél a csevegésnél. "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "Azoknál a személyeknél, akikhez telefonszámon keresztül kapcsolódsz, a Signal egy kulcsátláthatóságnak nevezett folyamat segítségével automatikusan megerősítheti, hogy a kapcsolat biztonságos-e. A fokozott biztonság érdekében ellenőrizd manuálisan a végpontok közötti titkosítást az előző képernyőn látható számok összehasonlításával vagy az eszközön található kód beolvasásával."
+    "messageformat": "Azoknál a személyeknél, akikhez telefonszámon keresztül kapcsolódsz, a Tellomi egy kulcsátláthatóságnak nevezett folyamat segítségével automatikusan megerősítheti, hogy a kapcsolat biztonságos-e. A fokozott biztonság érdekében ellenőrizd manuálisan a végpontok közötti titkosítást az előző képernyőn látható számok összehasonlításával vagy az eszközön található kód beolvasásával."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "Az automatikus ellenőrzés nem érhető el ehhez a csevegéshez"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "A Signal nem tudja automatikusan ellenőrizni a titkosítást ennél a csevegésnél. Ennek az lehet az oka, hogy {name} megváltoztatta a telefonszámát vagy a telefonszám adatvédelmi beállításait. Ellenőrizd manuálisan a végpontok közötti titkosítást az előző képernyőn látható számok összehasonlításával vagy az eszközön található kód beolvasásával."
+    "messageformat": "A Tellomi nem tudja automatikusan ellenőrizni a titkosítást ennél a csevegésnél. Ennek az lehet az oka, hogy {name} megváltoztatta a telefonszámát vagy a telefonszám adatvédelmi beállításait. Ellenőrizd manuálisan a végpontok közötti titkosítást az előző képernyőn látható számok összehasonlításával vagy az eszközön található kód beolvasásával."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "A Signal csak azokban a csevegésekben tudja automatikusan ellenőrizni a titkosítást, ahol telefonszámon keresztül vagy kapcsolatban valakivel. Ha a csevegést közös felhasználónévvel vagy csoporttal indították, ellenőrizd a végpontok közötti titkosítást az előző képernyőn látható számok összehasonlításával vagy az eszközön található kód beolvasásával."
+    "messageformat": "A Tellomi csak azokban a csevegésekben tudja automatikusan ellenőrizni a titkosítást, ahol telefonszámon keresztül vagy kapcsolatban valakivel. Ha a csevegést közös felhasználónévvel vagy csoporttal indították, ellenőrizd a végpontok közötti titkosítást az előző képernyőn látható számok összehasonlításával vagy az eszközön található kód beolvasásával."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "OK"
@@ -675,10 +675,10 @@
     "messageformat": "Nem, köszönöm"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "A Signal mostantól automatikusan ellenőrizheti a titkosítást."
+    "messageformat": "A Tellomi mostantól automatikusan ellenőrizheti a titkosítást."
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "Azoknál a névjegyeknél, amelyekhez telefonszámon keresztül kapcsolódsz, a Signal egy kulcsátláthatóságnak nevezett folyamat segítségével automatikusan megerősítheti, hogy a kapcsolat biztonságos-e. A fokozott biztonság érdekében továbbra is ellenőrizheted manuálisan a névjegyeket egy QR-kóddal vagy biztonsági számok összehasonlításával."
+    "messageformat": "Azoknál a névjegyeknél, amelyekhez telefonszámon keresztül kapcsolódsz, a Tellomi egy kulcsátláthatóságnak nevezett folyamat segítségével automatikusan megerősítheti, hogy a kapcsolat biztonságos-e. A fokozott biztonság érdekében továbbra is ellenőrizheted manuálisan a névjegyeket egy QR-kóddal vagy biztonsági számok összehasonlításával."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "Folytatás"
@@ -837,7 +837,7 @@
     "messageformat": "Matricacsomag-készítő"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "A Signal Desktopról"
+    "messageformat": "A Tellomi Desktopról"
   },
   "icu:screenShareWindow": {
     "messageformat": "Képernyő megosztása"
@@ -855,7 +855,7 @@
     "messageformat": "Kilépés"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "Tellomi Desktop"
   },
   "icu:search": {
     "messageformat": "Keresés"
@@ -909,7 +909,7 @@
     "messageformat": "Keresés telefonszám alapján"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Üdvözöl a Signal!"
+    "messageformat": "Üdvözöl a Tellomi!"
   },
   "icu:whatsNew": {
     "messageformat": "{whatsNew} ebben a frissítésben"
@@ -999,13 +999,13 @@
     "messageformat": "Te"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Hangüzenetek küldéséhez engedélyezd, hogy a Signal Desktop hozzáférjen a mikrofonodhoz!"
+    "messageformat": "Hangüzenetek küldéséhez engedélyezd, hogy a Tellomi Desktop hozzáférjen a mikrofonodhoz!"
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Hívás indításához engedélyezd, hogy a Signal Desktop hozzáférjen mikrofonodhoz!"
+    "messageformat": "Hívás indításához engedélyezd, hogy a Tellomi Desktop hozzáférjen mikrofonodhoz!"
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Videóhívás indításához engedélyezd, hogy a Signal Desktop hozzáférjen kamerádhoz!"
+    "messageformat": "Videóhívás indításához engedélyezd, hogy a Tellomi Desktop hozzáférjen kamerádhoz!"
   },
   "icu:allowAccess": {
     "messageformat": "Hozzáférés engedélyezése"
@@ -1029,13 +1029,13 @@
     "messageformat": "Némítás"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "A Signal frissítése nem sikerült. <retryUpdateButton>Próbáld újra a frissítést</retryUpdateButton> vagy látogass el a(z) {url} webhelyre a manuális telepítéshez. Ezután <contactSupportLink>vedd fel a kapcsolatot az ügyfélszolgálattal</contactSupportLink> a problémával kapcsolatban."
+    "messageformat": "A Tellomi frissítése nem sikerült. <retryUpdateButton>Próbáld újra a frissítést</retryUpdateButton> vagy látogass el a(z) {url} webhelyre a manuális telepítéshez. Ezután <contactSupportLink>vedd fel a kapcsolatot az ügyfélszolgálattal</contactSupportLink> a problémával kapcsolatban."
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "A Signal frissítése nem sikerült. Telepítsd az új verziót manuálisan a {url} weboldalról. Ezután <contactSupportLink>vedd fel a kapcsolatot az ügyfélszolgálattal</contactSupportLink> a problémával kapcsolatban."
+    "messageformat": "A Tellomi frissítése nem sikerült. Telepítsd az új verziót manuálisan a {url} weboldalról. Ezután <contactSupportLink>vedd fel a kapcsolatot az ügyfélszolgálattal</contactSupportLink> a problémával kapcsolatban."
   },
   "icu:readOnlyVolume": {
-    "messageformat": "A Signal Desktop valószínűleg macOS karanténban fut, és emiatt nem fog tudni automatikusan frissíteni. Próbáld meg áthelyezni a  {app} fájlt a {folder} mappába a Finder segítségével!"
+    "messageformat": "A Tellomi Desktop valószínűleg macOS karanténban fut, és emiatt nem fog tudni automatikusan frissíteni. Próbáld meg áthelyezni a  {app} fájlt a {folder} mappába a Finder segítségével!"
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -1080,7 +1080,7 @@
     "messageformat": "A beszélgetés ezen az eszközön törlésre kerül."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Ez az üzenet a csevegés minden tagja számára törlésre kerül, ha a Signal legújabb verzióját használják. A többiek számára látható lesz, hogy töröltél egy üzenetet."
+    "messageformat": "Ez az üzenet a csevegés minden tagja számára törlésre kerül, ha a Tellomi legújabb verzióját használják. A többiek számára látható lesz, hogy töröltél egy üzenetet."
   },
   "icu:from": {
     "messageformat": "Feladó"
@@ -1137,7 +1137,7 @@
     "messageformat": "Nincs közvetlen üzenet {name} felhasználóval"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal Névjegy"
+    "messageformat": "Tellomi Névjegy"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} szerepel a rendszernévjegyeid között"
@@ -1449,7 +1449,7 @@
     "messageformat": "Tudj meg többet"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "A Signal végpontok közti titkosítást használ, és időnként újra be kell állítania a két végpont közti adatkapcsolatot. Ennek nincs hatása a biztonságra, de előfordulhat, hogy pont ezalatt nem kaptál meg egy üzenetet ettől a személytől. Ilyen esetekben érdemes megkérni a partnert, hogy küldje újra az üzenetét."
+    "messageformat": "A Tellomi végpontok közti titkosítást használ, és időnként újra be kell állítania a két végpont közti adatkapcsolatot. Ennek nincs hatása a biztonságra, de előfordulhat, hogy pont ezalatt nem kaptál meg egy üzenetet ettől a személytől. Ilyen esetekben érdemes megkérni a partnert, hogy küldje újra az üzenetét."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Kapcsolatfelvétel a támogatással"
@@ -1566,7 +1566,7 @@
     "messageformat": "Nem lehet letölteni a médiafájlt"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Ellenőrizd az asztali számítógép és a telefon internetkapcsolatát. Nyisd meg a Signal alkalmazást a telefonodon, majd próbáld meg újra a letöltést."
+    "messageformat": "Ellenőrizd az asztali számítógép és a telefon internetkapcsolatát. Nyisd meg a Tellomi alkalmazást a telefonodon, majd próbáld meg újra a letöltést."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Ez a média már nem érhető el a telefonodon, és nem tölthető le."
@@ -1587,7 +1587,7 @@
     "messageformat": "Tudj meg többet!"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Olvasd be ezt a kódot a Signal telefonos alkalmazással!"
+    "messageformat": "Olvasd be ezt a kódot a Tellomi telefonos alkalmazással!"
   },
   "icu:Install__instructions__1": {
     "messageformat": "Nyisd meg a Signalt a telefonodon!"
@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>Váratlan hiba történt.</paragraph><paragraph>Kérjük, próbáld újra.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "A Signal nem tudja összekapcsolni ezt az eszközt a jelenlegi hálózaton keresztül."
+    "messageformat": "A Tellomi nem tudja összekapcsolni ezt az eszközt a jelenlegi hálózaton keresztül."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Újra"
@@ -1626,7 +1626,7 @@
     "messageformat": "Törlöd az összes adatot?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "Egy másik Signal-fiókot próbálsz összekapcsolni ezzel az asztali számítógéppel. Ha folytatod, a Signal Desktopban jelenleg megtalálható összes adat törlődik."
+    "messageformat": "Egy másik Tellomi-fiókot próbálsz összekapcsolni ezzel az asztali számítógéppel. Ha folytatod, a Tellomi Desktopban jelenleg megtalálható összes adat törlődik."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "Folytatás"
@@ -1641,7 +1641,7 @@
     "messageformat": "Eszköz neve"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Az eszköz nevének megváltoztatásához nyisd meg a Signal alkalmazást a telefonodon, és lépj a Beállítások > Kapcsolt eszközök menüpontra"
+    "messageformat": "Az eszköz nevének megváltoztatásához nyisd meg a Tellomi alkalmazást a telefonodon, és lépj a Beállítások > Kapcsolt eszközök menüpontra"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Emoji bőrtónus"
@@ -1833,7 +1833,7 @@
     "messageformat": "Automatikus kulcsellenőrzés"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "Ha engedélyezve van, a Signal megpróbálja automatikusan ellenőrizni az egyéni csevegések titkosítását."
+    "messageformat": "Ha engedélyezve van, a Tellomi megpróbálja automatikusan ellenőrizni az egyéni csevegések titkosítását."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "Tudj meg többet"
@@ -1902,7 +1902,7 @@
     "messageformat": "Ez a híváshivatkozás már nem érvényes."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal hívás"
+    "messageformat": "Tellomi hívás"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "A linket nem lehet törölni. Ellenőrizd az internetkapcsolatod, és próbáld újra!"
@@ -2076,16 +2076,16 @@
     "messageformat": "{count, plural, one {{count,number} személy vesz részt ebben a hívásban} other {{count,number} személy vesz részt ebben a hívásban}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "A Signal megcsörgeti őt: {person}"
+    "messageformat": "A Tellomi megcsörgeti őt: {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "A Signal megcsörgeti őket: {first} és {second}"
+    "messageformat": "A Tellomi megcsörgeti őket: {first} és {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "A Signal megcsörgeti őket: {first}, {second} és {third}"
+    "messageformat": "A Tellomi megcsörgeti őket: {first}, {second} és {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {A Signal hívni fogja {first}, {second} és {others,number} további ismerősödet} other {A Signal hívni fogja {first}, {second} és {others,number} további ismerősödet}}"
+    "messageformat": "{others, plural, one {A Tellomi hívni fogja {first}, {second} és {others,number} további ismerősödet} other {A Tellomi hívni fogja {first}, {second} és {others,number} további ismerősödet}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} értesítve lesz"
@@ -2139,13 +2139,13 @@
     "messageformat": "Újracsatlakozás…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "A kapcsolat megszakadt. A Signal újracsatlakozik."
+    "messageformat": "A kapcsolat megszakadt. A Tellomi újracsatlakozik."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "A Signal a következő ablakot osztja meg: {window}."
+    "messageformat": "A Tellomi a következő ablakot osztja meg: {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "A Signal-képernyő megosztása aktív"
+    "messageformat": "A Tellomi-képernyő megosztása aktív"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Újracsatlakozás…"
@@ -2187,7 +2187,7 @@
     "messageformat": "Összes hívás átjátszása"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "A hívások átjátszása a Signal szerverein annak érdekében, hogy IP címed a telefonhívás során is rejtve maradjon partnered előtt. Engedélyezésével a hívások minősége gyengébb lesz."
+    "messageformat": "A hívások átjátszása a Tellomi szerverein annak érdekében, hogy IP címed a telefonhívás során is rejtve maradjon partnered előtt. Engedélyezésével a hívások minősége gyengébb lesz."
   },
   "icu:permissions": {
     "messageformat": "Jogosultságok"
@@ -2205,10 +2205,10 @@
     "messageformat": "Szövegformázási előugró ablak megjelenítése, ha ki van jelölve szöveg"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "A helyesírás-ellenőrzés a Signal újraindítását követően lesz engedélyezve."
+    "messageformat": "A helyesírás-ellenőrzés a Tellomi újraindítását követően lesz engedélyezve."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "A helyesírás-ellenőrzés a Signal újraindítását követően lesz kikapcsolva."
+    "messageformat": "A helyesírás-ellenőrzés a Tellomi újraindítását követően lesz kikapcsolva."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Lezárás tálcára"
@@ -2232,7 +2232,7 @@
     "messageformat": "Törlöd az összes adatot?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Törlöd az összes adatot és üzenetet a Signal Desktop ezen verziójából? A Signal-fiókod és a telefonodon vagy más társított eszközökön lévő adatok nem törlődnek."
+    "messageformat": "Törlöd az összes adatot és üzenetet a Tellomi Desktop ezen verziójából? A Tellomi-fiókod és a telefonodon vagy más társított eszközökön lévő adatok nem törlődnek."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Lecsatlakozás és az összes adat törlése…"
@@ -2241,7 +2241,7 @@
     "messageformat": "Fiók törlése"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "Ezzel fiók információid, profilod és minden üzeneted törlésre kerül. Emellett az összes Signal-csoportból is eltávolításra kerülsz."
+    "messageformat": "Ezzel fiók információid, profilod és minden üzeneted törlésre kerül. Emellett az összes Tellomi-csoportból is eltávolításra kerülsz."
   },
   "icu:deleteAccountButton": {
     "messageformat": "Fiók törlése"
@@ -2250,10 +2250,10 @@
     "messageformat": "Fiók törlése?"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "Ezzel fiók információid, profilod és minden üzeneted törlésre kerül. Emellett az összes Signal-csoportból is eltávolításra kerülsz. Az alkalmazás a folyamat befejezése után bezárul."
+    "messageformat": "Ezzel fiók információid, profilod és minden üzeneted törlésre kerül. Emellett az összes Tellomi-csoportból is eltávolításra kerülsz. Az alkalmazás a folyamat befejezése után bezárul."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Egy korábbi Signal Desktop telepítés elavult adatokat hagyott hátra. Ha úgy döntesz, hogy folytatod, akkor ezek az adatok törölve lesznek, és elölről kell kezdened."
+    "messageformat": "Egy korábbi Tellomi Desktop telepítés elavult adatokat hagyott hátra. Ha úgy döntesz, hogy folytatod, akkor ezek az adatok törölve lesznek, és elölről kell kezdened."
   },
   "icu:deleteOldData": {
     "messageformat": "Régi adatok törlése"
@@ -2310,7 +2310,7 @@
     "messageformat": "Részben törölve. Kattints a részletekért!"
   },
   "icu:expiredWarning": {
-    "messageformat": "A Signal Desktop ezen verziója elavult. Kérlek frissíts a legújabb verzióra, hogy folytatni tudd a beszélgetést!"
+    "messageformat": "A Tellomi Desktop ezen verziója elavult. Kérlek frissíts a legújabb verzióra, hogy folytatni tudd a beszélgetést!"
   },
   "icu:upgrade": {
     "messageformat": "Kattints a signal.org/download oldalra ugráshoz!"
@@ -2322,7 +2322,7 @@
     "messageformat": "Kontaktok importálása"
   },
   "icu:syncExplanation": {
-    "messageformat": "Az összes Signal csoport és kontakt importálása mobileszközödről."
+    "messageformat": "Az összes Tellomi csoport és kontakt importálása mobileszközödről."
   },
   "icu:syncNow": {
     "messageformat": "Importálás"
@@ -2355,7 +2355,7 @@
     "messageformat": "Tegnap {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Lehet, hogy a Signal nem tudja feldolgozni a bejövő üzenetet."
+    "messageformat": "Lehet, hogy a Tellomi nem tudja feldolgozni a bejövő üzenetet."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Az üzenet szövege túl hosszú."
@@ -2520,7 +2520,7 @@
     "messageformat": "A módosításokat csak az üzenet elküldésétől számított 24 órán belül lehet alkalmazni."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} nem Signal-felhasználó. Győződj meg róla, hogy a teljes felhasználónevet adtad meg."
+    "messageformat": "{atUsername} nem Tellomi-felhasználó. Győződj meg róla, hogy a teljes felhasználónevet adtad meg."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "A(z) {atUsername} érvénytelen felhasználónév. Győződj meg róla, hogy a teljes felhasználónevet és a hozzá tartozó számjegyeket is megadtad."
@@ -2547,13 +2547,13 @@
     "messageformat": "A csoport elérte maximális létszámát"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "A Signal csoportok legfeljebb {max,number} tagból állhatnak."
+    "messageformat": "A Tellomi csoportok legfeljebb {max,number} tagból állhatnak."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Elérted a javasolt létszám limitet"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "A Signal csoportok {max,number} vagy kevesebb taggal működnek hatékonyan. Ennél több tag esetén lassulások tapasztalhatók az üzenetek küldése és fogadása során."
+    "messageformat": "A Tellomi csoportok {max,number} vagy kevesebb taggal működnek hatékonyan. Ennél több tag esetén lassulások tapasztalhatók az üzenetek küldése és fogadása során."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Csoport elnevezése"
@@ -2583,13 +2583,13 @@
     "messageformat": "A csoport frissítése nem sikerült. Ellenőrizd a hálózatodat, majd próbáld újra!"
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Párosítsd újra a Signal Desktopot mobilkészülékeiddel a beszélgetés folytatásához!"
+    "messageformat": "Párosítsd újra a Tellomi Desktopot mobilkészülékeiddel a beszélgetés folytatásához!"
   },
   "icu:unlinked": {
     "messageformat": "Nincs párosítva"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Kattints ide az újbóli regisztrációhoz és az üzenetváltás folytatásához. A Signal Desktop valószínűleg azért nincs regisztrálva, mert egy másik eszközön regisztráltad a telefonszámodat a Signalnál."
+    "messageformat": "Kattints ide az újbóli regisztrációhoz és az üzenetváltás folytatásához. A Tellomi Desktop valószínűleg azért nincs regisztrálva, mert egy másik eszközön regisztráltad a telefonszámodat a Signalnál."
   },
   "icu:unregistered": {
     "messageformat": "Már nincs regisztrálva"
@@ -2601,7 +2601,7 @@
     "messageformat": "Frissítés újra"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Kattints a Signal újraindításához!"
+    "messageformat": "Kattints a Tellomi újraindításához!"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Kattints a frissítés letöltéséhez!"
@@ -2610,7 +2610,7 @@
     "messageformat": "Sikertelen frissítés. Kattints és próbáld újra."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Signal újraindítása"
+    "messageformat": "Tellomi újraindítása"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Frissítés kihagyása"
@@ -2742,7 +2742,7 @@
     "messageformat": "Egyes mellékletek túl nagyok a megjelenítéshez."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Ezzel a hivatkozással csatlakozhatsz egy Signal-híváshoz"
+    "messageformat": "Ezzel a hivatkozással csatlakozhatsz egy Tellomi-híváshoz"
   },
   "icu:donation--missing": {
     "messageformat": "Nem sikerült lekérni az adomány részleteit"
@@ -2811,7 +2811,7 @@
     "messageformat": "Köszönjük a támogatásodat!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Adományoztál a Signal számára {name} nevében. Lehetőséget kap arra, hogy a profilján megjelenítse a támogatást."
+    "messageformat": "Adományoztál a Tellomi számára {name} nevében. Lehetőséget kap arra, hogy a profilján megjelenítse a támogatást."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "A matricacsomagot nem sikerült telepíteni"
@@ -2823,10 +2823,10 @@
     "messageformat": "Matricák hozzáadása"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal Művészi Sorozat"
+    "messageformat": "Tellomi Művészi Sorozat"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Nem érhető el Signal Művészi matrica"
+    "messageformat": "Nem érhető el Tellomi Művészi matrica"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "Veled megosztva"
@@ -2862,7 +2862,7 @@
     "messageformat": "A matricacsomag átrendezéséhez húzd be"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "Signal Művészi Sorozat matricacsomagok"
+    "messageformat": "Tellomi Művészi Sorozat matricacsomagok"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "Kapott matricacsomagok"
@@ -3147,19 +3147,19 @@
     "messageformat": "Az üzenet túl hosszú a továbbiak megjelenítéshez"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} olyan Signal újdonságot tartalmazó üzenetet küldött, melyet a Signal jelenlegi verziójával nem lehet feldolgozni vagy megjeleníteni."
+    "messageformat": "{contact} olyan Tellomi újdonságot tartalmazó üzenetet küldött, melyet a Tellomi jelenlegi verziójával nem lehet feldolgozni vagy megjeleníteni."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Most már megkérheted {contact} nevű partnered, hogy küldje újra ezt az üzenetet, mivel már a Signal legfrissebb verzióját használod."
+    "messageformat": "Most már megkérheted {contact} nevű partnered, hogy küldje újra ezt az üzenetet, mivel már a Tellomi legfrissebb verzióját használod."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Az egyik eszközödről olyan üzenetet küldtél, melyet nem lehet feldolgozni vagy megjeleníteni ezen az eszközön, mivel olyan funkciót tartalmaz, mely csak a Signal egy újabb verziójában érhető el."
+    "messageformat": "Az egyik eszközödről olyan üzenetet küldtél, melyet nem lehet feldolgozni vagy megjeleníteni ezen az eszközön, mivel olyan funkciót tartalmaz, mely csak a Tellomi egy újabb verziójában érhető el."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "A jövőben az ehhez hasonló üzenetek szinkronizálva lesznek, ugyanis a Signal legfrissebb verzióját használod."
+    "messageformat": "A jövőben az ehhez hasonló üzenetek szinkronizálva lesznek, ugyanis a Tellomi legfrissebb verzióját használod."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Signal frissítése"
+    "messageformat": "Tellomi frissítése"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Megtekintve"
@@ -3444,10 +3444,10 @@
     "messageformat": "Biztonsági tippek"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Ne válaszolj a Signal csevegéseire"
+    "messageformat": "Ne válaszolj a Tellomi csevegéseire"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "A Signal soha nem küld üzenetet a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban. Soha ne válaszolj olyan csevegésre, amelyben úgy tesznek, mintha a Signal nevében írnának."
+    "messageformat": "A Tellomi soha nem küld üzenetet a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban. Soha ne válaszolj olyan csevegésre, amelyben úgy tesznek, mintha a Tellomi nevében írnának."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "Nevek és fotók felülvizsgálata"
@@ -3462,10 +3462,10 @@
     "messageformat": "Kerüld az olyan kétes üzeneteket, amelyekkel válaszadásra próbálnak rávenni. Vigyázz a pénzügyi tippekkel és a gyanús webes linkekkel."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Ne válaszolj a Signal csevegéseire"
+    "messageformat": "Ne válaszolj a Tellomi csevegéseire"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "A Signal soha nem küld üzenetet a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban. Ne válaszolj olyan csevegésekre, amelyek a Signalnak vagy a Signal ügyfélszolgálatának adják ki magukat. A rosszindulatú szereplők hamis neveket adnak meg, hogy megpróbálják átvenni az irányítást a fiókod felett."
+    "messageformat": "A Tellomi soha nem küld üzenetet a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban. Ne válaszolj olyan csevegésekre, amelyek a Signalnak vagy a Tellomi ügyfélszolgálatának adják ki magukat. A rosszindulatú szereplők hamis neveket adnak meg, hogy megpróbálják átvenni az irányítást a fiókod felett."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Nevek és fotók felülvizsgálata"
@@ -3552,13 +3552,13 @@
     "messageformat": "Jelented levélszemétként?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "A Signal értesítést kap arról, hogy ez a személy esetleg kéretlen üzeneteket küldözget. A Signal nem látja a csevegések tartalmát."
+    "messageformat": "A Tellomi értesítést kap arról, hogy ez a személy esetleg kéretlen üzeneteket küldözget. A Tellomi nem látja a csevegések tartalmát."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "A Signal értesítést kap arról, hogy az a személy, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A Signal nem látja a csevegések tartalmát."
+    "messageformat": "A Tellomi értesítést kap arról, hogy az a személy, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A Tellomi nem látja a csevegések tartalmát."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "A Signal értesítést kap arról, hogy {name}, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A Signal nem látja a csevegések tartalmát."
+    "messageformat": "A Tellomi értesítést kap arról, hogy {name}, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A Tellomi nem látja a csevegések tartalmát."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Kéretlen üzenet jelentése"
@@ -3600,7 +3600,7 @@
     "messageformat": "Elfogadod a felkérést?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "Csak olyan emberektől fogadj el kéréseket, akikben megbízol. A <bold>Signal soha nem</bold> küld üzenetet a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban."
+    "messageformat": "Csak olyan emberektől fogadj el kéréseket, akikben megbízol. A <bold>Tellomi soha nem</bold> küld üzenetet a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "Folytatás"
@@ -3654,7 +3654,7 @@
     "messageformat": "A név nincs ellenőrizve"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Ez a hivatalos és egyetlen Signal chat"
+    "messageformat": "Ez a hivatalos és egyetlen Tellomi chat"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "Hivatalos csevegés"
@@ -3729,10 +3729,10 @@
     "messageformat": "Nem fogadott videóhívás"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "A Signal továbbra is fut"
+    "messageformat": "A Tellomi továbbra is fut"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "A Signal továbbra is futni fog az értesítési területen. Ezt a Signal beállításaiban módosíthatod."
+    "messageformat": "A Tellomi továbbra is futni fog az értesítési területen. Ezt a Tellomi beállításaiban módosíthatod."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Bejövő hanghívás"
@@ -4113,7 +4113,7 @@
     "messageformat": "Ismeretlen verziójú hivatkozás"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "A Signal Desktop ezen verziója nem támogatja ezt a hivatkozást."
+    "messageformat": "A Tellomi Desktop ezen verziója nem támogatja ezt a hivatkozást."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Nem sikerült belépni a csoportba"
@@ -4719,7 +4719,7 @@
     "messageformat": "Az adatok törlése és az alkalmazás visszaállítása folyamatban van"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Adomány a Signal számára"
+    "messageformat": "Adomány a Tellomi számára"
   },
   "icu:BadgeDialog__name-supports-signal": {
     "messageformat": "{name} támogatja a Signalt"
@@ -4866,7 +4866,7 @@
     "messageformat": "Ez a személy nem használ Signalt"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "A Signal Desktop nem támogatja nem-Signal kontaktokkal való üzenetváltást. Biztonságosabb üzenetváltás érdekében kérd meg ezt a személyt, hogy telepítse a Signalt!"
+    "messageformat": "A Tellomi Desktop nem támogatja nem-Tellomi kontaktokkal való üzenetváltást. Biztonságosabb üzenetváltás érdekében kérd meg ezt a személyt, hogy telepítse a Signalt!"
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Ellenőrizzük a kontakt regisztrációjának státuszát"
@@ -5127,10 +5127,10 @@
     "messageformat": "Tiltás feloldása"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "A Signal értesítést kap arról, hogy ez a személy esetleg kéretlen üzeneteket küldözget. A Signal nem látja a csevegések tartalmát."
+    "messageformat": "A Tellomi értesítést kap arról, hogy ez a személy esetleg kéretlen üzeneteket küldözget. A Tellomi nem látja a csevegések tartalmát."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "A Signal értesítést kap arról, hogy az a személy, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A Signal nem látja a csevegések tartalmát."
+    "messageformat": "A Tellomi értesítést kap arról, hogy az a személy, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A Tellomi nem látja a csevegések tartalmát."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "Kéretlen üzenet jelentése"
@@ -5178,7 +5178,7 @@
     "messageformat": "Becenév"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "A beceneveket és megjegyzéseket a rendszer Signal és végpontok közötti titkosítással tárolja. Ezek csak számodra láthatók."
+    "messageformat": "A beceneveket és megjegyzéseket a rendszer Tellomi és végpontok közötti titkosítással tárolja. Ezek csak számodra láthatók."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Keresztnév"
@@ -5431,7 +5431,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {A Signal legújabb verzióit használó csoporttagok látni fogják, hogy törölted ezt az üzenetet.} other {A Signal legújabb verzióit használó csoporttagok látni fogják, hogy törölted ezeket az üzeneteket.}}"
+    "messageformat": "{count, plural, one {A Tellomi legújabb verzióit használó csoporttagok látni fogják, hogy törölted ezt az üzenetet.} other {A Tellomi legújabb verzióit használó csoporttagok látni fogják, hogy törölted ezeket az üzeneteket.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Törlés"
@@ -5557,7 +5557,7 @@
     "messageformat": "Üres vagy törölt üzeneteket nem lehet továbbítani"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Ezzel a hivatkozással csatlakozhatsz egy Signal-híváshoz: {url}"
+    "messageformat": "Ezzel a hivatkozással csatlakozhatsz egy Tellomi-híváshoz: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "Gondosan nézd át a kéréseket"
@@ -5566,7 +5566,7 @@
     "messageformat": "Biztonsági tippek"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Gondosan nézd át a felkéréseket. A Signal talált egy másik, azonos nevű névjegyet. <reviewRequestLink>Felkérés áttekintése</reviewRequestLink>"
+    "messageformat": "Gondosan nézd át a felkéréseket. A Tellomi talált egy másik, azonos nevű névjegyet. <reviewRequestLink>Felkérés áttekintése</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} csoporttagnak ugyanaz a neve. <reviewRequestLink>Tekintsd át a tagokat</reviewRequestLink>} other {{count,number} csoporttagnak ugyanaz a neve. <reviewRequestLink>Tekintsd át a tagokat</reviewRequestLink>}}"
@@ -5599,7 +5599,7 @@
     "messageformat": "Nincs egyéb közös csoportotok"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal Névjegy"
+    "messageformat": "Tellomi Névjegy"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Nemrég megváltoztatta profilnevét {oldName} névről {newName} névre"
@@ -5617,7 +5617,7 @@
     "messageformat": "Az üzenetküldés folytatásához ellenőrzés szükséges"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "A Signal hálózatán küldött kéretlen üzenetek megelőzése érdekében kérlek végezd el az alábbi ellenőrzést!"
+    "messageformat": "A Tellomi hálózatán küldött kéretlen üzenetek megelőzése érdekében kérlek végezd el az alábbi ellenőrzést!"
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Az ellenőrzést követően folytathatod az üzenetküldést. Az összes felfüggesztett üzenetet automatikusan elküldjük."
@@ -6101,7 +6101,7 @@
     "messageformat": "Általános"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Adomány a Signal számára"
+    "messageformat": "Adomány a Tellomi számára"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Megjelenés"
@@ -6167,10 +6167,10 @@
     "messageformat": "Rendszer"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "Tellomi Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "A Signal Loginoddal visszaállíthatod a fiókodat. Tartsd ezeket a kulcsokat biztonságosan egy megbízható jelszókezelőben. <learnMoreLink>Tudj meg többet</learnMoreLink>!"
+    "messageformat": "A Tellomi Loginoddal visszaállíthatod a fiókodat. Tartsd ezeket a kulcsokat biztonságosan egy megbízható jelszókezelőben. <learnMoreLink>Tudj meg többet</learnMoreLink>!"
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "Tudj meg többet!"
@@ -6191,7 +6191,7 @@
     "messageformat": "Ez egy kapcsolt eszköz"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "Fiókbeállításaid kezeléséhez nyisd meg a Signal alkalmazást az elsődleges eszközödön."
+    "messageformat": "Fiókbeállításaid kezeléséhez nyisd meg a Tellomi alkalmazást az elsődleges eszközödön."
   },
   "icu:Preferences--zoom": {
     "messageformat": "Nagyítás mértéke"
@@ -6224,7 +6224,7 @@
     "messageformat": "Haladó"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signal PIN"
+    "messageformat": "Tellomi PIN"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "PIN emlékeztetők"
@@ -6353,7 +6353,7 @@
     "messageformat": "Nem sikerült exportálni a csevegési előzményeket"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "A csevegési előzményeid nem exportálhatók, mert a Signal nem rendelkezik engedéllyel fájlok lemezre írásához. Próbáld meg módosítani a lemezed engedélyeit vagy frissíteni a rendszerbeállításaidat, majd exportáld újra."
+    "messageformat": "A csevegési előzményeid nem exportálhatók, mert a Tellomi nem rendelkezik engedéllyel fájlok lemezre írásához. Próbáld meg módosítani a lemezed engedélyeit vagy frissíteni a rendszerbeállításaidat, majd exportáld újra."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Biztonsági mentés exportálása"
@@ -6368,7 +6368,7 @@
     "messageformat": "Helyezd át a biztonsági mentések mappáját a telefon tárhelyére"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Telepíts egy új példányt a Signal alkalmazásból a telefonodra"
+    "messageformat": "Telepíts egy új példányt a Tellomi alkalmazásból a telefonodra"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "Koppints a „Visszaállítás vagy átvitel” lehetőségre, és válaszd a „Biztonsági mentés az eszközön” lehetőséget."
@@ -6635,13 +6635,13 @@
     "messageformat": "Letiltás időpontja: {blockedAt}"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signal Biztonságos Biztonsági mentések"
+    "messageformat": "Tellomi Biztonságos Biztonsági mentések"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automatikus biztonsági mentések a Signal biztonságos végpontok közötti titkosított tárolási szolgáltatásával. Kezdj hozzá a telefonodon! <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Automatikus biztonsági mentések a Tellomi biztonságos végpontok közötti titkosított tárolási szolgáltatásával. Kezdj hozzá a telefonodon! <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Készíts biztonsági másolatot az üzenetelőzményeidről, hogy soha ne veszíts el adatot új telefon vásárlásakor vagy a Signal újratelepítésekor."
+    "messageformat": "Készíts biztonsági másolatot az üzenetelőzményeidről, hogy soha ne veszíts el adatot új telefon vásárlásakor vagy a Tellomi újratelepítésekor."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Biztonsági mentés részletei"
@@ -6671,13 +6671,13 @@
     "messageformat": "Előfizetés törölve"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "A Signal Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és lemondhatod a telefonodon."
+    "messageformat": "A Tellomi Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és lemondhatod a telefonodon."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "A Signal Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és frissítheted a telefonodon."
+    "messageformat": "A Tellomi Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és frissítheted a telefonodon."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "A Signal Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és megújíthatod a telefonodon."
+    "messageformat": "A Tellomi Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és megújíthatod a telefonodon."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Utolsó biztonsági mentés"
@@ -6731,7 +6731,7 @@
     "messageformat": "A helyreállítási kulcsod"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "Ez a kulcs szükséges a fiókod és az adataid helyreállításához. Tárold biztonságos helyen és soha ne oszd meg senkivel. A Signal soha nem fog üzenetet küldeni a helyreállítási kulcsod miatt. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Ez a kulcs szükséges a fiókod és az adataid helyreállításához. Tárold biztonságos helyen és soha ne oszd meg senkivel. A Tellomi soha nem fog üzenetet küldeni a helyreállítási kulcsod miatt. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "Ne oszd meg a helyreállítási kulcsot"
@@ -6746,7 +6746,7 @@
     "messageformat": "Ne oszd meg a kulcsot"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Ne oszd meg senkivel a helyreállítási kulcsodat. Ezzel lehetővé teszed, hogy átvegyék az irányítást a fiókod felett. <strong>A Signal soha nem fog üzenetet küldeni</strong> a helyreállítási kulcsod miatt. Soha ne válaszolj olyan csevegésre, amelyben úgy tesznek, mintha a Signal nevében írnának. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Ne oszd meg senkivel a helyreállítási kulcsodat. Ezzel lehetővé teszed, hogy átvegyék az irányítást a fiókod felett. <strong>A Tellomi soha nem fog üzenetet küldeni</strong> a helyreállítási kulcsod miatt. Soha ne válaszolj olyan csevegésre, amelyben úgy tesznek, mintha a Tellomi nevében írnának. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Erősítsd meg a helyreállítási kulcsodat"
@@ -6758,7 +6758,7 @@
     "messageformat": "Tartsd biztonságban a kulcsod"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Ha elveszíted a kulcsod, a Signal nem tud segíteni a biztonsági másolat helyreállításában. Tárold biztonságos helyen, és ne oszd meg másokkal."
+    "messageformat": "Ha elveszíted a kulcsod, a Tellomi nem tud segíteni a biztonsági másolat helyreállításában. Tárold biztonságos helyen, és ne oszd meg másokkal."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Folytatás"
@@ -6809,7 +6809,7 @@
     "messageformat": "A biztonsági mentések engedélyezéséhez hitelesítés szükséges."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "Ez a művelet nem hajtható végre, mert a rendszer hitelesítése sikertelen volt. Kérjük, próbáld újra, vagy nyisd meg a Signal alkalmazást a mobileszközödön, és a Biztonsági mentés beállításainál nézd meg a helyreállítási kulcsot."
+    "messageformat": "Ez a művelet nem hajtható végre, mert a rendszer hitelesítése sikertelen volt. Kérjük, próbáld újra, vagy nyisd meg a Tellomi alkalmazást a mobileszközödön, és a Biztonsági mentés beállításainál nézd meg a helyreállítási kulcsot."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "Hiba történt a művelethez szükséges rendszerhitelesítés lekérésénél."
@@ -6962,7 +6962,7 @@
     "messageformat": "Képernyőbiztonság"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "A fokozott adatvédelem érdekében tiltsd le a Signal képernyőképeit ezen a számítógépen."
+    "messageformat": "A fokozott adatvédelem érdekében tiltsd le a Tellomi képernyőképeit ezen a számítógépen."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Kikapcsolod a képernyőbiztonságot?"
@@ -6995,19 +6995,19 @@
     "messageformat": "A fiókod hamarosan törlésre kerül, hacsak nem nyitod meg a Signalt a telefonodon. Ez az üzenet eltűnik, ha sikerrel jártál. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Ahhoz, hogy a fiókod aktív maradjon, nyisd meg a Signal appot."
+    "messageformat": "Ahhoz, hogy a fiókod aktív maradjon, nyisd meg a Tellomi appot."
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Tudj meg többet!"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "A Signal technikai nehézségekkel küzd. Keményen dolgozunk a gyors helyreállásért."
+    "messageformat": "A Tellomi technikai nehézségekkel küzd. Keményen dolgozunk a gyors helyreállásért."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Frissítés szükséges"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Az üzenetek szinkronizálásának befejezéséhez frissítsd most a Signal Desktopot."
+    "messageformat": "Az üzenetek szinkronizálásának befejezéséhez frissítsd most a Tellomi Desktopot."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Frissítés"
@@ -7016,7 +7016,7 @@
     "messageformat": "Frissítés szükséges"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "A Signal használatának folytatásához frissítsd a legújabb verzióra."
+    "messageformat": "A Tellomi használatának folytatásához frissítsd a legújabb verzióra."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Letöltés {downloadSize}"
@@ -7025,10 +7025,10 @@
     "messageformat": "A frissítés telepítéséhez indítsd újra a Signalt."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "A Signal Desktop frissítése nem sikerült, de elérhető egy új verzió. Nyisd meg a {downloadUrl} weboldalt, és telepítsd manuálisan az új verziót, majd lépj kapcsolatba az ügyfélszolgálattal, vagy jelentsd a hibát a problémával kapcsolatban."
+    "messageformat": "A Tellomi Desktop frissítése nem sikerült, de elérhető egy új verzió. Nyisd meg a {downloadUrl} weboldalt, és telepítsd manuálisan az új verziót, majd lépj kapcsolatba az ügyfélszolgálattal, vagy jelentsd a hibát a problémával kapcsolatban."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Signal-logó"
+    "messageformat": "Tellomi-logó"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "Vissza"
@@ -7304,7 +7304,7 @@
     "messageformat": "Hibás PIN"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "Kifogytál a PIN megadási lehetőségekből, de továbbra is hozzáférhetsz Signal fiókodhoz, amennyiben létrehozol egy új PIN-t. A magánszférád védelme és saját biztonságod érdekében fiókod csak a mentett profilbeállítások nélkül állítható vissza."
+    "messageformat": "Kifogytál a PIN megadási lehetőségekből, de továbbra is hozzáférhetsz Tellomi fiókodhoz, amennyiben létrehozol egy új PIN-t. A magánszférád védelme és saját biztonságod érdekében fiókod csak a mentett profilbeállítások nélkül állítható vissza."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "Új PIN létrehozása"
@@ -7334,7 +7334,7 @@
     "messageformat": "PIN létrehozása"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "A PIN kódok segíthetnek a fiókod visszaállításában és az adataid titkosításában a Signal segítségével. <learnMore>Tudj meg többet</learnMore>"
+    "messageformat": "A PIN kódok segíthetnek a fiókod visszaállításában és az adataid titkosításában a Tellomi segítségével. <learnMore>Tudj meg többet</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "PIN létrehozása"
@@ -7358,7 +7358,7 @@
     "messageformat": "Figyelmeztetés"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "A PIN-kódod letiltásával egy esetleges újraregisztráció során az összes Signal adatod el fog veszni. A Regisztrációs zár nem kapcsolható be, amíg a PIN-kód le van tiltva."
+    "messageformat": "A PIN-kódod letiltásával egy esetleges újraregisztráció során az összes Tellomi adatod el fog veszni. A Regisztrációs zár nem kapcsolható be, amíg a PIN-kód le van tiltva."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "PIN letiltása"
@@ -7367,10 +7367,10 @@
     "messageformat": "Mégse"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "A Signal PIN kódokról"
+    "messageformat": "A Tellomi PIN kódokról"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "A PIN-nek köszönhetően a Signal által tárolt információk titkosítva vannak, így csak te férhetsz hozzájuk. Újratelepítés esetén a profilod, a beállításaid és a névjegyeid visszaállításra kerülnek."
+    "messageformat": "A PIN-nek köszönhetően a Tellomi által tárolt információk titkosítva vannak, így csak te férhetsz hozzájuk. Újratelepítés esetén a profilod, a beállításaid és a névjegyeid visszaállításra kerülnek."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "Tudj meg többet!"
@@ -7403,7 +7403,7 @@
     "messageformat": "Frissítés szükséges"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "A regisztráció folytatásához frissíts a Signal legújabb verziójára."
+    "messageformat": "A regisztráció folytatásához frissíts a Tellomi legújabb verziójára."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "Frissítés"
@@ -7453,14 +7453,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "A Signal újabb verziója már telepítve van. Biztosan folytatni szeretnéd?",
+    "messageformat": "A Tellomi újabb verziója már telepítve van. Biztosan folytatni szeretnéd?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Az alkalmazás összeomlott"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "A Signal egy összeomlás után indult újra. Továbbíthatod a hibanaplót, hogy segítsd a fejlesztők munkáját."
+    "messageformat": "A Tellomi egy összeomlás után indult újra. Továbbíthatod a hibanaplót, hogy segítsd a fejlesztők munkáját."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Küldés"
@@ -7565,7 +7565,7 @@
     "messageformat": "Kattints az alábbi „{buttonName}” gombra"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Kapcsold be a „Signal” opciót"
+    "messageformat": "Kapcsold be a „Tellomi” opciót"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Ugrás a Beállításokhoz"
@@ -7661,7 +7661,7 @@
     "messageformat": "Tudj meg többet"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal Névjegyek"
+    "messageformat": "Tellomi Névjegyek"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "A {connections} olyan személyek, akikben megbízol, a következő módok valamelyikén keresztül:"
@@ -7802,7 +7802,7 @@
     "messageformat": "Történet elrejtése előlük:"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Minden Signal Névjegy"
+    "messageformat": "Minden Tellomi Névjegy"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Mindenki, kivéve…"
@@ -7880,7 +7880,7 @@
     "messageformat": "A Történetem adatvédelmi beállításai"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Döntsd el, hogy mely Signal Névjegyek tekinthetik meg a Történeted. Ezt bármikor módosíthatod az adatvédelmi beállításokban. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Döntsd el, hogy mely Tellomi Névjegyek tekinthetik meg a Történeted. Ezt bármikor módosíthatod az adatvédelmi beállításokban. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Történet törlése"
@@ -7949,7 +7949,7 @@
     "messageformat": "Csatolmány letöltése"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Engedélyezd a Megtekintési értesítéseket, és tudd meg, kik nézték meg a Történeteidet. Nyisd meg a Signal-alkalmazást a mobilodon, és lépj a Beállítások > Történetek menüpontra."
+    "messageformat": "Engedélyezd a Megtekintési értesítéseket, és tudd meg, kik nézték meg a Történeteidet. Nyisd meg a Tellomi-alkalmazást a mobilodon, és lépj a Beállítások > Történetek menüpontra."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Még nem érkeztek válaszok"
@@ -8211,7 +8211,7 @@
     "messageformat": "Elvetés"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "Signal PIN-kód hitelesítése"
+    "messageformat": "Tellomi PIN-kód hitelesítése"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "Időnként megkérünk PIN-kódod begépelésére, hogy biztosan ne felejtsd el."
@@ -8223,7 +8223,7 @@
     "messageformat": "Később"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "Add meg Signal PIN-kódodat"
+    "messageformat": "Add meg Tellomi PIN-kódodat"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "A PIN megjegyzéséhez segítségül időnként be kell majd gépelned. Egyre kevesebbszer az idő haladtával."
@@ -8241,13 +8241,13 @@
     "messageformat": "A PIN-kód helyes. Később újra emlékeztetünk."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "A Signal asztali számítógépen elérhető változata hamarosan nem fogja támogatni a számítógépeden megtalálható {OS} verziót. A Signal asztali számítógépen elérhető változatának folytatásához frissítsd a számítógéped operációs rendszerét eddig: {expirationDate}. <learnMoreLink>Tudj meg többet</learnMoreLink>"
+    "messageformat": "A Tellomi asztali számítógépen elérhető változata hamarosan nem fogja támogatni a számítógépeden megtalálható {OS} verziót. A Tellomi asztali számítógépen elérhető változatának folytatásához frissítsd a számítógéped operációs rendszerét eddig: {expirationDate}. <learnMoreLink>Tudj meg többet</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "A Signal már nem működik ezen a készüléken. A Signal asztali számítógépről elérhető változatának ismételt használatához frissítsd a számítógépeden a(z) {OS} verzióját. <learnMoreLink>Tudj meg többet</learnMoreLink>"
+    "messageformat": "A Tellomi már nem működik ezen a készüléken. A Tellomi asztali számítógépről elérhető változatának ismételt használatához frissítsd a számítógépeden a(z) {OS} verzióját. <learnMoreLink>Tudj meg többet</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "A Signal asztali számítógépről elérhető változata már nem működik ezen a számítógépen. A Signal asztali számítógépről elérhető változatának ismételt használatához frissítsd a számítógépeden a(z) {OS} verzióját."
+    "messageformat": "A Tellomi asztali számítógépről elérhető változata már nem működik ezen a számítógépen. A Tellomi asztali számítógépről elérhető változatának ismételt használatához frissítsd a számítógépeden a(z) {OS} verzióját."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Szerkesztve"
@@ -8484,10 +8484,10 @@
     "messageformat": "A profilneveket a Signalon a fióktulajdonos választja ki:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "A Signal nem tudja ellenőrizni a neveket és a fotókat"
+    "messageformat": "A Tellomi nem tudja ellenőrizni a neveket és a fotókat"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "A Signal soha nem veszi fel veled a kapcsolatot a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban"
+    "messageformat": "A Tellomi soha nem veszi fel veled a kapcsolatot a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "Legyél óvatos azokkal a fiókokkal, amelyek másoknak adják ki magukat"
@@ -8517,7 +8517,7 @@
     "messageformat": "Büszkén nonprofit"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Adományozz és támogasd a privát üzeneteket. Tartsd meg a Signal függetlenségét és hirdetésmentességét. <readMoreLink>További információk</readMoreLink>"
+    "messageformat": "Adományozz és támogasd a privát üzeneteket. Tartsd meg a Tellomi függetlenségét és hirdetésmentességét. <readMoreLink>További információk</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Adományozás"
@@ -8553,7 +8553,7 @@
     "messageformat": "A Signal egy nonprofit szervezet ."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "Szív ikon a Signal logó stílusában"
+    "messageformat": "Szív ikon a Tellomi logó stílusában"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "OK"
@@ -8598,7 +8598,7 @@
     "messageformat": "Hitel- vagy betéti kártya"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Add meg a hitel- vagy bankkártyád adatait. A Signal nem gyűjti és nem tárolja a személyes adataidat. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Add meg a hitel- vagy bankkártyád adatait. A Tellomi nem gyűjti és nem tárolja a személyes adataidat. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Kártyaszám"
@@ -8628,7 +8628,7 @@
     "messageformat": "A kód túl rövid"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Szerezd meg a Signal Boost-jelvényt 30 napra"
+    "messageformat": "Szerezd meg a Tellomi Boost-jelvényt 30 napra"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "Az adomány minimális összege: {formattedCurrencyAmount}"
@@ -8823,7 +8823,7 @@
     "messageformat": "Milyen volt a hívás minősége?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "Ez segít nekünk a Signal-hívások jobbá tételében. Személyazonosításra alkalmas adatokat nem tárolunk."
+    "messageformat": "Ez segít nekünk a Tellomi-hívások jobbá tételében. Személyazonosításra alkalmas adatokat nem tárolunk."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Problémákba ütköztem"
@@ -8874,7 +8874,7 @@
     "messageformat": "A probléma leírása"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Kérjük, add meg a problémához kapcsolódó összes részletet. Amit itt megosztottál, az bizalmas marad, és csak a Signal-hívások fejlesztésére használjuk fel."
+    "messageformat": "Kérjük, add meg a problémához kapcsolódó összes részletet. Amit itt megosztottál, az bizalmas marad, és csak a Tellomi-hívások fejlesztésére használjuk fel."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "Kérjük, írd le, hogy mi a gondod"
@@ -8940,7 +8940,7 @@
     "messageformat": "Újra össze kell kapcsolnod egy QR-kód beolvasásával."
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "Ha fizettél a Signal biztonsági mentés szolgáltatásáért, az összes médiafájlod áthelyezésre kerül. Máskülönben a legutóbbi 45 nap adatai lesznek figyelembe véve."
+    "messageformat": "Ha fizettél a Tellomi biztonsági mentés szolgáltatásáért, az összes médiafájlod áthelyezésre kerül. Máskülönben a legutóbbi 45 nap adatai lesznek figyelembe véve."
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "Átutalás"
@@ -8952,10 +8952,10 @@
     "messageformat": "Törlöd az összes adatot?"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "A Signal Desktopban jelenleg megtalálható összes adat törlődik. Ezután beolvashatsz egy QR-kódot, és áthelyezheted az üzenetelőzményeidet a telefonodról."
+    "messageformat": "A Tellomi Desktopban jelenleg megtalálható összes adat törlődik. Ezután beolvashatsz egy QR-kódot, és áthelyezheted az üzenetelőzményeidet a telefonodról."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Ebbe a verzióba néhány kisebb újítás és hibajavítás került annak érdekében, hogy a Signal továbbra is gond nélkül fusson.",
+    "messageformat": "Ebbe a verzióba néhány kisebb újítás és hibajavítás került annak érdekében, hogy a Tellomi továbbra is gond nélkül fusson.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {

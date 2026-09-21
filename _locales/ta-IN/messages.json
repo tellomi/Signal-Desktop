@@ -63,10 +63,10 @@
     "messageformat": "உயர்தரத்தை அனுப்புகிறது ஊடகம் அதிக தரவைப் பயன்படுத்தும்."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Signal-க்கு நன்கொடை அளி"
+    "messageformat": "Tellomi-க்கு நன்கொடை அளி"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "<bold>இணைக்கப்பட்ட சாதனங்கள்</bold> என்ற விருப்பத்தின் மூலம் உங்களின் கூடுதல் சாதனங்கள் எதிலும் உங்கள் Signal கணக்கையும் செய்திகளையும் பாதுகாப்பாக அணுக முடியும்."
+    "messageformat": "<bold>இணைக்கப்பட்ட சாதனங்கள்</bold> என்ற விருப்பத்தின் மூலம் உங்களின் கூடுதல் சாதனங்கள் எதிலும் உங்கள் Tellomi கணக்கையும் செய்திகளையும் பாதுகாப்பாக அணுக முடியும்."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "டெஸ்க்டாப், டேப்லெட் அல்லது மற்றொரு தொலைபேசியை நீங்கள் இணைக்கலாம்."
@@ -132,7 +132,7 @@
     "messageformat": "உங்கள் மெசேஜ் வரலாறு மற்றும் ஊடகம் அனைத்தும் இந்த சாதனத்தில் இருந்து நிரந்தரமாக நீக்கப்படும். இது உங்கள் ஃபோனில் இருந்து எந்தத் தரவையும் நீக்காது.\n\nஇந்தச் சாதனத்தை மீண்டும் இணைத்த பிறகு நீங்கள் சிக்னலைப் பயன்படுத்த முடியும். உங்கள் ஃபோனிலிருந்து மெசேஜ் வரலாற்றை இடமாற்ற உங்களுக்கு விருப்பம் இருக்கும்."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "உங்கள் தரவுத்தளத்தின் பதிப்பு Signal இன் இந்தப் பதிப்போடு பொருந்தவில்லை. உங்கள் கணினியில் Signal இன் புதிய பதிப்பைத் திறக்கிறீர்கள் என்பதை உறுதிப்படுத்தவும்."
+    "messageformat": "உங்கள் தரவுத்தளத்தின் பதிப்பு Tellomi இன் இந்தப் பதிப்போடு பொருந்தவில்லை. உங்கள் கணினியில் Tellomi இன் புதிய பதிப்பைத் திறக்கிறீர்கள் என்பதை உறுதிப்படுத்தவும்."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "OS குறியாக்க கீரிங் பின்தளம் {previousBackend} -இலிருந்து {currentBackend} -க்கு மாறியதால் தரவுத்தளக் குறியாக்க விசையை அணுக முடியவில்லை. உதாரணமாக GNOME மற்றும் KDE க்கு இடையில் டெஸ்க்டாப் சூழல் மாறினால் இது நிகழலாம்.\n\nமுந்தைய டெஸ்க்டாப் சூழலுக்கு மாறவும்."
@@ -183,7 +183,7 @@
     "messageformat": "அனைத்தையும் காட்டு"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Signal லை விட்டு வெளியேறு"
+    "messageformat": "Tellomi லை விட்டு வெளியேறு"
   },
   "icu:editMenuUndo": {
     "messageformat": "செயல்தவிர்"
@@ -507,7 +507,7 @@
     "messageformat": "மற்றொரு சாதனத்திலிருந்து சரிபார்க்கப்படாதபடி உங்கள் பாதுகாப்பு எண்ணை {name}  உடன் குறித்தீர்கள்"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "நீங்கள் சரிபார்க்க முயற்சிக்கும் பாதுகாப்பு எண் மாறிவிட்டது. உங்கள் புதிய பாதுகாப்பு எண்ணை {name1} உடன் மதிப்பாய்வு செய்யவும். நினைவில் கொள்ளுங்கள், இந்த மாற்றம் யாராவது உங்கள் தகவல்தொடர்புகளை இடைமறிக்க முயற்சிக்கிறார்கள் அல்லது {name2} வெறுமனே Signal சிக்னலை மீண்டும் நிறுவியிருக்கலாம்."
+    "messageformat": "நீங்கள் சரிபார்க்க முயற்சிக்கும் பாதுகாப்பு எண் மாறிவிட்டது. உங்கள் புதிய பாதுகாப்பு எண்ணை {name1} உடன் மதிப்பாய்வு செய்யவும். நினைவில் கொள்ளுங்கள், இந்த மாற்றம் யாராவது உங்கள் தகவல்தொடர்புகளை இடைமறிக்க முயற்சிக்கிறார்கள் அல்லது {name2} வெறுமனே Tellomi சிக்னலை மீண்டும் நிறுவியிருக்கலாம்."
   },
   "icu:safetyNumberChangeDialog__message": {
     "messageformat": "பின்வரும் நபர்கள் Signalஐ மீண்டும் நிறுவியிருக்கலாம் அல்லது டிவைஸ்களை மாற்றியிருக்கலாம். புதிய பாதுகாப்பு எண்ணை உறுதிப்படுத்த ஒரு பெறுநரை கிளிக் செய்யவும். இது விருப்பத்தேர்வு."
@@ -831,13 +831,13 @@
     "messageformat": "ஆதரவு பக்கத்திற்குச் செல்லவும்"
   },
   "icu:joinTheBeta": {
-    "messageformat": "Signal சோதனையில் சேரவும்"
+    "messageformat": "Tellomi சோதனையில் சேரவும்"
   },
   "icu:signalDesktopStickerCreator": {
     "messageformat": "ஸ்டிக்கர் பேக் கிரியேட்டர்"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Signal Desktop பற்றி"
+    "messageformat": "Tellomi Desktop பற்றி"
   },
   "icu:screenShareWindow": {
     "messageformat": "திரையைப் பகிர்தல்"
@@ -855,7 +855,7 @@
     "messageformat": "விட்டுவிடு"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "Tellomi Desktop"
   },
   "icu:search": {
     "messageformat": "தேடல்"
@@ -909,7 +909,7 @@
     "messageformat": "தொலைபேசி எண் மூலம் கண்டுபிடிக்கவும்"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Signal லுக்கு வருக"
+    "messageformat": "Tellomi லுக்கு வருக"
   },
   "icu:whatsNew": {
     "messageformat": "இந்த புதுப்பிப்பில் {whatsNew} -ஐப் பார்க்கவும்"
@@ -999,13 +999,13 @@
     "messageformat": "நீங்கள்"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "குரல் செய்திகளை அனுப்ப, Signal டெஸ்க்டாப் உங்கள் மைக்ரோஃபோனை அணுக அனுமதிக்கவும்."
+    "messageformat": "குரல் செய்திகளை அனுப்ப, Tellomi டெஸ்க்டாப் உங்கள் மைக்ரோஃபோனை அணுக அனுமதிக்கவும்."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "அழைப்பதற்கு, உங்கள் ஒலிபெருக்கியை பயன்படுத்த சிக்னல் டெஸ்க்டாப்பை Signal desktop அனுமதிக்க வேண்டும்."
+    "messageformat": "அழைப்பதற்கு, உங்கள் ஒலிபெருக்கியை பயன்படுத்த சிக்னல் டெஸ்க்டாப்பை Tellomi desktop அனுமதிக்க வேண்டும்."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "காணொளி அழைப்புக்கு, உங்கள் புகைப்பட கருவியை பயன்படுத்த சிக்னல்  டெஸ்க்டாப்பை Signal desktop அனுமதிக்க வேண்டும்."
+    "messageformat": "காணொளி அழைப்புக்கு, உங்கள் புகைப்பட கருவியை பயன்படுத்த சிக்னல்  டெஸ்க்டாப்பை Tellomi desktop அனுமதிக்க வேண்டும்."
   },
   "icu:allowAccess": {
     "messageformat": "அணுகலை அனுமதிக்கவும்"
@@ -1035,7 +1035,7 @@
     "messageformat": "சிக்னலைப் புதுப்பிக்க இயலவில்லை. கைமுறையாக நிறுவ, {url} என்ற இணைப்பைப் பார்வையிடவும். பின்னர், இந்தச் சிக்கலுக்காக <contactSupportLink>ஆதரவைத் தொடர்பு கொள்ளவும்</contactSupportLink>"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal Desktop டெஸ்க்டாப் ஒரு macOS தனிமைப்படுத்தலில் இருக்கலாம், அதனால் தானாக புதுப்பிக்க முடியாது.  {app} பயன்பாட்டை {folder} கோப்புறையில் Finder மூலம் நகர்த்த முயற்சிக்கவும்."
+    "messageformat": "Tellomi Desktop டெஸ்க்டாப் ஒரு macOS தனிமைப்படுத்தலில் இருக்கலாம், அதனால் தானாக புதுப்பிக்க முடியாது.  {app} பயன்பாட்டை {folder} கோப்புறையில் Finder மூலம் நகர்த்த முயற்சிக்கவும்."
   },
   "icu:ok": {
     "messageformat": "சரி"
@@ -1080,7 +1080,7 @@
     "messageformat": "இந்த செய்தி இந்த சாதனத்திலிருந்து நீக்கப்படும்."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "சாட்டில் உள்ள அனைவரும் Signal இன் சமீபத்திய பதிப்பில் இருந்தால், இந்தச் செய்தி நீக்கப்படும். நீங்கள் ஒரு செய்தியை நீக்கியுள்ளீர்கள் என்பதை அவர்களால் பார்க்க முடியும்."
+    "messageformat": "சாட்டில் உள்ள அனைவரும் Tellomi இன் சமீபத்திய பதிப்பில் இருந்தால், இந்தச் செய்தி நீக்கப்படும். நீங்கள் ஒரு செய்தியை நீக்கியுள்ளீர்கள் என்பதை அவர்களால் பார்க்க முடியும்."
   },
   "icu:from": {
     "messageformat": "இருந்து"
@@ -1449,7 +1449,7 @@
     "messageformat": "மேலும் அறிக"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal இருமுனை குறியாக்கத்தைப் பயன்படுத்துகிறது, மேலும் இது சில நேரங்களில் உங்கள் சாட் அமர்வை புதுப்பிக்க வேண்டியிருக்கும். இது உங்கள் சாட்டின் பாதுகாப்பைப் பாதிக்காது, ஆனால் இந்த தொடர்பிலிருந்து நீங்கள் ஒரு செய்தியைத் தவறவிட்டிருக்கலாம், மேலும் அதை மீண்டும் அனுப்புமாறு அவர்களிடம் கேட்கலாம்."
+    "messageformat": "Tellomi இருமுனை குறியாக்கத்தைப் பயன்படுத்துகிறது, மேலும் இது சில நேரங்களில் உங்கள் சாட் அமர்வை புதுப்பிக்க வேண்டியிருக்கும். இது உங்கள் சாட்டின் பாதுகாப்பைப் பாதிக்காது, ஆனால் இந்த தொடர்பிலிருந்து நீங்கள் ஒரு செய்தியைத் தவறவிட்டிருக்கலாம், மேலும் அதை மீண்டும் அனுப்புமாறு அவர்களிடம் கேட்கலாம்."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "தொடர்பு ஆதரவு"
@@ -1476,7 +1476,7 @@
     "messageformat": "{sender} அவர்களின் தொலைபேசி எண்ணை மாற்றியுள்ளார்"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "தொடர்பு Signal இல் இணைந்தது"
+    "messageformat": "தொடர்பு Tellomi இல் இணைந்தது"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} மற்றும் {conversationTitle} ஆகியவை ஒரே கணக்கைச் சேர்ந்தவை. இரண்டு சாட்களுக்கான உங்கள் செய்தி வரலாறு இங்கே உள்ளது."
@@ -1851,7 +1851,7 @@
     "messageformat": "மன்னிக்கவும், உங்களிடம் ஏற்கனவே பல சாதனங்கள் இணைக்கப்பட்டுள்ளன. சிலவற்றை நீக்க முயற்சிக்கவும்."
   },
   "icu:installTooOld": {
-    "messageformat": "உங்கள் தொலைபேசியை இணைக்க இந்த சாதனத்தில் Signal update சிக்னலைப் புதுப்பிக்கவும்."
+    "messageformat": "உங்கள் தொலைபேசியை இணைக்க இந்த சாதனத்தில் Tellomi update சிக்னலைப் புதுப்பிக்கவும்."
   },
   "icu:installErrorHeader": {
     "messageformat": "ஏதோ தவறு நடைபெற்றிருக்கிறது!"
@@ -1902,7 +1902,7 @@
     "messageformat": "இந்த அழைப்பு இணைப்பு இனி செல்லுபடியாகாது."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal அழைப்பு"
+    "messageformat": "Tellomi அழைப்பு"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "இணைப்பை அழிக்க முடியவில்லை. உங்கள் இணைப்பைச் சரிபார்த்து மீண்டும் முயலவும்."
@@ -2142,7 +2142,7 @@
     "messageformat": "உங்கள் இணைப்பு துண்டிக்கப்பட்டது. சிக்னல் மீண்டும் இணைக்கப்படுகிறது."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal பகிர்கிறது {window}."
+    "messageformat": "Tellomi பகிர்கிறது {window}."
   },
   "icu:calling__presenting--info--unknown": {
     "messageformat": "சிக்னல் திரைப் பகிர்வு செயலில் உள்ளது"
@@ -2166,7 +2166,7 @@
     "messageformat": "அனுமதி தேவை"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal தேவைகள் அனுமதி உங்கள் அணுக கணினிதிரை பதிவு."
+    "messageformat": "Tellomi தேவைகள் அனுமதி உங்கள் அணுக கணினிதிரை பதிவு."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "கணினி விருப்பங்களுக்குச் செல்லவும்."
@@ -2175,7 +2175,7 @@
     "messageformat": "கீழே இடதுபுறத்தில் உள்ள பூட்டு ஐகானைக் கிளிக் செய்க உள்ளிடவும் உங்கள் கணினிகடவுச்சொல்."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "வலதுபுறத்தில், அடுத்த பெட்டியை சரிபார்க்கவும் Signal. நீங்கள் பார்க்கவில்லை என்றால் Signal பட்டியலில், + to என்பதைக் கிளிக் செய்க கூட்டு அது."
+    "messageformat": "வலதுபுறத்தில், அடுத்த பெட்டியை சரிபார்க்கவும் Tellomi. நீங்கள் பார்க்கவில்லை என்றால் Tellomi பட்டியலில், + to என்பதைக் கிளிக் செய்க கூட்டு அது."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "திற கணினி விருப்பத்தேர்வுகள்"
@@ -2187,7 +2187,7 @@
     "messageformat": "எப்போதும் அழைப்புகளை ரிலே செய்யவும் "
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "உங்கள் ஐபி முகவரியை உங்கள் தொடர்புக்கு வெளிப்படுத்தாமல் இருக்க Signal சேவையகம் மூலம் அனைத்து அழைப்புகளையும் ரிலே செய்யவும். இயக்குவது அழைப்பு தரத்தை குறைக்கும்."
+    "messageformat": "உங்கள் ஐபி முகவரியை உங்கள் தொடர்புக்கு வெளிப்படுத்தாமல் இருக்க Tellomi சேவையகம் மூலம் அனைத்து அழைப்புகளையும் ரிலே செய்யவும். இயக்குவது அழைப்பு தரத்தை குறைக்கும்."
   },
   "icu:permissions": {
     "messageformat": "அனுமதிகள்"
@@ -2205,10 +2205,10 @@
     "messageformat": "உரை தேர்ந்தெடுக்கப்படும் போது உரை வடிவமைப்பு பாப்ஓவரைக் காட்டும்"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "அடுத்த முறை Signal சிக்னல் தொடங்கும் போது எழுத்துப்பிழை சோதனை செயல்படுத்தப்படும்."
+    "messageformat": "அடுத்த முறை Tellomi சிக்னல் தொடங்கும் போது எழுத்துப்பிழை சோதனை செயல்படுத்தப்படும்."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "அடுத்த முறை Signal சிக்னல் தொடங்கும் போது எழுத்துப்பிழை சோதனை முடக்கப்படும்."
+    "messageformat": "அடுத்த முறை Tellomi சிக்னல் தொடங்கும் போது எழுத்துப்பிழை சோதனை முடக்கப்படும்."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "குறைத்தல் கணினி தட்டில்"
@@ -2232,7 +2232,7 @@
     "messageformat": "எல்லா தரவையும் நீக்கவா?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Signal டெஸ்க்டாப்பின் இந்தப் பதிப்பிலிருந்து எல்லா தரவையும் மெசேஜ்களையும் நீக்க வேண்டுமா? உங்கள் Signal கணக்கு மற்றும் உங்கள் ஃபோன் அல்லது இணைக்கப்பட்ட பிற டிவைஸ்களில் உள்ள தரவு நீக்கப்படாது."
+    "messageformat": "Tellomi டெஸ்க்டாப்பின் இந்தப் பதிப்பிலிருந்து எல்லா தரவையும் மெசேஜ்களையும் நீக்க வேண்டுமா? உங்கள் Tellomi கணக்கு மற்றும் உங்கள் ஃபோன் அல்லது இணைக்கப்பட்ட பிற டிவைஸ்களில் உள்ள தரவு நீக்கப்படாது."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "எல்லாத தரவையும் துண்டித்து நீக்குகிறது…"
@@ -2253,7 +2253,7 @@
     "messageformat": "இது உங்கள் கணக்குத் தகவல், சுயவிவரம் மற்றும் உங்களின் அனைத்து மெசேஜ்களையும் நீக்கும். நீங்கள் அனைத்துச் சிக்னல் தொகுப்புகளில் இருந்தும் அகற்றப்படுவீர்கள். இந்தச் செயல்முறை முடிந்ததும் செயலி மூடப்படும்."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "சிக்னல் டெஸ்க்டாப்பின் முந்தைய நிறுவலிலிருந்து பயன்படுத்த முடியாத தரவு உங்கள் டெஸ்க்டாப்பில் உள்ளது. தொடர நீங்கள் தேர்வுசெய்தால் Signal desktop update, அது நீக்கப்படும், நீங்கள் புதிதாகத் தொடங்குவீர்கள்."
+    "messageformat": "சிக்னல் டெஸ்க்டாப்பின் முந்தைய நிறுவலிலிருந்து பயன்படுத்த முடியாத தரவு உங்கள் டெஸ்க்டாப்பில் உள்ளது. தொடர நீங்கள் தேர்வுசெய்தால் Tellomi desktop update, அது நீக்கப்படும், நீங்கள் புதிதாகத் தொடங்குவீர்கள்."
   },
   "icu:deleteOldData": {
     "messageformat": "பழைய தரவை நீக்கு"
@@ -2310,7 +2310,7 @@
     "messageformat": "பகுதியளவு நீக்கப்பட்டது, விவரங்களுக்குக் கிளிக் செய்யவும்"
   },
   "icu:expiredWarning": {
-    "messageformat": "Signal Desktop ப்பின் இந்த பதிப்பு காலாவதியானது. செய்தியைத் தொடர சமீபத்திய பதிப்பிற்கு மேம்படுத்தவும்."
+    "messageformat": "Tellomi Desktop ப்பின் இந்த பதிப்பு காலாவதியானது. செய்தியைத் தொடர சமீபத்திய பதிப்பிற்கு மேம்படுத்தவும்."
   },
   "icu:upgrade": {
     "messageformat": "signal.org/download -க்குச் செல்வதற்கு கிளிக் செய்யவும்"
@@ -2322,7 +2322,7 @@
     "messageformat": "தொடர்புகளை இறக்குமதி செய்யவும்"
   },
   "icu:syncExplanation": {
-    "messageformat": "உங்கள் மொபைல் சாதனத்திலிருந்து அனைத்து Signal குழுக்கள் மற்றும் தொடர்புகளை இறக்குமதி செய்க."
+    "messageformat": "உங்கள் மொபைல் சாதனத்திலிருந்து அனைத்து Tellomi குழுக்கள் மற்றும் தொடர்புகளை இறக்குமதி செய்க."
   },
   "icu:syncNow": {
     "messageformat": "இப்போது இறக்குமதி செய்க"
@@ -2547,13 +2547,13 @@
     "messageformat": "அதிகபட்ச குழு அளவு எட்டப்பட்டுள்ளது"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal குழுக்களில் அதிகபட்சம்  {max,number} உறுப்பினர்கள் இருக்கலாம்."
+    "messageformat": "Tellomi குழுக்களில் அதிகபட்சம்  {max,number} உறுப்பினர்கள் இருக்கலாம்."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "குழு உறுப்பினர் அளவு பரிந்துரைக்கப்பட்ட வரம்பை எட்டியுள்ளது"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal குழுக்கள் உடன் சிறப்பாக செயல்படுங்கள் {max,number} உறுப்பினர்கள் அல்லது குறைவாக. அதிகமான உறுப்பினர்களைச் சேர்ப்பது செய்திகளை அனுப்புவதையும் பெறுவதையும் தாமதப்படுத்தும்."
+    "messageformat": "Tellomi குழுக்கள் உடன் சிறப்பாக செயல்படுங்கள் {max,number} உறுப்பினர்கள் அல்லது குறைவாக. அதிகமான உறுப்பினர்களைச் சேர்ப்பது செய்திகளை அனுப்புவதையும் பெறுவதையும் தாமதப்படுத்தும்."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "இந்த குழுவிற்கு பெயரிடுங்கள்"
@@ -2742,7 +2742,7 @@
     "messageformat": "சில இணைப்புகள் காட்ட முடியாத அளவுக்கு பெரிதாக உள்ளன."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Signal அழைப்பில் சேர இந்த இணைப்பைப் பயன்படுத்தவும்"
+    "messageformat": "Tellomi அழைப்பில் சேர இந்த இணைப்பைப் பயன்படுத்தவும்"
   },
   "icu:donation--missing": {
     "messageformat": "நன்கொடை விவரங்களைப் பெற முடியவில்லை"
@@ -2826,7 +2826,7 @@
     "messageformat": "சிக்னல் கலைஞர் தொடர்"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Signal ஆர்ட்டிஸ்ட் ஸ்டிக்கர்கள் கிடைக்கும் வசதி இல்லை "
+    "messageformat": "Tellomi ஆர்ட்டிஸ்ட் ஸ்டிக்கர்கள் கிடைக்கும் வசதி இல்லை "
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "உங்களிடன் பகிரப்பட்டவை"
@@ -3147,19 +3147,19 @@
     "messageformat": "மெசேஜ் மிக நீளமாக உள்ளதால், மேலும் காட்ட இயலாது"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} உங்களுக்கு ஒரு செய்தியை அனுப்பியது, இது புதிய Signal அம்சத்தைப் பயன்படுத்துவதால் செயலாக்கவோ அல்லது காட்டவோ முடியாது."
+    "messageformat": "{contact} உங்களுக்கு ஒரு செய்தியை அனுப்பியது, இது புதிய Tellomi அம்சத்தைப் பயன்படுத்துவதால் செயலாக்கவோ அல்லது காட்டவோ முடியாது."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "நீங்கள் Signal லின் புதுப்பித்த பதிப்பைப் பயன்படுத்துகிறீர்கள் என்று இந்த செய்தியை இப்போது மீண்டும் அனுப்ப {contact} ஐக் கேட்கலாம்."
+    "messageformat": "நீங்கள் Tellomi லின் புதுப்பித்த பதிப்பைப் பயன்படுத்துகிறீர்கள் என்று இந்த செய்தியை இப்போது மீண்டும் அனுப்ப {contact} ஐக் கேட்கலாம்."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "உங்கள் சாதனங்களில் ஒன்று புதிய Signal அம்சத்தைப் பயன்படுத்துவதால் செயலாக்கவோ அல்லது காட்டவோ முடியாத செய்தியை அனுப்பியது."
+    "messageformat": "உங்கள் சாதனங்களில் ஒன்று புதிய Tellomi அம்சத்தைப் பயன்படுத்துவதால் செயலாக்கவோ அல்லது காட்டவோ முடியாத செய்தியை அனுப்பியது."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "இது போன்ற எதிர்கால செய்திகள் இப்போது நீங்கள் Signal லின் புதுப்பித்த பதிப்பைப் பயன்படுத்துகிறீர்கள் என்று ஒத்திசைக்கப்படும்."
+    "messageformat": "இது போன்ற எதிர்கால செய்திகள் இப்போது நீங்கள் Tellomi லின் புதுப்பித்த பதிப்பைப் பயன்படுத்துகிறீர்கள் என்று ஒத்திசைக்கப்படும்."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Signal லைப் புதுப்பிக்கவும்"
+    "messageformat": "Tellomi லைப் புதுப்பிக்கவும்"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "பார்க்கப்பட்டவை"
@@ -4113,7 +4113,7 @@
     "messageformat": "தெரியவில்லை இணைப்பு பதிப்பு"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "இது இணைப்பு இன் இந்த பதிப்பால் ஆதரிக்கப்படவில்லை Signal Desktop."
+    "messageformat": "இது இணைப்பு இன் இந்த பதிப்பால் ஆதரிக்கப்படவில்லை Tellomi Desktop."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "முடியாது சேர குழு"
@@ -4719,7 +4719,7 @@
     "messageformat": "பயனர் தரவை நீக்குகிறது மற்றும் ஆப்பை மீட்டமைக்கிறது"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Signal-க்கு நன்கொடை அளி"
+    "messageformat": "Tellomi-க்கு நன்கொடை அளி"
   },
   "icu:BadgeDialog__name-supports-signal": {
     "messageformat": "{name} Signalஐ ஆதரிக்கிறார்"
@@ -4863,10 +4863,10 @@
     "messageformat": "இணைப்பு அல்லது வாக்கெடுப்பைச் சேர்த்திடுக"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "இந்த நபர் பயன்படுத்தவில்லை Signal"
+    "messageformat": "இந்த நபர் பயன்படுத்தவில்லை Tellomi"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop இல்லை ஆதரவு செய்தி அனுப்புதல் Signal தொடர்புகள். இந்த நபரை நிறுவச் சொல்லுங்கள் Signal மிகவும் பாதுகாப்பான செய்தியிடல் அனுபவத்திற்காக."
+    "messageformat": "Tellomi Desktop இல்லை ஆதரவு செய்தி அனுப்புதல் Tellomi தொடர்புகள். இந்த நபரை நிறுவச் சொல்லுங்கள் Tellomi மிகவும் பாதுகாப்பான செய்தியிடல் அனுபவத்திற்காக."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "தொடர்புகளின் பதிவு நிலையை சரிபார்க்கிறது"
@@ -5566,7 +5566,7 @@
     "messageformat": "பாதுகாப்பு உதவிக்குறிப்புகள்"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "கோரிக்கைகளை கவனமாக மதிப்பாய்வு செய்க. அதே பெயருடன் மற்றொரு தொடர்பை Signal கண்டறிந்தது. <reviewRequestLink>மதிப்பாய்வு கோரிக்கை</reviewRequestLink>"
+    "messageformat": "கோரிக்கைகளை கவனமாக மதிப்பாய்வு செய்க. அதே பெயருடன் மற்றொரு தொடர்பை Tellomi கண்டறிந்தது. <reviewRequestLink>மதிப்பாய்வு கோரிக்கை</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} குழு உறுப்பினர் அதே பெயரைக் கொண்டுள்ளார். <reviewRequestLink>உறுப்பினர்களை மதிப்பாய்வு செய்யவும்</reviewRequestLink>} other {{count,number} குழு உறுப்பினர்கள் அதே பெயரைக் கொண்டுள்ளனர். <reviewRequestLink>உறுப்பினர்களை மதிப்பாய்வு செய்யவும்</reviewRequestLink>}}"
@@ -5617,7 +5617,7 @@
     "messageformat": "செய்தியைத் தொடர சரிபார்க்கவும்"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "க்கு உதவி தடுக்க ஸ்பேம் ஆன் Signal, தயவு செய்து முழுமை சரிபார்ப்பு."
+    "messageformat": "க்கு உதவி தடுக்க ஸ்பேம் ஆன் Tellomi, தயவு செய்து முழுமை சரிபார்ப்பு."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "சரிபார்க்கப்பட்ட பிறகு, நீங்கள் தொடர்ந்து செய்தியிடலாம். இடைநிறுத்தப்பட்ட எந்த செய்திகளும் தானாகவே அனுப்பப்படும்."
@@ -6101,7 +6101,7 @@
     "messageformat": "பொது"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Signal-க்கு நன்கொடை அளி"
+    "messageformat": "Tellomi-க்கு நன்கொடை அளி"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "தோற்றம்"
@@ -6167,10 +6167,10 @@
     "messageformat": "அமைப்பு"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "Tellomi Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "உங்களின் கணக்கை மீட்டெடுக்கவும் மீட்டமைக்கவும் Signal Login பயன்படுத்தப்படுகிறது. நீங்கள் நம்பும் கடவுச்சொல் மேலாளரில் இந்தக் குறியீடுகளைப் பாதுகாப்பாகச் சேமித்து வைக்கவும். <learnMoreLink>மேலும் அறிக</learnMoreLink>."
+    "messageformat": "உங்களின் கணக்கை மீட்டெடுக்கவும் மீட்டமைக்கவும் Tellomi Login பயன்படுத்தப்படுகிறது. நீங்கள் நம்பும் கடவுச்சொல் மேலாளரில் இந்தக் குறியீடுகளைப் பாதுகாப்பாகச் சேமித்து வைக்கவும். <learnMoreLink>மேலும் அறிக</learnMoreLink>."
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "மேலும் அறிக"
@@ -6224,7 +6224,7 @@
     "messageformat": "மேம்படுத்தபட்ட"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signal பின்"
+    "messageformat": "Tellomi பின்"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "கடவுஎண் பின் நினைவூட்டல்கள்"
@@ -7001,7 +7001,7 @@
     "messageformat": "மேலும் அறிக"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal தொழில்நுட்ப சிக்கல்களை எதிர்கொள்கிறது. சேவையை விரைவாக மீட்டெடுக்க நாங்கள் விரைவாக வேலை செய்து வருகிறோம்."
+    "messageformat": "Tellomi தொழில்நுட்ப சிக்கல்களை எதிர்கொள்கிறது. சேவையை விரைவாக மீட்டெடுக்க நாங்கள் விரைவாக வேலை செய்து வருகிறோம்."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "புதுப்பித்தல் தேவை"
@@ -7025,10 +7025,10 @@
     "messageformat": "புதுப்பிப்பை நிறுவ Signalஐ மறுதொடக்கம் செய்யவும்."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal டெஸ்க்டாப்பை புதுப்பிக்க முடியவில்லை, ஆனால் புதிய பதிப்பு உள்ளது. {downloadUrl} க்குச் சென்று புதிய பதிப்பை கைமுறையாக நிறுவவும், பின்னர் ஆதரவைத் தொடர்புகொள்ளவும் அல்லது இந்தச் பிரச்சனைப் பற்றிய பிழையைப் பதிவு செய்யவும்."
+    "messageformat": "Tellomi டெஸ்க்டாப்பை புதுப்பிக்க முடியவில்லை, ஆனால் புதிய பதிப்பு உள்ளது. {downloadUrl} க்குச் சென்று புதிய பதிப்பை கைமுறையாக நிறுவவும், பின்னர் ஆதரவைத் தொடர்புகொள்ளவும் அல்லது இந்தச் பிரச்சனைப் பற்றிய பிழையைப் பதிவு செய்யவும்."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Signal லோகோ"
+    "messageformat": "Tellomi லோகோ"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "மீண்டும்"
@@ -7358,7 +7358,7 @@
     "messageformat": "எச்சரிக்கை"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "நீங்கள் PINஐ முடக்கினால், Signal-இல் மீண்டும் பதிவுசெய்யும்போது உள்ள எல்லாத் தரவையும் இழப்பீர்கள். பின் முடக்கப்பட்டிருக்கும்போது பதிவுப் பூட்டை நீங்கள் ஆன் செய்ய முடியாது."
+    "messageformat": "நீங்கள் PINஐ முடக்கினால், Tellomi-இல் மீண்டும் பதிவுசெய்யும்போது உள்ள எல்லாத் தரவையும் இழப்பீர்கள். பின் முடக்கப்பட்டிருக்கும்போது பதிவுப் பூட்டை நீங்கள் ஆன் செய்ய முடியாது."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "PIN-ஐ முடக்கு"
@@ -7453,7 +7453,7 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Signal இன் புதிய பதிப்பு ஏற்கனவே நிறுவப்பட்டுள்ளது. நீங்கள் நிச்சயமாக தொடர விரும்புகிறீர்களா?",
+    "messageformat": "Tellomi இன் புதிய பதிப்பு ஏற்கனவே நிறுவப்பட்டுள்ளது. நீங்கள் நிச்சயமாக தொடர விரும்புகிறீர்களா?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
@@ -7949,7 +7949,7 @@
     "messageformat": "இணைப்பு பதிவிறக்கவும்"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "உங்கள் ஸ்டோரீஸை யார் பார்த்தார்கள் என்பதைப் பார்க்க ரசீதுகளைக் காட்டு என்பதை இயக்கவும். உங்கள் மொபைல் டிவைஸில் Signal செயலியைத் திறந்து, அமைப்புகள் > ஸ்டோரீஸ் என்பதற்குச் செல்லவும்."
+    "messageformat": "உங்கள் ஸ்டோரீஸை யார் பார்த்தார்கள் என்பதைப் பார்க்க ரசீதுகளைக் காட்டு என்பதை இயக்கவும். உங்கள் மொபைல் டிவைஸில் Tellomi செயலியைத் திறந்து, அமைப்புகள் > ஸ்டோரீஸ் என்பதற்குச் செல்லவும்."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "இன்னும் பதில்கள் ஏதுமில்லை"
@@ -8211,7 +8211,7 @@
     "messageformat": "நிராகரி"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "உங்கள் Signal PIN-ஐ சரிபார்க்கவும்"
+    "messageformat": "உங்கள் Tellomi PIN-ஐ சரிபார்க்கவும்"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "உங்கள் PINஐ நீங்கள் நினைவில் வைத்திருப்பதை உறுதிசெய்ய, அதைச் சரிபார்க்குமாறு எப்போதாவது உங்களிடம் கேட்போம்."
@@ -8223,7 +8223,7 @@
     "messageformat": "இப்போது வேண்டாம்"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "உங்கள் Signal பின்னை உள்ளிடவும்"
+    "messageformat": "உங்கள் Tellomi பின்னை உள்ளிடவும்"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "உங்கள் PINஐ நினைவில் வைத்திருக்க உதவும் வகையில், அதை அவ்வப்போது உள்ளிடுமாறு உங்களிடம் கேட்போம். காலப்போக்கில் இதைக் கேட்பதைக் குறைத்துக்கொள்வோம்."
@@ -8241,13 +8241,13 @@
     "messageformat": "PIN சரியானது. பின்னர் மீண்டும் நினைவூட்டுவோம்."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal டெஸ்க்டாப் விரைவில் உங்கள் கணினியின் {OS} பதிப்பை ஆதரிக்காது. சிக்னலைத் தொடர்ந்து பயன்படுத்த, உங்கள் கணினியின் இயங்குதளத்தை {expirationDate} க்குள் புதுப்பிக்கவும். <learnMoreLink>மேலும் அறிக</learnMoreLink>"
+    "messageformat": "Tellomi டெஸ்க்டாப் விரைவில் உங்கள் கணினியின் {OS} பதிப்பை ஆதரிக்காது. சிக்னலைத் தொடர்ந்து பயன்படுத்த, உங்கள் கணினியின் இயங்குதளத்தை {expirationDate} க்குள் புதுப்பிக்கவும். <learnMoreLink>மேலும் அறிக</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "இந்த கணினியில் இனிமேலும் Signal டெஸ்க்டாப் வேலை செய்யாது. Signal டெஸ்க்டாப்பை மீண்டும் பயன்படுத்த, உங்கள் கணினியின் {OS} பதிப்பைப் புதுப்பிக்கவும். <learnMoreLink>மேலும் அறிக</learnMoreLink>"
+    "messageformat": "இந்த கணினியில் இனிமேலும் Tellomi டெஸ்க்டாப் வேலை செய்யாது. Tellomi டெஸ்க்டாப்பை மீண்டும் பயன்படுத்த, உங்கள் கணினியின் {OS} பதிப்பைப் புதுப்பிக்கவும். <learnMoreLink>மேலும் அறிக</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "இந்த கணினியில் இனிமேலும் Signal டெஸ்க்டாப் வேலை செய்யாது. Signal டெஸ்க்டாப்பை மீண்டும் பயன்படுத்த, உங்கள் கணினியின் {OS} பதிப்பைப் புதுப்பிக்கவும்."
+    "messageformat": "இந்த கணினியில் இனிமேலும் Tellomi டெஸ்க்டாப் வேலை செய்யாது. Tellomi டெஸ்க்டாப்பை மீண்டும் பயன்படுத்த, உங்கள் கணினியின் {OS} பதிப்பைப் புதுப்பிக்கவும்."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "திருத்தப்பட்டது"
@@ -8811,7 +8811,7 @@
     "messageformat": "உங்கள் ஆதரவுக்கு நன்றி!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Signal இல் இருந்து நன்கொடையாளர் பேட்ஜைப் பெற்றுள்ளீர்கள்! உங்கள் ஆதரவைக் காட்ட உங்கள் ப்ரொஃபைலில் அதைக் காண்பிக்கவும்."
+    "messageformat": "Tellomi இல் இருந்து நன்கொடையாளர் பேட்ஜைப் பெற்றுள்ளீர்கள்! உங்கள் ஆதரவைக் காட்ட உங்கள் ப்ரொஃபைலில் அதைக் காண்பிக்கவும்."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "சுயவிவரத்தில் காண்பிக்கவும்"

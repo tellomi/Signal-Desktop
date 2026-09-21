@@ -3,9 +3,9 @@
   "packageManager": "pnpm@11.5.2",
   "private": true,
   "name": "signal-desktop",
-  "productName": "Signal",
-  "description": "Private messaging from your desktop",
-  "desktopName": "signal.desktop",
+  "productName": "Tellomi",
+  "description": "Tellomi — private messaging from your desktop",
+  "desktopName": "tellomi.desktop",
   "repository": "https://github.com/signalapp/Signal-Desktop.git",
   "version": "8.27.0",
   "license": "AGPL-3.0-only",
@@ -350,7 +350,7 @@
     "node": "24.17.0"
   },
   "build": {
-    "appId": "org.whispersystems.signal-desktop",
+    "appId": "app.tellomi.desktop",
     "nativeRebuilder": "parallel",
     "mac": {
       "artifactName": "${name}-mac-${arch}-${version}.${ext}",
@@ -489,7 +489,7 @@
       }
     },
     "linux": {
-      "executableName": "signal-desktop",
+      "executableName": "tellomi-desktop",
       "category": "Network;InstantMessaging;Chat",
       "desktop": {
         "entry": {

@@ -627,16 +627,16 @@
     "messageformat": "Selle vestluse krüpteering kontrolliti automaatselt "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "Isikute puhul, kellega lõid ühenduse telefoninumbri kaudu, kinnitab Signal automaatselt, kas ühendus on turvaline, kasutades protsessi nimega võtme läbipaistvus. Täiendava turvalisuse jaoks võrdle otspunktkrüpteeringu kontrollimiseks eelmisel kuval olevaid numbreid seadmes olevatega või skanni teise inimese seadmes olevat koodi."
+    "messageformat": "Isikute puhul, kellega lõid ühenduse telefoninumbri kaudu, kinnitab Tellomi automaatselt, kas ühendus on turvaline, kasutades protsessi nimega võtme läbipaistvus. Täiendava turvalisuse jaoks võrdle otspunktkrüpteeringu kontrollimiseks eelmisel kuval olevaid numbreid seadmes olevatega või skanni teise inimese seadmes olevat koodi."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "Automaatkinnitus ei ole selle vestluse jaoks saadaval"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "Signal ei saa krüpteeringut selle vestluse jaoks automaatselt kontrollida. See võib olla sellepärast, et {name} muutis oma telefoninumbrit, või olla seotud tema telefoninumbri privaatsussätetega. Otspunktkrüpteeringu kontrollimiseks võrdle eelmisel kuval olevaid numbreid seadmes olevatega või skanni tema seadmes olevat koodi."
+    "messageformat": "Tellomi ei saa krüpteeringut selle vestluse jaoks automaatselt kontrollida. See võib olla sellepärast, et {name} muutis oma telefoninumbrit, või olla seotud tema telefoninumbri privaatsussätetega. Otspunktkrüpteeringu kontrollimiseks võrdle eelmisel kuval olevaid numbreid seadmes olevatega või skanni tema seadmes olevat koodi."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "Signal saab krüpteeringut automaatselt kontrollida ainult vestlustes, kus oled kellegagi telefoninumbri kaudu ühendatud. Kui vestlust alustati ühise kasutajanime või grupiga, kontrolli otspunktkrüpteeringut, võrreldes eelmisel kuval olevaid numbreid või skannides tema seadmes kuvatavat koodi."
+    "messageformat": "Tellomi saab krüpteeringut automaatselt kontrollida ainult vestlustes, kus oled kellegagi telefoninumbri kaudu ühendatud. Kui vestlust alustati ühise kasutajanime või grupiga, kontrolli otspunktkrüpteeringut, võrreldes eelmisel kuval olevaid numbreid või skannides tema seadmes kuvatavat koodi."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "Sobib"
@@ -675,10 +675,10 @@
     "messageformat": "Tänan, ei"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "Signal saab nüüd krüptimist automaatselt kontrollida"
+    "messageformat": "Tellomi saab nüüd krüptimist automaatselt kontrollida"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "Kontaktide puhul, kellega lõid ühenduse telefoninumbri kaudu, kinnitab Signal automaatselt, kas ühendus on turvaline, kasutades protsessi nimega võtme läbipaistvus. Täiendava turvalisuse eesmärgil saab ühendusi endiselt kinnitada ka käsitsi QR-koodi abil või turvanumbreid võrreldes."
+    "messageformat": "Kontaktide puhul, kellega lõid ühenduse telefoninumbri kaudu, kinnitab Tellomi automaatselt, kas ühendus on turvaline, kasutades protsessi nimega võtme läbipaistvus. Täiendava turvalisuse eesmärgil saab ühendusi endiselt kinnitada ka käsitsi QR-koodi abil või turvanumbreid võrreldes."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "Jätka"
@@ -837,7 +837,7 @@
     "messageformat": "Kleebisepaki looja"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Teave Signal Desktopi kohta"
+    "messageformat": "Teave Tellomi Desktopi kohta"
   },
   "icu:screenShareWindow": {
     "messageformat": "Ekraani jagamine"
@@ -855,7 +855,7 @@
     "messageformat": "Välju"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "Tellomi Desktop"
   },
   "icu:search": {
     "messageformat": "Otsi"
@@ -915,7 +915,7 @@
     "messageformat": "Vaata {whatsNew} selles versioonis"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Signal on mittetulundusühing"
+    "messageformat": "Tellomi on mittetulundusühing"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "mis on uut"
@@ -999,13 +999,13 @@
     "messageformat": "Sina"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Häälsõnumite saatmiseks luba Signal Desktopil oma mikrofoni kasutada."
+    "messageformat": "Häälsõnumite saatmiseks luba Tellomi Desktopil oma mikrofoni kasutada."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Häälkõnede tegemiseks pead andma Signal Desktop-ile mikrofonile ligipääsu."
+    "messageformat": "Häälkõnede tegemiseks pead andma Tellomi Desktop-ile mikrofonile ligipääsu."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Videokõnede tegemiseks pead andma Signal Desktop-ile kaamerale ligipääsu."
+    "messageformat": "Videokõnede tegemiseks pead andma Tellomi Desktop-ile kaamerale ligipääsu."
   },
   "icu:allowAccess": {
     "messageformat": "Luba ligipääs"
@@ -1035,7 +1035,7 @@
     "messageformat": "Signalit ei saanud uuendada. Külasta lehte {url}, et see käsitsi paigaldada. Seejärel <contactSupportLink>palun võta ühendust kasutajatoega</contactSupportLink> ning kirjelda probleemi"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal Desktop on tõenäoliselt macOS-i karantiinis ja seda pole võimalik automaatselt uuendada. Palun teisalda {app} kausta {folder} Finderi abil."
+    "messageformat": "Tellomi Desktop on tõenäoliselt macOS-i karantiinis ja seda pole võimalik automaatselt uuendada. Palun teisalda {app} kausta {folder} Finderi abil."
   },
   "icu:ok": {
     "messageformat": "Sobib"
@@ -1449,7 +1449,7 @@
     "messageformat": "Uuri lähemalt"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal kasutab otspunktkrüptimist ja võib mõnikord vajada vestluse seansi värskendamist. See ei mõjuta vestluse turvalisust, aga sa võisid mõnest selle kontakti sõnumist ilma jääda, seepärast palu tal vajadusel see uuesti saata."
+    "messageformat": "Tellomi kasutab otspunktkrüptimist ja võib mõnikord vajada vestluse seansi värskendamist. See ei mõjuta vestluse turvalisust, aga sa võisid mõnest selle kontakti sõnumist ilma jääda, seepärast palu tal vajadusel see uuesti saata."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Võta ühendust kasutajatoega"
@@ -1566,7 +1566,7 @@
     "messageformat": "Meediat ei saa alla laadida"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Kontrolli oma arvuti ja telefoni internetiühendust. Ava Signal oma telefonis ja proovi see uuesti alla laadida."
+    "messageformat": "Kontrolli oma arvuti ja telefoni internetiühendust. Ava Tellomi oma telefonis ja proovi see uuesti alla laadida."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "See meedia ei ole enam su telefonis saadaval ning seda ei saa alla laadida."
@@ -1587,10 +1587,10 @@
     "messageformat": "Rohkem infot"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Skanni see kood enda telefonis oleva Signal rakendusega"
+    "messageformat": "Skanni see kood enda telefonis oleva Tellomi rakendusega"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Ava Signal enda telefonis"
+    "messageformat": "Ava Tellomi enda telefonis"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Toksa {settings} ja seejärel {linkedDevices}"
@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>Tekkis ootamatu tõrge.</paragraph><paragraph>Palun proovi uuesti.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal ei saa seda seadet sinu praeguse võrgu kaudu linkida."
+    "messageformat": "Tellomi ei saa seda seadet sinu praeguse võrgu kaudu linkida."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Proovi uuesti"
@@ -1626,7 +1626,7 @@
     "messageformat": "Kas kustutada kõik andmed?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "Sa üritad selle arvutiga siduda teist Signali kontot. Kui jätkad, kustutatakse kõik praegu Signal Desktopis olevad andmed."
+    "messageformat": "Sa üritad selle arvutiga siduda teist Signali kontot. Kui jätkad, kustutatakse kõik praegu Tellomi Desktopis olevad andmed."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "Jätka"
@@ -1641,7 +1641,7 @@
     "messageformat": "Seadme nimi"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Selle seadme nime muutmiseks ava Signal oma telefonis ja vali Sätted > Lingitud seadmed"
+    "messageformat": "Selle seadme nime muutmiseks ava Tellomi oma telefonis ja vali Sätted > Lingitud seadmed"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Emoji nahatoon"
@@ -1833,7 +1833,7 @@
     "messageformat": "Võtme automaatne kontroll"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "Kui see on lubatud, proovib Signal automaatselt kontrollida üks-ühele vestluste krüptimist."
+    "messageformat": "Kui see on lubatud, proovib Tellomi automaatselt kontrollida üks-ühele vestluste krüptimist."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "Uuri lähemalt"
@@ -2076,16 +2076,16 @@
     "messageformat": "{count, plural, one {Selles kõnes on {count,number} inimene} other {Selles kõnes on {count,number} inimest}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal helistab isikule {person}"
+    "messageformat": "Tellomi helistab isikule {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal helistab isikutele {first} ja {second}"
+    "messageformat": "Tellomi helistab isikutele {first} ja {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal helistab isikutele {first}, {second} ja {third}"
+    "messageformat": "Tellomi helistab isikutele {first}, {second} ja {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Signal helistab isikutele {first}, {second} ja {others,number} muule} other {Signal helistab isikutele {first}, {second} ja {others,number} muule}}"
+    "messageformat": "{others, plural, one {Tellomi helistab isikutele {first}, {second} ja {others,number} muule} other {Tellomi helistab isikutele {first}, {second} ja {others,number} muule}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} saab teavituse"
@@ -2139,10 +2139,10 @@
     "messageformat": "Ühenduse taastamine…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Sinu ühendus katkes. Signal proovib ühendust taastada."
+    "messageformat": "Sinu ühendus katkes. Tellomi proovib ühendust taastada."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal jagab {window}."
+    "messageformat": "Tellomi jagab {window}."
   },
   "icu:calling__presenting--info--unknown": {
     "messageformat": "Signali ekraanijagamine on aktiivne"
@@ -2166,7 +2166,7 @@
     "messageformat": "Juurdepääs on vajalik"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal vajab juurdepääsu sinu arvuti ekraanisalvestusele."
+    "messageformat": "Tellomi vajab juurdepääsu sinu arvuti ekraanisalvestusele."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Mine süsteemi sätetesse (System Preferences)."
@@ -2232,7 +2232,7 @@
     "messageformat": "Kas kustutada kõik andmed?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Kas kustutada sellest Signal Desktopi versioonist kõik andmed ja sõnumid? Sinu Signali kontot ja telefonis või muudes lingitud seadmetes olevaid andmeid ei kustutata."
+    "messageformat": "Kas kustutada sellest Tellomi Desktopi versioonist kõik andmed ja sõnumid? Sinu Signali kontot ja telefonis või muudes lingitud seadmetes olevaid andmeid ei kustutata."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Ühenduse lõpetamine ja kõigi andmete kustutamine …"
@@ -2253,7 +2253,7 @@
     "messageformat": "See toiming kustutab sinu konto teabe, profiili ja kõik su sõnumid. Sind eemaldatakse ka kõigist Signali gruppidest. Rakendus sulgub pärast selle protsessi lõpuleviimist."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Sul on Signal Desktop-i varasematest paigaldustest jäänud üleliigseid andmeid. Kui valid jätkamise, siis need andmed kustutatakse ja sa alustad algusest peale."
+    "messageformat": "Sul on Tellomi Desktop-i varasematest paigaldustest jäänud üleliigseid andmeid. Kui valid jätkamise, siis need andmed kustutatakse ja sa alustad algusest peale."
   },
   "icu:deleteOldData": {
     "messageformat": "Kustuta vanad andmed"
@@ -2310,7 +2310,7 @@
     "messageformat": "Osaliselt kustutatud, üksikasjade nägemiseks klõpsa"
   },
   "icu:expiredWarning": {
-    "messageformat": "See Signal Desktopi versioon on aegunud. Palun uuenda uusimale versioonile sõnumite saatmiseks jätkamiseks."
+    "messageformat": "See Tellomi Desktopi versioon on aegunud. Palun uuenda uusimale versioonile sõnumite saatmiseks jätkamiseks."
   },
   "icu:upgrade": {
     "messageformat": "Klõpsa aadressile signal.org/download minemiseks"
@@ -2583,13 +2583,13 @@
     "messageformat": "Grupi uuendamine ei õnnestunud. Kontrolli internetiühendust ja proovi uuesti."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Klõpsa Signal Desktopi nutiseadmega ühendamiseks, et jätkata sõnumite saatmisega."
+    "messageformat": "Klõpsa Tellomi Desktopi nutiseadmega ühendamiseks, et jätkata sõnumite saatmisega."
   },
   "icu:unlinked": {
     "messageformat": "Ühendus eemaldatud"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Klõpsa, et uuesti registreerida ja jätkata sõnumite saatmist. Tõenäoliselt ei ole Signal Desktop enam registreeritud seepärast, et sa registreerisid oma telefoninumbri Signalis teises seadmes."
+    "messageformat": "Klõpsa, et uuesti registreerida ja jätkata sõnumite saatmist. Tõenäoliselt ei ole Tellomi Desktop enam registreeritud seepärast, et sa registreerisid oma telefoninumbri Signalis teises seadmes."
   },
   "icu:unregistered": {
     "messageformat": "Ei ole enam registreeritud"
@@ -2610,7 +2610,7 @@
     "messageformat": "Signalit ei saanud uuendada. Klõpsa, et uuesti proovida."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Taaskäivita Signal"
+    "messageformat": "Taaskäivita Tellomi"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Ignoreeri uuendust"
@@ -2826,7 +2826,7 @@
     "messageformat": "Signali artisti seeria"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Signal Artist kleebiseid pole saadaval"
+    "messageformat": "Tellomi Artist kleebiseid pole saadaval"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "Sinuga jagatud"
@@ -3447,7 +3447,7 @@
     "messageformat": "Ära vasta Signali saadetud sõnumitele"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Signal ei võta sinuga kunagi ühendust registreerimiskoodi, PIN-koodi või taastevõtme küsimiseks. Ära vasta kunagi sõnumitele, milles väidetakse, et need on Signalilt."
+    "messageformat": "Tellomi ei võta sinuga kunagi ühendust registreerimiskoodi, PIN-koodi või taastevõtme küsimiseks. Ära vasta kunagi sõnumitele, milles väidetakse, et need on Signalilt."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "Vaata nimed ja fotod üle"
@@ -3465,7 +3465,7 @@
     "messageformat": "Ära vasta Signali saadetud sõnumitele"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Signal ei võta sinuga kunagi ühendust registreerimiskoodi, PIN-koodi või varukoopia võtme küsimiseks. Ära vasta sõnumitele, milles väidetakse, et need on Signalilt või Signali toelt. Pahatahtlikud isikud kasutavad sinu konto ülevõtmiseks valenimesid."
+    "messageformat": "Tellomi ei võta sinuga kunagi ühendust registreerimiskoodi, PIN-koodi või varukoopia võtme küsimiseks. Ära vasta sõnumitele, milles väidetakse, et need on Signalilt või Signali toelt. Pahatahtlikud isikud kasutavad sinu konto ülevõtmiseks valenimesid."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Vaata nimed ja fotod üle"
@@ -3552,13 +3552,13 @@
     "messageformat": "Kas teatada rämpspostist?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signalit teavitatakse, et see isik võib olla rämpsposti edastaja. Signal ei näe ühegi vestluse sisu."
+    "messageformat": "Signalit teavitatakse, et see isik võib olla rämpsposti edastaja. Tellomi ei näe ühegi vestluse sisu."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signalit teavitatakse, et isik, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. Signal ei näe ühegi vestluse sisu."
+    "messageformat": "Signalit teavitatakse, et isik, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. Tellomi ei näe ühegi vestluse sisu."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signalit teavitatakse, et {name}, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. Signal ei näe ühegi vestluse sisu."
+    "messageformat": "Signalit teavitatakse, et {name}, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. Tellomi ei näe ühegi vestluse sisu."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Teata rämpspostist"
@@ -3600,7 +3600,7 @@
     "messageformat": "Kas võtta taotlus vastu?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "Võta kutseid vastu ainult inimestelt, keda usaldad. <bold>Signal ei võta sinuga kunagi</bold> ühendust registreerimiskoodi, PIN-koodi või varukoopia võtme küsimiseks."
+    "messageformat": "Võta kutseid vastu ainult inimestelt, keda usaldad. <bold>Tellomi ei võta sinuga kunagi</bold> ühendust registreerimiskoodi, PIN-koodi või varukoopia võtme küsimiseks."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "Jätka"
@@ -3729,10 +3729,10 @@
     "messageformat": "Vastamata videokõne"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal töötab endiselt"
+    "messageformat": "Tellomi töötab endiselt"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal jääb teavituste alal tööle. Saad seda Signali sätete alt muuta."
+    "messageformat": "Tellomi jääb teavituste alal tööle. Saad seda Signali sätete alt muuta."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Sissetulev häälkõne"
@@ -4113,7 +4113,7 @@
     "messageformat": "Tundmatu lingi versioon"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "See Signal Desktop ei toeta seda linki."
+    "messageformat": "See Tellomi Desktop ei toeta seda linki."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Grupiga ei saa liituda"
@@ -4866,7 +4866,7 @@
     "messageformat": "See isik ei kasuta Signalit"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop ei toeta sõnumite vahetamist kontaktidega, kes ei kasuta Signalit. Palu sellel isikul turvalisema sõnumivahetuskogemuse saamiseks Signal paigaldada."
+    "messageformat": "Tellomi Desktop ei toeta sõnumite vahetamist kontaktidega, kes ei kasuta Signalit. Palu sellel isikul turvalisema sõnumivahetuskogemuse saamiseks Tellomi paigaldada."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Kontakti registreerumisoleku kontrollimine"
@@ -5127,10 +5127,10 @@
     "messageformat": "Eemalda blokeering"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "Signalit teavitatakse, et see isik võib olla rämpsposti edastaja. Signal ei näe ühegi vestluse sisu."
+    "messageformat": "Signalit teavitatakse, et see isik võib olla rämpsposti edastaja. Tellomi ei näe ühegi vestluse sisu."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "Signalit teavitatakse, et isik, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. Signal ei näe ühegi vestluse sisu."
+    "messageformat": "Signalit teavitatakse, et isik, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. Tellomi ei näe ühegi vestluse sisu."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "Teata rämpspostist"
@@ -5566,7 +5566,7 @@
     "messageformat": "Ohutusnõuanded"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Vaata taotlused tähelepanelikult üle. Signal leidis teise samanimelise kontakti. <reviewRequestLink>Vaata taotlus üle</reviewRequestLink>"
+    "messageformat": "Vaata taotlused tähelepanelikult üle. Tellomi leidis teise samanimelise kontakti. <reviewRequestLink>Vaata taotlus üle</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} grupiliikmel on sama nimi. <reviewRequestLink>Vaata liikmeid</reviewRequestLink>} other {{count,number} grupiliikmel on sama nimi. <reviewRequestLink>Vaata liikmeid</reviewRequestLink>}}"
@@ -6001,7 +6001,7 @@
     "messageformat": "Kas sa soovid neid muudatusi tühistada?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Kas sulgeda Signal ja lõpetada kõne?"
+    "messageformat": "Kas sulgeda Tellomi ja lõpetada kõne?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Mitte praegu"
@@ -6167,10 +6167,10 @@
     "messageformat": "Süsteem"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "Tellomi Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "Sinu konto leidmiseks ja taastamiseks kasutatakse sinu Signal Logini. Hoia need võtmed salvestatuna turvalisse paroolihaldurisse, mida sa usaldad. <learnMoreLink>Rohkem teavet</learnMoreLink>."
+    "messageformat": "Sinu konto leidmiseks ja taastamiseks kasutatakse sinu Tellomi Logini. Hoia need võtmed salvestatuna turvalisse paroolihaldurisse, mida sa usaldad. <learnMoreLink>Rohkem teavet</learnMoreLink>."
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "Rohkem infot"
@@ -6191,7 +6191,7 @@
     "messageformat": "See on lingitud seade"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "Selleks, et oma konto sätteid hallata, ava Signal oma põhiseadmes."
+    "messageformat": "Selleks, et oma konto sätteid hallata, ava Tellomi oma põhiseadmes."
   },
   "icu:Preferences--zoom": {
     "messageformat": "Suumitase"
@@ -6731,7 +6731,7 @@
     "messageformat": "Sinu varukoopia võti"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "Seda võtit on vaja sinu andmete ja konto taastamiseks. Hoia seda turvalises kohas ning ära jaga seda kunagi teistega. Signal ei palu sinult kunagi sõnumi teel taastevõtit. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
+    "messageformat": "Seda võtit on vaja sinu andmete ja konto taastamiseks. Hoia seda turvalises kohas ning ära jaga seda kunagi teistega. Tellomi ei palu sinult kunagi sõnumi teel taastevõtit. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "Ära jaga taastevõtit"
@@ -6746,7 +6746,7 @@
     "messageformat": "Ära jaga võtit"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Ära jaga oma taastevõtit mitte kellegagi. Selle abil on teistel isikutel võimalik su konto üle võtta. <strong>Signal ei palu sinult kunagi sõnumi teel</strong> taastevõtit. Ära vasta kunagi sõnumitele, milles väidetakse, et need on Signalilt. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
+    "messageformat": "Ära jaga oma taastevõtit mitte kellegagi. Selle abil on teistel isikutel võimalik su konto üle võtta. <strong>Tellomi ei palu sinult kunagi sõnumi teel</strong> taastevõtit. Ära vasta kunagi sõnumitele, milles väidetakse, et need on Signalilt. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Kinnita oma varukoopia võti"
@@ -6758,7 +6758,7 @@
     "messageformat": "Hoia oma võtit turvaliselt"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Kui oma võtme ära kaotad, ei saa Signal aidata sul varukoopiat taastada. Hoia seda turvalises kohas ning ära jaga teistega."
+    "messageformat": "Kui oma võtme ära kaotad, ei saa Tellomi aidata sul varukoopiat taastada. Hoia seda turvalises kohas ning ära jaga teistega."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Jätka"
@@ -6947,7 +6947,7 @@
     "messageformat": "Määra"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Taaskäivita Signal, et muudatused rakenduksid"
+    "messageformat": "Taaskäivita Tellomi, et muudatused rakenduksid"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Keele vahetamiseks tuleb äpp taaskäivitada."
@@ -6989,13 +6989,13 @@
     "messageformat": "Klõpsa App Store'i sisenemiseks"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Ava Signal enda telefonis"
+    "messageformat": "Ava Tellomi enda telefonis"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
     "messageformat": "Sinu konto kustutatakse varsti, kui sa oma telefonis Signalit ei ava. See sõnum kaob, kui oled selle edukalt ära teinud. <learnMoreLink>Rohkem teavet</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Ava oma telefonis Signal, et kontot aktiivsena hoida"
+    "messageformat": "Ava oma telefonis Tellomi, et kontot aktiivsena hoida"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Rohkem infot"
@@ -7022,10 +7022,10 @@
     "messageformat": "Laadi alla {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Uuenduse paigaldamiseks taaskäivita Signal."
+    "messageformat": "Uuenduse paigaldamiseks taaskäivita Tellomi."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal Desktopi uuendamine nurjus, kuid uus versioon on saadaval. Ava {downloadUrl} ja paigalda uus versioon käsitsi ning teavita probleemist kasutajatuge või saada veateade."
+    "messageformat": "Tellomi Desktopi uuendamine nurjus, kuid uus versioon on saadaval. Ava {downloadUrl} ja paigalda uus versioon käsitsi ning teavita probleemist kasutajatuge või saada veateade."
   },
   "icu:StandaloneRegistration--signal-logo": {
     "messageformat": "Signali logo"
@@ -7460,7 +7460,7 @@
     "messageformat": "Rakendus jooksis kokku"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal taaskäivitus pärast kokkujooksmist. Võid kokkujooksmise kohta teavituse saata, et aidata Signalil probleemi uurida."
+    "messageformat": "Tellomi taaskäivitus pärast kokkujooksmist. Võid kokkujooksmise kohta teavituse saata, et aidata Signalil probleemi uurida."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Saada"
@@ -7565,7 +7565,7 @@
     "messageformat": "Klõpsa allpool „{buttonName}“"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Lülita Signal sisse"
+    "messageformat": "Lülita Tellomi sisse"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Mine sätetesse"
@@ -8484,10 +8484,10 @@
     "messageformat": "Signalis valib iga konto omanik omale ise profiilinime."
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Signal ei saa nimesid ja fotosid kontrollida"
+    "messageformat": "Tellomi ei saa nimesid ja fotosid kontrollida"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Signal ei võta sinuga kunagi ühendust registreerimiskoodi, PIN-koodi või taastevõtme küsimiseks."
+    "messageformat": "Tellomi ei võta sinuga kunagi ühendust registreerimiskoodi, PIN-koodi või taastevõtme küsimiseks."
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "Ole ettevaatlik kontode suhtes, kus esinetakse kellegi teisena"
@@ -8517,7 +8517,7 @@
     "messageformat": "Uhked, et oleme mittetulundusühing"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Anneta privaatse sõnumivahetuse toetuseks. Aita hoida Signal sõltumatu ja reklaamivaba. <readMoreLink>Loe rohkem</readMoreLink>"
+    "messageformat": "Anneta privaatse sõnumivahetuse toetuseks. Aita hoida Tellomi sõltumatu ja reklaamivaba. <readMoreLink>Loe rohkem</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Anneta"
@@ -8541,7 +8541,7 @@
     "messageformat": "Sinu andmed on privaatsed"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Sõltumatu mittetulundusühinguna  on Signal pühendunud privaatsõnumitele ja kõnedele. Ei mingeid reklaame, jälgijaid ega järelevalvet. Anneta nüüd, et Signalit toetada."
+    "messageformat": "Sõltumatu mittetulundusühinguna  on Tellomi pühendunud privaatsõnumitele ja kõnedele. Ei mingeid reklaame, jälgijaid ega järelevalvet. Anneta nüüd, et Signalit toetada."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Kui annetad, saad oma profiilil kuvada vastavat märki"
@@ -8550,7 +8550,7 @@
     "messageformat": "SInu privaatsus on meie missioon"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Signal on mittetulundusühing"
+    "messageformat": "Tellomi on mittetulundusühing"
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Signali logo stiilis südameikoon"
@@ -8598,7 +8598,7 @@
     "messageformat": "Krediit- või deebetkaart"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Sisesta oma krediit- või deebetkaardi andmed. Signal ei kogu ega salvesta sinu isikuandmeid. <learnMoreLink>Rohkem teavet</learnMoreLink>"
+    "messageformat": "Sisesta oma krediit- või deebetkaardi andmed. Tellomi ei kogu ega salvesta sinu isikuandmeid. <learnMoreLink>Rohkem teavet</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Kaardi number"
@@ -8952,7 +8952,7 @@
     "messageformat": "Kas kustutada kõik andmed?"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "Kõik Signal Desktopis olevad jooksvad andmed kustutatakse. Seejärel saad QR-koodi skannides edastada telefonist oma sõnumiajaloo."
+    "messageformat": "Kõik Tellomi Desktopis olevad jooksvad andmed kustutatakse. Seejärel saad QR-koodi skannides edastada telefonist oma sõnumiajaloo."
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "See versioon sisaldab paljusid väikseid parendusi, mis Signali sujuvalt käimas.",

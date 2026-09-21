@@ -63,10 +63,10 @@
     "messageformat": "Úsáidfear níos mó sonraí trí mheáin ardchaighdeáin a sheoladh."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Tabhair airgead do Signal"
+    "messageformat": "Tabhair airgead do Tellomi"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "Cuirtear ar do chumas do chuntas agus teachtaireachtaí Signal a rochtain go slán ar aon cheann de do ghléasanna breise agus <bold>Gléasanna Nasctha</bold> in úsáid agat."
+    "messageformat": "Cuirtear ar do chumas do chuntas agus teachtaireachtaí Tellomi a rochtain go slán ar aon cheann de do ghléasanna breise agus <bold>Gléasanna Nasctha</bold> in úsáid agat."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "Is féidir leat ríomhaire deisce, táibléad nó guthán breise a nascadh."
@@ -114,10 +114,10 @@
     "messageformat": "Grúpa anaithnid"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Ní féidir Signal a oscailt"
+    "messageformat": "Ní féidir Tellomi a oscailt"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Chun cabhrú leis an bhfadhb a réiteach, lean an treoir athshlánaithe ar an leathanach tacaíochta, nó déan teagmháil le Tacaíocht Signal chun cabhrú leis an bhfadhb a réiteach.\n\nMás gá duit Signal a úsáid díreach anois, is féidir leat do shonraí a scriosadh agus an deasc seo a athnascadh. Beidh an rogha agat stair teachtaireachtaí a aistriú ó do ghuthán."
+    "messageformat": "Chun cabhrú leis an bhfadhb a réiteach, lean an treoir athshlánaithe ar an leathanach tacaíochta, nó déan teagmháil le Tacaíocht Tellomi chun cabhrú leis an bhfadhb a réiteach.\n\nMás gá duit Tellomi a úsáid díreach anois, is féidir leat do shonraí a scriosadh agus an deasc seo a athnascadh. Beidh an rogha agat stair teachtaireachtaí a aistriú ó do ghuthán."
   },
   "icu:databaseError": {
     "messageformat": "Earráid leis an mBunachar Sonraí"
@@ -129,16 +129,16 @@
     "messageformat": "Scrios Na Sonraí Ar Fad Go Buan"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Scriosfar stair do theachtaireachtaí agus do mheán uile go buan ón ngléas seo. Ní scriosfar sonraí ó do ghuthán leis sin.\n\nBeidh tú in ann Signal a úsáid ar an ngléas seo tar éis é a athnascadh. Beidh an rogha agat stair teachtaireachtaí a aistriú ó do ghuthán."
+    "messageformat": "Scriosfar stair do theachtaireachtaí agus do mheán uile go buan ón ngléas seo. Ní scriosfar sonraí ó do ghuthán leis sin.\n\nBeidh tú in ann Tellomi a úsáid ar an ngléas seo tar éis é a athnascadh. Beidh an rogha agat stair teachtaireachtaí a aistriú ó do ghuthán."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Ní hionann an leagan bunachair shonraí atá agat agus an leagan seo de Signal. Cinntigh go bhfuil an leagan is nuaí de Signal á oscailt agat ar do ríomhaire."
+    "messageformat": "Ní hionann an leagan bunachair shonraí atá agat agus an leagan seo de Tellomi. Cinntigh go bhfuil an leagan is nuaí de Tellomi á oscailt agat ar do ríomhaire."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Ní féidir eochair chriptithe an bhunachair sonraí a rochtain toisc gur athraíodh cúl fáinne eochracha criptithe an OS ó {previousBackend} chuig {currentBackend}. Is féidir leis sin tarlú má athraítear timpeallacht an deasc, mar shampla idir GNOME agus KDE.\n\nAthraigh chuig timpeallacht an deasc a bhí ann roimhe."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Ní féidir eochair chriptithe an bhunachair sonraí a rochtain toisc gur athraíodh cúl fáinne eochrach criptithe an OS ó {previousBackend} chuig {currentBackend}. Is féidir leis sin tarlú má athraítear timpeallacht an deasc, mar shampla idir GNOME agus KDE.\n\nAthraigh chuig timpeallacht an deasc a bhí ann roimhe nó triail Signal a rith le bratach líne na n-orduithe --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Ní féidir eochair chriptithe an bhunachair sonraí a rochtain toisc gur athraíodh cúl fáinne eochrach criptithe an OS ó {previousBackend} chuig {currentBackend}. Is féidir leis sin tarlú má athraítear timpeallacht an deasc, mar shampla idir GNOME agus KDE.\n\nAthraigh chuig timpeallacht an deasc a bhí ann roimhe nó triail Tellomi a rith le bratach líne na n-orduithe --password-store=\"{previousBackendFlag}\""
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -183,7 +183,7 @@
     "messageformat": "Taispeáin Gach Ceann"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Scoir Signal"
+    "messageformat": "Scoir Tellomi"
   },
   "icu:editMenuUndo": {
     "messageformat": "CEALAIGH"
@@ -507,10 +507,10 @@
     "messageformat": "Mharcáil tú d'Uimhir Sábháilteachta le {name} mar neamhfhíoraithe ó ghléas eile"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Tá an uimhir sábháilteachta atá tú ag iarraidh a fhíorú athraithe. Athbhreithnigh d'uimhir sábháilteachta nua le {name1}. Cuimhnigh, seans go bhfuil duine ag iarraidh bualadh isteach i do chomhrá leis an athrú sin nó díreach go ndearna {name2} Signal a athshuiteáil."
+    "messageformat": "Tá an uimhir sábháilteachta atá tú ag iarraidh a fhíorú athraithe. Athbhreithnigh d'uimhir sábháilteachta nua le {name1}. Cuimhnigh, seans go bhfuil duine ag iarraidh bualadh isteach i do chomhrá leis an athrú sin nó díreach go ndearna {name2} Tellomi a athshuiteáil."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Seans go ndearna na daoine seo a leanas Signal a athshuiteáil nó gur athraigh siad go gléas eile. Tapáil faighteoir chun an uimhir sábháilteachta nua a dheimhniú. Fút féin atá sé sin."
+    "messageformat": "Seans go ndearna na daoine seo a leanas Tellomi a athshuiteáil nó gur athraigh siad go gléas eile. Tapáil faighteoir chun an uimhir sábháilteachta nua a dheimhniú. Fút féin atá sé sin."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Seol teachtaireachtaí atá ar feitheamh"
@@ -519,7 +519,7 @@
     "messageformat": "Athbhreithnigh"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Tá 1 teagmhálaí agat a bhfuil seans ann go ndearna sé/sí Signal a athshuiteáil nó gléas a athrú. Tá rogha agat na huimhreacha sábháilteachta a athbhreithniú roimh sheoladh.} two {Tá {count,number} theagmhálaí agat a bhfuil seans ann go ndearna siad Signal a athshuiteáil nó gléas a athrú. Tá rogha agat na huimhreacha sábháilteachta a athbhreithniú roimh sheoladh.} few {Tá {count,number} theagmhálaí agat a bhfuil seans ann go ndearna siad Signal a athshuiteáil nó gléas a athrú. Tá rogha agat na huimhreacha sábháilteachta a athbhreithniú roimh sheoladh.} many {Tá {count,number} dteagmhálaí agat a bhfuil seans ann go ndearna siad Signal a athshuiteáil nó gléas a athrú. Tá rogha agat na huimhreacha sábháilteachta a athbhreithniú roimh sheoladh.} other {Tá {count,number} teagmhálaí agat a bhfuil seans ann go ndearna siad Signal a athshuiteáil nó gléas a athrú. Tá rogha agat na huimhreacha sábháilteachta a athbhreithniú roimh sheoladh.}}"
+    "messageformat": "{count, plural, one {Tá 1 teagmhálaí agat a bhfuil seans ann go ndearna sé/sí Tellomi a athshuiteáil nó gléas a athrú. Tá rogha agat na huimhreacha sábháilteachta a athbhreithniú roimh sheoladh.} two {Tá {count,number} theagmhálaí agat a bhfuil seans ann go ndearna siad Tellomi a athshuiteáil nó gléas a athrú. Tá rogha agat na huimhreacha sábháilteachta a athbhreithniú roimh sheoladh.} few {Tá {count,number} theagmhálaí agat a bhfuil seans ann go ndearna siad Tellomi a athshuiteáil nó gléas a athrú. Tá rogha agat na huimhreacha sábháilteachta a athbhreithniú roimh sheoladh.} many {Tá {count,number} dteagmhálaí agat a bhfuil seans ann go ndearna siad Tellomi a athshuiteáil nó gléas a athrú. Tá rogha agat na huimhreacha sábháilteachta a athbhreithniú roimh sheoladh.} other {Tá {count,number} teagmhálaí agat a bhfuil seans ann go ndearna siad Tellomi a athshuiteáil nó gléas a athrú. Tá rogha agat na huimhreacha sábháilteachta a athbhreithniú roimh sheoladh.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Rinneadh athbhreithniú ar na teagmhálaithe go léir, tapáil Seol chun leanúint ar aghaidh."
@@ -585,7 +585,7 @@
     "messageformat": "Nasc Cóipeáilte Chuig Do Ghearrthaisce"
   },
   "icu:reportIssue": {
-    "messageformat": "Déan Teagmháil le Foireann Tacaíochta Signal"
+    "messageformat": "Déan Teagmháil le Foireann Tacaíochta Tellomi"
   },
   "icu:submit": {
     "messageformat": "Seol isteach é"
@@ -627,16 +627,16 @@
     "messageformat": "Uathfhíoraíodh an criptiú don chomhrá seo "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "I gcás daoine lena bhfuil tú nasctha le huimhir ghutháin, is féidir le Signal slánú an naisc a dheimhniú go huathoibríoch agus próiseas ar a dtugtar trédhearcacht eochracha in úsáid. Ar mhaithe le slándáil bhreise, fíoraigh an criptiú ó cheann ceann de láimh ach na huimhreacha ar an scáileán roimhe a chur i gcomparáid lena chéile nó an cód ar ghléas an duine a scanadh."
+    "messageformat": "I gcás daoine lena bhfuil tú nasctha le huimhir ghutháin, is féidir le Tellomi slánú an naisc a dheimhniú go huathoibríoch agus próiseas ar a dtugtar trédhearcacht eochracha in úsáid. Ar mhaithe le slándáil bhreise, fíoraigh an criptiú ó cheann ceann de láimh ach na huimhreacha ar an scáileán roimhe a chur i gcomparáid lena chéile nó an cód ar ghléas an duine a scanadh."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "Níl uathfhíorú ar fáil don chomhrá seo"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "Ní féidir le Signal an criptiú a uathfhíorú don chomhrá seo. D'fhéadfaí gurbh é gur athraigh {name} a (h)uimhir ghutháin nó socruithe príobháideachais ar an uimhir ghutháin is cúis leis sin. Fíoraigh an criptiú ó cheann ceann de láimh ach na huimhreacha ar an scáileán roimhe a chur i gcomparáid le chéile nó an cód ar ghléas an duine a scanadh."
+    "messageformat": "Ní féidir le Tellomi an criptiú a uathfhíorú don chomhrá seo. D'fhéadfaí gurbh é gur athraigh {name} a (h)uimhir ghutháin nó socruithe príobháideachais ar an uimhir ghutháin is cúis leis sin. Fíoraigh an criptiú ó cheann ceann de láimh ach na huimhreacha ar an scáileán roimhe a chur i gcomparáid le chéile nó an cód ar ghléas an duine a scanadh."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "Níl Signal in ann an criptiú i gcomhráite a uathfhíorú ach amháin nuair a bhíonn tú nasctha le duine éigin eile agus uimhir ghutháin in úsáid. I gcás gur tosaíodh comhrá agus ainm úsáideora nó grúpa i bpáirt, fíoraigh an criptiú ó cheann ceann ach na huimhreacha ar an scáileán roimhe a chur i gcomparáid lena chéile nó an cód ar ghléas an duine a scanadh."
+    "messageformat": "Níl Tellomi in ann an criptiú i gcomhráite a uathfhíorú ach amháin nuair a bhíonn tú nasctha le duine éigin eile agus uimhir ghutháin in úsáid. I gcás gur tosaíodh comhrá agus ainm úsáideora nó grúpa i bpáirt, fíoraigh an criptiú ó cheann ceann ach na huimhreacha ar an scáileán roimhe a chur i gcomparáid lena chéile nó an cód ar ghléas an duine a scanadh."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "Tá go maith"
@@ -675,10 +675,10 @@
     "messageformat": "Níl, go raibh maith agat"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "Tá Signal in ann criptiú a uathfhíorú anois"
+    "messageformat": "Tá Tellomi in ann criptiú a uathfhíorú anois"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "I gcás teagmhálaithe lena bhfuil tú nasctha le huimhir ghutháin, is féidir le Signal slánú an naisc a dheimhniú go huathoibríoch agus próiseas ar a dtugtar trédhearcacht eochracha in úsáid. Mar shlánú sa bhreis, is féidir leat naisc a fhíorú de láimh fós agus cód QR in úsáid nó trí uimhreacha sábháilteachta a chur i gcomparáid le chéile."
+    "messageformat": "I gcás teagmhálaithe lena bhfuil tú nasctha le huimhir ghutháin, is féidir le Tellomi slánú an naisc a dheimhniú go huathoibríoch agus próiseas ar a dtugtar trédhearcacht eochracha in úsáid. Mar shlánú sa bhreis, is féidir leat naisc a fhíorú de láimh fós agus cód QR in úsáid nó trí uimhreacha sábháilteachta a chur i gcomparáid le chéile."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "Ar aghaidh"
@@ -837,7 +837,7 @@
     "messageformat": "Cruthaitheoir an bhirt greamán"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Eolas Faoi Dheasc Signal"
+    "messageformat": "Eolas Faoi Dheasc Tellomi"
   },
   "icu:screenShareWindow": {
     "messageformat": "Comhroinnt scáileáin"
@@ -855,7 +855,7 @@
     "messageformat": "Scoir"
   },
   "icu:signalDesktop": {
-    "messageformat": "Deasc Signal"
+    "messageformat": "Deasc Tellomi"
   },
   "icu:search": {
     "messageformat": "Cuardaigh"
@@ -909,13 +909,13 @@
     "messageformat": "Cuardaigh de réir uimhir ghutháin"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Fáilte go Signal"
+    "messageformat": "Fáilte go Tellomi"
   },
   "icu:whatsNew": {
     "messageformat": "Féach {whatsNew} sa nuashonrú seo"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Eagraíocht neamhbhrabúis is ea é Signal"
+    "messageformat": "Eagraíocht neamhbhrabúis is ea é Tellomi"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "cad atá nua"
@@ -999,13 +999,13 @@
     "messageformat": "Tusa"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Tabhair cead do Dheasc Signal do mhicreafón a rochtain chun glórphoist a sheoladh."
+    "messageformat": "Tabhair cead do Dheasc Tellomi do mhicreafón a rochtain chun glórphoist a sheoladh."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Ní mór duit cead rochtana ar do mhicreafón a thabhairt do Dheasc Signal chun glaonna a chur."
+    "messageformat": "Ní mór duit cead rochtana ar do mhicreafón a thabhairt do Dheasc Tellomi chun glaonna a chur."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Ní mór duit cead rochtana ar do cheamara a thabhairt do Dheasc Signal chun físghlaonna a chur."
+    "messageformat": "Ní mór duit cead rochtana ar do cheamara a thabhairt do Dheasc Tellomi chun físghlaonna a chur."
   },
   "icu:allowAccess": {
     "messageformat": "Ceadaigh Rochtain"
@@ -1029,13 +1029,13 @@
     "messageformat": "Balbhaigh"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Níorbh fhéidir Signal a nuashonrú. <retryUpdateButton>Atriail an nuashonrú</retryUpdateButton> nó téigh chuig {url} lena shuiteáil de láimh. Ansin <contactSupportLink>déan teagmháil leis an bhfoireann tacaíochta</contactSupportLink> faoin fhadhb sin"
+    "messageformat": "Níorbh fhéidir Tellomi a nuashonrú. <retryUpdateButton>Atriail an nuashonrú</retryUpdateButton> nó téigh chuig {url} lena shuiteáil de láimh. Ansin <contactSupportLink>déan teagmháil leis an bhfoireann tacaíochta</contactSupportLink> faoin fhadhb sin"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Níorbh fhéidir Signal nuashonrú. Téigh chuig {url} lena shuiteáil de láimh. Ansin <contactSupportLink>déan teagmháil leis an bhfoireann tacaíochta</contactSupportLink> faoin fhadhb sin"
+    "messageformat": "Níorbh fhéidir Tellomi nuashonrú. Téigh chuig {url} lena shuiteáil de láimh. Ansin <contactSupportLink>déan teagmháil leis an bhfoireann tacaíochta</contactSupportLink> faoin fhadhb sin"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Is cosúil go bhfuil Deasc Signal i gcoraintín macOS, agus ní bheidh sé in ann uath-nuashonrú a dhéanamh. Triail {app} a bhogadh chuig {folder} le hAimsitheoir."
+    "messageformat": "Is cosúil go bhfuil Deasc Tellomi i gcoraintín macOS, agus ní bheidh sé in ann uath-nuashonrú a dhéanamh. Triail {app} a bhogadh chuig {folder} le hAimsitheoir."
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -1080,7 +1080,7 @@
     "messageformat": "Scriosfar an teachtaireacht seo ón ngléas seo."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Scriosfar an teachtaireacht seo do chách sa chomhrá má tá leagan le déanaí de Signal acu. Feicfidh siad gur scrios tú teachtaireacht."
+    "messageformat": "Scriosfar an teachtaireacht seo do chách sa chomhrá má tá leagan le déanaí de Tellomi acu. Feicfidh siad gur scrios tú teachtaireacht."
   },
   "icu:from": {
     "messageformat": "Ó"
@@ -1122,7 +1122,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "Is é \"{title}\" an t-ainm próifíle a shocraigh an duine seo in Signal."
+    "messageformat": "Is é \"{title}\" an t-ainm próifíle a shocraigh an duine seo in Tellomi."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Deimhnithe"
@@ -1137,7 +1137,7 @@
     "messageformat": "Teachtaireacht dhíreach ar bith le {name}"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Teagmhálaí Signal"
+    "messageformat": "Teagmhálaí Tellomi"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "Tá {name} i dteagmhálaithe do chórais"
@@ -1449,10 +1449,10 @@
     "messageformat": "Tuilleadh Faisnéise"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Tá criptiú ó cheann ceann á úsáid ag Signal agus seans go mbeidh air do sheisiún comhrá a athnuachan ó am go ham. Ní chuireann sé sin isteach ar shlándáil do chomhrá; tá seans ann gur chaill tú teachtaireacht ón teagmhálaí seo, áfach, agus is féidir leat athsheoladh a iarraidh."
+    "messageformat": "Tá criptiú ó cheann ceann á úsáid ag Tellomi agus seans go mbeidh air do sheisiún comhrá a athnuachan ó am go ham. Ní chuireann sé sin isteach ar shlándáil do chomhrá; tá seans ann gur chaill tú teachtaireacht ón teagmhálaí seo, áfach, agus is féidir leat athsheoladh a iarraidh."
   },
   "icu:ChatRefresh--contactSupport": {
-    "messageformat": "Déan Teagmháil le Foireann Tacaíochta Signal"
+    "messageformat": "Déan Teagmháil le Foireann Tacaíochta Tellomi"
   },
   "icu:DeliveryIssue--preview": {
     "messageformat": "Delivery Issue"
@@ -1476,7 +1476,7 @@
     "messageformat": "D'athraigh {sender} an uimhir ghutháin"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Chuaigh an teagmhálaí isteach in Signal"
+    "messageformat": "Chuaigh an teagmhálaí isteach in Tellomi"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "Baineann {obsoleteConversationTitle} agus {conversationTitle} leis an gcuntas céanna. Tá stair na dteachtaireachtaí don dá chomhrá anseo."
@@ -1566,7 +1566,7 @@
     "messageformat": "Ní féidir na meáin a íoslódáil"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Seiceáil an nasc Idirlín le do dheasc agus le do ghuthán. Oscail Signal ar do ghuthán, ansin triail íoslódáil arís."
+    "messageformat": "Seiceáil an nasc Idirlín le do dheasc agus le do ghuthán. Oscail Tellomi ar do ghuthán, ansin triail íoslódáil arís."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Níl na meáin sin ar fáil ar do ghuthán a thuilleadh agus ní féidir iad a íoslódáil."
@@ -1587,10 +1587,10 @@
     "messageformat": "Foghlaim tuilleadh"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Scan an cód seo san aip Signal ar do ghuthán"
+    "messageformat": "Scan an cód seo san aip Tellomi ar do ghuthán"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Oscail Signal ar do ghuthán"
+    "messageformat": "Oscail Tellomi ar do ghuthán"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Tapáil isteach in {settings}, ansin tapáil {linkedDevices}"
@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>Tharla earráid gan choinne.</paragraph><paragraph>Triail arís é.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Ní féidir le Signal an gléas seo a nascadh ag úsáid do líonra reatha."
+    "messageformat": "Ní féidir le Tellomi an gléas seo a nascadh ag úsáid do líonra reatha."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Bain triail eile as"
@@ -1626,7 +1626,7 @@
     "messageformat": "Scrios na sonraí go léir?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "Tá tú ag iarraidh cuntas difriúil de chuid Signal a nascadh leis an ríomhaire deisce seo. Má leanann tú leis, scriosfar na sonraí go léir atá in Signal Desktop faoi láthair."
+    "messageformat": "Tá tú ag iarraidh cuntas difriúil de chuid Tellomi a nascadh leis an ríomhaire deisce seo. Má leanann tú leis, scriosfar na sonraí go léir atá in Tellomi Desktop faoi láthair."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "Ar aghaidh"
@@ -1641,7 +1641,7 @@
     "messageformat": "Ainm an ghléis"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Chun ainm an ghléis seo a athrú, oscail Signal ar do ghuthán agus téigh chuig Socruithe > Gléasanna nasctha"
+    "messageformat": "Chun ainm an ghléis seo a athrú, oscail Tellomi ar do ghuthán agus téigh chuig Socruithe > Gléasanna nasctha"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Ton craicinn Emoji"
@@ -1833,7 +1833,7 @@
     "messageformat": "Uathfhíorú eochrach"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "Agus é cumasaithe, déanfaidh Signal iarracht criptiú comhráite 1:1 a fhíorú go huathoibríoch."
+    "messageformat": "Agus é cumasaithe, déanfaidh Tellomi iarracht criptiú comhráite 1:1 a fhíorú go huathoibríoch."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "Tuilleadh Faisnéise"
@@ -1851,7 +1851,7 @@
     "messageformat": "Ár leithscéal, tá an iomarca gléasanna nasctha agat cheana féin. Triail cuid acu a bhaint."
   },
   "icu:installTooOld": {
-    "messageformat": "Nuashonraigh Signal ar an ngléas seo chun do ghuthán a nascadh."
+    "messageformat": "Nuashonraigh Tellomi ar an ngléas seo chun do ghuthán a nascadh."
   },
   "icu:installErrorHeader": {
     "messageformat": "Chuaigh rud éigin mícheart!"
@@ -1902,7 +1902,7 @@
     "messageformat": "Níl an nasc glao seo bailí a thuilleadh."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Glao Signal"
+    "messageformat": "Glao Tellomi"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Níorbh fhéidir an nasc a scriosadh. Seiceáil do nasc agus triail arís é."
@@ -2076,16 +2076,16 @@
     "messageformat": "{count, plural, one {Tá {count,number} duine sa ghlao seo} two {Tá {count,number} dhuine sa ghlao seo} few {Tá {count,number} dhuine sa ghlao seo} many {Tá {count,number} nduine sa ghlao seo} other {Tá {count,number} duine sa ghlao seo}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Cuirfidh Signal glao ar {person}"
+    "messageformat": "Cuirfidh Tellomi glao ar {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Cuirfidh Signal glao ar {first} agus ar {second}"
+    "messageformat": "Cuirfidh Tellomi glao ar {first} agus ar {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Cuirfidh Signal glao ar {first}, {second} agus {third}"
+    "messageformat": "Cuirfidh Tellomi glao ar {first}, {second} agus {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Cuirfidh Signal glao ar {first}, {second}, agus ar {others,number} duine eile} two {Cuirfidh Signal glao ar {first}, {second}, agus ar {others,number} dhuine eile} few {Cuirfidh Signal glao ar {first}, {second}, agus ar {others,number} dhuine eile} many {Cuirfidh Signal glao ar {first}, {second}, agus ar {others,number} nduine eile} other {Cuirfidh Signal glao ar {first}, {second}, agus ar {others,number} duine eile}}"
+    "messageformat": "{others, plural, one {Cuirfidh Tellomi glao ar {first}, {second}, agus ar {others,number} duine eile} two {Cuirfidh Tellomi glao ar {first}, {second}, agus ar {others,number} dhuine eile} few {Cuirfidh Tellomi glao ar {first}, {second}, agus ar {others,number} dhuine eile} many {Cuirfidh Tellomi glao ar {first}, {second}, agus ar {others,number} nduine eile} other {Cuirfidh Tellomi glao ar {first}, {second}, agus ar {others,number} duine eile}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "Cuirfear {person} ar an eolas"
@@ -2139,13 +2139,13 @@
     "messageformat": "Athnascadh…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Cailleadh do nasc. Tá Signal á athnascadh."
+    "messageformat": "Cailleadh do nasc. Tá Tellomi á athnascadh."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Tá {window} á chomhroinnt ag Signal."
+    "messageformat": "Tá {window} á chomhroinnt ag Tellomi."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Tá comhroinnt scáileáin Signal gníomhach"
+    "messageformat": "Tá comhroinnt scáileáin Tellomi gníomhach"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Athnascadh…"
@@ -2166,7 +2166,7 @@
     "messageformat": "Cead de dhíth"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Tá cead de dhíth ar Signal le taifeadadh scáileán do ríomhaire a rochtain."
+    "messageformat": "Tá cead de dhíth ar Tellomi le taifeadadh scáileán do ríomhaire a rochtain."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Téigh chuig Sainroghanna an Chórais."
@@ -2175,7 +2175,7 @@
     "messageformat": "Cliceáil ar an íocón glasála ag bun ar chlé agus cuir isteach pasfhocal do ríomhaire."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Ar an deis, cuir tic sa bhosca taobh le Signal. Mura bhfeiceann tú Signal sa liosta, cliceáil + lena chur leis."
+    "messageformat": "Ar an deis, cuir tic sa bhosca taobh le Tellomi. Mura bhfeiceann tú Tellomi sa liosta, cliceáil + lena chur leis."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Oscail Sainroghanna an Chórais"
@@ -2187,7 +2187,7 @@
     "messageformat": "Cuir glaonna ar aghaidh i gcónaí"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Seol gach glao trí fhreastalaí Signal ionas nach nochtfar do sheoladh IP do do theagmhálaí. Laghdófar cáilíocht an ghlao má chumasaítear é sin."
+    "messageformat": "Seol gach glao trí fhreastalaí Tellomi ionas nach nochtfar do sheoladh IP do do theagmhálaí. Laghdófar cáilíocht an ghlao má chumasaítear é sin."
   },
   "icu:permissions": {
     "messageformat": "Ceadanna"
@@ -2205,10 +2205,10 @@
     "messageformat": "Taispeáin mír aníos chun téacs a fhormáidiú nuair a roghnaítear é"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Cumasófar seiceáil litrithe an chéad uair eile a thosaítear Signal."
+    "messageformat": "Cumasófar seiceáil litrithe an chéad uair eile a thosaítear Tellomi."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Díchumasófar seiceáil litrithe an chéad uair eile a thosaítear Signal."
+    "messageformat": "Díchumasófar seiceáil litrithe an chéad uair eile a thosaítear Tellomi."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Íoslaghdaigh chuig tráidire córais"
@@ -2232,7 +2232,7 @@
     "messageformat": "Scrios na sonraí go léir?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Scrios na sonraí agus na teachtaireachtaí uile ón leagan seo de Dheasc Signal? Ní scriosfar do chuntas Signal ná sonraí ar do ghuthán nó ar aon ghléas eile atá nasctha."
+    "messageformat": "Scrios na sonraí agus na teachtaireachtaí uile ón leagan seo de Dheasc Tellomi? Ní scriosfar do chuntas Tellomi ná sonraí ar do ghuthán nó ar aon ghléas eile atá nasctha."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Dínascadh agus na sonraí go léir á scriosadh…"
@@ -2241,7 +2241,7 @@
     "messageformat": "Scrios cuntas"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "Scriosfar do chuid faisnéise cuntais, do phróifíl agus do theachtaireachtaí go léir leis sin. Bainfear de gach grúpa de chuid Signal thú freisin."
+    "messageformat": "Scriosfar do chuid faisnéise cuntais, do phróifíl agus do theachtaireachtaí go léir leis sin. Bainfear de gach grúpa de chuid Tellomi thú freisin."
   },
   "icu:deleteAccountButton": {
     "messageformat": "Scrios cuntas"
@@ -2250,10 +2250,10 @@
     "messageformat": "Scrios an Cuntas?"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "Scriosfar do chuid faisnéise cuntais, do phróifíl agus do theachtaireachtaí go léir leis sin. Bainfear de gach grúpa de chuid Signal thú freisin. Dúnfar an app nuair a bheidh an próiseas seo críochnaithe."
+    "messageformat": "Scriosfar do chuid faisnéise cuntais, do phróifíl agus do theachtaireachtaí go léir leis sin. Bainfear de gach grúpa de chuid Tellomi thú freisin. Dúnfar an app nuair a bheidh an próiseas seo críochnaithe."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Tá sonraí agat ó sheansuiteáil Dheasc Signal atá imithe i léig. Má roghnaíonn tú leanúint leis, scriosfar iad agus tosóidh tú ón tús."
+    "messageformat": "Tá sonraí agat ó sheansuiteáil Dheasc Tellomi atá imithe i léig. Má roghnaíonn tú leanúint leis, scriosfar iad agus tosóidh tú ón tús."
   },
   "icu:deleteOldData": {
     "messageformat": "Scrios Seansonraí"
@@ -2310,7 +2310,7 @@
     "messageformat": "Cuid di scriosta, cliceáil le sonraí a fháil"
   },
   "icu:expiredWarning": {
-    "messageformat": "Tá an leagan Dheasc Signal seo imithe as feidhm. Uasghrádaigh chuig an leagan is déanaí le leanúint le cur teachtaireachtaí."
+    "messageformat": "Tá an leagan Dheasc Tellomi seo imithe as feidhm. Uasghrádaigh chuig an leagan is déanaí le leanúint le cur teachtaireachtaí."
   },
   "icu:upgrade": {
     "messageformat": "Cliceáil le dul chuig signal.org/download"
@@ -2322,7 +2322,7 @@
     "messageformat": "Iompórtáil teagmhálaithe"
   },
   "icu:syncExplanation": {
-    "messageformat": "Iompórtáil na grúpaí agus teagmhálaithe Signal uile ó do ghléas móibíleach."
+    "messageformat": "Iompórtáil na grúpaí agus teagmhálaithe Tellomi uile ó do ghléas móibíleach."
   },
   "icu:syncNow": {
     "messageformat": "Iompórtáil anois"
@@ -2355,7 +2355,7 @@
     "messageformat": "Inné {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Is féidir nach mbeidh Signal in ann an teachtaireacht isteach a phróiseas."
+    "messageformat": "Is féidir nach mbeidh Tellomi in ann an teachtaireacht isteach a phróiseas."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Tá corp na teachtaireachta rófhada."
@@ -2520,13 +2520,13 @@
     "messageformat": "Ní féidir eagarthóireacht a chur i bhfeidhm ach amháin laistigh de 24 uair an chloig ón uair a sheol tú an teachtaireacht seo."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "Ní úsáideoir Signal é/í {atUsername}. Cinntigh go bhfuil an t-ainm úsáideora iomlán curtha isteach agat."
+    "messageformat": "Ní úsáideoir Tellomi é/í {atUsername}. Cinntigh go bhfuil an t-ainm úsáideora iomlán curtha isteach agat."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "Ní ainm úsáideora bailí é {atUsername}. Cinntigh gur chuir tú isteach an t-ainm úsáideora iomlán agus a thacar digití ina dhiaidh sin."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Ní bhfuarthas an t-úsáideoir. Ní úsáideoir Signal \"{phoneNumber}\"."
+    "messageformat": "Ní bhfuarthas an t-úsáideoir. Ní úsáideoir Tellomi \"{phoneNumber}\"."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "Ní bhfuarthas an t-úsáideoir. Ní uimhir ghutháin bhailí \"{phoneNumber}\"."
@@ -2547,13 +2547,13 @@
     "messageformat": "Uasmhéid an ghrúpa bainte amach"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Is féidir suas leis an uaslíon ball seo a bheith i ngrúpaí Signal: {max,number}."
+    "messageformat": "Is féidir suas leis an uaslíon ball seo a bheith i ngrúpaí Tellomi: {max,number}."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Recommended member limit reached"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Is fearr a fheidhmíonn grúpaí Signal ina bhfuil {max,number} ball nó níos lú. Má chuirtear tuilleadh ball leo cuirfear moill ar sheoladh agus ar fháil teachtaireachtaí."
+    "messageformat": "Is fearr a fheidhmíonn grúpaí Tellomi ina bhfuil {max,number} ball nó níos lú. Má chuirtear tuilleadh ball leo cuirfear moill ar sheoladh agus ar fháil teachtaireachtaí."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Ainmnigh an grúpa seo"
@@ -2583,13 +2583,13 @@
     "messageformat": "Theip ar nuashonrú an ghrúpa. Seiceáil do nasc agus triail arís."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Cliceáil chun Deasc Signal a athnascadh le do ghléas móibíleach le leanúint le cur teachtaireachtaí."
+    "messageformat": "Cliceáil chun Deasc Tellomi a athnascadh le do ghléas móibíleach le leanúint le cur teachtaireachtaí."
   },
   "icu:unlinked": {
     "messageformat": "Dínasctha"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Cliceáil le hathchlárú agus le leanúint le seoladh teachtaireachtaí. Is dócha nach bhfuil Signal Desktop cláraithe toisc gur chláraigh tú d’uimhir ghutháin le Signal ar ghléas eile."
+    "messageformat": "Cliceáil le hathchlárú agus le leanúint le seoladh teachtaireachtaí. Is dócha nach bhfuil Tellomi Desktop cláraithe toisc gur chláraigh tú d’uimhir ghutháin le Tellomi ar ghléas eile."
   },
   "icu:unregistered": {
     "messageformat": "Ní cláraithe a thuilleadh"
@@ -2601,16 +2601,16 @@
     "messageformat": "Atriail nuashonrú"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Cliceáil chun Signal a atosú"
+    "messageformat": "Cliceáil chun Tellomi a atosú"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Cliceáil chun nuashonrú a íoslódáil"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Níorbh fhéidir Signal a nuashonrú. Cliceáil lena atriail."
+    "messageformat": "Níorbh fhéidir Tellomi a nuashonrú. Cliceáil lena atriail."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Atosaigh Signal"
+    "messageformat": "Atosaigh Tellomi"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Déan neamhaird den nuashonrú"
@@ -2742,7 +2742,7 @@
     "messageformat": "Tá roinnt ceangaltán rómhór lena dtaispeáint."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Úsáid an nasc seo le dul isteach i nGlao Signal"
+    "messageformat": "Úsáid an nasc seo le dul isteach i nGlao Tellomi"
   },
   "icu:donation--missing": {
     "messageformat": "Ní féidir sonraí an tabhartais a fháil"
@@ -2754,7 +2754,7 @@
     "messageformat": "Tapáil an teachtaireacht seo ar ghuthán póca le féachaint ar do thabhartas"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "Thug {sender} tabhartas do Signal ar do shon"
+    "messageformat": "Thug {sender} tabhartas do Tellomi ar do shon"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Seiceáil do ghuthán chun an tabhartas sin a oscailt"
@@ -2811,7 +2811,7 @@
     "messageformat": "Go raibh maith agat as do thacaíocht!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Thug tú tabhartas do Signal ar son {name}. Tabharfar rogha don duine sin tacaíocht a léiriú ar an bpróifíl."
+    "messageformat": "Thug tú tabhartas do Tellomi ar son {name}. Tabharfar rogha don duine sin tacaíocht a léiriú ar an bpróifíl."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Níorbh fhéidir beart greamán a shuiteáil"
@@ -2823,10 +2823,10 @@
     "messageformat": "Cuir greamáin leis"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Sraith Ealaíontóirí Signal"
+    "messageformat": "Sraith Ealaíontóirí Tellomi"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Níl greamáin Cruthaitheoirí Signal ar fáil"
+    "messageformat": "Níl greamáin Cruthaitheoirí Tellomi ar fáil"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "Comhroinnte Leat"
@@ -2862,7 +2862,7 @@
     "messageformat": "Tarraing chun an beart greamán a chur in ord nua"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "Bearta greamán de chuid Shraith Ealaíontóirí Signal"
+    "messageformat": "Bearta greamán de chuid Shraith Ealaíontóirí Tellomi"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "Bearta greamán a fuarthas"
@@ -3147,19 +3147,19 @@
     "messageformat": "Tá an teachtaireacht rófhada le tuilleadh a thaispeáint"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "Sheol {contact} teachtaireacht chugat nach féidir próiseáil ná taispeáint anseo toisc go mbaineann sí úsáid as gné nua in Signal."
+    "messageformat": "Sheol {contact} teachtaireacht chugat nach féidir próiseáil ná taispeáint anseo toisc go mbaineann sí úsáid as gné nua in Tellomi."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "D'fhéadfá iarraidh ar {contact} an teachtaireacht seo a sheoladh arís anois ó tá leagan cothrom le dáta de Signal agat."
+    "messageformat": "D'fhéadfá iarraidh ar {contact} an teachtaireacht seo a sheoladh arís anois ó tá leagan cothrom le dáta de Tellomi agat."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Sheol ceann de do ghléasanna teachtaireacht nach féidir a phróiseáil ná a thaispeáint toisc go bhfuil gné nua de Signal inti."
+    "messageformat": "Sheol ceann de do ghléasanna teachtaireacht nach féidir a phróiseáil ná a thaispeáint toisc go bhfuil gné nua de Tellomi inti."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Déanfar teachtaireachtaí mar seo a shioncronú amach anseo anois toisc go bhfuil leagan suas chun dáta de Signal á úsáid agat."
+    "messageformat": "Déanfar teachtaireachtaí mar seo a shioncronú amach anseo anois toisc go bhfuil leagan suas chun dáta de Tellomi á úsáid agat."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Nuashonraigh Signal"
+    "messageformat": "Nuashonraigh Tellomi"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Amharcadh uirthi"
@@ -3426,7 +3426,7 @@
     "messageformat": "Comhrá marcáilte mar neamhléite"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Socraigh Signal ar do ghuthán agus ríomhaire deisce leis an gCruthaitheoir Beart Greamán a úsáid"
+    "messageformat": "Socraigh Tellomi ar do ghuthán agus ríomhaire deisce leis an gCruthaitheoir Beart Greamán a úsáid"
   },
   "icu:Reactions--remove": {
     "messageformat": "Bain an fhreagairt"
@@ -3444,16 +3444,16 @@
     "messageformat": "Leideanna sábháilteachta"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Ná freagair comhráite ó Signal"
+    "messageformat": "Ná freagair comhráite ó Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Ní sheolfaidh Signal teachtaireacht chugat choíche chun do chód clárúcháin, UAP nó eochair athshlánaithe a iarraidh ort. Ná freagair comhrá choíche a ligeann gur Signal atá ann."
+    "messageformat": "Ní sheolfaidh Tellomi teachtaireacht chugat choíche chun do chód clárúcháin, UAP nó eochair athshlánaithe a iarraidh ort. Ná freagair comhrá choíche a ligeann gur Tellomi atá ann."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "Athbhreithnigh ainmneacha agus grianghraif"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "Coinnigh súil amach don fhógra \"Ainm gan fíorú\". Socraíonn gach duine ainm a bpróifíle féin in Signal."
+    "messageformat": "Coinnigh súil amach don fhógra \"Ainm gan fíorú\". Socraíonn gach duine ainm a bpróifíle féin in Tellomi."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "Coinnigh súil amach do chamscéimeanna"
@@ -3462,16 +3462,16 @@
     "messageformat": "Seachain teachtaireachtaí doiléire a dhéanann iarracht freagra a fháil uait. Bí ar d'airdeall maidir le leideanna airgeadais agus naisc ghréasáin amhrasacha."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Ná freagair comhráite ó Signal"
+    "messageformat": "Ná freagair comhráite ó Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Ní dhéanfaidh Signal teachtaireacht a sheoladh chugat choíche chun do chód clárúcháin, UAP nó eochair athshlánaithe a iarraidh ort. Ná freagair comhrá a ligeann gur Signal nó Tacaíocht Signal atá ann. Socraíonn drochghníomhaithe ainmneacha bréige ag iarraidh ceannas a fháil ar do chuntas."
+    "messageformat": "Ní dhéanfaidh Tellomi teachtaireacht a sheoladh chugat choíche chun do chód clárúcháin, UAP nó eochair athshlánaithe a iarraidh ort. Ná freagair comhrá a ligeann gur Tellomi nó Tacaíocht Tellomi atá ann. Socraíonn drochghníomhaithe ainmneacha bréige ag iarraidh ceannas a fháil ar do chuntas."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Athbhreithnigh ainmneacha agus grianghraif"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "Coinnigh súil amach don fhógra \"Ainm gan fíorú\". Socraíonn gach duine ainm agus grianghraf a bpróifíle féin in Signal. Mura bhfuil tú cinnte faoi sheoltóir iarratais nua, is fearr gan aird a thabhairt air."
+    "messageformat": "Coinnigh súil amach don fhógra \"Ainm gan fíorú\". Socraíonn gach duine ainm agus grianghraf a bpróifíle féin in Tellomi. Mura bhfuil tú cinnte faoi sheoltóir iarratais nua, is fearr gan aird a thabhairt air."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Camscéimeanna criptea-airgeadra nó airgid"
@@ -3552,13 +3552,13 @@
     "messageformat": "Tuairiscigh mar thurscar?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Cuirfear in iúl do Signal go bhféadfadh go bhfuil an duine seo ag seoladh turscair. Ní féidir le Signal inneachar comhráite a fheiceáil."
+    "messageformat": "Cuirfear in iúl do Tellomi go bhféadfadh go bhfuil an duine seo ag seoladh turscair. Ní féidir le Tellomi inneachar comhráite a fheiceáil."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Cuirfear in iúl do Signal go bhféadfadh go bhfuil an duine a thug cuireadh duit chuig an ngrúpa seo ag seoladh turscair. Ní féidir le Signal inneachar comhráite a fheiceáil."
+    "messageformat": "Cuirfear in iúl do Tellomi go bhféadfadh go bhfuil an duine a thug cuireadh duit chuig an ngrúpa seo ag seoladh turscair. Ní féidir le Tellomi inneachar comhráite a fheiceáil."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Cuirfear in iúl do Signal go bhféadfadh go bhfuil {name}, a thug cuireadh duit chuig an ngrúpa seo, ag seoladh turscair. Ní féidir le Signal inneachar comhráite a fheiceáil."
+    "messageformat": "Cuirfear in iúl do Tellomi go bhféadfadh go bhfuil {name}, a thug cuireadh duit chuig an ngrúpa seo, ag seoladh turscair. Ní féidir le Tellomi inneachar comhráite a fheiceáil."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Tuairiscigh turscar"
@@ -3600,7 +3600,7 @@
     "messageformat": "Glac leis an iarratas?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "Ná glac le hiarratais ach ó dhaoine a bhfuil muinín agat astu. <bold>Ní sheolfaidh Signal</bold> teachtaireacht chugat choíche chun do chód clárúcháin, UAP nó eochair athshlánaithe a iarraidh ort."
+    "messageformat": "Ná glac le hiarratais ach ó dhaoine a bhfuil muinín agat astu. <bold>Ní sheolfaidh Tellomi</bold> teachtaireacht chugat choíche chun do chód clárúcháin, UAP nó eochair athshlánaithe a iarraidh ort."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "Ar aghaidh"
@@ -3654,16 +3654,16 @@
     "messageformat": "Ainm gan fíorú"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Seo é an t-aon chomhrá oifigiúil de chuid Signal"
+    "messageformat": "Seo é an t-aon chomhrá oifigiúil de chuid Tellomi"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "Comhrá oifigiúil"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "An t-aon chomhrá oifigiúil amháin de chuid Signal. Coinnigh suas chun dáta leis an nuacht agus le nótaí eisiúna."
+    "messageformat": "An t-aon chomhrá oifigiúil amháin de chuid Tellomi. Coinnigh suas chun dáta leis an nuacht agus le nótaí eisiúna."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "An t-aon chomhrá oifigiúil amháin de chuid Signal."
+    "messageformat": "An t-aon chomhrá oifigiúil amháin de chuid Tellomi."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Coinnigh suas chun dáta leis an nuacht agus le nótaí eisiúna."
@@ -3729,10 +3729,10 @@
     "messageformat": "Físghlao nár freagraíodh"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Tá Signal ag rith fós"
+    "messageformat": "Tá Tellomi ag rith fós"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Coinneoidh Signal air ag rith sa limistéar fógraí. Is féidir leat é sin a athrú i socruithe Signal."
+    "messageformat": "Coinneoidh Tellomi air ag rith sa limistéar fógraí. Is féidir leat é sin a athrú i socruithe Tellomi."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Guthghlao isteach"
@@ -3951,7 +3951,7 @@
     "messageformat": "Cóipeáil an nasc glao"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Comhroinn nasc glao trí Signal"
+    "messageformat": "Comhroinn nasc glao trí Tellomi"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "Bain {name} den ghlao?"
@@ -4113,7 +4113,7 @@
     "messageformat": "Leagan naisc anaithnid"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Ní thacaíonn an leagan seo de Dheasc Signal leis an nasc seo."
+    "messageformat": "Ní thacaíonn an leagan seo de Dheasc Tellomi leis an nasc seo."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Ní féidir dul isteach sa ghrúpa"
@@ -4719,10 +4719,10 @@
     "messageformat": "Sonraí úsáideora á scriosadh agus an aip á hathshocrú"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Bronn airgead ar Signal"
+    "messageformat": "Bronn airgead ar Tellomi"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "Tacaíonn {name} le Signal"
+    "messageformat": "Tacaíonn {name} le Tellomi"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "Teachtaireachtaí á sioncronú"
@@ -4839,7 +4839,7 @@
     "messageformat": "Gníomh de dhíth maidir le do chuntas"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Ní mór duit Signal a oscailt ar do ghuthán le leanúint le húsáid an chuntais seo. Mura n-osclaíonn tú Signal ar do ghuthán, scriosfar do chuntas ar ball. <learnMoreLink>Tuilleadh faisnéise</learnMoreLink>"
+    "messageformat": "Ní mór duit Tellomi a oscailt ar do ghuthán le leanúint le húsáid an chuntais seo. Mura n-osclaíonn tú Tellomi ar do ghuthán, scriosfar do chuntas ar ball. <learnMoreLink>Tuilleadh faisnéise</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Ní féidir na meáin a aischur"
@@ -4863,10 +4863,10 @@
     "messageformat": "Cuir ceangaltán nó suirbhé leis"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Níl Signal á úsáid ag an duine seo"
+    "messageformat": "Níl Tellomi á úsáid ag an duine seo"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Ní thacaíonn Deasc Signal le cur teachtaireachtaí chuig teagmhálaithe nach bhfuil Signal acu. Iarr ar an duine seo Signal a shuiteáil le taithí níos sláine a fháil ar chur teachtaireachtaí."
+    "messageformat": "Ní thacaíonn Deasc Tellomi le cur teachtaireachtaí chuig teagmhálaithe nach bhfuil Tellomi acu. Iarr ar an duine seo Tellomi a shuiteáil le taithí níos sláine a fháil ar chur teachtaireachtaí."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Stádas clárúcháin an teagmhálaí á sheiceáil"
@@ -5127,10 +5127,10 @@
     "messageformat": "Bain an bac"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "Cuirfear in iúl do Signal go bhféadfadh go bhfuil an duine seo ag seoladh turscair. Ní féidir le Signal inneachar comhráite a fheiceáil."
+    "messageformat": "Cuirfear in iúl do Tellomi go bhféadfadh go bhfuil an duine seo ag seoladh turscair. Ní féidir le Tellomi inneachar comhráite a fheiceáil."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "Cuirfear in iúl do Signal go bhféadfadh go bhfuil an duine a thug cuireadh duit chuig an ngrúpa seo ag seoladh turscair. Ní féidir le Signal inneachar comhráite a fheiceáil."
+    "messageformat": "Cuirfear in iúl do Tellomi go bhféadfadh go bhfuil an duine a thug cuireadh duit chuig an ngrúpa seo ag seoladh turscair. Ní féidir le Tellomi inneachar comhráite a fheiceáil."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "Tuairiscigh turscar"
@@ -5178,7 +5178,7 @@
     "messageformat": "Leasainm"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Stóráiltear leasainmneacha agus nótaí le Signal agus iad criptithe ó cheann ceann. Níl siad infheicthe ach agatsa amháin."
+    "messageformat": "Stóráiltear leasainmneacha agus nótaí le Tellomi agus iad criptithe ó cheann ceann. Níl siad infheicthe ach agatsa amháin."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Ainm"
@@ -5431,7 +5431,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {Feicfidh baill den ghrúpa ar na leaganacha is déanaí de Signal gur scrios tú an teachtaireacht sin.} two {Feicfidh baill den ghrúpa ar na leaganacha is déanaí de Signal gur scrios tú na teachtaireachtaí sin.} few {Feicfidh baill den ghrúpa ar na leaganacha is déanaí de Signal gur scrios tú na teachtaireachtaí sin.} many {Feicfidh baill den ghrúpa ar na leaganacha is déanaí de Signal gur scrios tú na teachtaireachtaí sin.} other {Feicfidh baill den ghrúpa ar na leaganacha is déanaí de Signal gur scrios tú na teachtaireachtaí sin.}}"
+    "messageformat": "{count, plural, one {Feicfidh baill den ghrúpa ar na leaganacha is déanaí de Tellomi gur scrios tú an teachtaireacht sin.} two {Feicfidh baill den ghrúpa ar na leaganacha is déanaí de Tellomi gur scrios tú na teachtaireachtaí sin.} few {Feicfidh baill den ghrúpa ar na leaganacha is déanaí de Tellomi gur scrios tú na teachtaireachtaí sin.} many {Feicfidh baill den ghrúpa ar na leaganacha is déanaí de Tellomi gur scrios tú na teachtaireachtaí sin.} other {Feicfidh baill den ghrúpa ar na leaganacha is déanaí de Tellomi gur scrios tú na teachtaireachtaí sin.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Scrios"
@@ -5557,7 +5557,7 @@
     "messageformat": "Ní féidir teachtaireachtaí folmha ná scriosta a sheoladh ar aghaidh"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Úsáid an nasc seo le dul isteach i nglao Signal: {url}"
+    "messageformat": "Úsáid an nasc seo le dul isteach i nglao Tellomi: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "Déan iarratais a athbhreithniú go cúramach"
@@ -5566,7 +5566,7 @@
     "messageformat": "Leideanna sábháilteachta"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Déan athbhreithniú ar iarratais go cúramach. D'aimsigh Signal teagmhálaí eile leis an ainm céanna. <reviewRequestLink>Déan athbhreithniú ar an iarratas</reviewRequestLink>"
+    "messageformat": "Déan athbhreithniú ar iarratais go cúramach. D'aimsigh Tellomi teagmhálaí eile leis an ainm céanna. <reviewRequestLink>Déan athbhreithniú ar an iarratas</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {Tá an t-ainm céanna ar {count,number} bhall den ghrúpa. <reviewRequestLink>Déan athbhreithniú ar na baill</reviewRequestLink>} two {Tá an t-ainm céanna ar {count,number} bhall den ghrúpa. <reviewRequestLink>Déan athbhreithniú ar na baill</reviewRequestLink>} few {Tá an t-ainm céanna ar {count,number} bhall den ghrúpa. <reviewRequestLink>Déan athbhreithniú ar na baill</reviewRequestLink>} many {Tá an t-ainm céanna ar {count,number} mball den ghrúpa. <reviewRequestLink>Déan athbhreithniú ar na baill</reviewRequestLink>} other {Tá an t-ainm céanna ar {count,number} ball den ghrúpa. <reviewRequestLink>Déan athbhreithniú ar na baill</reviewRequestLink>}}"
@@ -5599,7 +5599,7 @@
     "messageformat": "Níl aon ghrúpaí eile i bpáirt ann"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Teagmhálaí Signal"
+    "messageformat": "Teagmhálaí Tellomi"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Athraíodh an t-ainm próifíle ó {oldName} go {newName} le déanaí"
@@ -5617,7 +5617,7 @@
     "messageformat": "Verify to Continue Messaging"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Chun cabhrú le turscar ar Signal a chosc, comhlánaigh an fíorú."
+    "messageformat": "Chun cabhrú le turscar ar Tellomi a chosc, comhlánaigh an fíorú."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Tar éis fíorú, is féidir leat leanúint le cur teachtaireachtaí. Seolfar aon teachtaireachtaí a cuireadh ar sos go huathoibríoch."
@@ -6001,7 +6001,7 @@
     "messageformat": "An bhfuil fonn ort fágáil gan na hathruithe seo a shábháil?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Dún Signal agus cuir deireadh leis an nglao?"
+    "messageformat": "Dún Tellomi agus cuir deireadh leis an nglao?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Ná bac leis anois"
@@ -6101,7 +6101,7 @@
     "messageformat": "Coiteann"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Tabhair airgead do Signal"
+    "messageformat": "Tabhair airgead do Tellomi"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Cuma"
@@ -6167,10 +6167,10 @@
     "messageformat": "Córas"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "Tellomi Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "Úsáidtear an Signal Login agat chun do chuntas a athshlánú agus a aischur. Coinnigh na heochracha seo stóráilte go slán i mbainisteoir pasfhocal a bhfuil iontaoibh agat as. <learnMoreLink>Tuilleadh faisnéise</learnMoreLink>."
+    "messageformat": "Úsáidtear an Tellomi Login agat chun do chuntas a athshlánú agus a aischur. Coinnigh na heochracha seo stóráilte go slán i mbainisteoir pasfhocal a bhfuil iontaoibh agat as. <learnMoreLink>Tuilleadh faisnéise</learnMoreLink>."
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "Tuilleadh faisnéise"
@@ -6191,7 +6191,7 @@
     "messageformat": "Gléas nasctha is ea é seo"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "Chun socruithe do chuntais a bhainistiú, oscail Signal ar do phríomhghléas."
+    "messageformat": "Chun socruithe do chuntais a bhainistiú, oscail Tellomi ar do phríomhghléas."
   },
   "icu:Preferences--zoom": {
     "messageformat": "Leibhéal zúmála"
@@ -6224,7 +6224,7 @@
     "messageformat": "Ardroghanna"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "UAP Signal"
+    "messageformat": "UAP Tellomi"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "Meabhrúcháin UAP"
@@ -6353,7 +6353,7 @@
     "messageformat": "Ní féidir an stair comhráite a easpórtáil"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Ní féidir do stair comhráite a easpórtáil toisc nach bhfuil cead ag Signal comhaid a scríobh chuig an diosca. Triail ceadanna do dhiosca a athrú nó socruithe do chórais a nuashonrú agus ansin déan an easpórtáil arís."
+    "messageformat": "Ní féidir do stair comhráite a easpórtáil toisc nach bhfuil cead ag Tellomi comhaid a scríobh chuig an diosca. Triail ceadanna do dhiosca a athrú nó socruithe do chórais a nuashonrú agus ansin déan an easpórtáil arís."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Cúltaca á easpórtáil"
@@ -6368,7 +6368,7 @@
     "messageformat": "Aistrigh fillteán do chúltacaí chuig stóras do ghutháin"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Suiteáil cóip nua de Signal ar do ghuthán"
+    "messageformat": "Suiteáil cóip nua de Tellomi ar do ghuthán"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "Tapáil \"Aischuir nó Aistrigh\" agus roghnaigh \"Cúltacaigh ar an nGléas\""
@@ -6635,13 +6635,13 @@
     "messageformat": "Bac curtha air/uirthi an {blockedAt}"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Cúltacaí Slána Signal"
+    "messageformat": "Cúltacaí Slána Tellomi"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Cúltacaí uathoibríocha le seirbhís shlán stórála, atá criptithe ó cheann ceann, de chuid Signal. Bain úsáid astu ar do ghuthán. <learnMoreLink>Tuilleadh faisnéise</learnMoreLink>."
+    "messageformat": "Cúltacaí uathoibríocha le seirbhís shlán stórála, atá criptithe ó cheann ceann, de chuid Tellomi. Bain úsáid astu ar do ghuthán. <learnMoreLink>Tuilleadh faisnéise</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Cúltacaigh do stair teachtaireachtaí ionas nach gcaillfidh tú sonraí nuair a fhaigheann tú guthán nua nó nuair a athshuiteálann tú Signal."
+    "messageformat": "Cúltacaigh do stair teachtaireachtaí ionas nach gcaillfidh tú sonraí nuair a fhaigheann tú guthán nua nó nuair a athshuiteálann tú Tellomi."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Sonraí an chúltaca"
@@ -6671,13 +6671,13 @@
     "messageformat": "Síntiús curtha ar ceal"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Is féidir leat do shíntiús le Cúltacaí Slána Signal a bhainistiú nó a chur ar ceal ar do ghuthán."
+    "messageformat": "Is féidir leat do shíntiús le Cúltacaí Slána Tellomi a bhainistiú nó a chur ar ceal ar do ghuthán."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Is féidir leat Cúltacaí Slána Signal a bhainistiú nó a uasghrádú ar do ghuthán."
+    "messageformat": "Is féidir leat Cúltacaí Slána Tellomi a bhainistiú nó a uasghrádú ar do ghuthán."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Is féidir leat do shíntiús le Cúltacaí Slána Signal a bhainistiú nó a athnuachan ar do ghuthán."
+    "messageformat": "Is féidir leat do shíntiús le Cúltacaí Slána Tellomi a bhainistiú nó a athnuachan ar do ghuthán."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Cúltaca deiridh"
@@ -6695,7 +6695,7 @@
     "messageformat": "Cruthaigh cúltaca criptithe ó cheann ceann is féidir leat a aischur ar do ghuthán. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Le cúltaca a aischur, suiteáil cóip nua de Signal ar do ghuthán. Oscail an aip agus tapáil &quot;Aischuir nó aistrigh.&quot; <learnMoreLink>Tuilleadh faisnéise.</learnMoreLink>"
+    "messageformat": "Le cúltaca a aischur, suiteáil cóip nua de Tellomi ar do ghuthán. Oscail an aip agus tapáil &quot;Aischuir nó aistrigh.&quot; <learnMoreLink>Tuilleadh faisnéise.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Roghnaigh fillteán"
@@ -6731,7 +6731,7 @@
     "messageformat": "D'eochair athshlánaithe"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "Tá an eochair seo ag teastáil chun do chuntas agus do shonraí a athshlánú. Stóráil in áit shlán shábháilte í agus ná comhroinn choíche le duine ar bith í. Ní sheolfaidh Signal teachtaireacht chugat choíche chun d'eochair athshlánaithe a iarraidh ort. <learnMoreLink>Tuilleadh faisnéise.</learnMoreLink>"
+    "messageformat": "Tá an eochair seo ag teastáil chun do chuntas agus do shonraí a athshlánú. Stóráil in áit shlán shábháilte í agus ná comhroinn choíche le duine ar bith í. Ní sheolfaidh Tellomi teachtaireacht chugat choíche chun d'eochair athshlánaithe a iarraidh ort. <learnMoreLink>Tuilleadh faisnéise.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "Ná comhroinn an eochair athshlánaithe"
@@ -6746,7 +6746,7 @@
     "messageformat": "Ná comhroinn an eochair"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Ná comhroinn d'eochair athshlánaithe le haon duine. Óir beidh an duine sin in ann teacht i gceannas ar do chuntas. <strong>Ní sheolfaidh Signal teachtaireacht chugat choíche</strong> chun d'eochair athshlánaithe a iarraidh ort. Ná freagair comhrá choíche a ligeann gur Signal atá ann. <learnMoreLink>Tuilleadh faisnéise.</learnMoreLink>"
+    "messageformat": "Ná comhroinn d'eochair athshlánaithe le haon duine. Óir beidh an duine sin in ann teacht i gceannas ar do chuntas. <strong>Ní sheolfaidh Tellomi teachtaireacht chugat choíche</strong> chun d'eochair athshlánaithe a iarraidh ort. Ná freagair comhrá choíche a ligeann gur Tellomi atá ann. <learnMoreLink>Tuilleadh faisnéise.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Deimhnigh d'eochair athshlánaithe"
@@ -6758,7 +6758,7 @@
     "messageformat": "Coinnigh d'eochair sábháilte"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Ní bheidh Signal in ann cabhrú leat do chúltaca a athshlánú má chailleann tú d'eochair. Stóráil in áit shlán shábháilte í, agus ná chomhroinn le daoine eile í."
+    "messageformat": "Ní bheidh Tellomi in ann cabhrú leat do chúltaca a athshlánú má chailleann tú d'eochair. Stóráil in áit shlán shábháilte í, agus ná chomhroinn le daoine eile í."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Ar aghaidh"
@@ -6809,7 +6809,7 @@
     "messageformat": "Éilítear fíordheimhniú le cúltacaí a chumasú."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "Níorbh fhéidir an gníomh sin a chur i gcrích toisc gur theip ar fhíordheimhniú an chórais. Triail arís é nó oscail an aip Signal ar do ghléas móibíleach agus téigh chuig Socruithe Cúltacaí le féachaint ar d'eochair athshlánaithe."
+    "messageformat": "Níorbh fhéidir an gníomh sin a chur i gcrích toisc gur theip ar fhíordheimhniú an chórais. Triail arís é nó oscail an aip Tellomi ar do ghléas móibíleach agus téigh chuig Socruithe Cúltacaí le féachaint ar d'eochair athshlánaithe."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "Tharla earráid agus fíordheimhniú córais á iarraidh don ghníomh seo."
@@ -6839,7 +6839,7 @@
     "messageformat": "Uimhir Ghutháin"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Roghnaigh na daoine atá in ann d'uimhir ghutháin a fheiceáil agus teagmháil a dhéanamh leat ar Signal léi."
+    "messageformat": "Roghnaigh na daoine atá in ann d'uimhir ghutháin a fheiceáil agus teagmháil a dhéanamh leat ar Tellomi léi."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Athraigh…"
@@ -6869,10 +6869,10 @@
     "messageformat": "Na daoine atá in ann mé a aimsiú le m'uimhir"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Aon duine ag a bhfuil d'uimhir ghutháin, feicfidh sé/sí go bhfuil tú ar Signal agus beidh in ann tosú ar chomhrá leat."
+    "messageformat": "Aon duine ag a bhfuil d'uimhir ghutháin, feicfidh sé/sí go bhfuil tú ar Tellomi agus beidh in ann tosú ar chomhrá leat."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Beidh tú dofheicthe ar Signal ag daoine ach amháin má sheolann tú teachtaireacht chucu nó má tá comhrá ar siúl agat leo."
+    "messageformat": "Beidh tú dofheicthe ar Tellomi ag daoine ach amháin má sheolann tú teachtaireacht chucu nó má tá comhrá ar siúl agat leo."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Gach duine"
@@ -6884,7 +6884,7 @@
     "messageformat": "An bhfuil tú cinnte?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Má athraíonn tú \"{settingTitle}\" go \"{nobodyLabel}\" beidh sé níos deacra ag daoine thú a aimsiú ar Signal."
+    "messageformat": "Má athraíonn tú \"{settingTitle}\" go \"{nobodyLabel}\" beidh sé níos deacra ag daoine thú a aimsiú ar Tellomi."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Ag seoladh teachtaireachtaí"
@@ -6947,7 +6947,7 @@
     "messageformat": "Socraigh"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Atosaigh Signal lena cur i bhfeidhm"
+    "messageformat": "Atosaigh Tellomi lena cur i bhfeidhm"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Chun an teanga a athrú, ní mór an aip a atosú."
@@ -6962,13 +6962,13 @@
     "messageformat": "Slándáil scáileáin"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Coisc seatanna scáileáin de Signal ar an ríomhaire seo ar mhaithe le príobháideacht bhreise."
+    "messageformat": "Coisc seatanna scáileáin de Tellomi ar an ríomhaire seo ar mhaithe le príobháideacht bhreise."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Díchumasaigh slándáil scáileáin?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Agus í díchumasaithe, is féidir le Microsoft Windows seatanna scáileáin de Signal a ghabháil agus iad a úsáid le haghaidh gnéithe nach mbeadh príobháideach, b'fhéidir."
+    "messageformat": "Agus í díchumasaithe, is féidir le Microsoft Windows seatanna scáileáin de Tellomi a ghabháil agus iad a úsáid le haghaidh gnéithe nach mbeadh príobháideach, b'fhéidir."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Díchumasaigh"
@@ -6989,25 +6989,25 @@
     "messageformat": "Cliceáil le dul chuig an App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Oscail Signal ar do ghuthán"
+    "messageformat": "Oscail Tellomi ar do ghuthán"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Scriosfar do chuntas go luath mura n-osclaíonn tú Signal ar do ghuthán. Imeoidh an teachtaireacht seo má éiríonn leat é a dhéanamh. <learnMoreLink>Tuilleadh faisnéise</learnMoreLink>"
+    "messageformat": "Scriosfar do chuntas go luath mura n-osclaíonn tú Tellomi ar do ghuthán. Imeoidh an teachtaireacht seo má éiríonn leat é a dhéanamh. <learnMoreLink>Tuilleadh faisnéise</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Oscail Signal ar do ghuthán chun do chuntas a choinneáil gníomhach"
+    "messageformat": "Oscail Tellomi ar do ghuthán chun do chuntas a choinneáil gníomhach"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Tuilleadh faisnéise"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Tá Signal buailte le deacrachtaí teicniúla faoi láthair. Táimid ag déanamh ár ndíchill an fhadhb a réiteach chomh luath agus is féidir."
+    "messageformat": "Tá Tellomi buailte le deacrachtaí teicniúla faoi láthair. Táimid ag déanamh ár ndíchill an fhadhb a réiteach chomh luath agus is féidir."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Nuashonrú De Dhíth"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Chun sioncronú do theachtaireachtaí a chur i gcrích, nuashonraigh Signal Desktop anois."
+    "messageformat": "Chun sioncronú do theachtaireachtaí a chur i gcrích, nuashonraigh Tellomi Desktop anois."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Nuashonraigh"
@@ -7016,19 +7016,19 @@
     "messageformat": "Nuashonrú De Dhíth"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Le leanúint le Signal a úsáid, ní mór duit uasghrádú chuig an leagan is déanaí."
+    "messageformat": "Le leanúint le Tellomi a úsáid, ní mór duit uasghrádú chuig an leagan is déanaí."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Íoslódáil {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Atosaigh Signal leis an nuashonrú a shuiteáil."
+    "messageformat": "Atosaigh Tellomi leis an nuashonrú a shuiteáil."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Theip ar nuashonrú Dheasc Signal, ach tá leagan nua ar fáil. Téigh chuig {downloadUrl} agus suiteáil an leagan nua de láimh, ansin déan teagmháil leis an bhfoireann tacaíochta nó tuairiscigh fabht faoin bhfadhb sin."
+    "messageformat": "Theip ar nuashonrú Dheasc Tellomi, ach tá leagan nua ar fáil. Téigh chuig {downloadUrl} agus suiteáil an leagan nua de láimh, ansin déan teagmháil leis an bhfoireann tacaíochta nó tuairiscigh fabht faoin bhfadhb sin."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Lógó Signal"
+    "messageformat": "Lógó Tellomi"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "Siar"
@@ -7064,7 +7064,7 @@
     "messageformat": "Fíoraigh gur duine thú le leanúint leis"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "Chun cabhrú le turscar ar Signal a chosc, cuir an fíorú i gcrích. Tar éis fíorú, is féidir leat leanúint le clárú."
+    "messageformat": "Chun cabhrú le turscar ar Tellomi a chosc, cuir an fíorú i gcrích. Tar éis fíorú, is féidir leat leanúint le clárú."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "Triail an fíorú arís"
@@ -7283,7 +7283,7 @@
     "messageformat": "Scipeáil agus Cruthaigh UAP nua"
   },
   "icu:StandaloneRegistration--VerifyPIN--NeedHelp--contact-support-button": {
-    "messageformat": "Déan Teagmháil le Foireann Tacaíochta Signal"
+    "messageformat": "Déan Teagmháil le Foireann Tacaíochta Tellomi"
   },
   "icu:StandaloneRegistration--VerifyPIN--NeedHelp--cancel": {
     "messageformat": "Cuir ar ceal"
@@ -7304,7 +7304,7 @@
     "messageformat": "UAP mhícheart"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "Níl aon deiseanna fágtha agat an UAP a thomhas, ach beidh tú fós in ann teacht ar do chuntas Signal trí UAP nua a chruthú. Mar gheall ar chúrsaí slándála agus príobháideachais, athshocrófar do chuntas gan aon fhaisnéis phearsanta ná socruithe."
+    "messageformat": "Níl aon deiseanna fágtha agat an UAP a thomhas, ach beidh tú fós in ann teacht ar do chuntas Tellomi trí UAP nua a chruthú. Mar gheall ar chúrsaí slándála agus príobháideachais, athshocrófar do chuntas gan aon fhaisnéis phearsanta ná socruithe."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "Cruthaigh UAP nua"
@@ -7334,7 +7334,7 @@
     "messageformat": "Cruthaigh do UAP"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "Is féidir le UAPanna cabhrú leat do chuntas a aischur agus d'fhaisnéis a choinneáil criptithe le Signal. <learnMore>Tuilleadh Faisnéise</learnMore>"
+    "messageformat": "Is féidir le UAPanna cabhrú leat do chuntas a aischur agus d'fhaisnéis a choinneáil criptithe le Tellomi. <learnMore>Tuilleadh Faisnéise</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "Cruthaigh do UAP"
@@ -7358,7 +7358,7 @@
     "messageformat": "Rabhadh"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "Má dhíchumasaíonn tú an UAP, caillfidh tú na sonraí go léir nuair a athchláraíonn tú Signal. Ní féidir leat Glas Cláraithe a chasadh air agus an UAP díchumasaithe."
+    "messageformat": "Má dhíchumasaíonn tú an UAP, caillfidh tú na sonraí go léir nuair a athchláraíonn tú Tellomi. Ní féidir leat Glas Cláraithe a chasadh air agus an UAP díchumasaithe."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "Díchumasaigh an UAP"
@@ -7367,10 +7367,10 @@
     "messageformat": "Cuir ar ceal"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "Eolas faoi UAPanna Signal"
+    "messageformat": "Eolas faoi UAPanna Tellomi"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "Coinníonn UAPanna d'fhaisnéis a stóráiltear le Signal criptithe ionas nach mbeidh ach tusa in ann í a rochtain. Aischuirfear do phróifíl, socruithe agus teagmhálaithe tar éis athshuiteáil duit."
+    "messageformat": "Coinníonn UAPanna d'fhaisnéis a stóráiltear le Tellomi criptithe ionas nach mbeidh ach tusa in ann í a rochtain. Aischuirfear do phróifíl, socruithe agus teagmhálaithe tar éis athshuiteáil duit."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "Tuilleadh faisnéise"
@@ -7403,7 +7403,7 @@
     "messageformat": "Nuashonrú de dhíth"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "Le leanúint leis gan chlárú, nuashonraigh chuig an leagan is déanaí de Signal."
+    "messageformat": "Le leanúint leis gan chlárú, nuashonraigh chuig an leagan is déanaí de Tellomi."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "Nuashonraigh"
@@ -7433,7 +7433,7 @@
     "messageformat": "Déan teagmháil leis an bhfoireann tacaíochta"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Ní féidir Signal a dhúnadh.",
+    "messageformat": "Ní féidir Tellomi a dhúnadh.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7453,14 +7453,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Tá leagan níos nuaí de Signal suiteáilte cheana féin. An bhfuil tú cinnte gur mian leat leanúint leis?",
+    "messageformat": "Tá leagan níos nuaí de Tellomi suiteáilte cheana féin. An bhfuil tú cinnte gur mian leat leanúint leis?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Chlis an aip"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Atosaíodh Signal tar éis dó a chliseadh. Is féidir leat tuairisc ar an gcliseadh a chur isteach le cabhrú le Signal an fhadhb a fhiosrú."
+    "messageformat": "Atosaíodh Tellomi tar éis dó a chliseadh. Is féidir leat tuairisc ar an gcliseadh a chur isteach le cabhrú le Tellomi an fhadhb a fhiosrú."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Seol"
@@ -7565,7 +7565,7 @@
     "messageformat": "Cliceáil \"{buttonName}\" thíos"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Cas air \"Signal\""
+    "messageformat": "Cas air \"Tellomi\""
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Socruithe"
@@ -7661,7 +7661,7 @@
     "messageformat": "Tuilleadh Faisnéise"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Teagmhálaithe Signal"
+    "messageformat": "Teagmhálaithe Tellomi"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "Is daoine iad {connections} a roghnaigh tú muinín a bheith agat astu, trí:"
@@ -7802,7 +7802,7 @@
     "messageformat": "Folaigh scéal ó"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Gach Teagmhálaí Signal"
+    "messageformat": "Gach Teagmhálaí Tellomi"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Gach duine ach amháin…"
@@ -7880,7 +7880,7 @@
     "messageformat": "Príobháideachas maidir le Mo Scéal"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Roghnaigh na teagmhálaithe Signal ar féidir leo amharc ar do scéal. Is féidir leat é seo a athrú am ar bith i socruithe príobháideachais. <learnMoreLink>Tuilleadh faisnéise.</learnMoreLink>"
+    "messageformat": "Roghnaigh na teagmhálaithe Tellomi ar féidir leo amharc ar do scéal. Is féidir leat é seo a athrú am ar bith i socruithe príobháideachais. <learnMoreLink>Tuilleadh faisnéise.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Scrios an scéal"
@@ -7949,7 +7949,7 @@
     "messageformat": "Íoslódáil an Ceangaltán"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Cumasaigh admhálacha léite chun na daoine a d'amharc ar do scéalta a fheiceáil. Oscail an aip Signal ar do ghléas móibíleach agus déan nascleanúint chuig Socruithe > Scéalta."
+    "messageformat": "Cumasaigh admhálacha léite chun na daoine a d'amharc ar do scéalta a fheiceáil. Oscail an aip Tellomi ar do ghléas móibíleach agus déan nascleanúint chuig Socruithe > Scéalta."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "No replies yet"
@@ -8135,7 +8135,7 @@
     "messageformat": "Athshocraíodh do chód QR agus do nasc agus is {username} d'ainm úsáideora"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Scan an cód QR seo le do ghuthán chun comhrá a dhéanamh liom ar Signal.",
+    "messageformat": "Scan an cód QR seo le do ghuthán chun comhrá a dhéanamh liom ar Tellomi.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8211,7 +8211,7 @@
     "messageformat": "Ruaig"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "Deimhnigh do UAP Signal"
+    "messageformat": "Deimhnigh do UAP Tellomi"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "Iarrfaimid ort do UAP a dheimhniú anois is arís chun cabhrú leat cuimhneamh air."
@@ -8223,7 +8223,7 @@
     "messageformat": "Ní anois"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "Cuir isteach do UAP Signal"
+    "messageformat": "Cuir isteach do UAP Tellomi"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "Chun cabhrú leat do UAP a chur de ghlanmheabhair, iarrfaimid ort í a chur isteach anois is arís, níos annaimhe de réir a chéile."
@@ -8241,13 +8241,13 @@
     "messageformat": "UAP ceart. Meabhróimid duit arís é ar ball."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Ní bheidh tacú ag Signal Desktop a thuilleadh don leagan de {OS} ar do ríomhaire. Le leanúint le Signal a úsáid, nuashonraigh córas oibriúcháin do ríomhaire faoin {expirationDate}. <learnMoreLink>Tuilleadh faisnéise</learnMoreLink>"
+    "messageformat": "Ní bheidh tacú ag Tellomi Desktop a thuilleadh don leagan de {OS} ar do ríomhaire. Le leanúint le Tellomi a úsáid, nuashonraigh córas oibriúcháin do ríomhaire faoin {expirationDate}. <learnMoreLink>Tuilleadh faisnéise</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Ní oibríonn Signal Desktop ar an ríomhaire seo a thuilleadh. Le Signal Desktop a úsáid arís, nuashonraigh an leagan de {OS} ar do ríomhaire. <learnMoreLink>Tuilleadh faisnéise</learnMoreLink>"
+    "messageformat": "Ní oibríonn Tellomi Desktop ar an ríomhaire seo a thuilleadh. Le Tellomi Desktop a úsáid arís, nuashonraigh an leagan de {OS} ar do ríomhaire. <learnMoreLink>Tuilleadh faisnéise</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Ní oibríonn Signal Desktop ar an ríomhaire seo a thuilleadh. Le Signal Desktop a úsáid arís, nuashonraigh an leagan de {OS} ar do ríomhaire."
+    "messageformat": "Ní oibríonn Tellomi Desktop ar an ríomhaire seo a thuilleadh. Le Tellomi Desktop a úsáid arís, nuashonraigh an leagan de {OS} ar do ríomhaire."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Curtha in eagar"
@@ -8418,7 +8418,7 @@
     "messageformat": "Cóipeáil an nasc"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Comhroinn nasc trí Signal"
+    "messageformat": "Comhroinn nasc trí Tellomi"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Scrios an nasc"
@@ -8481,13 +8481,13 @@
     "messageformat": "Leis an socrú sin a athrú, socraigh \"Daoine atá in ann m'uimhir a fheiceáil\" go \"Duine ar bith\"."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Roghnaíonn sealbhóir an chuntais ainm na próifíle ar Signal:"
+    "messageformat": "Roghnaíonn sealbhóir an chuntais ainm na próifíle ar Tellomi:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Ní féidir le Signal ainmneacha agus grianghraif a fhíorú"
+    "messageformat": "Ní féidir le Tellomi ainmneacha agus grianghraif a fhíorú"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Ní dhéanfaidh Signal teagmháil leat choíche chun do chód clárúcháin, UAP nó eochair athshlánaithe a iarraidh ort"
+    "messageformat": "Ní dhéanfaidh Tellomi teagmháil leat choíche chun do chód clárúcháin, UAP nó eochair athshlánaithe a iarraidh ort"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "Bí ar d'fhaichill ar chuntais a dhéanann daoine eile a phearsanú"
@@ -8517,7 +8517,7 @@
     "messageformat": "Eagraíocht neamhbhrabúis agus bródúil as"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Tabhair airgead chun tacú le cur teachtaireachtaí príobháideacha. Coinnigh Signal neamhspleách agus saor ó fhógraíocht. <readMoreLink>Tuilleadh faisnéise</readMoreLink>"
+    "messageformat": "Tabhair airgead chun tacú le cur teachtaireachtaí príobháideacha. Coinnigh Tellomi neamhspleách agus saor ó fhógraíocht. <readMoreLink>Tuilleadh faisnéise</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Tabhair airgead"
@@ -8541,7 +8541,7 @@
     "messageformat": "Tá d'fhaisnéis príobháideach"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Mar eagraíocht neamhbhrabúis neamhspleách, tá Signal tiomanta do theachtaireachtaí agus do ghlaonna príobháideacha. Gan aon fhógraí, gan aon rianairí, gan aon fhaireachas. Tabhair airgead inniu chun tacú le Signal."
+    "messageformat": "Mar eagraíocht neamhbhrabúis neamhspleách, tá Tellomi tiomanta do theachtaireachtaí agus do ghlaonna príobháideacha. Gan aon fhógraí, gan aon rianairí, gan aon fhaireachas. Tabhair airgead inniu chun tacú le Tellomi."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Faigh suaitheantas roghnach ar do phróifíl nuair a thugann tú airgead"
@@ -8550,10 +8550,10 @@
     "messageformat": "Ár misean; do phríobháideacht"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Eagraíocht neamhbhrabúis is ea é Signal."
+    "messageformat": "Eagraíocht neamhbhrabúis is ea é Tellomi."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "Deilbhín croí i stíl lógó Signal"
+    "messageformat": "Deilbhín croí i stíl lógó Tellomi"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "OK"
@@ -8568,7 +8568,7 @@
     "messageformat": "CCanna do Dheontóirí"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Ní shioncronaítear admhálacha thar raon gléasanna. Má tá Signal athshuiteáilte agat, ní bheidh admhálacha ó thabhartais roimhe seo ar fáil."
+    "messageformat": "Ní shioncronaítear admhálacha thar raon gléasanna. Má tá Tellomi athshuiteáilte agat, ní bheidh admhálacha ó thabhartais roimhe seo ar fáil."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Níl aon admhálacha ann"
@@ -8598,7 +8598,7 @@
     "messageformat": "Cárta creidmheasa nó dochair"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Cuir isteach sonraí do chárta creidmheasa nó dochair. Ní dhéanann Signal d'fhaisnéis phearsanta a bhailiú ná a stóráil. <learnMoreLink>Tuilleadh faisnéise</learnMoreLink>"
+    "messageformat": "Cuir isteach sonraí do chárta creidmheasa nó dochair. Ní dhéanann Tellomi d'fhaisnéis phearsanta a bhailiú ná a stóráil. <learnMoreLink>Tuilleadh faisnéise</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Uimhir an chárta"
@@ -8610,7 +8610,7 @@
     "messageformat": "MM/BB"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Tabhair {formattedCurrencyAmount} do Signal"
+    "messageformat": "Tabhair {formattedCurrencyAmount} do Tellomi"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Uimhir chárta neamhbhailí"
@@ -8628,7 +8628,7 @@
     "messageformat": "Cód róghearr"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Faigh Suaitheantas spreagtha Signal go ceann 30 lá"
+    "messageformat": "Faigh Suaitheantas spreagtha Tellomi go ceann 30 lá"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "Is é {formattedCurrencyAmount} íosmhéid an tabhartais"
@@ -8712,7 +8712,7 @@
     "messageformat": "D'éirigh leis an tabhartas, ach ní rabhamar in ann socruithe do shuaitheantais a nuashonrú"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "Chun socruithe do chuid suaitheantas a nuashonrú ar do ghléas móibíleach, téigh chuig Socruithe → Tabhair Airgead do Signal → Suaitheantais."
+    "messageformat": "Chun socruithe do chuid suaitheantas a nuashonrú ar do ghléas móibíleach, téigh chuig Socruithe → Tabhair Airgead do Tellomi → Suaitheantais."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Cuireadh isteach ar an tabhartas"
@@ -8769,7 +8769,7 @@
     "messageformat": "Tharla earráid le do dheonachán"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Is féidir nár próiseáladh do dheonachán. Cliceáil ar \"Tabhair airgead do Signal\" agus ansin ar \"Admhálacha Tabhartas\" le do chuid admhálacha a sheiceáil agus a dheimhniú."
+    "messageformat": "Is féidir nár próiseáladh do dheonachán. Cliceáil ar \"Tabhair airgead do Tellomi\" agus ansin ar \"Admhálacha Tabhartas\" le do chuid admhálacha a sheiceáil agus a dheimhniú."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Triail arís nó seol isteach loga dífhabhtaithe chuig an bhFoireann Tacaíochta chun cabhair a fháil le do thabhartas a chur i gcrích. Cabhraíonn logaí dífhabhtaithe linn an fhadhb a dhiagnóisiú agus a réiteach, agus ní bhíonn faisnéis aitheantais iontu."
@@ -8811,19 +8811,19 @@
     "messageformat": "Go raibh maith agat as do thacaíocht!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Tá suaitheantas deontóra tuillte agat ó Signal! Taispeáin ar do phróifíl é chun do thacaíocht a thaispeáint."
+    "messageformat": "Tá suaitheantas deontóra tuillte agat ó Tellomi! Taispeáin ar do phróifíl é chun do thacaíocht a thaispeáint."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Taispeáin ar do phróifíl"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Is féidir leat é sin a choigeartú ar do ghléas móibíleach faoi Socruithe → Tabhair Airgead do Signal → Suaitheantais"
+    "messageformat": "Is féidir leat é sin a choigeartú ar do ghléas móibíleach faoi Socruithe → Tabhair Airgead do Tellomi → Suaitheantais"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "Cén chaoi a raibh do ghlao?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "Cabhraíonn sé seo linn glaonna in Signal a fheabhsú. Ní stórálfar aon fhaisnéis phearsanta inaitheanta."
+    "messageformat": "Cabhraíonn sé seo linn glaonna in Tellomi a fheabhsú. Ní stórálfar aon fhaisnéis phearsanta inaitheanta."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Bhí fadhbanna ann"
@@ -8874,7 +8874,7 @@
     "messageformat": "Cur síos ar an bhfadhb"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Cuir aon sonraí a bhaineann leis an bhfadhb san áireamh. Coinneofar aon rud a chomhroinneann tú anseo príobháideach agus ní úsáidfear é ach chun cabhrú le glaonna in Signal a fheabhsú."
+    "messageformat": "Cuir aon sonraí a bhaineann leis an bhfadhb san áireamh. Coinneofar aon rud a chomhroinneann tú anseo príobháideach agus ní úsáidfear é ach chun cabhrú le glaonna in Tellomi a fheabhsú."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "Déan cur síos ar an bhfadhb"
@@ -8940,7 +8940,7 @@
     "messageformat": "Beidh ort athnascadh trí chód QR a scanadh."
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "Má tá Cúltacaí Slána Signal íoctha agat, aistreofar do mheáin go léir. Seachas sin, cuirfear do 45 lá anuas de mheáin san áireamh."
+    "messageformat": "Má tá Cúltacaí Slána Tellomi íoctha agat, aistreofar do mheáin go léir. Seachas sin, cuirfear do 45 lá anuas de mheáin san áireamh."
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "Aistrigh"
@@ -8952,14 +8952,14 @@
     "messageformat": "Scrios na sonraí go léir?"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "Scriosfar na sonraí go léir atá in Signal Desktop faoi láthair. Ansin beidh tú in ann cód QR a scanadh agus do stair teachtaireachtaí a aistriú ó do ghuthán."
+    "messageformat": "Scriosfar na sonraí go léir atá in Tellomi Desktop faoi láthair. Ansin beidh tú in ann cód QR a scanadh agus do stair teachtaireachtaí a aistriú ó do ghuthán."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Tá roinnt mionathruithe agus paistí ar fhabhtanna sa leagan seo chun Signal a choinneáil ag rith go réidh.",
+    "messageformat": "Tá roinnt mionathruithe agus paistí ar fhabhtanna sa leagan seo chun Tellomi a choinneáil ag rith go réidh.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Mionathruithe, paistí ar fhabhtanna agus feabhsuithe ar fheidhmíocht. Go raibh maith agat as Signal a úsáid!",
+    "messageformat": "Mionathruithe, paistí ar fhabhtanna agus feabhsuithe ar fheidhmíocht. Go raibh maith agat as Tellomi a úsáid!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -8979,7 +8979,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Mionathruithe, paistí fabhtanna agus feabhsuithe ar fheidhmíocht. Go raibh maith agat as Signal a úsáid!",
+    "messageformat": "Mionathruithe, paistí fabhtanna agus feabhsuithe ar fheidhmíocht. Go raibh maith agat as Tellomi a úsáid!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.24--1": {

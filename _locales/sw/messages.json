@@ -63,10 +63,10 @@
     "messageformat": "Kutuma picha na video za ubora wa juu kutatumia data zaidi."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Changia Signal"
+    "messageformat": "Changia Tellomi"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "Kipengele cha <bold> Vifaa Vilivyounganishwa</bold> kinakuwezesha kufikia akaunti na jumbe zako za Signal kwa usalama kwenye vifaa vyako vingine vya ziada."
+    "messageformat": "Kipengele cha <bold> Vifaa Vilivyounganishwa</bold> kinakuwezesha kufikia akaunti na jumbe zako za Tellomi kwa usalama kwenye vifaa vyako vingine vya ziada."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "Unaweza unganisha kompyuta, tablet au simu ya ziada."
@@ -114,10 +114,10 @@
     "messageformat": "Kikundi kisichojulikana"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Imeshindwa kufungua Signal"
+    "messageformat": "Imeshindwa kufungua Tellomi"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Ili kusaidia kurekebisha tatizo, fuata mwongozo wa usaidizi kwenye ukurasa wa usaidizi au wasiliana na usaidizi wa Signal ili usaidiwe kurekebisha tatizo.\n\nIkiwa unahitaji kutumia Signal papo hapo, unaweza futa data yako na kuunganisha tena kompyuta hii ya mezani. Utakuwa na chaguo la kuhamisha historia ya ujumbe kutoka kwenye simu yako."
+    "messageformat": "Ili kusaidia kurekebisha tatizo, fuata mwongozo wa usaidizi kwenye ukurasa wa usaidizi au wasiliana na usaidizi wa Tellomi ili usaidiwe kurekebisha tatizo.\n\nIkiwa unahitaji kutumia Tellomi papo hapo, unaweza futa data yako na kuunganisha tena kompyuta hii ya mezani. Utakuwa na chaguo la kuhamisha historia ya ujumbe kutoka kwenye simu yako."
   },
   "icu:databaseError": {
     "messageformat": "Hitilafu ya hifadhi data"
@@ -129,16 +129,16 @@
     "messageformat": "Futa Kabisa Data Yote"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Historia ya ujumbe yote na picha na video zako zitafutwa kabisa kwenye kifaa hiki. Hii haitafuta data yoyote kwenye simu yako.\n\nUtaweza kutumia Signal kwenye kifaa hiki baada ya kukiunganisha upya. Utakuwa na chaguo la kuhamisha historia ya ujumbe kutoka kwenye simu yako."
+    "messageformat": "Historia ya ujumbe yote na picha na video zako zitafutwa kabisa kwenye kifaa hiki. Hii haitafuta data yoyote kwenye simu yako.\n\nUtaweza kutumia Tellomi kwenye kifaa hiki baada ya kukiunganisha upya. Utakuwa na chaguo la kuhamisha historia ya ujumbe kutoka kwenye simu yako."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Toleo hili la kanzidata halilingani na toleo la Signal. Hakikisha unafungua toleo jipya zaidi la Signal kwenye kompyuta yako."
+    "messageformat": "Toleo hili la kanzidata halilingani na toleo la Tellomi. Hakikisha unafungua toleo jipya zaidi la Tellomi kwenye kompyuta yako."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Haiwezi kufikia ufunguo wa usimbaji wa kanzidata kwa sababu mazingira ya nyuma ya usimbaji wa mfumo wa uendeshaji yamebadilika kutoka {previousBackend} kwenda {currentBackend}. Hii inaweza kutokea endapo mazingira ya kompyuta ya mezani yamebadilika, kwa mfano kati ya GNOME na KDE.\n\nTafadhali badili hadi mazingira ya zamani ya kompyuta ya mezani."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Haiwezi kufikia ufunguo wa usimbaji wa kanzidata kwa sababu mazingira ya nyuma ya usimbaji wa mfumo wa uendeshaji yamebadilika kutoka {previousBackend} kwenda {currentBackend}. Hii inaweza kutokea endapo mazingira ya kompyuta ya mezani yamebadilika, kwa mfano kati ya GNOME na KDE.\n\nTafadhali badili kwenda mazingira ya zamani ya kompyuta ya mezani au jaribu kuendesha Signal kwa alama ya mstari wa amri --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Haiwezi kufikia ufunguo wa usimbaji wa kanzidata kwa sababu mazingira ya nyuma ya usimbaji wa mfumo wa uendeshaji yamebadilika kutoka {previousBackend} kwenda {currentBackend}. Hii inaweza kutokea endapo mazingira ya kompyuta ya mezani yamebadilika, kwa mfano kati ya GNOME na KDE.\n\nTafadhali badili kwenda mazingira ya zamani ya kompyuta ya mezani au jaribu kuendesha Tellomi kwa alama ya mstari wa amri --password-store=\"{previousBackendFlag}\""
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -183,7 +183,7 @@
     "messageformat": "Onyesha Yote"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Toka Signal"
+    "messageformat": "Toka Tellomi"
   },
   "icu:editMenuUndo": {
     "messageformat": "Ondoa"
@@ -507,10 +507,10 @@
     "messageformat": "Umeweka alama kwenye Nambari Yako ya Usalama na  {name}kuwa haijahakikishwa kutoka kwa kifaa kingine"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Nambari ya usalama unayojaribu kuthibitisha imebadilika. Tafadhali kagua nambari yako mpya ya usalama unayotumia na {name1}. Kumbuka, mabadiliko haya yanaweza kumaanisha kuwa mtu anayejaribu kuzuia mawasiliano yako au kuwa {name2} amesakinisha Signal upya."
+    "messageformat": "Nambari ya usalama unayojaribu kuthibitisha imebadilika. Tafadhali kagua nambari yako mpya ya usalama unayotumia na {name1}. Kumbuka, mabadiliko haya yanaweza kumaanisha kuwa mtu anayejaribu kuzuia mawasiliano yako au kuwa {name2} amesakinisha Tellomi upya."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Watu wafuatao wanaweza kuwa wamesakinisha upya Signal au kubadilisha vifaa. Bonyeza mpokeaji ili kuthibitisha nambari yao mpya ya usalama. Hii ni kwa hiari."
+    "messageformat": "Watu wafuatao wanaweza kuwa wamesakinisha upya Tellomi au kubadilisha vifaa. Bonyeza mpokeaji ili kuthibitisha nambari yao mpya ya usalama. Hii ni kwa hiari."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Tuma jumbe zilizosalia."
@@ -519,7 +519,7 @@
     "messageformat": "Ukaguzi"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Una muwasiliani (mmoja) ambaye huenda akawa amesakinisha upya Signal au kubadilisha vifaa. Una hiari ya kukagua nambari zao za usalama kabla ya kutuma.} other {Una wawasiliani {count,number} ambao huenda wakawa wamesakinisha upya Signal au kubadilisha vifaa. Una hiari ya kukagua nambari zao za usalama kabla ya kutuma.}}"
+    "messageformat": "{count, plural, one {Una muwasiliani (mmoja) ambaye huenda akawa amesakinisha upya Tellomi au kubadilisha vifaa. Una hiari ya kukagua nambari zao za usalama kabla ya kutuma.} other {Una wawasiliani {count,number} ambao huenda wakawa wamesakinisha upya Tellomi au kubadilisha vifaa. Una hiari ya kukagua nambari zao za usalama kabla ya kutuma.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Wawasiliani wote wamehakikishwa, bonyeza tuma kuendelea."
@@ -627,16 +627,16 @@
     "messageformat": "Usimbaji fiche umethibitishwa kiotomatiki kwa gumzo hili "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "Kwa wawasiliani uliounganishwa nao moja kwa moja kupitia namba ya simu, Signal inaweza kuthibitisha kiotomatiki iwapo muunganisho huo ni salama kwa kutumia mchakato unaoitwa uwazi wa funguo. Ili uimarishe usalama, thibitisha mwenyewe usimbaji fiche wa mwanzo hadi mwisho kwa kulinganisha namba kwenye skrini iliyotangulia au kuchanganua msimbo kwenye kifaa chako."
+    "messageformat": "Kwa wawasiliani uliounganishwa nao moja kwa moja kupitia namba ya simu, Tellomi inaweza kuthibitisha kiotomatiki iwapo muunganisho huo ni salama kwa kutumia mchakato unaoitwa uwazi wa funguo. Ili uimarishe usalama, thibitisha mwenyewe usimbaji fiche wa mwanzo hadi mwisho kwa kulinganisha namba kwenye skrini iliyotangulia au kuchanganua msimbo kwenye kifaa chako."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "Uthibitishaji wa kiotomatiki haupatikani kwa gumzo hili"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "Signal haiwezi kuthibitisha kiotomatiki usimbaji fiche wa gumzo hili. Huenda hali hii ni kwa sababu {name} alibadilisha namba yake ya simu kwenye mipangilio ya faragha ya namba yake ya simu. Thibitisha usimbaji fiche wa mwanzo hadi mwisho kwa kulinganisha mwenyewe namba kwenye skrini iliyotangulia au kuchanganua msimbo kwenye kifaa hiki."
+    "messageformat": "Tellomi haiwezi kuthibitisha kiotomatiki usimbaji fiche wa gumzo hili. Huenda hali hii ni kwa sababu {name} alibadilisha namba yake ya simu kwenye mipangilio ya faragha ya namba yake ya simu. Thibitisha usimbaji fiche wa mwanzo hadi mwisho kwa kulinganisha mwenyewe namba kwenye skrini iliyotangulia au kuchanganua msimbo kwenye kifaa hiki."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "Signal inaweza tu kuthibitisha kiotomatiki usimbaji fiche kwenye magumzo unapounganishwa na mtu kupitia namba ya simu. Ikiwa gumzo lilianzishwa na jina la mtumiaji au kikundi cha pamoja, thibitisha usimbaji fiche wa mwanzo hadi mwisho kwa kulinganisha namba kwenye skrini iliyotangulia au kuchanganua msimbo kwenye kifaa chake."
+    "messageformat": "Tellomi inaweza tu kuthibitisha kiotomatiki usimbaji fiche kwenye magumzo unapounganishwa na mtu kupitia namba ya simu. Ikiwa gumzo lilianzishwa na jina la mtumiaji au kikundi cha pamoja, thibitisha usimbaji fiche wa mwanzo hadi mwisho kwa kulinganisha namba kwenye skrini iliyotangulia au kuchanganua msimbo kwenye kifaa chake."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "Sawa"
@@ -675,10 +675,10 @@
     "messageformat": "Hapana nashukuru"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "Sasa Signal inaweza kuthibitisha kiotomatiki usimbaji fiche"
+    "messageformat": "Sasa Tellomi inaweza kuthibitisha kiotomatiki usimbaji fiche"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "Kwa wawasiliani uliounganishwa nao moja kwa moja kupitia namba ya simu, Signal inaweza kuthibitisha kiotomatiki iwapo muunganisho huo ni salama kwa kutumia mchakato unaoitwa uwazi wa funguo. Kwa usalama wa ziada, bado unaweza kuthibitisha mwenyewe miunganisho ukitumia kodi ya QR au namba za usalama."
+    "messageformat": "Kwa wawasiliani uliounganishwa nao moja kwa moja kupitia namba ya simu, Tellomi inaweza kuthibitisha kiotomatiki iwapo muunganisho huo ni salama kwa kutumia mchakato unaoitwa uwazi wa funguo. Kwa usalama wa ziada, bado unaweza kuthibitisha mwenyewe miunganisho ukitumia kodi ya QR au namba za usalama."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "Endelea"
@@ -837,7 +837,7 @@
     "messageformat": "Fundi wa pakiti ya vibandiko"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Kuhusu Signal Desktop"
+    "messageformat": "Kuhusu Tellomi Desktop"
   },
   "icu:screenShareWindow": {
     "messageformat": "Kushiriki skrini"
@@ -855,7 +855,7 @@
     "messageformat": "Toka"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "Tellomi Desktop"
   },
   "icu:search": {
     "messageformat": "Tafuta"
@@ -909,13 +909,13 @@
     "messageformat": "Tafuta kwa nambari ya simu"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Karibu Signal"
+    "messageformat": "Karibu Tellomi"
   },
   "icu:whatsNew": {
     "messageformat": "Pata {whatsNew} katika sasisho hili"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Signal ni shirika lilisilo la faida"
+    "messageformat": "Tellomi ni shirika lilisilo la faida"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "vitu vipya"
@@ -999,13 +999,13 @@
     "messageformat": "Wewe"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Ili kutuma jumbe za sauti, iruhusu Signal Desktop iweze kufikia kipaza sauti chako."
+    "messageformat": "Ili kutuma jumbe za sauti, iruhusu Tellomi Desktop iweze kufikia kipaza sauti chako."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Ili uweze kupiga simu, sharti uiruhusu Signal Desktop ifikie maikrofoni yako."
+    "messageformat": "Ili uweze kupiga simu, sharti uiruhusu Tellomi Desktop ifikie maikrofoni yako."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Ili uweze kupiga simu za video, sharti uiruhusu Signal Desktop ifikie kamera yako."
+    "messageformat": "Ili uweze kupiga simu za video, sharti uiruhusu Tellomi Desktop ifikie kamera yako."
   },
   "icu:allowAccess": {
     "messageformat": "Ruhusu Ufikiaji"
@@ -1029,13 +1029,13 @@
     "messageformat": "Nyamazisha"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal imeshindwa kusasisha. <retryUpdateButton>Jaribu tena kusasisha</retryUpdateButton> au tembelea {url} ili kusanikisha mwenyewe. Halafu, <contactSupportLink>wasiliana na usaidizi</contactSupportLink> kuhusu tatizo hili"
+    "messageformat": "Tellomi imeshindwa kusasisha. <retryUpdateButton>Jaribu tena kusasisha</retryUpdateButton> au tembelea {url} ili kusanikisha mwenyewe. Halafu, <contactSupportLink>wasiliana na usaidizi</contactSupportLink> kuhusu tatizo hili"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal imeshindwa kusasisha. Tembelea {url} ili kusakinisha mwenyewe. Halafu, <contactSupportLink>wasiliana na usaidizi</contactSupportLink> kuhusu tatizo hili"
+    "messageformat": "Tellomi imeshindwa kusasisha. Tembelea {url} ili kusakinisha mwenyewe. Halafu, <contactSupportLink>wasiliana na usaidizi</contactSupportLink> kuhusu tatizo hili"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Huenda Signal Desktop ipo katika karantini ya macOS, na haitaweza kusasisha kiotomatiki. Tafadhali jaribu kuhamishia {app} kwenye {folder} kwa kutumia Kitafutaji."
+    "messageformat": "Huenda Tellomi Desktop ipo katika karantini ya macOS, na haitaweza kusasisha kiotomatiki. Tafadhali jaribu kuhamishia {app} kwenye {folder} kwa kutumia Kitafutaji."
   },
   "icu:ok": {
     "messageformat": "Sawa"
@@ -1080,7 +1080,7 @@
     "messageformat": "Ujumbe huu utafutwa kwenye kifaa hiki."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Ujumbe huu utafutwa kwa watu wote kwenye gumzo ikiwa wanatumia toleo jipya la Signal. Wataweza kuona kuwa umefuta ujumbe."
+    "messageformat": "Ujumbe huu utafutwa kwa watu wote kwenye gumzo ikiwa wanatumia toleo jipya la Tellomi. Wataweza kuona kuwa umefuta ujumbe."
   },
   "icu:from": {
     "messageformat": "Kutoka kwa"
@@ -1122,7 +1122,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "\"{title}\" ni jina la wasifu mtu huyu amejiwekea katika Signal."
+    "messageformat": "\"{title}\" ni jina la wasifu mtu huyu amejiwekea katika Tellomi."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Imehakikishwa"
@@ -1137,7 +1137,7 @@
     "messageformat": "Huna jumbe za moja kwa moja na {name}"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal Connection"
+    "messageformat": "Tellomi Connection"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} yupo kwenye wawasiliani wako wa kwenye simu"
@@ -1449,7 +1449,7 @@
     "messageformat": "Jifunze Zaidi"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal hutumia usimbaji wa mwisho hadi mwisho na inaweza kuhitaji kuonyesha upya gumzo zako wakati mwingine. Kitendo hiki hakiathiri usalama wa gumzo ako lakini huenda umekosa ujumbe kutoka kwa muwasiliani huyu na unaweza kumwomba autume tena."
+    "messageformat": "Tellomi hutumia usimbaji wa mwisho hadi mwisho na inaweza kuhitaji kuonyesha upya gumzo zako wakati mwingine. Kitendo hiki hakiathiri usalama wa gumzo ako lakini huenda umekosa ujumbe kutoka kwa muwasiliani huyu na unaweza kumwomba autume tena."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Wasiliana na Msaada"
@@ -1476,7 +1476,7 @@
     "messageformat": "{sender} amebadili nambari yake ya simu"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Mwasiliani amejiunga na Signal"
+    "messageformat": "Mwasiliani amejiunga na Tellomi"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} na {conversationTitle} ni akaunti moja. Historia ya gumzo zote mbili zipo hapa."
@@ -1566,7 +1566,7 @@
     "messageformat": "Imeshindwa kupakua picha na video"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Angalia muunganisho wa intaneti wa kompyuta yako ya mezani na simu. Fungua Signal kwenye simu yako, kisha jaribu kupakua tena."
+    "messageformat": "Angalia muunganisho wa intaneti wa kompyuta yako ya mezani na simu. Fungua Tellomi kwenye simu yako, kisha jaribu kupakua tena."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Picha na video hii haipatikani tena kwenye simu yako na haiwezi kupakuliwa."
@@ -1587,10 +1587,10 @@
     "messageformat": "Jifunze zaidi"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Skani kodi hii kwenye programu ya Signal katika simu yako"
+    "messageformat": "Skani kodi hii kwenye programu ya Tellomi katika simu yako"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Fungua Signal kwenye simu yako"
+    "messageformat": "Fungua Tellomi kwenye simu yako"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Bonyeza kwenye {settings}, kisha bonyeza {linkedDevices}"
@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>Hitilafu isiyotarajiwa imetokea.</paragraph><paragraph>Tafadhali jaribu tena.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal haiwezi kuunganisha kifaa hiki kwa kutumia mtandao unaoutumia sasa."
+    "messageformat": "Tellomi haiwezi kuunganisha kifaa hiki kwa kutumia mtandao unaoutumia sasa."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Jaribu Upya"
@@ -1626,7 +1626,7 @@
     "messageformat": "Futa data yote?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "Unajaribu kuunganisha akaunti tofauti ya Signal kwenye kompyuta hii. Ukiendelea, data yote iliyo kwenye Signal Desktop itafutwa."
+    "messageformat": "Unajaribu kuunganisha akaunti tofauti ya Tellomi kwenye kompyuta hii. Ukiendelea, data yote iliyo kwenye Tellomi Desktop itafutwa."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "Endelea"
@@ -1833,7 +1833,7 @@
     "messageformat": "Uthibitishaji wa Kiotomatiki wa Ufunguo"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "Ikiwezeshwa, Signal itajaribu kuthibitisha kiotomatiki usimbaji fiche wa magumzo ya 1:1."
+    "messageformat": "Ikiwezeshwa, Tellomi itajaribu kuthibitisha kiotomatiki usimbaji fiche wa magumzo ya 1:1."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "Jifunze Zaidi"
@@ -1851,7 +1851,7 @@
     "messageformat": "Samahani, una vifaa vingi sana vilivyounganishwa tayari. Jaribu kuondoa vingine."
   },
   "icu:installTooOld": {
-    "messageformat": "Sasisha Signal kwenye kifaa hiki ili uunganishe simu yako."
+    "messageformat": "Sasisha Tellomi kwenye kifaa hiki ili uunganishe simu yako."
   },
   "icu:installErrorHeader": {
     "messageformat": "Kuna kitu kimeenda kombo!"
@@ -1902,7 +1902,7 @@
     "messageformat": "Kiungo cha simu hii hakitumiki tena."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Simu ya Signal"
+    "messageformat": "Simu ya Tellomi"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Imeshindwa kufuta kiungo. Angalia muunganisho wako wa mtandao kisha ujaribu tena."
@@ -2076,16 +2076,16 @@
     "messageformat": "{count, plural, one {Mtu {count,number} yuko kwenye simu hii} other {Watu {count,number} wako kwenye simu hii}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "{person}atapigiwa simu na Signal"
+    "messageformat": "{person}atapigiwa simu na Tellomi"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal itapigia {first} na {second}"
+    "messageformat": "Tellomi itapigia {first} na {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal itapigia {first}, {second}, na {third}"
+    "messageformat": "Tellomi itapigia {first}, {second}, na {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Signal itawapigia {first},{second}, na {others,number} wengine} other {Signal itawapigia {first},{second}, na {others,number} wengine}}"
+    "messageformat": "{others, plural, one {Tellomi itawapigia {first},{second}, na {others,number} wengine} other {Tellomi itawapigia {first},{second}, na {others,number} wengine}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person}ataarifiwa"
@@ -2139,13 +2139,13 @@
     "messageformat": "Inaunganisha tena..."
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Muunganisho wako umepotea. Signal inatafuta upya muunganisho."
+    "messageformat": "Muunganisho wako umepotea. Tellomi inatafuta upya muunganisho."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal inashiriki {window}."
+    "messageformat": "Tellomi inashiriki {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Kipengele cha kushiriki skrini cha Signal kimewashwa"
+    "messageformat": "Kipengele cha kushiriki skrini cha Tellomi kimewashwa"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Inaunganisha tena..."
@@ -2166,7 +2166,7 @@
     "messageformat": "Ruhusa inahitajika"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal inahitaji ruhusa ya kufikia rekodi ya skrini ya kompyuta yako."
+    "messageformat": "Tellomi inahitaji ruhusa ya kufikia rekodi ya skrini ya kompyuta yako."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Nenda kwenye Mapendeleo ya Mfumo."
@@ -2175,7 +2175,7 @@
     "messageformat": "Bonyeza aikoni ya kufuli kwenye sehemu ya chini kushoto na uweke nenosiri la kompyuta yako."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Kwenye sehemi ya kulia, chagua sanduku lililo karibu na Signal. Usipoona Signal kwenye orodha, bonyeza + uiongeze."
+    "messageformat": "Kwenye sehemi ya kulia, chagua sanduku lililo karibu na Tellomi. Usipoona Tellomi kwenye orodha, bonyeza + uiongeze."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Fungua Mapendeleo ya Mfumo"
@@ -2187,7 +2187,7 @@
     "messageformat": "Wasilisha simu kila mara"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Wasilisha simu zote kupitia Signal seva kuzuia kutambulisha anwani yako ya IP kwa mwasiliani wako. Kuwezesha kutapunguza ubora wa simu"
+    "messageformat": "Wasilisha simu zote kupitia Tellomi seva kuzuia kutambulisha anwani yako ya IP kwa mwasiliani wako. Kuwezesha kutapunguza ubora wa simu"
   },
   "icu:permissions": {
     "messageformat": "Ruhusa"
@@ -2205,10 +2205,10 @@
     "messageformat": "Onyesha kidirisha cha umbizo la jumbe pale ujumbe unapochaguliwa"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Ukaguzi wa uendelezaji utawezeshwa wakati Signal itawashwa tena."
+    "messageformat": "Ukaguzi wa uendelezaji utawezeshwa wakati Tellomi itawashwa tena."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Ukaguzi wa uendelezaji utazimwa wakati Signal itawashwa tena."
+    "messageformat": "Ukaguzi wa uendelezaji utazimwa wakati Tellomi itawashwa tena."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Punguza uonyeshe kwenye sehemu ya arifa ya mfumo"
@@ -2232,7 +2232,7 @@
     "messageformat": "Futa data yote?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Futa data na jumbe zote kutoka kwenye toleo hili la Signal Desktop? Akaunti yako ya Signal na data kwenye simu yako au vifaa vingine vilivyounganishwa havitofutwa."
+    "messageformat": "Futa data na jumbe zote kutoka kwenye toleo hili la Tellomi Desktop? Akaunti yako ya Tellomi na data kwenye simu yako au vifaa vingine vilivyounganishwa havitofutwa."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Inatenganisha na kufuta data yote…"
@@ -2241,7 +2241,7 @@
     "messageformat": "Futa akaunti"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "Mchakato huu utafuta maelezo ya akaunti yako, wasifu na jumbe zako zote. Pia utaondolewa kwenye vikundi vyote vya Signal."
+    "messageformat": "Mchakato huu utafuta maelezo ya akaunti yako, wasifu na jumbe zako zote. Pia utaondolewa kwenye vikundi vyote vya Tellomi."
   },
   "icu:deleteAccountButton": {
     "messageformat": "Futa akaunti"
@@ -2250,10 +2250,10 @@
     "messageformat": "Ungependa Kufuta Akaunti?"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "Mchakato huu utafuta maelezo ya akaunti yako, wasifu na jumbe zako zote. Pia utaondolewa kwenye vikundi vyote vya Signal. Programu hii itafunga baada ya mchakato huu kukamilika."
+    "messageformat": "Mchakato huu utafuta maelezo ya akaunti yako, wasifu na jumbe zako zote. Pia utaondolewa kwenye vikundi vyote vya Tellomi. Programu hii itafunga baada ya mchakato huu kukamilika."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Una data nzee kutokana na usanikishaji wa awali wa Signal Desktop. Ukichagua kuendelea, itafutwa na utaanza kutoka mwanzoni."
+    "messageformat": "Una data nzee kutokana na usanikishaji wa awali wa Tellomi Desktop. Ukichagua kuendelea, itafutwa na utaanza kutoka mwanzoni."
   },
   "icu:deleteOldData": {
     "messageformat": "Futa Data Nzee"
@@ -2310,7 +2310,7 @@
     "messageformat": "Haijafutwa yote, bofya kwa maelezo"
   },
   "icu:expiredWarning": {
-    "messageformat": "Toleo hili la Signal Desktop limeisha. Tafadhali boresha hadi kwenye toleo la hivi punde zaidi  ili uendelee kutuma ujumbe."
+    "messageformat": "Toleo hili la Tellomi Desktop limeisha. Tafadhali boresha hadi kwenye toleo la hivi punde zaidi  ili uendelee kutuma ujumbe."
   },
   "icu:upgrade": {
     "messageformat": "Bonyeza ili kwenda kwa signal.org/download"
@@ -2322,7 +2322,7 @@
     "messageformat": "Hamisha wawasiliani"
   },
   "icu:syncExplanation": {
-    "messageformat": "Hamisha vikundi na wawasiliani wote wa Signal kutoka kwa kifaa chako cha rununu."
+    "messageformat": "Hamisha vikundi na wawasiliani wote wa Tellomi kutoka kwa kifaa chako cha rununu."
   },
   "icu:syncNow": {
     "messageformat": "Hamisha sasa"
@@ -2355,7 +2355,7 @@
     "messageformat": "Jana {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signal huenda ikawa inashindwa kuchakata ujumbe unaoingia."
+    "messageformat": "Tellomi huenda ikawa inashindwa kuchakata ujumbe unaoingia."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Mwili wa ujumbe ni mrefu sana."
@@ -2520,13 +2520,13 @@
     "messageformat": "Mabadiliko yanaweza kufanywa ndani ya saa 3 kutoka muda uliotuma ujumbe huu."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} si mtumiaji wa Signal. Hakikisha umeingiza jina la mtumiaji lote."
+    "messageformat": "{atUsername} si mtumiaji wa Tellomi. Hakikisha umeingiza jina la mtumiaji lote."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} si jina la mtumiaji sahihi. Hakikisha umeandika jina kamili la mtumiaji likifuatiwa na seti ya tarakimu."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Mtumiaji hajapatikana. \"{phoneNumber}\" sio mtumiaji wa Signal."
+    "messageformat": "Mtumiaji hajapatikana. \"{phoneNumber}\" sio mtumiaji wa Tellomi."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "Mtumiaji hajapatikana. \"{phoneNumber}\" ni nambari batili."
@@ -2547,13 +2547,13 @@
     "messageformat": "Umefikia ukubwa wa juu zaidi wa kikundi"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Vikundi vya Signal vinaweza kuwa na kiwango cha juu zaidi cha wanachama {max,number}."
+    "messageformat": "Vikundi vya Tellomi vinaweza kuwa na kiwango cha juu zaidi cha wanachama {max,number}."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Kikomo cha mwanachama kilichopendekezwa kimefikiwa"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Vikundi vya Signal hufanya vizuri zaidi vikiwa na wanachama wasiozidi{max,number}. Kuongeza wanachama zaidi kutasababisha kucheleweshwa kwa kutuma na kupokea ujumbe."
+    "messageformat": "Vikundi vya Tellomi hufanya vizuri zaidi vikiwa na wanachama wasiozidi{max,number}. Kuongeza wanachama zaidi kutasababisha kucheleweshwa kwa kutuma na kupokea ujumbe."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Kipe kikundi hiki jina"
@@ -2583,34 +2583,34 @@
     "messageformat": "Hukuweza kusasisha kikundi. Kagua muunganisho wako kisha ujaribu tena."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Bonyeza kuelekeza Signal Desktop kwenye kifaa chao chako cha mkononi ili kuendelea kutuma ujumbe."
+    "messageformat": "Bonyeza kuelekeza Tellomi Desktop kwenye kifaa chao chako cha mkononi ili kuendelea kutuma ujumbe."
   },
   "icu:unlinked": {
     "messageformat": "Havijaunganishwa"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Bofya ili kusajili upya au kuendelea kutuma ujumbe. Signal Desktop haijasajiliwa labda kwa sababu umesajili namba ya simu yako kwa kutumia Signal kwenye kifaa tofauti."
+    "messageformat": "Bofya ili kusajili upya au kuendelea kutuma ujumbe. Tellomi Desktop haijasajiliwa labda kwa sababu umesajili namba ya simu yako kwa kutumia Tellomi kwenye kifaa tofauti."
   },
   "icu:unregistered": {
     "messageformat": "Haijasajiliwa tena"
   },
   "icu:autoUpdateNewVersionTitle": {
-    "messageformat": "Sasisho jipya la Signal linapatikana"
+    "messageformat": "Sasisho jipya la Tellomi linapatikana"
   },
   "icu:autoUpdateRetry": {
     "messageformat": "Jaribu tena sasisho"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Bonyeza kuanza upya Signal"
+    "messageformat": "Bonyeza kuanza upya Tellomi"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Bonyeza kupakua sasisho"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signal haingeweza kusasishwa. Bonyeza kujaribu tena."
+    "messageformat": "Tellomi haingeweza kusasishwa. Bonyeza kujaribu tena."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Washa upya Signal"
+    "messageformat": "Washa upya Tellomi"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Puuza sasisho"
@@ -2742,7 +2742,7 @@
     "messageformat": "Baadhi ya viambatishi ni vikubwa mno haviwezi kuonekana."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Tumia kiungo kujiunga kwenye Simu ya Signal"
+    "messageformat": "Tumia kiungo kujiunga kwenye Simu ya Tellomi"
   },
   "icu:donation--missing": {
     "messageformat": "Imeshindwa kuchukua taarifa za michango"
@@ -2754,7 +2754,7 @@
     "messageformat": "Gusa ujumbe kwenye kifaa chako cha mkononi ili kuangalia mchango wako"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} ameichangia Signal kwa niaba yako"
+    "messageformat": "{sender} ameichangia Tellomi kwa niaba yako"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Angalia simu yako kufungua mchango huu"
@@ -2811,7 +2811,7 @@
     "messageformat": "Asante kwa kutuunga mkono!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Umetoa mchango kwa Signal kwa niaba ya {name}. Watapatiwa uchaguzi wa kuonyesha kuunga mkono kwao kwenye wasifu wao."
+    "messageformat": "Umetoa mchango kwa Tellomi kwa niaba ya {name}. Watapatiwa uchaguzi wa kuonyesha kuunga mkono kwao kwenye wasifu wao."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Pakiti ya vibandiko haikuweza kusimikwa"
@@ -2823,10 +2823,10 @@
     "messageformat": "Weka Vibandiko"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Mfululizo wa Sanaa za Signal"
+    "messageformat": "Mfululizo wa Sanaa za Tellomi"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Hakuna vibandiko vya Msanii wa Signal vinavyopatikana"
+    "messageformat": "Hakuna vibandiko vya Msanii wa Tellomi vinavyopatikana"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "Imetumwa Kwako"
@@ -2862,7 +2862,7 @@
     "messageformat": "Buruta kisha upange tena pakiti ya vibandiko"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "Pakiti za vibandiko za Mfululizo wa Wasanii wa Signal"
+    "messageformat": "Pakiti za vibandiko za Mfululizo wa Wasanii wa Tellomi"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "Umepokea pakiti ya vibandiko"
@@ -3147,19 +3147,19 @@
     "messageformat": "Ujumbe ni mrefu sana, hauwezi kuonyeshwa zaidi"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} amekutumia ujumbe ambao hauwezi kuchakatishwa ama kuonyeshwa kwa sababu unatumia kipengele mpya cha Signal."
+    "messageformat": "{contact} amekutumia ujumbe ambao hauwezi kuchakatishwa ama kuonyeshwa kwa sababu unatumia kipengele mpya cha Tellomi."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Unaweza kumwomba  {contact}atume ujumbe huu upya kwa vile sasa unatumia toleo lililosasishwa la Signal."
+    "messageformat": "Unaweza kumwomba  {contact}atume ujumbe huu upya kwa vile sasa unatumia toleo lililosasishwa la Tellomi."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Moja ya kifaa chako imetuma ujumbe ambao hauwezi kuchakatishwa ama kuonyeshwa kwa sababu kinatumia kipengele mpya cha Signal."
+    "messageformat": "Moja ya kifaa chako imetuma ujumbe ambao hauwezi kuchakatishwa ama kuonyeshwa kwa sababu kinatumia kipengele mpya cha Tellomi."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Ujumbe wa siku za usoni kama huu utaunganishwa kwa vile sasa unatumia toleo lililosasishwa la Signal."
+    "messageformat": "Ujumbe wa siku za usoni kama huu utaunganishwa kwa vile sasa unatumia toleo lililosasishwa la Tellomi."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Sasisha Signal"
+    "messageformat": "Sasisha Tellomi"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Imetazamwa"
@@ -3426,7 +3426,7 @@
     "messageformat": "Gumzo limealamishwa haijasomwa"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Tafadhali weka Signal kwenye simu yako na kompyuta ya mezani ili utumie Kiumbaji cha Pakiti ya Vibandiko ya Signal"
+    "messageformat": "Tafadhali weka Tellomi kwenye simu yako na kompyuta ya mezani ili utumie Kiumbaji cha Pakiti ya Vibandiko ya Tellomi"
   },
   "icu:Reactions--remove": {
     "messageformat": "Ondoa reaction"
@@ -3444,16 +3444,16 @@
     "messageformat": "Vidokezo vya Usalama"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Usijibu magumzo kutoka Signal"
+    "messageformat": "Usijibu magumzo kutoka Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Signal haiwezi kukutumia ujumbe ikiomba code yako ya usajili, Nenosiri au ufunguo wa kurejesha akaunti. Usijibu gumzo linaloiga kuwa Signal."
+    "messageformat": "Tellomi haiwezi kukutumia ujumbe ikiomba code yako ya usajili, Nenosiri au ufunguo wa kurejesha akaunti. Usijibu gumzo linaloiga kuwa Tellomi."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "Kagua majina na picha"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "Tafuta ilani ya \"Jina halijathibitishwa\". Kila mtu huweka jina lake la wasifu katika Signal."
+    "messageformat": "Tafuta ilani ya \"Jina halijathibitishwa\". Kila mtu huweka jina lake la wasifu katika Tellomi."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "Kuwa makini na ulaghai"
@@ -3462,16 +3462,16 @@
     "messageformat": "Epuka jumbe zisizoeleweka zinazojaribu kukufanya ujibu. Kuwa makini na dondoo za fedha na viungo vya tovuti vinavyotiliwa shaka."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Usijibu magumzo kutoka Signal"
+    "messageformat": "Usijibu magumzo kutoka Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Signal haiwezi kukutumia ujumbe ikiomba code yako ya usajili, Nenosiri au ufunguo wa kurejesha akaunti. Usijibu magumzo yanayoiga kuwa Signal au timu ya Usaidizi ya Signal. Waigizaji wahalifu huanzisha mazungumzo ya uwongo ili kujaribu kuchukua udhibiti wa akaunti yako."
+    "messageformat": "Tellomi haiwezi kukutumia ujumbe ikiomba code yako ya usajili, Nenosiri au ufunguo wa kurejesha akaunti. Usijibu magumzo yanayoiga kuwa Tellomi au timu ya Usaidizi ya Tellomi. Waigizaji wahalifu huanzisha mazungumzo ya uwongo ili kujaribu kuchukua udhibiti wa akaunti yako."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Kagua majina na picha"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "Tafuta ilani ya \"Jina halijathibitishwa\". Kila mtu huweka jina la wasifu na picha yake kwenye Signal. Ikiwa hauna uhakika ombi jipya limetoka wapi ni salama zaidi ukilipuuzia."
+    "messageformat": "Tafuta ilani ya \"Jina halijathibitishwa\". Kila mtu huweka jina la wasifu na picha yake kwenye Tellomi. Ikiwa hauna uhakika ombi jipya limetoka wapi ni salama zaidi ukilipuuzia."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Ulaghai wa crypto au fedha"
@@ -3552,13 +3552,13 @@
     "messageformat": "Je, ripoti kuwa spam?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signal itataarifiwa kuwa mtu huyu inawezekana anatuma jumbe za spam. Signal haiwezi kuona maudhui ya gumzo lolote."
+    "messageformat": "Tellomi itataarifiwa kuwa mtu huyu inawezekana anatuma jumbe za spam. Tellomi haiwezi kuona maudhui ya gumzo lolote."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signal itataarifiwa kuwa mtu aliyekualika kwenye kikundi hiki, inawezekana anakutumia spam zake. Signal haiwezi kuona maudhui ya gumzo lolote."
+    "messageformat": "Tellomi itataarifiwa kuwa mtu aliyekualika kwenye kikundi hiki, inawezekana anakutumia spam zake. Tellomi haiwezi kuona maudhui ya gumzo lolote."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signal itataarifiwa kuwa {name}, aliyekualika kwenye kikundi hiki, inawezekana anakutumia jumbe taka. Signal haiwezi kuona maudhui ya gumzo lolote."
+    "messageformat": "Tellomi itataarifiwa kuwa {name}, aliyekualika kwenye kikundi hiki, inawezekana anakutumia jumbe taka. Tellomi haiwezi kuona maudhui ya gumzo lolote."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Toa ripoti ya spam"
@@ -3600,7 +3600,7 @@
     "messageformat": "Je, kubali ombi?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "Kubali tu maombi kutoka kwa watu unaowaamini. <bold>Signal haiwezi</bold> kukutumia ujumbe ikiomba code yako ya usajili, Nenosiri au ufunguo wa kurejesha akaunti."
+    "messageformat": "Kubali tu maombi kutoka kwa watu unaowaamini. <bold>Tellomi haiwezi</bold> kukutumia ujumbe ikiomba code yako ya usajili, Nenosiri au ufunguo wa kurejesha akaunti."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "Endelea"
@@ -3654,16 +3654,16 @@
     "messageformat": "Jina halijathibitishwa"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Hili ndilo gumzo rasmi na pekee kutoka Signal"
+    "messageformat": "Hili ndilo gumzo rasmi na pekee kutoka Tellomi"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "Gumzo rasmi"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Gumzo rasmi pekee kutoka Signal. Pata taarifa mpya za habari na matoleo."
+    "messageformat": "Gumzo rasmi pekee kutoka Tellomi. Pata taarifa mpya za habari na matoleo."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Gumzo rasmi pekee kutoka Signal."
+    "messageformat": "Gumzo rasmi pekee kutoka Tellomi."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Pata taarifa mpya za habari na matoleo."
@@ -3729,10 +3729,10 @@
     "messageformat": "Simu ya video ambayo haikujibiwa"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal bado inaendelea kufanya kazi"
+    "messageformat": "Tellomi bado inaendelea kufanya kazi"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal itaendelea kufanya kazi kwenye eneo la arifa. Unaweza ukabadili hili kwenye Mipangilio ya Signal."
+    "messageformat": "Tellomi itaendelea kufanya kazi kwenye eneo la arifa. Unaweza ukabadili hili kwenye Mipangilio ya Tellomi."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Simu ya kawaida inayopigwa"
@@ -3951,7 +3951,7 @@
     "messageformat": "Nakili kiungo cha simu"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Shiriki kiungo cha simu kupitia Signal"
+    "messageformat": "Shiriki kiungo cha simu kupitia Tellomi"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "Muondoe {name} kutoka kwenye simu?"
@@ -4113,7 +4113,7 @@
     "messageformat": "Toleo la kiungo halijulikani"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Kiungo hiki hakitumiki katika toleo hili la Signal Desktop."
+    "messageformat": "Kiungo hiki hakitumiki katika toleo hili la Tellomi Desktop."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Huwezi Kujiunga na Kikundi"
@@ -4719,10 +4719,10 @@
     "messageformat": "Kufuta data za mtumiaji na kupanga upya programu"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Changia Signal"
+    "messageformat": "Changia Tellomi"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} anaichangia Signal"
+    "messageformat": "{name} anaichangia Tellomi"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "Sawazisha jumbe"
@@ -4839,7 +4839,7 @@
     "messageformat": "Hatua inahitajika kwa akaunti"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Lazima ufungue Signal kwenye simu yako ili uendelee kutumia akaunti hii. Ikiwa hautafungua Signal kwenye simu yako, akaunti yako itafutwa hivi karibuni. <learnMoreLink>Pata maelezo zaidi</learnMoreLink>"
+    "messageformat": "Lazima ufungue Tellomi kwenye simu yako ili uendelee kutumia akaunti hii. Ikiwa hautafungua Tellomi kwenye simu yako, akaunti yako itafutwa hivi karibuni. <learnMoreLink>Pata maelezo zaidi</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Imeshindwa kurejesha video na picha"
@@ -4863,10 +4863,10 @@
     "messageformat": "Ongeza kiambatisho au kura ya maoni"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Mtu huyu hatumii Signal"
+    "messageformat": "Mtu huyu hatumii Tellomi"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop haikubali kupokea ujumbe kwa watu wasiotumia Signal. Muombe mtu huyu asakinishe Signal afurahie huduma salama zaidi ya ujumbe."
+    "messageformat": "Tellomi Desktop haikubali kupokea ujumbe kwa watu wasiotumia Tellomi. Muombe mtu huyu asakinishe Tellomi afurahie huduma salama zaidi ya ujumbe."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Inakagua hali ya usajili wa mwasiliani"
@@ -5127,10 +5127,10 @@
     "messageformat": "Ondoa kizuizi"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "Signal itataarifiwa kuwa mtu huyu inawezekana anatuma jumbe za spam. Signal haiwezi kuona maudhui ya gumzo lolote."
+    "messageformat": "Tellomi itataarifiwa kuwa mtu huyu inawezekana anatuma jumbe za spam. Tellomi haiwezi kuona maudhui ya gumzo lolote."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "Signal itataarifiwa kuwa mtu aliyekualika kwenye kikundi hiki, inawezekana anakutumia barua taka. Signal haiwezi kuona maudhui ya gumzo zozote."
+    "messageformat": "Tellomi itataarifiwa kuwa mtu aliyekualika kwenye kikundi hiki, inawezekana anakutumia barua taka. Tellomi haiwezi kuona maudhui ya gumzo zozote."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "Toa ripoti ya spam"
@@ -5178,7 +5178,7 @@
     "messageformat": "Jina la utani"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Majina ya utani na madokezo yamehifadhiwa na Signal na yamesimbwa fiche. Vinaonwa na wewe tu."
+    "messageformat": "Majina ya utani na madokezo yamehifadhiwa na Tellomi na yamesimbwa fiche. Vinaonwa na wewe tu."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Jina la kwanza"
@@ -5289,7 +5289,7 @@
     "messageformat": "Itisha ruhusa ya msimamizi kuidhinisha wanachama wapya wanaojiunga kupitia kiungo cha kikundi"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Nakili kiungo cha kikundi cha Signal. kwenye ubao wa kunakili"
+    "messageformat": "Nakili kiungo cha kikundi cha Tellomi. kwenye ubao wa kunakili"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Tafuta wanakikundi"
@@ -5431,7 +5431,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {Wanakikundi wanaotumia matoleo mapya ya Signal wataona kuwa ulifuta ujumbe huu.} other {Wanakikundi wanaotumia matoleo mapya ya Signal wataona kuwa ulifuta jumbe hizi.}}"
+    "messageformat": "{count, plural, one {Wanakikundi wanaotumia matoleo mapya ya Tellomi wataona kuwa ulifuta ujumbe huu.} other {Wanakikundi wanaotumia matoleo mapya ya Tellomi wataona kuwa ulifuta jumbe hizi.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Futa"
@@ -5557,7 +5557,7 @@
     "messageformat": "Huwezi kusambaza jumbe zisizopo au zilizofutwa"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Tumia kiungo hiki ili kujiunga na simu ya Signal: {url}"
+    "messageformat": "Tumia kiungo hiki ili kujiunga na simu ya Tellomi: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "Kagua maombi kwa uangalifu"
@@ -5566,7 +5566,7 @@
     "messageformat": "Vidokezo vya Usalama"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Kagua maombi kwa uangalifu. Signal imempata mtu mwingine mwenye jina kama hili. <reviewRequestLink>Kagua ombi</reviewRequestLink>"
+    "messageformat": "Kagua maombi kwa uangalifu. Tellomi imempata mtu mwingine mwenye jina kama hili. <reviewRequestLink>Kagua ombi</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {Mwanachama {count,number} ana jina sawa. <reviewRequestLink>Kagua wanachama</reviewRequestLink>} other {Wanachama {count,number} wana majina sawa.<reviewRequestLink>Kagua wanachama</reviewRequestLink>}}"
@@ -5599,7 +5599,7 @@
     "messageformat": "Hakuna vikundi vingine mnavyoshiriki pamoja"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal Connection"
+    "messageformat": "Tellomi Connection"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Hivi majuzi alibadilisha jina la wasifu wake kutoka {oldName} hadi {newName}."
@@ -5617,7 +5617,7 @@
     "messageformat": "Thibitisha ili uendelee kutuma ujumbe"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Ili kusaidia kuzuia ujumbe taka kwenye Signal, tafadhali kamilisha uthibitishaji."
+    "messageformat": "Ili kusaidia kuzuia ujumbe taka kwenye Tellomi, tafadhali kamilisha uthibitishaji."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Baada ya kuthibitisha, unaweza kuendelea kutuma ujumbe. Ujumbe wowote uliositishwa utatumwa kiotomatiki."
@@ -6001,7 +6001,7 @@
     "messageformat": "Ungependa kuyaghairi mabadiliko haya?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Je, funga Signal na umalize simu?"
+    "messageformat": "Je, funga Tellomi na umalize simu?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Sio kwa Sasa"
@@ -6101,7 +6101,7 @@
     "messageformat": "Jumla"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Changia Signal"
+    "messageformat": "Changia Tellomi"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Muonekano"
@@ -6167,10 +6167,10 @@
     "messageformat": "Mfumo"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "Tellomi Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "Maelezo yako ya Signal Login yanatumika kurudisha na kurejesha akaunti yako. Hifadhi funguo hizi kwa njia salama katika kidhibiti cha manenosiri unachokiamini. <learnMoreLink>Pata maelezo zaidi</learnMoreLink>."
+    "messageformat": "Maelezo yako ya Tellomi Login yanatumika kurudisha na kurejesha akaunti yako. Hifadhi funguo hizi kwa njia salama katika kidhibiti cha manenosiri unachokiamini. <learnMoreLink>Pata maelezo zaidi</learnMoreLink>."
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "Jifunze zaidi"
@@ -6191,7 +6191,7 @@
     "messageformat": "Hiki ni kifaa kilichounganishwa"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "Ili udhibiti mipangilio ya akaunti yako, fungua Signal kwenye kifaa chako cha msingi."
+    "messageformat": "Ili udhibiti mipangilio ya akaunti yako, fungua Tellomi kwenye kifaa chako cha msingi."
   },
   "icu:Preferences--zoom": {
     "messageformat": "Kiwango cha Kukuza"
@@ -6224,7 +6224,7 @@
     "messageformat": "ya juu"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Nenosiri la Signal"
+    "messageformat": "Nenosiri la Tellomi"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "Vikumbusho vya PIN"
@@ -6353,7 +6353,7 @@
     "messageformat": "Imeshindwa kuhamisha historia ya gumzo"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Historia yako ya gumzo imeshindwa kuhamishwa kwa sababu Signal haina ruhusa ya kuhifadhi faili kwenye diski. Jaribu kubadilisha ruhusa za diski yako au kusasisha mipangilio yako ya mfumo kisha uhamishe tena."
+    "messageformat": "Historia yako ya gumzo imeshindwa kuhamishwa kwa sababu Tellomi haina ruhusa ya kuhifadhi faili kwenye diski. Jaribu kubadilisha ruhusa za diski yako au kusasisha mipangilio yako ya mfumo kisha uhamishe tena."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Kuhamisha nakala hifadhi"
@@ -6368,7 +6368,7 @@
     "messageformat": "Hamisha folda yako ya hifadhi nakala kwenye simu yako"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Weka nakala mpya ya Signal kwenye simu yako"
+    "messageformat": "Weka nakala mpya ya Tellomi kwenye simu yako"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "Gusa “Rejesha au Hamisha” kisha uchague “Uhifadhi Nakala Kwenye Simu”"
@@ -6635,13 +6635,13 @@
     "messageformat": "Ako blocked kwenye {blockedAt}"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Hifadhi Nakala ya Signal iliyo Salama"
+    "messageformat": "Hifadhi Nakala ya Tellomi iliyo Salama"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Uhifadhi nakala wa kiotomatiki ukitumia huduma salama za uhifadhi wa Signal zilizosimbwa fiche. Anza kutumia kwenye simu yako. <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
+    "messageformat": "Uhifadhi nakala wa kiotomatiki ukitumia huduma salama za uhifadhi wa Tellomi zilizosimbwa fiche. Anza kutumia kwenye simu yako. <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Hifadhi nakala ya historia ya jumbe wako ili usiwahi kupoteza data unapopata simu mpya au kusakinisha upya Signal."
+    "messageformat": "Hifadhi nakala ya historia ya jumbe wako ili usiwahi kupoteza data unapopata simu mpya au kusakinisha upya Tellomi."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Taarifa za nakala"
@@ -6671,13 +6671,13 @@
     "messageformat": "Usajili umeghairishwa"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Unaweza kusimamia au kusitisha usajili wako wa Hifadhi Nakala ya Signal kwenye simu yako."
+    "messageformat": "Unaweza kusimamia au kusitisha usajili wako wa Hifadhi Nakala ya Tellomi kwenye simu yako."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Unaweza kudhibiti au kusasisha Hifadhi Nakala ya Signal kwenye simu yako."
+    "messageformat": "Unaweza kudhibiti au kusasisha Hifadhi Nakala ya Tellomi kwenye simu yako."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Unaweza kudhibiti au kuanzisha upya usajili wako wa Hifadhi Nakala ya Signal kwenye simu yako."
+    "messageformat": "Unaweza kudhibiti au kuanzisha upya usajili wako wa Hifadhi Nakala ya Tellomi kwenye simu yako."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Nakala ya mwisho"
@@ -6695,7 +6695,7 @@
     "messageformat": "Unda hifadhi nakala iliyosimbwa kwa njia fiche ambayo unaweza kurejesha kwenye simu yako. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Ili urejeshe nakala iliyohifadhiwa, sakinisha nakala mpya ya Signal kwenye simu yako. Fungua programu kisha gusa &quot;Rejesha au hamisha.&quot; <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
+    "messageformat": "Ili urejeshe nakala iliyohifadhiwa, sakinisha nakala mpya ya Tellomi kwenye simu yako. Fungua programu kisha gusa &quot;Rejesha au hamisha.&quot; <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Chagua folda"
@@ -6731,7 +6731,7 @@
     "messageformat": "Ufunguo wako wa kurejesha akaunti"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "Ufunguo huu unahitajika kurejesha akaunti na data yako. Uhifadhi mahali ambapo ni salama na usimpe mtu yeyote idhini ya kuufikia. Signal haiwezi kukutumia ujumbe kuhusu ufunguo wako wa kurejesha akaunti. <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
+    "messageformat": "Ufunguo huu unahitajika kurejesha akaunti na data yako. Uhifadhi mahali ambapo ni salama na usimpe mtu yeyote idhini ya kuufikia. Tellomi haiwezi kukutumia ujumbe kuhusu ufunguo wako wa kurejesha akaunti. <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "Usiruhusu ufunguo wa kurejesha akaunti ufikiwe"
@@ -6746,7 +6746,7 @@
     "messageformat": "Usishiriki ufunguo"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Usishiriki ufunguo wa kurejesha akaunti na mtu yeyote. Hii itawawezesha waidhibiti akaunti yako. <strong>Signal haiwezi kukutumia ujumbe</strong>kuhusu ufunguo wako wa kurejesha akaunti. Usijibu gumzo linaloiga kuwa Signal. <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
+    "messageformat": "Usishiriki ufunguo wa kurejesha akaunti na mtu yeyote. Hii itawawezesha waidhibiti akaunti yako. <strong>Tellomi haiwezi kukutumia ujumbe</strong>kuhusu ufunguo wako wa kurejesha akaunti. Usijibu gumzo linaloiga kuwa Tellomi. <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Thibitisha ufunguo wako wa kurejesha akaunti"
@@ -6758,7 +6758,7 @@
     "messageformat": "Ulinde salama ufunguo wako"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Signal haitaweza kukusaidia kurejesha nakala yako ya hifadhi ukipoteza ufunguo wako. Ihifadhi mahali salama, na usiwapatie wengine."
+    "messageformat": "Tellomi haitaweza kukusaidia kurejesha nakala yako ya hifadhi ukipoteza ufunguo wako. Ihifadhi mahali salama, na usiwapatie wengine."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Endelea"
@@ -6809,7 +6809,7 @@
     "messageformat": "Uthibitishaji unahitajika ili uwezeshe uhifadhi nakala."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "Kitendo hiki hakikuweza kukamilishwa kwa sababu imeshindwa kuthibitisha mfumo. Tafadhali jaribu tena au fungua programu ya Signal kwenye kifaa chako cha mkononi kisha uende katika Mipangilio ya Nakala Zilizohifadhiwa kutazama ufunguo wako wa kurejesha akaunti."
+    "messageformat": "Kitendo hiki hakikuweza kukamilishwa kwa sababu imeshindwa kuthibitisha mfumo. Tafadhali jaribu tena au fungua programu ya Tellomi kwenye kifaa chako cha mkononi kisha uende katika Mipangilio ya Nakala Zilizohifadhiwa kutazama ufunguo wako wa kurejesha akaunti."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "Hitilafu imetokea wakati wa kuomba uthibitishaji wa mfumo kwa kitendo hiki."
@@ -6839,7 +6839,7 @@
     "messageformat": "Nambari ya Simu"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Chagua nani anayeweza kuona nambari yako ya simu na kuwasiliana nawe kwenye Signal."
+    "messageformat": "Chagua nani anayeweza kuona nambari yako ya simu na kuwasiliana nawe kwenye Tellomi."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Badili…"
@@ -6869,10 +6869,10 @@
     "messageformat": "Nani anaweza kunipata kupitia nambari yangu"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Mtu yeyote mwenye nambari yako ya simu ataona kuwa upo Signal na anaweza kuanza gumzo na wewe."
+    "messageformat": "Mtu yeyote mwenye nambari yako ya simu ataona kuwa upo Tellomi na anaweza kuanza gumzo na wewe."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Hakuna atakayeweza kuona kuwa upo Signal isipokuwa utakapowatumia ujumbe au tayari una gumzo nao."
+    "messageformat": "Hakuna atakayeweza kuona kuwa upo Tellomi isipokuwa utakapowatumia ujumbe au tayari una gumzo nao."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Kila mtu"
@@ -6884,7 +6884,7 @@
     "messageformat": "Una uhakika?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Ukibadili \"{settingTitle}\" kuwa \"{nobodyLabel}\" itakuwa ngumu kwa watu kukupata kwenye Signal."
+    "messageformat": "Ukibadili \"{settingTitle}\" kuwa \"{nobodyLabel}\" itakuwa ngumu kwa watu kukupata kwenye Tellomi."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Kutuma ujumbe"
@@ -6947,7 +6947,7 @@
     "messageformat": "Weka"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Anzisha tena Signal ili kuweka mabadiliko"
+    "messageformat": "Anzisha tena Tellomi ili kuweka mabadiliko"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Ili kubadili lugha, programu inapaswa kuanzishwa tena."
@@ -6962,13 +6962,13 @@
     "messageformat": "usalama wa skrini"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Zuia picha za skrini za Signal kwenye kompyuta hii kwa faragha zaidi."
+    "messageformat": "Zuia picha za skrini za Tellomi kwenye kompyuta hii kwa faragha zaidi."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Uzime ulinzi wa skrini?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Ikiwa imezimwa, hii inaweza kuruhusu Microsoft Windows kupiga picha za skrini za Signal na kuzitumia kwenye vipengele ambavyo huenda visiwe na faragha."
+    "messageformat": "Ikiwa imezimwa, hii inaweza kuruhusu Microsoft Windows kupiga picha za skrini za Tellomi na kuzitumia kwenye vipengele ambavyo huenda visiwe na faragha."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Lemaza"
@@ -6989,25 +6989,25 @@
     "messageformat": "Bofya kuenda kwa App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Fungua Signal kwenye simu yako"
+    "messageformat": "Fungua Tellomi kwenye simu yako"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Akaunti yako itafutwa hivi karibuni isipokuwa ukifungua Signal kwenye simu yako. Ujumbe huu utaondoka ikiwa umefanya hivyo. <learnMoreLink>Pata maelezo zaidi</learnMoreLink>"
+    "messageformat": "Akaunti yako itafutwa hivi karibuni isipokuwa ukifungua Tellomi kwenye simu yako. Ujumbe huu utaondoka ikiwa umefanya hivyo. <learnMoreLink>Pata maelezo zaidi</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Fungua Signal kwenye simu yako ili akaunti yako iendelee kutumika"
+    "messageformat": "Fungua Tellomi kwenye simu yako ili akaunti yako iendelee kutumika"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Jifunze zaidi"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal inakabiliwa na matatizo ya kiufundi. Tunajitahidi kurejesha huduma haraka iwezekanavyo."
+    "messageformat": "Tellomi inakabiliwa na matatizo ya kiufundi. Tunajitahidi kurejesha huduma haraka iwezekanavyo."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Sasisho Linahitajika"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Ili kukamilisha kusawazisha ujumbe wako, sasisha Signal Desktop sasa."
+    "messageformat": "Ili kukamilisha kusawazisha ujumbe wako, sasisha Tellomi Desktop sasa."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Sasisha"
@@ -7016,19 +7016,19 @@
     "messageformat": "Sasisho Linahitajika"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Ili kuendelea kutumia Signal, lazima usasishe hadi toleo jipya."
+    "messageformat": "Ili kuendelea kutumia Tellomi, lazima usasishe hadi toleo jipya."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Pakua {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Resta Signal ili kusakinisha sasisho."
+    "messageformat": "Resta Tellomi ili kusakinisha sasisho."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal Desktop imeshindwa kusasisha, lakini kuna toleo jipya linalopatikana. Nenda kwa {downloadUrl} usakinishe toleo jipya wewe mwenyewe, kisha uwasiliane na Msaada au utume ripoti ya hitilafu kuhusu tatizo hili."
+    "messageformat": "Tellomi Desktop imeshindwa kusasisha, lakini kuna toleo jipya linalopatikana. Nenda kwa {downloadUrl} usakinishe toleo jipya wewe mwenyewe, kisha uwasiliane na Msaada au utume ripoti ya hitilafu kuhusu tatizo hili."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Nembo ya Signal"
+    "messageformat": "Nembo ya Tellomi"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "Rudi nyuma"
@@ -7064,7 +7064,7 @@
     "messageformat": "Ili uendelee, thibitisha kuwa wewe ni binadamu"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "Ili kusaidia kuzuia ujumbe taka kwenye Signal, tafadhali kamilisha uthibitishaji. Baada ya kuthibitisha, unaweza kuendelea na usajili."
+    "messageformat": "Ili kusaidia kuzuia ujumbe taka kwenye Tellomi, tafadhali kamilisha uthibitishaji. Baada ya kuthibitisha, unaweza kuendelea na usajili."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "Jaribu tena kuthibitisha"
@@ -7304,7 +7304,7 @@
     "messageformat": "Nenosiri sio sahihi"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "Fursa za kukisia PIN zimekwisha, lakini bado unaweza kufikia akaunti yako ya Signal kwa kuunda PIN mpya. Kwa ajili ya faragha na usalama wako, akaunti yako itarejeshwa bila maelezo au mipangilio ya wasifu iliyohifadhiwa."
+    "messageformat": "Fursa za kukisia PIN zimekwisha, lakini bado unaweza kufikia akaunti yako ya Tellomi kwa kuunda PIN mpya. Kwa ajili ya faragha na usalama wako, akaunti yako itarejeshwa bila maelezo au mipangilio ya wasifu iliyohifadhiwa."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "Unda PIN mpya"
@@ -7334,7 +7334,7 @@
     "messageformat": "Unda Nenosiri lako"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "Nenosiri zinaweza kukusaidia kurejesha akaunti yako na kuhifadhi taarifa zako zikiwa zimesimbwa katika Signal. <learnMore>Jifunze Zaidi</learnMore>"
+    "messageformat": "Nenosiri zinaweza kukusaidia kurejesha akaunti yako na kuhifadhi taarifa zako zikiwa zimesimbwa katika Tellomi. <learnMore>Jifunze Zaidi</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "Unda Nenosiri lako"
@@ -7358,7 +7358,7 @@
     "messageformat": "Onyo"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "Ukilemaza PIN, utapoteza data yote ukisajili upya Signal. Huwezi kuwasha kipengele cha Lock ya Usajili wakati PIN imelemazwa."
+    "messageformat": "Ukilemaza PIN, utapoteza data yote ukisajili upya Tellomi. Huwezi kuwasha kipengele cha Lock ya Usajili wakati PIN imelemazwa."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "Lemaza PIN"
@@ -7367,10 +7367,10 @@
     "messageformat": "Ghairi"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "Kuhusu PINs za Signal"
+    "messageformat": "Kuhusu PINs za Tellomi"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "PIN zinahifadhi maelezo yako kwenye Signal kwa kuyasimba fiche ili wewe pekee ndio uyafikie. Wasifu, mipangilio na wawasiliani wako watarejeshwa ukisakinisha upya."
+    "messageformat": "PIN zinahifadhi maelezo yako kwenye Tellomi kwa kuyasimba fiche ili wewe pekee ndio uyafikie. Wasifu, mipangilio na wawasiliani wako watarejeshwa ukisakinisha upya."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "Jifunze zaidi"
@@ -7403,7 +7403,7 @@
     "messageformat": "Sasisho linahitajika"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "Ili uendelee kusajili, tafadhali sasisha utumie toleo jipya kabisa la Signal."
+    "messageformat": "Ili uendelee kusajili, tafadhali sasisha utumie toleo jipya kabisa la Tellomi."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "Sasisha"
@@ -7433,7 +7433,7 @@
     "messageformat": "Wasiliana Msaada"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signal haiwezi kufungwa.",
+    "messageformat": "Tellomi haiwezi kufungwa.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7453,14 +7453,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Toleo jipya zaidi la Signal tayari limesakinishwa. Una uhakika unataka kuendelea?",
+    "messageformat": "Toleo jipya zaidi la Tellomi tayari limesakinishwa. Una uhakika unataka kuendelea?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Programu imejizima"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal imeanza baada ya kujizima. Unaweza kuwasilisha ripoti ili kuisaidia Signal kuchunguza suala hili."
+    "messageformat": "Tellomi imeanza baada ya kujizima. Unaweza kuwasilisha ripoti ili kuisaidia Tellomi kuchunguza suala hili."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Tuma"
@@ -7547,7 +7547,7 @@
     "messageformat": "9:16"
   },
   "icu:MediaPermissionsModal__title--microphone": {
-    "messageformat": "Ruhusu Signal kufikia maikrofoni yako"
+    "messageformat": "Ruhusu Tellomi kufikia maikrofoni yako"
   },
   "icu:MediaPermissionsModal__title--camera": {
     "messageformat": "Ruhusu ufikiaji wa kamera yako"
@@ -7565,7 +7565,7 @@
     "messageformat": "Bofya “{buttonName}” hapa chini"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Washa \"Signal\""
+    "messageformat": "Washa \"Tellomi\""
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Nenda kwenye mipangilio"
@@ -7661,7 +7661,7 @@
     "messageformat": "Jifunze Zaidi"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal Connections"
+    "messageformat": "Tellomi Connections"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} ni watu ulioamua kuwaamini, ama kwa:"
@@ -7802,7 +7802,7 @@
     "messageformat": "Ficha stori kutoka kwa"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Signal connections wote"
+    "messageformat": "Tellomi connections wote"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Wote kasoro..."
@@ -7880,7 +7880,7 @@
     "messageformat": "Faragha ya Stori Yangu"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Chagua Signal Connections wanaoweza kutazama stori zako. Unaweza kubadili hii kwenye mipangilio ya faragha. <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
+    "messageformat": "Chagua Tellomi Connections wanaoweza kutazama stori zako. Unaweza kubadili hii kwenye mipangilio ya faragha. <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Futa stori"
@@ -7949,7 +7949,7 @@
     "messageformat": "Pakua Kiambatisho"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Wezesha read receipts kuona nani ametazama stori zako. Fungua programu ya Signal kwenye kifaa chako cha mkononi nenda kwenye Mipangilio > Stori."
+    "messageformat": "Wezesha read receipts kuona nani ametazama stori zako. Fungua programu ya Tellomi kwenye kifaa chako cha mkononi nenda kwenye Mipangilio > Stori."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Hakuna majibu bado"
@@ -8135,7 +8135,7 @@
     "messageformat": "Msimbo wako wa QR na kiungo vimewekwa upya mipangilio na jina lako la mtumiaji ni {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Skani code hii a QR kupitia simu yako ili upige gumzo nami kwenye Signal.",
+    "messageformat": "Skani code hii a QR kupitia simu yako ili upige gumzo nami kwenye Tellomi.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8211,7 +8211,7 @@
     "messageformat": "Tupilia mbali"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "Thibitisha PINI yako ya Signal"
+    "messageformat": "Thibitisha PINI yako ya Tellomi"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "Mara kwa mara tutakuomba uthibitishe PIN yako ili uikumbuke."
@@ -8223,7 +8223,7 @@
     "messageformat": "Sio sasa"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "Ingiza Nenosiri lako ya Signal"
+    "messageformat": "Ingiza Nenosiri lako ya Tellomi"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "Ili kukusaidia kukumbuka PIN yako, tutakuomba uingize mara kwa mara. Na baada ya muda tutakuomba mara chache."
@@ -8241,13 +8241,13 @@
     "messageformat": "PIN ni sahihi. Tutakukumbusha tena baadae."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Muda si mrefu Signal desktop haitaikubali tena toleo lako la {OS} mfumo wa uendeshaji wa kompyuta yako. Ili kuendelea kutumia Signal, sasisha mfumo wa uendeshaji wa kompyuta kabla ya {expirationDate}. <learnMoreLink>Jifunze zaidi</learnMoreLink>"
+    "messageformat": "Muda si mrefu Tellomi desktop haitaikubali tena toleo lako la {OS} mfumo wa uendeshaji wa kompyuta yako. Ili kuendelea kutumia Tellomi, sasisha mfumo wa uendeshaji wa kompyuta kabla ya {expirationDate}. <learnMoreLink>Jifunze zaidi</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal desktop haifanyi tena kazi kwenye kompyuta hii. Ili kutumia Signal desktop tena, sasisha toleo la mfumo wako wa uendeshaji wa {OS}. <learnMoreLink>Jifunze zaidi</learnMoreLink>"
+    "messageformat": "Tellomi desktop haifanyi tena kazi kwenye kompyuta hii. Ili kutumia Tellomi desktop tena, sasisha toleo la mfumo wako wa uendeshaji wa {OS}. <learnMoreLink>Jifunze zaidi</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal desktop haifanyi tena kazi kwenye kompyuta hii. Ili kutumia Signal desktop tena, sasisha toleo la mfumo wako wa uendeshaji wa {OS}."
+    "messageformat": "Tellomi desktop haifanyi tena kazi kwenye kompyuta hii. Ili kutumia Tellomi desktop tena, sasisha toleo la mfumo wako wa uendeshaji wa {OS}."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Imehaririwa"
@@ -8418,7 +8418,7 @@
     "messageformat": "Nakili kiungo"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Shiriki kiungo kupitia Signal"
+    "messageformat": "Shiriki kiungo kupitia Tellomi"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Futa kiungo"
@@ -8481,13 +8481,13 @@
     "messageformat": "Ili kubadili mpangilio huu, badili \"Nani anayeona nambari yangu\" kuwa \"Hakuna Yeyote\"."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Majina ya wasifu kwenye Signal yanachaguliwa na mmiliki wa akaunti:"
+    "messageformat": "Majina ya wasifu kwenye Tellomi yanachaguliwa na mmiliki wa akaunti:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Signal haiwezi kuthibitisha majina na picha"
+    "messageformat": "Tellomi haiwezi kuthibitisha majina na picha"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Signal haiwezi kuwasiliana nawe kwa ajili ya code yako ya usajili, Nenosiri au ufunguo wa kurejesha akaunti"
+    "messageformat": "Tellomi haiwezi kuwasiliana nawe kwa ajili ya code yako ya usajili, Nenosiri au ufunguo wa kurejesha akaunti"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "Kuwa makini na akaunti zinazoiga wengine"
@@ -8517,7 +8517,7 @@
     "messageformat": "Tunajivunia kuwa shirika lisilo la faida"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Changia ili kuunga mkono utumaji ujumbe ulio na faragha. Saidia Signal iendelee kujitegemea bila matangazo. <readMoreLink>Soma zaidi</readMoreLink>"
+    "messageformat": "Changia ili kuunga mkono utumaji ujumbe ulio na faragha. Saidia Tellomi iendelee kujitegemea bila matangazo. <readMoreLink>Soma zaidi</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Changia"
@@ -8541,7 +8541,7 @@
     "messageformat": "Taarifa zako ni za kibinafsi"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Kama shirika lisilo la faida linalojitegemea, Signal imejikita katika kuhakikisha faragha ya ujumbe na simu. Hakuna matangazo, hakuna vifuatilizi, hakuna ufuatiliaji. Changia leo ili kuiunga mkono Signal."
+    "messageformat": "Kama shirika lisilo la faida linalojitegemea, Tellomi imejikita katika kuhakikisha faragha ya ujumbe na simu. Hakuna matangazo, hakuna vifuatilizi, hakuna ufuatiliaji. Changia leo ili kuiunga mkono Tellomi."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Pata beji ya hiari kwenye wasifu wako unapochanga"
@@ -8550,10 +8550,10 @@
     "messageformat": "Faragha yako ni jukumu letu"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Signal ni shirika lilisilo la faida. Michango inayotolewa Marekani hukatwa kodi."
+    "messageformat": "Tellomi ni shirika lilisilo la faida. Michango inayotolewa Marekani hukatwa kodi."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "Aikoni ya moyo katika mtindo wa nembo ya Signal"
+    "messageformat": "Aikoni ya moyo katika mtindo wa nembo ya Tellomi"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "Sawa"
@@ -8568,7 +8568,7 @@
     "messageformat": "FAQs za Wafadhili"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Risiti hazisawazishwi kwenye vifaa vyote. Kama umeweka upya Signal, risiti kutoka kwenye michango ya hapo awali hazitapatikana."
+    "messageformat": "Risiti hazisawazishwi kwenye vifaa vyote. Kama umeweka upya Tellomi, risiti kutoka kwenye michango ya hapo awali hazitapatikana."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Hakuna risiti"
@@ -8598,7 +8598,7 @@
     "messageformat": "Kadi ya mkopo au fedha taslimu"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Weka taarifa za kadi yako ya mikopo. Signal haikusanyi wala kuhifadhi taarifa zako binafsi. <learnMoreLink>Pata maelezo zaidi</learnMoreLink>"
+    "messageformat": "Weka taarifa za kadi yako ya mikopo. Tellomi haikusanyi wala kuhifadhi taarifa zako binafsi. <learnMoreLink>Pata maelezo zaidi</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Nambari ya kadi"
@@ -8610,7 +8610,7 @@
     "messageformat": "MM/YY"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Changia {formattedCurrencyAmount} kwa Signal"
+    "messageformat": "Changia {formattedCurrencyAmount} kwa Tellomi"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Nambari ya kadi si sahihi"
@@ -8628,7 +8628,7 @@
     "messageformat": "Kodi ni fupi sana"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Jipatie Beji ya Mchangiaji ya Signal kwa siku 30"
+    "messageformat": "Jipatie Beji ya Mchangiaji ya Tellomi kwa siku 30"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "Kiwango cha chini unachoweza kuchangia ni {formattedCurrencyAmount}"
@@ -8712,7 +8712,7 @@
     "messageformat": "Umefanikiwa kuchangia, lakini tumeshindwa kusasisha mipangilio ya beji yako"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "Ili usasishe mipangilio yako ya beji kwenye kifaa chako cha mkononi, nenda kwenye Mipangilio → Changia Signal → Beji."
+    "messageformat": "Ili usasishe mipangilio yako ya beji kwenye kifaa chako cha mkononi, nenda kwenye Mipangilio → Changia Tellomi → Beji."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Mchango umekatishwa"
@@ -8769,7 +8769,7 @@
     "messageformat": "Hitilafu imetokea kwenye mchango wako"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Huenda mchango wako haujachakatwa. Bofya kwenye \"Changia Signal\" kisha \"Risiti za Mchango\" ili ukague risiti zako na uthibitishe."
+    "messageformat": "Huenda mchango wako haujachakatwa. Bofya kwenye \"Changia Tellomi\" kisha \"Risiti za Mchango\" ili ukague risiti zako na uthibitishe."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Jaribu tena au uwasilishe faili la Rekebisho ili kusaidia kwa msaada wa kukamilisha mchango wako. Kumbukumbu za utatuzi zinatusaidia kutambua na kurekebisha tatizo, na hazina maelezo ya utambulisho."
@@ -8811,19 +8811,19 @@
     "messageformat": "Asante kwa kutuunga mkono!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Umetunukiwa beji kutoka Signal! Ionyeshe kwenye wasifu wako kuonyesha unavyotuunga mkono."
+    "messageformat": "Umetunukiwa beji kutoka Tellomi! Ionyeshe kwenye wasifu wako kuonyesha unavyotuunga mkono."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Onyesha kwenye Wasifu"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Unaweza kurekebisha hili kwenye kifaa chako cha mkononi katika Mipangilio → Changia Signal → Beji"
+    "messageformat": "Unaweza kurekebisha hili kwenye kifaa chako cha mkononi katika Mipangilio → Changia Tellomi → Beji"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "Hali yako ya utumiaji simu ilikuwaje?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "Hii inatusaidia kuboresha simu katika Signal. Hakuna taarifa inayomtambulisha mtu binafsi itahifadhiwa."
+    "messageformat": "Hii inatusaidia kuboresha simu katika Tellomi. Hakuna taarifa inayomtambulisha mtu binafsi itahifadhiwa."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Ilikuwa na tatizo"
@@ -8874,7 +8874,7 @@
     "messageformat": "Maelezo ya hitilafu"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Tafadhali jumuisha maelezo yoyote yanayohusiana na tatizo. Chochote unachotuma hapa kitahifadhiwa kwa faragha na kitatumika tu kusaidia kuboresha simu katika Signal."
+    "messageformat": "Tafadhali jumuisha maelezo yoyote yanayohusiana na tatizo. Chochote unachotuma hapa kitahifadhiwa kwa faragha na kitatumika tu kusaidia kuboresha simu katika Tellomi."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "Tafadhali elezea hitilafu inayokukumba"
@@ -8940,7 +8940,7 @@
     "messageformat": "Itabidi uunganishe upya kwa kuchanganua QR code."
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "Ikiwa una Nakala Salama Zilizohifadhiwa na Signal, maudhui yako yote yatahifadhiwa. La sivyo, siku 45 za mwisho za picha na video zako hazitajumuishwa."
+    "messageformat": "Ikiwa una Nakala Salama Zilizohifadhiwa na Tellomi, maudhui yako yote yatahifadhiwa. La sivyo, siku 45 za mwisho za picha na video zako hazitajumuishwa."
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "Hamisha"
@@ -8952,14 +8952,14 @@
     "messageformat": "Futa data yote?"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "Data yote iliyo kwenye Signal Desktop itafutwa. Kisha unaweza kuchanganua QR code na kuhamisha historia ya jumbe zako kutoka kwenye simu yako."
+    "messageformat": "Data yote iliyo kwenye Tellomi Desktop itafutwa. Kisha unaweza kuchanganua QR code na kuhamisha historia ya jumbe zako kutoka kwenye simu yako."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Toleo hili lina mabadiliko kidogo na maboresho ya program kuiwezesha Signal kufanya kazi vizuri.",
+    "messageformat": "Toleo hili lina mabadiliko kidogo na maboresho ya program kuiwezesha Tellomi kufanya kazi vizuri.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Mabadiliko ya ziada, bug fixes na maboresho ya utendaji. Asante kwa kutumia Signal.",
+    "messageformat": "Mabadiliko ya ziada, bug fixes na maboresho ya utendaji. Asante kwa kutumia Tellomi.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -8979,7 +8979,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Mabadiliko madogo, marekebisho ya bugs na uboreshaji wa utendaji. Asante kwa kutumia Signal!",
+    "messageformat": "Mabadiliko madogo, marekebisho ya bugs na uboreshaji wa utendaji. Asante kwa kutumia Tellomi!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.24--1": {
@@ -8992,6 +8992,6 @@
     "messageformat": "Kujitambua ni mchakato unaoweza kuchukua maisha yote, lakini sasa utaonekana kama \"Wewe” kwenye utafutaji wa wanakikundi ili kurahisisha mambo kidogo."
   },
   "icu:WhatsNew__8.27--0": {
-    "messageformat": "Sasisho hili linatambulisha mipangilio ya kina ili kukupa udhibiti mkubwa zaidi wa arifa zako za Signal. Sasa unaweza kuchagua nini kitokee kwenye beji yako ya programu, kurekebisha mapendeleo ya arifa kwa mazungumzo yaliyozimwa sauti na zaidi! Pia tumeweka kitufe cha urahisishaji ili kurejesha mipangilio chaguomsingi ya arifa kama utafanya mabadiliko mengi kiasi hujui uanzie wapi."
+    "messageformat": "Sasisho hili linatambulisha mipangilio ya kina ili kukupa udhibiti mkubwa zaidi wa arifa zako za Tellomi. Sasa unaweza kuchagua nini kitokee kwenye beji yako ya programu, kurekebisha mapendeleo ya arifa kwa mazungumzo yaliyozimwa sauti na zaidi! Pia tumeweka kitufe cha urahisishaji ili kurejesha mipangilio chaguomsingi ya arifa kama utafanya mabadiliko mengi kiasi hujui uanzie wapi."
   }
 }

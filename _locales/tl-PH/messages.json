@@ -66,7 +66,7 @@
     "messageformat": "Mag-donate sa Signal"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "Tinutulungan ka ng <bold>Linked Devices</bold> na i-access ang Signal account at messages mo nang ligtas sa anumang additional devices mo."
+    "messageformat": "Tinutulungan ka ng <bold>Linked Devices</bold> na i-access ang Tellomi account at messages mo nang ligtas sa anumang additional devices mo."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "Maaari kang mag-link ng desktop, tablet o additional phone."
@@ -114,10 +114,10 @@
     "messageformat": "Unknown group"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Hindi Mabuksan ang Signal"
+    "messageformat": "Hindi Mabuksan ang Tellomi"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Para maayos ang isyu, sundin ang recovery guide sa support page o kontakin ang Signal support para matulungan ka.\n\nKung kailangan mong gamitin agad ang Signal, maaari mong burahin ang data mo at i-relink ang desktop na ito. May option kang ilipat ang message history mula sa phone mo."
+    "messageformat": "Para maayos ang isyu, sundin ang recovery guide sa support page o kontakin ang Tellomi support para matulungan ka.\n\nKung kailangan mong gamitin agad ang Tellomi, maaari mong burahin ang data mo at i-relink ang desktop na ito. May option kang ilipat ang message history mula sa phone mo."
   },
   "icu:databaseError": {
     "messageformat": "Database Error"
@@ -129,16 +129,16 @@
     "messageformat": "Permanenteng Burahin ang Lahat ng Data"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Ang lahat ng message history at media mo ay permanenteng buburahin sa device na ito. Hindi nito buburahin ang anumang data sa phone mo.\n\nPwede mong gamitin ang Signal sa device na ito pagkatapos mo itong i-relink. May option kang ilipat ang message history mula sa phone mo."
+    "messageformat": "Ang lahat ng message history at media mo ay permanenteng buburahin sa device na ito. Hindi nito buburahin ang anumang data sa phone mo.\n\nPwede mong gamitin ang Tellomi sa device na ito pagkatapos mo itong i-relink. May option kang ilipat ang message history mula sa phone mo."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Hindi magka-match ang version ng database mo at ang version na ito ng Signal. Siguraduhing buksan ang pinakabagong version ng Signal sa computer mo."
+    "messageformat": "Hindi magka-match ang version ng database mo at ang version na ito ng Tellomi. Siguraduhing buksan ang pinakabagong version ng Tellomi sa computer mo."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Hindi ma-access ang database encryption key dahil nagbago ang OS encryption keyring backend mula {previousBackend} sa {currentBackend}. Nangyayari ito kapag nagbago ang desktop environment, halimbawa gaya ng GNOME at KDE.\n\nMag-switch pabalik sa dating desktop environment."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Hindi ma-access ang database encryption key dahil nagbago ang OS encryption keyring backend mula {previousBackend} at naging {currentBackend}. Nangyayari ito kapag nagbago ang desktop environment, halimbawa ay sa pagitan ng GNOME at KDE.\n\nBumalik sa dating desktop environment o subukang patakbuhin ang Signal gamit ang command line flag --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Hindi ma-access ang database encryption key dahil nagbago ang OS encryption keyring backend mula {previousBackend} at naging {currentBackend}. Nangyayari ito kapag nagbago ang desktop environment, halimbawa ay sa pagitan ng GNOME at KDE.\n\nBumalik sa dating desktop environment o subukang patakbuhin ang Tellomi gamit ang command line flag --password-store=\"{previousBackendFlag}\""
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -183,7 +183,7 @@
     "messageformat": "Ipakita Lahat"
   },
   "icu:appMenuQuit": {
-    "messageformat": "I-close ang Signal App"
+    "messageformat": "I-close ang Tellomi App"
   },
   "icu:editMenuUndo": {
     "messageformat": "Undo"
@@ -507,10 +507,10 @@
     "messageformat": "You marked your Safety Number with {name} as not verified mula sa isa pang device"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Ang safety number na sinusubukan mong i-verify ay nagbago. I-review ang iyong safety number with {name1}. Tandaan, this change could mean na may nagtatangkang i-interrupt ang inyong communication, o maaaring nag-reinstall ng Signal app si {name2}."
+    "messageformat": "Ang safety number na sinusubukan mong i-verify ay nagbago. I-review ang iyong safety number with {name1}. Tandaan, this change could mean na may nagtatangkang i-interrupt ang inyong communication, o maaaring nag-reinstall ng Tellomi app si {name2}."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Maaaring nag-reinstall ng Signal o nagpalit ng devices ang mga sumusunod na user. I-click ang isang recipient para ma-confirm ang kanyang bagong safety number. Ito ay optional."
+    "messageformat": "Maaaring nag-reinstall ng Tellomi o nagpalit ng devices ang mga sumusunod na user. I-click ang isang recipient para ma-confirm ang kanyang bagong safety number. Ito ay optional."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "I-send ang pending messages"
@@ -519,7 +519,7 @@
     "messageformat": "I-review"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Mayroon kang {count,number} connection na maaaring nag-reinstall ng Signal o nagpalit ng devices. Pwede mong i-review ang kanyang safety numbers bago mag-send ng message.} other {Mayroon kang {count,number} connections na maaaring nag-reinstall ng Signal o nagpalit ng devices. Pwede mong i-review ang kanilang safety numbers bago mag-send ng message.}}"
+    "messageformat": "{count, plural, one {Mayroon kang {count,number} connection na maaaring nag-reinstall ng Tellomi o nagpalit ng devices. Pwede mong i-review ang kanyang safety numbers bago mag-send ng message.} other {Mayroon kang {count,number} connections na maaaring nag-reinstall ng Tellomi o nagpalit ng devices. Pwede mong i-review ang kanilang safety numbers bago mag-send ng message.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Na-review na ang lahat ng connections, i-tap ang send para magpatuloy."
@@ -627,16 +627,16 @@
     "messageformat": "Ang encryption ay auto-verified para sa chat na ito "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "Para sa mga taong naka-connect mo via phone number, automatic na makukumpirma ng Signal kung ang connection ay secure sa pamamagitan ng prosesong tinatawag na key transparency. Para sa karagdagang security, i-verify ang end-to-end encryption manually sa pamamagitan ng pagkumpara ng numbers sa previous screen o sa pag-scan ng code sa kanilang device."
+    "messageformat": "Para sa mga taong naka-connect mo via phone number, automatic na makukumpirma ng Tellomi kung ang connection ay secure sa pamamagitan ng prosesong tinatawag na key transparency. Para sa karagdagang security, i-verify ang end-to-end encryption manually sa pamamagitan ng pagkumpara ng numbers sa previous screen o sa pag-scan ng code sa kanilang device."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "Ang auto-verification ay hindi available para sa chat na ito"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "Hindi na automatic na mave-verify ng Signal ang encryption para sa chat na ito. Ito ay maaaring dahil binago ni {name} ang kanyang phone number o dahil sa kanyang phone number privacy settings. I-verify ang end-to-end encryption manually sa pamamagitan ng pagkumpara ng numbers sa previous screen o sa pag-scan ng code sa kanilang device."
+    "messageformat": "Hindi na automatic na mave-verify ng Tellomi ang encryption para sa chat na ito. Ito ay maaaring dahil binago ni {name} ang kanyang phone number o dahil sa kanyang phone number privacy settings. I-verify ang end-to-end encryption manually sa pamamagitan ng pagkumpara ng numbers sa previous screen o sa pag-scan ng code sa kanilang device."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "Kaya lamang i-verify automatically ng Signal ang encryption sa chats kapag connected ka sa isang tao gamit ang kanilang phone number. Kung ang chat ay nagsimula sa isang username o sa isang group in common, i-verify ang end-to-end encryption sa pamamagitan ng pagkumpara ng numbers sa previous screen o sa pag-scan ng code sa kanilang device."
+    "messageformat": "Kaya lamang i-verify automatically ng Tellomi ang encryption sa chats kapag connected ka sa isang tao gamit ang kanilang phone number. Kung ang chat ay nagsimula sa isang username o sa isang group in common, i-verify ang end-to-end encryption sa pamamagitan ng pagkumpara ng numbers sa previous screen o sa pag-scan ng code sa kanilang device."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "Okay"
@@ -675,10 +675,10 @@
     "messageformat": "Ayaw ko, salamat na lang"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "Kaya nang i-auto verify ng Signal ang key encryption"
+    "messageformat": "Kaya nang i-auto verify ng Tellomi ang key encryption"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "Para sa contacts na naka-connect sa 'yo via phone number, automatic na makukumpirma ng Signal kung ang connection ay secure sa pamamagitan ng prosesong tinatawag na key transparency. Para sa karagdagang security, maaari mo pa ring i-verify ang connections manually gamit ang QR code o sa pagkumpara ng safety number."
+    "messageformat": "Para sa contacts na naka-connect sa 'yo via phone number, automatic na makukumpirma ng Tellomi kung ang connection ay secure sa pamamagitan ng prosesong tinatawag na key transparency. Para sa karagdagang security, maaari mo pa ring i-verify ang connections manually gamit ang QR code o sa pagkumpara ng safety number."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "Magpatuloy"
@@ -837,7 +837,7 @@
     "messageformat": "Sticker pack creator"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "About Signal Desktop"
+    "messageformat": "About Tellomi Desktop"
   },
   "icu:screenShareWindow": {
     "messageformat": "Sharing screen"
@@ -855,7 +855,7 @@
     "messageformat": "Quit"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "Tellomi Desktop"
   },
   "icu:search": {
     "messageformat": "Maghanap"
@@ -909,7 +909,7 @@
     "messageformat": "Hanapin gamit ang phone number"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Welcome sa Signal"
+    "messageformat": "Welcome sa Tellomi"
   },
   "icu:whatsNew": {
     "messageformat": "See {whatsNew} in this update"
@@ -999,13 +999,13 @@
     "messageformat": "Ikaw"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Para mag-send ng audio message, bigyan ang Signal Desktop ng access sa iyong microphone."
+    "messageformat": "Para mag-send ng audio message, bigyan ang Tellomi Desktop ng access sa iyong microphone."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Para makapag-call, i-allow ang Signal Desktop na magkaroon ng access sa iyong microphone."
+    "messageformat": "Para makapag-call, i-allow ang Tellomi Desktop na magkaroon ng access sa iyong microphone."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Para makapag-video call, i-allow ang Signal Desktop na magkaroon ng access sa iyong camera."
+    "messageformat": "Para makapag-video call, i-allow ang Tellomi Desktop na magkaroon ng access sa iyong camera."
   },
   "icu:allowAccess": {
     "messageformat": "Allow Access"
@@ -1029,13 +1029,13 @@
     "messageformat": "I-mute"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Hindi ma-update ang Signal. <retryUpdateButton>Subukan ulit ang pag-update</retryUpdateButton> o pumunta ang {url} para i-install ito manually. Pagkatapos, <contactSupportLink>kontakin ang support</contactSupportLink> tungkol sa problemang ito"
+    "messageformat": "Hindi ma-update ang Tellomi. <retryUpdateButton>Subukan ulit ang pag-update</retryUpdateButton> o pumunta ang {url} para i-install ito manually. Pagkatapos, <contactSupportLink>kontakin ang support</contactSupportLink> tungkol sa problemang ito"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Hindi ma-update ang Signal. Puntahan ang {url} para i-install ito manually. Pagkatapos, <contactSupportLink>kontakin ang support</contactSupportLink> tungkol sa problemang ito"
+    "messageformat": "Hindi ma-update ang Tellomi. Puntahan ang {url} para i-install ito manually. Pagkatapos, <contactSupportLink>kontakin ang support</contactSupportLink> tungkol sa problemang ito"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Ang Signal Desktop ay maaaring nasa macOS quarantine, at hindi pwedeng mag-auto update. Subukang i-move ang {app} sa {folder} with Finder."
+    "messageformat": "Ang Tellomi Desktop ay maaaring nasa macOS quarantine, at hindi pwedeng mag-auto update. Subukang i-move ang {app} sa {folder} with Finder."
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -1080,7 +1080,7 @@
     "messageformat": "Buburahin ang message mula sa device na ito."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Mabubura ang message na ito sa lahat ng nasa chat kung sila'y nasa recent version ng Signal. Makikita nilang nag-delete ka ng message."
+    "messageformat": "Mabubura ang message na ito sa lahat ng nasa chat kung sila'y nasa recent version ng Tellomi. Makikita nilang nag-delete ka ng message."
   },
   "icu:from": {
     "messageformat": "From"
@@ -1122,7 +1122,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "\"{title}\" ang profile name na inilagay ng taong ito para sa sarili n'ya sa Signal."
+    "messageformat": "\"{title}\" ang profile name na inilagay ng taong ito para sa sarili n'ya sa Tellomi."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Beripikado"
@@ -1137,7 +1137,7 @@
     "messageformat": "Walang direktang message kay {name}"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal Connection"
+    "messageformat": "Tellomi Connection"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "Si {name} ay nasa system contacts mo"
@@ -1449,7 +1449,7 @@
     "messageformat": "Matuto pa"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Ang Signal ay gumagamit ng end-to-end encryption at kinakailangan mong i-refesh ang iyong chat session minsan. Hindi maaapektuhan ang security ng chats mo pero baka may ma-miss kang message mula sa contact na ito kaya pwede mo siyang sabihan na i-resend ito."
+    "messageformat": "Ang Tellomi ay gumagamit ng end-to-end encryption at kinakailangan mong i-refesh ang iyong chat session minsan. Hindi maaapektuhan ang security ng chats mo pero baka may ma-miss kang message mula sa contact na ito kaya pwede mo siyang sabihan na i-resend ito."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Makipag-ugnayan sa Suporta"
@@ -1476,7 +1476,7 @@
     "messageformat": "Pinalitan ni {sender} ang kanyang phone number"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Sumali ang kontak sa Signal"
+    "messageformat": "Sumali ang kontak sa Tellomi"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "Magkaparehong account ang {obsoleteConversationTitle} at {conversationTitle}. Nandito ang inyong message history para sa parehong chats."
@@ -1566,7 +1566,7 @@
     "messageformat": "Hindi ma-download ang media"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "I-check ang desktop mo at ang internet connection ng iyong phone. Buksan ang Signal sa phone mo, at subukang mag-download ulit."
+    "messageformat": "I-check ang desktop mo at ang internet connection ng iyong phone. Buksan ang Tellomi sa phone mo, at subukang mag-download ulit."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Ang media na ito ay hindi na available sa phone mo at hindi na maaaring ma-download."
@@ -1587,10 +1587,10 @@
     "messageformat": "Matuto pa"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "I-scan ang code na ito sa Signal app on your phone"
+    "messageformat": "I-scan ang code na ito sa Tellomi app on your phone"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "I-open ang Signal sa iyong phone"
+    "messageformat": "I-open ang Tellomi sa iyong phone"
   },
   "icu:Install__instructions__2": {
     "messageformat": "I-tap ang {settings}, pagkatapos ay i-tap naman ang {linkedDevices}"
@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>Nagkaroon ng hindi inaasahang error.</paragraph><paragraph>Subukan ulit.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Hindi ma-link ng Signal ang device na ito gamit ang iyong current network."
+    "messageformat": "Hindi ma-link ng Tellomi ang device na ito gamit ang iyong current network."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Subukang muli"
@@ -1626,7 +1626,7 @@
     "messageformat": "Gusto mo bang i-burahin ang lahat ng data?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "Sinusubukan mong mag-link ng ibang Signal account sa desktop na ito. Kung magpapatuloy ka, mabubura ang lahat ng data na kasalukuyang nasa Signal Desktop."
+    "messageformat": "Sinusubukan mong mag-link ng ibang Tellomi account sa desktop na ito. Kung magpapatuloy ka, mabubura ang lahat ng data na kasalukuyang nasa Tellomi Desktop."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "Magpatuloy"
@@ -1641,7 +1641,7 @@
     "messageformat": "Device name"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Para palitan ang pangalan ng device na ito, buksan ang Signal sa phone mo at pumunta sa Settings > Linked devices"
+    "messageformat": "Para palitan ang pangalan ng device na ito, buksan ang Tellomi sa phone mo at pumunta sa Settings > Linked devices"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Skin tone ng emoji"
@@ -1833,7 +1833,7 @@
     "messageformat": "Automatic Key Verification"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "Kapag naka-enable ito, susubukan ng Signal na i-verify automatically ang encryption ng 1:1 chats."
+    "messageformat": "Kapag naka-enable ito, susubukan ng Tellomi na i-verify automatically ang encryption ng 1:1 chats."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "Matuto pa"
@@ -1851,7 +1851,7 @@
     "messageformat": "Paumanhin, masyado ka nang maraming devices na naka-link. Subukang magtanggal ng ilan."
   },
   "icu:installTooOld": {
-    "messageformat": "I-update ang Signal sa device na ito para ma-link ang iyong phone."
+    "messageformat": "I-update ang Tellomi sa device na ito para ma-link ang iyong phone."
   },
   "icu:installErrorHeader": {
     "messageformat": "Nagkaroon ng problema!"
@@ -1902,7 +1902,7 @@
     "messageformat": "Hindi na valid ang call link na ito."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Tawag sa Signal"
+    "messageformat": "Tawag sa Tellomi"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Hindi mabura ang link. I-check ang iyong connection at subukan ulit."
@@ -2076,16 +2076,16 @@
     "messageformat": "{count, plural, one {{count,number} tao ang nasa call na ito} other {{count,number} tao ang nasa call na ito}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Tatawagan ng Signal si {person}"
+    "messageformat": "Tatawagan ng Tellomi si {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Tatawagan ng Signal sila {first} at {second}"
+    "messageformat": "Tatawagan ng Tellomi sila {first} at {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
     "messageformat": "SIgnal will ring {first}, {second}, and {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Tatawagan ng Signal sila {first}, {second}, at {others,number} other} other {Tatawagan ng Signal sila {first}, {second}, at {others,number} others}}"
+    "messageformat": "{others, plural, one {Tatawagan ng Tellomi sila {first}, {second}, at {others,number} other} other {Tatawagan ng Tellomi sila {first}, {second}, at {others,number} others}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "Si {person} ay ino-notify"
@@ -2139,13 +2139,13 @@
     "messageformat": "Nagre-reconnect…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Nawala ang connection mo. Nagre-reconnect ang Signal."
+    "messageformat": "Nawala ang connection mo. Nagre-reconnect ang Tellomi."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal is sharing {window}."
+    "messageformat": "Tellomi is sharing {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Active ang Signal screen sharing"
+    "messageformat": "Active ang Tellomi screen sharing"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Nagre-reconnect…"
@@ -2175,7 +2175,7 @@
     "messageformat": "I-click ang lock icon sa bottom left at i-enter ang computer's password."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Sa kanan, i-check ang box sa tabi ng Signal. Kung hindi mo makita ang Signal sa list, i-click ang + para ma-add ito."
+    "messageformat": "Sa kanan, i-check ang box sa tabi ng Tellomi. Kung hindi mo makita ang Tellomi sa list, i-click ang + para ma-add ito."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Open System Preferences"
@@ -2184,10 +2184,10 @@
     "messageformat": "I-dismiss"
   },
   "icu:alwaysRelayCallsDescription": {
-    "messageformat": "Laging padaain ang tawag sa server ng Signal"
+    "messageformat": "Laging padaain ang tawag sa server ng Tellomi"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Padaanin sa server ng Signal ang lahat ng tawag upang maiwasang mailantad ang iyong IP address sa kontak mo. Bababa ang kalidad ng tawag kapag naka-enable."
+    "messageformat": "Padaanin sa server ng Tellomi ang lahat ng tawag upang maiwasang mailantad ang iyong IP address sa kontak mo. Bababa ang kalidad ng tawag kapag naka-enable."
   },
   "icu:permissions": {
     "messageformat": "Permissions"
@@ -2205,10 +2205,10 @@
     "messageformat": "Ipakita ang text formatting popover kapag may piniling text"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Spell check will be enabled pagkatapos i-restart ang Signal."
+    "messageformat": "Spell check will be enabled pagkatapos i-restart ang Tellomi."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Spell check will be disabled pagkatapos i-restart ang Signal."
+    "messageformat": "Spell check will be disabled pagkatapos i-restart ang Tellomi."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Minimize to system tray"
@@ -2232,7 +2232,7 @@
     "messageformat": "Gusto mo bang i-burahin ang lahat ng data?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Gusto mo bang burahin ang lahat ng data at messages mula sa version na ito ng Signal Desktop? Hindi mabubura ang iyong Signal account at data nito sa phone mo o ibang linked devices."
+    "messageformat": "Gusto mo bang burahin ang lahat ng data at messages mula sa version na ito ng Tellomi Desktop? Hindi mabubura ang iyong Tellomi account at data nito sa phone mo o ibang linked devices."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Dini-disconnect at binubura ang lahat ng data…"
@@ -2241,7 +2241,7 @@
     "messageformat": "Burahin ang account"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "Buburahin nito ang iyong account info, profile, at lahat ng messages mo. Tatanggalin ka rin mula sa lahat ng Signal groups."
+    "messageformat": "Buburahin nito ang iyong account info, profile, at lahat ng messages mo. Tatanggalin ka rin mula sa lahat ng Tellomi groups."
   },
   "icu:deleteAccountButton": {
     "messageformat": "Burahin ang account"
@@ -2250,10 +2250,10 @@
     "messageformat": "Burahin ang Account?"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "Buburahin nito ang iyong account info, profile, at lahat ng messages mo. Tatanggalin ka rin mula sa lahat ng Signal groups. Magsasara ang app kapag natapos na ang prosesong ito."
+    "messageformat": "Buburahin nito ang iyong account info, profile, at lahat ng messages mo. Tatanggalin ka rin mula sa lahat ng Tellomi groups. Magsasara ang app kapag natapos na ang prosesong ito."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Mayroon kang lumang data mula sa lumang installation ng Signal Desktop. Mabubura ito kapag nagpatuloy ka at magsisimula ka ulit sa simula."
+    "messageformat": "Mayroon kang lumang data mula sa lumang installation ng Tellomi Desktop. Mabubura ito kapag nagpatuloy ka at magsisimula ka ulit sa simula."
   },
   "icu:deleteOldData": {
     "messageformat": "Burahin ang Lumang Data"
@@ -2310,7 +2310,7 @@
     "messageformat": "Hindi lahat nabura, i-click para sa detalye"
   },
   "icu:expiredWarning": {
-    "messageformat": "Expired na ang version na ito ng Signal Desktop. Mangyaring mag-upgrade sa pinakabagong version upang magpatuloy na makapagpadala ng mensahe."
+    "messageformat": "Expired na ang version na ito ng Tellomi Desktop. Mangyaring mag-upgrade sa pinakabagong version upang magpatuloy na makapagpadala ng mensahe."
   },
   "icu:upgrade": {
     "messageformat": "I-click para pumunta sa signal.org/download"
@@ -2322,7 +2322,7 @@
     "messageformat": "Mag-import ng contacts"
   },
   "icu:syncExplanation": {
-    "messageformat": "I-import ang lahat ng Signal groups at contacts mula sa iyong cellphone."
+    "messageformat": "I-import ang lahat ng Tellomi groups at contacts mula sa iyong cellphone."
   },
   "icu:syncNow": {
     "messageformat": "Import now"
@@ -2355,7 +2355,7 @@
     "messageformat": "Kahapon {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Maaaring may paparating na message na hindi ma-process ng Signal."
+    "messageformat": "Maaaring may paparating na message na hindi ma-process ng Tellomi."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Masyadong mahaba ang message body."
@@ -2520,13 +2520,13 @@
     "messageformat": "May 3 oras ka lang para i-edit ang message pagkatapos mo itong i-send."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "Si {atUsername} ay hindi isang Signal user. Siguraduhing nailagay mo ang kumpletong username."
+    "messageformat": "Si {atUsername} ay hindi isang Tellomi user. Siguraduhing nailagay mo ang kumpletong username."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "Ang {atUsername} ay isang invalid username. Siguraduhing nailagay mo ang kumpletong username na sinundan ng numero."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "User not found. Ang number na \"{phoneNumber}\" ay hindi isang Signal user."
+    "messageformat": "User not found. Ang number na \"{phoneNumber}\" ay hindi isang Tellomi user."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "User not found. Ang number na \"{phoneNumber}\" ay hindi valid phone number."
@@ -2547,13 +2547,13 @@
     "messageformat": "Maximum group size reached"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Ang Signal groups ay may maximum na {max,number} members."
+    "messageformat": "Ang Tellomi groups ay may maximum na {max,number} members."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Recommended member limit reached"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal groups perform best with {max,number} members or less. Ang pagdagdag ng mas maraming members ay maaaring magdulot ng delay sa pag-send at pag-receive ng messages."
+    "messageformat": "Tellomi groups perform best with {max,number} members or less. Ang pagdagdag ng mas maraming members ay maaaring magdulot ng delay sa pag-send at pag-receive ng messages."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Bigyan ng pangalan ang group na ito"
@@ -2583,13 +2583,13 @@
     "messageformat": "Failed to update the group. I-check ang iyong internet connection at subukan ulit."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "I-click para ma-relink ang Signal Desktop sa iyong mobile device to continue messaging."
+    "messageformat": "I-click para ma-relink ang Tellomi Desktop sa iyong mobile device to continue messaging."
   },
   "icu:unlinked": {
     "messageformat": "Unlinked"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "I-click para mag-register ulit at ituloy ang pag-message. Maaaring na-unregister ang Signal dahil ang iyong registered phone number sa Signal ay nasa ibang device."
+    "messageformat": "I-click para mag-register ulit at ituloy ang pag-message. Maaaring na-unregister ang Tellomi dahil ang iyong registered phone number sa Tellomi ay nasa ibang device."
   },
   "icu:unregistered": {
     "messageformat": "Hindi na registered"
@@ -2601,16 +2601,16 @@
     "messageformat": "Retry update"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Click to restart Signal"
+    "messageformat": "Click to restart Tellomi"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Click to download update"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Hindi ma-update ang Signal. Subukan ulit."
+    "messageformat": "Hindi ma-update ang Tellomi. Subukan ulit."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Restart Signal"
+    "messageformat": "Restart Tellomi"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Ignore update"
@@ -2742,7 +2742,7 @@
     "messageformat": "Masyadong malaki ang ilang attachments para i-display."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Gamitin ang link na ito para sumali sa Signal Call"
+    "messageformat": "Gamitin ang link na ito para sumali sa Tellomi Call"
   },
   "icu:donation--missing": {
     "messageformat": "Hindi makuha ang donation details"
@@ -2823,10 +2823,10 @@
     "messageformat": "Magdagdag ng Stickers"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal Artist Series"
+    "messageformat": "Tellomi Artist Series"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Walang Signal Artist stickers na available"
+    "messageformat": "Walang Tellomi Artist stickers na available"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "Naka-share Sa 'Yo"
@@ -2862,7 +2862,7 @@
     "messageformat": "I-drag para i-reorder ang sticker pack"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "Signal Artist Series sticker packs"
+    "messageformat": "Tellomi Artist Series sticker packs"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "Natanggap na sticker packs"
@@ -3147,19 +3147,19 @@
     "messageformat": "Masyadong mahaba ang message para i-display"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "Nag-send ng message si {contact} that can't be processed or displayed dahil gumagamit siya ng bagong Signal feature."
+    "messageformat": "Nag-send ng message si {contact} that can't be processed or displayed dahil gumagamit siya ng bagong Tellomi feature."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Pwede mong sabihan si {contact} na i-resend ang message na ito now that you are using an updated version of Signal."
+    "messageformat": "Pwede mong sabihan si {contact} na i-resend ang message na ito now that you are using an updated version of Tellomi."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Ang isa sa devices mo ay nag-send ng message na hindi ma-process o ma-display dahil gumagamit siya ng bagong Signal feature."
+    "messageformat": "Ang isa sa devices mo ay nag-send ng message na hindi ma-process o ma-display dahil gumagamit siya ng bagong Tellomi feature."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Future messages like this will be synchronized now dahil gumagamit ka na ng updated version of Signal."
+    "messageformat": "Future messages like this will be synchronized now dahil gumagamit ka na ng updated version of Tellomi."
   },
   "icu:Message--update-signal": {
-    "messageformat": "I-update ang Signal"
+    "messageformat": "I-update ang Tellomi"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Nakita na"
@@ -3426,7 +3426,7 @@
     "messageformat": "Na-mark as unread na ang chat"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "I-set up ang Signal sa iyong phone at desktop para magamit ang Sticker Pack Creator"
+    "messageformat": "I-set up ang Tellomi sa iyong phone at desktop para magamit ang Sticker Pack Creator"
   },
   "icu:Reactions--remove": {
     "messageformat": "Tanggalin ang reaction"
@@ -3444,16 +3444,16 @@
     "messageformat": "Tips Para Sa Kaligtasan"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Huwag sagutin ang chats mula sa Signal"
+    "messageformat": "Huwag sagutin ang chats mula sa Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Ang Signal ay hindi kailanman magme-message tungkol sa registration code, PIN, o recovery key mo. Huwag mag-reply sa chats na nagpapanggap na Signal."
+    "messageformat": "Ang Tellomi ay hindi kailanman magme-message tungkol sa registration code, PIN, o recovery key mo. Huwag mag-reply sa chats na nagpapanggap na Tellomi."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "I-review ang names at photos"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "Hanapin ang \"Hindi verified ang pangalan\" na notice. Ang bawat user ang bahalang gumawa ng sarili nilang profile name dito sa Signal."
+    "messageformat": "Hanapin ang \"Hindi verified ang pangalan\" na notice. Ang bawat user ang bahalang gumawa ng sarili nilang profile name dito sa Tellomi."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "Mag-ingat sa mga scam"
@@ -3462,16 +3462,16 @@
     "messageformat": "Iwasan ang kahina-hinalang messages na sinusubukan kang mag-reply. Mag-ingat sa financial tips at delikadong web links."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Huwag sagutin ang chats mula sa Signal"
+    "messageformat": "Huwag sagutin ang chats mula sa Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Hindi magme-message kailanman ang Signal tungkol sa registration code, PIN, o recover key mo. Huwag mag-reply sa chats na nagpapanggap na Signal o Signal Support. Ang mga ito'y gumagawa ng pekeng chats para subukang i-take over ang account mo."
+    "messageformat": "Hindi magme-message kailanman ang Tellomi tungkol sa registration code, PIN, o recover key mo. Huwag mag-reply sa chats na nagpapanggap na Tellomi o Tellomi Support. Ang mga ito'y gumagawa ng pekeng chats para subukang i-take over ang account mo."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "I-review ang names at photos"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "Hanapin ang \"Hindi verified ang pangalan\" na notice. Ang lahat ay naglalagay ng sarili nilang profile name at photo sa Signal. Kung hindi ka sigurado kung kanino galing ang bagong request, mas maiging balewalain mo ito."
+    "messageformat": "Hanapin ang \"Hindi verified ang pangalan\" na notice. Ang lahat ay naglalagay ng sarili nilang profile name at photo sa Tellomi. Kung hindi ka sigurado kung kanino galing ang bagong request, mas maiging balewalain mo ito."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Mga scam kaugnay ng crypto o pera"
@@ -3552,13 +3552,13 @@
     "messageformat": "Gusto mo ba itong i-report bilang spam?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Aabisuhan ang signal na maaaring nagpapadala ng spam ang taong ito. Hindi nababasa ng Signal ang nilalaman ng anumang mga chat."
+    "messageformat": "Aabisuhan ang signal na maaaring nagpapadala ng spam ang taong ito. Hindi nababasa ng Tellomi ang nilalaman ng anumang mga chat."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Ang Signal ay aabisuhan na ang taong nag-imbita sa iyo sa grupong ito ay maaaring nagpapadala ng spam. Hindi nababasa ng Signal ang nilalaman ng anumang chat."
+    "messageformat": "Ang Tellomi ay aabisuhan na ang taong nag-imbita sa iyo sa grupong ito ay maaaring nagpapadala ng spam. Hindi nababasa ng Tellomi ang nilalaman ng anumang chat."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Ang Signal ay aabisuhan na si {name}, na siyang nag-imbita sa iyo sa grupong ito, ay maaaring nagpapadala ng spam. Hindi nababasa ng Signal ang nilalaman ng anumang chat."
+    "messageformat": "Ang Tellomi ay aabisuhan na si {name}, na siyang nag-imbita sa iyo sa grupong ito, ay maaaring nagpapadala ng spam. Hindi nababasa ng Tellomi ang nilalaman ng anumang chat."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Iulat bilang spam"
@@ -3600,7 +3600,7 @@
     "messageformat": "Tanggapin ang request?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "Tanggapin lang ang requests mula sa mga taong pinagkakatiwalaan mo. <bold>Ang Signal ay hindi kailanman</bold> magme-message sa'yo tungkol sa registration code, PIN, o recovery key mo."
+    "messageformat": "Tanggapin lang ang requests mula sa mga taong pinagkakatiwalaan mo. <bold>Ang Tellomi ay hindi kailanman</bold> magme-message sa'yo tungkol sa registration code, PIN, o recovery key mo."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "Magpatuloy"
@@ -3654,16 +3654,16 @@
     "messageformat": "Hindi verified ang pangalan"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Ito ang opisyal at natatanging chat mula sa Signal"
+    "messageformat": "Ito ang opisyal at natatanging chat mula sa Tellomi"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "Official chat"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Ito ang opisyal at natatanging chat mula sa Signal. Maging updated sa mga balita at release notes."
+    "messageformat": "Ito ang opisyal at natatanging chat mula sa Tellomi. Maging updated sa mga balita at release notes."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Ito ang opisyal at natatanging chat mula sa Signal."
+    "messageformat": "Ito ang opisyal at natatanging chat mula sa Tellomi."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Maging updated sa mga balita at release notes."
@@ -3729,10 +3729,10 @@
     "messageformat": "Unanswered video call"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Tumatakbo pa ang Signal"
+    "messageformat": "Tumatakbo pa ang Tellomi"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Patuloy na tatakbo ang Signal sa notification area. Pwede mo itong baguhin sa Signal settings."
+    "messageformat": "Patuloy na tatakbo ang Tellomi sa notification area. Pwede mo itong baguhin sa Tellomi settings."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Incoming voice call"
@@ -3951,7 +3951,7 @@
     "messageformat": "Kopyahin ang call link"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "I-share ang call link sa Signal"
+    "messageformat": "I-share ang call link sa Tellomi"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "Gusto mo bang tanggalin si {name} mula sa tawag?"
@@ -4113,7 +4113,7 @@
     "messageformat": "Unknown link version"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Ang link na ito ay hindi supported nitong Signal Desktop version ."
+    "messageformat": "Ang link na ito ay hindi supported nitong Tellomi Desktop version ."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Hindi Maka-join sa Group"
@@ -4722,7 +4722,7 @@
     "messageformat": "Mag-donate sa Signal"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "Sinusuportahan ni {name} ang Signal"
+    "messageformat": "Sinusuportahan ni {name} ang Tellomi"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "Sini-sync ang messages"
@@ -4839,7 +4839,7 @@
     "messageformat": "Kinakailangang hakbang"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Kailangan mong buksan ang Signal sa phone mo para patuloy mong magamit ang account na ito. Kung hindi mo bubuksan ang Signal sa phone mo, mabubura ang iyong account. <learnMoreLink>Matuto pa</learnMoreLink>"
+    "messageformat": "Kailangan mong buksan ang Tellomi sa phone mo para patuloy mong magamit ang account na ito. Kung hindi mo bubuksan ang Tellomi sa phone mo, mabubura ang iyong account. <learnMoreLink>Matuto pa</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Hindi ma-restore ang media"
@@ -4863,10 +4863,10 @@
     "messageformat": "Magdagdag ng attachment o poll"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Ang taong ito'y hindi gumagamit ng Signal"
+    "messageformat": "Ang taong ito'y hindi gumagamit ng Tellomi"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Hindi suportado ng Signal Desktop ang pag-message sa non-Signal contacts. Sabihan ang taong ito na mag-install ng Signal para sa mas secure na messaging experience."
+    "messageformat": "Hindi suportado ng Tellomi Desktop ang pag-message sa non-Tellomi contacts. Sabihan ang taong ito na mag-install ng Tellomi para sa mas secure na messaging experience."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Checking contact's registration status"
@@ -5127,10 +5127,10 @@
     "messageformat": "I-unblock"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "Ino-notify ang Signal na maaaring nagpapadala ng spam ang taong ito. Hindi nababasa ng Signal ang nilalaman ng anumang chat."
+    "messageformat": "Ino-notify ang Tellomi na maaaring nagpapadala ng spam ang taong ito. Hindi nababasa ng Tellomi ang nilalaman ng anumang chat."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "Aabisuhan ang Signal na ang taong nag-invite sa 'yo sa group na ito ay maaaring nagpapadala ng spam. Hindi nababasa ng Signal ang nilalaman ng anumang chats."
+    "messageformat": "Aabisuhan ang Tellomi na ang taong nag-invite sa 'yo sa group na ito ay maaaring nagpapadala ng spam. Hindi nababasa ng Tellomi ang nilalaman ng anumang chats."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "I-report  bilang spam"
@@ -5178,7 +5178,7 @@
     "messageformat": "Nickname"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Ang nicknames at notes ay nakatago sa Signal at end-to-end encrypted. Ikaw lang ang makakakita nito."
+    "messageformat": "Ang nicknames at notes ay nakatago sa Tellomi at end-to-end encrypted. Ikaw lang ang makakakita nito."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "First name"
@@ -5431,7 +5431,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {Makikita ng group member na may pinakabagong version ng Signal na binura mo ang message na ito.} other {Makikita ng group members na may pinakabagong versions ng Signal na binura mo ang message na ito.}}"
+    "messageformat": "{count, plural, one {Makikita ng group member na may pinakabagong version ng Tellomi na binura mo ang message na ito.} other {Makikita ng group members na may pinakabagong versions ng Tellomi na binura mo ang message na ito.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Burahin"
@@ -5557,7 +5557,7 @@
     "messageformat": "Hindi ma-forward ang messages na walang laman o binura na"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Gamitin ang link na ito para sumali sa Signal call: {url}"
+    "messageformat": "Gamitin ang link na ito para sumali sa Tellomi call: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "I-review ang requests nang maigi"
@@ -5566,7 +5566,7 @@
     "messageformat": "Tips Para Sa Kaligtasan"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Tingnan nang maigi ang requests. Nakakita ang Signal ng isa pang contact na may kaparehong pangalan. <reviewRequestLink>Tingnan ang request</reviewRequestLink>"
+    "messageformat": "Tingnan nang maigi ang requests. Nakakita ang Tellomi ng isa pang contact na may kaparehong pangalan. <reviewRequestLink>Tingnan ang request</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} group member ang may magkaparehong pangalan. <reviewRequestLink>I-review ang member</reviewRequestLink>} other {{count,number} group members ang may magkaparehong pangalan. <reviewRequestLink>I-review ang members</reviewRequestLink>}}"
@@ -5599,7 +5599,7 @@
     "messageformat": "Walang ibang common groups"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal Connection"
+    "messageformat": "Tellomi Connection"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Recently changed their profile name from {oldName} to {newName}"
@@ -5617,7 +5617,7 @@
     "messageformat": "I-verify to continue messaging"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Para makaiwas sa spam dito sa Signal, kumpletuhin ang verification."
+    "messageformat": "Para makaiwas sa spam dito sa Tellomi, kumpletuhin ang verification."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Pagkatapos mag-verify, pwede ka nang magpatuloy sa messaging. Ang paused messages ay automatic na mase-send."
@@ -6001,7 +6001,7 @@
     "messageformat": "Nais mo bang balewalain ang mga pagbabagong ito?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Gusto mo bang isara ang Signal at tapusin ang call?"
+    "messageformat": "Gusto mo bang isara ang Tellomi at tapusin ang call?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Hindi na Muna"
@@ -6167,10 +6167,10 @@
     "messageformat": "Sistema"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "Tellomi Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "Ginagamit ang Signal Login mo para i-recover at i-restore ang iyong account. Ingatan ang keys na ito sa password manager na pinagkakatiwalaan mo. <learnMoreLink>Matuto pa tungkol dito</learnMoreLink>."
+    "messageformat": "Ginagamit ang Tellomi Login mo para i-recover at i-restore ang iyong account. Ingatan ang keys na ito sa password manager na pinagkakatiwalaan mo. <learnMoreLink>Matuto pa tungkol dito</learnMoreLink>."
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "Matuto pa"
@@ -6191,7 +6191,7 @@
     "messageformat": "Ito ay isang linked device"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "Para i-manage ang account settings mo, buksan ang Signal sa iyong primary device."
+    "messageformat": "Para i-manage ang account settings mo, buksan ang Tellomi sa iyong primary device."
   },
   "icu:Preferences--zoom": {
     "messageformat": "Zoom level"
@@ -6224,7 +6224,7 @@
     "messageformat": "Advanced"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signal PIN"
+    "messageformat": "Tellomi PIN"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "PIN reminders"
@@ -6353,7 +6353,7 @@
     "messageformat": "Hindi ma-export ang chat history"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Hindi ma-export ang chat history mo dahil ang Signal ay walang permiso para magsulat ng files sa disk. Subukang baguhin ang permissions ng iyong disk o i-update ang system settings mo at subukan ulit mag-export."
+    "messageformat": "Hindi ma-export ang chat history mo dahil ang Tellomi ay walang permiso para magsulat ng files sa disk. Subukang baguhin ang permissions ng iyong disk o i-update ang system settings mo at subukan ulit mag-export."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Ine-export ang backup"
@@ -6368,7 +6368,7 @@
     "messageformat": "Ilipat ang backup folder mo sa storage ng iyong phone"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Mag-install ng bagong kopya ng Signal sa phone mo"
+    "messageformat": "Mag-install ng bagong kopya ng Tellomi sa phone mo"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "I-tap ang \"Restore o Transfer\" at piliin ang \"Sa Backup ng Device\""
@@ -6635,13 +6635,13 @@
     "messageformat": "Binlock noong {blockedAt}"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signal Secure Backups"
+    "messageformat": "Tellomi Secure Backups"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automatic backups na may secure end-to-end encrypted storage service ng Signal. Simulan sa phone mo. <learnMoreLink>Matuto pa</learnMoreLink>."
+    "messageformat": "Automatic backups na may secure end-to-end encrypted storage service ng Tellomi. Simulan sa phone mo. <learnMoreLink>Matuto pa</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "I-back up ang message history mo para hindi mawala ang data mo kapag nagpalit ka ng phone o ni-reinstall mo ang Signal."
+    "messageformat": "I-back up ang message history mo para hindi mawala ang data mo kapag nagpalit ka ng phone o ni-reinstall mo ang Tellomi."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Backup details"
@@ -6671,13 +6671,13 @@
     "messageformat": "Kinancel ang subscription"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Maaari mong i-manage o kanselahin ang iyong subscription sa Signal Secure Backups sa phone mo."
+    "messageformat": "Maaari mong i-manage o kanselahin ang iyong subscription sa Tellomi Secure Backups sa phone mo."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Maaari mong i-manage o i-upgrade ang Signal Secure Backups sa phone mo."
+    "messageformat": "Maaari mong i-manage o i-upgrade ang Tellomi Secure Backups sa phone mo."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Maaari mong i-manage at i-renew ang iyong Signal Secure Backups subscription sa phone mo."
+    "messageformat": "Maaari mong i-manage at i-renew ang iyong Tellomi Secure Backups subscription sa phone mo."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Huling backup"
@@ -6695,7 +6695,7 @@
     "messageformat": "Gumawa ng isang end-to-end encrypted backup na pwede mong i-restore sa phone mo. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Para mag-restore ng backup, mag-install ng bagong kopya ng Signal sa phone mo. Buksan ang app at i-tap ang &quot;Restore or transfer.&quot; <learnMoreLink>Matuto pa.</learnMoreLink>"
+    "messageformat": "Para mag-restore ng backup, mag-install ng bagong kopya ng Tellomi sa phone mo. Buksan ang app at i-tap ang &quot;Restore or transfer.&quot; <learnMoreLink>Matuto pa.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Pumili ng folder"
@@ -6731,7 +6731,7 @@
     "messageformat": "Ang iyong recovery key"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "Kailangan ang key na ito para ma-recover mo ang iyong account at data. Ingatan ito sa isang ligtas na lugar at huwag itong i-share sa kahit na sino. Hindi ka ime-message ng Signal para makuha ang iyong recovery key. <learnMoreLink>Matuto pa.</learnMoreLink>"
+    "messageformat": "Kailangan ang key na ito para ma-recover mo ang iyong account at data. Ingatan ito sa isang ligtas na lugar at huwag itong i-share sa kahit na sino. Hindi ka ime-message ng Tellomi para makuha ang iyong recovery key. <learnMoreLink>Matuto pa.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "Huwag i-share ang recovery key"
@@ -6746,7 +6746,7 @@
     "messageformat": "Huwag i-share ang key"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Huwag i-share ang iyong recovery key sa kahit kanino. Aangkinin nila ang account mo. <strong>Hindi ka ime-message ng Signal</strong> para makuha ang iyong recovery key. Huwag mag-reply sa chats na nagpapanggap na Signal o Signal Support. <learnMoreLink>Matuto pa.</learnMoreLink>"
+    "messageformat": "Huwag i-share ang iyong recovery key sa kahit kanino. Aangkinin nila ang account mo. <strong>Hindi ka ime-message ng Tellomi</strong> para makuha ang iyong recovery key. Huwag mag-reply sa chats na nagpapanggap na Tellomi o Tellomi Support. <learnMoreLink>Matuto pa.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Kumpirmahin ang iyong recovery key"
@@ -6758,7 +6758,7 @@
     "messageformat": "Panatilihing ligtas ang iyong key"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Hindi ka matutulungan ng Signal na i-restore ang backup mo kapag nawala mo ang iyong key. Ilagay ito sa ligtas na lugar, at huwag itong i-share sa iba."
+    "messageformat": "Hindi ka matutulungan ng Tellomi na i-restore ang backup mo kapag nawala mo ang iyong key. Ilagay ito sa ligtas na lugar, at huwag itong i-share sa iba."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Magpatuloy"
@@ -6809,7 +6809,7 @@
     "messageformat": "Kinakailangan ng authentication para i-enable ang backups."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "Hindi magawa ang action na ito dahil failed ang system authentication. Subukan ulit o buksan ang Signal app sa mobile device mo at pumunta sa Backup Settings para makita ang iyong recovery key."
+    "messageformat": "Hindi magawa ang action na ito dahil failed ang system authentication. Subukan ulit o buksan ang Tellomi app sa mobile device mo at pumunta sa Backup Settings para makita ang iyong recovery key."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "Nagkaroon ng error habang hinihingi ang system authentication para sa action na ito."
@@ -6839,7 +6839,7 @@
     "messageformat": "Phone Number"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Piliin kung sinong pwedeng makakita ng phone number mo at kung sinong pwedeng kumontak sa 'yo sa Signal gamit ito."
+    "messageformat": "Piliin kung sinong pwedeng makakita ng phone number mo at kung sinong pwedeng kumontak sa 'yo sa Tellomi gamit ito."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Baguhin…"
@@ -6869,10 +6869,10 @@
     "messageformat": "Sinong makakahanap sa 'kin gamit ang number ko"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Makikita ka sa Signal at pwede kang i-chat ng sinumang mayroong phone number mo."
+    "messageformat": "Makikita ka sa Tellomi at pwede kang i-chat ng sinumang mayroong phone number mo."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Walang makakakita na nasa Signal ka maliban sa mga taong minessage o naka-chat mo."
+    "messageformat": "Walang makakakita na nasa Tellomi ka maliban sa mga taong minessage o naka-chat mo."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Lahat"
@@ -6884,7 +6884,7 @@
     "messageformat": "Sigurado ka ba?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Magiging mas mahirap para sa iba na hanapin ka sa Signal kapag ginawa mong \"{nobodyLabel}\" ang \"{settingTitle}\"."
+    "messageformat": "Magiging mas mahirap para sa iba na hanapin ka sa Tellomi kapag ginawa mong \"{nobodyLabel}\" ang \"{settingTitle}\"."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Messaging"
@@ -6947,7 +6947,7 @@
     "messageformat": "I-set"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "I-restart ang Signal para i-apply"
+    "messageformat": "I-restart ang Tellomi para i-apply"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Para mabago ang wika, kailangang mag-restart ng app na ito."
@@ -6962,13 +6962,13 @@
     "messageformat": "Seguridad ng screen"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Pigilan ang pag-screenshot sa Signal sa computer na ito para sa karagdagang privacy."
+    "messageformat": "Pigilan ang pag-screenshot sa Tellomi sa computer na ito para sa karagdagang privacy."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "I-disable ang screen security?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Kung naka-disable ito, maaari nitong payagan ang Microsoft Windows na kumuha ng screenshots ng Signal at gamitin ang mga ito para sa mga feature na maaaring hindi pribado."
+    "messageformat": "Kung naka-disable ito, maaari nitong payagan ang Microsoft Windows na kumuha ng screenshots ng Tellomi at gamitin ang mga ito para sa mga feature na maaaring hindi pribado."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "I-disable"
@@ -6989,25 +6989,25 @@
     "messageformat": "I-click para pumunta sa App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "I-open ang Signal sa iyong phone"
+    "messageformat": "I-open ang Tellomi sa iyong phone"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Mabubura na ang account mo kapag hindi mo binuksan ang Signal app sa phone mo. Mawawala ang message na ito kung nagawa mo ito successfully. <learnMoreLink>Matuto pa</learnMoreLink>"
+    "messageformat": "Mabubura na ang account mo kapag hindi mo binuksan ang Tellomi app sa phone mo. Mawawala ang message na ito kung nagawa mo ito successfully. <learnMoreLink>Matuto pa</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Buksan ang Signal sa phone mo para mapanatiling active ang iyong account"
+    "messageformat": "Buksan ang Tellomi sa phone mo para mapanatiling active ang iyong account"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Matuto pa"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Nakakaranas ng mga teknikal na problema ang Signal. Nagsisikap kaming ibalik ang serbisyo sa lalong madaling panahon."
+    "messageformat": "Nakakaranas ng mga teknikal na problema ang Tellomi. Nagsisikap kaming ibalik ang serbisyo sa lalong madaling panahon."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "May Required na Update"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Para makumpleto ang pag-sync sa messages mo, i-update na ang Signal desktop."
+    "messageformat": "Para makumpleto ang pag-sync sa messages mo, i-update na ang Tellomi desktop."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "I-update"
@@ -7016,19 +7016,19 @@
     "messageformat": "May Required na Update"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Para patuloy na magamit ang Signal, mag-update sa latest version nito."
+    "messageformat": "Para patuloy na magamit ang Tellomi, mag-update sa latest version nito."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "I-download {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "I-restart ang Signal para ma-install ang update."
+    "messageformat": "I-restart ang Tellomi para ma-install ang update."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Hindi na-update ng Signal Desktop, pero may bagong version na available. Pumunta sa {downloadUrl} at i-install ang bagong version manually, pagkatapos ay kontakin ang support o mag-file ng bug tungkol dito."
+    "messageformat": "Hindi na-update ng Tellomi Desktop, pero may bagong version na available. Pumunta sa {downloadUrl} at i-install ang bagong version manually, pagkatapos ay kontakin ang support o mag-file ng bug tungkol dito."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Signal Logo"
+    "messageformat": "Tellomi Logo"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "Bumalik"
@@ -7064,7 +7064,7 @@
     "messageformat": "I-verify na tao ka para magpatuloy"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "Para mapigilan ang spam sa Signal, kumpletuhin ang verification. Pagkatapos mag-verify, maaari mo nang ituloy ang pag-register."
+    "messageformat": "Para mapigilan ang spam sa Tellomi, kumpletuhin ang verification. Pagkatapos mag-verify, maaari mo nang ituloy ang pag-register."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "Subukan ulit ang verification"
@@ -7304,7 +7304,7 @@
     "messageformat": "Hindi tama ang PIN"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "Naubusan ka na ng PIN guesses, pero maaari mo pa ring ma-access ang iyong Signal account sa pamamagitan ng paggawa ng bagong PIN. Para sa privacy at security mo, ang iyong account ay maibabalik nang walang anumang saved profile information o settings."
+    "messageformat": "Naubusan ka na ng PIN guesses, pero maaari mo pa ring ma-access ang iyong Tellomi account sa pamamagitan ng paggawa ng bagong PIN. Para sa privacy at security mo, ang iyong account ay maibabalik nang walang anumang saved profile information o settings."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "Gumawa ng bagong PIN"
@@ -7334,7 +7334,7 @@
     "messageformat": "Likhain ang iyong PIN"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "Nakatutulong ang PINs para ma-restore ang iyong account at mapanatiling encrypted ang info mo sa Signal. <learnMore>Matuto Pa</learnMore>"
+    "messageformat": "Nakatutulong ang PINs para ma-restore ang iyong account at mapanatiling encrypted ang info mo sa Tellomi. <learnMore>Matuto Pa</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "Likhain ang iyong PIN"
@@ -7358,7 +7358,7 @@
     "messageformat": "Babala"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "Kapag dinis-able mo ang PIN, mawawala ang lahat ng iyong data kapag ni-register mo ulit ang Signal. Hindi mo maaaring i-on ang Registration Lock habang naka-disable ang PIN."
+    "messageformat": "Kapag dinis-able mo ang PIN, mawawala ang lahat ng iyong data kapag ni-register mo ulit ang Tellomi. Hindi mo maaaring i-on ang Registration Lock habang naka-disable ang PIN."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "I-disable ang PIN"
@@ -7367,10 +7367,10 @@
     "messageformat": "I-cancel"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "Tungkol sa Signal PINs"
+    "messageformat": "Tungkol sa Tellomi PINs"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "Pinapanatili ng PINs na naka-encrypt ang naka-save mong impormasyon sa Signal para ikaw lang ang may access dito. Ang profile, settings, at contacts mo ay maibabalik kapag nag-install ka ulit."
+    "messageformat": "Pinapanatili ng PINs na naka-encrypt ang naka-save mong impormasyon sa Tellomi para ikaw lang ang may access dito. Ang profile, settings, at contacts mo ay maibabalik kapag nag-install ka ulit."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "Matuto pa"
@@ -7403,7 +7403,7 @@
     "messageformat": "Update required"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "Para magpatuloy sa pag-register, mag-update sa latest version ng Signal."
+    "messageformat": "Para magpatuloy sa pag-register, mag-update sa latest version ng Tellomi."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "I-update"
@@ -7433,7 +7433,7 @@
     "messageformat": "Kontakin ang Support"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Hindi pwedeng i-close ang Signal.",
+    "messageformat": "Hindi pwedeng i-close ang Tellomi.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7453,14 +7453,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Installed na ang bagong version ng Signal. Sigurado ka bang gusto mong magpatuloy?",
+    "messageformat": "Installed na ang bagong version ng Tellomi. Sigurado ka bang gusto mong magpatuloy?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Application crashed"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Nag-restart ang Signal after ng crash. Pwede kang mag-submit ng crash report para ma-investigate ng Signal ang issue."
+    "messageformat": "Nag-restart ang Tellomi after ng crash. Pwede kang mag-submit ng crash report para ma-investigate ng Tellomi ang issue."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "I-send"
@@ -7565,7 +7565,7 @@
     "messageformat": "I-click ang \"{buttonName}\" sa ibaba"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "I-on ang \"Signal\""
+    "messageformat": "I-on ang \"Tellomi\""
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Pumunta sa settings"
@@ -7661,7 +7661,7 @@
     "messageformat": "Matuto pa"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal Connections"
+    "messageformat": "Tellomi Connections"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} ay mga taong pinagkatiwalaan mo, sa pamamagitan ng alinman sa mga sumusunod:"
@@ -7802,7 +7802,7 @@
     "messageformat": "I-hide ang story kay"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "All Signal connections"
+    "messageformat": "All Tellomi connections"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Lahat maliban kay…"
@@ -7880,7 +7880,7 @@
     "messageformat": "Privacy ng Story Ko"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Piliin kung sino sa iyong Signal connections ang pwedeng mag-view ng story mo. Pwede mo itong baguhin anumang oras sa privacy settings. <learnMoreLink>Matuto pa.</learnMoreLink>"
+    "messageformat": "Piliin kung sino sa iyong Tellomi connections ang pwedeng mag-view ng story mo. Pwede mo itong baguhin anumang oras sa privacy settings. <learnMoreLink>Matuto pa.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Burahin ang story"
@@ -7949,7 +7949,7 @@
     "messageformat": "I-download ang Attachment"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "I-enable ang read receipts para makita kung sinong nag-view ng stories mo. Buksan ang Signal app sa iyong mobile device at pumunta sa Settings > Stories."
+    "messageformat": "I-enable ang read receipts para makita kung sinong nag-view ng stories mo. Buksan ang Tellomi app sa iyong mobile device at pumunta sa Settings > Stories."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Wala pang replies"
@@ -8135,7 +8135,7 @@
     "messageformat": "Na-reset ang iyong QR code at link at ang iyong username ay {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "I-scan ang QR code na ito gamit ang phone mo para maka-chat ako sa Signal.",
+    "messageformat": "I-scan ang QR code na ito gamit ang phone mo para maka-chat ako sa Tellomi.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8211,7 +8211,7 @@
     "messageformat": "I-dismiss"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "I-verify ang PIN ng iyong Signal"
+    "messageformat": "I-verify ang PIN ng iyong Tellomi"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "Ipapa-verify namin sa 'yo ang PIN mo paminsan-minsan para matandaan mo ito."
@@ -8223,7 +8223,7 @@
     "messageformat": "Hindi na muna"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "Ilagay ang iyong Signal PIN"
+    "messageformat": "Ilagay ang iyong Tellomi PIN"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "Para tulungan kang ma-memorize ang PIN mo, hihingin namin ito sa 'yo paminsan-minsan. Babawasan namin ang paghingi nito habang tumatagal."
@@ -8241,13 +8241,13 @@
     "messageformat": "Tama ang PIN. Ipapaalala namin ulit ito sa 'yo mamaya."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Malapit nang hindi masuportahan ng Signal ang {OS} version ng iyong computer. Para patuloy na magamit ang Signal, i-update ang operating system ng computer mo bago sumapit ang {expirationDate}. <learnMoreLink>Matuto pa</learnMoreLink>"
+    "messageformat": "Malapit nang hindi masuportahan ng Tellomi ang {OS} version ng iyong computer. Para patuloy na magamit ang Tellomi, i-update ang operating system ng computer mo bago sumapit ang {expirationDate}. <learnMoreLink>Matuto pa</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Hindi na gumagana ang Signal desktop sa computer na ito. Para magamit muli ang Signal desktop, i-update ang {OS} version ng iyong computer. <learnMoreLink>Matuto pa</learnMoreLink>"
+    "messageformat": "Hindi na gumagana ang Tellomi desktop sa computer na ito. Para magamit muli ang Tellomi desktop, i-update ang {OS} version ng iyong computer. <learnMoreLink>Matuto pa</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Hindi na gumagana ang Signal desktop sa computer na ito. Para magamit muli ang Signal desktop, i-update ang {OS} version ng iyong computer."
+    "messageformat": "Hindi na gumagana ang Tellomi desktop sa computer na ito. Para magamit muli ang Tellomi desktop, i-update ang {OS} version ng iyong computer."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "In-edit"
@@ -8418,7 +8418,7 @@
     "messageformat": "Kopyahin ang link"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "I-share ang link via Signal"
+    "messageformat": "I-share ang link via Tellomi"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Burahin ang link"
@@ -8481,13 +8481,13 @@
     "messageformat": "Para baguhin ang setting na ito, i-set sa \"Nobody\" ang \"Who can see my number\"."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Ang profile names sa Signal ay pinili ng may-ari ng account:"
+    "messageformat": "Ang profile names sa Tellomi ay pinili ng may-ari ng account:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Hindi ma-verify ng Signal ang mga pangalan at photos"
+    "messageformat": "Hindi ma-verify ng Tellomi ang mga pangalan at photos"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Hindi kailanman makikipag-ugnayan sa 'yo ang Signal para hingin ang registration code, PIN, o recovery key mo"
+    "messageformat": "Hindi kailanman makikipag-ugnayan sa 'yo ang Tellomi para hingin ang registration code, PIN, o recovery key mo"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "Mag-ingat sa accounts na nagpapanggap bilang ibang tao"
@@ -8553,7 +8553,7 @@
     "messageformat": "Ang Signal ay isang nonprofit."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "Heart icon sa style ng Signal logo"
+    "messageformat": "Heart icon sa style ng Tellomi logo"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "OK"
@@ -8598,7 +8598,7 @@
     "messageformat": "Credit o debit card"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Ilagay ang credit o debit card details mo. Hindi kinokolekta o itinatago ng Signal ang iyong personal na impormasyon. <learnMoreLink>Matuto pa</learnMoreLink>"
+    "messageformat": "Ilagay ang credit o debit card details mo. Hindi kinokolekta o itinatago ng Tellomi ang iyong personal na impormasyon. <learnMoreLink>Matuto pa</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Card number"
@@ -8628,7 +8628,7 @@
     "messageformat": "Masyadong maikli ang code"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Kunin ang Signal Boost badge sa loob ng 30 days"
+    "messageformat": "Kunin ang Tellomi Boost badge sa loob ng 30 days"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "Ang minimum donation ay {formattedCurrencyAmount}"
@@ -8811,7 +8811,7 @@
     "messageformat": "Maraming salamat sa iyong suporta!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Nakakuha ka ng isang donor badge mula sa Signal! I-display ito sa profile mo para maipakita ang iyong suporta."
+    "messageformat": "Nakakuha ka ng isang donor badge mula sa Tellomi! I-display ito sa profile mo para maipakita ang iyong suporta."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "I-display sa Profile"
@@ -8823,7 +8823,7 @@
     "messageformat": "Kumusta ang tawag mo?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "Nakatutulong ito sa amin na mapabuti pa ang mga tawag sa Signal. Walang personal identifiable information na ise-save."
+    "messageformat": "Nakatutulong ito sa amin na mapabuti pa ang mga tawag sa Tellomi. Walang personal identifiable information na ise-save."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Nagkaroon ng mga isyu"
@@ -8874,7 +8874,7 @@
     "messageformat": "Ilarawan ang issue mo"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Pakisama ang anumang detalye na may kaugnayan sa isyu. Anumang ibinahagi mo rito ay mapapanatiling pribado at gagamitin lamang para sa pagpapabuti ng mga tawag dito sa Signal."
+    "messageformat": "Pakisama ang anumang detalye na may kaugnayan sa isyu. Anumang ibinahagi mo rito ay mapapanatiling pribado at gagamitin lamang para sa pagpapabuti ng mga tawag dito sa Tellomi."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "Pakilarawan ang isyu mo"
@@ -8940,7 +8940,7 @@
     "messageformat": "Kailangan mong mag-link ulit sa pamamagitan ng pag-scan ng QR code."
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "Kung may paid Signal Secure Backups ka, malilipat lahat ng media mo. Kung hindi, ang media mo lang nitong nakaraang 45 araw ang isasama."
+    "messageformat": "Kung may paid Tellomi Secure Backups ka, malilipat lahat ng media mo. Kung hindi, ang media mo lang nitong nakaraang 45 araw ang isasama."
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "Mag-transfer"
@@ -8952,14 +8952,14 @@
     "messageformat": "Gusto mo bang i-burahin ang lahat ng data?"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "Mabubura ang lahat ng data na kasalukuyang nasa Signal Desktop. Maaari kang mag-scan ng QR code at mag-transfer ng message history mo mula sa phone mo."
+    "messageformat": "Mabubura ang lahat ng data na kasalukuyang nasa Tellomi Desktop. Maaari kang mag-scan ng QR code at mag-transfer ng message history mo mula sa phone mo."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Ang version na ito'y may small tweaks at bug fixes to keep Signal running smoothly.",
+    "messageformat": "Ang version na ito'y may small tweaks at bug fixes to keep Tellomi running smoothly.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Dagdag na maliliit na pag-aayos, pag-alis ng bugs, at pagpapaganda ng takbo ng app. Maraming salamat sa paggamit ng Signal!",
+    "messageformat": "Dagdag na maliliit na pag-aayos, pag-alis ng bugs, at pagpapaganda ng takbo ng app. Maraming salamat sa paggamit ng Tellomi!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -8979,7 +8979,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Dagdag na maliliit na pag-aayos, pag-alis ng bugs, at pagpapaganda ng takbo ng app. Maraming salamat sa paggamit ng Signal!",
+    "messageformat": "Dagdag na maliliit na pag-aayos, pag-alis ng bugs, at pagpapaganda ng takbo ng app. Maraming salamat sa paggamit ng Tellomi!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.24--1": {

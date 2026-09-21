@@ -63,10 +63,10 @@
     "messageformat": "Å sende høykvalitetsmedia bruker mer data."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Gi penger til Signal"
+    "messageformat": "Gi penger til Tellomi"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "<bold>Tilkoblede enheter</bold> gir deg trygg tilgang til Signal-kontoen din og meldingene dine på alle de andre enhetene dine."
+    "messageformat": "<bold>Tilkoblede enheter</bold> gir deg trygg tilgang til Tellomi-kontoen din og meldingene dine på alle de andre enhetene dine."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "Du kan koble til en PC, et nettbrett eller en annen telefon."
@@ -114,10 +114,10 @@
     "messageformat": "Ukjent gruppe"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Kunne ikke åpne Signal"
+    "messageformat": "Kunne ikke åpne Tellomi"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Du kan følge veiledningen på hjelpesiden vår eller ta kontakt med Signals brukerstøtte for å få hjelp.\n\nHvis du trenger tilgang til Signal umiddelbart, kan du slette alle dataene og koble til skrivebordet på nytt. Du har muligheten til å overføre meldingsloggen fra telefonen din."
+    "messageformat": "Du kan følge veiledningen på hjelpesiden vår eller ta kontakt med Signals brukerstøtte for å få hjelp.\n\nHvis du trenger tilgang til Tellomi umiddelbart, kan du slette alle dataene og koble til skrivebordet på nytt. Du har muligheten til å overføre meldingsloggen fra telefonen din."
   },
   "icu:databaseError": {
     "messageformat": "Databasefeil"
@@ -129,16 +129,16 @@
     "messageformat": "Slett alle dataene permanent"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Alle meldingene og mediefilene dine slettes fra denne enheten for godt. Ingen data fra mobilen din slettes.\n\nDu kan bruke Signal på denne enheten hvis du kobler den til på nytt. Du har muligheten til å overføre meldingsloggen fra telefonen din."
+    "messageformat": "Alle meldingene og mediefilene dine slettes fra denne enheten for godt. Ingen data fra mobilen din slettes.\n\nDu kan bruke Tellomi på denne enheten hvis du kobler den til på nytt. Du har muligheten til å overføre meldingsloggen fra telefonen din."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Versjonen av databasen passer ikke sammen med denne versjonen av Signal. Sørg for at du bruker den nyeste versjonen av Signal på datamaskinen din."
+    "messageformat": "Versjonen av databasen passer ikke sammen med denne versjonen av Tellomi. Sørg for at du bruker den nyeste versjonen av Tellomi på datamaskinen din."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Ingen tilgang til krypteringsnøkkelen for databasen fordi krypteringsringen til operativsystemet har endret seg fra {previousBackend} til {currentBackend}. Dette skjer hvis skrivebordsmiljøet endres, for eksempel fra GNOME til KDE.\n\nBytt tilbake til det forrige miljøet."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Ingen tilgang til krypteringsnøkkelen for databasen fordi krypteringsringen til operativsystemet har endret seg fra {previousBackend} til {currentBackend}. Dette skjer hvis skrivebordsmiljøet endres, for eksempel fra GNOME til KDE.\n\nBytt tilbake til det forrige miljøet, eller kjør Signal med kommandolinjeflagget --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Ingen tilgang til krypteringsnøkkelen for databasen fordi krypteringsringen til operativsystemet har endret seg fra {previousBackend} til {currentBackend}. Dette skjer hvis skrivebordsmiljøet endres, for eksempel fra GNOME til KDE.\n\nBytt tilbake til det forrige miljøet, eller kjør Tellomi med kommandolinjeflagget --password-store=\"{previousBackendFlag}\""
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -183,7 +183,7 @@
     "messageformat": "Vis Alle"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Avslutt Signal"
+    "messageformat": "Avslutt Tellomi"
   },
   "icu:editMenuUndo": {
     "messageformat": "Angre"
@@ -507,10 +507,10 @@
     "messageformat": "Fra en annen enhet merka du sikkerhetsnummeret du deler med {name} som ikke godkjent"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Nummeret du forsøker å verifisere har endret seg. Vennligst sjekk ditt nye sikkerhetsnummer med {name1}. Husk, dette kan bety at noen forsøker å få tilgang til din kommunikasjon eller at {name2} har reinstallert Signal."
+    "messageformat": "Nummeret du forsøker å verifisere har endret seg. Vennligst sjekk ditt nye sikkerhetsnummer med {name1}. Husk, dette kan bety at noen forsøker å få tilgang til din kommunikasjon eller at {name2} har reinstallert Tellomi."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Disse personene kan ha installert Signal på nytt eller byttet enhet. Trykk på en mottaker for å bekrefte det nye sikkerhetsnummeret. Dette er helt frivillig."
+    "messageformat": "Disse personene kan ha installert Tellomi på nytt eller byttet enhet. Trykk på en mottaker for å bekrefte det nye sikkerhetsnummeret. Dette er helt frivillig."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Send ventende meldinger"
@@ -519,7 +519,7 @@
     "messageformat": "Gå gjennom"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Du har {count,number} kontakt som kan ha installert Signal på nytt eller byttet enhet. Du kan velge å se over sikkerhetsnummeret til vedkommende før du sender.} other {Du har {count,number} kontakter som kan ha installert Signal på nytt eller byttet enhet. Du kan velge å se over sikkerhetsnumrene deres før du sender.}}"
+    "messageformat": "{count, plural, one {Du har {count,number} kontakt som kan ha installert Tellomi på nytt eller byttet enhet. Du kan velge å se over sikkerhetsnummeret til vedkommende før du sender.} other {Du har {count,number} kontakter som kan ha installert Tellomi på nytt eller byttet enhet. Du kan velge å se over sikkerhetsnumrene deres før du sender.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Alle kontaktene er gjennomgått. Trykk på Send for å fortsette."
@@ -627,16 +627,16 @@
     "messageformat": "Krypteringen i denne samtalen ble automatisk bekreftet "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "Når du har lagt til en kontakt med telefonnummer, kan Signal automatisk bekrefte om forbindelsen er sikker via noe som kalles «key transparency». Hvis du ønsker mer sikkerhet, kan du bekrefte ende-til-ende-krypteringen manuelt ved å sammenligne tallene på forrige side eller skanne koden på enheten til personen du chatter med."
+    "messageformat": "Når du har lagt til en kontakt med telefonnummer, kan Tellomi automatisk bekrefte om forbindelsen er sikker via noe som kalles «key transparency». Hvis du ønsker mer sikkerhet, kan du bekrefte ende-til-ende-krypteringen manuelt ved å sammenligne tallene på forrige side eller skanne koden på enheten til personen du chatter med."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "Automatisk bekreftelse er ikke tilgjengelig for denne samtalen"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "Signal kan ikke bekrefte krypteringen i denne samtalen automatisk. Dette kan skyldes at {name} har byttet telefonnummer eller endret innstillingene for telefonnummeret sitt. Du kan bekrefte ende-til-ende-krypteringen manuelt ved å sammenligne tallene på forrige side eller skanne koden på enheten til personen du chatter med."
+    "messageformat": "Tellomi kan ikke bekrefte krypteringen i denne samtalen automatisk. Dette kan skyldes at {name} har byttet telefonnummer eller endret innstillingene for telefonnummeret sitt. Du kan bekrefte ende-til-ende-krypteringen manuelt ved å sammenligne tallene på forrige side eller skanne koden på enheten til personen du chatter med."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "Signal kan ikke bekrefte krypteringen i samtalen automatisk med mindre du har lagt til kontakten via et telefonnummer. Hvis du la til kontakten via et brukernavn eller en gruppe, må du bekrefte ende-til-ende-krypteringen manuelt. Dette gjør du ved å sammenligne tallene på den forrige siden eller skanne koden på enheten til personen du chatter med."
+    "messageformat": "Tellomi kan ikke bekrefte krypteringen i samtalen automatisk med mindre du har lagt til kontakten via et telefonnummer. Hvis du la til kontakten via et brukernavn eller en gruppe, må du bekrefte ende-til-ende-krypteringen manuelt. Dette gjør du ved å sammenligne tallene på den forrige siden eller skanne koden på enheten til personen du chatter med."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "Greit"
@@ -675,10 +675,10 @@
     "messageformat": "Nei takk"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "Signal bekrefter nå krypteringer automatisk"
+    "messageformat": "Tellomi bekrefter nå krypteringer automatisk"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "Når du har lagt til en kontakt med telefonnummer, kan Signal automatisk bekrefte om forbindelsen er sikker via noe som kalles «key transparency». Du kan også bekrefte tilkoblingene manuelt med en QR-kode eller ved å sammenligne sikkerhetsnumre."
+    "messageformat": "Når du har lagt til en kontakt med telefonnummer, kan Tellomi automatisk bekrefte om forbindelsen er sikker via noe som kalles «key transparency». Du kan også bekrefte tilkoblingene manuelt med en QR-kode eller ved å sammenligne sikkerhetsnumre."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "Fortsett"
@@ -837,7 +837,7 @@
     "messageformat": "Klistremerke-skaperen"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Om Signal Desktop"
+    "messageformat": "Om Tellomi Desktop"
   },
   "icu:screenShareWindow": {
     "messageformat": "Skjermdeling"
@@ -855,7 +855,7 @@
     "messageformat": "Avslutt"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "Tellomi Desktop"
   },
   "icu:search": {
     "messageformat": "Søk"
@@ -909,13 +909,13 @@
     "messageformat": "Søk på telefonnummer"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Velkommen til Signal"
+    "messageformat": "Velkommen til Tellomi"
   },
   "icu:whatsNew": {
     "messageformat": "Se {whatsNew} i denne oppdateringen"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Signal er en ideell organisasjon"
+    "messageformat": "Tellomi er en ideell organisasjon"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "siste nytt"
@@ -999,13 +999,13 @@
     "messageformat": "Du"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "For å sende talemeldinger må du gi Signal Desktop tilgang til mikrofonen din."
+    "messageformat": "For å sende talemeldinger må du gi Tellomi Desktop tilgang til mikrofonen din."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "For å ringe må du gi Signal desktop tilgang til din mikrofon."
+    "messageformat": "For å ringe må du gi Tellomi desktop tilgang til din mikrofon."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "For å gjøre videosamtaler må du gi Signal desktop tilgang til ditt kamera."
+    "messageformat": "For å gjøre videosamtaler må du gi Tellomi desktop tilgang til ditt kamera."
   },
   "icu:allowAccess": {
     "messageformat": "Tillat Tilgang"
@@ -1029,13 +1029,13 @@
     "messageformat": "Demp"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal kunne ikke oppdateres. <retryUpdateButton>Prøv på nytt</retryUpdateButton>, eller gå til {url} for å installere oppdateringen manuelt. Etterpå kan du <contactSupportLink>gi Signals brukerstøtte beskjed</contactSupportLink> om problemet."
+    "messageformat": "Tellomi kunne ikke oppdateres. <retryUpdateButton>Prøv på nytt</retryUpdateButton>, eller gå til {url} for å installere oppdateringen manuelt. Etterpå kan du <contactSupportLink>gi Signals brukerstøtte beskjed</contactSupportLink> om problemet."
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal kunne ikke oppdateres. Gå til {url} for å installere oppdateringen manuelt. Etterpå kan du <contactSupportLink>gi Signals brukerstøtte beskjed</contactSupportLink> om problemet."
+    "messageformat": "Tellomi kunne ikke oppdateres. Gå til {url} for å installere oppdateringen manuelt. Etterpå kan du <contactSupportLink>gi Signals brukerstøtte beskjed</contactSupportLink> om problemet."
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal Desktop er sannsynligvis i en macOS-karantene, og vil derfor ikke kunne oppdatere seg automatisk. Prøv å flytte {app} til {folder} ved bruk av Finder."
+    "messageformat": "Tellomi Desktop er sannsynligvis i en macOS-karantene, og vil derfor ikke kunne oppdatere seg automatisk. Prøv å flytte {app} til {folder} ved bruk av Finder."
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -1080,7 +1080,7 @@
     "messageformat": "Meldingen slettes fra denne enheten."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Denne meldingen slettes for alle i samtalen dersom de er på en ny versjon av Signal. De vil kunne se at du har slettet en melding."
+    "messageformat": "Denne meldingen slettes for alle i samtalen dersom de er på en ny versjon av Tellomi. De vil kunne se at du har slettet en melding."
   },
   "icu:from": {
     "messageformat": "Fra"
@@ -1122,7 +1122,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "«{title}» er profilnavnet som denne personen har valgt å bruke på Signal."
+    "messageformat": "«{title}» er profilnavnet som denne personen har valgt å bruke på Tellomi."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Bekreftet"
@@ -1137,7 +1137,7 @@
     "messageformat": "Ingen direktemeldinger med {name}"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal-kontakter"
+    "messageformat": "Tellomi-kontakter"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} står i kontaktlisten på enheten din"
@@ -1449,7 +1449,7 @@
     "messageformat": "Les mer"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal benytter seg av ende-til-ende-kryptering, og det kan derfor være nødvendig å laste inn samtalen på nytt. Dette påvirker ikke sikkerheten, men det kan hende du går glipp av en melding og må be samtalepartneren din om å sende den på nytt."
+    "messageformat": "Tellomi benytter seg av ende-til-ende-kryptering, og det kan derfor være nødvendig å laste inn samtalen på nytt. Dette påvirker ikke sikkerheten, men det kan hende du går glipp av en melding og må be samtalepartneren din om å sende den på nytt."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Kontakt brukerstøtte"
@@ -1476,7 +1476,7 @@
     "messageformat": "{sender} har byttet telefonnummer."
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Når kontakt installerer Signal"
+    "messageformat": "Når kontakt installerer Tellomi"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} og {conversationTitle} tilhører samme konto. Du finner meldingsloggene for begge samtalene her."
@@ -1566,7 +1566,7 @@
     "messageformat": "Mediefilen kunne ikke lastes ned"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Sørg for at begge enhetene er koblet til internett. Åpne Signal på telefonen, og prøv å laste ned filen på nytt."
+    "messageformat": "Sørg for at begge enhetene er koblet til internett. Åpne Tellomi på telefonen, og prøv å laste ned filen på nytt."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Denne mediefilen er ikke lenger tilgjengelig på telefonen din og kan derfor ikke lastes ned."
@@ -1587,10 +1587,10 @@
     "messageformat": "Lær mer"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Skann denne koden i Signal-appen på telefonen din"
+    "messageformat": "Skann denne koden i Tellomi-appen på telefonen din"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Åpne Signal på telefonen"
+    "messageformat": "Åpne Tellomi på telefonen"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Trykk på {settings} og deretter på {linkedDevices}"
@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>En uventet feil oppstod.</paragraph> <paragraph>Prøv igjen.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal kunne ikke koble til enheten via dette nettverket."
+    "messageformat": "Tellomi kunne ikke koble til enheten via dette nettverket."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Prøv på nytt"
@@ -1626,7 +1626,7 @@
     "messageformat": "Vil du slette alle dataene?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "Du forsøker å koble en annen Signal-konto til denne enheten. Hvis du går videre, slettes alle dataene du har i Signal Desktop."
+    "messageformat": "Du forsøker å koble en annen Tellomi-konto til denne enheten. Hvis du går videre, slettes alle dataene du har i Tellomi Desktop."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "Fortsett"
@@ -1641,7 +1641,7 @@
     "messageformat": "Enhetsnavn"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "For å endre navnet på denne enheten må du åpne Signal på telefonen din og gå til Innstillinger > Tilkoblede enheter."
+    "messageformat": "For å endre navnet på denne enheten må du åpne Tellomi på telefonen din og gå til Innstillinger > Tilkoblede enheter."
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Emoji-hudtone"
@@ -1833,7 +1833,7 @@
     "messageformat": "Automatisk kodebekreftelse"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "Når dette er aktivert, vil Signal forsøke å bekrefte krypteringen i personlige samtaler automatisk."
+    "messageformat": "Når dette er aktivert, vil Tellomi forsøke å bekrefte krypteringen i personlige samtaler automatisk."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "Les mer"
@@ -1851,7 +1851,7 @@
     "messageformat": "Du har for mange enheter tilkoblet. Du kan prøve å fjerne noen av dem."
   },
   "icu:installTooOld": {
-    "messageformat": "Oppdater Signal på denne enheten for å koble den til din telefon."
+    "messageformat": "Oppdater Tellomi på denne enheten for å koble den til din telefon."
   },
   "icu:installErrorHeader": {
     "messageformat": "Noe gikk galt!"
@@ -1902,7 +1902,7 @@
     "messageformat": "Samtalelenken er utløpt."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal samtale"
+    "messageformat": "Tellomi samtale"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Lenken kunne ikke slettes. Sjekk internettilkoblingen og prøv igjen."
@@ -2076,16 +2076,16 @@
     "messageformat": "{count, plural, one {{count,number} person deltar i denne samtalen} other {{count,number} personer deltar i denne samtalen}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal ringer {person}"
+    "messageformat": "Tellomi ringer {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal ringer {first} og {second}"
+    "messageformat": "Tellomi ringer {first} og {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal ringer {first}, {second} og {third}"
+    "messageformat": "Tellomi ringer {first}, {second} og {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Signal kommer til å ringe {first}, {second} og {others,number} annen} other {Signal kommer til å ringe {first}, {second} og {others,number} andre}}"
+    "messageformat": "{others, plural, one {Tellomi kommer til å ringe {first}, {second} og {others,number} annen} other {Tellomi kommer til å ringe {first}, {second} og {others,number} andre}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} vil bli varslet"
@@ -2139,13 +2139,13 @@
     "messageformat": "Kobler til på nytt …"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Forbindelsen ble brutt. Signal kobler til på nytt."
+    "messageformat": "Forbindelsen ble brutt. Tellomi kobler til på nytt."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal deler {window}."
+    "messageformat": "Tellomi deler {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Deler skjerm via Signal"
+    "messageformat": "Deler skjerm via Tellomi"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Kobler til på nytt …"
@@ -2166,7 +2166,7 @@
     "messageformat": "Tillatelse kreves"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Du må gi Signal tillatelse til å ta opptak av skjermen."
+    "messageformat": "Du må gi Tellomi tillatelse til å ta opptak av skjermen."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Gå til Systeminnstillinger."
@@ -2175,7 +2175,7 @@
     "messageformat": "Trykk på låseikonet nederst i venstre hjørne og skriv inn passordet til datamaskinen."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Merk av i boksen ved siden av Signal på høyre side. Trykk på + for å legge til Signal i listen."
+    "messageformat": "Merk av i boksen ved siden av Tellomi på høyre side. Trykk på + for å legge til Tellomi i listen."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Åpne Systemvalg"
@@ -2187,7 +2187,7 @@
     "messageformat": "Videresend alle anrop"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Omdiriger alle anrop gjennom Signal-tjenesten for å unngå å avsløre IP-adressen din til kontakten din. Aktivering vil redusere samtalekvaliteten."
+    "messageformat": "Omdiriger alle anrop gjennom Tellomi-tjenesten for å unngå å avsløre IP-adressen din til kontakten din. Aktivering vil redusere samtalekvaliteten."
   },
   "icu:permissions": {
     "messageformat": "Tillatelser"
@@ -2205,10 +2205,10 @@
     "messageformat": "Viser meny med tekstformatering når du markerer tekst"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Stavekontroll vil være på neste gang Signal starter."
+    "messageformat": "Stavekontroll vil være på neste gang Tellomi starter."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Stavekontroll vil være av neste gang Signal starter."
+    "messageformat": "Stavekontroll vil være av neste gang Tellomi starter."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Minimer til systemstatusfeltet"
@@ -2232,7 +2232,7 @@
     "messageformat": "Vil du slette alle dataene?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Vil du slette alle dataene og meldingene fra denne Signal Desktop-versjonen? Signal-kontoen og dataene du har på mobilen og andre tilkoblede enheter, slettes ikke."
+    "messageformat": "Vil du slette alle dataene og meldingene fra denne Tellomi Desktop-versjonen? Tellomi-kontoen og dataene du har på mobilen og andre tilkoblede enheter, slettes ikke."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Kobler fra og sletter alle data …"
@@ -2241,7 +2241,7 @@
     "messageformat": "Slett kontoen"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "Dette sletter kontoinformasjonen din, profilen din og alle meldingene dine. Du fjernes også fra alle Signal-grupper."
+    "messageformat": "Dette sletter kontoinformasjonen din, profilen din og alle meldingene dine. Du fjernes også fra alle Tellomi-grupper."
   },
   "icu:deleteAccountButton": {
     "messageformat": "Slett kontoen"
@@ -2250,10 +2250,10 @@
     "messageformat": "Vil du slette kontoen?"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "Dette sletter kontoinformasjonen din, profilen din og alle meldingene dine. Du fjernes også fra alle Signal-grupper. Appen lukkes når prosessen er fullført."
+    "messageformat": "Dette sletter kontoinformasjonen din, profilen din og alle meldingene dine. Du fjernes også fra alle Tellomi-grupper. Appen lukkes når prosessen er fullført."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Du har foreldede data fra en tidligere installasjon av Signal Desktop. Hvis du velger å fortsette, blir den slettet, og du vil starte med blank konfigurasjon."
+    "messageformat": "Du har foreldede data fra en tidligere installasjon av Tellomi Desktop. Hvis du velger å fortsette, blir den slettet, og du vil starte med blank konfigurasjon."
   },
   "icu:deleteOldData": {
     "messageformat": "Slett gamle data"
@@ -2310,7 +2310,7 @@
     "messageformat": "Delvis slettet. Trykk for å lese mer."
   },
   "icu:expiredWarning": {
-    "messageformat": "Denne versjonen av Signal Desktop er utdatert. Oppdater til den nyeste versjonen for å fortsette å sende meldinger."
+    "messageformat": "Denne versjonen av Tellomi Desktop er utdatert. Oppdater til den nyeste versjonen for å fortsette å sende meldinger."
   },
   "icu:upgrade": {
     "messageformat": "Klikk for å gå til signal.org/download"
@@ -2322,7 +2322,7 @@
     "messageformat": "Importer kontakter"
   },
   "icu:syncExplanation": {
-    "messageformat": "Importer Signal-grupper og kontakter fra din mobile enhet."
+    "messageformat": "Importer Tellomi-grupper og kontakter fra din mobile enhet."
   },
   "icu:syncNow": {
     "messageformat": "Importer nå"
@@ -2355,7 +2355,7 @@
     "messageformat": "I går kl. {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Det kan hende at Signal har problemer med å behandle en innkommende melding."
+    "messageformat": "Det kan hende at Tellomi har problemer med å behandle en innkommende melding."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Meldingsteksten er for lang."
@@ -2520,13 +2520,13 @@
     "messageformat": "Meldinger kan kun redigeres de første 24 timene etter at de ble sendt."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} er ikke en Signal-bruker. Sjekk om du har skrevet inn hele brukernavnet."
+    "messageformat": "{atUsername} er ikke en Tellomi-bruker. Sjekk om du har skrevet inn hele brukernavnet."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} er ikke et gyldig brukernavn. Forsikre deg om at du har skrevet inn hele brukernavnet med alle tallene som hører til."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Fant ikke brukeren. {phoneNumber} er ikke en Signal-bruker."
+    "messageformat": "Fant ikke brukeren. {phoneNumber} er ikke en Tellomi-bruker."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "Fant ikke brukeren. {phoneNumber} er ikke et gyldig telefonnummer."
@@ -2547,13 +2547,13 @@
     "messageformat": "Maksimum antall på gruppestørrelse er oppnådd"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal grupper kan ha maksimum {max,number}medlemmer."
+    "messageformat": "Tellomi grupper kan ha maksimum {max,number}medlemmer."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Anbefalt øvre grense for medlemsantall er nådd"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal grupper fungerer best med {max,number}medlemmer eller mindre. Å legge til flere medlemmer vil gi forsinkelser ved sending og mottak av meldinger."
+    "messageformat": "Tellomi grupper fungerer best med {max,number}medlemmer eller mindre. Å legge til flere medlemmer vil gi forsinkelser ved sending og mottak av meldinger."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Navngi denne gruppen"
@@ -2583,16 +2583,16 @@
     "messageformat": "Kunne ikke oppdatere gruppen. Sjekk din forbindelse og forsøk igjen."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Klikk for å koble Signal Desktop til mobilenheten din for å fortsette samtalene."
+    "messageformat": "Klikk for å koble Tellomi Desktop til mobilenheten din for å fortsette samtalene."
   },
   "icu:unlinked": {
     "messageformat": "Frakoblet enhet"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Trykk her for å registrere deg på nytt og sende meldinger. Dette skyldes sannsynligvis at du registrerte telefonnummeret ditt på Signal med en annen enhet."
+    "messageformat": "Trykk her for å registrere deg på nytt og sende meldinger. Dette skyldes sannsynligvis at du registrerte telefonnummeret ditt på Tellomi med en annen enhet."
   },
   "icu:unregistered": {
-    "messageformat": "Signal Desktop er ikke registrert"
+    "messageformat": "Tellomi Desktop er ikke registrert"
   },
   "icu:autoUpdateNewVersionTitle": {
     "messageformat": "En oppdatering er tilgjengelig"
@@ -2601,16 +2601,16 @@
     "messageformat": "Prøv å oppdatere på nytt"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Klikk for å starte Signal på nytt"
+    "messageformat": "Klikk for å starte Tellomi på nytt"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Klikk for å laste ned oppdateringen"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signal kunne ikke oppdateres. Klikk for å prøve igjen."
+    "messageformat": "Tellomi kunne ikke oppdateres. Klikk for å prøve igjen."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Start Signal på nytt"
+    "messageformat": "Start Tellomi på nytt"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Ignorer oppdateringen"
@@ -2742,7 +2742,7 @@
     "messageformat": "Enkelte vedlegg er for store til å vises."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Bruk denne lenken for å bli med i en Signal-samtale"
+    "messageformat": "Bruk denne lenken for å bli med i en Tellomi-samtale"
   },
   "icu:donation--missing": {
     "messageformat": "Kunne ikke hente detaljene om pengegaven"
@@ -2754,7 +2754,7 @@
     "messageformat": "Trykk på denne meldingen på mobilen din for å se pengegaven"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} ga penger til Signal på dine vegne"
+    "messageformat": "{sender} ga penger til Tellomi på dine vegne"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Åpne pengegaven på telefonen din"
@@ -2811,7 +2811,7 @@
     "messageformat": "Takk for støtten!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Du har gitt en pengegave til Signal på vegne av {name}. Vedkommende vil få muligheten til å vise frem støtten på profilen sin."
+    "messageformat": "Du har gitt en pengegave til Tellomi på vegne av {name}. Vedkommende vil få muligheten til å vise frem støtten på profilen sin."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Klistremerkepakke kunne ikke installeres"
@@ -2823,10 +2823,10 @@
     "messageformat": "Legg til klistremerker"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal Artist Serier"
+    "messageformat": "Tellomi Artist Serier"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Ingen Signal kunstner-klistremerker tilgjengelig"
+    "messageformat": "Ingen Tellomi kunstner-klistremerker tilgjengelig"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "Delt med deg"
@@ -2862,7 +2862,7 @@
     "messageformat": "Dra for å endre rekkefølgen på klistremerkepakkene"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "Klistremerkepakker fra Signal Artist Series"
+    "messageformat": "Klistremerkepakker fra Tellomi Artist Series"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "Mottatte klistremerkepakker"
@@ -3147,19 +3147,19 @@
     "messageformat": "Meldingen er for lang til å vises"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} sendte deg en melding som ikke kan behandles eller vises fordi den bruker en ny Signal funksjon."
+    "messageformat": "{contact} sendte deg en melding som ikke kan behandles eller vises fordi den bruker en ny Tellomi funksjon."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Du kan spørre {contact} å sende denne meldingen på nytt nå som du bruker en oppdatert versjon av Signal."
+    "messageformat": "Du kan spørre {contact} å sende denne meldingen på nytt nå som du bruker en oppdatert versjon av Tellomi."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "En av enhetene dine sendte en melding som ikke kan behandles eller vises fordi den bruker en ny Signal funksjon."
+    "messageformat": "En av enhetene dine sendte en melding som ikke kan behandles eller vises fordi den bruker en ny Tellomi funksjon."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Fremtidige meldinger som dette vil bli synkronisert nå som du bruker en oppdatert versjon av Signal."
+    "messageformat": "Fremtidige meldinger som dette vil bli synkronisert nå som du bruker en oppdatert versjon av Tellomi."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Oppdater Signal"
+    "messageformat": "Oppdater Tellomi"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Sett"
@@ -3426,7 +3426,7 @@
     "messageformat": "Samtalen er merket som ulest"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Konfigurer Signal på telefon og desktop for å bruke verktøyet for opprettelse av klistremerkepakker"
+    "messageformat": "Konfigurer Tellomi på telefon og desktop for å bruke verktøyet for opprettelse av klistremerkepakker"
   },
   "icu:Reactions--remove": {
     "messageformat": "Fjern reaksjonen"
@@ -3444,16 +3444,16 @@
     "messageformat": "Sikkerhetstips"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Ikke svar på meldinger fra Signal"
+    "messageformat": "Ikke svar på meldinger fra Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Signal kommer aldri til å be deg om å sende registreringskoden, PIN-koden eller sikkerhetskoden din. Ikke svar på meldinger fra kontoer som utgir seg for å være Signal."
+    "messageformat": "Tellomi kommer aldri til å be deg om å sende registreringskoden, PIN-koden eller sikkerhetskoden din. Ikke svar på meldinger fra kontoer som utgir seg for å være Tellomi."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "Se gjennom navn og bilder"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "Vær forsiktig dersom det står «Navn ikke bekreftet». Alle kan velge profilnavn selv på Signal."
+    "messageformat": "Vær forsiktig dersom det står «Navn ikke bekreftet». Alle kan velge profilnavn selv på Tellomi."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "Vær på vakt mot svindel"
@@ -3462,16 +3462,16 @@
     "messageformat": "Unngå vage meldinger som forsøker å få deg til å svare. Vær forsiktig med økonomiske tips og mistenkelige lenker."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Ikke svar på meldinger fra Signal"
+    "messageformat": "Ikke svar på meldinger fra Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Signal kommer aldri til å be deg om å sende registreringskoden, PIN-koden eller sikkerhetskoden din. Ikke svar på meldinger som tilsynelatende kommer fra Signal eller Signals brukerstøtte. Svindlere kan lage falske navn for å hacke kontoen din."
+    "messageformat": "Tellomi kommer aldri til å be deg om å sende registreringskoden, PIN-koden eller sikkerhetskoden din. Ikke svar på meldinger som tilsynelatende kommer fra Tellomi eller Signals brukerstøtte. Svindlere kan lage falske navn for å hacke kontoen din."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Se gjennom navn og bilder"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "Vær forsiktig dersom det står «Navn ikke bekreftet». Alle kan velge profilnavn og -bilde selv på Signal. Hvis du ikke er sikker på hvem meldingen kommer fra, bør du ignorere den."
+    "messageformat": "Vær forsiktig dersom det står «Navn ikke bekreftet». Alle kan velge profilnavn og -bilde selv på Tellomi. Hvis du ikke er sikker på hvem meldingen kommer fra, bør du ignorere den."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Krypto- og pengesvindel"
@@ -3552,13 +3552,13 @@
     "messageformat": "Vil du rapportere dette som søppelpost?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signal får beskjed om at denne personen kan ha sendt søppelpost. Signal kan ikke se innholdet i samtaler."
+    "messageformat": "Tellomi får beskjed om at denne personen kan ha sendt søppelpost. Tellomi kan ikke se innholdet i samtaler."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signal får beskjed om at personen som inviterte deg inn i gruppen, kan ha sendt søppelpost. Signal kan ikke se innholdet i samtaler."
+    "messageformat": "Tellomi får beskjed om at personen som inviterte deg inn i gruppen, kan ha sendt søppelpost. Tellomi kan ikke se innholdet i samtaler."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signal får beskjed om at {name}, som inviterte deg til gruppen, kan ha sendt søppelpost. Signal kan ikke se innholdet i samtaler."
+    "messageformat": "Tellomi får beskjed om at {name}, som inviterte deg til gruppen, kan ha sendt søppelpost. Tellomi kan ikke se innholdet i samtaler."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Rapporter som søppelpost"
@@ -3600,7 +3600,7 @@
     "messageformat": "Vil du godta forespørselen?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "Godta kun forespørsler fra personer du stoler på. <bold>Signal kommer aldri</bold> til å be deg om å sende registreringskoden, PIN-koden eller sikkerhetskoden din."
+    "messageformat": "Godta kun forespørsler fra personer du stoler på. <bold>Tellomi kommer aldri</bold> til å be deg om å sende registreringskoden, PIN-koden eller sikkerhetskoden din."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "Fortsett"
@@ -3654,16 +3654,16 @@
     "messageformat": "Navn er ikke bekreftet"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Dette er den offisielle og eneste samtalen du har med Signal"
+    "messageformat": "Dette er den offisielle og eneste samtalen du har med Tellomi"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "Offisiell samtale"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Den eneste offisielle samtalen med Signal. Hold deg oppdatert på nyheter og utgavemerknader."
+    "messageformat": "Den eneste offisielle samtalen med Tellomi. Hold deg oppdatert på nyheter og utgavemerknader."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Den eneste offisielle samtalen med Signal."
+    "messageformat": "Den eneste offisielle samtalen med Tellomi."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Hold deg oppdatert på nyheter og utgavemerknader."
@@ -3729,10 +3729,10 @@
     "messageformat": "Ubesvart videosamtale"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal kjører fortsatt"
+    "messageformat": "Tellomi kjører fortsatt"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal vil fortsette å kjøre i varslingsområdet. Du kan endre dette i innstillingene."
+    "messageformat": "Tellomi vil fortsette å kjøre i varslingsområdet. Du kan endre dette i innstillingene."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Innkommende taleanrop"
@@ -3951,7 +3951,7 @@
     "messageformat": "Kopier anropslenken"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Del anropslenken via Signal"
+    "messageformat": "Del anropslenken via Tellomi"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "Vil du fjerne {name} fra samtalen?"
@@ -4113,7 +4113,7 @@
     "messageformat": "Ukjent lenkeversjon"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Denne lenken er ikke støttet av denne versjonen av Signal Desktop."
+    "messageformat": "Denne lenken er ikke støttet av denne versjonen av Tellomi Desktop."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Kan ikke bli med i gruppen"
@@ -4719,10 +4719,10 @@
     "messageformat": "Sletter brukerdata og nullstiller appen"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Donér til Signal"
+    "messageformat": "Donér til Tellomi"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} støtter Signal"
+    "messageformat": "{name} støtter Tellomi"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "Synkroniserer meldinger"
@@ -4839,7 +4839,7 @@
     "messageformat": "Kontohandling kreves"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Du må åpne Signal på telefonen for å fortsette å bruke denne kontoen. Kontoen slettes snart dersom du ikke åpner Signal på telefonen din. <learnMoreLink>Les mer</learnMoreLink>"
+    "messageformat": "Du må åpne Tellomi på telefonen for å fortsette å bruke denne kontoen. Kontoen slettes snart dersom du ikke åpner Tellomi på telefonen din. <learnMoreLink>Les mer</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Kan ikke gjenopprette mediefilene"
@@ -4863,10 +4863,10 @@
     "messageformat": "Legg til vedlegg eller avstemning"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Denne personen bruker ikke Signal"
+    "messageformat": "Denne personen bruker ikke Tellomi"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop støtter ikke sending av meldinger til de som ikke er på Signal. Be denne personen om å installere Signal for en sikrere meldingsopplevelse."
+    "messageformat": "Tellomi Desktop støtter ikke sending av meldinger til de som ikke er på Tellomi. Be denne personen om å installere Tellomi for en sikrere meldingsopplevelse."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Sjekker kontaktens registreringsstatus"
@@ -5127,10 +5127,10 @@
     "messageformat": "Fjern blokkering"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "Signal blir varslet om at denne personen kan ha sendt søppelpost. Signal kan ikke se innholdet i samtaler."
+    "messageformat": "Tellomi blir varslet om at denne personen kan ha sendt søppelpost. Tellomi kan ikke se innholdet i samtaler."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "Signal blir varslet om at personen som inviterte deg inn i gruppen, kan ha sendt søppelpost. Signal kan ikke se innholdet i samtaler."
+    "messageformat": "Tellomi blir varslet om at personen som inviterte deg inn i gruppen, kan ha sendt søppelpost. Tellomi kan ikke se innholdet i samtaler."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "Rapporter som søppelpost"
@@ -5178,7 +5178,7 @@
     "messageformat": "Kallenavn"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Kallenavn og notater lagres i Signal med ende-til-ende-kryptering. Du er den eneste som kan se dem."
+    "messageformat": "Kallenavn og notater lagres i Tellomi med ende-til-ende-kryptering. Du er den eneste som kan se dem."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Fornavn"
@@ -5431,7 +5431,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {Gruppemedlemmer som bruker den nyeste versjonen av Signal, kan se at du slettet meldingen.} other {Gruppemedlemmer som bruker den nyeste versjonen av Signal, kan se at du slettet disse meldingene.}}"
+    "messageformat": "{count, plural, one {Gruppemedlemmer som bruker den nyeste versjonen av Tellomi, kan se at du slettet meldingen.} other {Gruppemedlemmer som bruker den nyeste versjonen av Tellomi, kan se at du slettet disse meldingene.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Slett"
@@ -5557,7 +5557,7 @@
     "messageformat": "Det er ikke mulig å videresende meldinger som er tomme eller slettet"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Bruk denne lenken for å bli med i en Signal-samtale: {url}"
+    "messageformat": "Bruk denne lenken for å bli med i en Tellomi-samtale: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "Gjennomgå forespørsler nøye"
@@ -5566,7 +5566,7 @@
     "messageformat": "Sikkerhetstips"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Se grundig gjennom forespørsler. Signal fant en annen kontakt med samme navn. <reviewRequestLink>Se gjennom forespørsel</reviewRequestLink>"
+    "messageformat": "Se grundig gjennom forespørsler. Tellomi fant en annen kontakt med samme navn. <reviewRequestLink>Se gjennom forespørsel</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} gruppemedlem har samme navn. <reviewRequestLink>Se gjennom medlemslisten</reviewRequestLink>} other {{count,number} gruppemedlemmer har samme navn. <reviewRequestLink>Se gjennom medlemslisten</reviewRequestLink>}}"
@@ -5599,7 +5599,7 @@
     "messageformat": "Ingen andre grupper til felles"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal-kontakter"
+    "messageformat": "Tellomi-kontakter"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Endret nylig profilnavnet fra {oldName} til {newName}"
@@ -5617,7 +5617,7 @@
     "messageformat": "Verifiser for å fortsette å sende meldinger"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "For å hindre søppelpost på Signal ber vi deg fullføre verifiseringen."
+    "messageformat": "For å hindre søppelpost på Tellomi ber vi deg fullføre verifiseringen."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Etter verifisering kan du fortsette med meldingene. Meldinger satt på pause vil automatisk bli sendt."
@@ -6001,7 +6001,7 @@
     "messageformat": "Vil du forkaste disse endringene?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Vil du lukke Signal og avslutte samtalen?"
+    "messageformat": "Vil du lukke Tellomi og avslutte samtalen?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Ikke nå"
@@ -6101,7 +6101,7 @@
     "messageformat": "Generelt"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Gi penger til Signal"
+    "messageformat": "Gi penger til Tellomi"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Utseende"
@@ -6167,10 +6167,10 @@
     "messageformat": "System"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "Tellomi Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "Din Signal Login brukes til å gjenopprette kontoen din. Lagre disse kodene trygt i et passordverktøy du stoler på. <learnMoreLink>Les mer</learnMoreLink>."
+    "messageformat": "Din Tellomi Login brukes til å gjenopprette kontoen din. Lagre disse kodene trygt i et passordverktøy du stoler på. <learnMoreLink>Les mer</learnMoreLink>."
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "Les mer"
@@ -6191,7 +6191,7 @@
     "messageformat": "Dette er en tilkoblet enhet"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "Åpne Signal på hovedenheten din for å endre kontoinnstillingene."
+    "messageformat": "Åpne Tellomi på hovedenheten din for å endre kontoinnstillingene."
   },
   "icu:Preferences--zoom": {
     "messageformat": "Zoomnivå"
@@ -6224,7 +6224,7 @@
     "messageformat": "Avansert"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signal-PIN"
+    "messageformat": "Tellomi-PIN"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "Påminnelser om PIN-kode"
@@ -6353,7 +6353,7 @@
     "messageformat": "Samtaleloggen kan ikke eksporteres"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Samtaleloggen din kunne ikke eksporteres fordi Signal ikke har tillatelse til å lagre filer på disken din. Du må endre tillatelsene for disken eller systeminnstillingene før du kan prøve på nytt."
+    "messageformat": "Samtaleloggen din kunne ikke eksporteres fordi Tellomi ikke har tillatelse til å lagre filer på disken din. Du må endre tillatelsene for disken eller systeminnstillingene før du kan prøve på nytt."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Eksporterer sikkerhetskopi"
@@ -6368,7 +6368,7 @@
     "messageformat": "Overfør sikkerhetskopimappen til lagringsplassen på mobilen"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Installer Signal på mobilen på nytt"
+    "messageformat": "Installer Tellomi på mobilen på nytt"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "Trykk på «Gjenopprett eller overfør» og velg «På enheten»"
@@ -6635,13 +6635,13 @@
     "messageformat": "Blokkert {blockedAt}"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Sikre sikkerhetskopier på Signal"
+    "messageformat": "Sikre sikkerhetskopier på Tellomi"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Automatisk sikkerhetskopiering med Signals sikre, ende-til-ende-krypterte lagringstjeneste. Kom i gang på mobilen din. <learnMoreLink>Les mer</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Ta en sikkerhetskopi av meldingsloggen din, slik at du ikke mister dataene dine når du bytter telefon eller installerer Signal på nytt."
+    "messageformat": "Ta en sikkerhetskopi av meldingsloggen din, slik at du ikke mister dataene dine når du bytter telefon eller installerer Tellomi på nytt."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Info om sikkerhetskopiering"
@@ -6671,13 +6671,13 @@
     "messageformat": "Abonnementet er sagt opp"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Du kan administrere eller si opp abonnementet ditt på sikre sikkerhetskopier på Signal på telefonen din."
+    "messageformat": "Du kan administrere eller si opp abonnementet ditt på sikre sikkerhetskopier på Tellomi på telefonen din."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Du kan administrere eller oppgradere sikre sikkerhetskopier på Signal på telefonen din."
+    "messageformat": "Du kan administrere eller oppgradere sikre sikkerhetskopier på Tellomi på telefonen din."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Du kan administrere eller fornye abonnementet ditt på sikre sikkerhetskopier på Signal på telefonen din."
+    "messageformat": "Du kan administrere eller fornye abonnementet ditt på sikre sikkerhetskopier på Tellomi på telefonen din."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Siste sikkerhetskopi"
@@ -6695,7 +6695,7 @@
     "messageformat": "Lag en ende-til-ende-kryptert sikkerhetskopi som kan gjenopprettes på mobilen din. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "For å gjenopprette en sikkerhetskopi må du installere en ny kopi av Signal på mobilen. Åpne appen, og trykk på «Gjenopprett eller overfør». <learnMoreLink>Les mer.</learnMoreLink>"
+    "messageformat": "For å gjenopprette en sikkerhetskopi må du installere en ny kopi av Tellomi på mobilen. Åpne appen, og trykk på «Gjenopprett eller overfør». <learnMoreLink>Les mer.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Velg en mappe"
@@ -6731,7 +6731,7 @@
     "messageformat": "Sikkerhetskoden din"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "Du trenger denne koden for å gjenopprette kontoen din og dataene dine. Lagre den på en trygg plass, og ikke del den med andre. Signal kommer aldri til å be deg om å sende sikkerhetskoden din. <learnMoreLink>Les mer.</learnMoreLink>"
+    "messageformat": "Du trenger denne koden for å gjenopprette kontoen din og dataene dine. Lagre den på en trygg plass, og ikke del den med andre. Tellomi kommer aldri til å be deg om å sende sikkerhetskoden din. <learnMoreLink>Les mer.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "Ikke del sikkerhetskoden"
@@ -6746,7 +6746,7 @@
     "messageformat": "Ikke del koden"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Ikke del sikkerhetskoden din med noen. Det kan føre til at de tar over kontoen din. <strong>Signal kommer aldri </strong>til å be deg om å sende sikkerhetskoden din. Ikke svar på meldinger fra kontoer som utgir seg for å være Signal. <learnMoreLink>Les mer.</learnMoreLink>"
+    "messageformat": "Ikke del sikkerhetskoden din med noen. Det kan føre til at de tar over kontoen din. <strong>Tellomi kommer aldri </strong>til å be deg om å sende sikkerhetskoden din. Ikke svar på meldinger fra kontoer som utgir seg for å være Tellomi. <learnMoreLink>Les mer.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Bekreft sikkerhetskoden din"
@@ -6758,7 +6758,7 @@
     "messageformat": "Ta godt vare på koden"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Signal kan ikke hjelpe deg med å gjenopprette sikkerhetskopien din dersom du mister koden. Oppbevar den på en trygg plass, og ikke del den med andre."
+    "messageformat": "Tellomi kan ikke hjelpe deg med å gjenopprette sikkerhetskopien din dersom du mister koden. Oppbevar den på en trygg plass, og ikke del den med andre."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Fortsett"
@@ -6809,7 +6809,7 @@
     "messageformat": "Autentisering kreves for å aktivere sikkerhetskopiering."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "Denne handlingen kunne ikke gjennomføres fordi systemautentiseringen mislyktes. Prøv på nytt, eller åpne Signal-appen på mobilenheten din og gå til innstillingene for sikkerhetskopier for å se sikkerhetskoden din."
+    "messageformat": "Denne handlingen kunne ikke gjennomføres fordi systemautentiseringen mislyktes. Prøv på nytt, eller åpne Tellomi-appen på mobilenheten din og gå til innstillingene for sikkerhetskopier for å se sikkerhetskoden din."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "Det oppsto en feil under behandlingen av systemautoriseringen for denne handlingen."
@@ -6839,7 +6839,7 @@
     "messageformat": "Telefonnummer"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Velg hvem som kan se telefonnummeret ditt og bruke det til å komme i kontakt med deg på Signal."
+    "messageformat": "Velg hvem som kan se telefonnummeret ditt og bruke det til å komme i kontakt med deg på Tellomi."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Velg"
@@ -6869,10 +6869,10 @@
     "messageformat": "Hvem kan finne meg ved å søke opp telefonnummeret mitt?"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Alle som søker opp telefonnummeret ditt, kan se at du bruker Signal og kan starte samtaler med deg."
+    "messageformat": "Alle som søker opp telefonnummeret ditt, kan se at du bruker Tellomi og kan starte samtaler med deg."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Ingen kan se at du er på Signal med mindre du sender dem en melding, eller hvis dere allerede har en samtale gående."
+    "messageformat": "Ingen kan se at du er på Tellomi med mindre du sender dem en melding, eller hvis dere allerede har en samtale gående."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Alle"
@@ -6884,7 +6884,7 @@
     "messageformat": "Er du sikker?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Hvis du velger {nobodyLabel} under {settingTitle}, blir det vanskeligere for andre å finne deg på Signal."
+    "messageformat": "Hvis du velger {nobodyLabel} under {settingTitle}, blir det vanskeligere for andre å finne deg på Tellomi."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Meldinger"
@@ -6947,7 +6947,7 @@
     "messageformat": "Velg"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Start Signal på nytt for å ta i bruk"
+    "messageformat": "Start Tellomi på nytt for å ta i bruk"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Du må åpne appen på nytt for å endre språket."
@@ -6962,13 +6962,13 @@
     "messageformat": "Skjermsikkerhet"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Få mer sikkerhet ved å ikke tillate skjermbilder i Signal på denne enheten."
+    "messageformat": "Få mer sikkerhet ved å ikke tillate skjermbilder i Tellomi på denne enheten."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Vil du deaktivere skjermsikkerhet?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Dersom dette er deaktivert, kan Microsoft Windows ta skjermbilder av Signal og bruke dem til andre funksjoner som kanskje ikke er private."
+    "messageformat": "Dersom dette er deaktivert, kan Microsoft Windows ta skjermbilder av Tellomi og bruke dem til andre funksjoner som kanskje ikke er private."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Deaktiver"
@@ -6989,25 +6989,25 @@
     "messageformat": "Trykk for å gå til App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Åpne Signal på telefonen"
+    "messageformat": "Åpne Tellomi på telefonen"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Kontoen din slettes hvis du ikke åpner Signal på telefonen din snart. Denne meldingen forsvinner når du har åpnet appen på mobilen. <learnMoreLink>Les mer</learnMoreLink>"
+    "messageformat": "Kontoen din slettes hvis du ikke åpner Tellomi på telefonen din snart. Denne meldingen forsvinner når du har åpnet appen på mobilen. <learnMoreLink>Les mer</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Åpne Signal på telefonen for å holde kontoen din aktiv"
+    "messageformat": "Åpne Tellomi på telefonen for å holde kontoen din aktiv"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Les mer"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal opplever tekniske problemer. Vi jobber for å løse problemet."
+    "messageformat": "Tellomi opplever tekniske problemer. Vi jobber for å løse problemet."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Oppdatering kreves"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Du må oppdatere Signal Desktop for å synkronisere meldingene dine."
+    "messageformat": "Du må oppdatere Tellomi Desktop for å synkronisere meldingene dine."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Oppdater"
@@ -7016,19 +7016,19 @@
     "messageformat": "Oppdatering kreves"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Oppgrader til den nyeste versjonen av Signal for å fortsette å bruke appen."
+    "messageformat": "Oppgrader til den nyeste versjonen av Tellomi for å fortsette å bruke appen."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Last ned {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Start Signal på nytt for å installere oppdateringen."
+    "messageformat": "Start Tellomi på nytt for å installere oppdateringen."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal Desktop kunne ikke oppgraderes, med det finnes en ny versjon tilgjengelig. Gå til {downloadUrl} og installer den nyeste versjonen manuelt, og gi gjerne beskjed til brukerstøtte eller send inn en rapport om dette problemet."
+    "messageformat": "Tellomi Desktop kunne ikke oppgraderes, med det finnes en ny versjon tilgjengelig. Gå til {downloadUrl} og installer den nyeste versjonen manuelt, og gi gjerne beskjed til brukerstøtte eller send inn en rapport om dette problemet."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Signal-logo"
+    "messageformat": "Tellomi-logo"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "Tilbake"
@@ -7064,7 +7064,7 @@
     "messageformat": "Bekreft at du er et menneske for å fortsette"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "For å forhindre søppelpost på Signal ber vi deg om å bekrefte nummeret ditt. Når dette er gjort, kan du fortsette registreringen."
+    "messageformat": "For å forhindre søppelpost på Tellomi ber vi deg om å bekrefte nummeret ditt. Når dette er gjort, kan du fortsette registreringen."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "Bekreft på nytt"
@@ -7304,7 +7304,7 @@
     "messageformat": "Feil PIN-kode"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "Du har brukt opp alle PIN-forsøkene, men du kan fortsatt få tilgang til Signal-kontoen din ved å opprette ny PIN-kode. Av hensyn til sikkerheten din og personvernet ditt blir kontoen din gjenopprettet uten lagret profilinformasjon eller lagrede innstillinger."
+    "messageformat": "Du har brukt opp alle PIN-forsøkene, men du kan fortsatt få tilgang til Tellomi-kontoen din ved å opprette ny PIN-kode. Av hensyn til sikkerheten din og personvernet ditt blir kontoen din gjenopprettet uten lagret profilinformasjon eller lagrede innstillinger."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "Opprett ny PIN-kode"
@@ -7334,7 +7334,7 @@
     "messageformat": "Opprett PIN-kode"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "PIN-koden hjelper deg med å gjenopprette kontoen og holde informasjonen din kryptert på Signal. <learnMore>Les mer</learnMore>"
+    "messageformat": "PIN-koden hjelper deg med å gjenopprette kontoen og holde informasjonen din kryptert på Tellomi. <learnMore>Les mer</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "Opprett PIN-kode"
@@ -7358,7 +7358,7 @@
     "messageformat": "Advarsel"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "Hvis du deaktiverer PIN-koden, mister du alle data når du gjennomfører Signal-registreringen på nytt. Du kan ikke slå på registreringslåsen mens PIN-koden er deaktivert."
+    "messageformat": "Hvis du deaktiverer PIN-koden, mister du alle data når du gjennomfører Tellomi-registreringen på nytt. Du kan ikke slå på registreringslåsen mens PIN-koden er deaktivert."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "Deaktiver PIN-koden"
@@ -7367,10 +7367,10 @@
     "messageformat": "Avbryt"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "Om PIN-koder på Signal"
+    "messageformat": "Om PIN-koder på Tellomi"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "PIN-koden holder informasjon lagret hos Signal, kryptert slik at bare du har tilgang til den. Profilen din samt innstillingene og kontaktene dine gjenopprettes når du installerer Signal på nytt."
+    "messageformat": "PIN-koden holder informasjon lagret hos Tellomi, kryptert slik at bare du har tilgang til den. Profilen din samt innstillingene og kontaktene dine gjenopprettes når du installerer Tellomi på nytt."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "Les mer"
@@ -7403,7 +7403,7 @@
     "messageformat": "Oppdatering kreves"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "Oppgrader til den nyeste versjonen av Signal for å fortsette registreringen."
+    "messageformat": "Oppgrader til den nyeste versjonen av Tellomi for å fortsette registreringen."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "Oppdater"
@@ -7433,7 +7433,7 @@
     "messageformat": "Kontakt brukerstøtten"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signal kunne ikke avsluttes.",
+    "messageformat": "Tellomi kunne ikke avsluttes.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7453,14 +7453,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "En nyere versjon av Signal er allerede installert. Er du sikker på at du vil fortsette?",
+    "messageformat": "En nyere versjon av Tellomi er allerede installert. Er du sikker på at du vil fortsette?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Programmet krasjet"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal startet på nytt etter et krasj. Du kan sende inn en rapport for å gjøre det lettere for Signal å løse problemet."
+    "messageformat": "Tellomi startet på nytt etter et krasj. Du kan sende inn en rapport for å gjøre det lettere for Tellomi å løse problemet."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Send"
@@ -7565,7 +7565,7 @@
     "messageformat": "Trykk på {buttonName} nedenfor."
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Aktiver Signal."
+    "messageformat": "Aktiver Tellomi."
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Gå til innstillinger"
@@ -7661,7 +7661,7 @@
     "messageformat": "Les mer"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal-kontakter"
+    "messageformat": "Tellomi-kontakter"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} er personer som du stoler på, enten ved å:"
@@ -7802,7 +7802,7 @@
     "messageformat": "Skjul story for"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Alle Signal-kontaktene"
+    "messageformat": "Alle Tellomi-kontaktene"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Alle unntatt …"
@@ -7880,7 +7880,7 @@
     "messageformat": "Personvern for Min story"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Velg hvilke Signal-kontakter som kan se storyen din. Du kan endre dette når som helst via innstillingene for personvern. <learnMoreLink>Les mer</learnMoreLink>"
+    "messageformat": "Velg hvilke Tellomi-kontakter som kan se storyen din. Du kan endre dette når som helst via innstillingene for personvern. <learnMoreLink>Les mer</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Slett story"
@@ -7949,7 +7949,7 @@
     "messageformat": "Last ned Vedlegg"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Aktiver visningsbekreftelser for å finne ut hvem som har sett storyene dine. Åpne Signal på mobilenheten din og gå til Innstillinger > Storyer."
+    "messageformat": "Aktiver visningsbekreftelser for å finne ut hvem som har sett storyene dine. Åpne Tellomi på mobilenheten din og gå til Innstillinger > Storyer."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Ingen svar ennå"
@@ -8135,7 +8135,7 @@
     "messageformat": "QR-koden og lenken er tilbakestilt, og brukernavnet ditt er {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Skann denne QR-koden for å innlede en samtale med meg på Signal.",
+    "messageformat": "Skann denne QR-koden for å innlede en samtale med meg på Tellomi.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8211,7 +8211,7 @@
     "messageformat": "Avbryt"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "Bekreft Signal-PIN-kode"
+    "messageformat": "Bekreft Tellomi-PIN-kode"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "Vi ber deg noen ganger om å bekrefte PIN-koden din slik at du husker den."
@@ -8223,7 +8223,7 @@
     "messageformat": "Ikke nå"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "Skriv inn Signal-PIN"
+    "messageformat": "Skriv inn Tellomi-PIN"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "For å hjelpe deg med å huske PIN-koden din ber vi deg om å oppgi den med jevne mellomrom. Vi spør deg sjeldnere etter hvert."
@@ -8241,13 +8241,13 @@
     "messageformat": "PIN-koden stemmer. Vi sender deg en ny påminnelse senere."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal Desktop vil snart ikke fungere på denne versjonen av {OS} på datamaskinen din. Du må oppdatere operativsystemet innen {expirationDate} for å fortsette å bruke Signal. <learnMoreLink>Les mer</learnMoreLink>"
+    "messageformat": "Tellomi Desktop vil snart ikke fungere på denne versjonen av {OS} på datamaskinen din. Du må oppdatere operativsystemet innen {expirationDate} for å fortsette å bruke Tellomi. <learnMoreLink>Les mer</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal Desktop fungerer ikke lenger på denne datamaskinen. Du må oppdatere til en nyere versjon av {OS} for å kunne bruke Signal igjen. <learnMoreLink>Les mer</learnMoreLink>"
+    "messageformat": "Tellomi Desktop fungerer ikke lenger på denne datamaskinen. Du må oppdatere til en nyere versjon av {OS} for å kunne bruke Tellomi igjen. <learnMoreLink>Les mer</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal Desktop fungerer ikke lenger på denne datamaskinen. Du må oppdatere til en nyere versjon av {OS} for å kunne bruke Signal igjen."
+    "messageformat": "Tellomi Desktop fungerer ikke lenger på denne datamaskinen. Du må oppdatere til en nyere versjon av {OS} for å kunne bruke Tellomi igjen."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Redigert"
@@ -8418,7 +8418,7 @@
     "messageformat": "Kopier lenken"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Del lenken via Signal"
+    "messageformat": "Del lenken via Tellomi"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Slett lenken"
@@ -8481,13 +8481,13 @@
     "messageformat": "For å endre dette velger du «Ingen» under «Hvem kan se telefonnummeret mitt?»."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Profilnavn på Signal velges av kontoinnehaveren:"
+    "messageformat": "Profilnavn på Tellomi velges av kontoinnehaveren:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Signal kan ikke bekrefte navn og bilder"
+    "messageformat": "Tellomi kan ikke bekrefte navn og bilder"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Signal kommer aldri til å be deg om å sende registreringskoden, PIN-koden eller sikkerhetskoden din."
+    "messageformat": "Tellomi kommer aldri til å be deg om å sende registreringskoden, PIN-koden eller sikkerhetskoden din."
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "Vær på vakt mot svindlere som utgir seg for å være andre"
@@ -8517,7 +8517,7 @@
     "messageformat": "Stolt ideell organisasjon"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Gi en pengegave for å støtte private samtaler. Bidra til at Signal kan være uavhengig og annonsefri. <readMoreLink>Les mer</readMoreLink>"
+    "messageformat": "Gi en pengegave for å støtte private samtaler. Bidra til at Tellomi kan være uavhengig og annonsefri. <readMoreLink>Les mer</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Gi penger"
@@ -8541,7 +8541,7 @@
     "messageformat": "Informasjonen din holdes privat"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Signal er en uavhengig, ideell organisasjon som tilbyr private chatter og samtaler. Ingen annonser, ingen sporing, ingen overvåking. Vil du støtte Signal med en pengegave?"
+    "messageformat": "Tellomi er en uavhengig, ideell organisasjon som tilbyr private chatter og samtaler. Ingen annonser, ingen sporing, ingen overvåking. Vil du støtte Tellomi med en pengegave?"
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Du får et merke i profilen din når du gir penger"
@@ -8550,10 +8550,10 @@
     "messageformat": "Personvernet ditt er hovedfokuset vårt"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Signal er en ideell organisasjon."
+    "messageformat": "Tellomi er en ideell organisasjon."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "Hjerteikon i samme stil som Signal-logoen"
+    "messageformat": "Hjerteikon i samme stil som Tellomi-logoen"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "OK"
@@ -8568,7 +8568,7 @@
     "messageformat": "Vanlige spørsmål om pengegaver"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Kvitteringene dine synkroniseres ikke på tvers av enheter. Kvitteringer for tidligere pengegaver vil ikke være tilgjengelig hvis du har installert Signal-appen på nytt."
+    "messageformat": "Kvitteringene dine synkroniseres ikke på tvers av enheter. Kvitteringer for tidligere pengegaver vil ikke være tilgjengelig hvis du har installert Tellomi-appen på nytt."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Ingen kvitteringer"
@@ -8598,7 +8598,7 @@
     "messageformat": "Kredittkort eller debetkort"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Skriv inn kortinformasjonen din. Signal samler ikke inn og lagrer ikke personopplysningene dine. <learnMoreLink>Les mer</learnMoreLink>"
+    "messageformat": "Skriv inn kortinformasjonen din. Tellomi samler ikke inn og lagrer ikke personopplysningene dine. <learnMoreLink>Les mer</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Kortnummer"
@@ -8610,7 +8610,7 @@
     "messageformat": "MM/ÅÅ"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Gi {formattedCurrencyAmount} til Signal"
+    "messageformat": "Gi {formattedCurrencyAmount} til Tellomi"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Ugyldig kortnummer"
@@ -8628,7 +8628,7 @@
     "messageformat": "Koden er for kort"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Få et Signal Boost-merke i 30 dager"
+    "messageformat": "Få et Tellomi Boost-merke i 30 dager"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "Minimumsbeløpet du kan gi, er {formattedCurrencyAmount}"
@@ -8712,7 +8712,7 @@
     "messageformat": "Gaven ble gitt, men vi kunne ikke endre innstillingene dine for merker."
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "For å endre innstillingene for merker på mobilen din går du til Innstillinger → Gi penger til Signal → Merker."
+    "messageformat": "For å endre innstillingene for merker på mobilen din går du til Innstillinger → Gi penger til Tellomi → Merker."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Pengegaven ble avbrutt"
@@ -8769,7 +8769,7 @@
     "messageformat": "Det oppsto en feil med pengegaven din"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Pengegaven ble ikke sendt. Trykk på «Gi penger til Signal» og så «Kvittering for pengebeløp» for å se transaksjonene dine og bekrefte."
+    "messageformat": "Pengegaven ble ikke sendt. Trykk på «Gi penger til Tellomi» og så «Kvittering for pengebeløp» for å se transaksjonene dine og bekrefte."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Prøv igjen, eller send inn en feilsøkingslogg til brukerstøtten vår for å få hjelp med pengegaven. Feilsøkingslogger gjør det lettere for oss å løse problemet. De inneholder ikke opplysninger som kan brukes til å identifisere deg."
@@ -8811,19 +8811,19 @@
     "messageformat": "Takk for støtten!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Du har fått et givermerke fra Signal! Vis det frem i profilen din for å vise at du støtter Signal."
+    "messageformat": "Du har fått et givermerke fra Tellomi! Vis det frem i profilen din for å vise at du støtter Tellomi."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Vis på profilen"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Du kan justere dette på mobilen din under Innstillinger → Gi penger til Signal → Merker"
+    "messageformat": "Du kan justere dette på mobilen din under Innstillinger → Gi penger til Tellomi → Merker"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "Hvordan var samtalen?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "Dette hjelper oss med å gjøre anropene i Signal bedre. Vi lagrer ingen identifiserbare opplysninger om deg."
+    "messageformat": "Dette hjelper oss med å gjøre anropene i Tellomi bedre. Vi lagrer ingen identifiserbare opplysninger om deg."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Fikk problemer"
@@ -8874,7 +8874,7 @@
     "messageformat": "Beskriv problemet her"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Gi oss så detaljert informasjon som mulig. Alt du deler, holdes privat og blir kun brukt til å gjøre anropene på Signal bedre."
+    "messageformat": "Gi oss så detaljert informasjon som mulig. Alt du deler, holdes privat og blir kun brukt til å gjøre anropene på Tellomi bedre."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "Beskriv problemet"
@@ -8952,14 +8952,14 @@
     "messageformat": "Vil du slette alle dataene?"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "Alle dataene som er lagret i Signal Desktop, slettes. Du kan deretter skanne QR-koden og overføre meldingsloggen fra telefonen din."
+    "messageformat": "Alle dataene som er lagret i Tellomi Desktop, slettes. Du kan deretter skanne QR-koden og overføre meldingsloggen fra telefonen din."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Denne versjonen inneholder noen justeringer og feilrettinger som sikrer at Signal fungerer optimalt.",
+    "messageformat": "Denne versjonen inneholder noen justeringer og feilrettinger som sikrer at Tellomi fungerer optimalt.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Noen små justeringer, feilrettinger og ytelsesforbedringer. Takk for at du bruker Signal!",
+    "messageformat": "Noen små justeringer, feilrettinger og ytelsesforbedringer. Takk for at du bruker Tellomi!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -8979,7 +8979,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Noen små justeringer, feilrettinger og ytelsesforbedringer. Takk for at du bruker Signal!",
+    "messageformat": "Noen små justeringer, feilrettinger og ytelsesforbedringer. Takk for at du bruker Tellomi!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.24--1": {

@@ -837,7 +837,7 @@
     "messageformat": "Sticker Pack Creator"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Signal Desktopについて"
+    "messageformat": "Tellomi Desktopについて"
   },
   "icu:screenShareWindow": {
     "messageformat": "共有中の画面"
@@ -855,7 +855,7 @@
     "messageformat": "終了"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "Tellomi Desktop"
   },
   "icu:search": {
     "messageformat": "検索"
@@ -1002,10 +1002,10 @@
     "messageformat": "音声メッセージを送るには、Signalのマイクへのアクセスを許可してください。"
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "通話を始めるために、Signal Desktopにマイクへのアクセスを許可してください。"
+    "messageformat": "通話を始めるために、Tellomi Desktopにマイクへのアクセスを許可してください。"
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "ビデオ通話を始めるために、Signal Desktopにカメラへのアクセスを許可してください。"
+    "messageformat": "ビデオ通話を始めるために、Tellomi Desktopにカメラへのアクセスを許可してください。"
   },
   "icu:allowAccess": {
     "messageformat": "アクセスを許可"
@@ -1035,7 +1035,7 @@
     "messageformat": "Signalをアップデートできませんでした。{url}から手動でインストールしてください。その後、この問題について<contactSupportLink>サポートに連絡してください</contactSupportLink>"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal Desktop が macOS の検疫にかかっていて自動更新できないようです。{app}を Finder で{folder}へ移動してください。"
+    "messageformat": "Tellomi Desktop が macOS の検疫にかかっていて自動更新できないようです。{app}を Finder で{folder}へ移動してください。"
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -1626,7 +1626,7 @@
     "messageformat": "すべてのデータを消去しますか？"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "このデスクトップに別のSignalアカウントをリンクしようとしています。続行すると、Signal Desktop内の既存のすべてのデータが消去されます。"
+    "messageformat": "このデスクトップに別のSignalアカウントをリンクしようとしています。続行すると、Tellomi Desktop内の既存のすべてのデータが消去されます。"
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "続ける"
@@ -1851,7 +1851,7 @@
     "messageformat": "結び付けているデバイスが多すぎます。どれかを切り離してください。"
   },
   "icu:installTooOld": {
-    "messageformat": "スマートフォンとリンクするために Signal を更新してください。"
+    "messageformat": "スマートフォンとリンクするために Tellomi を更新してください。"
   },
   "icu:installErrorHeader": {
     "messageformat": "エラーが発生しました！"
@@ -2175,7 +2175,7 @@
     "messageformat": "左下の鍵アイコンをクリックし、コンピュータのパスワードを入力してください。"
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "右側にある「Signal」の横のボックスをチェックしてください。リストにSignalが表示されていない場合は、「+」をクリックして追加してください。"
+    "messageformat": "右側にある「Tellomi」の横のボックスをチェックしてください。リストにSignalが表示されていない場合は、「+」をクリックして追加してください。"
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "システム環境設定を開く"
@@ -2232,7 +2232,7 @@
     "messageformat": "すべてのデータを消去しますか？"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Signal Desktopからすべてのデータとメッセージを消去しますか？Signalアカウントやスマートフォンのデータ、その他のリンク済み端末のデータは消去されません。"
+    "messageformat": "Tellomi Desktopからすべてのデータとメッセージを消去しますか？Signalアカウントやスマートフォンのデータ、その他のリンク済み端末のデータは消去されません。"
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "接続を切って全データを消去しています…"
@@ -2253,7 +2253,7 @@
     "messageformat": "あなたのアカウント情報、プロフィールおよびずべてのメッセージを消去します。Signalの各グループからも退出することになります。この処理が完了するとアプリは終了します。"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "以前のバージョンの Signal Desktop で利用していた、すでに利用できなくなっているデータが残っています。続行するとこのデータは消去され、フレッシュな状態で改めて利用を始めることになります。"
+    "messageformat": "以前のバージョンの Tellomi Desktop で利用していた、すでに利用できなくなっているデータが残っています。続行するとこのデータは消去され、フレッシュな状態で改めて利用を始めることになります。"
   },
   "icu:deleteOldData": {
     "messageformat": "古いデータを消去"
@@ -2583,13 +2583,13 @@
     "messageformat": "グループを更新できませんでした。インターネット接続を確認して再度試してください。"
   },
   "icu:unlinkedWarning": {
-    "messageformat": "クリックすると、Signal Desktopとスマートフォンが再リンクされ、メッセージのやり取りが継続されます。"
+    "messageformat": "クリックすると、Tellomi Desktopとスマートフォンが再リンクされ、メッセージのやり取りが継続されます。"
   },
   "icu:unlinked": {
     "messageformat": "未リンク"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "クリックして再登録し、メッセージのやり取りを継続してください。別の端末でSignalに電話番号を登録したため、Signal Desktopの登録が解除された可能性があります。"
+    "messageformat": "クリックして再登録し、メッセージのやり取りを継続してください。別の端末でSignalに電話番号を登録したため、Tellomi Desktopの登録が解除された可能性があります。"
   },
   "icu:unregistered": {
     "messageformat": "登録されていません"
@@ -2742,7 +2742,7 @@
     "messageformat": "添付ファイルが大きすぎて表示できないものがあります。"
   },
   "icu:message--call-link-description": {
-    "messageformat": "リンクを使用して Signal 通話に参加"
+    "messageformat": "リンクを使用して Tellomi 通話に参加"
   },
   "icu:donation--missing": {
     "messageformat": "寄付の詳細を取得できません"
@@ -4866,7 +4866,7 @@
     "messageformat": "この方はSignalを使用していません"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktopは、Signal以外の連絡先とのメッセージ送受信をサポートしていません。この方には、より安全なメッセージ送受信を実現するために、Signalをインストールするよう依頼してください。"
+    "messageformat": "Tellomi Desktopは、Signal以外の連絡先とのメッセージ送受信をサポートしていません。この方には、より安全なメッセージ送受信を実現するために、Signalをインストールするよう依頼してください。"
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "連絡先の登録状況を確認しています"
@@ -5557,7 +5557,7 @@
     "messageformat": "空のメッセージや消去されたメッセージは転送できません"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "リンクを使用して Signal 通話に参加する　{url}"
+    "messageformat": "リンクを使用して Tellomi 通話に参加する　{url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "慎重に申請を確認してください"
@@ -5566,7 +5566,7 @@
     "messageformat": "安全な使い方のヒント"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "慎重に申請を確認してください。Signal は同じ名前で別の連絡先を見つけました。<reviewRequestLink>申請を確認する</reviewRequestLink>"
+    "messageformat": "慎重に申請を確認してください。Tellomi は同じ名前で別の連絡先を見つけました。<reviewRequestLink>申請を確認する</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, other {{count,number} 人のグループメンバーが同じ名前です。<reviewRequestLink>メンバーを確認する</reviewRequestLink>}}"
@@ -6167,10 +6167,10 @@
     "messageformat": "システム"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Loginキー"
+    "messageformat": "Tellomi Loginキー"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "Signal Loginキーは、アカウントの回復と復元に使用します。これらのキーを信頼できるパスワードマネージャーに安全に保管してください。<learnMoreLink>詳しく見る</learnMoreLink>。"
+    "messageformat": "Tellomi Loginキーは、アカウントの回復と復元に使用します。これらのキーを信頼できるパスワードマネージャーに安全に保管してください。<learnMoreLink>詳しく見る</learnMoreLink>。"
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "さらに詳しく"
@@ -6224,7 +6224,7 @@
     "messageformat": "詳細設定"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signal PIN"
+    "messageformat": "Tellomi PIN"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "PINリマインダー"
@@ -7007,7 +7007,7 @@
     "messageformat": "アップデートが必要です"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "メッセージの同期を完了するには、Signal Desktopを今すぐアップデートしてください。"
+    "messageformat": "メッセージの同期を完了するには、Tellomi Desktopを今すぐアップデートしてください。"
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "アップデートする"
@@ -7016,16 +7016,16 @@
     "messageformat": "アップデートが必要です"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Signal を引き続きご利用いただくには、最新バージョンにアップデートする必要があります。"
+    "messageformat": "Tellomi を引き続きご利用いただくには、最新バージョンにアップデートする必要があります。"
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "ダウンロード {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "アップデートのインストール完了には Signal の再起動が必要です。"
+    "messageformat": "アップデートのインストール完了には Tellomi の再起動が必要です。"
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal Desktop はアップデートに失敗しましたが、ご利用可能な新しいバージョンがあります。{downloadUrl} へアクセスして新しいバージョンを手動でインストールしてから、サポートへ連絡するか、この問題についてのバグを報告してください。"
+    "messageformat": "Tellomi Desktop はアップデートに失敗しましたが、ご利用可能な新しいバージョンがあります。{downloadUrl} へアクセスして新しいバージョンを手動でインストールしてから、サポートへ連絡するか、この問題についてのバグを報告してください。"
   },
   "icu:StandaloneRegistration--signal-logo": {
     "messageformat": "Signalのロゴ"
@@ -7367,10 +7367,10 @@
     "messageformat": "キャンセル"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "Signal PIN について"
+    "messageformat": "Tellomi PIN について"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "Signal 内に保存された情報は、PIN により暗号化を保持されるため、あなたのみがアクセスできます。PIN を使うことで、再インストール時にあなたのプロフィール、設定および連絡先が復元されます。"
+    "messageformat": "Tellomi 内に保存された情報は、PIN により暗号化を保持されるため、あなたのみがアクセスできます。PIN を使うことで、再インストール時にあなたのプロフィール、設定および連絡先が復元されます。"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "さらに詳しく"
@@ -7403,7 +7403,7 @@
     "messageformat": "アップデートが必要です"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "登録を続行するには、Signal の最新バージョンにアップデートしてください。"
+    "messageformat": "登録を続行するには、Tellomi の最新バージョンにアップデートしてください。"
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "アップデート"
@@ -7453,7 +7453,7 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Signal の新しいバージョンがすでにインストールされています。本当にインストールしますか？",
+    "messageformat": "Tellomi の新しいバージョンがすでにインストールされています。本当にインストールしますか？",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
@@ -7565,7 +7565,7 @@
     "messageformat": "下にある「{buttonName}」をクリックする"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "「Signal」をオンにする"
+    "messageformat": "「Tellomi」をオンにする"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "設定へ"
@@ -7880,7 +7880,7 @@
     "messageformat": "マイストーリープライバシー"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "ストーリーを閲覧できる Signal コネクションを選んでください。これはプライバシー設定でいつでも変更できます。<learnMoreLink>さらに詳しく。</learnMoreLink>"
+    "messageformat": "ストーリーを閲覧できる Tellomi コネクションを選んでください。これはプライバシー設定でいつでも変更できます。<learnMoreLink>さらに詳しく。</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "ストーリーを消去する"
@@ -8211,7 +8211,7 @@
     "messageformat": "キャンセル"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "Signal PINを確認"
+    "messageformat": "Tellomi PINを確認"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "PINを忘れないよう、時々確認を行います。"
@@ -8223,7 +8223,7 @@
     "messageformat": "今はしない"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "Signal PINを入力してください"
+    "messageformat": "Tellomi PINを入力してください"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "PINを覚えていただくため、定期的に入力をお願いしています。頻度は次第に少なくなります。"
@@ -8241,13 +8241,13 @@
     "messageformat": "正しいPINが入力されました。後で、再度リマインドします。"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal desktopは、まもなくお使いのコンピュータの{OS}バージョンのサポートを終了します。Signalを引き続き利用するには、{expirationDate}までにコンピュ―タのオペレーティングシステムを更新してください。<learnMoreLink>詳しく見る</learnMoreLink>"
+    "messageformat": "Tellomi desktopは、まもなくお使いのコンピュータの{OS}バージョンのサポートを終了します。Signalを引き続き利用するには、{expirationDate}までにコンピュ―タのオペレーティングシステムを更新してください。<learnMoreLink>詳しく見る</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "このコンピュータではSignal desktopは動作しなくなりました。Signal desktopを再びご利用になる場合は、お使いのコンピュータのバージョン{OS}をアップデートしてください。<learnMoreLink>詳しく見る</learnMoreLink>"
+    "messageformat": "このコンピュータではSignal desktopは動作しなくなりました。Tellomi desktopを再びご利用になる場合は、お使いのコンピュータのバージョン{OS}をアップデートしてください。<learnMoreLink>詳しく見る</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "このコンピュータではSignal desktopは動作しなくなりました。Signal desktopを再びご利用になる場合は、お使いのコンピュータのバージョン{OS}をアップデートしてください。"
+    "messageformat": "このコンピュータではSignal desktopは動作しなくなりました。Tellomi desktopを再びご利用になる場合は、お使いのコンピュータのバージョン{OS}をアップデートしてください。"
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "編集済み"
@@ -8418,7 +8418,7 @@
     "messageformat": "リンクをコピーします"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Signal 経由でリンクを共有する"
+    "messageformat": "Tellomi 経由でリンクを共有する"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "リンクを消去する"
@@ -8952,7 +8952,7 @@
     "messageformat": "すべてのデータを消去しますか？"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "Signal Desktop内の、既存のすべてのデータが消去されます。その後、QRコードをスキャンしてスマートフォンからメッセージ履歴を移行できます。"
+    "messageformat": "Tellomi Desktop内の、既存のすべてのデータが消去されます。その後、QRコードをスキャンしてスマートフォンからメッセージ履歴を移行できます。"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Signalをスムーズに動作させるための微調整とバグ修正を行いました。",

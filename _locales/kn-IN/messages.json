@@ -63,10 +63,10 @@
     "messageformat": "ಉನ್ನತ ಗುಣಮಟ್ಟದ ಮಾಧ್ಯಮವನ್ನು ಕಳುಹಿಸುವಿಕೆಯು ಹೆಚ್ಚು ಡೇಟಾವನ್ನು ಬಳಸಲಿದೆ."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Signal ಗೆ ದಾನ ಮಾಡಿ"
+    "messageformat": "Tellomi ಗೆ ದಾನ ಮಾಡಿ"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "<bold>ಲಿಂಕ್ ಮಾಡಲಾದ ಸಾಧನಗಳು</bold> ನಿಮ್ಮ ಯಾವುದೇ ಹೆಚ್ಚುವರಿ ಸಾಧನಗಳಲ್ಲಿ ನಿಮ್ಮ Signal ಖಾತೆ ಮತ್ತು ಮೆಸೇಜ್‌ಗಳನ್ನು ಆ್ಯಕ್ಸೆಸ್ ಮಾಡಲು ನಿಮಗೆ ಅವಕಾಶ ನೀಡುತ್ತವೆ."
+    "messageformat": "<bold>ಲಿಂಕ್ ಮಾಡಲಾದ ಸಾಧನಗಳು</bold> ನಿಮ್ಮ ಯಾವುದೇ ಹೆಚ್ಚುವರಿ ಸಾಧನಗಳಲ್ಲಿ ನಿಮ್ಮ Tellomi ಖಾತೆ ಮತ್ತು ಮೆಸೇಜ್‌ಗಳನ್ನು ಆ್ಯಕ್ಸೆಸ್ ಮಾಡಲು ನಿಮಗೆ ಅವಕಾಶ ನೀಡುತ್ತವೆ."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "ನೀವು ಡೆಸ್ಕ್‌ಟಾಪ್, ಟ್ಯಾಬ್ಲೆಟ್ ಅಥವಾ ಹೆಚ್ಚುವರಿ ಫೋನ್ ಅನ್ನು ಲಿಂಕ್ ಮಾಡಬಹುದು."
@@ -114,10 +114,10 @@
     "messageformat": "ತಿಳಿದಿಲ್ಲದ ಗುಂಪು"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Signal ತೆರೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ"
+    "messageformat": "Tellomi ತೆರೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "ಸಮಸ್ಯೆಯನ್ನು ಸರಿಪಡಿಸುವುದಕ್ಕೆ ಸಹಾಯ ಮಾಡಲು, ಬೆಂಬಲ ಪುಟದಲ್ಲಿರುವ ರಿಕವರಿ ಮಾರ್ಗದರ್ಶಿಯನ್ನು ಅನುಸರಿಸಿ ಅಥವಾ ಸಮಸ್ಯೆಯನ್ನು ಸರಿಪಡಿಸಲು ಸಹಾಯ ಮಾಡಲು Signal ಬೆಂಬಲವನ್ನು ಸಂಪರ್ಕಿಸಿ.\n\nನೀವು ಈಗಿನಿಂದಲೇ Signal ಬಳಸಬೇಕಾದರೆ, ನಿಮ್ಮ ಡೇಟಾವನ್ನು ಅಳಿಸಬಹುದು ಮತ್ತು ಈ ಡೆಸ್ಕ್‌ಟಾಪ್ ಅನ್ನು ಮರುಲಿಂಕ್ ಮಾಡಬಹುದು. ನಿಮ್ಮ ಫೋನ್‌ನಿಂದ ಸಂದೇಶ ಇತಿಹಾಸವನ್ನು ವರ್ಗಾಯಿಸುವ ಆಯ್ಕೆಯನ್ನು ನೀವು ಹೊಂದಿರುತ್ತೀರಿ."
+    "messageformat": "ಸಮಸ್ಯೆಯನ್ನು ಸರಿಪಡಿಸುವುದಕ್ಕೆ ಸಹಾಯ ಮಾಡಲು, ಬೆಂಬಲ ಪುಟದಲ್ಲಿರುವ ರಿಕವರಿ ಮಾರ್ಗದರ್ಶಿಯನ್ನು ಅನುಸರಿಸಿ ಅಥವಾ ಸಮಸ್ಯೆಯನ್ನು ಸರಿಪಡಿಸಲು ಸಹಾಯ ಮಾಡಲು Tellomi ಬೆಂಬಲವನ್ನು ಸಂಪರ್ಕಿಸಿ.\n\nನೀವು ಈಗಿನಿಂದಲೇ Tellomi ಬಳಸಬೇಕಾದರೆ, ನಿಮ್ಮ ಡೇಟಾವನ್ನು ಅಳಿಸಬಹುದು ಮತ್ತು ಈ ಡೆಸ್ಕ್‌ಟಾಪ್ ಅನ್ನು ಮರುಲಿಂಕ್ ಮಾಡಬಹುದು. ನಿಮ್ಮ ಫೋನ್‌ನಿಂದ ಸಂದೇಶ ಇತಿಹಾಸವನ್ನು ವರ್ಗಾಯಿಸುವ ಆಯ್ಕೆಯನ್ನು ನೀವು ಹೊಂದಿರುತ್ತೀರಿ."
   },
   "icu:databaseError": {
     "messageformat": "ಡೇಟಾಬೇಸಿನಲ್ಲಿ ದೋಷ"
@@ -129,10 +129,10 @@
     "messageformat": "ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಿ"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "ನಿಮ್ಮ ಎಲ್ಲಾ ಸಂದೇಶ ಇತಿಹಾಸ ಮತ್ತು ಮೀಡಿಯಾವನ್ನು ಶಾಶ್ವತವಾಗಿ ಈ ಸಾಧನದಿಂದ ಅಳಿಸಲಾಗುತ್ತದೆ. ಇದು ನಿಮ್ಮ ಫೋನ್‌ನಿಂದ ಯಾವುದೇ ಡೇಟಾವನ್ನು ಅಳಿಸುವುದಿಲ್ಲ.\n\nಸಾಧನವನ್ನು ಮರುಲಿಂಕ್ ಮಾಡಿದ ನಂತರ ನಿಮಗೆ Signal ಅನ್ನು ಈ ಸಾಧನದಲ್ಲಿ ಬಳಸಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ. ನಿಮ್ಮ ಫೋನ್‌ನಿಂದ ಸಂದೇಶ ಇತಿಹಾಸವನ್ನು ವರ್ಗಾಯಿಸುವ ಆಯ್ಕೆಯನ್ನು ನೀವು ಹೊಂದಿರುತ್ತೀರಿ."
+    "messageformat": "ನಿಮ್ಮ ಎಲ್ಲಾ ಸಂದೇಶ ಇತಿಹಾಸ ಮತ್ತು ಮೀಡಿಯಾವನ್ನು ಶಾಶ್ವತವಾಗಿ ಈ ಸಾಧನದಿಂದ ಅಳಿಸಲಾಗುತ್ತದೆ. ಇದು ನಿಮ್ಮ ಫೋನ್‌ನಿಂದ ಯಾವುದೇ ಡೇಟಾವನ್ನು ಅಳಿಸುವುದಿಲ್ಲ.\n\nಸಾಧನವನ್ನು ಮರುಲಿಂಕ್ ಮಾಡಿದ ನಂತರ ನಿಮಗೆ Tellomi ಅನ್ನು ಈ ಸಾಧನದಲ್ಲಿ ಬಳಸಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ. ನಿಮ್ಮ ಫೋನ್‌ನಿಂದ ಸಂದೇಶ ಇತಿಹಾಸವನ್ನು ವರ್ಗಾಯಿಸುವ ಆಯ್ಕೆಯನ್ನು ನೀವು ಹೊಂದಿರುತ್ತೀರಿ."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "ನಿಮ್ಮ ಡೇಟಾಬೇಸ್‌ನ ಈ ಆವೃತ್ತಿಯು Signal ನ ಈ ಆವೃತ್ತಿಗೆ ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ. ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ Signal ನ ಹೊಚ್ಚಹೊಸ ಆವೃತ್ತಿಯನ್ನು ತೆರೆಯುತ್ತಿರುವುದನ್ನು ಖಾತ್ರಿಗೊಳಿಸಿ."
+    "messageformat": "ನಿಮ್ಮ ಡೇಟಾಬೇಸ್‌ನ ಈ ಆವೃತ್ತಿಯು Tellomi ನ ಈ ಆವೃತ್ತಿಗೆ ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ. ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ Tellomi ನ ಹೊಚ್ಚಹೊಸ ಆವೃತ್ತಿಯನ್ನು ತೆರೆಯುತ್ತಿರುವುದನ್ನು ಖಾತ್ರಿಗೊಳಿಸಿ."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "ಡೇಟಾಬೇಸ್ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಕೀಯನ್ನು ಆ್ಯಕ್ಸೆಸ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ, ಏಕೆಂದರೆ OS ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಕೀರಿಂಗ್ ಬ್ಯಾಕ್‌ಎಂಡ್ {previousBackend} ನಿಂದ {currentBackend} ಗೆ ಬದಲಾಗಿದೆ. ಡೆಸ್ಕ್‌ಟಾಪ್ ಪರಿಸರವು ಬದಲಾದರೆ ಇದು ಸಂಭವಿಸಬಹುದು, ಉದಾಹರಣೆಗೆ GNOME ಮತ್ತು KDE ನಡುವೆ.\n\nದಯವಿಟ್ಟು ಹಿಂದಿನ ಡೆಸ್ಕ್‌ಟಾಪ್ ಪರಿಸರಕ್ಕೆ ಬದಲಿಸಿ."
@@ -507,10 +507,10 @@
     "messageformat": "{name} ಜೊತೆಗಿನ ನಿಮ್ಮ ಸುರಕ್ಷತಾ ಸಂಖ್ಯೆಯನ್ನು ಮತ್ತೊಂದು ಸಾಧನದಿಂದ ದೃಢೀಕರಿಸಿಲ್ಲ ಎಂದು ಗುರುತಿಸಿದ್ದೀರಿ"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "ನೀವು ಪರಿಶೀಲಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತಿರುವ ಸುರಕ್ಷತೆ ಸಂಖ್ಯೆ ಬದಲಾಗಿದೆ. {name1} ಜೊತೆಗಿನ ನಿಮ್ಮ ಹೊಸ ಸುರಕ್ಷತೆ ಸಂಖ್ಯೆಯನ್ನು ದಯವಿಟ್ಟು ಪರಿಶೀಲಿಸಿ. ನೆನಪಿಡಿ, ನಿಮ್ಮ ಸಂವಹನವನ್ನು ಯಾರೋ ತಡೆಗಟ್ಟಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದಾರೆ ಅಥವಾ {name2} ಅವರು Signal ಅನ್ನು ಪುನಃ ಸ್ಥಾಪಿಸಿದ್ದಾರೆ ಎಂಬ ಅರ್ಥವನ್ನು ಈ ಬದಲಾವಣೆ ನೀಡಬಹುದು."
+    "messageformat": "ನೀವು ಪರಿಶೀಲಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತಿರುವ ಸುರಕ್ಷತೆ ಸಂಖ್ಯೆ ಬದಲಾಗಿದೆ. {name1} ಜೊತೆಗಿನ ನಿಮ್ಮ ಹೊಸ ಸುರಕ್ಷತೆ ಸಂಖ್ಯೆಯನ್ನು ದಯವಿಟ್ಟು ಪರಿಶೀಲಿಸಿ. ನೆನಪಿಡಿ, ನಿಮ್ಮ ಸಂವಹನವನ್ನು ಯಾರೋ ತಡೆಗಟ್ಟಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದಾರೆ ಅಥವಾ {name2} ಅವರು Tellomi ಅನ್ನು ಪುನಃ ಸ್ಥಾಪಿಸಿದ್ದಾರೆ ಎಂಬ ಅರ್ಥವನ್ನು ಈ ಬದಲಾವಣೆ ನೀಡಬಹುದು."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "ಈ ಕೆಳಗಿನ ಜನರು Signal ಅನ್ನು ಪುನಃ ಇನ್‍ಸ್ಟಾಲ್ ಮಾಡಿರಬಹುದು ಅಥವಾ ಸಾಧನಗಳನ್ನು ಬದಲಿಸಿರಬಹುದು. ಒಬ್ಬ ಸ್ವೀಕೃತಿದಾರರನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ ಅವರ ಹೊಸ ಸುರಕ್ಷತಾ ಸಂಖ್ಯೆಯನ್ನು ದೃಢೀಕರಿಸಿ. ಇದು ಐಚ್ಛಿಕವಾಗಿದೆ."
+    "messageformat": "ಈ ಕೆಳಗಿನ ಜನರು Tellomi ಅನ್ನು ಪುನಃ ಇನ್‍ಸ್ಟಾಲ್ ಮಾಡಿರಬಹುದು ಅಥವಾ ಸಾಧನಗಳನ್ನು ಬದಲಿಸಿರಬಹುದು. ಒಬ್ಬ ಸ್ವೀಕೃತಿದಾರರನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ ಅವರ ಹೊಸ ಸುರಕ್ಷತಾ ಸಂಖ್ಯೆಯನ್ನು ದೃಢೀಕರಿಸಿ. ಇದು ಐಚ್ಛಿಕವಾಗಿದೆ."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "ಬಾಕಿಯಿರುವ ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸಿ"
@@ -519,7 +519,7 @@
     "messageformat": "ಪರಿಶೀಲನೆ"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Signal ಅನ್ನು ಪುನಃ ಇನ್‍ಸ್ಟಾಲ್ ಮಾಡಿರಬಹುದಾದ ಅಥವಾ ಸಾಧನಗಳನ್ನು ಬದಲಿಸಿರಬಹುದಾದ {count,number} ಸಂಪರ್ಕವನ್ನು ನೀವು ಹೊಂದಿದ್ದೀರಿ. ನೀವು ಕಳುಹಿಸುವ ಮುನ್ನ ಅವರ ಸುರಕ್ಷತಾ ಸಂಖ್ಯೆಗಳನ್ನು ಐಚ್ಛಿಕವಾಗಿ ಪರಿಶೀಲಿಸಬಹುದು.} other {Signal ಅನ್ನು ಪುನಃ ಇನ್‍ಸ್ಟಾಲ್ ಮಾಡಿರಬಹುದಾದ ಅಥವಾ ಸಾಧನಗಳನ್ನು ಬದಲಿಸಿರಬಹುದಾದ {count,number} ಸಂಪರ್ಕಗಳನ್ನು ನೀವು ಹೊಂದಿದ್ದೀರಿ. ನೀವು ಕಳುಹಿಸುವ ಮುನ್ನ ಅವರ ಸುರಕ್ಷತಾ ಸಂಖ್ಯೆಗಳನ್ನು ಐಚ್ಛಿಕವಾಗಿ ಪರಿಶೀಲಿಸಬಹುದು.}}"
+    "messageformat": "{count, plural, one {Tellomi ಅನ್ನು ಪುನಃ ಇನ್‍ಸ್ಟಾಲ್ ಮಾಡಿರಬಹುದಾದ ಅಥವಾ ಸಾಧನಗಳನ್ನು ಬದಲಿಸಿರಬಹುದಾದ {count,number} ಸಂಪರ್ಕವನ್ನು ನೀವು ಹೊಂದಿದ್ದೀರಿ. ನೀವು ಕಳುಹಿಸುವ ಮುನ್ನ ಅವರ ಸುರಕ್ಷತಾ ಸಂಖ್ಯೆಗಳನ್ನು ಐಚ್ಛಿಕವಾಗಿ ಪರಿಶೀಲಿಸಬಹುದು.} other {Tellomi ಅನ್ನು ಪುನಃ ಇನ್‍ಸ್ಟಾಲ್ ಮಾಡಿರಬಹುದಾದ ಅಥವಾ ಸಾಧನಗಳನ್ನು ಬದಲಿಸಿರಬಹುದಾದ {count,number} ಸಂಪರ್ಕಗಳನ್ನು ನೀವು ಹೊಂದಿದ್ದೀರಿ. ನೀವು ಕಳುಹಿಸುವ ಮುನ್ನ ಅವರ ಸುರಕ್ಷತಾ ಸಂಖ್ಯೆಗಳನ್ನು ಐಚ್ಛಿಕವಾಗಿ ಪರಿಶೀಲಿಸಬಹುದು.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "ಎಲ್ಲಾ ಸಂಪರ್ಕಗಳನ್ನು ಪರಿಶೀಲಿಸಲಾಗಿದೆ, ಮುಂದುವರಿಸಲು ಕಳಿಸಿ ಅನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ."
@@ -627,16 +627,16 @@
     "messageformat": "ಈ ಚಾಟ್‌ಗೆ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್ನು ಸ್ವಯಂ-ದೃಢೀಕರಿಸಲಾಗಿದೆ "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "ನೀವು ಫೋನ್ ಸಂಖ್ಯೆಯ ಮೂಲಕ ಕನೆಕ್ಟ್ ಆಗಿರುವ ಜನರಿಗೆ, ಕೀ ಟ್ರಾನ್ಸ್‌ಪರೆನ್ಸಿ ಎಂಬ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಬಳಸಿಕೊಂಡು ಕನೆಕ್ಷನ್ ಸುರಕ್ಷಿತವಾಗಿದೆಯೇ ಎಂದು Signal ಸ್ವಯಂಚಾಲಿತವಾಗಿ ದೃಢೀಕರಿಸುತ್ತದೆ. ಹೆಚ್ಚುವರಿ ಭದ್ರತೆಗಾಗಿ, ಹಿಂದಿನ ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿರುವ ಸಂಖ್ಯೆಗಳನ್ನು ಹೋಲಿಕೆ ಮಾಡುವ ಮೂಲಕ ಅಥವಾ ಅವರ ಸಾಧನದಲ್ಲಿರುವ ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡುವ ಮೂಲಕ ಹಸ್ತಚಾಲಿತವಾಗಿ ಎಂಡ್-ಟು-ಎಂಡ್ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್ನು ದೃಢೀಕರಿಸಿ."
+    "messageformat": "ನೀವು ಫೋನ್ ಸಂಖ್ಯೆಯ ಮೂಲಕ ಕನೆಕ್ಟ್ ಆಗಿರುವ ಜನರಿಗೆ, ಕೀ ಟ್ರಾನ್ಸ್‌ಪರೆನ್ಸಿ ಎಂಬ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಬಳಸಿಕೊಂಡು ಕನೆಕ್ಷನ್ ಸುರಕ್ಷಿತವಾಗಿದೆಯೇ ಎಂದು Tellomi ಸ್ವಯಂಚಾಲಿತವಾಗಿ ದೃಢೀಕರಿಸುತ್ತದೆ. ಹೆಚ್ಚುವರಿ ಭದ್ರತೆಗಾಗಿ, ಹಿಂದಿನ ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿರುವ ಸಂಖ್ಯೆಗಳನ್ನು ಹೋಲಿಕೆ ಮಾಡುವ ಮೂಲಕ ಅಥವಾ ಅವರ ಸಾಧನದಲ್ಲಿರುವ ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡುವ ಮೂಲಕ ಹಸ್ತಚಾಲಿತವಾಗಿ ಎಂಡ್-ಟು-ಎಂಡ್ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್ನು ದೃಢೀಕರಿಸಿ."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "ಈ ಚಾಟ್‌ಗೆ ಸ್ವಯಂ-ದೃಢೀಕರಣ ಲಭ್ಯವಿಲ್ಲ"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "ಈ ಚಾಟ್‌ಗಾಗಿ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್ನು Signal ಸ್ವಯಂಚಾಲಿತವಾಗಿ ದೃಢೀಕರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. {name} ಅವರು ತಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ಅಥವಾ ಅವರ ಫೋನ್ ಸಂಖ್ಯೆಯ ಗೌಪ್ಯತೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಬದಲಾಯಿಸಿರುವುದರಿಂದ ಹೀಗೆ ಆಗಿರಬಹುದು. ಹಿಂದಿನ ಸ್ಕ್ರೀನ್‌ನ ಸಂಖ್ಯೆಗಳನ್ನು ಹೋಲಿಕೆ ಮಾಡುವ ಮೂಲಕ ಅಥವಾ ಅವರ ಸಾಧನದಲ್ಲಿನ ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡುವ ಮೂಲಕ ಎಂಡ್-ಟು-ಎಂಡ್ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್ನು ಹಸ್ತಚಾಲಿತವಾಗಿ ದೃಢೀಕರಿಸಿ."
+    "messageformat": "ಈ ಚಾಟ್‌ಗಾಗಿ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್ನು Tellomi ಸ್ವಯಂಚಾಲಿತವಾಗಿ ದೃಢೀಕರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. {name} ಅವರು ತಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ಅಥವಾ ಅವರ ಫೋನ್ ಸಂಖ್ಯೆಯ ಗೌಪ್ಯತೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಬದಲಾಯಿಸಿರುವುದರಿಂದ ಹೀಗೆ ಆಗಿರಬಹುದು. ಹಿಂದಿನ ಸ್ಕ್ರೀನ್‌ನ ಸಂಖ್ಯೆಗಳನ್ನು ಹೋಲಿಕೆ ಮಾಡುವ ಮೂಲಕ ಅಥವಾ ಅವರ ಸಾಧನದಲ್ಲಿನ ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡುವ ಮೂಲಕ ಎಂಡ್-ಟು-ಎಂಡ್ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್ನು ಹಸ್ತಚಾಲಿತವಾಗಿ ದೃಢೀಕರಿಸಿ."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "ನೀವು ಫೋನ್ ಸಂಖ್ಯೆಯ ಮೂಲಕ ಯಾರೊಂದಿಗಾದರೂ ಸಂಪರ್ಕಗೊಂಡಿರುವ ಚಾಟ್‌ಗಳಲ್ಲಿ Signal ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್ನು ದೃಢೀಕರಿಸಬಹುದು. ಚಾಟ್ ಅನ್ನು ಯೂಸರ್‌ನೇಮ್ ಅಥವಾ ಸಾಮಾನ್ಯ ಗುಂಪಿನೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸಿದ್ದರೆ, ಹಿಂದಿನ ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿರುವ ಸಂಖ್ಯೆಗಳನ್ನು ಹೋಲಿಕೆ ಮಾಡುವ ಮೂಲಕ ಅಥವಾ ಅವರ ಸಾಧನದಲ್ಲಿ ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡುವ ಮೂಲಕ ಎಂಡ್-ಟು-ಎಂಡ್ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್ನು ದೃಢೀಕರಿಸಿ."
+    "messageformat": "ನೀವು ಫೋನ್ ಸಂಖ್ಯೆಯ ಮೂಲಕ ಯಾರೊಂದಿಗಾದರೂ ಸಂಪರ್ಕಗೊಂಡಿರುವ ಚಾಟ್‌ಗಳಲ್ಲಿ Tellomi ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್ನು ದೃಢೀಕರಿಸಬಹುದು. ಚಾಟ್ ಅನ್ನು ಯೂಸರ್‌ನೇಮ್ ಅಥವಾ ಸಾಮಾನ್ಯ ಗುಂಪಿನೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸಿದ್ದರೆ, ಹಿಂದಿನ ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿರುವ ಸಂಖ್ಯೆಗಳನ್ನು ಹೋಲಿಕೆ ಮಾಡುವ ಮೂಲಕ ಅಥವಾ ಅವರ ಸಾಧನದಲ್ಲಿ ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡುವ ಮೂಲಕ ಎಂಡ್-ಟು-ಎಂಡ್ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್ನು ದೃಢೀಕರಿಸಿ."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "ಸರಿ"
@@ -675,10 +675,10 @@
     "messageformat": "ಇಲ್ಲ, ಧನ್ಯವಾದಗಳು"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "Signal ಈಗ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್ನು ಸ್ವಯಂ-ದೃಢೀಕರಿಸಬಲ್ಲದು"
+    "messageformat": "Tellomi ಈಗ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್ನು ಸ್ವಯಂ-ದೃಢೀಕರಿಸಬಲ್ಲದು"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "ನೀವು ಫೋನ್ ಸಂಖ್ಯೆಯ ಮೂಲಕ ಕನೆಕ್ಟ್ ಆಗಿರುವ ಸಂಪರ್ಕಗಳಿಗೆ, ಕೀ ಟ್ರಾನ್ಸ್‌ಪರೆನ್ಸಿ ಎಂಬ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಬಳಸಿಕೊಂಡು ಕನೆಕ್ಷನ್ ಸುರಕ್ಷಿತವಾಗಿದೆಯೇ ಎಂದು Signal ಸ್ವಯಂಚಾಲಿತವಾಗಿ ದೃಢೀಕರಿಸುತ್ತದೆ. ಹೆಚ್ಚಿನ ಭದ್ರತೆಗಾಗಿ, ನೀವು ಈಗಲೂ QR ಕೋಡ್ ಬಳಸಿಕೊಂಡು ಅಥವಾ ಸುರಕ್ಷಾ ಸಂಖ್ಯೆಗಳನ್ನು ಹೋಲಿಕೆ ಮಾಡುವ ಮೂಲಕ ಕನೆಕ್ಷನ್‌ಗಳನ್ನು ಮ್ಯಾನುವಲ್ ಆಗಿ ದೃಢೀಕರಿಸಬಹುದು."
+    "messageformat": "ನೀವು ಫೋನ್ ಸಂಖ್ಯೆಯ ಮೂಲಕ ಕನೆಕ್ಟ್ ಆಗಿರುವ ಸಂಪರ್ಕಗಳಿಗೆ, ಕೀ ಟ್ರಾನ್ಸ್‌ಪರೆನ್ಸಿ ಎಂಬ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಬಳಸಿಕೊಂಡು ಕನೆಕ್ಷನ್ ಸುರಕ್ಷಿತವಾಗಿದೆಯೇ ಎಂದು Tellomi ಸ್ವಯಂಚಾಲಿತವಾಗಿ ದೃಢೀಕರಿಸುತ್ತದೆ. ಹೆಚ್ಚಿನ ಭದ್ರತೆಗಾಗಿ, ನೀವು ಈಗಲೂ QR ಕೋಡ್ ಬಳಸಿಕೊಂಡು ಅಥವಾ ಸುರಕ್ಷಾ ಸಂಖ್ಯೆಗಳನ್ನು ಹೋಲಿಕೆ ಮಾಡುವ ಮೂಲಕ ಕನೆಕ್ಷನ್‌ಗಳನ್ನು ಮ್ಯಾನುವಲ್ ಆಗಿ ದೃಢೀಕರಿಸಬಹುದು."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "ಮುಂದುವರಿಸಿ"
@@ -837,7 +837,7 @@
     "messageformat": "ಸ್ಟಿಕ್ಕರ್ ಪ್ಯಾಕ್ ಕ್ರಿಯೇಟರ್"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Signal Desktop ಬಗ್ಗೆ"
+    "messageformat": "Tellomi Desktop ಬಗ್ಗೆ"
   },
   "icu:screenShareWindow": {
     "messageformat": "ಸ್ಕ್ರೀನ್ ಹಂಚಿಕೊಳ್ಳಲಾಗುತ್ತಿದೆ"
@@ -855,7 +855,7 @@
     "messageformat": "ತೊರೆಯಿರಿ"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "Tellomi Desktop"
   },
   "icu:search": {
     "messageformat": "ಹುಡುಕಿ"
@@ -915,7 +915,7 @@
     "messageformat": "ಈ ಅಪ್‌ಡೇಟ್‌ನಲ್ಲಿ {whatsNew} ನೋಡಿ"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Signal ಲಾಭರಹಿತ ಸಂಸ್ಥೆಯಾಗಿದೆ"
+    "messageformat": "Tellomi ಲಾಭರಹಿತ ಸಂಸ್ಥೆಯಾಗಿದೆ"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "ಹೊಸತೇನು"
@@ -999,13 +999,13 @@
     "messageformat": "ನೀವು"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "ಧ್ವನಿ ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸಲು, ನಿಮ್ಮ ಮೈಕ್ರೋಫೋನ್‌ ಪ್ರವೇಶಿಸಲು Signal Desktop ಗೆ ಅನುಮತಿ ನೀಡಿ."
+    "messageformat": "ಧ್ವನಿ ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸಲು, ನಿಮ್ಮ ಮೈಕ್ರೋಫೋನ್‌ ಪ್ರವೇಶಿಸಲು Tellomi Desktop ಗೆ ಅನುಮತಿ ನೀಡಿ."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "ಕರೆ ಮಾಡಲು, ಮ್ರೈಕ್ರೋಫೋನ್ ಪ್ರವೇಶವನ್ನು Signal Desktop ಗೆ ನೀವು ಅನುಮತಿ ನೀಡಬೇಕು."
+    "messageformat": "ಕರೆ ಮಾಡಲು, ಮ್ರೈಕ್ರೋಫೋನ್ ಪ್ರವೇಶವನ್ನು Tellomi Desktop ಗೆ ನೀವು ಅನುಮತಿ ನೀಡಬೇಕು."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "ವೀಡಿಯೋ ಕಾಲಿಂಗ್‌ಗೆ, ನಿಮ್ಮ ಕ್ಯಾಮರಾ ಪ್ರವೇಶವನ್ನು Signal Desktop ಗೆ ಅನುಮತಿ ನೀಡಬೇಕು."
+    "messageformat": "ವೀಡಿಯೋ ಕಾಲಿಂಗ್‌ಗೆ, ನಿಮ್ಮ ಕ್ಯಾಮರಾ ಪ್ರವೇಶವನ್ನು Tellomi Desktop ಗೆ ಅನುಮತಿ ನೀಡಬೇಕು."
   },
   "icu:allowAccess": {
     "messageformat": "ಪ್ರವೇಶ ಅನುಮತಿಸಿ"
@@ -1029,13 +1029,13 @@
     "messageformat": "ಮ್ಯೂಟ್ ಮಾಡಿ"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. <retryUpdateButton>ಅಪ್‌ಡೇಟ್ ಅನ್ನು ಮರುಪ್ರಯತ್ನಿಸಿ</retryUpdateButton> ಅಥವಾ ಅದನ್ನು ಹಸ್ತಚಾಲಿತವಾಗಿ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು {url}ಗೆ ಭೇಟಿ ನೀಡಿ. ನಂತರ, ಈ ಸಮಸ್ಯೆಯ ಬಗ್ಗೆ <contactSupportLink>ಬೆಂಬಲವನ್ನು ಸಂಪರ್ಕಿಸಿ</contactSupportLink>"
+    "messageformat": "Tellomi ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. <retryUpdateButton>ಅಪ್‌ಡೇಟ್ ಅನ್ನು ಮರುಪ್ರಯತ್ನಿಸಿ</retryUpdateButton> ಅಥವಾ ಅದನ್ನು ಹಸ್ತಚಾಲಿತವಾಗಿ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು {url}ಗೆ ಭೇಟಿ ನೀಡಿ. ನಂತರ, ಈ ಸಮಸ್ಯೆಯ ಬಗ್ಗೆ <contactSupportLink>ಬೆಂಬಲವನ್ನು ಸಂಪರ್ಕಿಸಿ</contactSupportLink>"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಇದನ್ನು ಹಸ್ತಚಾಲಿತವಾಗಿ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು {url}ಗೆ ಭೇಟಿ ನೀಡಿ. ನಂತರ, ಈ ಸಮಸ್ಯೆಯ ಬಗ್ಗೆ <contactSupportLink>ಬೆಂಬಲವನ್ನು ಸಂಪರ್ಕಿಸಿ</contactSupportLink>"
+    "messageformat": "Tellomi ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಇದನ್ನು ಹಸ್ತಚಾಲಿತವಾಗಿ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು {url}ಗೆ ಭೇಟಿ ನೀಡಿ. ನಂತರ, ಈ ಸಮಸ್ಯೆಯ ಬಗ್ಗೆ <contactSupportLink>ಬೆಂಬಲವನ್ನು ಸಂಪರ್ಕಿಸಿ</contactSupportLink>"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal Desktop ಬಹುಶಃ macOS ಕ್ವಾರಂಟೈನ್‌ನಲ್ಲಿದೆ ಮತ್ತು ಇದು ಸ್ವಯಂ ಅಪ್‌ಡೇಟ್ ಆಗದಿರಬಹುದು. ಫೈಂಡರ್ ಬಳಸಿ {app} ಅನ್ನು {folder} ಗೆ ಸಾಗಿಸಲು ಪ್ರಯತ್ನಿಸಿ."
+    "messageformat": "Tellomi Desktop ಬಹುಶಃ macOS ಕ್ವಾರಂಟೈನ್‌ನಲ್ಲಿದೆ ಮತ್ತು ಇದು ಸ್ವಯಂ ಅಪ್‌ಡೇಟ್ ಆಗದಿರಬಹುದು. ಫೈಂಡರ್ ಬಳಸಿ {app} ಅನ್ನು {folder} ಗೆ ಸಾಗಿಸಲು ಪ್ರಯತ್ನಿಸಿ."
   },
   "icu:ok": {
     "messageformat": "ಸರಿ"
@@ -1080,7 +1080,7 @@
     "messageformat": "ಈ ಸಾಧನದಿಂದ ಈ ಸಂದೇಶವನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "ಅವರು Signal ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯಲ್ಲಿದ್ದರೆ ಚಾಟ್‌ನಲ್ಲಿರುವ ಪ್ರತಿಯೊಬ್ಬರಿಗೂ ಈ ಮೆಸೇಜ್ ಅನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ. ನೀವು ಮೆಸೇಜ್ ಅನ್ನು ಅಳಿಸಿದ್ದೀರಿ ಎಂಬುದನ್ನು ಅವರು ನೋಡಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ."
+    "messageformat": "ಅವರು Tellomi ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯಲ್ಲಿದ್ದರೆ ಚಾಟ್‌ನಲ್ಲಿರುವ ಪ್ರತಿಯೊಬ್ಬರಿಗೂ ಈ ಮೆಸೇಜ್ ಅನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ. ನೀವು ಮೆಸೇಜ್ ಅನ್ನು ಅಳಿಸಿದ್ದೀರಿ ಎಂಬುದನ್ನು ಅವರು ನೋಡಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ."
   },
   "icu:from": {
     "messageformat": "ಇಂದ"
@@ -1122,7 +1122,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "“{title}” ಎಂಬುದು ಈ ವ್ಯಕ್ತಿಯು Signal ನಲ್ಲಿ ತಮಗಾಗಿ ಸೆಟ್ ಮಾಡಿದ ಪ್ರೊಫೈಲ್ ಹೆಸರು ಆಗಿದೆ."
+    "messageformat": "“{title}” ಎಂಬುದು ಈ ವ್ಯಕ್ತಿಯು Tellomi ನಲ್ಲಿ ತಮಗಾಗಿ ಸೆಟ್ ಮಾಡಿದ ಪ್ರೊಫೈಲ್ ಹೆಸರು ಆಗಿದೆ."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "ಪರಿಶೀಲಿಸಲಾಗಿದೆ"
@@ -1137,7 +1137,7 @@
     "messageformat": "{name} ನೊಂದಿಗೆ ಯಾವುದೇ ನೇರ ಮೆಸೇಜ್‌ಗಳಿಲ್ಲ"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal ಸಂಪರ್ಕ"
+    "messageformat": "Tellomi ಸಂಪರ್ಕ"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} ಅವರು ನಿಮ್ಮ ಸಿಸ್ಟಂ ಸಂಪರ್ಕಗಳಲ್ಲಿದ್ದಾರೆ"
@@ -1449,7 +1449,7 @@
     "messageformat": "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal ಎಂಡ್‌-ಟು-ಎಂಡ್‌ ಎನ್‌ಕ್ರಿಪ್ಷನ್ ಅನ್ನು ಬಳಸುತ್ತದೆ ಮತ್ತು ಕೆಲವು ಬಾರಿ ನಿಮ್ಮ ಚಾಟ್ ಸೆಷನ್‌ಗಳನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಬೇಕಾಗಬಹುದು. ಇದು ನಿಮ್ಮ ಚಾಟ್‌ನ ಭದ್ರತೆಗೆ ಯಾವುದೇ ಬಾಧೆ ಮಾಡುವುದಿಲ್ಲ. ಆದರೆ, ಈ ಸಂಪರ್ಕದಿಂದ ಒಂದು ಸಂದೇಶವನ್ನು ನೀವು ತಪ್ಪಿಸಿಕೊಂಡಿರಬಹುದು ಮತ್ತು ಪುನಃ ಕಳುಹಿಸುವಂತೆ ನೀವು ಅವರನ್ನು ಕೇಳಬಹುದು."
+    "messageformat": "Tellomi ಎಂಡ್‌-ಟು-ಎಂಡ್‌ ಎನ್‌ಕ್ರಿಪ್ಷನ್ ಅನ್ನು ಬಳಸುತ್ತದೆ ಮತ್ತು ಕೆಲವು ಬಾರಿ ನಿಮ್ಮ ಚಾಟ್ ಸೆಷನ್‌ಗಳನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಬೇಕಾಗಬಹುದು. ಇದು ನಿಮ್ಮ ಚಾಟ್‌ನ ಭದ್ರತೆಗೆ ಯಾವುದೇ ಬಾಧೆ ಮಾಡುವುದಿಲ್ಲ. ಆದರೆ, ಈ ಸಂಪರ್ಕದಿಂದ ಒಂದು ಸಂದೇಶವನ್ನು ನೀವು ತಪ್ಪಿಸಿಕೊಂಡಿರಬಹುದು ಮತ್ತು ಪುನಃ ಕಳುಹಿಸುವಂತೆ ನೀವು ಅವರನ್ನು ಕೇಳಬಹುದು."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "ಬೆಂಬಲವನ್ನು ಸಂಪರ್ಕಿಸಿ"
@@ -1476,7 +1476,7 @@
     "messageformat": "{sender} ತಮ್ಮ ಫೋನ್ ನಂಬರ್ ಬದಲಾಯಿಸಿದ್ದಾರೆ"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "ಸಂಪರ್ಕ Signal ಗೆ ಸೇರಿದ್ದಾರೆ"
+    "messageformat": "ಸಂಪರ್ಕ Tellomi ಗೆ ಸೇರಿದ್ದಾರೆ"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} ಮತ್ತು {conversationTitle} ಒಂದೇ ಖಾತೆಯಾಗಿದೆ. ಎರಡೂ ಚಾಟ್‌ಗಳ ನಿಮ್ಮ ಸಂದೇಶ ಇತಿಹಾಸ ಇಲ್ಲಿದೆ."
@@ -1566,7 +1566,7 @@
     "messageformat": "ಮೀಡಿಯಾವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "ನಿಮ್ಮ ಡೆಸ್ಕ್‌ಟಾಪ್ ಮತ್ತು ಫೋನ್‌ನ ಇಂಟರ್‌ನೆಟ್ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ. ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Signal ತೆರೆಯಿರಿ, ನಂತರ ಪುನಃ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿ."
+    "messageformat": "ನಿಮ್ಮ ಡೆಸ್ಕ್‌ಟಾಪ್ ಮತ್ತು ಫೋನ್‌ನ ಇಂಟರ್‌ನೆಟ್ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ. ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Tellomi ತೆರೆಯಿರಿ, ನಂತರ ಪುನಃ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿ."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "ಈ ಮೀಡಿಯಾ ಇನ್ನು ಮುಂದೆ ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ಲಭ್ಯವಿರುವುದಿಲ್ಲ ಮತ್ತು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
@@ -1587,10 +1587,10 @@
     "messageformat": "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Signal ಆ್ಯಪ್‌ನಲ್ಲಿ ಈ ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ"
+    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Tellomi ಆ್ಯಪ್‌ನಲ್ಲಿ ಈ ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Signal ತೆರೆಯಿರಿ"
+    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Tellomi ತೆರೆಯಿರಿ"
   },
   "icu:Install__instructions__2": {
     "messageformat": "{settings} ಗೆ ಟ್ಯಾಪ್ ಮಾಡಿ, ಬಳಿಕ {linkedDevices} ಟ್ಯಾಪ್ ಮಾಡಿ"
@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>ಅನಿರೀಕ್ಷಿತ ದೋಷ ಸಂಭವಿಸಿದೆ.</paragraph><paragraph>ದಯವಿಟ್ಟು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "ನಿಮ್ಮ ಪ್ರಸ್ತುತ ನೆಟ್‌ವರ್ಕ್ ಅನ್ನು ಬಳಸಿಕೊಂಡು Signal ಈ ಸಾಧನವನ್ನು ಲಿಂಕ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
+    "messageformat": "ನಿಮ್ಮ ಪ್ರಸ್ತುತ ನೆಟ್‌ವರ್ಕ್ ಅನ್ನು ಬಳಸಿಕೊಂಡು Tellomi ಈ ಸಾಧನವನ್ನು ಲಿಂಕ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "ಮರುಪ್ರಯತ್ನಿಸಿ"
@@ -1626,7 +1626,7 @@
     "messageformat": "ಎಲ್ಲ ಡೇಟಾ ಅಳಿಸುವುದೇ?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "ನೀವು ಈ ಡೆಸ್ಕ್‌ಟಾಪ್‌ಗೆ ಬೇರೆ Signal ಖಾತೆಯನ್ನು ಲಿಂಕ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದೀರಿ. ನೀವು ಮುಂದುವರಿಸಿದರೆ, ಪ್ರಸ್ತುತ ಸಿಗ್ನಲ್ ಡೆಸ್ಕ್‌ಟಾಪ್‌ನಲ್ಲಿರುವ ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ."
+    "messageformat": "ನೀವು ಈ ಡೆಸ್ಕ್‌ಟಾಪ್‌ಗೆ ಬೇರೆ Tellomi ಖಾತೆಯನ್ನು ಲಿಂಕ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದೀರಿ. ನೀವು ಮುಂದುವರಿಸಿದರೆ, ಪ್ರಸ್ತುತ ಸಿಗ್ನಲ್ ಡೆಸ್ಕ್‌ಟಾಪ್‌ನಲ್ಲಿರುವ ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "ಮುಂದುವರಿಸಿ"
@@ -1641,7 +1641,7 @@
     "messageformat": "ಸಾಧನದ ಹೆಸರು"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "ಈ ಸಾಧನದ ಹೆಸರನ್ನು ಬದಲಾಯಿಸಲು, ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Signal ತೆರೆಯಿರಿ ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳು > ಲಿಂಕ್ ಮಾಡಲಾದ ಸಾಧನಗಳು ಎಂಬಲ್ಲಿಗೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ"
+    "messageformat": "ಈ ಸಾಧನದ ಹೆಸರನ್ನು ಬದಲಾಯಿಸಲು, ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Tellomi ತೆರೆಯಿರಿ ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳು > ಲಿಂಕ್ ಮಾಡಲಾದ ಸಾಧನಗಳು ಎಂಬಲ್ಲಿಗೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "ಎಮೋಜಿ ಸ್ಕಿನ್ ಟೋನ್"
@@ -1833,7 +1833,7 @@
     "messageformat": "ಸ್ವಯಂಚಾಲಿತ ಕೀ ದೃಢೀಕರಣ"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "ಸಕ್ರಿಯಗೊಳಿಸಿದಾಗ, Signal 1:1 ಚಾಟ್‌ಗಳ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ದೃಢೀಕರಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತದೆ."
+    "messageformat": "ಸಕ್ರಿಯಗೊಳಿಸಿದಾಗ, Tellomi 1:1 ಚಾಟ್‌ಗಳ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ದೃಢೀಕರಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತದೆ."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
@@ -1851,7 +1851,7 @@
     "messageformat": "ಕ್ಷಮಿಸಿ, ನೀವು ಹಲವಾರು ಸಾಧನಗಳು ಈಗಾಗಲೇ ಜೋಡಿಸಿದ್ದೀರಿ. ಕೆಲವನ್ನು ತೆಗೆದುಹಾಕಲು ಪ್ರಯತ್ನಿಸಿ."
   },
   "icu:installTooOld": {
-    "messageformat": "ನಿಮ್ಮ ಫೋನ್ ಲಿಂಕ್ ಮಾಡಲು ಈ ಸಾಧನದಲ್ಲಿ Signal ಅಪ್‌ಡೇಟ್ ಮಾಡಿ."
+    "messageformat": "ನಿಮ್ಮ ಫೋನ್ ಲಿಂಕ್ ಮಾಡಲು ಈ ಸಾಧನದಲ್ಲಿ Tellomi ಅಪ್‌ಡೇಟ್ ಮಾಡಿ."
   },
   "icu:installErrorHeader": {
     "messageformat": "ಏನೋ ತಪ್ಪಾಗಿದೆ!"
@@ -1902,7 +1902,7 @@
     "messageformat": "ಈ ಕರೆ ಲಿಂಕ್ ಇನ್ನು ಮುಂದೆ ಮಾನ್ಯವಾಗಿರುವುದಿಲ್ಲ."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal ಕರೆ"
+    "messageformat": "Tellomi ಕರೆ"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "ಲಿಂಕ್ ಅಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ ಹಾಗೂ ಇನ್ನೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
@@ -2076,16 +2076,16 @@
     "messageformat": "{count, plural, one {{count,number} ವ್ಯಕ್ತಿ ಈ ಕರೆಯಲ್ಲಿದ್ದಾರೆ} other {{count,number} ಜನರು ಈ ಕರೆಯಲ್ಲಿದ್ದಾರೆ}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal {person} ಅವರಿಗೆ ರಿಂಗ್ ಮಾಡಲಿದೆ"
+    "messageformat": "Tellomi {person} ಅವರಿಗೆ ರಿಂಗ್ ಮಾಡಲಿದೆ"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal {first} ಮತ್ತು {second} ಅವರಿಗೆ ರಿಂಗ್ ಮಾಡಲಿದೆ"
+    "messageformat": "Tellomi {first} ಮತ್ತು {second} ಅವರಿಗೆ ರಿಂಗ್ ಮಾಡಲಿದೆ"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal {first}, {second}, ಮತ್ತು {third} ಅವರಿಗೆ ರಿಂಗ್ ಮಾಡಲಿದೆ"
+    "messageformat": "Tellomi {first}, {second}, ಮತ್ತು {third} ಅವರಿಗೆ ರಿಂಗ್ ಮಾಡಲಿದೆ"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {{first}, {second}, ಮತ್ತು {others,number} ಇತರರಿಗೆ Signal ರಿಂಗ್ ಮಾಡಲಿದೆ} other {{first}, {second}, ಮತ್ತು {others,number} ಇತರರಿಗೆ Signal ರಿಂಗ್ ಮಾಡಲಿದೆ}}"
+    "messageformat": "{others, plural, one {{first}, {second}, ಮತ್ತು {others,number} ಇತರರಿಗೆ Tellomi ರಿಂಗ್ ಮಾಡಲಿದೆ} other {{first}, {second}, ಮತ್ತು {others,number} ಇತರರಿಗೆ Tellomi ರಿಂಗ್ ಮಾಡಲಿದೆ}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} ಅವರಿಗೆ ತಿಳಿಸಲಾಗುತ್ತದೆ"
@@ -2139,13 +2139,13 @@
     "messageformat": "ಮರುಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "ನಿಮ್ಮ ಸಂಪರ್ಕ ಕಡಿತಗೊಂಡಿದೆ. Signal ಮರುಸಂಪರ್ಕಗೊಳ್ಳುತ್ತಿದೆ."
+    "messageformat": "ನಿಮ್ಮ ಸಂಪರ್ಕ ಕಡಿತಗೊಂಡಿದೆ. Tellomi ಮರುಸಂಪರ್ಕಗೊಳ್ಳುತ್ತಿದೆ."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal {window} ಅನ್ನು ಹಂಚಿಕೊಳ್ಳುತ್ತಿದೆ."
+    "messageformat": "Tellomi {window} ಅನ್ನು ಹಂಚಿಕೊಳ್ಳುತ್ತಿದೆ."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Signal‌ಸ್ಕ್ರೀನ್‌ ಶೇರಿಂಗ್‌ ಸಕ್ರಿಯವಾಗಿದೆ"
+    "messageformat": "Tellomi‌ಸ್ಕ್ರೀನ್‌ ಶೇರಿಂಗ್‌ ಸಕ್ರಿಯವಾಗಿದೆ"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "ಮರುಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ…"
@@ -2166,7 +2166,7 @@
     "messageformat": "ಅನುಮತಿ ಅಗತ್ಯವಿದೆ"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನ ಸ್ಕ್ರೀನ್‌ ರೆಕಾರ್ಡಿಂಗ್‌ ಪ್ರವೇಶಿಸಲು Signal ಗೆ ಅನುಮತಿ ಅಗತ್ಯವಿದೆ."
+    "messageformat": "ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನ ಸ್ಕ್ರೀನ್‌ ರೆಕಾರ್ಡಿಂಗ್‌ ಪ್ರವೇಶಿಸಲು Tellomi ಗೆ ಅನುಮತಿ ಅಗತ್ಯವಿದೆ."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "ಸಿಸ್ಟಮ್ ಆದ್ಯತೆಗಳಿಗೆ ಹೋಗಿ."
@@ -2175,7 +2175,7 @@
     "messageformat": "ಕೆಳ ಎಡಭಾಗದಲ್ಲಿರುವ ಲಾಕ್ ಐಕಾನ್ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ ಪಾಸ್‌ವರ್ಡ್‌ ನಮೂದಿಸಿ."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "ಬಲಕ್ಕೆ, Signal ಗೆ ಬಾಕ್ಸ್‌ ಗುರುತು ಮಾಡಿ. ಪಟ್ಟಿಯಲ್ಲಿ ನಿಮಗೆ Signal ಕಾಣಿಸದಿದ್ದರೆ, ಸೇರಿಸಲು + ಕ್ಲಿಕ್ ಮಾಡಿ."
+    "messageformat": "ಬಲಕ್ಕೆ, Tellomi ಗೆ ಬಾಕ್ಸ್‌ ಗುರುತು ಮಾಡಿ. ಪಟ್ಟಿಯಲ್ಲಿ ನಿಮಗೆ Tellomi ಕಾಣಿಸದಿದ್ದರೆ, ಸೇರಿಸಲು + ಕ್ಲಿಕ್ ಮಾಡಿ."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "ಸಿಸ್ಟಮ್ ಆದ್ಯತೆಗಳಿಗೆ ಹೋಗಿ"
@@ -2187,7 +2187,7 @@
     "messageformat": "ಯಾವಾಗಲೂ ಕರೆಗಳನ್ನು ರಿಲೇ ಮಾಡಿ"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "ನಿಮ್ಮ ಐಪಿ ವಿಳಾಸವನ್ನು ನಿಮ್ಮ ಸಂಪರ್ಕಕ್ಕೆ ಬಹಿರಂಗಪಡಿಸುವುದನ್ನು ತಪ್ಪಿಸಲು Signal ಸರ್ವರ್ ಮೂಲಕ ಎಲ್ಲಾ ಕರೆಗಳನ್ನು ರಿಲೇ ಮಾಡಿ. ಸಕ್ರಿಯಗೊಳಿಸುವುದು ಕರೆ ಗುಣಮಟ್ಟವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ"
+    "messageformat": "ನಿಮ್ಮ ಐಪಿ ವಿಳಾಸವನ್ನು ನಿಮ್ಮ ಸಂಪರ್ಕಕ್ಕೆ ಬಹಿರಂಗಪಡಿಸುವುದನ್ನು ತಪ್ಪಿಸಲು Tellomi ಸರ್ವರ್ ಮೂಲಕ ಎಲ್ಲಾ ಕರೆಗಳನ್ನು ರಿಲೇ ಮಾಡಿ. ಸಕ್ರಿಯಗೊಳಿಸುವುದು ಕರೆ ಗುಣಮಟ್ಟವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ"
   },
   "icu:permissions": {
     "messageformat": "ಅನುಮತಿಗಳು"
@@ -2205,10 +2205,10 @@
     "messageformat": "ಪಠ್ಯವನ್ನು ಆಯ್ಕೆ ಮಾಡಿದಾಗ ಪಠ್ಯ ಫಾರ್ಮ್ಯಾಟಿಂಗ್ ಪಾಪ್‌ಓವರ್ ಅನ್ನು ತೋರಿಸಿ"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "ಸ್ಪೆಲ್‌ ಚೆಕ್‌ ಮುಂದಿನ ಬಾರಿ Signal ಆರಂಭವಾದಾಗ ಸಕ್ರಿಯಗೊಳ್ಳುತ್ತದೆ."
+    "messageformat": "ಸ್ಪೆಲ್‌ ಚೆಕ್‌ ಮುಂದಿನ ಬಾರಿ Tellomi ಆರಂಭವಾದಾಗ ಸಕ್ರಿಯಗೊಳ್ಳುತ್ತದೆ."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "ಮುಂದಿನ ಬಾರಿ Signal ಆರಂಭವಾದಾಗ ಸ್ಪೆಲ್ ಚೆಕ್ ನಿಷ್ಕ್ರಿಯವಾಗುತ್ತದೆ."
+    "messageformat": "ಮುಂದಿನ ಬಾರಿ Tellomi ಆರಂಭವಾದಾಗ ಸ್ಪೆಲ್ ಚೆಕ್ ನಿಷ್ಕ್ರಿಯವಾಗುತ್ತದೆ."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "ಸಿಸ್ಟಮ್ ಟ್ರೇಗೆ ಮಿನಿಮೈಸ್ ಮಾಡಿ"
@@ -2232,7 +2232,7 @@
     "messageformat": "ಎಲ್ಲ ಡೇಟಾ ಅಳಿಸುವುದೇ?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Signal Desktop ನ ಈ ಆವೃತ್ತಿಯಿಂದ ಎಲ್ಲಾ ಡೇಟಾ ಮತ್ತು ಮೆಸೇಜ್‌ಗಳನ್ನು ಅಳಿಸಬೇಕೇ? ನಿಮ್ಮ ಫೋನ್ ಅಥವಾ ಇತರ ಲಿಂಕ್ ಮಾಡಲಾದ ಸಾಧನಗಳಲ್ಲಿನ ನಿಮ್ಮ Signal ಖಾತೆ ಮತ್ತು ಡೇಟಾವನ್ನು ಅಳಿಸಲಾಗುವುದಿಲ್ಲ."
+    "messageformat": "Tellomi Desktop ನ ಈ ಆವೃತ್ತಿಯಿಂದ ಎಲ್ಲಾ ಡೇಟಾ ಮತ್ತು ಮೆಸೇಜ್‌ಗಳನ್ನು ಅಳಿಸಬೇಕೇ? ನಿಮ್ಮ ಫೋನ್ ಅಥವಾ ಇತರ ಲಿಂಕ್ ಮಾಡಲಾದ ಸಾಧನಗಳಲ್ಲಿನ ನಿಮ್ಮ Tellomi ಖಾತೆ ಮತ್ತು ಡೇಟಾವನ್ನು ಅಳಿಸಲಾಗುವುದಿಲ್ಲ."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "ಡಿಸ್‌ಕನೆಕ್ಟ್ ಮಾಡಲಾಗುತ್ತಿದೆ ಮತ್ತು ಎಲ್ಲ ಡೇಟಾ ಅಳಿಸಲಾಗುತ್ತಿದೆ…"
@@ -2241,7 +2241,7 @@
     "messageformat": "ಖಾತೆಯನ್ನು ಅಳಿಸಿ"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "ಇದು ನಿಮ್ಮ ಖಾತೆಯ ಮಾಹಿತಿ, ಪ್ರೊಫೈಲ್ ಮತ್ತು ನಿಮ್ಮ ಎಲ್ಲಾ ಮೆಸೇಜ್‌ಗಳನ್ನು ಅಳಿಸುತ್ತದೆ. ನಿಮ್ಮನ್ನು ಎಲ್ಲಾ Signal ಗುಂಪುಗಳಿಂದಲೂ ತೆಗೆಯಲಾಗುತ್ತದೆ."
+    "messageformat": "ಇದು ನಿಮ್ಮ ಖಾತೆಯ ಮಾಹಿತಿ, ಪ್ರೊಫೈಲ್ ಮತ್ತು ನಿಮ್ಮ ಎಲ್ಲಾ ಮೆಸೇಜ್‌ಗಳನ್ನು ಅಳಿಸುತ್ತದೆ. ನಿಮ್ಮನ್ನು ಎಲ್ಲಾ Tellomi ಗುಂಪುಗಳಿಂದಲೂ ತೆಗೆಯಲಾಗುತ್ತದೆ."
   },
   "icu:deleteAccountButton": {
     "messageformat": "ಖಾತೆಯನ್ನು ಅಳಿಸಿ"
@@ -2250,10 +2250,10 @@
     "messageformat": "ಖಾತೆಯನ್ನು ಅಳಿಸಬೇಕೆ?"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "ಇದು ನಿಮ್ಮ ಖಾತೆಯ ಮಾಹಿತಿ, ಪ್ರೊಫೈಲ್ ಮತ್ತು ನಿಮ್ಮ ಎಲ್ಲಾ ಮೆಸೇಜ್‌ಗಳನ್ನು ಅಳಿಸುತ್ತದೆ. ನಿಮ್ಮನ್ನು ಎಲ್ಲಾ Signal ಗುಂಪುಗಳಿಂದಲೂ ತೆಗೆಯಲಾಗುತ್ತದೆ. ಈ ಪ್ರಕ್ರಿಯೆ ಪೂರ್ಣಗೊಂಡ ಬಳಿಕ ಈ ಆ್ಯಪ್ ಮುಚ್ಚುತ್ತದೆ."
+    "messageformat": "ಇದು ನಿಮ್ಮ ಖಾತೆಯ ಮಾಹಿತಿ, ಪ್ರೊಫೈಲ್ ಮತ್ತು ನಿಮ್ಮ ಎಲ್ಲಾ ಮೆಸೇಜ್‌ಗಳನ್ನು ಅಳಿಸುತ್ತದೆ. ನಿಮ್ಮನ್ನು ಎಲ್ಲಾ Tellomi ಗುಂಪುಗಳಿಂದಲೂ ತೆಗೆಯಲಾಗುತ್ತದೆ. ಈ ಪ್ರಕ್ರಿಯೆ ಪೂರ್ಣಗೊಂಡ ಬಳಿಕ ಈ ಆ್ಯಪ್ ಮುಚ್ಚುತ್ತದೆ."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Signal Desktop ನ ಹಿಂದಿನ ಇನ್‌ಸ್ಟಾಲೇಶನ್‌ನಿಂದ ಹಳೆಯ ಡೇಟಾವನ್ನು ನೀವು ಹೊಂದಿದ್ದೀರಿ. ಮುಂದುವರಿಯಲು ನೀವು ಆಯ್ಕೆ ಮಾಡಿಕೊಂಡರೆ, ಇದನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಶೂನ್ಯದಿಂದ ಆರಂಭವಾಗುತ್ತದೆ."
+    "messageformat": "Tellomi Desktop ನ ಹಿಂದಿನ ಇನ್‌ಸ್ಟಾಲೇಶನ್‌ನಿಂದ ಹಳೆಯ ಡೇಟಾವನ್ನು ನೀವು ಹೊಂದಿದ್ದೀರಿ. ಮುಂದುವರಿಯಲು ನೀವು ಆಯ್ಕೆ ಮಾಡಿಕೊಂಡರೆ, ಇದನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಶೂನ್ಯದಿಂದ ಆರಂಭವಾಗುತ್ತದೆ."
   },
   "icu:deleteOldData": {
     "messageformat": "ಹಳೆಯ ಡೇಟಾ ಅಳಿಸಿ"
@@ -2310,7 +2310,7 @@
     "messageformat": "ಭಾಗಶಃ ಅಳಿಸಲಾಗಿದೆ, ವಿವರಗಳಿಗಾಗಿ ಕ್ಲಿಕ್ ಮಾಡಿ"
   },
   "icu:expiredWarning": {
-    "messageformat": "Signal ಡೆಸ್ಕ್ಟಾಪ್ ಈ ಆವೃತ್ತಿಯ ಅವಧಿ ಮುಗಿದಿದೆ. ಸಂದೇಶ ಮುಂದುವರೆಸಲು ಹೊಸ ಆವೃತ್ತಿಗೆ ಅಪ್ಗ್ರೇಡ್ ಮಾಡಿ."
+    "messageformat": "Tellomi ಡೆಸ್ಕ್ಟಾಪ್ ಈ ಆವೃತ್ತಿಯ ಅವಧಿ ಮುಗಿದಿದೆ. ಸಂದೇಶ ಮುಂದುವರೆಸಲು ಹೊಸ ಆವೃತ್ತಿಗೆ ಅಪ್ಗ್ರೇಡ್ ಮಾಡಿ."
   },
   "icu:upgrade": {
     "messageformat": "signal.org/download ಗೆ ಹೋಗಲು ಕ್ಲಿಕ್ ಮಾಡಿ"
@@ -2322,7 +2322,7 @@
     "messageformat": "ಸಂಪರ್ಕಗಳನ್ನು ಇಂಪೋರ್ಟ್ ಮಾಡಿ"
   },
   "icu:syncExplanation": {
-    "messageformat": "ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನದಿಂದ ಎಲ್ಲಾ Signal ಗುಂಪುಗಳು ಮತ್ತು ಸಂಪರ್ಕಗಳನ್ನು ಆಮದು ಮಾಡಿಕೋಌ"
+    "messageformat": "ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನದಿಂದ ಎಲ್ಲಾ Tellomi ಗುಂಪುಗಳು ಮತ್ತು ಸಂಪರ್ಕಗಳನ್ನು ಆಮದು ಮಾಡಿಕೋಌ"
   },
   "icu:syncNow": {
     "messageformat": "ಈಗ ಆಮದು ಮಾಡಿ"
@@ -2355,7 +2355,7 @@
     "messageformat": "ನಾಳೆ {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "ಒಳಬರುವ ಮೆಸೇಜ್ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು Signal ವಿಫಲವಾಗಬಹುದು."
+    "messageformat": "ಒಳಬರುವ ಮೆಸೇಜ್ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು Tellomi ವಿಫಲವಾಗಬಹುದು."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "ಮೆಸೇಜ್ ಬಾಡಿ ತುಂಬಾ ಉದ್ದವಾಗಿದೆ."
@@ -2520,13 +2520,13 @@
     "messageformat": "ನೀವು ಈ ಮೆಸೇಜ್ ಕಳುಹಿಸಿದ 24 ಗಂಟೆಗಳ ಒಳಗೆ ಮಾತ್ರ ಎಡಿಟ್‌ಗಳು ಅನ್ವಯಿಸಬಹುದು."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} ಅವರು Signal ಬಳಕೆದಾರರಲ್ಲ. ನೀವು username ಅನ್ನು ಪೂರ್ತಿಯಾಗಿ enter ಮಾಡಿದ್ದೀರೋ ಇಲ್ಲವೋ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."
+    "messageformat": "{atUsername} ಅವರು Tellomi ಬಳಕೆದಾರರಲ್ಲ. ನೀವು username ಅನ್ನು ಪೂರ್ತಿಯಾಗಿ enter ಮಾಡಿದ್ದೀರೋ ಇಲ್ಲವೋ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} ಮಾನ್ಯವಾದ ಯೂಸರ್‌ನೇಮ್ ಅಲ್ಲ. ನೀವು ಸಂಪೂರ್ಣ ಯೂಸರ್‌ನೇಮ್ ಅನ್ನು ಅದರ ಅಂಕಿಗಳ ಸೆಟ್‌ನ ನಂತರ ನಮೂದಿಸಿದ್ದೀರಿ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "ಬಳಕೆದಾರರು ಕಂಡುಬಂದಿಲ್ಲ. \"{phoneNumber}\" ಇದು Signal ಬಳಕೆದಾರ ಅಲ್ಲ."
+    "messageformat": "ಬಳಕೆದಾರರು ಕಂಡುಬಂದಿಲ್ಲ. \"{phoneNumber}\" ಇದು Tellomi ಬಳಕೆದಾರ ಅಲ್ಲ."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "ಬಳಕೆದಾರರು ಕಂಡುಬಂದಿಲ್ಲ. \"{phoneNumber}\" ಇದು ಮಾನ್ಯ ಫೋನ್ ನಂಬರ್ ಅಲ್ಲ."
@@ -2547,13 +2547,13 @@
     "messageformat": "ಗರಿಷ್ಠ ಗ್ರೂಪ್ ಗಾತ್ರ ತಲುಪಿದೆ"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal ಗ್ರೂಪ್‌ಗಳು ಗರಿಷ್ಠ {max,number} ಸದಸ್ಯರನ್ನು ಹೊಂದಬಹುದು."
+    "messageformat": "Tellomi ಗ್ರೂಪ್‌ಗಳು ಗರಿಷ್ಠ {max,number} ಸದಸ್ಯರನ್ನು ಹೊಂದಬಹುದು."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "ಶಿಫಾರಸು ಮಾಡಿದ ಸದಸ್ಯ ಮಿತಿಯನ್ನು ತಲುಪಲಾಗಿದೆ"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal ಗುಂಪುಗಳು {max,number} ಅಥವಾ ಅದಕ್ಕೂ ಕಡಿಮೆ ಸದಸ್ಯರೊಂದಿಗೆ ಉತ್ತಮವಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತವೆ. ಹೆಚ್ಚಿನ ಸದಸ್ಯರನ್ನು ಸೇರಿಸುವಿಕೆಯು ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸುವಿಕೆ ಮತ್ತು ಸ್ವೀಕರಿಸುವಿಕೆಯಲ್ಲಿನ ವಿಳಂಬಕ್ಕೆ ಕಾರಣವಾಗುತ್ತದೆ."
+    "messageformat": "Tellomi ಗುಂಪುಗಳು {max,number} ಅಥವಾ ಅದಕ್ಕೂ ಕಡಿಮೆ ಸದಸ್ಯರೊಂದಿಗೆ ಉತ್ತಮವಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತವೆ. ಹೆಚ್ಚಿನ ಸದಸ್ಯರನ್ನು ಸೇರಿಸುವಿಕೆಯು ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸುವಿಕೆ ಮತ್ತು ಸ್ವೀಕರಿಸುವಿಕೆಯಲ್ಲಿನ ವಿಳಂಬಕ್ಕೆ ಕಾರಣವಾಗುತ್ತದೆ."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "ಈ ಗುಂಪಿಗೆ ಹೆಸರಿಡಿ"
@@ -2583,13 +2583,13 @@
     "messageformat": "ಗ್ರೂಪ್ ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ. ನಿಮ್ಮ ಸಂಪರ್ಕ ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "ಮೆಸೇಜ್ ಮಾಡುವುದನ್ನು ಮುಂದುವರಿಸಲು Signal ಡೆಸ್ಕ್‌ಟಾಪ್ ಅನ್ನು ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನಕ್ಕೆ ಮರುಲಿಂಕ್ ಮಾಡಲು ಕ್ಲಿಕ್ ಮಾಡಿ."
+    "messageformat": "ಮೆಸೇಜ್ ಮಾಡುವುದನ್ನು ಮುಂದುವರಿಸಲು Tellomi ಡೆಸ್ಕ್‌ಟಾಪ್ ಅನ್ನು ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನಕ್ಕೆ ಮರುಲಿಂಕ್ ಮಾಡಲು ಕ್ಲಿಕ್ ಮಾಡಿ."
   },
   "icu:unlinked": {
     "messageformat": "ಲಿಂಕ್‌ ಮಾಡಿಲ್ಲ"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "ಮರು-ನೋಂದಣಿ ಮಾಡಲು ಮತ್ತು ಮೆಸೇಜ್ ಮಾಡುವುದನ್ನು ಮುಂದುವರಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ. ನಿಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ನೀವು ಬೇರೆ ಸಾಧನದಲ್ಲಿ Signal ನೊಂದಿಗೆ ನೋಂದಾಯಿಸಿರುವುದರಿಂದ ಸಿಗ್ನಲ್ ಡೆಸ್ಕ್‌ಟಾಪ್ ನೋಂದಣಿ ರದ್ದಾಗಿರುವ ಸಾಧ್ಯತೆಯಿದೆ."
+    "messageformat": "ಮರು-ನೋಂದಣಿ ಮಾಡಲು ಮತ್ತು ಮೆಸೇಜ್ ಮಾಡುವುದನ್ನು ಮುಂದುವರಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ. ನಿಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ನೀವು ಬೇರೆ ಸಾಧನದಲ್ಲಿ Tellomi ನೊಂದಿಗೆ ನೋಂದಾಯಿಸಿರುವುದರಿಂದ ಸಿಗ್ನಲ್ ಡೆಸ್ಕ್‌ಟಾಪ್ ನೋಂದಣಿ ರದ್ದಾಗಿರುವ ಸಾಧ್ಯತೆಯಿದೆ."
   },
   "icu:unregistered": {
     "messageformat": "ಇನ್ನು ನೋಂದಣಿ ಇರುವುದಿಲ್ಲ"
@@ -2601,16 +2601,16 @@
     "messageformat": "ಅಪ್‌ಡೇಟ್‌ಗೆ ಮರುಪ್ರಯತ್ನಿಸಿ"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Signal ಮರುಪ್ರಾರಂಭಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ"
+    "messageformat": "Tellomi ಮರುಪ್ರಾರಂಭಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "ಅಪ್‌ಡೇಟ್ ಡೌನ್‍‌ಲೋಡ್ ಮಾಡಲು ಕ್ಲಿಕ್ ಮಾಡಿ"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signal ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ . ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ."
+    "messageformat": "Tellomi ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ . ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Signal ಮರುಪ್ರಾರಂಭಿಸಿ"
+    "messageformat": "Tellomi ಮರುಪ್ರಾರಂಭಿಸಿ"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "ಅಪ್‌ಡೇಟ್‌ ನಿರ್ಲಕ್ಷಿಸಿ"
@@ -2742,7 +2742,7 @@
     "messageformat": "ಪ್ರದರ್ಶಿಸಲು ಕೆಲವು ಲಗತ್ತುಗಳು ತೀರಾ ದೊಡ್ಡದಾಗಿವೆ."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Signal ಕರೆಗೆ ಸೇರಲು ಈ ಲಿಂಕ್ ಬಳಸಿ"
+    "messageformat": "Tellomi ಕರೆಗೆ ಸೇರಲು ಈ ಲಿಂಕ್ ಬಳಸಿ"
   },
   "icu:donation--missing": {
     "messageformat": "ದೇಣಿಗೆ ವಿವರಗಳನ್ನು ಪಡೆಯಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ"
@@ -2754,7 +2754,7 @@
     "messageformat": "ನಿಮ್ಮ ದೇಣಿಗೆಯನ್ನು ವೀಕ್ಷಿಸಲು ಮೊಬೈಲ್‌ನಲ್ಲಿ ಈ ಮೆಸೇಜ್ ಟ್ಯಾಪ್ ಮಾಡಿ"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} ಅವರು ನಿಮ್ಮ ಪರವಾಗಿ Signal‌ಗೆ ದೇಣಿಗೆ ನೀಡಿದ್ದಾರೆ"
+    "messageformat": "{sender} ಅವರು ನಿಮ್ಮ ಪರವಾಗಿ Tellomi‌ಗೆ ದೇಣಿಗೆ ನೀಡಿದ್ದಾರೆ"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "ಈ ದೇಣಿಗೆಯನ್ನು ತೆರೆಯಲು ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ"
@@ -2811,7 +2811,7 @@
     "messageformat": "ನಿಮ್ಮ ಬೆಂಬಲಕ್ಕೆ ಧನ್ಯವಾದಗಳು!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "{name} ಅವರ ಪರವಾಗಿ Signal ಗೆ ನೀವು ದೇಣಿಗೆ ನೀಡಿದ್ದೀರಿ. ತಮ್ಮ ಪ್ರೊಫೈಲ್‌ನಲ್ಲಿ ತಮ್ಮ ಬೆಂಬಲವನ್ನು ಪ್ರದರ್ಶಿಸಲು ಅವರಿಗೆ ಆಯ್ಕೆಯನ್ನು ನೀಡಲಾಗುತ್ತದೆ."
+    "messageformat": "{name} ಅವರ ಪರವಾಗಿ Tellomi ಗೆ ನೀವು ದೇಣಿಗೆ ನೀಡಿದ್ದೀರಿ. ತಮ್ಮ ಪ್ರೊಫೈಲ್‌ನಲ್ಲಿ ತಮ್ಮ ಬೆಂಬಲವನ್ನು ಪ್ರದರ್ಶಿಸಲು ಅವರಿಗೆ ಆಯ್ಕೆಯನ್ನು ನೀಡಲಾಗುತ್ತದೆ."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "ಸ್ಟಿಕ್ಕರ್ ಪ್ಯಾಕ್ ಅನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲಾಗದು"
@@ -2823,10 +2823,10 @@
     "messageformat": "ಸ್ಟಿಕ್ಕರ್‌ಗಳನ್ನು ಸೇರಿಸಿ"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal ಕಲಾವಿದ ಸರಣಿ"
+    "messageformat": "Tellomi ಕಲಾವಿದ ಸರಣಿ"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Signal ಆರ್ಟಿಸ್ಟ್ ಸ್ಟಿಕ್ಕರ್‌ಗಳು ಲಭ್ಯವಿಲ್ಲ"
+    "messageformat": "Tellomi ಆರ್ಟಿಸ್ಟ್ ಸ್ಟಿಕ್ಕರ್‌ಗಳು ಲಭ್ಯವಿಲ್ಲ"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "ನಿಮ್ಮೊಂದಿಗೆ ಹಂಚಿಕೊಂಡಿರುವುದು"
@@ -2862,7 +2862,7 @@
     "messageformat": "ಸ್ಟಿಕ್ಕರ್ ಪ್ಯಾಕ್ ಮರುಕ್ರಮಗೊಳಿಸಲು ಡ್ರ್ಯಾಗ್ ಮಾಡಿ"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "Signal ಕಲಾವಿದ ಸರಣಿ ಸ್ಟಿಕ್ಕರ್ ಪ್ಯಾಕ್‌ಗಳು"
+    "messageformat": "Tellomi ಕಲಾವಿದ ಸರಣಿ ಸ್ಟಿಕ್ಕರ್ ಪ್ಯಾಕ್‌ಗಳು"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "ಸ್ವೀಕರಿಸಲಾದ ಸ್ಟಿಕ್ಕರ್ ಪ್ಯಾಕ್‌ಗಳು"
@@ -3147,19 +3147,19 @@
     "messageformat": "ಇನ್ನಷ್ಟು ಪ್ರದರ್ಶಿಸಲು ಮೆಸೇಜ್ ತುಂಬಾ ಉದ್ದವಾಗಿದೆ"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "ಹೊಸ Signal ವೈಶಿಷ್ಟ್ಯವನ್ನು ಬಳಸುವುದರಿಂದ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ಅಥವಾ ಪ್ರದರ್ಶಿಸಲು ಸಾಧ್ಯವಾಗದ ಸಂದೇಶವನ್ನು {contact} ನಿಮಗೆ ಕಳುಹಿಸಿದ್ದಾರೆ."
+    "messageformat": "ಹೊಸ Tellomi ವೈಶಿಷ್ಟ್ಯವನ್ನು ಬಳಸುವುದರಿಂದ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ಅಥವಾ ಪ್ರದರ್ಶಿಸಲು ಸಾಧ್ಯವಾಗದ ಸಂದೇಶವನ್ನು {contact} ನಿಮಗೆ ಕಳುಹಿಸಿದ್ದಾರೆ."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "ನೀವು Signal‌ ನ ನವೀಕೃತ ಆವೃತ್ತಿಯನ್ನು ಬಳಸುತ್ತಿರುವುದರಿಂದ ಈ ಸಂದೇಶವನ್ನು ಪುನಃ ಕಳುಹಿಸಲು ನೀವು {contact} ಅವರನ್ನು ಕೇಳಬಹುದು."
+    "messageformat": "ನೀವು Tellomi‌ ನ ನವೀಕೃತ ಆವೃತ್ತಿಯನ್ನು ಬಳಸುತ್ತಿರುವುದರಿಂದ ಈ ಸಂದೇಶವನ್ನು ಪುನಃ ಕಳುಹಿಸಲು ನೀವು {contact} ಅವರನ್ನು ಕೇಳಬಹುದು."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "ನಿಮ್ಮ ಒಂದು ಸಾಧನವು ಸಂದೇಶವನ್ನು ಕಳುಹಿಸಿದ್ದು, ಅದನ್ನು ಇಲ್ಲಿ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ಅಥವಾ ಪ್ರದರ್ಶಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಏಕೆಂದರೆ ಅದು ಹೊಸ Signal ವೈಶಿಷ್ಟ್ಯವನ್ನು ಬಳಸುತ್ತದೆ."
+    "messageformat": "ನಿಮ್ಮ ಒಂದು ಸಾಧನವು ಸಂದೇಶವನ್ನು ಕಳುಹಿಸಿದ್ದು, ಅದನ್ನು ಇಲ್ಲಿ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ಅಥವಾ ಪ್ರದರ್ಶಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಏಕೆಂದರೆ ಅದು ಹೊಸ Tellomi ವೈಶಿಷ್ಟ್ಯವನ್ನು ಬಳಸುತ್ತದೆ."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "ಇಂತಹ ಭವಿಷ್ಯದ ಸಂದೇಶಗಳನ್ನು, Signal ನ ಅಪ್‌ ಟು ಡೇಟ್ ಆವೃತ್ತಿಯನ್ನು ನೀವು ಬಳಸುತ್ತಿರುವಂತೆ ಸಿಂಕ್ರೊನೈಸ್ ಮಾಡಲಾಗುತ್ತದೆ."
+    "messageformat": "ಇಂತಹ ಭವಿಷ್ಯದ ಸಂದೇಶಗಳನ್ನು, Tellomi ನ ಅಪ್‌ ಟು ಡೇಟ್ ಆವೃತ್ತಿಯನ್ನು ನೀವು ಬಳಸುತ್ತಿರುವಂತೆ ಸಿಂಕ್ರೊನೈಸ್ ಮಾಡಲಾಗುತ್ತದೆ."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Signal ಅನ್ನು ನವೀಕರಿಸಿ"
+    "messageformat": "Tellomi ಅನ್ನು ನವೀಕರಿಸಿ"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "ವೀಕ್ಷಿಸಲಾಗಿದೆ"
@@ -3426,7 +3426,7 @@
     "messageformat": "ಚಾಟ್ ಅನ್ನು ಓದಿಲ್ಲ ಎಂದು ಗುರುತಿಸಲಾಗಿದೆ"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "ಸ್ಟಿಕ್ಕರ್ ಪ್ಯಾಕ್ ಕ್ರಿಯೇಟರ್ ಬಳಸಲು ನಿಮ್ಮ ಫೋನ್ ಮತ್ತು ಡೆಸ್ಕ್‌ಟಾಪ್‌ನಲ್ಲಿ ದಯವಿಟ್ಟು Signal ಸೆಟಪ್ ಮಾಡಿ"
+    "messageformat": "ಸ್ಟಿಕ್ಕರ್ ಪ್ಯಾಕ್ ಕ್ರಿಯೇಟರ್ ಬಳಸಲು ನಿಮ್ಮ ಫೋನ್ ಮತ್ತು ಡೆಸ್ಕ್‌ಟಾಪ್‌ನಲ್ಲಿ ದಯವಿಟ್ಟು Tellomi ಸೆಟಪ್ ಮಾಡಿ"
   },
   "icu:Reactions--remove": {
     "messageformat": "ಪ್ರತಿಕ್ರಿಯೆ ತೆಗೆದುಹಾಕಿ"
@@ -3444,16 +3444,16 @@
     "messageformat": "ಸುರಕ್ಷತಾ ಸಲಹೆಗಳು"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Signal ನ ಚಾಟ್‌ಗಳಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಬೇಡಿ"
+    "messageformat": "Tellomi ನ ಚಾಟ್‌ಗಳಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಬೇಡಿ"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Signal ಎಂದಿಗೂ ನಿಮ್ಮ ನೋಂದಣಿ ಕೋಡ್, ಪಿನ್ ಅಥವಾ ರಿಕವರ್ ಕೀ ಗಾಗಿ ಮೆಸೇಜ್ ಕಳುಹಿಸುವುದಿಲ್ಲ. Signal ಎಂದು ಸೋಗುಹಾಕುವ ಚಾಟ್‌ಗೆ ಎಂದಿಗೂ ಪ್ರತಿಕ್ರಿಯಿಸಬೇಡಿ."
+    "messageformat": "Tellomi ಎಂದಿಗೂ ನಿಮ್ಮ ನೋಂದಣಿ ಕೋಡ್, ಪಿನ್ ಅಥವಾ ರಿಕವರ್ ಕೀ ಗಾಗಿ ಮೆಸೇಜ್ ಕಳುಹಿಸುವುದಿಲ್ಲ. Tellomi ಎಂದು ಸೋಗುಹಾಕುವ ಚಾಟ್‌ಗೆ ಎಂದಿಗೂ ಪ್ರತಿಕ್ರಿಯಿಸಬೇಡಿ."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "ಹೆಸರುಗಳು ಮತ್ತು ಫೋಟೋಗಳನ್ನು ಪರಿಶೀಲಿಸಿ"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "\"ಹೆಸರು ದೃಢೀಕರಿಸಲಾಗಿಲ್ಲ\" ಎಂಬ ಸೂಚನೆಗಾಗಿ ನೋಡಿ. ಪ್ರತಿಯೊಬ್ಬರೂ Signal ನಲ್ಲಿ ತಮ್ಮದೇ ಆದ ಪ್ರೊಫೈಲ್ ಹೆಸರನ್ನು ಸೆಟ್ ಮಾಡುತ್ತಾರೆ."
+    "messageformat": "\"ಹೆಸರು ದೃಢೀಕರಿಸಲಾಗಿಲ್ಲ\" ಎಂಬ ಸೂಚನೆಗಾಗಿ ನೋಡಿ. ಪ್ರತಿಯೊಬ್ಬರೂ Tellomi ನಲ್ಲಿ ತಮ್ಮದೇ ಆದ ಪ್ರೊಫೈಲ್ ಹೆಸರನ್ನು ಸೆಟ್ ಮಾಡುತ್ತಾರೆ."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "ವಂಚನೆಗಳ ಬಗ್ಗೆ ಎಚ್ಚರದಿಂದಿರಿ"
@@ -3462,16 +3462,16 @@
     "messageformat": "ನೀವು ಉತ್ತರಿಸುವಂತೆ ಮಾಡಲು ಪ್ರಯತ್ನಿಸುವ ಅಸ್ಪಷ್ಟ ಮೆಸೇಜ್‌ಗಳನ್ನು ತಪ್ಪಿಸಿ. ಹಣಕಾಸು ಸಲಹೆಗಳು ಮತ್ತು ಅನುಮಾನಾಸ್ಪದ ವೆಬ್ ಲಿಂಕ್‌ಗಳ ಕುರಿತು ಎಚ್ಚರದಿಂದಿರಿ."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Signal ನ ಚಾಟ್‌ಗಳಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಬೇಡಿ"
+    "messageformat": "Tellomi ನ ಚಾಟ್‌ಗಳಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಬೇಡಿ"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Signal ನಿಮ್ಮ ನೋಂದಣಿ ಕೋಡ್, ಪಿನ್ ಅಥವಾ ರಿಕವರ್ ಕೀ ಗಾಗಿ ಎಂದಿಗೂ ಮೆಸೇಜ್ ಕಳುಹಿಸುವುದಿಲ್ಲ. Signal ಅಥವಾ Signal ಬೆಂಬಲ ಎಂದು ಸೋಗುಹಾಕುವ ಚಾಟ್‌ಗಳಿಗೆ ಉತ್ತರಿಸಬೇಡಿ. ಕೆಟ್ಟವರು ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಸ್ವಾಧೀನಪಡಿಸಿಕೊಳ್ಳಲು ನಕಲಿ ಹೆಸರುಗಳನ್ನು ಸೆಟಪ್ ಮಾಡುತ್ತಾರೆ."
+    "messageformat": "Tellomi ನಿಮ್ಮ ನೋಂದಣಿ ಕೋಡ್, ಪಿನ್ ಅಥವಾ ರಿಕವರ್ ಕೀ ಗಾಗಿ ಎಂದಿಗೂ ಮೆಸೇಜ್ ಕಳುಹಿಸುವುದಿಲ್ಲ. Tellomi ಅಥವಾ Tellomi ಬೆಂಬಲ ಎಂದು ಸೋಗುಹಾಕುವ ಚಾಟ್‌ಗಳಿಗೆ ಉತ್ತರಿಸಬೇಡಿ. ಕೆಟ್ಟವರು ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಸ್ವಾಧೀನಪಡಿಸಿಕೊಳ್ಳಲು ನಕಲಿ ಹೆಸರುಗಳನ್ನು ಸೆಟಪ್ ಮಾಡುತ್ತಾರೆ."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "ಹೆಸರುಗಳು ಮತ್ತು ಫೋಟೋಗಳನ್ನು ಪರಿಶೀಲಿಸಿ"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "\"ಹೆಸರು ದೃಢೀಕರಿಸಲಾಗಿಲ್ಲ\" ಎಂಬ ಸೂಚನೆಗಾಗಿ ನೋಡಿ. ಪ್ರತಿಯೊಬ್ಬರೂ Signal ನಲ್ಲಿ ತಮ್ಮದೇ ಆದ ಪ್ರೊಫೈಲ್ ಹೆಸರು ಮತ್ತು ಫೋಟೋವನ್ನು ಸೆಟ್ ಮಾಡುತ್ತಾರೆ. ಹೊಸ ವಿನಂತಿಯು ಯಾರಿಂದ ಬಂದಿದೆ ಎಂದು ನಿಮಗೆ ಖಚಿತವಿಲ್ಲದಿದ್ದರೆ ಅದನ್ನು ನಿರ್ಲಕ್ಷಿಸುವುದು ಸುರಕ್ಷಿತ."
+    "messageformat": "\"ಹೆಸರು ದೃಢೀಕರಿಸಲಾಗಿಲ್ಲ\" ಎಂಬ ಸೂಚನೆಗಾಗಿ ನೋಡಿ. ಪ್ರತಿಯೊಬ್ಬರೂ Tellomi ನಲ್ಲಿ ತಮ್ಮದೇ ಆದ ಪ್ರೊಫೈಲ್ ಹೆಸರು ಮತ್ತು ಫೋಟೋವನ್ನು ಸೆಟ್ ಮಾಡುತ್ತಾರೆ. ಹೊಸ ವಿನಂತಿಯು ಯಾರಿಂದ ಬಂದಿದೆ ಎಂದು ನಿಮಗೆ ಖಚಿತವಿಲ್ಲದಿದ್ದರೆ ಅದನ್ನು ನಿರ್ಲಕ್ಷಿಸುವುದು ಸುರಕ್ಷಿತ."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "ಕ್ರಿಪ್ಟೊ ಅಥವಾ ಹಣದ ಹಗರಣಗಳು"
@@ -3552,13 +3552,13 @@
     "messageformat": "ಸ್ಪ್ಯಾಮ್ ಎಂದು ವರದಿ ಮಾಡುವುದೇ?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "ಈ ವ್ಯಕ್ತಿ ಸ್ಪ್ಯಾಮ್ ಕಳುಹಿಸುತ್ತಿರಬಹುದು ಎಂಬುದಾಗಿ Signal ಗೆ ಸೂಚಿಸಲಾಗುತ್ತದೆ. Signal ಗೆ ಯಾವುದೇ ಚಾಟ್‌ಗಳ ಕಂಟೆಂಟ್ ಅನ್ನು ನೋಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."
+    "messageformat": "ಈ ವ್ಯಕ್ತಿ ಸ್ಪ್ಯಾಮ್ ಕಳುಹಿಸುತ್ತಿರಬಹುದು ಎಂಬುದಾಗಿ Tellomi ಗೆ ಸೂಚಿಸಲಾಗುತ್ತದೆ. Tellomi ಗೆ ಯಾವುದೇ ಚಾಟ್‌ಗಳ ಕಂಟೆಂಟ್ ಅನ್ನು ನೋಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "ನಿಮ್ಮನ್ನು ಈ ಗ್ರೂಪ್‌ಗೆ ಆಹ್ವಾನಿಸಿದ ವ್ಯಕ್ತಿ ಸ್ಪ್ಯಾಮ್ ಕಳುಹಿಸುತ್ತಿರಬಹುದು ಎಂಬುದಾಗಿ Signal ಗೆ ಸೂಚಿಸಲಾಗುತ್ತದೆ. Signal ಗೆ ಯಾವುದೇ ಚಾಟ್‌ಗಳ ಕಂಟೆಂಟ್ ಅನ್ನು ನೋಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."
+    "messageformat": "ನಿಮ್ಮನ್ನು ಈ ಗ್ರೂಪ್‌ಗೆ ಆಹ್ವಾನಿಸಿದ ವ್ಯಕ್ತಿ ಸ್ಪ್ಯಾಮ್ ಕಳುಹಿಸುತ್ತಿರಬಹುದು ಎಂಬುದಾಗಿ Tellomi ಗೆ ಸೂಚಿಸಲಾಗುತ್ತದೆ. Tellomi ಗೆ ಯಾವುದೇ ಚಾಟ್‌ಗಳ ಕಂಟೆಂಟ್ ಅನ್ನು ನೋಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "ಈ ಗ್ರೂಪ್‌ಗೆ ನಿಮ್ಮನ್ನು ಆಹ್ವಾನಿಸಿದ, {name} ರವರು ಸ್ಪ್ಯಾಮ್ ಕಳುಹಿಸುತ್ತಿರಬಹುದು ಎಂದು Signal ಗೆ ಸೂಚಿಸಲಾಗುತ್ತದೆ. Signal ಗೆ ಯಾವುದೇ ಚಾಟ್‌ಗಳ ಕಂಟೆಂಟ್ ಅನ್ನು ನೋಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."
+    "messageformat": "ಈ ಗ್ರೂಪ್‌ಗೆ ನಿಮ್ಮನ್ನು ಆಹ್ವಾನಿಸಿದ, {name} ರವರು ಸ್ಪ್ಯಾಮ್ ಕಳುಹಿಸುತ್ತಿರಬಹುದು ಎಂದು Tellomi ಗೆ ಸೂಚಿಸಲಾಗುತ್ತದೆ. Tellomi ಗೆ ಯಾವುದೇ ಚಾಟ್‌ಗಳ ಕಂಟೆಂಟ್ ಅನ್ನು ನೋಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "ಸ್ಪ್ಯಾಮ್ ವರದಿ ಮಾಡಿ"
@@ -3600,7 +3600,7 @@
     "messageformat": "ವಿನಂತಿಯನ್ನು ಸ್ವೀಕರಿಸುವುದೇ?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "ನೀವು ವಿಶ್ವಾಸವಿಡುವ ಜನರಿಂದ ಮಾತ್ರ ವಿನಂತಿಗಳನ್ನು ಸ್ವೀಕರಿಸಿ. <bold>Signal ಎಂದಿಗೂ</bold> ನಿಮ್ಮ ನೋಂದಣಿ ಕೋಡ್, ಪಿನ್ ಅಥವಾ ರಿಕವರಿ ಕೀಗಾಗಿ ಮೆಸೇಜ್ ಕಳುಹಿಸುವುದಿಲ್ಲ."
+    "messageformat": "ನೀವು ವಿಶ್ವಾಸವಿಡುವ ಜನರಿಂದ ಮಾತ್ರ ವಿನಂತಿಗಳನ್ನು ಸ್ವೀಕರಿಸಿ. <bold>Tellomi ಎಂದಿಗೂ</bold> ನಿಮ್ಮ ನೋಂದಣಿ ಕೋಡ್, ಪಿನ್ ಅಥವಾ ರಿಕವರಿ ಕೀಗಾಗಿ ಮೆಸೇಜ್ ಕಳುಹಿಸುವುದಿಲ್ಲ."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "ಮುಂದುವರಿಸಿ"
@@ -3654,16 +3654,16 @@
     "messageformat": "ಹೆಸರನ್ನು ದೃಢೀಕರಿಸಲಾಗಿಲ್ಲ"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "ಇದು Signal ನ ಅಧಿಕೃತ ಮತ್ತು ಏಕೈಕ ಚಾಟ್ ಆಗಿದೆ"
+    "messageformat": "ಇದು Tellomi ನ ಅಧಿಕೃತ ಮತ್ತು ಏಕೈಕ ಚಾಟ್ ಆಗಿದೆ"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "ಅಧಿಕೃತ ಚಾಟ್"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Signal ನ ಏಕೈಕ ಅಧಿಕೃತ ಚಾಟ್. ಸುದ್ದಿ ಮತ್ತು ಆವೃತ್ತಿ ಟಿಪ್ಪಣಿಗಳೊಂದಿಗೆ ಅಪ್ ಟು ಡೇಟ್ ಆಗಿರಿ."
+    "messageformat": "Tellomi ನ ಏಕೈಕ ಅಧಿಕೃತ ಚಾಟ್. ಸುದ್ದಿ ಮತ್ತು ಆವೃತ್ತಿ ಟಿಪ್ಪಣಿಗಳೊಂದಿಗೆ ಅಪ್ ಟು ಡೇಟ್ ಆಗಿರಿ."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Signal ನ ಏಕೈಕ ಅಧಿಕೃತ ಚಾಟ್."
+    "messageformat": "Tellomi ನ ಏಕೈಕ ಅಧಿಕೃತ ಚಾಟ್."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "ಸುದ್ದಿ ಮತ್ತು ಆವೃತ್ತಿ ಟಿಪ್ಪಣಿಗಳೊಂದಿಗೆ ಅಪ್ ಟು ಡೇಟ್ ಆಗಿರಿ."
@@ -3729,10 +3729,10 @@
     "messageformat": "ಉತ್ತರಿಸದ ವೀಡಿಯೊ ಕಾಲ್"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal ಇನ್ನೂ ಚಾಲನೆಯಲ್ಲಿದೆ"
+    "messageformat": "Tellomi ಇನ್ನೂ ಚಾಲನೆಯಲ್ಲಿದೆ"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "ಅಧಿಸೂಚನೆ ಪ್ರದೇಶದಲ್ಲಿ Signal ಚಾಲನೆಯಲ್ಲಿ ಇರಲಿದೆ. Signal ಸೆಟ್ಟಿಂಗ್‌ ಗಳಲ್ಲಿ ಇದನ್ನು ನೀವು ಬದಲಾಯಿಸಬಹುದು."
+    "messageformat": "ಅಧಿಸೂಚನೆ ಪ್ರದೇಶದಲ್ಲಿ Tellomi ಚಾಲನೆಯಲ್ಲಿ ಇರಲಿದೆ. Tellomi ಸೆಟ್ಟಿಂಗ್‌ ಗಳಲ್ಲಿ ಇದನ್ನು ನೀವು ಬದಲಾಯಿಸಬಹುದು."
   },
   "icu:incomingAudioCall": {
     "messageformat": "ಒಳಬರುವ ವಾಯ್ಸ್ ಕಾಲ್"
@@ -3951,7 +3951,7 @@
     "messageformat": "ಕಾಲ್ ಲಿಂಕ್ ಅನ್ನು ನಕಲಿಸಿ"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Signal ಮೂಲಕ ಕಾಲ್ ಲಿಂಕ್ ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಿ"
+    "messageformat": "Tellomi ಮೂಲಕ ಕಾಲ್ ಲಿಂಕ್ ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಿ"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "{name} ಅವರನ್ನು ಕರೆಯಿಂದ ತೆಗೆದುಹಾಕಬೇಕೆ?"
@@ -4113,7 +4113,7 @@
     "messageformat": "ಅನಾಮಿಕ ಲಿಂಕ್ ಆವೃತ್ತಿ"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Signal Desktop ನ ಈ ಆವೃತ್ತಿಯು ಈ ಲಿಂಕ್ ಅನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
+    "messageformat": "Tellomi Desktop ನ ಈ ಆವೃತ್ತಿಯು ಈ ಲಿಂಕ್ ಅನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "ಗುಂಪನ್ನು ಸೇರಲು ಸಾಧ್ಯವಿಲ್ಲ"
@@ -4719,10 +4719,10 @@
     "messageformat": "ಬಳಕೆದಾರ ಡೇಟಾ ಅಳಿಸಲಾಗುತ್ತಿದೆ ಮತ್ತು ಆ್ಯಪ್ ಮರುಸೆಟ್ಟಿಂಗ್ ಮಾಡಲಾಗುತ್ತಿದೆ"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Signal ಗೆ ದಾನ ಮಾಡಿ"
+    "messageformat": "Tellomi ಗೆ ದಾನ ಮಾಡಿ"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} ಅವರು Signal ಅನ್ನು ಬೆಂಬಲಿಸುತ್ತಾರೆ"
+    "messageformat": "{name} ಅವರು Tellomi ಅನ್ನು ಬೆಂಬಲಿಸುತ್ತಾರೆ"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "ಮೆಸೇಜ್‌ಗಳನ್ನು ಸಿಂಕ್ ಮಾಡಲಾಗುತ್ತಿದೆ"
@@ -4839,7 +4839,7 @@
     "messageformat": "ಖಾತೆಯ ಕ್ರಮದ ಅಗತ್ಯವಿದೆ"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "ಈ ಖಾತೆ ಬಳಸುವುದನ್ನು ಮುಂದುವರಿಸಲು ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನೀವು Signal ಅನ್ನು ತೆರೆಯಬೇಕು. ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನೀವು Signal ಅನ್ನು ತೆರೆಯದಿದ್ದರೆ, ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಅಳಿಸಲಾಗುವುದು. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</learnMoreLink>"
+    "messageformat": "ಈ ಖಾತೆ ಬಳಸುವುದನ್ನು ಮುಂದುವರಿಸಲು ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನೀವು Tellomi ಅನ್ನು ತೆರೆಯಬೇಕು. ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನೀವು Tellomi ಅನ್ನು ತೆರೆಯದಿದ್ದರೆ, ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಅಳಿಸಲಾಗುವುದು. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "ಮೀಡಿಯಾವನ್ನು ರಿಸ್ಟೋರ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ"
@@ -4863,10 +4863,10 @@
     "messageformat": "ಅಟ್ಯಾಚ್‌ಮೆಂಟ್ ಅಥವಾ ಸಮೀಕ್ಷೆಯನ್ನು ಸೇರಿಸಿ"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "ಈ ವ್ಯಕ್ತಿಯು Signal ಬಳಸುತ್ತಿಲ್ಲ"
+    "messageformat": "ಈ ವ್ಯಕ್ತಿಯು Tellomi ಬಳಸುತ್ತಿಲ್ಲ"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal ಹೊರತಾದ ಸಂಪರ್ಕಗಳಿಗೆ ಮೆಸೇಜ್ ಮಾಡುವುದನ್ನು Signal Desktop ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. ಹೆಚ್ಚು ಸುರಕ್ಷಿತ ಮೆಸೇಜಿಂಗ್ ಅನುಭವಕ್ಕಾಗಿ Signal ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡುವಂತೆ ಈ ವ್ಯಕ್ತಿಗೆ ಸೂಚಿಸಿ."
+    "messageformat": "Tellomi ಹೊರತಾದ ಸಂಪರ್ಕಗಳಿಗೆ ಮೆಸೇಜ್ ಮಾಡುವುದನ್ನು Tellomi Desktop ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. ಹೆಚ್ಚು ಸುರಕ್ಷಿತ ಮೆಸೇಜಿಂಗ್ ಅನುಭವಕ್ಕಾಗಿ Tellomi ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡುವಂತೆ ಈ ವ್ಯಕ್ತಿಗೆ ಸೂಚಿಸಿ."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "ಸಂಪರ್ಕದ ನೋಂದಣಿ ಸ್ಟೇಟಸ್ ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ"
@@ -5127,10 +5127,10 @@
     "messageformat": "ನಿರ್ಬಂಧ ತೆಗೆಯಿರಿ"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "ಈ ವ್ಯಕ್ತಿ ಸ್ಪ್ಯಾಮ್ ಕಳುಹಿಸುತ್ತಿರಬಹುದು ಎಂಬುದಾಗಿ Signal ಗೆ ಸೂಚಿಸಲಾಗುತ್ತದೆ. Signal ಗೆ ಯಾವುದೇ ಚಾಟ್ ಗಳ ಕಂಟೆಂಟ್ ಅನ್ನು ನೋಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."
+    "messageformat": "ಈ ವ್ಯಕ್ತಿ ಸ್ಪ್ಯಾಮ್ ಕಳುಹಿಸುತ್ತಿರಬಹುದು ಎಂಬುದಾಗಿ Tellomi ಗೆ ಸೂಚಿಸಲಾಗುತ್ತದೆ. Tellomi ಗೆ ಯಾವುದೇ ಚಾಟ್ ಗಳ ಕಂಟೆಂಟ್ ಅನ್ನು ನೋಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "ನಿಮ್ಮನ್ನು ಈ ಗುಂಪಿಗೆ ಆಹ್ವಾನಿಸಿದ ವ್ಯಕ್ತಿ ಸ್ಪ್ಯಾಮ್ ಕಳುಹಿಸುತ್ತಿರಬಹುದು ಎಂಬುದಾಗಿ Signal ಗೆ ಸೂಚಿಸಲಾಗುತ್ತದೆ. Signal ಗೆ ಯಾವುದೇ ಚಾಟ್‌ಗಳ ಕಂಟೆಂಟ್ ಅನ್ನು ನೋಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."
+    "messageformat": "ನಿಮ್ಮನ್ನು ಈ ಗುಂಪಿಗೆ ಆಹ್ವಾನಿಸಿದ ವ್ಯಕ್ತಿ ಸ್ಪ್ಯಾಮ್ ಕಳುಹಿಸುತ್ತಿರಬಹುದು ಎಂಬುದಾಗಿ Tellomi ಗೆ ಸೂಚಿಸಲಾಗುತ್ತದೆ. Tellomi ಗೆ ಯಾವುದೇ ಚಾಟ್‌ಗಳ ಕಂಟೆಂಟ್ ಅನ್ನು ನೋಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "ಸ್ಪ್ಯಾಮ್ ವರದಿ ಮಾಡಿ"
@@ -5178,7 +5178,7 @@
     "messageformat": "ಅಡ್ಡಹೆಸರು"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "ಅಡ್ಡಹೆಸರುಗಳು ಮತ್ತು ಟಿಪ್ಪಣಿಗಳನ್ನು Signal ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಎಂಡ್-ಟು-ಎಂಡ್ ಎನ್‌ಕ್ರಿಪ್ಟ್ ಆಗಿವೆ. ಅವು ನಿಮಗೆ ಮಾತ್ರ ಗೋಚರಿಸುತ್ತವೆ."
+    "messageformat": "ಅಡ್ಡಹೆಸರುಗಳು ಮತ್ತು ಟಿಪ್ಪಣಿಗಳನ್ನು Tellomi ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಎಂಡ್-ಟು-ಎಂಡ್ ಎನ್‌ಕ್ರಿಪ್ಟ್ ಆಗಿವೆ. ಅವು ನಿಮಗೆ ಮಾತ್ರ ಗೋಚರಿಸುತ್ತವೆ."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "ಮೊದಲ ಹೆಸರು"
@@ -5431,7 +5431,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {Signal ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಗಳಲ್ಲಿರುವ ಗುಂಪಿನ ಸದಸ್ಯರು ನೀವು ಈ ಮೆಸೇಜ್ ಅನ್ನು ಅಳಿಸಿದ್ದೀರಿ ಎಂಬುದನ್ನು ನೋಡುತ್ತಾರೆ.} other {Signal ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಗಳಲ್ಲಿರುವ ಗುಂಪಿನ ಸದಸ್ಯರು ನೀವು ಈ ಮೆಸೇಜ್‌ಗಳನ್ನು ಅಳಿಸಿದ್ದೀರಿ ಎಂಬುದನ್ನು ನೋಡುತ್ತಾರೆ.}}"
+    "messageformat": "{count, plural, one {Tellomi ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಗಳಲ್ಲಿರುವ ಗುಂಪಿನ ಸದಸ್ಯರು ನೀವು ಈ ಮೆಸೇಜ್ ಅನ್ನು ಅಳಿಸಿದ್ದೀರಿ ಎಂಬುದನ್ನು ನೋಡುತ್ತಾರೆ.} other {Tellomi ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಗಳಲ್ಲಿರುವ ಗುಂಪಿನ ಸದಸ್ಯರು ನೀವು ಈ ಮೆಸೇಜ್‌ಗಳನ್ನು ಅಳಿಸಿದ್ದೀರಿ ಎಂಬುದನ್ನು ನೋಡುತ್ತಾರೆ.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "ಅಳಿಸಿ"
@@ -5557,7 +5557,7 @@
     "messageformat": "ಖಾಲಿ ಅಥವಾ ಅಳಿಸಿದ ಮೆಸೇಜ್‌ಗಳನ್ನು ಫಾರ್ವರ್ಡ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Signal ಕರೆಗೆ ಸೇರಲು ಈ ಲಿಂಕ್ ಅನ್ನು ಬಳಸಿ: {url}"
+    "messageformat": "Tellomi ಕರೆಗೆ ಸೇರಲು ಈ ಲಿಂಕ್ ಅನ್ನು ಬಳಸಿ: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "ವಿನಂತಿಗಳನ್ನು ಕಾಳಜಿಯಿಂದ ಪರಿಶೀಲಿಸಿ"
@@ -5566,7 +5566,7 @@
     "messageformat": "ಸುರಕ್ಷತಾ ಸಲಹೆಗಳು"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "ವಿನಂತಿಗಳನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ಪರಿಶೀಲಿಸಿ. ಅದೇ ಹೆಸರಿನ ಇನ್ನೊಂದು ಸಂಪರ್ಕವು Signal ಗೆ ಕಂಡುಬಂದಿದೆ. <reviewRequestLink>ವಿನಂತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ</reviewRequestLink>"
+    "messageformat": "ವಿನಂತಿಗಳನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ಪರಿಶೀಲಿಸಿ. ಅದೇ ಹೆಸರಿನ ಇನ್ನೊಂದು ಸಂಪರ್ಕವು Tellomi ಗೆ ಕಂಡುಬಂದಿದೆ. <reviewRequestLink>ವಿನಂತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} ಗ್ರೂಪ್ ಸದಸ್ಯ ಅದೇ ಹೆಸರನ್ನು ಹೊಂದಿದ್ದಾರೆ. <reviewRequestLink>ವಿನಂತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ</reviewRequestLink>} other {{count,number} ಗ್ರೂಪ್ ಸದಸ್ಯರು ಅದೇ ಹೆಸರನ್ನು ಹೊಂದಿದ್ದಾರೆ. <reviewRequestLink>ವಿನಂತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ</reviewRequestLink>}}"
@@ -5599,7 +5599,7 @@
     "messageformat": "ಬೇರೆ ಯಾವುದೇ ಸಾಮಾನ್ಯ ಗ್ರೂಪ್‌ಗಳಿಲ್ಲ"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal ಸಂಪರ್ಕ"
+    "messageformat": "Tellomi ಸಂಪರ್ಕ"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "ಇತ್ತೀಚೆಗೆ ಅವರ ಪ್ರೊಫೈಲ್ ಹೆಸರನ್ನು {oldName} ಇಂದ {newName} ಗೆ ಬದಲಿಸಿದ್ದಾರೆ"
@@ -5617,7 +5617,7 @@
     "messageformat": "ಸಂದೇಶ ಕಳುಹಿಸುವುದನ್ನು ಮುಂದುವರಿಸಲು ಪರಿಶೀಲಿಸಿ"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Signal ನಲ್ಲಿ ಸ್ಪ್ಯಾಮ್ ತಡೆಯಲು ಸಹಾಯ ಮಾಡುವುದಕ್ಕಾಗಿ, ದಯವಿಟ್ಟು ಪರಿಶೀಲನೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ."
+    "messageformat": "Tellomi ನಲ್ಲಿ ಸ್ಪ್ಯಾಮ್ ತಡೆಯಲು ಸಹಾಯ ಮಾಡುವುದಕ್ಕಾಗಿ, ದಯವಿಟ್ಟು ಪರಿಶೀಲನೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "ಪರಿಶೀಲಿಸಿದ ನಂತರ, ಮೆಸೇಜ್ ಮಾಡುವುದನ್ನು ನೀವು ಮುಂದುವರಿಸಬಹುದು. ಯಾವುದೇ ವಿರಾಮಗೊಳಿಸಿದ ಮೆಸೇಜ್‌ಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಕಳುಹಿಸಲಾಗುತ್ತದೆ."
@@ -6001,7 +6001,7 @@
     "messageformat": "ಈ ಬದಲಾವಣೆಗಳನ್ನು ತ್ಯಜಿಸಲು ನೀವು ಬಯಸುವಿರಾ?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Signal ಬಂದ್ ಮಾಡಿ call ಅಂತ್ಯಗೊಳಿಸಬೇಕೇ?"
+    "messageformat": "Tellomi ಬಂದ್ ಮಾಡಿ call ಅಂತ್ಯಗೊಳಿಸಬೇಕೇ?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "ಈಗಲ್ಲ"
@@ -6101,7 +6101,7 @@
     "messageformat": "ಸಾಮಾನ್ಯ"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Signal ಗೆ ದಾನ ಮಾಡಿ"
+    "messageformat": "Tellomi ಗೆ ದಾನ ಮಾಡಿ"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "ಲಕ್ಷಣ"
@@ -6167,10 +6167,10 @@
     "messageformat": "ಸಿಸ್ಟಮ್"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "Tellomi Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "ನಿಮ್ಮ Signal Login ಅನ್ನು ನಿಮ್ಮ ಖಾತೆಯನ್ನು ರಿಕವರ್ ಮಾಡಲು ಮತ್ತು ರಿಸ್ಟೋರ್ ಮಾಡಲು ಬಳಸಲಾಗುತ್ತದೆ. ಈ ಕೀಗಳನ್ನು ನೀವು ವಿಶ್ವಾಸವಿಡುವ ಪಾಸ್‌ವರ್ಡ್ ಮ್ಯಾನೇಜರ್‌ನಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿ ಇಡಿ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
+    "messageformat": "ನಿಮ್ಮ Tellomi Login ಅನ್ನು ನಿಮ್ಮ ಖಾತೆಯನ್ನು ರಿಕವರ್ ಮಾಡಲು ಮತ್ತು ರಿಸ್ಟೋರ್ ಮಾಡಲು ಬಳಸಲಾಗುತ್ತದೆ. ಈ ಕೀಗಳನ್ನು ನೀವು ವಿಶ್ವಾಸವಿಡುವ ಪಾಸ್‌ವರ್ಡ್ ಮ್ಯಾನೇಜರ್‌ನಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿ ಇಡಿ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
@@ -6191,7 +6191,7 @@
     "messageformat": "ಇದು ಲಿಂಕ್ ಮಾಡಲಾದ ಸಾಧನ ಆಗಿದೆ"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "ನಿಮ್ಮ ಖಾತೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಲು, ನಿಮ್ಮ ಪ್ರಾಥಮಿಕ ಸಾಧನದಲ್ಲಿ Signal ತೆರೆಯಿರಿ."
+    "messageformat": "ನಿಮ್ಮ ಖಾತೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಲು, ನಿಮ್ಮ ಪ್ರಾಥಮಿಕ ಸಾಧನದಲ್ಲಿ Tellomi ತೆರೆಯಿರಿ."
   },
   "icu:Preferences--zoom": {
     "messageformat": "ಝೂಮ್ ಮಟ್ಟ"
@@ -6224,7 +6224,7 @@
     "messageformat": "ಸುಧಾರಿತ"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signal ಪಿನ್"
+    "messageformat": "Tellomi ಪಿನ್"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "ಪಿನ್ ರಿಮೈಂಡರ್‌ಗಳು"
@@ -6353,7 +6353,7 @@
     "messageformat": "ಚಾಟ್ ಇತಿಹಾಸವನ್ನು ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Signal ಡಿಸ್ಕ್‌ಗೆ ಫೈಲ್‌ಗಳನ್ನು ಬರೆಯಲು ಅನುಮತಿ ಹೊಂದಿಲ್ಲದ ಕಾರಣ ನಿಮ್ಮ ಚಾಟ್ ಇತಿಹಾಸವನ್ನು ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ. ನಿಮ್ಮ ಡಿಸ್ಕ್‌ನ ಅನುಮತಿಗಳನ್ನು ಬದಲಾಯಿಸಲು ಅಥವಾ ನಿಮ್ಮ ಸಿಸ್ಟಂ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿ ಮತ್ತು ನಂತರ ಮತ್ತೆ ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಿ."
+    "messageformat": "Tellomi ಡಿಸ್ಕ್‌ಗೆ ಫೈಲ್‌ಗಳನ್ನು ಬರೆಯಲು ಅನುಮತಿ ಹೊಂದಿಲ್ಲದ ಕಾರಣ ನಿಮ್ಮ ಚಾಟ್ ಇತಿಹಾಸವನ್ನು ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ. ನಿಮ್ಮ ಡಿಸ್ಕ್‌ನ ಅನುಮತಿಗಳನ್ನು ಬದಲಾಯಿಸಲು ಅಥವಾ ನಿಮ್ಮ ಸಿಸ್ಟಂ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿ ಮತ್ತು ನಂತರ ಮತ್ತೆ ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಿ."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "ಬ್ಯಾಕಪ್ ಅನ್ನು ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಲಾಗುತ್ತಿದೆ"
@@ -6368,7 +6368,7 @@
     "messageformat": "ನಿಮ್ಮ ಬ್ಯಾಕಪ್ ಫೋಲ್ಡರ್ ಅನ್ನು ನಿಮ್ಮ ಫೋನ್‌ನ ಸಂಗ್ರಹಣೆಗೆ ವರ್ಗಾಯಿಸಿ"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Signal ನ ಕಾಪಿಯನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿ"
+    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Tellomi ನ ಕಾಪಿಯನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿ"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "\"ರಿಸ್ಟೋರ್ ಅಥವಾ ವರ್ಗಾಯಿಸಿ\" ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ ಮತ್ತು \"ಆನ್ ಡಿವೈಸ್ ಬ್ಯಾಕಪ್\" ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ"
@@ -6635,13 +6635,13 @@
     "messageformat": "{blockedAt} ರಂದು ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signal ಸುರಕ್ಷಿತ ಬ್ಯಾಕಪ್‌ಗಳು"
+    "messageformat": "Tellomi ಸುರಕ್ಷಿತ ಬ್ಯಾಕಪ್‌ಗಳು"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Signal ನ ಸುರಕ್ಷಿತ ಎಂಡ್ ಟು ಎಂಡ್ ಎನ್ಕ್ರಿಪ್ಟ್ ಆಗಿರುವ ಸಂಗ್ರಹಣೆ ಸೇವೆಯೊಂದಿಗೆ ಸ್ವಯಂಚಾಲಿತ ಬ್ಯಾಕಪ್‌ಗಳು. ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ಪ್ರಾರಂಭಿಸಿ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
+    "messageformat": "Tellomi ನ ಸುರಕ್ಷಿತ ಎಂಡ್ ಟು ಎಂಡ್ ಎನ್ಕ್ರಿಪ್ಟ್ ಆಗಿರುವ ಸಂಗ್ರಹಣೆ ಸೇವೆಯೊಂದಿಗೆ ಸ್ವಯಂಚಾಲಿತ ಬ್ಯಾಕಪ್‌ಗಳು. ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ಪ್ರಾರಂಭಿಸಿ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "ನಿಮ್ಮ ಮೆಸೇಜ್ ಇತಿಹಾಸವನ್ನು ಬ್ಯಾಕಪ್ ಮಾಡಿ, ಇದರಿಂದ ನೀವು ಹೊಸ ಫೋನ್ ಪಡೆದಾಗ ಅಥವಾ Signal ರೀಇನ್‍ಸ್ಟಾಲ್ ಮಾಡಿದಾಗ ಡೇಟಾವನ್ನು ಕಳೆದುಕೊಳ್ಳುವುದಿಲ್ಲ."
+    "messageformat": "ನಿಮ್ಮ ಮೆಸೇಜ್ ಇತಿಹಾಸವನ್ನು ಬ್ಯಾಕಪ್ ಮಾಡಿ, ಇದರಿಂದ ನೀವು ಹೊಸ ಫೋನ್ ಪಡೆದಾಗ ಅಥವಾ Tellomi ರೀಇನ್‍ಸ್ಟಾಲ್ ಮಾಡಿದಾಗ ಡೇಟಾವನ್ನು ಕಳೆದುಕೊಳ್ಳುವುದಿಲ್ಲ."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "ಬ್ಯಾಕಪ್ ವಿವರಗಳು"
@@ -6671,13 +6671,13 @@
     "messageformat": "ಸಬ್‍ಸ್ಕ್ರಿಪ್ಷನ್ ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನಿಮ್ಮ Signal ಸುರಕ್ಷಿತ ಬ್ಯಾಕಪ್‌ಗಳ ಚಂದಾದಾರಿಕೆಯನ್ನು ನೀವು ನಿರ್ವಹಿಸಬಹುದು ಅಥವಾ ರದ್ದುಗೊಳಿಸಬಹುದು."
+    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನಿಮ್ಮ Tellomi ಸುರಕ್ಷಿತ ಬ್ಯಾಕಪ್‌ಗಳ ಚಂದಾದಾರಿಕೆಯನ್ನು ನೀವು ನಿರ್ವಹಿಸಬಹುದು ಅಥವಾ ರದ್ದುಗೊಳಿಸಬಹುದು."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Signal ಸುರಕ್ಷಿತ ಬ್ಯಾಕಪ್‌ಗಳನ್ನು ನೀವು ನಿರ್ವಹಿಸಬಹುದು ಅಥವಾ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಬಹುದು."
+    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Tellomi ಸುರಕ್ಷಿತ ಬ್ಯಾಕಪ್‌ಗಳನ್ನು ನೀವು ನಿರ್ವಹಿಸಬಹುದು ಅಥವಾ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಬಹುದು."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನಿಮ್ಮ Signal ಸುರಕ್ಷಿತ ಬ್ಯಾಕಪ್‌ಗಳ ಚಂದಾದಾರಿಕೆಯನ್ನು ನೀವು ನಿರ್ವಹಿಸಬಹುದು ಅಥವಾ ನವೀಕರಿಸಬಹುದು."
+    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನಿಮ್ಮ Tellomi ಸುರಕ್ಷಿತ ಬ್ಯಾಕಪ್‌ಗಳ ಚಂದಾದಾರಿಕೆಯನ್ನು ನೀವು ನಿರ್ವಹಿಸಬಹುದು ಅಥವಾ ನವೀಕರಿಸಬಹುದು."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "ಕೊನೆಯ ಬ್ಯಾಕಪ್"
@@ -6695,7 +6695,7 @@
     "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನೀವು ರಿಸ್ಟೋರ್ ಮಾಡಬಹುದಾದ ಎಂಡ್-ಟು-ಎಂಡ್ ಎನ್ಕ್ರಿಪ್ಟ್ ಆಗಿರುವ ಬ್ಯಾಕಪ್ ಅನ್ನು ರಚಿಸಿ. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "ಬ್ಯಾಕಪ್ ಅನ್ನು ರಿಸ್ಟೋರ್ ಮಾಡಲು, ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Signal ನ ಹೊಸ ಕಾಪಿಯನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿ. ಆ್ಯಪ್ ತೆರೆಯಿರಿ ಮತ್ತು &quot;ರಿಸ್ಟೋರ್ ಮಾಡಿ ಅಥವಾ ವರ್ಗಾಯಿಸಿ&quot; ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
+    "messageformat": "ಬ್ಯಾಕಪ್ ಅನ್ನು ರಿಸ್ಟೋರ್ ಮಾಡಲು, ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Tellomi ನ ಹೊಸ ಕಾಪಿಯನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿ. ಆ್ಯಪ್ ತೆರೆಯಿರಿ ಮತ್ತು &quot;ರಿಸ್ಟೋರ್ ಮಾಡಿ ಅಥವಾ ವರ್ಗಾಯಿಸಿ&quot; ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "ಫೋಲ್ಡರ್ ಆಯ್ಕೆ ಮಾಡಿ"
@@ -6731,7 +6731,7 @@
     "messageformat": "ನಿಮ್ಮ ರಿಕವರಿ ಕೀ"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "ನಿಮ್ಮ ಖಾತೆ ಮತ್ತು ಡೇಟಾವನ್ನು ರಿಕವರ್ ಮಾಡಲು ಈ ಕೀ ಅಗತ್ಯವಿದೆ. ಇದನ್ನು ಸುರಕ್ಷಿತವಾದ ಕಡೆ ಸಂಗ್ರಹಿಸಿ ಮತ್ತು ಯಾರೊಂದಿಗೂ ಅದನ್ನು ಹಂಚಿಕೊಳ್ಳಬೇಡಿ. ನಿಮ್ಮ ರಿಕವರಿ ಕೀಗಾಗಿ Signal ಎಂದಿಗೂ ನಿಮಗೆ ಮೆಸೇಜ್ ಮಾಡುವುದಿಲ್ಲ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
+    "messageformat": "ನಿಮ್ಮ ಖಾತೆ ಮತ್ತು ಡೇಟಾವನ್ನು ರಿಕವರ್ ಮಾಡಲು ಈ ಕೀ ಅಗತ್ಯವಿದೆ. ಇದನ್ನು ಸುರಕ್ಷಿತವಾದ ಕಡೆ ಸಂಗ್ರಹಿಸಿ ಮತ್ತು ಯಾರೊಂದಿಗೂ ಅದನ್ನು ಹಂಚಿಕೊಳ್ಳಬೇಡಿ. ನಿಮ್ಮ ರಿಕವರಿ ಕೀಗಾಗಿ Tellomi ಎಂದಿಗೂ ನಿಮಗೆ ಮೆಸೇಜ್ ಮಾಡುವುದಿಲ್ಲ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "ರಿಕವರಿ ಕೀ ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಬೇಡಿ"
@@ -6746,7 +6746,7 @@
     "messageformat": "ಕೀ ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಬೇಡಿ"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "ನಿಮ್ಮ ರಿಕವರಿ ಕೀ ಅನ್ನು ಯಾರೊಂದಿಗೂ ಹಂಚಿಕೊಳ್ಳಬೇಡಿ. ಇದು ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಅವರ ನಿಯಂತ್ರಣಕ್ಕೆ ತೆಗೆದುಕೊಳ್ಳಲು ಅವಕಾಶ ನೀಡುತ್ತದೆ. ನಿಮ್ಮ ರಿಕವರಿ ಕೀಗಾಗಿ <strong>Signal ಎಂದಿಗೂ ನಿಮಗೆ ಮೆಸೇಜ್ ಮಾಡುವುದಿಲ್ಲ</strong>. Signal ಎಂದು ಸೋಗುಹಾಕುವ ಚಾಟ್‌ಗೆ ಎಂದಿಗೂ ಪ್ರತಿಕ್ರಿಯಿಸಬೇಡಿ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
+    "messageformat": "ನಿಮ್ಮ ರಿಕವರಿ ಕೀ ಅನ್ನು ಯಾರೊಂದಿಗೂ ಹಂಚಿಕೊಳ್ಳಬೇಡಿ. ಇದು ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಅವರ ನಿಯಂತ್ರಣಕ್ಕೆ ತೆಗೆದುಕೊಳ್ಳಲು ಅವಕಾಶ ನೀಡುತ್ತದೆ. ನಿಮ್ಮ ರಿಕವರಿ ಕೀಗಾಗಿ <strong>Tellomi ಎಂದಿಗೂ ನಿಮಗೆ ಮೆಸೇಜ್ ಮಾಡುವುದಿಲ್ಲ</strong>. Tellomi ಎಂದು ಸೋಗುಹಾಕುವ ಚಾಟ್‌ಗೆ ಎಂದಿಗೂ ಪ್ರತಿಕ್ರಿಯಿಸಬೇಡಿ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "ನಿಮ್ಮ ರಿಕವರಿ ಕೀಯನ್ನು ದೃಢೀಕರಿಸಿ"
@@ -6758,7 +6758,7 @@
     "messageformat": "ನಿಮ್ಮ ಕೀಯನ್ನು ಸುರಕ್ಷಿತವಾಗಿರಿಸಿ"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "ನಿಮ್ಮ ಕೀಯನ್ನು ನೀವು ಕಳೆದುಕೊಂಡರೆ ನಿಮ್ಮ ಬ್ಯಾಕಪ್ ಅನ್ನು ರಿಸ್ಟೋರ್ ಮಾಡಲು Signal ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ. ಅದನ್ನು ಎಲ್ಲೋ ಸುರಕ್ಷಿತವಾಗಿ ಮತ್ತು ಭದ್ರವಾಗಿ ಸಂಗ್ರಹಿಸಿ ಹಾಗೂ ಅದನ್ನು ಇತರರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಬೇಡಿ."
+    "messageformat": "ನಿಮ್ಮ ಕೀಯನ್ನು ನೀವು ಕಳೆದುಕೊಂಡರೆ ನಿಮ್ಮ ಬ್ಯಾಕಪ್ ಅನ್ನು ರಿಸ್ಟೋರ್ ಮಾಡಲು Tellomi ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ. ಅದನ್ನು ಎಲ್ಲೋ ಸುರಕ್ಷಿತವಾಗಿ ಮತ್ತು ಭದ್ರವಾಗಿ ಸಂಗ್ರಹಿಸಿ ಹಾಗೂ ಅದನ್ನು ಇತರರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಬೇಡಿ."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "ಮುಂದುವರಿಸಿ"
@@ -6809,7 +6809,7 @@
     "messageformat": "ಬ್ಯಾಕಪ್‌ಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ದೃಢೀಕರಣದ ಅಗತ್ಯವಿದೆ."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "ಸಿಸ್ಟಂ ದೃಢೀಕರಣ ವಿಫಲವಾದ ಕಾರಣ ಈ ಕ್ರಿಯೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಲಾಗಲಿಲ್ಲ. ಪುನಃ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನದಲ್ಲಿ Signal ಆ್ಯಪ್ ತೆರೆಯಿರಿ ಮತ್ತು ನಿಮ್ಮ ರಿಕವರಿ ಕೀ ಅನ್ನು ವೀಕ್ಷಿಸಲು ಬ್ಯಾಕಪ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗೆ ಹೋಗಿ."
+    "messageformat": "ಸಿಸ್ಟಂ ದೃಢೀಕರಣ ವಿಫಲವಾದ ಕಾರಣ ಈ ಕ್ರಿಯೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಲಾಗಲಿಲ್ಲ. ಪುನಃ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನದಲ್ಲಿ Tellomi ಆ್ಯಪ್ ತೆರೆಯಿರಿ ಮತ್ತು ನಿಮ್ಮ ರಿಕವರಿ ಕೀ ಅನ್ನು ವೀಕ್ಷಿಸಲು ಬ್ಯಾಕಪ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗೆ ಹೋಗಿ."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "ಈ ಕ್ರಿಯೆಗಾಗಿ ಸಿಸ್ಟಂ ದೃಢೀಕರಣವನ್ನು ವಿನಂತಿಸುವಾಗ ದೋಷ ಉಂಟಾಗಿದೆ."
@@ -6839,7 +6839,7 @@
     "messageformat": "ಫೋನ್ ಸಂಖ್ಯೆ"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "ನಿಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ಯಾರು ನೋಡಬಹುದು ಮತ್ತು ಅದರ ಮೂಲಕ Signal ನಲ್ಲಿ ನಿಮ್ಮನ್ನು ಯಾರು ಸಂಪರ್ಕಿಸಬಹುದು ಎಂಬುದನ್ನು ಆಯ್ಕೆಮಾಡಿ."
+    "messageformat": "ನಿಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ಯಾರು ನೋಡಬಹುದು ಮತ್ತು ಅದರ ಮೂಲಕ Tellomi ನಲ್ಲಿ ನಿಮ್ಮನ್ನು ಯಾರು ಸಂಪರ್ಕಿಸಬಹುದು ಎಂಬುದನ್ನು ಆಯ್ಕೆಮಾಡಿ."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "ಬದಲಿಸಿ..."
@@ -6869,10 +6869,10 @@
     "messageformat": "ಸಂಖ್ಯೆಯ ಮೂಲಕ ನನ್ನನ್ನು ಯಾರು ಕಂಡುಹಿಡಿಯಬಹುದು"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "ನಿಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ಹೊಂದಿರುವ ಯಾರಾದರೂ ನೀವು Signal ‌ನಲ್ಲಿರುವುದನ್ನು ನೋಡುತ್ತಾರೆ ಮತ್ತು ನಿಮ್ಮೊಂದಿಗೆ ಚಾಟ್‌ಗಳನ್ನು ಪ್ರಾರಂಭಿಸಬಹುದು."
+    "messageformat": "ನಿಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ಹೊಂದಿರುವ ಯಾರಾದರೂ ನೀವು Tellomi ‌ನಲ್ಲಿರುವುದನ್ನು ನೋಡುತ್ತಾರೆ ಮತ್ತು ನಿಮ್ಮೊಂದಿಗೆ ಚಾಟ್‌ಗಳನ್ನು ಪ್ರಾರಂಭಿಸಬಹುದು."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "ನೀವು ಮೆಸೇಜ್ ಕಳುಹಿಸದ ಹೊರತು ಅಥವಾ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಚಾಟ್ ಅನ್ನು ಹೊಂದಿರದ ಹೊರತು ನೀವು Signal ‌ನಲ್ಲಿದ್ದೀರಿ ಎಂದು ಯಾರಿಗೂ ನೋಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."
+    "messageformat": "ನೀವು ಮೆಸೇಜ್ ಕಳುಹಿಸದ ಹೊರತು ಅಥವಾ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಚಾಟ್ ಅನ್ನು ಹೊಂದಿರದ ಹೊರತು ನೀವು Tellomi ‌ನಲ್ಲಿದ್ದೀರಿ ಎಂದು ಯಾರಿಗೂ ನೋಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "ಎಲ್ಲರೂ"
@@ -6884,7 +6884,7 @@
     "messageformat": "ನಿಮಗೆ ಖಾತ್ರಿಯಿದೆಯೇ?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "ನೀವು “{settingTitle}” ಅನ್ನು “{nobodyLabel}” ಗೆ ಬದಲಾಯಿಸಿದರೆ Signal ನಲ್ಲಿ ಜನರು ನಿಮ್ಮನ್ನು ಹುಡುಕುವುದು ಇನ್ನೂ ಕಷ್ಟವಾಗುತ್ತದೆ."
+    "messageformat": "ನೀವು “{settingTitle}” ಅನ್ನು “{nobodyLabel}” ಗೆ ಬದಲಾಯಿಸಿದರೆ Tellomi ನಲ್ಲಿ ಜನರು ನಿಮ್ಮನ್ನು ಹುಡುಕುವುದು ಇನ್ನೂ ಕಷ್ಟವಾಗುತ್ತದೆ."
   },
   "icu:Preferences--messaging": {
     "messageformat": "ಸಂದೇಶ ಕಳುಹಿಸುವಿಕೆ"
@@ -6947,7 +6947,7 @@
     "messageformat": "ಹೊಂದಿಸಿ"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "ಅನ್ವಯಿಸಲು Signal ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿ"
+    "messageformat": "ಅನ್ವಯಿಸಲು Tellomi ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿ"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "ಭಾಷೆಯನ್ನು ಬದಲಾಯಿಸಲು, ಆ್ಯಪ್ ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಬೇಕಿದೆ."
@@ -6962,13 +6962,13 @@
     "messageformat": "ಸ್ಕ್ರೀನ್ ಸುರಕ್ಷತೆ"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "ಹೆಚ್ಚಿನ ಗೌಪ್ಯತೆಗಾಗಿ ಈ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ Signal ನ ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳನ್ನು ತಡೆಯಿರಿ."
+    "messageformat": "ಹೆಚ್ಚಿನ ಗೌಪ್ಯತೆಗಾಗಿ ಈ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ Tellomi ನ ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳನ್ನು ತಡೆಯಿರಿ."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "ಸ್ಕ್ರೀನ್ ಭದ್ರತೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಬೇಕೇ?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದರೆ, ಇದು Microsoft Windows ಗೆ Signal ನ ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳನ್ನು ಕ್ಯಾಪ್ಚರ್ ಮಾಡಲು ಮತ್ತು ಖಾಸಗಿಯಾಗಿಲ್ಲದ ಫೀಚರ್‌ಗಳಿಗೆ ಅವುಗಳನ್ನು ಬಳಸಲು ಅನುಮತಿಸುತ್ತದೆ."
+    "messageformat": "ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದರೆ, ಇದು Microsoft Windows ಗೆ Tellomi ನ ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳನ್ನು ಕ್ಯಾಪ್ಚರ್ ಮಾಡಲು ಮತ್ತು ಖಾಸಗಿಯಾಗಿಲ್ಲದ ಫೀಚರ್‌ಗಳಿಗೆ ಅವುಗಳನ್ನು ಬಳಸಲು ಅನುಮತಿಸುತ್ತದೆ."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ"
@@ -6989,19 +6989,19 @@
     "messageformat": "ಆ್ಯಪ್ ಸ್ಟೋರ್‌ಗೆ ಹೋಗಲು ಕ್ಲಿಕ್ ಮಾಡಿ"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Signal ತೆರೆಯಿರಿ"
+    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Tellomi ತೆರೆಯಿರಿ"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನೀವು Signal ಅನ್ನು ತೆರೆಯದ ಹೊರತು ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಅಳಿಸಲಾಗುತ್ತದೆ. ನೀವು ಇದನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಮಾಡಿದ್ದರೆ ಈ ಮೆಸೇಜ್ ಹೊರಟು ಹೋಗುತ್ತದೆ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</learnMoreLink>"
+    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನೀವು Tellomi ಅನ್ನು ತೆರೆಯದ ಹೊರತು ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಅಳಿಸಲಾಗುತ್ತದೆ. ನೀವು ಇದನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಮಾಡಿದ್ದರೆ ಈ ಮೆಸೇಜ್ ಹೊರಟು ಹೋಗುತ್ತದೆ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಸಕ್ರಿಯವಾಗಿಡಲು ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Signal ತೆರೆಯಿರಿ"
+    "messageformat": "ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಸಕ್ರಿಯವಾಗಿಡಲು ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Tellomi ತೆರೆಯಿರಿ"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal ತಾಂತ್ರಿಕ ತೊಂದರೆಗಳನ್ನು ಎದುರಿಸುತ್ತಿದೆ. ಸಾಧ್ಯವಾದಷ್ಟು ಬೇಗ ಸೇವೆಯನ್ನು ಮರುಸ್ಥಾಪಿಸಲು ನಾವು ಶ್ರಮಿಸುತ್ತಿದ್ದೇವೆ."
+    "messageformat": "Tellomi ತಾಂತ್ರಿಕ ತೊಂದರೆಗಳನ್ನು ಎದುರಿಸುತ್ತಿದೆ. ಸಾಧ್ಯವಾದಷ್ಟು ಬೇಗ ಸೇವೆಯನ್ನು ಮರುಸ್ಥಾಪಿಸಲು ನಾವು ಶ್ರಮಿಸುತ್ತಿದ್ದೇವೆ."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "ಅಪ್ಡೇಟ್ ಆಗಬೇಕಾಗಿದೆ"
@@ -7016,19 +7016,19 @@
     "messageformat": "ಅಪ್ಡೇಟ್ ಆಗಬೇಕಾಗಿದೆ"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Signal ಬಳಸುವುದನ್ನು ಮುಂದುವರಿಸಲು, ನೀವು ಹೊಚ್ಚಹೊಸ ಆವೃತ್ತಿಗೆ ನವೀಕರಿಸಬೇಕು."
+    "messageformat": "Tellomi ಬಳಸುವುದನ್ನು ಮುಂದುವರಿಸಲು, ನೀವು ಹೊಚ್ಚಹೊಸ ಆವೃತ್ತಿಗೆ ನವೀಕರಿಸಬೇಕು."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "{downloadSize} ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "ಅಪ್ಡೇಟ್ ಅನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು Signal ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿ."
+    "messageformat": "ಅಪ್ಡೇಟ್ ಅನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು Tellomi ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿ."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal Desktop ಅಪ್ಡೇಟ್ ಮಾಡಲು ವಿಫಲಗೊಂಡಿದೆ, ಆದರೆ ಹೊಸ ಆವೃತ್ತಿ ಲಭ್ಯವಿದೆ. {downloadUrl} ಗೆ ಹೋಗಿ ಮತ್ತು ಕೈಯಾರೆ ಹೊಸ ಆವೃತ್ತಿ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿ, ನಂತರ ಒಂದೋ ಬೆಂಬಲವನ್ನು ಸಂಪರ್ಕಿಸಿ ಅಥವಾ ಈ ಸಮಸ್ಯೆಯ ಕುರಿತು ಬಗ್ ಫೈಲ್ ಮಾಡಿ."
+    "messageformat": "Tellomi Desktop ಅಪ್ಡೇಟ್ ಮಾಡಲು ವಿಫಲಗೊಂಡಿದೆ, ಆದರೆ ಹೊಸ ಆವೃತ್ತಿ ಲಭ್ಯವಿದೆ. {downloadUrl} ಗೆ ಹೋಗಿ ಮತ್ತು ಕೈಯಾರೆ ಹೊಸ ಆವೃತ್ತಿ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿ, ನಂತರ ಒಂದೋ ಬೆಂಬಲವನ್ನು ಸಂಪರ್ಕಿಸಿ ಅಥವಾ ಈ ಸಮಸ್ಯೆಯ ಕುರಿತು ಬಗ್ ಫೈಲ್ ಮಾಡಿ."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Signal ಲೋಗೋ"
+    "messageformat": "Tellomi ಲೋಗೋ"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "ಹಿಂದಕ್ಕೆ"
@@ -7064,7 +7064,7 @@
     "messageformat": "ಮುಂದುವರಿಯಲು, ನೀವು ಮನುಷ್ಯರು ಎಂದು ದೃಢೀಕರಿಸಿ"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "Signal ನಲ್ಲಿ ಸ್ಪ್ಯಾಮ್ ತಡೆಯಲು ಸಹಾಯ ಮಾಡುವುದಕ್ಕಾಗಿ, ದಯವಿಟ್ಟು ದೃಢೀಕರಣವನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ. ದೃಢೀಕರಿಸಿದ ನಂತರ, ನೀವು ನೋಂದಣಿ ಮಾಡುವುದಕ್ಕೆ ಮುಂದುವರಿಯಬಹುದು."
+    "messageformat": "Tellomi ನಲ್ಲಿ ಸ್ಪ್ಯಾಮ್ ತಡೆಯಲು ಸಹಾಯ ಮಾಡುವುದಕ್ಕಾಗಿ, ದಯವಿಟ್ಟು ದೃಢೀಕರಣವನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ. ದೃಢೀಕರಿಸಿದ ನಂತರ, ನೀವು ನೋಂದಣಿ ಮಾಡುವುದಕ್ಕೆ ಮುಂದುವರಿಯಬಹುದು."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "ದೃಢೀಕರಣವನ್ನು ಮರುಪ್ರಯತ್ನಿಸಿ"
@@ -7304,7 +7304,7 @@
     "messageformat": "ತಪ್ಪಾದ ಪಿನ್"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "ನಿಮ್ಮPIN ಊಹೆಗಳ ಅವಕಾಶ ಮುಗಿದಿದೆ, ಹೊಸ PIN ರಚಿಸುವ ಮೂಲಕ ನಿಮ್ಮ Signal ಖಾತೆಯನ್ನು ಈಗಲೂ ಆ್ಯಕ್ಸೆಸ್ ಮಾಡಬಹುದು. ನಿಮ್ಮ ಗೌಪ್ಯತೆ ಮತ್ತು ಭದ್ರತೆಗಾಗಿ ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಯಾವುದೇ ಉಳಿಸಿದ ಪ್ರೊಫೈಲ್ ಮಾಹಿತಿ ಅಥವಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಲ್ಲದೆ ರಿಸ್ಟೋರ್ ಮಾಡಲಾಗುತ್ತದೆ."
+    "messageformat": "ನಿಮ್ಮPIN ಊಹೆಗಳ ಅವಕಾಶ ಮುಗಿದಿದೆ, ಹೊಸ PIN ರಚಿಸುವ ಮೂಲಕ ನಿಮ್ಮ Tellomi ಖಾತೆಯನ್ನು ಈಗಲೂ ಆ್ಯಕ್ಸೆಸ್ ಮಾಡಬಹುದು. ನಿಮ್ಮ ಗೌಪ್ಯತೆ ಮತ್ತು ಭದ್ರತೆಗಾಗಿ ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಯಾವುದೇ ಉಳಿಸಿದ ಪ್ರೊಫೈಲ್ ಮಾಹಿತಿ ಅಥವಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಲ್ಲದೆ ರಿಸ್ಟೋರ್ ಮಾಡಲಾಗುತ್ತದೆ."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "ಹೊಸ ಪಿನ್ ರಚಿಸಿ"
@@ -7334,7 +7334,7 @@
     "messageformat": "ನಿಮ್ಮ ಪಿನ್ ರಚಿಸಿ"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "ನಿಮ್ಮ ಖಾತೆಯನ್ನು ರಿಸ್ಟೋರ್ ಮಾಡಲು ಮತ್ತು ನಿಮ್ಮ ಮಾಹಿತಿಯನ್ನು Signal ನೊಂದಿಗೆ ಎನ್‌ಕ್ರಿಪ್ಟ್ ಆಗಿರಿಸಲು PIN ಸಹಾಯ ಮಾಡಬಲ್ಲುದು. <learnMore>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</learnMore>"
+    "messageformat": "ನಿಮ್ಮ ಖಾತೆಯನ್ನು ರಿಸ್ಟೋರ್ ಮಾಡಲು ಮತ್ತು ನಿಮ್ಮ ಮಾಹಿತಿಯನ್ನು Tellomi ನೊಂದಿಗೆ ಎನ್‌ಕ್ರಿಪ್ಟ್ ಆಗಿರಿಸಲು PIN ಸಹಾಯ ಮಾಡಬಲ್ಲುದು. <learnMore>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "ನಿಮ್ಮ ಪಿನ್ ರಚಿಸಿ"
@@ -7358,7 +7358,7 @@
     "messageformat": "ಎಚ್ಚರಿಕೆ"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "ನೀವು PIN ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದರೆ, ನೀವು Signal ಗೆ ಮರು ನೋಂದಣಿ ಮಾಡುವಾಗ ನೀವು ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಕಳೆದುಕೊಳ್ಳುವಿರಿ. PIN ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದಾಗ ನೀವು ನೋಂದಣಿ ಲಾಕ್ ಅನ್ನು ಆನ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."
+    "messageformat": "ನೀವು PIN ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದರೆ, ನೀವು Tellomi ಗೆ ಮರು ನೋಂದಣಿ ಮಾಡುವಾಗ ನೀವು ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಕಳೆದುಕೊಳ್ಳುವಿರಿ. PIN ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದಾಗ ನೀವು ನೋಂದಣಿ ಲಾಕ್ ಅನ್ನು ಆನ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "ಪಿನ್ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ"
@@ -7367,10 +7367,10 @@
     "messageformat": "ರದ್ದುಮಾಡಿ"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "Signal PIN ಗಳ ಕುರಿತು"
+    "messageformat": "Tellomi PIN ಗಳ ಕುರಿತು"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "PIN ಗಳು ನಿಮ್ಮ ಮಾಹಿತಿಯನ್ನು Signal ಎನ್ಕ್ರಿಪ್ಟ್ ಆಗಿರುವಂತೆ ಸಂಗ್ರಹಿಸುತ್ತವೆ ಆದ್ದರಿಂದ ನೀವು ಮಾತ್ರ ಅದನ್ನು ಆ್ಯಕ್ಸೆಸ್ ಮಾಡಬಹುದು. ನೀವು ರಿಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿದಾಗ ನಿಮ್ಮ ಪ್ರೊಫೈಲ್, ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು ಸಂಪರ್ಕಗಳು ರಿಸ್ಟೋರ್ ಆಗುತ್ತವೆ."
+    "messageformat": "PIN ಗಳು ನಿಮ್ಮ ಮಾಹಿತಿಯನ್ನು Tellomi ಎನ್ಕ್ರಿಪ್ಟ್ ಆಗಿರುವಂತೆ ಸಂಗ್ರಹಿಸುತ್ತವೆ ಆದ್ದರಿಂದ ನೀವು ಮಾತ್ರ ಅದನ್ನು ಆ್ಯಕ್ಸೆಸ್ ಮಾಡಬಹುದು. ನೀವು ರಿಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿದಾಗ ನಿಮ್ಮ ಪ್ರೊಫೈಲ್, ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು ಸಂಪರ್ಕಗಳು ರಿಸ್ಟೋರ್ ಆಗುತ್ತವೆ."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
@@ -7403,7 +7403,7 @@
     "messageformat": "ಅಪ್‌ಡೇಟ್‌ ಅಗತ್ಯವಿದೆ"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "ನೋಂದಣಿಯೊಂದಿಗೆ ಮುಂದುವರಿಯಲು, Signal ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಗೆ ಅಪ್‌ಡೇಟ್ ಮಾಡಿ."
+    "messageformat": "ನೋಂದಣಿಯೊಂದಿಗೆ ಮುಂದುವರಿಯಲು, Tellomi ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಗೆ ಅಪ್‌ಡೇಟ್ ಮಾಡಿ."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "ಅಪ್‌ಡೇಟ್ ಮಾಡಿ"
@@ -7433,7 +7433,7 @@
     "messageformat": "ಬೆಂಬಲವನ್ನು ಸಂಪರ್ಕಿಸಿ"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signal ಅನ್ನು ಮುಚ್ಚಲು ಸಾಧ್ಯವಿಲ್ಲ.",
+    "messageformat": "Tellomi ಅನ್ನು ಮುಚ್ಚಲು ಸಾಧ್ಯವಿಲ್ಲ.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7453,14 +7453,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Signal ನ ಹೊಸ ಆವೃತ್ತಿಯನ್ನು ಈಗಾಗಲೇ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲಾಗಿದೆ. ನೀವು ಮುಂದುವರಿಸಲು ಖಚಿತವಾಗಿ ಬಯಸುತ್ತೀರಾ?",
+    "messageformat": "Tellomi ನ ಹೊಸ ಆವೃತ್ತಿಯನ್ನು ಈಗಾಗಲೇ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲಾಗಿದೆ. ನೀವು ಮುಂದುವರಿಸಲು ಖಚಿತವಾಗಿ ಬಯಸುತ್ತೀರಾ?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "ಅಪ್ಲಿಕೇಶನ್ ಕ್ರ್ಯಾಶ್ ಆಗಿದೆ"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "ಕ್ರ್ಯಾಶ್ ಬಳಿಕ Signal ಮರುಆರಂಭಗೊಂಡಿದೆ. ಸಮಸ್ಯೆಯನ್ನು ತನಿಖೆ ನಡೆಸಲು Signal ಗೆ ಸಹಾಯ ಮಾಡಲು ನೀವು ಕ್ರ್ಯಾಶ್ ವರದಿಯನ್ನು ಸಲ್ಲಸಬಹುದು."
+    "messageformat": "ಕ್ರ್ಯಾಶ್ ಬಳಿಕ Tellomi ಮರುಆರಂಭಗೊಂಡಿದೆ. ಸಮಸ್ಯೆಯನ್ನು ತನಿಖೆ ನಡೆಸಲು Tellomi ಗೆ ಸಹಾಯ ಮಾಡಲು ನೀವು ಕ್ರ್ಯಾಶ್ ವರದಿಯನ್ನು ಸಲ್ಲಸಬಹುದು."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "ಕಳುಹಿಸಿ"
@@ -7565,7 +7565,7 @@
     "messageformat": "ಕೆಳಗಿನ “{buttonName}” ಕ್ಲಿಕ್ ಮಾಡಿ"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "“Signal” ಅನ್ನು ಆನ್ ಮಾಡಿ"
+    "messageformat": "“Tellomi” ಅನ್ನು ಆನ್ ಮಾಡಿ"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗೆ ಹೋಗಿ"
@@ -7661,7 +7661,7 @@
     "messageformat": "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal ಸಂಪರ್ಕಗಳು"
+    "messageformat": "Tellomi ಸಂಪರ್ಕಗಳು"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} ಅವರು ಈ ಮೂಲಕ ನೀವು ವಿಶ್ವಾಸಾರ್ಹರೆಂದು ಆಯ್ಕೆ ಮಾಡಿದ ಜನರಾಗಿದ್ದಾರೆ:"
@@ -7802,7 +7802,7 @@
     "messageformat": "ಇವರಿಂದ ಸ್ಟೋರಿಯನ್ನು ಮರೆಮಾಡಿ"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "ಎಲ್ಲಾ Signal ಸಂಪರ್ಕಗಳು"
+    "messageformat": "ಎಲ್ಲಾ Tellomi ಸಂಪರ್ಕಗಳು"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "ಇದನ್ನು ಹೊರತುಪಡಿಸಿ ಎಲ್ಲಾ…"
@@ -7880,7 +7880,7 @@
     "messageformat": "ನನ್ನ ಸ್ಟೋರಿ ಗೌಪ್ಯತೆ"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "ಯಾವ Signal ಸಂಪರ್ಕಗಳು ನಿಮ್ಮ ಸ್ಟೋರಿಯನ್ನು ವೀಕ್ಷಿಸಬಹುದು ಎಂದು ಆಯ್ಕೆ ಮಾಡಿ. ಗೌಪ್ಯತೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ನೀವು ಇದನ್ನು ಯಾವತ್ತೂ ಬದಲಾಯಿಸಬಹುದು. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
+    "messageformat": "ಯಾವ Tellomi ಸಂಪರ್ಕಗಳು ನಿಮ್ಮ ಸ್ಟೋರಿಯನ್ನು ವೀಕ್ಷಿಸಬಹುದು ಎಂದು ಆಯ್ಕೆ ಮಾಡಿ. ಗೌಪ್ಯತೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ನೀವು ಇದನ್ನು ಯಾವತ್ತೂ ಬದಲಾಯಿಸಬಹುದು. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "ಸ್ಟೋರಿ ಅಳಿಸಿ"
@@ -7949,7 +7949,7 @@
     "messageformat": "ಅಟ್ಯಾಚ್‌ಮೆಂಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "ನಿಮ್ಮ ಸ್ಟೋರೀಸ್ ಅನ್ನು ಯಾರು ವೀಕ್ಷಿಸಿದ್ದಾರೆ ಎಂದು ನೋಡಲು ರಸೀದಿಗಳನ್ನು ವೀಕ್ಷಿಸಿ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ. ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನದಲ್ಲಿ Signal ಆ್ಯಪ್ ತೆರೆಯಿರಿ ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳು > ಸ್ಟೋರೀಸ್ ಗೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ."
+    "messageformat": "ನಿಮ್ಮ ಸ್ಟೋರೀಸ್ ಅನ್ನು ಯಾರು ವೀಕ್ಷಿಸಿದ್ದಾರೆ ಎಂದು ನೋಡಲು ರಸೀದಿಗಳನ್ನು ವೀಕ್ಷಿಸಿ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ. ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನದಲ್ಲಿ Tellomi ಆ್ಯಪ್ ತೆರೆಯಿರಿ ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳು > ಸ್ಟೋರೀಸ್ ಗೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "ಇನ್ನೂ ಯಾವುದೇ ಉತ್ತರಗಳಿಲ್ಲ"
@@ -8135,7 +8135,7 @@
     "messageformat": "ನಿಮ್ಮ QR ಕೋಡ್ ಮತ್ತು ಲಿಂಕ್ ಅನ್ನು ಮರುಹೊಂದಿಸಲಾಗಿದೆ ಮತ್ತು ನಿಮ್ಮ ಯೂಸರ್‌ನೇಮ್ {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Signal ನಲ್ಲಿ ನನ್ನೊಂದಿಗೆ ಚಾಟ್ ಮಾಡಲು ನಿಮ್ಮ ಫೋನ್‌ ಮೂಲಕ ಈ QR ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ.",
+    "messageformat": "Tellomi ನಲ್ಲಿ ನನ್ನೊಂದಿಗೆ ಚಾಟ್ ಮಾಡಲು ನಿಮ್ಮ ಫೋನ್‌ ಮೂಲಕ ಈ QR ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8211,7 +8211,7 @@
     "messageformat": "ವಜಾಗೊಳಿಸಿ"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "ನಿಮ್ಮ Signal ಪಿನ್ ಅನ್ನು ದೃಢೀಕರಿಸಿ"
+    "messageformat": "ನಿಮ್ಮ Tellomi ಪಿನ್ ಅನ್ನು ದೃಢೀಕರಿಸಿ"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "ನೀವು ಇದನ್ನು ನೆನಪಿಸಿಕೊಳ್ಳುವುದಕ್ಕಾಗಿ ನಿಮಗೆ ನಿಮ್ಮ PIN ಅನ್ನು ದೃಢೀಕರಿಸಿಕೊಳ್ಳಲು ನಾವು ಆಗಾಗ್ಗೆ ಕೇಳುತ್ತೇವೆ."
@@ -8223,7 +8223,7 @@
     "messageformat": "ಈಗಲ್ಲ"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "ನಿಮ್ಮ Signal ಪಿನ್ ಅನ್ನು ನಮೂದಿಸಿ"
+    "messageformat": "ನಿಮ್ಮ Tellomi ಪಿನ್ ಅನ್ನು ನಮೂದಿಸಿ"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "ನಿಮ್ಮ PIN ಅನ್ನು ನೆನಪಿನಲ್ಲಿ ಉಳಿಸಿಕೊಳ್ಳಲು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು, ಇದನ್ನು ಆಗಾಗ್ಗೆ ನಮೂದಿಸುವಂತೆ ನಾವು ನಿಮ್ಮನ್ನು ಕೇಳುತ್ತೇವೆ. ಸಮಯ ಸರಿದಂತೆ ಇದನ್ನು ನಾವು ಕಡಿಮೆ ಬಾರಿ ಕೇಳುತ್ತೇವೆ."
@@ -8241,13 +8241,13 @@
     "messageformat": "PIN ಸರಿಯಾಗಿದೆ. ನಾವು ನಂತರ ನಿಮಗೆ ಪುನಃ ರಿಮೈಂಡ್ ಮಾಡುತ್ತೇವೆ."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "ಶೀಘ್ರದಲ್ಲೇ ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನ {OS} ಆವೃತ್ತಿಯನ್ನು Signal desktop ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. Signal ಬಳಕೆಯನ್ನು ಮುಂದುವರಿಸಲು, ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನ ಆಪರೇಟಿಂಗ್ ಸಿಸ್ಟಮ್ ಅನ್ನು {expirationDate} ನ ಒಳಗೆ ಅಪ್‌ಡೇಟ್ ಮಾಡಿ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</learnMoreLink>"
+    "messageformat": "ಶೀಘ್ರದಲ್ಲೇ ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನ {OS} ಆವೃತ್ತಿಯನ್ನು Tellomi desktop ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. Tellomi ಬಳಕೆಯನ್ನು ಮುಂದುವರಿಸಲು, ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನ ಆಪರೇಟಿಂಗ್ ಸಿಸ್ಟಮ್ ಅನ್ನು {expirationDate} ನ ಒಳಗೆ ಅಪ್‌ಡೇಟ್ ಮಾಡಿ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "ಈ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ Signal desktop ಇನ್ನು ಕಾರ್ಯನಿರ್ವಹಿಸುವುದಿಲ್ಲ. Signal desktop ಅನ್ನು ಮತ್ತೆ ಬಳಸಲು, ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನ {OS} ಆವೃತ್ತಿಯನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಿ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</learnMoreLink>"
+    "messageformat": "ಈ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ Tellomi desktop ಇನ್ನು ಕಾರ್ಯನಿರ್ವಹಿಸುವುದಿಲ್ಲ. Tellomi desktop ಅನ್ನು ಮತ್ತೆ ಬಳಸಲು, ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನ {OS} ಆವೃತ್ತಿಯನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಿ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "ಈ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ Signal desktop ಇನ್ನು ಕಾರ್ಯನಿರ್ವಹಿಸುವುದಿಲ್ಲ. Signal desktop ಅನ್ನು ಮತ್ತೆ ಬಳಸಲು, ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನ {OS} ಆವೃತ್ತಿಯನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಿ."
+    "messageformat": "ಈ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ Tellomi desktop ಇನ್ನು ಕಾರ್ಯನಿರ್ವಹಿಸುವುದಿಲ್ಲ. Tellomi desktop ಅನ್ನು ಮತ್ತೆ ಬಳಸಲು, ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನ {OS} ಆವೃತ್ತಿಯನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಿ."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "ಎಡಿಟ್ ಮಾಡಲಾಗಿದೆ"
@@ -8418,7 +8418,7 @@
     "messageformat": "ಲಿಂಕ್ ನಕಲಿಸಿ"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Signal ಮೂಲಕ ಲಿಂಕ್ ಹಂಚಿಕೊಳ್ಳಿ"
+    "messageformat": "Tellomi ಮೂಲಕ ಲಿಂಕ್ ಹಂಚಿಕೊಳ್ಳಿ"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "ಲಿಂಕ್ ಅಳಿಸಿ"
@@ -8481,13 +8481,13 @@
     "messageformat": "ಈ ಸೆಟ್ಟಿಂಗ್ ಅನ್ನು ಬದಲಾಯಿಸಲು, ”ನನ್ನ ಸಂಖ್ಯೆಯನ್ನು ಯಾರು ನೋಡಬಹುದು“ ಎಂಬುದನ್ನು “ಯಾರೂ ಇಲ್ಲ” ಎಂಬುದಾಗಿ ಹೊಂದಿಸಿ."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Signal ನಲ್ಲಿರುವ ಪ್ರೊಫೈಲ್ ಹೆಸರುಗಳನ್ನು ಅವುಗಳ ಖಾತೆದಾರರು ಆಯ್ಕೆಮಾಡುತ್ತಾರೆ:"
+    "messageformat": "Tellomi ನಲ್ಲಿರುವ ಪ್ರೊಫೈಲ್ ಹೆಸರುಗಳನ್ನು ಅವುಗಳ ಖಾತೆದಾರರು ಆಯ್ಕೆಮಾಡುತ್ತಾರೆ:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Signal, ಹೆಸರುಗಳು ಮತ್ತು ಫೋಟೋಗಳನ್ನು ದೃಢೀಕರಿಸುವುದಿಲ್ಲ"
+    "messageformat": "Tellomi, ಹೆಸರುಗಳು ಮತ್ತು ಫೋಟೋಗಳನ್ನು ದೃಢೀಕರಿಸುವುದಿಲ್ಲ"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Signal ಎಂದಿಗೂ ನಿಮ್ಮ ನೋಂದಣಿ ಕೋಡ್, ಪಿನ್ ಅಥವಾ ರಿಕವರ್ ಕೀ ಗಾಗಿ ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸುವುದಿಲ್ಲ"
+    "messageformat": "Tellomi ಎಂದಿಗೂ ನಿಮ್ಮ ನೋಂದಣಿ ಕೋಡ್, ಪಿನ್ ಅಥವಾ ರಿಕವರ್ ಕೀ ಗಾಗಿ ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸುವುದಿಲ್ಲ"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "ಇತರರಂತೆ ಸೋಗುಹಾಕುವ ಖಾತೆಗಳ ಬಗ್ಗೆ ಜಾಗರೂಕರಾಗಿರಿ"
@@ -8517,7 +8517,7 @@
     "messageformat": "ಲಾಭರಹಿತ ಸಂಸ್ಥೆಯೆಂಬ ಹೆಗ್ಗಳಿಕೆ"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "ಖಾಸಗಿ ಮೆಸೇಜ್ ಮಾಡುವಿಕೆಯನ್ನು ಬೆಂಬಲಿಸಲು ದೇಣಿಗೆ ನೀಡಿ. Signal ಅನ್ನು ಸ್ವತಂತ್ರವಾಗಿ ಮತ್ತು ಜಾಹೀರಾತು-ಮುಕ್ತವಾಗಿ ಇರಿಸಿ. <readMoreLink>ಇನ್ನಷ್ಟು ಓದಿ</readMoreLink>"
+    "messageformat": "ಖಾಸಗಿ ಮೆಸೇಜ್ ಮಾಡುವಿಕೆಯನ್ನು ಬೆಂಬಲಿಸಲು ದೇಣಿಗೆ ನೀಡಿ. Tellomi ಅನ್ನು ಸ್ವತಂತ್ರವಾಗಿ ಮತ್ತು ಜಾಹೀರಾತು-ಮುಕ್ತವಾಗಿ ಇರಿಸಿ. <readMoreLink>ಇನ್ನಷ್ಟು ಓದಿ</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "ದೇಣಿಗೆ ನೀಡಿ"
@@ -8541,7 +8541,7 @@
     "messageformat": "ನಿಮ್ಮ ಮಾಹಿತಿಯು ಖಾಸಗಿಯಾಗಿದೆ"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "ಸ್ವತಂತ್ರ ಲಾಭರಹಿತ ಸಂಸ್ಥೆಯಾಗಿ, Signal ಖಾಸಗಿ ಮೆಸೇಜ್ ಕಳುಹಿಸುವಿಕೆ ಮತ್ತು ಕರೆಗಳಿಗೆ ಬದ್ಧವಾಗಿದೆ. ಜಾಹೀರಾತುಗಳಿಲ್ಲ, ಟ್ರ್ಯಾಕರ್‌ಗಳಿಲ್ಲ, ಕಣ್ಗಾವಲಿಲ್ಲ. Signal ಅನ್ನು ಬೆಂಬಲಿಸಲು ಇಂದೇ ದೇಣಿಗೆ ನೀಡಿ."
+    "messageformat": "ಸ್ವತಂತ್ರ ಲಾಭರಹಿತ ಸಂಸ್ಥೆಯಾಗಿ, Tellomi ಖಾಸಗಿ ಮೆಸೇಜ್ ಕಳುಹಿಸುವಿಕೆ ಮತ್ತು ಕರೆಗಳಿಗೆ ಬದ್ಧವಾಗಿದೆ. ಜಾಹೀರಾತುಗಳಿಲ್ಲ, ಟ್ರ್ಯಾಕರ್‌ಗಳಿಲ್ಲ, ಕಣ್ಗಾವಲಿಲ್ಲ. Tellomi ಅನ್ನು ಬೆಂಬಲಿಸಲು ಇಂದೇ ದೇಣಿಗೆ ನೀಡಿ."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "ನೀವು ದೇಣಿಗೆ ನೀಡಿದಾಗ ನಿಮ್ಮ ಪ್ರೊಫೈಲ್‌ನಲ್ಲಿ ಐಚ್ಛಿಕ ಬ್ಯಾಡ್ಜ್ ಪಡೆಯಿರಿ"
@@ -8553,7 +8553,7 @@
     "messageformat": "Signal 501c3 ಲಾಭರಹಿತ ಸಂಸ್ಥೆಯಾಗಿದೆ. US ದೇಣಿಗೆಗಳಿಗೆ ತೆರಿಗೆ ವಿನಾಯಿತಿ ಇದೆ."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "Signal ಲೋಗೊ ಶೈಲಿಯಲ್ಲಿ ಹೃದಯದ ಐಕಾನ್"
+    "messageformat": "Tellomi ಲೋಗೊ ಶೈಲಿಯಲ್ಲಿ ಹೃದಯದ ಐಕಾನ್"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "ಸರಿ"
@@ -8568,7 +8568,7 @@
     "messageformat": "ದೇಣಿಗೆದಾರರ FAQ ಗಳು"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "ರಸೀದಿಗಳು ಸಾಧನಗಳಾದ್ಯಂತ ಸಿಂಕ್ ಆಗುವುದಿಲ್ಲ. ನೀವು Signal ಅನ್ನು ಮರು ಇನ್‍ಸ್ಟಾಲ್ ಮಾಡಿದ್ದಲ್ಲಿ, ಹಿಂದಿನ ದೇಣಿಗೆಗಳ ರಸೀದಿಗಳು ಲಭ್ಯವಿರುವುದಿಲ್ಲ."
+    "messageformat": "ರಸೀದಿಗಳು ಸಾಧನಗಳಾದ್ಯಂತ ಸಿಂಕ್ ಆಗುವುದಿಲ್ಲ. ನೀವು Tellomi ಅನ್ನು ಮರು ಇನ್‍ಸ್ಟಾಲ್ ಮಾಡಿದ್ದಲ್ಲಿ, ಹಿಂದಿನ ದೇಣಿಗೆಗಳ ರಸೀದಿಗಳು ಲಭ್ಯವಿರುವುದಿಲ್ಲ."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "ರಸೀದಿಗಳಿಲ್ಲ"
@@ -8598,7 +8598,7 @@
     "messageformat": "ಕ್ರೆಡಿಟ್ ಅಥವಾ ಡೆಬಿಟ್ ಕಾರ್ಡ್"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "ನಿಮ್ಮ ಕ್ರೆಡಿಟ್ ಅಥವಾ ಡೆಬಿಟ್ ಕಾರ್ಡ್ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ. ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು Signal ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ ಅಥವಾ ಶೇಖರಿಸುವುದಿಲ್ಲ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</learnMoreLink>"
+    "messageformat": "ನಿಮ್ಮ ಕ್ರೆಡಿಟ್ ಅಥವಾ ಡೆಬಿಟ್ ಕಾರ್ಡ್ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ. ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು Tellomi ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ ಅಥವಾ ಶೇಖರಿಸುವುದಿಲ್ಲ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "ಕಾರ್ಡ್ ಸಂಖ್ಯೆ"
@@ -8610,7 +8610,7 @@
     "messageformat": "ತಿತಿ/ವವ"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Signal ಗೆ {formattedCurrencyAmount} ದೇಣಿಗೆ ನೀಡಿ"
+    "messageformat": "Tellomi ಗೆ {formattedCurrencyAmount} ದೇಣಿಗೆ ನೀಡಿ"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "ಅಮಾನ್ಯ ಕಾರ್ಡ್ ಸಂಖ್ಯೆ"
@@ -8628,7 +8628,7 @@
     "messageformat": "ಕೋಡ್ ತೀರಾ ಚಿಕ್ಕದಾಗಿದೆ"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "30 ದಿನಗಳ Signal ಬೂಸ್ಟ್ ಬ್ಯಾಡ್ಜ್ ಪಡೆಯಿರಿ"
+    "messageformat": "30 ದಿನಗಳ Tellomi ಬೂಸ್ಟ್ ಬ್ಯಾಡ್ಜ್ ಪಡೆಯಿರಿ"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "ಕನಿಷ್ಠ ದೇಣಿಗೆ ಮೊತ್ತ {formattedCurrencyAmount} ಆಗಿದೆ"
@@ -8712,7 +8712,7 @@
     "messageformat": "ದೇಣಿಗೆ ಯಶಸ್ವಿಯಾಗಿದೆ, ಆದರೆ ನಿಮ್ಮ ಬ್ಯಾಡ್ಜ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ನಮಗೆ ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನದಲ್ಲಿ ನಿಮ್ಮ ಬ್ಯಾಡ್ಜ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು, ಸೆಟ್ಟಿಂಗ್‌ಗಳು →Signal ಗೆ ದೇಣಿಗೆ ನೀಡಿ → ಬ್ಯಾಡ್ಜ್‌ಗಳು ಎಂಬಲ್ಲಿಗೆ ಹೋಗಿ."
+    "messageformat": "ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನದಲ್ಲಿ ನಿಮ್ಮ ಬ್ಯಾಡ್ಜ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು, ಸೆಟ್ಟಿಂಗ್‌ಗಳು →Tellomi ಗೆ ದೇಣಿಗೆ ನೀಡಿ → ಬ್ಯಾಡ್ಜ್‌ಗಳು ಎಂಬಲ್ಲಿಗೆ ಹೋಗಿ."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "ದೇಣಿಗೆಗೆ ಅಡಚಣೆ ಉಂಟಾಗಿದೆ"
@@ -8769,7 +8769,7 @@
     "messageformat": "ನಿಮ್ಮ ದೇಣಿಗೆಯಲ್ಲಿ ದೋಷ ಉಂಟಾಗಿದೆ"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "ನಿಮ್ಮ ದೇಣಿಗೆಯನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸದೇ ಇರಬಹುದು. ನಿಮ್ಮ ರಸೀದಿಗಳನ್ನು ಪರಿಶೀಲಿಸಲು ಮತ್ತು ದೃಢೀಕರಿಸಲು “Signal ಗೆ ದೇಣಿಗೆ ನೀಡಿ” ಎಂಬುದರ ಮೇಲೆ ಮತ್ತು ನಂತರ “ದೇಣಿಗೆ ರಸೀದಿಗಳು” ಎಂಬುದರ ಮೇಲೆ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ."
+    "messageformat": "ನಿಮ್ಮ ದೇಣಿಗೆಯನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸದೇ ಇರಬಹುದು. ನಿಮ್ಮ ರಸೀದಿಗಳನ್ನು ಪರಿಶೀಲಿಸಲು ಮತ್ತು ದೃಢೀಕರಿಸಲು “Tellomi ಗೆ ದೇಣಿಗೆ ನೀಡಿ” ಎಂಬುದರ ಮೇಲೆ ಮತ್ತು ನಂತರ “ದೇಣಿಗೆ ರಸೀದಿಗಳು” ಎಂಬುದರ ಮೇಲೆ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "ನಿಮ್ಮ ದೇಣಿಗೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ಸಹಾಯಕ್ಕಾಗಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ಬೆಂಬಲಕ್ಕೆ ಡೀಬಗ್ ಲಾಗ್ ಅನ್ನು ಸಲ್ಲಿಸಿ. ಡೀಬಗ್ ಲಾಗ್‌ಗಳು ಸಮಸ್ಯೆಯನ್ನು ನಿರ್ಣಯಿಸಲು ಮತ್ತು ಸರಿಪಡಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ ಮತ್ತು ಗುರುತಿಸುವ ಮಾಹಿತಿಯನ್ನು ಹೊಂದಿರುವುದಿಲ್ಲ."
@@ -8811,19 +8811,19 @@
     "messageformat": "ನಿಮ್ಮ ಬೆಂಬಲಕ್ಕೆ ಧನ್ಯವಾದಗಳು!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "ನೀವು Signal ನಿಂದ ದಾನಿ ಬ್ಯಾಡ್ಜ್ ಗಳಿಸಿದ್ದೀರಿ! ನಿಮ್ಮ ಬೆಂಬಲವನ್ನು ತೋರಿಸಲು ಅದನ್ನು ನಿಮ್ಮ ಪ್ರೊಫೈಲ್‌ನಲ್ಲಿ ಡಿಸ್‌ಪ್ಲೇ ಮಾಡಿ."
+    "messageformat": "ನೀವು Tellomi ನಿಂದ ದಾನಿ ಬ್ಯಾಡ್ಜ್ ಗಳಿಸಿದ್ದೀರಿ! ನಿಮ್ಮ ಬೆಂಬಲವನ್ನು ತೋರಿಸಲು ಅದನ್ನು ನಿಮ್ಮ ಪ್ರೊಫೈಲ್‌ನಲ್ಲಿ ಡಿಸ್‌ಪ್ಲೇ ಮಾಡಿ."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "ಪ್ರೊಫೈಲ್‌ನಲ್ಲಿ ಪ್ರದರ್ಶಿಸಿ"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "ನೀವು ಇದನ್ನು ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನದಲ್ಲಿ ಸೆಟ್ಟಿಂಗ್‍ಗಳು → Signal ಗೆ ದೇಣಿಗೆ ನೀಡುವುದು → ಬ್ಯಾಡ್ಜ್‌ಗಳು ಎಂಬುದರ ಅಡಿಯಲ್ಲಿ ಹೊಂದಿಸಬಹುದು"
+    "messageformat": "ನೀವು ಇದನ್ನು ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನದಲ್ಲಿ ಸೆಟ್ಟಿಂಗ್‍ಗಳು → Tellomi ಗೆ ದೇಣಿಗೆ ನೀಡುವುದು → ಬ್ಯಾಡ್ಜ್‌ಗಳು ಎಂಬುದರ ಅಡಿಯಲ್ಲಿ ಹೊಂದಿಸಬಹುದು"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "ನಿಮ್ಮ ಕರೆ ಹೇಗಿತ್ತು?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "ಇದು Signal ನಲ್ಲಿ ಕರೆಗಳನ್ನು ಸುಧಾರಿಸಲು ನಮಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ. ವೈಯಕ್ತಿಕವಾಗಿ ಗುರುತಿಸಬಹುದಾದ ಯಾವುದೇ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸಲಾಗುವುದಿಲ್ಲ."
+    "messageformat": "ಇದು Tellomi ನಲ್ಲಿ ಕರೆಗಳನ್ನು ಸುಧಾರಿಸಲು ನಮಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ. ವೈಯಕ್ತಿಕವಾಗಿ ಗುರುತಿಸಬಹುದಾದ ಯಾವುದೇ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸಲಾಗುವುದಿಲ್ಲ."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "ಸಮಸ್ಯೆಗಳಿದ್ದವು"
@@ -8874,7 +8874,7 @@
     "messageformat": "ಸಮಸ್ಯೆಗಳ ವಿವರಣೆ"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "ಸಮಸ್ಯೆಗೆ ಸಂಬಂಧಿಸಿದ ಯಾವುದೇ ವಿವರಗಳನ್ನು ಸೇರಿಸಿ. ನೀವು ಇಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳುವ ಯಾವುದೇ ಸಂಗತಿಯನ್ನು ಖಾಸಗಿಯಾಗಿ ಇರಿಸಲಾಗುತ್ತದೆ ಮತ್ತು Signal ನಲ್ಲಿ ಕರೆಗಳನ್ನು ಸುಧಾರಿಸುವುದಕ್ಕೆ ಸಹಾಯ ಮಾಡಲು ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತದೆ."
+    "messageformat": "ಸಮಸ್ಯೆಗೆ ಸಂಬಂಧಿಸಿದ ಯಾವುದೇ ವಿವರಗಳನ್ನು ಸೇರಿಸಿ. ನೀವು ಇಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳುವ ಯಾವುದೇ ಸಂಗತಿಯನ್ನು ಖಾಸಗಿಯಾಗಿ ಇರಿಸಲಾಗುತ್ತದೆ ಮತ್ತು Tellomi ನಲ್ಲಿ ಕರೆಗಳನ್ನು ಸುಧಾರಿಸುವುದಕ್ಕೆ ಸಹಾಯ ಮಾಡಲು ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತದೆ."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "ನಿಮ್ಮ ಸಮಸ್ಯೆಯನ್ನು ವಿವರಿಸಿ"
@@ -8940,7 +8940,7 @@
     "messageformat": "QR ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡುವ ಮೂಲಕ ನೀವು ಮರುಲಿಂಕ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ."
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "ನಿಮ್ಮಲ್ಲಿ ಪಾವತಿಸಿದ Signal ಸುರಕ್ಷಿತ ಬ್ಯಾಕಪ್‌ಗಳು ಇದ್ದರೆ, ನಿಮ್ಮ ಎಲ್ಲಾ ಮೀಡಿಯಾವನ್ನು ವರ್ಗಾಯಿಸಲಾಗುತ್ತದೆ. ಇಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ಕಳೆದ 45 ದಿನಗಳ ಮೀಡಿಯಾವನ್ನು ಸೇರಿಸಲಾಗುತ್ತದೆ."
+    "messageformat": "ನಿಮ್ಮಲ್ಲಿ ಪಾವತಿಸಿದ Tellomi ಸುರಕ್ಷಿತ ಬ್ಯಾಕಪ್‌ಗಳು ಇದ್ದರೆ, ನಿಮ್ಮ ಎಲ್ಲಾ ಮೀಡಿಯಾವನ್ನು ವರ್ಗಾಯಿಸಲಾಗುತ್ತದೆ. ಇಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ಕಳೆದ 45 ದಿನಗಳ ಮೀಡಿಯಾವನ್ನು ಸೇರಿಸಲಾಗುತ್ತದೆ."
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "ವರ್ಗಾವಣೆ"
@@ -8955,11 +8955,11 @@
     "messageformat": "ಸಿಗ್ನಲ್ ಡೆಸ್ಕ್‌ಟಾಪ್‌ನಲ್ಲಿರುವ ಎಲ್ಲಾ ಪ್ರಸ್ತುತ ಡೇಟಾವನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ. ಆಗ ನೀವು QR ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಬಹುದು ಮತ್ತು ನಿಮ್ಮ ಫೋನ್‌ನಿಂದ ನಿಮ್ಮ ಸಂದೇಶ ಇತಿಹಾಸವನ್ನು ವರ್ಗಾಯಿಸಬಹುದು."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": " Signal ಅನ್ನು ಸರಾಗವಾಗಿ ಚಾಲ್ತಿಯಲ್ಲಿಡಲು ಈ ಆವೃತ್ತಿಯು ಸಾಕಷ್ಟು ಸಣ್ಣ ಟ್ವೀಕ್‌ಗಳನ್ನು ಹೊಂದಿದೆ ಮತ್ತು ಬಗ್ ಫಿಕ್ಸ್‌ಗಳನ್ನು ಹೊಂದಿದೆ.",
+    "messageformat": " Tellomi ಅನ್ನು ಸರಾಗವಾಗಿ ಚಾಲ್ತಿಯಲ್ಲಿಡಲು ಈ ಆವೃತ್ತಿಯು ಸಾಕಷ್ಟು ಸಣ್ಣ ಟ್ವೀಕ್‌ಗಳನ್ನು ಹೊಂದಿದೆ ಮತ್ತು ಬಗ್ ಫಿಕ್ಸ್‌ಗಳನ್ನು ಹೊಂದಿದೆ.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "ಹೆಚ್ಚುವರಿ ಸಣ್ಣ ಟ್ವೀಕ್‌ಗಳು, ಬಗ್ ಫಿಕ್ಸ್‌ಗಳು ಮತ್ತು ಕಾರ್ಯಕ್ಷಮತೆ ವರ್ಧನೆಗಳು. Signal ಬಳಸುತ್ತಿರುವುದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು!",
+    "messageformat": "ಹೆಚ್ಚುವರಿ ಸಣ್ಣ ಟ್ವೀಕ್‌ಗಳು, ಬಗ್ ಫಿಕ್ಸ್‌ಗಳು ಮತ್ತು ಕಾರ್ಯಕ್ಷಮತೆ ವರ್ಧನೆಗಳು. Tellomi ಬಳಸುತ್ತಿರುವುದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -8979,7 +8979,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "ಸಣ್ಣ ಟ್ವೀಕ್‌ಗಳು, ಬಗ್ ಫಿಕ್ಸ್‌ಗಳು ಮತ್ತು ಕಾರ್ಯಕ್ಷಮತೆ ವರ್ಧನೆಗಳು. Signal ಬಳಸುತ್ತಿರುವುದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು!",
+    "messageformat": "ಸಣ್ಣ ಟ್ವೀಕ್‌ಗಳು, ಬಗ್ ಫಿಕ್ಸ್‌ಗಳು ಮತ್ತು ಕಾರ್ಯಕ್ಷಮತೆ ವರ್ಧನೆಗಳು. Tellomi ಬಳಸುತ್ತಿರುವುದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.24--1": {
@@ -8992,6 +8992,6 @@
     "messageformat": "ನಿಮ್ಮನ್ನು ನೀವು ಅರಿತುಕೊಳ್ಳಲು ಜೀವನವೇ ಬೇಕಾಗಬಹುದು. ಆದರೆ ಈಗ ಗುಂಪಿನ ಸದಸ್ಯರ ಹುಡುಕಾಟದಲ್ಲಿ ನಿಮ್ಮ ಹೆಸರು “ನೀವು” ಎಂದು ಕಾಣಿಸುತ್ತದೆ, ಆದ್ದರಿಂದ ನಿಮ್ಮನ್ನು ಗುರುತಿಸುವುದು ಇನ್ನಷ್ಟು ಸುಲಭ."
   },
   "icu:WhatsNew__8.27--0": {
-    "messageformat": "ಈ ಅಪ್‌ಡೇಟ್ ನಿಮ್ಮ Signal ನೋಟಿಫಿಕೇಷನ್‌ಗಳ ಮೇಲೆ ಗಮನಾರ್ಹವಾಗಿ ಹೆಚ್ಚಿನ ನಿಯಂತ್ರಣವನ್ನು ನೀಡಲು ಹೆಚ್ಚು ಸೂಕ್ಷ್ಮವಾದ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಪರಿಚಯಿಸುತ್ತದೆ. ಈಗ ನೀವು ಆ್ಯಪ್ ಬ್ಯಾಡ್ಜ್‌ನಲ್ಲಿ ಏನು ಗೋಚರಿಸಬೇಕೆಂದು ಆಯ್ಕೆ ಮಾಡಬಹುದು, ಮ್ಯೂಟ್ ಮಾಡಿದ ಥ್ರೆಡ್‌ಗಳಿಗೆ ನೋಟಿಫಿಕೇಷನ್ ಆದ್ಯತೆಗಳನ್ನು ಹೊಂದಿಸಬಹುದು ಮತ್ತು ಇನ್ನೂ ಹೆಚ್ಚಿನದನ್ನು ಮಾಡಬಹುದು! ನೀವು ಎಂದಾದರೂ ಹಲವಾರು ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡಿದರೆ, ನಿಮ್ಮನ್ನು ಹೇಗೆ ನಿಯಂತ್ರಿಸಿಕೊಳ್ಳುವುದು ಎಂದು ನಿಮಗೆ ತಿಳಿದಿಲ್ಲದಿದ್ದರೆ, ಡೀಫಾಲ್ಟ್ ನೋಟಿಫಿಕೇಷನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ರಿಸ್ಟೋರ್ ಮಾಡಲು ನಾವು ಅನುಕೂಲಕರ ಬಟನ್ ಅನ್ನು ಸಹ ಸೇರಿಸಿದ್ದೇವೆ."
+    "messageformat": "ಈ ಅಪ್‌ಡೇಟ್ ನಿಮ್ಮ Tellomi ನೋಟಿಫಿಕೇಷನ್‌ಗಳ ಮೇಲೆ ಗಮನಾರ್ಹವಾಗಿ ಹೆಚ್ಚಿನ ನಿಯಂತ್ರಣವನ್ನು ನೀಡಲು ಹೆಚ್ಚು ಸೂಕ್ಷ್ಮವಾದ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಪರಿಚಯಿಸುತ್ತದೆ. ಈಗ ನೀವು ಆ್ಯಪ್ ಬ್ಯಾಡ್ಜ್‌ನಲ್ಲಿ ಏನು ಗೋಚರಿಸಬೇಕೆಂದು ಆಯ್ಕೆ ಮಾಡಬಹುದು, ಮ್ಯೂಟ್ ಮಾಡಿದ ಥ್ರೆಡ್‌ಗಳಿಗೆ ನೋಟಿಫಿಕೇಷನ್ ಆದ್ಯತೆಗಳನ್ನು ಹೊಂದಿಸಬಹುದು ಮತ್ತು ಇನ್ನೂ ಹೆಚ್ಚಿನದನ್ನು ಮಾಡಬಹುದು! ನೀವು ಎಂದಾದರೂ ಹಲವಾರು ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡಿದರೆ, ನಿಮ್ಮನ್ನು ಹೇಗೆ ನಿಯಂತ್ರಿಸಿಕೊಳ್ಳುವುದು ಎಂದು ನಿಮಗೆ ತಿಳಿದಿಲ್ಲದಿದ್ದರೆ, ಡೀಫಾಲ್ಟ್ ನೋಟಿಫಿಕೇಷನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ರಿಸ್ಟೋರ್ ಮಾಡಲು ನಾವು ಅನುಕೂಲಕರ ಬಟನ್ ಅನ್ನು ಸಹ ಸೇರಿಸಿದ್ದೇವೆ."
   }
 }

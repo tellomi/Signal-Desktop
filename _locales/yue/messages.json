@@ -66,7 +66,7 @@
     "messageformat": "捐款俾 Signal"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "<bold>「連結咗嘅裝置」</bold>俾你喺任何其他裝置上面安全咁存取 Signal 帳戶同埋訊息。"
+    "messageformat": "<bold>「連結咗嘅裝置」</bold>俾你喺任何其他裝置上面安全咁存取 Tellomi 帳戶同埋訊息。"
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "你可以連結桌面電腦、平板電腦或者其他手機。"
@@ -114,10 +114,10 @@
     "messageformat": "不明嘅群組"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "開唔到 Signal"
+    "messageformat": "開唔到 Tellomi"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "要解決呢個問題，請依照支援頁面嘅復原指南操作，或者聯絡 Signal 支援幫手。\n\n如果你需要即刻用 Signal，可以選擇刪除資料，然後重新連結呢部桌面電腦。你可以選擇由手機轉移訊息紀錄。"
+    "messageformat": "要解決呢個問題，請依照支援頁面嘅復原指南操作，或者聯絡 Tellomi 支援幫手。\n\n如果你需要即刻用 Tellomi，可以選擇刪除資料，然後重新連結呢部桌面電腦。你可以選擇由手機轉移訊息紀錄。"
   },
   "icu:databaseError": {
     "messageformat": "資料庫錯誤"
@@ -129,16 +129,16 @@
     "messageformat": "永久刪除所有資料"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "你嘅所有訊息紀錄同媒體將會喺呢部機度永久刪除。呢個操作唔會刪除你手機嘅任何資料。\n\n重新連結之後，你就可以喺呢部機度用 Signal 喇。你可以選擇由手機轉移訊息紀錄。"
+    "messageformat": "你嘅所有訊息紀錄同媒體將會喺呢部機度永久刪除。呢個操作唔會刪除你手機嘅任何資料。\n\n重新連結之後，你就可以喺呢部機度用 Tellomi 喇。你可以選擇由手機轉移訊息紀錄。"
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "你嘅資料庫版本同呢個 Signal 版本唔相符。請確定你喺電腦用緊嘅係最新版本嘅 Signal。"
+    "messageformat": "你嘅資料庫版本同呢個 Tellomi 版本唔相符。請確定你喺電腦用緊嘅係最新版本嘅 Tellomi。"
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "存取唔到資料庫加密金鑰，因為作業系統嘅加密金鑰環後端由 {previousBackend} 改咗做 {currentBackend}。如果桌面環境有變（例如由 GNOME 轉用 KDE，或者調返轉），就有可能發生呢種情況。\n\n請轉返去之前嘅桌面環境。"
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "存取唔到資料庫加密金鑰，因為作業系統嘅加密金鑰環後端由 {previousBackend} 改咗做 {currentBackend}。如果桌面環境有變（例如由 GNOME 轉用 KDE，或者調返轉），就有可能發生呢種情況。\n\n請轉返去之前嘅桌面環境，或者試吓用命令列標幟 --password-store=\"{previousBackendFlag}\" 執行 Signal"
+    "messageformat": "存取唔到資料庫加密金鑰，因為作業系統嘅加密金鑰環後端由 {previousBackend} 改咗做 {currentBackend}。如果桌面環境有變（例如由 GNOME 轉用 KDE，或者調返轉），就有可能發生呢種情況。\n\n請轉返去之前嘅桌面環境，或者試吓用命令列標幟 --password-store=\"{previousBackendFlag}\" 執行 Tellomi"
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -183,7 +183,7 @@
     "messageformat": "顯示全部"
   },
   "icu:appMenuQuit": {
-    "messageformat": "關閉 Signal"
+    "messageformat": "關閉 Tellomi"
   },
   "icu:editMenuUndo": {
     "messageformat": "還原"
@@ -507,10 +507,10 @@
     "messageformat": "你已經喺另一部裝置度將你同 {name} 嘅安全碼標記咗做未驗證"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "你嘗試驗證嘅安全碼已經改咗。請檢查你同 {name1} 嘅新安全碼。要記住，安全碼唔同咗可能代表有人嘗試截取你哋嘅通訊，又或者只係 {name2} 重新安裝咗 Signal。"
+    "messageformat": "你嘗試驗證嘅安全碼已經改咗。請檢查你同 {name1} 嘅新安全碼。要記住，安全碼唔同咗可能代表有人嘗試截取你哋嘅通訊，又或者只係 {name2} 重新安裝咗 Tellomi。"
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "以下嘅聯絡人可能重新安裝咗 Signal 或者更換咗裝置。你可以㩒一吓接收者嚟確認佢嘅新安全碼。呢個操作係選擇性嘅。"
+    "messageformat": "以下嘅聯絡人可能重新安裝咗 Tellomi 或者更換咗裝置。你可以㩒一吓接收者嚟確認佢嘅新安全碼。呢個操作係選擇性嘅。"
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "傳送未處理嘅訊息"
@@ -519,7 +519,7 @@
     "messageformat": "檢查"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, other {你有 {count,number} 個人脈可能重新安裝咗 Signal 或者更換咗裝置。同佢哋通訊之前，你可以選擇先檢查佢哋嘅安全碼。}}"
+    "messageformat": "{count, plural, other {你有 {count,number} 個人脈可能重新安裝咗 Tellomi 或者更換咗裝置。同佢哋通訊之前，你可以選擇先檢查佢哋嘅安全碼。}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "你已經檢查晒所有人脈，㩒一吓傳送就可以繼續。"
@@ -627,16 +627,16 @@
     "messageformat": "系統已經為呢個聊天做緊自動加密驗證 "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "對於用電話冧把聯絡嘅人，Signal 會進行一個叫「金鑰透明度」嘅程序，自動確認聯絡對象係咪安全。如果想更加保險，你可以比較上一個畫面嘅數字，或者掃瞄佢部機嘅二維碼嚟手動驗證端對端加密。"
+    "messageformat": "對於用電話冧把聯絡嘅人，Tellomi 會進行一個叫「金鑰透明度」嘅程序，自動確認聯絡對象係咪安全。如果想更加保險，你可以比較上一個畫面嘅數字，或者掃瞄佢部機嘅二維碼嚟手動驗證端對端加密。"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "呢個聊天未有自動驗證功能"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "Signal 唔可以自動驗證呢個聊天嘅加密。原因可能係 {name} 轉咗新電話冧把，或者改咗電話冧把嘅私隱設定。如果想手動驗證端對端加密，你可以比較上一個畫面嘅數字，或者掃瞄佢部機嘅二維碼。"
+    "messageformat": "Tellomi 唔可以自動驗證呢個聊天嘅加密。原因可能係 {name} 轉咗新電話冧把，或者改咗電話冧把嘅私隱設定。如果想手動驗證端對端加密，你可以比較上一個畫面嘅數字，或者掃瞄佢部機嘅二維碼。"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "只有用電話冧把同對方聯絡嘅聊天，Signal 先可以自動做加密驗證。如果個聊天係由用戶名稱或者經聊天谷建立，你可以比較上一個畫面嘅數字，或者掃瞄佢部機嘅二維碼嚟驗證端對端加密。"
+    "messageformat": "只有用電話冧把同對方聯絡嘅聊天，Tellomi 先可以自動做加密驗證。如果個聊天係由用戶名稱或者經聊天谷建立，你可以比較上一個畫面嘅數字，或者掃瞄佢部機嘅二維碼嚟驗證端對端加密。"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "確定"
@@ -675,10 +675,10 @@
     "messageformat": "唔使喇，唔該"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "Signal 而家可以自動驗證加密"
+    "messageformat": "Tellomi 而家可以自動驗證加密"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "對於用電話冧把聯絡嘅聯絡人，Signal 會進行一個叫「金鑰透明度」嘅程序，自動確認聯絡對象係咪安全。如果想更加保險，你可以繼續用返二維碼或者比較安全碼人手驗證聯絡人。"
+    "messageformat": "對於用電話冧把聯絡嘅聯絡人，Tellomi 會進行一個叫「金鑰透明度」嘅程序，自動確認聯絡對象係咪安全。如果想更加保險，你可以繼續用返二維碼或者比較安全碼人手驗證聯絡人。"
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "繼續"
@@ -837,7 +837,7 @@
     "messageformat": "貼圖包製作工具"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "關於 Signal 桌面版"
+    "messageformat": "關於 Tellomi 桌面版"
   },
   "icu:screenShareWindow": {
     "messageformat": "分享畫面"
@@ -855,7 +855,7 @@
     "messageformat": "離開"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal 桌面版"
+    "messageformat": "Tellomi 桌面版"
   },
   "icu:search": {
     "messageformat": "搜尋"
@@ -909,7 +909,7 @@
     "messageformat": "用電話冧把嚟搵"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "歡迎使用 Signal"
+    "messageformat": "歡迎使用 Tellomi"
   },
   "icu:whatsNew": {
     "messageformat": "睇吓今次更新有咩{whatsNew}"
@@ -999,13 +999,13 @@
     "messageformat": "你"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "你要允許 Signal 桌面版存取你個咪，先可以傳送語音訊息㗎。"
+    "messageformat": "你要允許 Tellomi 桌面版存取你個咪，先可以傳送語音訊息㗎。"
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "你一定要允許咗 Signal 桌面版存取你個咪，先用到通話功能㗎。"
+    "messageformat": "你一定要允許咗 Tellomi 桌面版存取你個咪，先用到通話功能㗎。"
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "你一定要允許咗 Signal 桌面版存取你個咪，先用到視像通話㗎。"
+    "messageformat": "你一定要允許咗 Tellomi 桌面版存取你個咪，先用到視像通話㗎。"
   },
   "icu:allowAccess": {
     "messageformat": "允許存取"
@@ -1029,13 +1029,13 @@
     "messageformat": "靜音"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "更新唔到 Signal。<retryUpdateButton>試吓更新多次</retryUpdateButton>或者去 {url} 手動安裝，然後<contactSupportLink>聯絡支援團隊</contactSupportLink>報告呢個問題"
+    "messageformat": "更新唔到 Tellomi。<retryUpdateButton>試吓更新多次</retryUpdateButton>或者去 {url} 手動安裝，然後<contactSupportLink>聯絡支援團隊</contactSupportLink>報告呢個問題"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "更新唔到 Signal。你可以去 {url} 手動安裝，然後<contactSupportLink>聯絡支援團隊</contactSupportLink>報告呢個問題"
+    "messageformat": "更新唔到 Tellomi。你可以去 {url} 手動安裝，然後<contactSupportLink>聯絡支援團隊</contactSupportLink>報告呢個問題"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal 桌面版似乎喺 macOS 隔離區，而且冇辦法自動更新。請你嘗試用 Finder 將 {app} 移去 {folder}。"
+    "messageformat": "Tellomi 桌面版似乎喺 macOS 隔離區，而且冇辦法自動更新。請你嘗試用 Finder 將 {app} 移去 {folder}。"
   },
   "icu:ok": {
     "messageformat": "確定"
@@ -1080,7 +1080,7 @@
     "messageformat": "呢個訊息會喺呢部裝置度刪除。"
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "呢個訊息會喺聊天入面所有用緊 Signal 最新版本嘅人部機度刪除。佢哋會見到你刪除咗一個訊息。"
+    "messageformat": "呢個訊息會喺聊天入面所有用緊 Tellomi 最新版本嘅人部機度刪除。佢哋會見到你刪除咗一個訊息。"
   },
   "icu:from": {
     "messageformat": "來自"
@@ -1122,7 +1122,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "「 {title} 」係呢個人喺 Signal 度幫自己改嘅個人檔名。"
+    "messageformat": "「 {title} 」係呢個人喺 Tellomi 度幫自己改嘅個人檔名。"
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "已驗證"
@@ -1137,7 +1137,7 @@
     "messageformat": "冇同{name}嘅直接訊息"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal 人脈"
+    "messageformat": "Tellomi 人脈"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} 係你嘅聯絡人"
@@ -1449,7 +1449,7 @@
     "messageformat": "了解詳情"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal 採用端對端加密，間中可能要重新整理吓你嘅聊天對話。呢個過程唔會影響聊天嘅安全性，但可能會令你錯失咗呢位聯絡人俾你嘅訊息。你可以請佢再傳送多次。"
+    "messageformat": "Tellomi 採用端對端加密，間中可能要重新整理吓你嘅聊天對話。呢個過程唔會影響聊天嘅安全性，但可能會令你錯失咗呢位聯絡人俾你嘅訊息。你可以請佢再傳送多次。"
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "聯絡支援團隊"
@@ -1476,7 +1476,7 @@
     "messageformat": "{sender} 已經轉咗電話冧把"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "聯絡人開咗 Signal"
+    "messageformat": "聯絡人開咗 Tellomi"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} 同 {conversationTitle} 係同一個帳戶。兩個聊天嘅訊息紀錄都喺晒度。"
@@ -1566,7 +1566,7 @@
     "messageformat": "下載唔到媒體"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "檢查桌面電腦同手機嘅網絡連線。喺你部舊機度打開 Signal，然後再嘗試下載多次。"
+    "messageformat": "檢查桌面電腦同手機嘅網絡連線。喺你部舊機度打開 Tellomi，然後再嘗試下載多次。"
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "呢個媒體已經唔再喺你部手機度出現，亦都冇得下載。"
@@ -1587,10 +1587,10 @@
     "messageformat": "了解多啲"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "用手機嘅 Signal 應用程式掃瞄呢個二維碼"
+    "messageformat": "用手機嘅 Tellomi 應用程式掃瞄呢個二維碼"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "喺手機度打開 Signal"
+    "messageformat": "喺手機度打開 Tellomi"
   },
   "icu:Install__instructions__2": {
     "messageformat": "㩒一吓 {settings}，然後再㩒 {linkedDevices}"
@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>發生未預期嘅錯誤。</paragraph><paragraph>請你再試多次啦。</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal 用唔到你用緊嘅網絡去連結呢部機。"
+    "messageformat": "Tellomi 用唔到你用緊嘅網絡去連結呢部機。"
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "再試多次"
@@ -1626,7 +1626,7 @@
     "messageformat": "係咪要清除所有資料？"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "你嘗試緊將另一個 Signal 帳戶連結去呢部桌面電腦。如果你繼續，系統會刪除而家 Signal 桌面版嘅所有資料。"
+    "messageformat": "你嘗試緊將另一個 Tellomi 帳戶連結去呢部桌面電腦。如果你繼續，系統會刪除而家 Tellomi 桌面版嘅所有資料。"
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "繼續"
@@ -1641,7 +1641,7 @@
     "messageformat": "裝置名稱"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "如果想改咗呢部機個名，請喺手機打開 Signal，然後去「設定」>「連結咗嘅裝置」"
+    "messageformat": "如果想改咗呢部機個名，請喺手機打開 Tellomi，然後去「設定」>「連結咗嘅裝置」"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "表情符號膚色"
@@ -1833,7 +1833,7 @@
     "messageformat": "自動金鑰驗證"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "啟用嗰陣，Signal 會嘗試自動驗證 1 對 1 聊天嘅加密。"
+    "messageformat": "啟用嗰陣，Tellomi 會嘗試自動驗證 1 對 1 聊天嘅加密。"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "了解詳情"
@@ -1851,7 +1851,7 @@
     "messageformat": "唔好意思，你連結咗太多部機。請你試吓移除返一啲裝置。"
   },
   "icu:installTooOld": {
-    "messageformat": "喺呢部機度更新 Signal 嚟連結你部手機。"
+    "messageformat": "喺呢部機度更新 Tellomi 嚟連結你部手機。"
   },
   "icu:installErrorHeader": {
     "messageformat": "系統出現咗啲問題！"
@@ -1902,7 +1902,7 @@
     "messageformat": "呢條通話連結已經失效。"
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal 通話"
+    "messageformat": "Tellomi 通話"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "刪除唔到連結。請檢查你嘅連線，然後再試多次。"
@@ -2076,16 +2076,16 @@
     "messageformat": "{count, plural, other {有 {count,number} 個人喺通話入面}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal 會打俾 {person}"
+    "messageformat": "Tellomi 會打俾 {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal 會打俾 {first} 同 {second}"
+    "messageformat": "Tellomi 會打俾 {first} 同 {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal 會打俾 {first}、{second} 同 {third}"
+    "messageformat": "Tellomi 會打俾 {first}、{second} 同 {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, other {Signal 將會打電話俾 {first}、{second} 同另外 {others,number} 個人}}"
+    "messageformat": "{others, plural, other {Tellomi 將會打電話俾 {first}、{second} 同另外 {others,number} 個人}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} 會收到通知"
@@ -2139,13 +2139,13 @@
     "messageformat": "重新連緊線..."
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "你斷咗線。Signal 而家重新連緊線。"
+    "messageformat": "你斷咗線。Tellomi 而家重新連緊線。"
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal 分享緊 {window}。"
+    "messageformat": "Tellomi 分享緊 {window}。"
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Signal 嘅螢幕分享功能已經啟用"
+    "messageformat": "Tellomi 嘅螢幕分享功能已經啟用"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "重新連緊線..."
@@ -2166,7 +2166,7 @@
     "messageformat": "需要權限"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal 要有存取權先可以錄到電腦螢幕。"
+    "messageformat": "Tellomi 要有存取權先可以錄到電腦螢幕。"
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "去系統偏好設定。"
@@ -2175,7 +2175,7 @@
     "messageformat": "㩒左下角嘅鎖定圖示，然後輸入你嘅電腦密碼。"
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "喺右邊剔 Signal 隔離嗰個格仔。如果你喺清單度搵唔到 Signal 嘅話，可以㩒個加號嚟新增 Signal。"
+    "messageformat": "喺右邊剔 Tellomi 隔離嗰個格仔。如果你喺清單度搵唔到 Tellomi 嘅話，可以㩒個加號嚟新增 Tellomi。"
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "打開系統偏好設定"
@@ -2187,7 +2187,7 @@
     "messageformat": "一律轉駁通話"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "經由 Signal 嘅伺服器轉駁所有通話就可以避免向聯絡人透露你嘅 IP 位址。啟用嘅時候通話質素會降低。"
+    "messageformat": "經由 Tellomi 嘅伺服器轉駁所有通話就可以避免向聯絡人透露你嘅 IP 位址。啟用嘅時候通話質素會降低。"
   },
   "icu:permissions": {
     "messageformat": "權限"
@@ -2205,10 +2205,10 @@
     "messageformat": "喺揀選咗文字嘅時候，顯示文字格式彈出式選單"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "下次啟動 Signal 嗰陣就會啟用拼寫檢查。"
+    "messageformat": "下次啟動 Tellomi 嗰陣就會啟用拼寫檢查。"
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "下次啟動 Signal 嗰陣就會停用拼寫檢查。"
+    "messageformat": "下次啟動 Tellomi 嗰陣就會停用拼寫檢查。"
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "縮細放入系統匣"
@@ -2232,7 +2232,7 @@
     "messageformat": "係咪要清除所有資料呀？"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "係咪要刪除呢個 Signal 桌面版版本嘅所有資料同訊息？你嘅 Signal 帳戶同埋手機或者其他已連結裝置上面嘅資料係唔會刪除嘅。"
+    "messageformat": "係咪要刪除呢個 Tellomi 桌面版版本嘅所有資料同訊息？你嘅 Tellomi 帳戶同埋手機或者其他已連結裝置上面嘅資料係唔會刪除嘅。"
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "中斷緊連接，同刪除緊資料…"
@@ -2241,7 +2241,7 @@
     "messageformat": "刪除帳戶"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "咁做嘅話，系統就會刪除你嘅帳戶資料、個人檔案同埋所有訊息。全部 Signal 谷亦都會踢你走。"
+    "messageformat": "咁做嘅話，系統就會刪除你嘅帳戶資料、個人檔案同埋所有訊息。全部 Tellomi 谷亦都會踢你走。"
   },
   "icu:deleteAccountButton": {
     "messageformat": "刪除帳戶"
@@ -2250,10 +2250,10 @@
     "messageformat": "係咪要刪除帳戶？"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "咁做嘅話，系統就會刪除你嘅帳戶資料、個人檔案同埋所有訊息。全部 Signal 谷亦都會踢你走。完成程序之後，個 APP 會自動關閉。"
+    "messageformat": "咁做嘅話，系統就會刪除你嘅帳戶資料、個人檔案同埋所有訊息。全部 Tellomi 谷亦都會踢你走。完成程序之後，個 APP 會自動關閉。"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "你之前安裝嘅 Signal 桌面版入面有過時嘅資料。如果你選擇繼續，呢啲資料就會被刪除，你就會從頭開始過喇。"
+    "messageformat": "你之前安裝嘅 Tellomi 桌面版入面有過時嘅資料。如果你選擇繼續，呢啲資料就會被刪除，你就會從頭開始過喇。"
   },
   "icu:deleteOldData": {
     "messageformat": "刪除舊資料"
@@ -2310,7 +2310,7 @@
     "messageformat": "刪除咗一部分，㩒一下了解詳情"
   },
   "icu:expiredWarning": {
-    "messageformat": "呢個 Signal 桌面版本已經過咗期。請你升級到最新版本嚟繼續收發訊息啦。"
+    "messageformat": "呢個 Tellomi 桌面版本已經過咗期。請你升級到最新版本嚟繼續收發訊息啦。"
   },
   "icu:upgrade": {
     "messageformat": "㩒呢度去 signal.org/download"
@@ -2322,7 +2322,7 @@
     "messageformat": "匯入聯絡人"
   },
   "icu:syncExplanation": {
-    "messageformat": "由你部流動裝置匯入所有 Signal 群組同聯絡人。"
+    "messageformat": "由你部流動裝置匯入所有 Tellomi 群組同聯絡人。"
   },
   "icu:syncNow": {
     "messageformat": "即刻匯入"
@@ -2355,7 +2355,7 @@
     "messageformat": "琴日 {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signal 可能處理唔到一個收到嘅訊息。"
+    "messageformat": "Tellomi 可能處理唔到一個收到嘅訊息。"
   },
   "icu:messageBodyTooLong": {
     "messageformat": "訊息太長。"
@@ -2520,13 +2520,13 @@
     "messageformat": "你只可以喺傳送訊息後 24 個鐘內套用編輯。"
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} 唔係 Signal 嘅用戶。請確認你輸入嘅用戶名稱係咪完整。"
+    "messageformat": "{atUsername} 唔係 Tellomi 嘅用戶。請確認你輸入嘅用戶名稱係咪完整。"
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} 唔係有效嘅用戶名稱。請確保你輸入咗完整嘅用戶名稱，後面加埋專屬嘅兩位數字。"
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "搵唔到呢個用戶。「{phoneNumber}」唔係 Signal 嘅用戶。"
+    "messageformat": "搵唔到呢個用戶。「{phoneNumber}」唔係 Tellomi 嘅用戶。"
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "搵唔到呢個用戶。「{phoneNumber}」唔係有效嘅電話冧把。"
@@ -2547,13 +2547,13 @@
     "messageformat": "已經到咗群組人數嘅上限喇"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal 群組最多可以有 {max,number} 個成員。"
+    "messageformat": "Tellomi 群組最多可以有 {max,number} 個成員。"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "已經到咗我哋建議嘅人數上限喇"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal 群組喺人數唔超過 {max,number} 個成員嘅時候表現最好。加多啲人就會令收發訊息慢咗。"
+    "messageformat": "Tellomi 群組喺人數唔超過 {max,number} 個成員嘅時候表現最好。加多啲人就會令收發訊息慢咗。"
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "幫呢個群組起個名"
@@ -2583,13 +2583,13 @@
     "messageformat": "更新唔到呢個群組。請檢查吓網絡連線然後再試過啦。"
   },
   "icu:unlinkedWarning": {
-    "messageformat": "㩒一吓再重新將 Signal 桌面版連去你嘅流動裝置，方便你繼續收發訊息。"
+    "messageformat": "㩒一吓再重新將 Tellomi 桌面版連去你嘅流動裝置，方便你繼續收發訊息。"
   },
   "icu:unlinked": {
     "messageformat": "解除咗連結"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "點擊再重新註冊然後繼續傳送訊息。Signal 桌面版冇註冊，原因好可能係你喺另一部裝置度用咗同一個電話冧把註冊 Signal。"
+    "messageformat": "點擊再重新註冊然後繼續傳送訊息。Tellomi 桌面版冇註冊，原因好可能係你喺另一部裝置度用咗同一個電話冧把註冊 Tellomi。"
   },
   "icu:unregistered": {
     "messageformat": "註冊已經冇效"
@@ -2601,16 +2601,16 @@
     "messageformat": "再試吓更新"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "㩒一吓嚟重新啟動 Signal"
+    "messageformat": "㩒一吓嚟重新啟動 Tellomi"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "㩒一吓嚟下載更新"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "更新唔到 Signal。㩒一吓再試過啦。"
+    "messageformat": "更新唔到 Tellomi。㩒一吓再試過啦。"
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "重新啟動 Signal"
+    "messageformat": "重新啟動 Tellomi"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "忽略更新"
@@ -2742,7 +2742,7 @@
     "messageformat": "有啲附件太大顯示唔到。"
   },
   "icu:message--call-link-description": {
-    "messageformat": "用呢條連結嚟加入 Signal 通話"
+    "messageformat": "用呢條連結嚟加入 Tellomi 通話"
   },
   "icu:donation--missing": {
     "messageformat": "攞唔到捐款詳情"
@@ -2823,10 +2823,10 @@
     "messageformat": "加貼圖"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal 藝術家系列"
+    "messageformat": "Tellomi 藝術家系列"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "冇任何 Signal 藝術家貼圖提供"
+    "messageformat": "冇任何 Tellomi 藝術家貼圖提供"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "收過嘅貼圖"
@@ -2862,7 +2862,7 @@
     "messageformat": "拖放去重新排過啲貼圖包"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "Signal 藝術家系列貼圖包"
+    "messageformat": "Tellomi 藝術家系列貼圖包"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "已經收到貼圖包"
@@ -3147,19 +3147,19 @@
     "messageformat": "訊息太長，顯示唔到更多"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} 傳送咗一個訊息俾你。呢個訊息用咗 Signal 嘅全新功能，所以冇辦法處理或者顯示出嚟。"
+    "messageformat": "{contact} 傳送咗一個訊息俾你。呢個訊息用咗 Tellomi 嘅全新功能，所以冇辦法處理或者顯示出嚟。"
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "你而家用緊最新版本嘅 Signal 喇，你可以叫 {contact} 傳送多次呢個訊息俾你。"
+    "messageformat": "你而家用緊最新版本嘅 Tellomi 喇，你可以叫 {contact} 傳送多次呢個訊息俾你。"
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "你有一部裝置用咗 Signal 嘅全新功能傳送訊息，我哋冇辦法處理或者顯示出嚟。"
+    "messageformat": "你有一部裝置用咗 Tellomi 嘅全新功能傳送訊息，我哋冇辦法處理或者顯示出嚟。"
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "你而家用緊最新版本嘅 Signal，以後呢類訊息會自動同步㗎喇。"
+    "messageformat": "你而家用緊最新版本嘅 Tellomi，以後呢類訊息會自動同步㗎喇。"
   },
   "icu:Message--update-signal": {
-    "messageformat": "更新 Signal"
+    "messageformat": "更新 Tellomi"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "睇咗"
@@ -3426,7 +3426,7 @@
     "messageformat": "聊天已經標記咗做未睇"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "如果要用貼圖包製作器嘅話，請你喺手機同桌面電腦設定 Signal。"
+    "messageformat": "如果要用貼圖包製作器嘅話，請你喺手機同桌面電腦設定 Tellomi。"
   },
   "icu:Reactions--remove": {
     "messageformat": "移除心情回應"
@@ -3444,16 +3444,16 @@
     "messageformat": "安全貼士"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "千祈唔好回覆嚟自 Signal 嘅聊天訊息"
+    "messageformat": "千祈唔好回覆嚟自 Tellomi 嘅聊天訊息"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Signal 從來都唔會傳訊息問你攞註冊碼、PIN 碼或者恢復金鑰。千祈唔好回覆任何假扮 Signal 嘅聊天訊息。"
+    "messageformat": "Tellomi 從來都唔會傳訊息問你攞註冊碼、PIN 碼或者恢復金鑰。千祈唔好回覆任何假扮 Tellomi 嘅聊天訊息。"
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "檢查下啲名同相"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "留意「個名冇經過驗證」嘅提示。每個用戶都係自己喺 Signal 度設定自己個名。"
+    "messageformat": "留意「個名冇經過驗證」嘅提示。每個用戶都係自己喺 Tellomi 度設定自己個名。"
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "小心詐騙"
@@ -3462,16 +3462,16 @@
     "messageformat": "唔好理嗰啲引你回覆嘅模糊訊息。要對理財貼士同埋可疑嘅網站連結提高警覺。"
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "千祈唔好回覆嚟自 Signal 嘅聊天訊息"
+    "messageformat": "千祈唔好回覆嚟自 Tellomi 嘅聊天訊息"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Signal 從來都唔會傳訊息問你攞註冊碼、PIN 碼或者恢復金鑰。千祈唔好回覆任何假扮 Signal 同 Signal 支援嘅聊天訊息。不法分子會用假名試圖盜用你嘅帳戶。"
+    "messageformat": "Tellomi 從來都唔會傳訊息問你攞註冊碼、PIN 碼或者恢復金鑰。千祈唔好回覆任何假扮 Tellomi 同 Tellomi 支援嘅聊天訊息。不法分子會用假名試圖盜用你嘅帳戶。"
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "檢查下啲名同相"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "留意「個名冇經過驗證」嘅提示。每個用戶都係自己喺 Signal 度設定個人檔名同頭像。如果你唔確定邊個提出新請求，最好唔好理佢。"
+    "messageformat": "留意「個名冇經過驗證」嘅提示。每個用戶都係自己喺 Tellomi 度設定個人檔名同頭像。如果你唔確定邊個提出新請求，最好唔好理佢。"
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "加密貨幣或者金錢詐騙"
@@ -3552,13 +3552,13 @@
     "messageformat": "係咪舉報垃圾訊息？"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signal 將會收到通知，指呢個人可能發送垃圾訊息。Signal 睇唔到任何聊天內容。"
+    "messageformat": "Tellomi 將會收到通知，指呢個人可能發送垃圾訊息。Tellomi 睇唔到任何聊天內容。"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signal 將會收到通知，指邀請你加入呢個群組嘅人可能發送垃圾訊息。Signal 睇唔到任何聊天內容。"
+    "messageformat": "Tellomi 將會收到通知，指邀請你加入呢個群組嘅人可能發送垃圾訊息。Tellomi 睇唔到任何聊天內容。"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signal 將會收到通知，指邀請你加入呢個群組嘅 {name} 可能發送垃圾訊息。Signal 睇唔到任何聊天內容。"
+    "messageformat": "Tellomi 將會收到通知，指邀請你加入呢個群組嘅 {name} 可能發送垃圾訊息。Tellomi 睇唔到任何聊天內容。"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "舉報垃圾訊息"
@@ -3600,7 +3600,7 @@
     "messageformat": "係咪接受請求？"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "淨係接受你信任嘅人嘅請求。<bold>Signal 從來都唔會</bold>傳訊息問你攞註冊碼、PIN 碼或者恢復金鑰。"
+    "messageformat": "淨係接受你信任嘅人嘅請求。<bold>Tellomi 從來都唔會</bold>傳訊息問你攞註冊碼、PIN 碼或者恢復金鑰。"
   },
   "icu:MessageRequests--continue": {
     "messageformat": "繼續"
@@ -3654,16 +3654,16 @@
     "messageformat": "個名冇經過驗證"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "呢個係 Signal 官方同唯一嘅聊天"
+    "messageformat": "呢個係 Tellomi 官方同唯一嘅聊天"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "官方聊天"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Signal 官方同唯一嘅聊天。緊貼最新消息同版本資訊。"
+    "messageformat": "Tellomi 官方同唯一嘅聊天。緊貼最新消息同版本資訊。"
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Signal 官方同唯一嘅聊天。"
+    "messageformat": "Tellomi 官方同唯一嘅聊天。"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "緊貼最新消息同版本資訊。"
@@ -3729,10 +3729,10 @@
     "messageformat": "未接嘅視像通話"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal 仍然運作緊"
+    "messageformat": "Tellomi 仍然運作緊"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal 會繼續喺通知區域運作。你可以喺 Signal 設定入面更改呢個設定。"
+    "messageformat": "Tellomi 會繼續喺通知區域運作。你可以喺 Tellomi 設定入面更改呢個設定。"
   },
   "icu:incomingAudioCall": {
     "messageformat": "語音通話來電"
@@ -3951,7 +3951,7 @@
     "messageformat": "複製通話連結"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "透過 Signal 分享通話連結"
+    "messageformat": "透過 Tellomi 分享通話連結"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "係咪要喺通話度移除 {name} ？"
@@ -4113,7 +4113,7 @@
     "messageformat": "不明嘅連結版本"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "呢個 Signal 桌面版嘅版本唔支援呢條連結。"
+    "messageformat": "呢個 Tellomi 桌面版嘅版本唔支援呢條連結。"
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "加入唔到群組"
@@ -4722,7 +4722,7 @@
     "messageformat": "捐款俾 Signal"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} 支持 Signal"
+    "messageformat": "{name} 支持 Tellomi"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "同步訊息"
@@ -4839,7 +4839,7 @@
     "messageformat": "帳戶有嘢要你做"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "你一定要喺手機上面打開 Signal 先至可以繼續用呢個帳戶。如果你唔喺手機上面打開 Signal，你嘅帳戶就會好快被刪除。<learnMoreLink>了解詳情</learnMoreLink>"
+    "messageformat": "你一定要喺手機上面打開 Tellomi 先至可以繼續用呢個帳戶。如果你唔喺手機上面打開 Tellomi，你嘅帳戶就會好快被刪除。<learnMoreLink>了解詳情</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "還原唔到媒體"
@@ -4863,10 +4863,10 @@
     "messageformat": "加附件或者投票"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "呢個人冇用緊 Signal 喎"
+    "messageformat": "呢個人冇用緊 Tellomi 喎"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal 桌面版係唔可以用嚟同冇用緊 Signal 嘅聯絡人通訊㗎。你可以請佢安裝 Signal，享受吓更加安全嘅通訊體驗。"
+    "messageformat": "Tellomi 桌面版係唔可以用嚟同冇用緊 Tellomi 嘅聯絡人通訊㗎。你可以請佢安裝 Tellomi，享受吓更加安全嘅通訊體驗。"
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "檢查緊聯絡人嘅註冊狀態"
@@ -5127,10 +5127,10 @@
     "messageformat": "解除封鎖"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "Signal 將會收到通知，指呢個人可能發送垃圾訊息。Signal 唔會睇到任何聊天內容。"
+    "messageformat": "Tellomi 將會收到通知，指呢個人可能發送垃圾訊息。Tellomi 唔會睇到任何聊天內容。"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "Signal 將會收到通知，指邀請你加入呢個谷嘅人可能發送垃圾訊息。Signal 唔會睇到任何聊天內容。"
+    "messageformat": "Tellomi 將會收到通知，指邀請你加入呢個谷嘅人可能發送垃圾訊息。Tellomi 唔會睇到任何聊天內容。"
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "舉報垃圾訊息"
@@ -5178,7 +5178,7 @@
     "messageformat": "綽號"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "綽號同備註都係用 Signal 嘅端對端加密方式儲存。只有你先睇到。"
+    "messageformat": "綽號同備註都係用 Tellomi 嘅端對端加密方式儲存。只有你先睇到。"
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "名"
@@ -5431,7 +5431,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, other {用最新版本 Signal 嘅谷友會見到你刪除咗呢啲訊息。}}"
+    "messageformat": "{count, plural, other {用最新版本 Tellomi 嘅谷友會見到你刪除咗呢啲訊息。}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "刪除"
@@ -5557,7 +5557,7 @@
     "messageformat": "空白或者刪除咗嘅訊息唔可以轉寄"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "用呢條連結加入 Signal 通話：{url}"
+    "messageformat": "用呢條連結加入 Tellomi 通話：{url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "要金睛火眼睇清楚啲請求"
@@ -5566,7 +5566,7 @@
     "messageformat": "安全貼士"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "請仔細審查請求。Signal 搵到另一位同名嘅聯絡人。<reviewRequestLink>審查請求</reviewRequestLink>"
+    "messageformat": "請仔細審查請求。Tellomi 搵到另一位同名嘅聯絡人。<reviewRequestLink>審查請求</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, other {有 {count,number} 位同名嘅群組成員。<reviewRequestLink>審查成員</reviewRequestLink>}}"
@@ -5599,7 +5599,7 @@
     "messageformat": "冇其他共同群組"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal 人脈"
+    "messageformat": "Tellomi 人脈"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "最近將佢嘅個人檔名由 {oldName} 改咗做 {newName}"
@@ -5617,7 +5617,7 @@
     "messageformat": "驗證完再繼續通訊"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "為咗防止喺 Signal 收到垃圾訊息，請你完成驗證。"
+    "messageformat": "為咗防止喺 Tellomi 收到垃圾訊息，請你完成驗證。"
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "驗證完之後，你就可以繼續通訊㗎喇。之前暫停咗嘅任何訊息都會自動傳送返出去。"
@@ -6001,7 +6001,7 @@
     "messageformat": "你係咪想取消呢啲變更呀？"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "係咪要閂咗 Signal 同收線？"
+    "messageformat": "係咪要閂咗 Tellomi 同收線？"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "遲啲先啦"
@@ -6167,10 +6167,10 @@
     "messageformat": "系統"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "Tellomi Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "你嘅 Signal Login 係用嚟恢復同還原帳戶。請將呢啲金鑰妥善儲存喺你信得過嘅密碼管理器入面。 <learnMoreLink>了解詳情</learnMoreLink>。"
+    "messageformat": "你嘅 Tellomi Login 係用嚟恢復同還原帳戶。請將呢啲金鑰妥善儲存喺你信得過嘅密碼管理器入面。 <learnMoreLink>了解詳情</learnMoreLink>。"
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "了解多啲"
@@ -6191,7 +6191,7 @@
     "messageformat": "呢部係連結咗嘅裝置"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "要管理帳戶設定，請喺主要裝置度打開 Signal。"
+    "messageformat": "要管理帳戶設定，請喺主要裝置度打開 Tellomi。"
   },
   "icu:Preferences--zoom": {
     "messageformat": "縮放程度"
@@ -6224,7 +6224,7 @@
     "messageformat": "進階"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signal PIN 碼"
+    "messageformat": "Tellomi PIN 碼"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "PIN 碼溫馨提醒"
@@ -6353,7 +6353,7 @@
     "messageformat": "匯出唔到聊天紀錄"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "匯出唔到聊天紀錄，因為 Signal 冇權限將檔案寫入磁碟。試下更改磁碟權限或者更新系統設定，然後再匯出。"
+    "messageformat": "匯出唔到聊天紀錄，因為 Tellomi 冇權限將檔案寫入磁碟。試下更改磁碟權限或者更新系統設定，然後再匯出。"
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "匯出備份"
@@ -6368,7 +6368,7 @@
     "messageformat": "將備份資料夾轉移去手機嘅儲存空間"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "喺您部手機度安裝新嘅 Signal 版本"
+    "messageformat": "喺您部手機度安裝新嘅 Tellomi 版本"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "㩒一下「還原或者轉移」，然後揀「裝置上備份」"
@@ -6635,13 +6635,13 @@
     "messageformat": "喺 {blockedAt} 封鎖咗"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signal 安全備份"
+    "messageformat": "Tellomi 安全備份"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "用 Signal 嘅端對端加密儲存服務安全自動備份。拎部你部手機出嚟開始備份。<learnMoreLink>了解詳情</learnMoreLink>。"
+    "messageformat": "用 Tellomi 嘅端對端加密儲存服務安全自動備份。拎部你部手機出嚟開始備份。<learnMoreLink>了解詳情</learnMoreLink>。"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "備份你嘅訊息紀錄，當你換新手機或者重新安裝 Signal 嗰陣，就唔會冇咗啲資料啦。"
+    "messageformat": "備份你嘅訊息紀錄，當你換新手機或者重新安裝 Tellomi 嗰陣，就唔會冇咗啲資料啦。"
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "備份詳情"
@@ -6671,13 +6671,13 @@
     "messageformat": "取消咗課金計劃"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "你可以喺手機度管理或者取消「Signal 安全備份」課金計劃。"
+    "messageformat": "你可以喺手機度管理或者取消「Tellomi 安全備份」課金計劃。"
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "你可以喺手機度管理或者升級「Signal 安全備份」課金計劃。"
+    "messageformat": "你可以喺手機度管理或者升級「Tellomi 安全備份」課金計劃。"
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "你可以喺手機度管理「Signal 安全備份」課金計劃或者續期。"
+    "messageformat": "你可以喺手機度管理「Tellomi 安全備份」課金計劃或者續期。"
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "上一次備份"
@@ -6695,7 +6695,7 @@
     "messageformat": "建立可以喺手機上面還原嘅端對端加密備份。 "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "要攞個備份嚟還原嘅話，請首先喺手機度重新安裝過 Signal。開返個 APP 出嚟，㩒一下「還原備份或者轉移」。<learnMoreLink>了解詳情。</learnMoreLink>"
+    "messageformat": "要攞個備份嚟還原嘅話，請首先喺手機度重新安裝過 Tellomi。開返個 APP 出嚟，㩒一下「還原備份或者轉移」。<learnMoreLink>了解詳情。</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "揀一個資料夾"
@@ -6731,7 +6731,7 @@
     "messageformat": "你嘅恢復金鑰"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "系統需要用呢個金鑰嚟恢復你嘅帳戶同資料。請將佢儲存喺安全嘅地方，同埋千祈唔好講俾任何人知。Signal 從來都唔會傳訊息問你攞恢復金鑰。<learnMoreLink>了解詳情。</learnMoreLink>"
+    "messageformat": "系統需要用呢個金鑰嚟恢復你嘅帳戶同資料。請將佢儲存喺安全嘅地方，同埋千祈唔好講俾任何人知。Tellomi 從來都唔會傳訊息問你攞恢復金鑰。<learnMoreLink>了解詳情。</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "唔好分享恢復金鑰"
@@ -6746,7 +6746,7 @@
     "messageformat": "唔好分享金鑰"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "千祈唔好同任何人分享你嘅恢復金鑰。咁樣佢哋就有機會盜用你嘅帳戶。<strong>Signal 從來都唔會傳訊息</strong>問你攞恢復金鑰。千祈唔好回覆任何假扮 Signal 嘅聊天訊息。<learnMoreLink>了解詳情。</learnMoreLink>"
+    "messageformat": "千祈唔好同任何人分享你嘅恢復金鑰。咁樣佢哋就有機會盜用你嘅帳戶。<strong>Tellomi 從來都唔會傳訊息</strong>問你攞恢復金鑰。千祈唔好回覆任何假扮 Tellomi 嘅聊天訊息。<learnMoreLink>了解詳情。</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "確認你嘅恢復金鑰"
@@ -6758,7 +6758,7 @@
     "messageformat": "安全儲存你嘅金鑰"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "如果你唔見咗個金鑰，Signal 就冇辦法幫你還原備份喇。請將佢儲存喺安全嘅地方，同埋千祈唔好講俾其他人知。"
+    "messageformat": "如果你唔見咗個金鑰，Tellomi 就冇辦法幫你還原備份喇。請將佢儲存喺安全嘅地方，同埋千祈唔好講俾其他人知。"
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "繼續"
@@ -6809,7 +6809,7 @@
     "messageformat": "要驗證咗先可以啟用備份。"
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "呢個操作完成唔到，因為系統驗證失敗。請再試一次，或者喺你部流動裝置度打開 Signal APP，然後去「備份設定」睇下你嘅恢復金鑰。"
+    "messageformat": "呢個操作完成唔到，因為系統驗證失敗。請再試一次，或者喺你部流動裝置度打開 Tellomi APP，然後去「備份設定」睇下你嘅恢復金鑰。"
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "為呢個操作請求系統驗證嗰陣發生錯誤。"
@@ -6839,7 +6839,7 @@
     "messageformat": "電話冧把"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "選擇邊個可以睇到你嘅電話冧把，同埋喺 Signal 度用電話冧把聯絡你。"
+    "messageformat": "選擇邊個可以睇到你嘅電話冧把，同埋喺 Tellomi 度用電話冧把聯絡你。"
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "改一改..."
@@ -6869,10 +6869,10 @@
     "messageformat": "邊個可以用手機號碼搵到我"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "任何有你電話冧把嘅人都會睇到你用緊 Signal，同埋可以開始聊天。"
+    "messageformat": "任何有你電話冧把嘅人都會睇到你用緊 Tellomi，同埋可以開始聊天。"
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "除非你向對方傳送訊息或者雙方已經有聊天紀錄，如果唔係冇人會睇到你用緊 Signal。"
+    "messageformat": "除非你向對方傳送訊息或者雙方已經有聊天紀錄，如果唔係冇人會睇到你用緊 Tellomi。"
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "任何人都得"
@@ -6884,7 +6884,7 @@
     "messageformat": "你係咪確定？"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "如果你將「{settingTitle}」改做「{nobodyLabel}」，其他人就會冇咁易喺 Signal 搵到你。"
+    "messageformat": "如果你將「{settingTitle}」改做「{nobodyLabel}」，其他人就會冇咁易喺 Tellomi 搵到你。"
   },
   "icu:Preferences--messaging": {
     "messageformat": "通訊"
@@ -6947,7 +6947,7 @@
     "messageformat": "設定"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "重新打開 Signal 嚟套用"
+    "messageformat": "重新打開 Tellomi 嚟套用"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "要轉語言，需要重新開過個 app。"
@@ -6962,13 +6962,13 @@
     "messageformat": "防止畫面截圖"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "防止呢部電腦用 Signal 嘅時候截圖，以增加私隱。"
+    "messageformat": "防止呢部電腦用 Tellomi 嘅時候截圖，以增加私隱。"
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "係咪要停用防止畫面截圖？"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "如果停用，Microsoft Windows 有機會攞到 Signal 嘅畫面截圖，然後用喺私隱唔受保障嘅功能度。"
+    "messageformat": "如果停用，Microsoft Windows 有機會攞到 Tellomi 嘅畫面截圖，然後用喺私隱唔受保障嘅功能度。"
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "停用"
@@ -6989,25 +6989,25 @@
     "messageformat": "點擊跳去 App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "喺手機度打開 Signal"
+    "messageformat": "喺手機度打開 Tellomi"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "如果你再唔喺手機度打開 Signal，你個帳戶好快會被刪除。成功開返之後，呢個訊息就會消失。<learnMoreLink>了解詳情</learnMoreLink>"
+    "messageformat": "如果你再唔喺手機度打開 Tellomi，你個帳戶好快會被刪除。成功開返之後，呢個訊息就會消失。<learnMoreLink>了解詳情</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "喺手機度開吓 Signal，等你個帳戶唔好摺埋"
+    "messageformat": "喺手機度開吓 Tellomi，等你個帳戶唔好摺埋"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "了解多啲"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal 發生技術問題。我哋現正搶修，務求儘快回復服務。"
+    "messageformat": "Tellomi 發生技術問題。我哋現正搶修，務求儘快回復服務。"
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "需要更新"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "如果想完成同步訊息，請立即更新 Signal 桌面版。"
+    "messageformat": "如果想完成同步訊息，請立即更新 Tellomi 桌面版。"
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "更新"
@@ -7016,19 +7016,19 @@
     "messageformat": "需要更新"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "想繼續用 Signal 嘅話，請先更新至最新版本。"
+    "messageformat": "想繼續用 Tellomi 嘅話，請先更新至最新版本。"
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "下載 {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "重新啟動 Signal 嚟安裝更新版本。"
+    "messageformat": "重新啟動 Tellomi 嚟安裝更新版本。"
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal 桌面版更新唔到，但係有新版本可以用。你可以去 {downloadUrl} 手動安裝新版本，然後聯絡支援團隊或者就呢個問題回報錯誤。"
+    "messageformat": "Tellomi 桌面版更新唔到，但係有新版本可以用。你可以去 {downloadUrl} 手動安裝新版本，然後聯絡支援團隊或者就呢個問題回報錯誤。"
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Signal 標誌"
+    "messageformat": "Tellomi 標誌"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "返轉頭"
@@ -7064,7 +7064,7 @@
     "messageformat": "驗證你係咪真有其人先至繼續"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "為咗防止喺 Signal 收到垃圾訊息，請你完成驗證。驗證完之後，你可以繼續註冊。"
+    "messageformat": "為咗防止喺 Tellomi 收到垃圾訊息，請你完成驗證。驗證完之後，你可以繼續註冊。"
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "重試驗證"
@@ -7304,7 +7304,7 @@
     "messageformat": "PIN 碼唔啱"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "撞返啱個 PIN 碼嘅機會畀你用晒喇，但係你仍然可以整過個新嘅 PIN 碼嚟繼續用返你個 Signal 帳戶嘅。為確保你嘅私隱同帳戶安全，你嘅帳戶會新簇簇咁還原，先前儲存落嘅任何個人資料資訊或者設定將會冇得留低。"
+    "messageformat": "撞返啱個 PIN 碼嘅機會畀你用晒喇，但係你仍然可以整過個新嘅 PIN 碼嚟繼續用返你個 Tellomi 帳戶嘅。為確保你嘅私隱同帳戶安全，你嘅帳戶會新簇簇咁還原，先前儲存落嘅任何個人資料資訊或者設定將會冇得留低。"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "建立新嘅 PIN 碼"
@@ -7334,7 +7334,7 @@
     "messageformat": "建立你嘅 PIN 碼"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "PIN 碼可以幫你還原帳戶，同埋確保 Signal 入面嘅資料安全加密。<learnMore>了解詳情</learnMore>"
+    "messageformat": "PIN 碼可以幫你還原帳戶，同埋確保 Tellomi 入面嘅資料安全加密。<learnMore>了解詳情</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "建立你嘅 PIN 碼"
@@ -7358,7 +7358,7 @@
     "messageformat": "警告"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "若然你停用 PIN 碼，咁當你重新註冊 Signal 嘅時候，你會無哂所有資料。IN 碼停用嘅時候冇得開啟註冊鎖。"
+    "messageformat": "若然你停用 PIN 碼，咁當你重新註冊 Tellomi 嘅時候，你會無哂所有資料。IN 碼停用嘅時候冇得開啟註冊鎖。"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "停用 PIN 碼"
@@ -7367,10 +7367,10 @@
     "messageformat": "取消"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "關於 Signal PIN 碼"
+    "messageformat": "關於 Tellomi PIN 碼"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "PIN 碼可以確保你喺 Signal 儲存嘅資料受到加密保護，淨係得你先睇到。當你重新安裝返 Signal 之後，你嘅個人檔案、設定同埋聯絡人都可以還原。"
+    "messageformat": "PIN 碼可以確保你喺 Tellomi 儲存嘅資料受到加密保護，淨係得你先睇到。當你重新安裝返 Tellomi 之後，你嘅個人檔案、設定同埋聯絡人都可以還原。"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "了解多啲"
@@ -7403,7 +7403,7 @@
     "messageformat": "需要更新"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "想繼續註冊嘅話，請更新至 Signal 嘅最新版本。"
+    "messageformat": "想繼續註冊嘅話，請更新至 Tellomi 嘅最新版本。"
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "更新"
@@ -7433,7 +7433,7 @@
     "messageformat": "聯絡支援團隊"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "閂唔到 Signal。",
+    "messageformat": "閂唔到 Tellomi。",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7453,14 +7453,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "已經安裝咗較新嘅 Signal 版本。你係咪確定要繼續？",
+    "messageformat": "已經安裝咗較新嘅 Tellomi 版本。你係咪確定要繼續？",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "應用程式故障"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal 故障之後重新啟動過。你可以提交故障報告，幫 Signal 調查問題。"
+    "messageformat": "Tellomi 故障之後重新啟動過。你可以提交故障報告，幫 Tellomi 調查問題。"
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "傳送"
@@ -7565,7 +7565,7 @@
     "messageformat": "㩒下面嘅「{buttonName}」"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "打開「Signal」"
+    "messageformat": "打開「Tellomi」"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "前往設定"
@@ -7661,7 +7661,7 @@
     "messageformat": "了解詳情"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal 人脈"
+    "messageformat": "Tellomi 人脈"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections}係你透過以下方式揀過而值得信任嘅人："
@@ -7802,7 +7802,7 @@
     "messageformat": "隱藏是日花生唔俾佢睇"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "所有 Signal 人脈"
+    "messageformat": "所有 Tellomi 人脈"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "All Except..."
@@ -7880,7 +7880,7 @@
     "messageformat": "「我嘅限時動態」私隱設定"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "選擇邊啲 Signal 人脈可以睇到你嘅限時動態。你可以隨時喺私隱設定度更改呢個設定。<learnMoreLink>了解詳情。</learnMoreLink>"
+    "messageformat": "選擇邊啲 Tellomi 人脈可以睇到你嘅限時動態。你可以隨時喺私隱設定度更改呢個設定。<learnMoreLink>了解詳情。</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "刪除限時動態"
@@ -7949,7 +7949,7 @@
     "messageformat": "下載附件"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "啟用「瀏覽標記」就可以知道邊個睇過你嘅限時動態。喺你嘅流動裝置度打開 Signal 應用程式，然後去「設定」>「限時動態」。"
+    "messageformat": "啟用「瀏覽標記」就可以知道邊個睇過你嘅限時動態。喺你嘅流動裝置度打開 Tellomi 應用程式，然後去「設定」>「限時動態」。"
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "未有回覆"
@@ -8135,7 +8135,7 @@
     "messageformat": "你嘅二維碼同連結已經重設，你嘅用戶名稱係 {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "用電話掃描呢個二維碼，就開始喺 Signal 同我聊天喇。",
+    "messageformat": "用電話掃描呢個二維碼，就開始喺 Tellomi 同我聊天喇。",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8211,7 +8211,7 @@
     "messageformat": "關閉"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "驗證你嘅 Signal PIN 碼"
+    "messageformat": "驗證你嘅 Tellomi PIN 碼"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "我哋間中會問下你個 PIN 碼，等你唔使唔記得。"
@@ -8223,7 +8223,7 @@
     "messageformat": "遲啲先啦"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "輸入你嘅 Signal PIN 碼"
+    "messageformat": "輸入你嘅 Tellomi PIN 碼"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "為咗幫你記住你個 PIN 碼，我哋會定時定候叫你打一次。慢慢就唔會問得咁密㗎喇。"
@@ -8241,13 +8241,13 @@
     "messageformat": "PIN 碼正確。我哋遲啲會再提你。"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal 桌面版即將停止支援 {OS} 電腦版本。要繼續用 Signal 嘅話，請你喺 {expirationDate} 之前更新電腦嘅作業系統。<learnMoreLink>了解詳情</learnMoreLink>"
+    "messageformat": "Tellomi 桌面版即將停止支援 {OS} 電腦版本。要繼續用 Tellomi 嘅話，請你喺 {expirationDate} 之前更新電腦嘅作業系統。<learnMoreLink>了解詳情</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal 桌面版唔可以再喺呢部電腦運作。要再次使用 Signal 桌面版嘅話，請更新你嘅 {OS} 電腦版本。<learnMoreLink>了解詳情</learnMoreLink>"
+    "messageformat": "Tellomi 桌面版唔可以再喺呢部電腦運作。要再次使用 Tellomi 桌面版嘅話，請更新你嘅 {OS} 電腦版本。<learnMoreLink>了解詳情</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal 桌面版唔可以再喺呢部電腦運作。要再次使用 Signal 桌面版嘅話，請更新你嘅 {OS} 電腦版本。"
+    "messageformat": "Tellomi 桌面版唔可以再喺呢部電腦運作。要再次使用 Tellomi 桌面版嘅話，請更新你嘅 {OS} 電腦版本。"
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "編輯咗"
@@ -8418,7 +8418,7 @@
     "messageformat": "複製連結"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "透過 Signal 分享連結"
+    "messageformat": "透過 Tellomi 分享連結"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "刪除連結"
@@ -8481,13 +8481,13 @@
     "messageformat": "要更改呢個設定，請將「邊個可以睇到我嘅手機號碼」設定為「邊個都唔得」。"
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Signal 嘅個人檔名係由帳戶持有人自己揀嘅："
+    "messageformat": "Tellomi 嘅個人檔名係由帳戶持有人自己揀嘅："
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Signal 驗證唔到啲名同相"
+    "messageformat": "Tellomi 驗證唔到啲名同相"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Signal 從來都唔會聯絡你攞註冊碼、PIN 碼或者恢復金鑰"
+    "messageformat": "Tellomi 從來都唔會聯絡你攞註冊碼、PIN 碼或者恢復金鑰"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "請小心防範冒充他人嘅帳戶"
@@ -8553,7 +8553,7 @@
     "messageformat": "Signal 係一間非牟利機構。"
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "Signal 標誌風格嘅心形圖示"
+    "messageformat": "Tellomi 標誌風格嘅心形圖示"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "確定"
@@ -8598,7 +8598,7 @@
     "messageformat": "信用卡或扣帳卡"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "請輸入你嘅信用卡或扣帳卡資料。Signal 唔會收集或者儲存你嘅個人資料。<learnMoreLink>了解詳情</learnMoreLink>"
+    "messageformat": "請輸入你嘅信用卡或扣帳卡資料。Tellomi 唔會收集或者儲存你嘅個人資料。<learnMoreLink>了解詳情</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "付款卡號碼"
@@ -8823,7 +8823,7 @@
     "messageformat": "通話順利嗎？"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "你嘅回應可以幫到我哋改善 Signal 嘅通話。我哋唔會儲存個人識別資料。"
+    "messageformat": "你嘅回應可以幫到我哋改善 Tellomi 嘅通話。我哋唔會儲存個人識別資料。"
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "有問題"
@@ -8874,7 +8874,7 @@
     "messageformat": "問題描述"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "請提供任何同問題有關嘅詳細資料。你喺度分享嘅所有內容都會保密，同埋只會用喺協助改善 Signal 嘅通話。"
+    "messageformat": "請提供任何同問題有關嘅詳細資料。你喺度分享嘅所有內容都會保密，同埋只會用喺協助改善 Tellomi 嘅通話。"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "請你講下遇到嘅問題"
@@ -8940,7 +8940,7 @@
     "messageformat": "你需要掃描二維碼嚟重新連結。"
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "如果你已經課咗金用「Signal 安全備份」服務，系統會轉移你所有嘅媒體檔案。如果冇嘅話，系統只會轉移你最近 45 日嘅媒體。"
+    "messageformat": "如果你已經課咗金用「Tellomi 安全備份」服務，系統會轉移你所有嘅媒體檔案。如果冇嘅話，系統只會轉移你最近 45 日嘅媒體。"
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "轉移"
@@ -8952,14 +8952,14 @@
     "messageformat": "係咪要清除所有資料？"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "系統會刪除而家 Signal 桌面版嘅所有資料。你之後可以掃描二維碼，將手機度嘅訊息紀錄轉移過嚟。"
+    "messageformat": "系統會刪除而家 Tellomi 桌面版嘅所有資料。你之後可以掃描二維碼，將手機度嘅訊息紀錄轉移過嚟。"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "呢個版本包含咗少少調整同埋錯誤修復，等 Signal 可以順暢運作。",
+    "messageformat": "呢個版本包含咗少少調整同埋錯誤修復，等 Tellomi 可以順暢運作。",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "我哋額外做咗啲調整、修復咗一啲錯誤，同埋加強咗程式功能。多謝你使用 Signal！",
+    "messageformat": "我哋額外做咗啲調整、修復咗一啲錯誤，同埋加強咗程式功能。多謝你使用 Tellomi！",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -8979,7 +8979,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "我哋做咗啲調整、修復咗一啲錯誤，同埋加強咗程式功能。多謝你使用 Signal！",
+    "messageformat": "我哋做咗啲調整、修復咗一啲錯誤，同埋加強咗程式功能。多謝你使用 Tellomi！",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.24--1": {
@@ -8992,6 +8992,6 @@
     "messageformat": "尋找自我可以用你一世時間，但而家你喺谷友搜尋入面會顯示做「你」，想搵返自己就容易得多啦。"
   },
   "icu:WhatsNew__8.27--0": {
-    "messageformat": "呢次更新引入咗更精細嘅設定選項，俾你對 Signal 嘅通知有更全面嘅控制。而家，你可以揀 APP 徽章上面顯示嘅內容、調整靜音討論串嘅通知偏好設定，同埋更多功能！我哋仲新加咗一個好就手嘅按鈕，等你喺設定度改咗太多、甚至唔記得改咗啲咩，可以輕鬆還原預設嘅通知設定。"
+    "messageformat": "呢次更新引入咗更精細嘅設定選項，俾你對 Tellomi 嘅通知有更全面嘅控制。而家，你可以揀 APP 徽章上面顯示嘅內容、調整靜音討論串嘅通知偏好設定，同埋更多功能！我哋仲新加咗一個好就手嘅按鈕，等你喺設定度改咗太多、甚至唔記得改咗啲咩，可以輕鬆還原預設嘅通知設定。"
   }
 }

@@ -6167,10 +6167,10 @@
     "messageformat": "سیستم"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "Tellomi Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "Signal Login شما برای بازیابی حسابتان استفاده می‌شود. این رمزها را به‌طور امن در یک برنامه مدیر رمز عبور که به آن اعتماد دارید ذخیره کنید. <learnMoreLink>اطلاعات بیشتر</learnMoreLink>."
+    "messageformat": "Tellomi Login شما برای بازیابی حسابتان استفاده می‌شود. این رمزها را به‌طور امن در یک برنامه مدیر رمز عبور که به آن اعتماد دارید ذخیره کنید. <learnMoreLink>اطلاعات بیشتر</learnMoreLink>."
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "بیشتر بدانید"

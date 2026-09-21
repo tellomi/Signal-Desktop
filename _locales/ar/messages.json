@@ -6167,10 +6167,10 @@
     "messageformat": "تبعًا للنظام"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "Tellomi Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "يُستخدَم Signal Login الخاص بك لاسترداد حسابك واستعادته. احتفِظ بهذه المفاتيح مُخزَّنة بأمان في مدير كلمات المرور الذي تثق به. <learnMoreLink>اعرف المزيد.</learnMoreLink>"
+    "messageformat": "يُستخدَم Tellomi Login الخاص بك لاسترداد حسابك واستعادته. احتفِظ بهذه المفاتيح مُخزَّنة بأمان في مدير كلمات المرور الذي تثق به. <learnMoreLink>اعرف المزيد.</learnMoreLink>"
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "اعرف المزيد"

@@ -63,10 +63,10 @@
     "messageformat": "Dërgimi i medias në cilësi të lartë do të përdorë më tepër të dhëna."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Dhuroni për Signal-in"
+    "messageformat": "Dhuroni për Tellomi-in"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "<bold>Pajisjet e lidhura</bold> të lejojnë të përdorësh llogarinë dhe mesazhet në Signal në mënyrë të sigurt nga çdo pajisje tjetër shtesë."
+    "messageformat": "<bold>Pajisjet e lidhura</bold> të lejojnë të përdorësh llogarinë dhe mesazhet në Tellomi në mënyrë të sigurt nga çdo pajisje tjetër shtesë."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "Mund të lidhësh një kompjuter, tablet ose një telefon shtesë."
@@ -114,10 +114,10 @@
     "messageformat": "Grup i panjohur"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Signal nuk mund të hapet"
+    "messageformat": "Tellomi nuk mund të hapet"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Për të ndihmuar në rregullimin e problemit, ndiq udhëzuesin e rikthimit në faqen e ndihmës ose kontakto ndihmën nga Signal.\n\nNëse duhet që ta përdorësh Signal menjëherë, mund t'i fshish të dhënat dhe të rilidhësh desktopin.\n\n Do të kesh mundësinë e transferimit të historikut të mesazheve nga telefoni yt."
+    "messageformat": "Për të ndihmuar në rregullimin e problemit, ndiq udhëzuesin e rikthimit në faqen e ndihmës ose kontakto ndihmën nga Tellomi.\n\nNëse duhet që ta përdorësh Tellomi menjëherë, mund t'i fshish të dhënat dhe të rilidhësh desktopin.\n\n Do të kesh mundësinë e transferimit të historikut të mesazheve nga telefoni yt."
   },
   "icu:databaseError": {
     "messageformat": "Gabim Baze të Dhënash"
@@ -129,16 +129,16 @@
     "messageformat": "Fshij përgjithmonë të gjitha të dhënat"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "I gjithë historiku i mesazheve dhe media do të fshihen përgjithmonë nga kjo pajisje. Kjo nuk do t'i fshijë të dhënat nga telefoni yt.\n\nDo të mund ta përdorësh Signal në këtë pajisje pasi ta rilidhësh atë. Do të kesh mundësinë e transferimit të historikut të mesazheve nga telefoni yt."
+    "messageformat": "I gjithë historiku i mesazheve dhe media do të fshihen përgjithmonë nga kjo pajisje. Kjo nuk do t'i fshijë të dhënat nga telefoni yt.\n\nDo të mund ta përdorësh Tellomi në këtë pajisje pasi ta rilidhësh atë. Do të kesh mundësinë e transferimit të historikut të mesazheve nga telefoni yt."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Versioni i bazës së të dhënave nuk përputhet me këtë version të Signal. Sigurohu që po hap versionin më të ri të Signal në kompjuterin tënd."
+    "messageformat": "Versioni i bazës së të dhënave nuk përputhet me këtë version të Tellomi. Sigurohu që po hap versionin më të ri të Tellomi në kompjuterin tënd."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Nuk mund të futesh te çelësi i kodimit të bazës së të dhënave sepse pjesa mbështetëse e çelësave të kodimit të OS ka ndryshuar nga {previousBackend} në {currentBackend}. Kjo mund të ndodhë nëse mjedisi i desktopit ndryshon, për shembull midis GNOME dhe KDE.\n\nTë lutem kalo në mjedisin e mëparshëm të desktopit."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Nuk mund të futesh te çelësi i kodimit të bazës së të dhënave sepse pjesa mbështetëse e çelësave të kodimit të OS ka ndryshuar nga {previousBackend} në {currentBackend}. Kjo mund të ndodhë nëse mjedisi i desktopit ndryshon, për shembull midis GNOME dhe KDE.\n\nTë lutem kalo te mjedisi i mëparshëm i desktopit ose provo të ekzekutosh Signal me flamurin e linjës së komandës --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Nuk mund të futesh te çelësi i kodimit të bazës së të dhënave sepse pjesa mbështetëse e çelësave të kodimit të OS ka ndryshuar nga {previousBackend} në {currentBackend}. Kjo mund të ndodhë nëse mjedisi i desktopit ndryshon, për shembull midis GNOME dhe KDE.\n\nTë lutem kalo te mjedisi i mëparshëm i desktopit ose provo të ekzekutosh Tellomi me flamurin e linjës së komandës --password-store=\"{previousBackendFlag}\""
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -183,7 +183,7 @@
     "messageformat": "Shfaqi Krejt"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Mbylle Signal-in"
+    "messageformat": "Mbylle Tellomi-in"
   },
   "icu:editMenuUndo": {
     "messageformat": "Zhbëje"
@@ -507,10 +507,10 @@
     "messageformat": "I vutë shenjë si i paverifikuar nga një pajisje tjetër Numrit tuaj të Sigurisë për {name}"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Numri i sigurisë që po provoni të verifikoni ka ndryshuar. Ju lutemi, shqyrtoni numrin tuaj të ri të sigurisë me {name1}. Mos harroni, ky ndryshim mund të ishte shenjë se dikush po rreket të përgjojë komunikimin tuaj ose se {name2} has simply reinstalled Signal.thjesht ka riinstaluar Signal-in."
+    "messageformat": "Numri i sigurisë që po provoni të verifikoni ka ndryshuar. Ju lutemi, shqyrtoni numrin tuaj të ri të sigurisë me {name1}. Mos harroni, ky ndryshim mund të ishte shenjë se dikush po rreket të përgjojë komunikimin tuaj ose se {name2} has simply reinstalled Tellomi.thjesht ka riinstaluar Tellomi-in."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Personat e mëposhtëm mund të kenë riinstaluar Signal ose të kenë ndryshuar pajisje. Kliko një kontakt për të konfirmuar numrin e tij të ri të sigurisë. Kjo s'është e detyrueshme."
+    "messageformat": "Personat e mëposhtëm mund të kenë riinstaluar Tellomi ose të kenë ndryshuar pajisje. Kliko një kontakt për të konfirmuar numrin e tij të ri të sigurisë. Kjo s'është e detyrueshme."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Dërgo mesazhe pezull"
@@ -519,7 +519,7 @@
     "messageformat": "Rishiko"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {{count,number} kontakt mund të ketë riinstaluar Signal ose të ketë ndryshuar pajisje. Nëse dëshiron, mund të rishikosh numrat e sigurisë para se t'i dërgosh.} other {{count,number} kontakte mund të kenë riinstaluar Signal ose të ketë ndryshuar pajisje. Nëse dëshiron, mund të rishikosh numrat e sigurisë para se t'i dërgosh.}}"
+    "messageformat": "{count, plural, one {{count,number} kontakt mund të ketë riinstaluar Tellomi ose të ketë ndryshuar pajisje. Nëse dëshiron, mund të rishikosh numrat e sigurisë para se t'i dërgosh.} other {{count,number} kontakte mund të kenë riinstaluar Tellomi ose të ketë ndryshuar pajisje. Nëse dëshiron, mund të rishikosh numrat e sigurisë para se t'i dërgosh.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Të gjitha kontaktet janë shqyrtuar; kliko dërgo për të vazhduar."
@@ -627,16 +627,16 @@
     "messageformat": "Kodimi u verifikua automatikisht për këtë bisedë "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "Për kontaktet me të cilët je lidhur me anë të numrit të telefonit, Signal mund të konfirmojë automatikisht nëse lidhja është e sigurt duke përdorur një proces të quajtur kod transparence. Për siguri të shtuar, verifiko manualisht kodimin nga skaji në skaj duke krahasuar numrat në ekranin e mëparshëm ose duke skanuar kodin në pajisjen e tyre."
+    "messageformat": "Për kontaktet me të cilët je lidhur me anë të numrit të telefonit, Tellomi mund të konfirmojë automatikisht nëse lidhja është e sigurt duke përdorur një proces të quajtur kod transparence. Për siguri të shtuar, verifiko manualisht kodimin nga skaji në skaj duke krahasuar numrat në ekranin e mëparshëm ose duke skanuar kodin në pajisjen e tyre."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "Verifikimi automatik nuk disponohet për këtë bisedë"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "Signal nuk mund ta verifikojë më automatikisht kodimin për këtë bisedë. Kjo mund të jetë sepse {name} ka ndryshuar numrin e telefonit ose parametrat e privatësisë së numrit të telefonit. Verifiko manualisht kodimin nga skaji në skaj duke krahasuar numrat në ekranin e mëparshëm ose duke skanuar kodin në pajisje."
+    "messageformat": "Tellomi nuk mund ta verifikojë më automatikisht kodimin për këtë bisedë. Kjo mund të jetë sepse {name} ka ndryshuar numrin e telefonit ose parametrat e privatësisë së numrit të telefonit. Verifiko manualisht kodimin nga skaji në skaj duke krahasuar numrat në ekranin e mëparshëm ose duke skanuar kodin në pajisje."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "Signal mund ta verifikojë automatikisht kodimin vetëm në bisedat ku je i lidhur me dikë nëpërmjet një numri telefoni. Nëse biseda ka filluar me një emër përdoruesi ose me një grup të përbashkët, verifiko kodimin nga skaji në skaj duke krahasuar numrat në ekranin e mëparshëm ose duke skanuar kodin në pajisje."
+    "messageformat": "Tellomi mund ta verifikojë automatikisht kodimin vetëm në bisedat ku je i lidhur me dikë nëpërmjet një numri telefoni. Nëse biseda ka filluar me një emër përdoruesi ose me një grup të përbashkët, verifiko kodimin nga skaji në skaj duke krahasuar numrat në ekranin e mëparshëm ose duke skanuar kodin në pajisje."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "OK"
@@ -675,10 +675,10 @@
     "messageformat": "Jo, faleminderit"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "Signal tani mund ta verifikojë automatikisht kodimin"
+    "messageformat": "Tellomi tani mund ta verifikojë automatikisht kodimin"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "Për kontaktet me të cilët je lidhur me anë të numrit të telefonit, Signal mund të konfirmojë automatikisht nëse lidhja është e sigurt duke përdorur një proces të quajtur kod transparence. Për siguri të shtuar, mund t’i verifikosh lidhjet manualisht duke përdorur kod QR ose duke krahasuar numrat e sigurisë."
+    "messageformat": "Për kontaktet me të cilët je lidhur me anë të numrit të telefonit, Tellomi mund të konfirmojë automatikisht nëse lidhja është e sigurt duke përdorur një proces të quajtur kod transparence. Për siguri të shtuar, mund t’i verifikosh lidhjet manualisht duke përdorur kod QR ose duke krahasuar numrat e sigurisë."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "Vazhdo"
@@ -837,7 +837,7 @@
     "messageformat": "Krijues pakete ngjitësish"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Mbi Signal-in për Desktop"
+    "messageformat": "Mbi Tellomi-in për Desktop"
   },
   "icu:screenShareWindow": {
     "messageformat": "Ndarje ekrani me të tjerë"
@@ -855,7 +855,7 @@
     "messageformat": "Dil"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "Tellomi Desktop"
   },
   "icu:search": {
     "messageformat": "Kërko"
@@ -909,13 +909,13 @@
     "messageformat": "Gjeni sipas numrit të telefonit"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Mirë se vini te Signal-i"
+    "messageformat": "Mirë se vini te Tellomi-i"
   },
   "icu:whatsNew": {
     "messageformat": "Shihni {whatsNew} në këtë përditësim"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Signal është një ent jofitimprurës"
+    "messageformat": "Tellomi është një ent jofitimprurës"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "ç’ka të re"
@@ -999,13 +999,13 @@
     "messageformat": "Ju"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Për të dërguar mesazhe audio, autorizo Signal Desktop të përdorë mikrofonin tënd."
+    "messageformat": "Për të dërguar mesazhe audio, autorizo Tellomi Desktop të përdorë mikrofonin tënd."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Për thirrje, duhet të lejoni Signal-in për Desktop të përdorë mikrofonin tuaj."
+    "messageformat": "Për thirrje, duhet të lejoni Tellomi-in për Desktop të përdorë mikrofonin tuaj."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Për thirrje video, duhet të lejoni Signal-in për Desktop të përdorë kamerën tuaj."
+    "messageformat": "Për thirrje video, duhet të lejoni Tellomi-in për Desktop të përdorë kamerën tuaj."
   },
   "icu:allowAccess": {
     "messageformat": "Lejoje Përdorimin"
@@ -1029,13 +1029,13 @@
     "messageformat": "Hiqi zërin"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal nuk mund të përditësohej. <retryUpdateButton>Riprovo përditësimin</retryUpdateButton> ose vizito {url} për ta instaluar manualisht. Pastaj, <contactSupportLink>kontakto ndihmën</contactSupportLink> në lidhje me këtë problem"
+    "messageformat": "Tellomi nuk mund të përditësohej. <retryUpdateButton>Riprovo përditësimin</retryUpdateButton> ose vizito {url} për ta instaluar manualisht. Pastaj, <contactSupportLink>kontakto ndihmën</contactSupportLink> në lidhje me këtë problem"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal nuk mund të përditësohej. Vizito {url} për ta instaluar manualisht. Pastaj, <contactSupportLink>kontakto ndihmën</contactSupportLink> në lidhje me këtë problem"
+    "messageformat": "Tellomi nuk mund të përditësohej. Vizito {url} për ta instaluar manualisht. Pastaj, <contactSupportLink>kontakto ndihmën</contactSupportLink> në lidhje me këtë problem"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal-i për Desktop gjendet në një si punë karantine nga macOS-i, dhe s’do të jetë në gjendje të vetëpërditësohet. Ju lutemi, provoni të kaloni {app} te {folder} me Finder-in."
+    "messageformat": "Tellomi-i për Desktop gjendet në një si punë karantine nga macOS-i, dhe s’do të jetë në gjendje të vetëpërditësohet. Ju lutemi, provoni të kaloni {app} te {folder} me Finder-in."
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -1080,7 +1080,7 @@
     "messageformat": "Ky mesazh do të fshihet prej kësaj pajisjeje."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Ky mesazh do të fshihet për të gjithë në bisedë, nëse janë të gjithë në të njëjtin version të fundit të Signal. Ata do të mund të shohin që ke fshirë një mesazh."
+    "messageformat": "Ky mesazh do të fshihet për të gjithë në bisedë, nëse janë të gjithë në të njëjtin version të fundit të Tellomi. Ata do të mund të shohin që ke fshirë një mesazh."
   },
   "icu:from": {
     "messageformat": "Nga"
@@ -1122,7 +1122,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "\"{title} \" është emri i profilit që ky person i ka vendosur vetes në Signal."
+    "messageformat": "\"{title} \" është emri i profilit që ky person i ka vendosur vetes në Tellomi."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "I verifikuar"
@@ -1137,7 +1137,7 @@
     "messageformat": "Nuk ka mesazhe të drejtpërdrejta me {name}"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Kontaktet e Signal"
+    "messageformat": "Kontaktet e Tellomi"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} është në kontaktet e sistemit"
@@ -1449,7 +1449,7 @@
     "messageformat": "Mëso më tepër"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal përdor kodimin nga pala në palë dhe ndonjëherë mund t'i duhet të rifreskojë seancën tënde të bisedës. Kjo nuk ndikon në sigurinë e bisedës por mund të kesh humbur një mesazh nga ky kontakt dhe do duhet t'i kërkosh që ta ridërgojë."
+    "messageformat": "Tellomi përdor kodimin nga pala në palë dhe ndonjëherë mund t'i duhet të rifreskojë seancën tënde të bisedës. Kjo nuk ndikon në sigurinë e bisedës por mund të kesh humbur një mesazh nga ky kontakt dhe do duhet t'i kërkosh që ta ridërgojë."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Lidhuni Me Asistencën"
@@ -1476,7 +1476,7 @@
     "messageformat": "{sender} ndryshoi numrin e vet të telefonit"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Kontakti zuri të përdorë Signal-in"
+    "messageformat": "Kontakti zuri të përdorë Tellomi-in"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} dhe {conversationTitle} janë e njëjta llogari. Historiku yt i mesazheve për të dyja bisedat është këtu."
@@ -1566,7 +1566,7 @@
     "messageformat": "Media nuk mund të shkarkohet"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Kontrollo lidhjen e internetit të desktopit dhe telefonit. Hap Signal në telefon dhe provo ta shkarkosh përsëri."
+    "messageformat": "Kontrollo lidhjen e internetit të desktopit dhe telefonit. Hap Tellomi në telefon dhe provo ta shkarkosh përsëri."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Media nuk disponohet më në telefon dhe nuk mund të shkarkohet."
@@ -1587,10 +1587,10 @@
     "messageformat": "Mësoni më tepër"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Skanojeni këtë kod te aplikacioni Signal në telefonin tuaj"
+    "messageformat": "Skanojeni këtë kod te aplikacioni Tellomi në telefonin tuaj"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Hapeni Signal-in në telefonin tuaj"
+    "messageformat": "Hapeni Tellomi-in në telefonin tuaj"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Prekni mbi {settings}, mandej prekni {linkedDevices}"
@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>Ndodhi një gabim i papritur.</paragraph><paragraph>Të lutem, provo përsëri.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal nuk mund ta lidhë pajisjen përmes rrjetit aktual."
+    "messageformat": "Tellomi nuk mund ta lidhë pajisjen përmes rrjetit aktual."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Riprovo"
@@ -1626,7 +1626,7 @@
     "messageformat": "Të fshihen krejt të dhënat?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "Po përpiqesh të lidhësh një llogari tjetër të Signal me këtë desktop. Nëse vazhdon, të gjitha të dhënat aktuale në Signal Desktop do të fshihen."
+    "messageformat": "Po përpiqesh të lidhësh një llogari tjetër të Tellomi me këtë desktop. Nëse vazhdon, të gjitha të dhënat aktuale në Tellomi Desktop do të fshihen."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "Vazhdo"
@@ -1641,7 +1641,7 @@
     "messageformat": "Emër pajisjeje"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Për të ndryshuar emrin e pajisjes, hap Signal në telefon dhe shko te Parametrat > Pajisjet e lidhura"
+    "messageformat": "Për të ndryshuar emrin e pajisjes, hap Tellomi në telefon dhe shko te Parametrat > Pajisjet e lidhura"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Toni i lëkurës së emoxhit"
@@ -1833,7 +1833,7 @@
     "messageformat": "Verifikimi automatik i kodit"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "Kur aktivizohet, Signal do të përpiqet të verifikojë automatikisht kodimin e bisedave 1:1."
+    "messageformat": "Kur aktivizohet, Tellomi do të përpiqet të verifikojë automatikisht kodimin e bisedave 1:1."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "Mëso më tepër"
@@ -1851,7 +1851,7 @@
     "messageformat": "Na ndjeni, keni shumë pajisje të lidhura tashmë. Provoni të hiqni ndoca."
   },
   "icu:installTooOld": {
-    "messageformat": "Që të lidhni telefonin tuaj, përditësoni Signal-in në këtë pajisje."
+    "messageformat": "Që të lidhni telefonin tuaj, përditësoni Tellomi-in në këtë pajisje."
   },
   "icu:installErrorHeader": {
     "messageformat": "Diç shkoi ters!"
@@ -1902,7 +1902,7 @@
     "messageformat": "Kjo lidhje telefonate nuk është më e vlefshme."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Thirrje përmes Signal-i"
+    "messageformat": "Thirrje përmes Tellomi-i"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Lidhja nuk mund të fshihet. Kontrollo lidhjen e internetit dhe riprovo."
@@ -2076,16 +2076,16 @@
     "messageformat": "{count, plural, one {{count,number} person është në këtë thirrje} other {{count,number} persona janë në këtë thirrje}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal-i do t’i bjerë ziles së {person}"
+    "messageformat": "Tellomi-i do t’i bjerë ziles së {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal-i do t’i bjerë ziles për {first} dhe {second}"
+    "messageformat": "Tellomi-i do t’i bjerë ziles për {first} dhe {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal-i do t’i bjerë ziles për {first}, {second}, dhe {third}"
+    "messageformat": "Tellomi-i do t’i bjerë ziles për {first}, {second}, dhe {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Signal-i do t\\’i bjerë ziles për {first}, {second}, dhe {others,number} tjetër} other {Signal-i do t\\’i bjerë ziles për {first}, {second}, dhe {others,number} të tjerë}}"
+    "messageformat": "{others, plural, one {Tellomi-i do t\\’i bjerë ziles për {first}, {second}, dhe {others,number} tjetër} other {Tellomi-i do t\\’i bjerë ziles për {first}, {second}, dhe {others,number} të tjerë}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "Do të njoftohet {person}"
@@ -2139,13 +2139,13 @@
     "messageformat": "Po rilidhet…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Lidhja u shkëput. Signal po rilidhet."
+    "messageformat": "Lidhja u shkëput. Tellomi po rilidhet."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal-i po ndan me të tjerë {window}."
+    "messageformat": "Tellomi-i po ndan me të tjerë {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Shpërndarja e ekranit të Signal është aktive"
+    "messageformat": "Shpërndarja e ekranit të Tellomi është aktive"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Po rilidhet…"
@@ -2166,7 +2166,7 @@
     "messageformat": "Lypset leje"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal-i lyp leje, që të përdorë regjistrimin e ekranit tuaj."
+    "messageformat": "Tellomi-i lyp leje, që të përdorë regjistrimin e ekranit tuaj."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Kalo te Parapëlqime Sistemi."
@@ -2175,7 +2175,7 @@
     "messageformat": "Klikoni te ikona dry, majtas poshtë dhe jepni fjalëkalimin e kompjuterit tuaj."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Djathtas, i vini shenjë kutizës në krah të Signal-it. Nëse s’e shihni Signal-in te lista, klikoni mbi + që të shtohet."
+    "messageformat": "Djathtas, i vini shenjë kutizës në krah të Tellomi-it. Nëse s’e shihni Tellomi-in te lista, klikoni mbi + që të shtohet."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Hapni Parapëlqime Sistemi"
@@ -2187,7 +2187,7 @@
     "messageformat": "Kaloji përherë thirrjet përmes releje"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Kaloji krejt thirrjet përmes shërbyesit Signal për të shmangur zbulimin e adresës tuaj IP nga kontakti juaj. Aktivizimi do të ulë cilësinë e thirrjes."
+    "messageformat": "Kaloji krejt thirrjet përmes shërbyesit Tellomi për të shmangur zbulimin e adresës tuaj IP nga kontakti juaj. Aktivizimi do të ulë cilësinë e thirrjes."
   },
   "icu:permissions": {
     "messageformat": "Leje"
@@ -2205,10 +2205,10 @@
     "messageformat": "Shfaq menynë e formatimit të tekstit kur përzgjidhet teksti"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Kontrolli i drejtshkrimit do të aktivizohet herës tjetër që niset Signal-i."
+    "messageformat": "Kontrolli i drejtshkrimit do të aktivizohet herës tjetër që niset Tellomi-i."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Kontrolli i drejtshkrimit do të çaktivizohet herës tjetër që niset Signal-i."
+    "messageformat": "Kontrolli i drejtshkrimit do të çaktivizohet herës tjetër që niset Tellomi-i."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Minimizoje te panel sistemi"
@@ -2232,7 +2232,7 @@
     "messageformat": "Të fshihen krejt të dhënat?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Të fshihen të gjitha të dhënat dhe mesazhet nga versioni i Signal Desktop? Llogaria e Signal dhe të dhënat që gjenden në telefon apo në pajisje të tjera të lidhura nuk do të fshihen."
+    "messageformat": "Të fshihen të gjitha të dhënat dhe mesazhet nga versioni i Tellomi Desktop? Llogaria e Tellomi dhe të dhënat që gjenden në telefon apo në pajisje të tjera të lidhura nuk do të fshihen."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Të gjitha të dhënat po shkëputen dhe po fshihen…"
@@ -2241,7 +2241,7 @@
     "messageformat": "Fshije llogarinë"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "Kjo do të fshijë informacionin e llogarisë, profilin dhe të gjitha mesazhet. Gjithashtu do të hiqesh nga të gjitha grupet në Signal."
+    "messageformat": "Kjo do të fshijë informacionin e llogarisë, profilin dhe të gjitha mesazhet. Gjithashtu do të hiqesh nga të gjitha grupet në Tellomi."
   },
   "icu:deleteAccountButton": {
     "messageformat": "Fshije llogarinë"
@@ -2250,10 +2250,10 @@
     "messageformat": "Të fshihet llogaria?"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "Kjo do të fshijë informacionin e llogarisë, profilin dhe të gjitha mesazhet. Gjithashtu do të hiqesh nga të gjitha grupet në Signal. Aplikacioni do të mbyllet pasi të përfundojë ky proces."
+    "messageformat": "Kjo do të fshijë informacionin e llogarisë, profilin dhe të gjitha mesazhet. Gjithashtu do të hiqesh nga të gjitha grupet në Tellomi. Aplikacioni do të mbyllet pasi të përfundojë ky proces."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Ke të dhëna të vjetra prej një instalimi të mëparshëm të Signal-it për Desktop. Nëse vendos të vazhdosh, do të fshihen dhe do t’ia filloni nga e para."
+    "messageformat": "Ke të dhëna të vjetra prej një instalimi të mëparshëm të Tellomi-it për Desktop. Nëse vendos të vazhdosh, do të fshihen dhe do t’ia filloni nga e para."
   },
   "icu:deleteOldData": {
     "messageformat": "Fshiji të Dhënat e vjetra"
@@ -2310,7 +2310,7 @@
     "messageformat": "Është fshirë pjesërisht, kliko për detaje"
   },
   "icu:expiredWarning": {
-    "messageformat": "Ky version i Signal-it për Desktop ka skaduar. Ju lutemi, që të vazhdoni të shkëmbeni mesazhe, përmirësojeni me versionin më të ri."
+    "messageformat": "Ky version i Tellomi-it për Desktop ka skaduar. Ju lutemi, që të vazhdoni të shkëmbeni mesazhe, përmirësojeni me versionin më të ri."
   },
   "icu:upgrade": {
     "messageformat": "Klikoni që të kalohet te signal.org/download"
@@ -2322,7 +2322,7 @@
     "messageformat": "Importo kontakte"
   },
   "icu:syncExplanation": {
-    "messageformat": "Importoni krejt grupet dhe kontaktet Signal nga pajisja juaj celulare."
+    "messageformat": "Importoni krejt grupet dhe kontaktet Tellomi nga pajisja juaj celulare."
   },
   "icu:syncNow": {
     "messageformat": "Importoji tani"
@@ -2355,7 +2355,7 @@
     "messageformat": "Dje {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signal mund të mos e përpunojë mesazhin në hyrje."
+    "messageformat": "Tellomi mund të mos e përpunojë mesazhin në hyrje."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Lënda e mesazhit është shumë e gjatë."
@@ -2520,13 +2520,13 @@
     "messageformat": "Përpunimet mund të zbatohen vetëm brenda 24 orëve nga momenti që dërgove këtë mesazh."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} nuk është përdorues i Signal. Sigurohu që ke vendosur emrin e plotë të përdoruesit."
+    "messageformat": "{atUsername} nuk është përdorues i Tellomi. Sigurohu që ke vendosur emrin e plotë të përdoruesit."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} nuk është emër i vlefshëm përdoruesi. Sigurohu që ke vendosur emrin e plotë të përdoruesit të ndjekur nga grupi përkatës i shifrave."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "S’u gjet përdorues. “{phoneNumber}” s’është përdorues Signal-i."
+    "messageformat": "S’u gjet përdorues. “{phoneNumber}” s’është përdorues Tellomi-i."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "S’u gjet përdorues. “{phoneNumber}” s’është numër telefoni i vlefshëm."
@@ -2547,13 +2547,13 @@
     "messageformat": "U mbërrit në kufi madhësie grupesh"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Grupet Signal mund të kenë një maksimum prej {max,number} anëtarësh."
+    "messageformat": "Grupet Tellomi mund të kenë një maksimum prej {max,number} anëtarësh."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "U mbërrit në kufi të rekomanduar anëtaarësh"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Punimin më të mirë grupet Signal e kanë me {max,number}anëtarë ose më pak. Shtimi i më shumë anëtarëve do të shkaktojë vonesa në dërgim dhe marrje mesazhesh."
+    "messageformat": "Punimin më të mirë grupet Tellomi e kanë me {max,number}anëtarë ose më pak. Shtimi i më shumë anëtarëve do të shkaktojë vonesa në dërgim dhe marrje mesazhesh."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Emërtojeni këtë grup"
@@ -2583,13 +2583,13 @@
     "messageformat": "S’u arrit të përditësohej grupi. Kontrolloni lidhjen tuaj dhe riprovoni."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Klikoni që të rilidhni Signal-in për Desktop me pajisjen tuaj celulare, që të vazhdohet puna me mesazhet."
+    "messageformat": "Klikoni që të rilidhni Tellomi-in për Desktop me pajisjen tuaj celulare, që të vazhdohet puna me mesazhet."
   },
   "icu:unlinked": {
     "messageformat": "Jo e lidhur"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Kliko për t’u regjistruar përsëri dhe për të vazhduar me mesazhet. Signal Desktop është çregjistruar, me shumë mundësi sepse e ke regjistruar numrin e telefonit në Signal në një pajisje tjetër."
+    "messageformat": "Kliko për t’u regjistruar përsëri dhe për të vazhduar me mesazhet. Tellomi Desktop është çregjistruar, me shumë mundësi sepse e ke regjistruar numrin e telefonit në Tellomi në një pajisje tjetër."
   },
   "icu:unregistered": {
     "messageformat": "Nuk është më i regjistruar"
@@ -2601,16 +2601,16 @@
     "messageformat": "Riprovoni përditësim"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Klikoni që të riniset Signal-i"
+    "messageformat": "Klikoni që të riniset Tellomi-i"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Klikoni që të shkarkohet përditësimi"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signal-i s’u përditësua dot. Klikoni që të riprovohet."
+    "messageformat": "Tellomi-i s’u përditësua dot. Klikoni që të riprovohet."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Riniseni Signal-in"
+    "messageformat": "Riniseni Tellomi-in"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Shpërfille përditësimin"
@@ -2742,7 +2742,7 @@
     "messageformat": "Disa bashkëngjitje janë shumë të mëdha për t'u shfaqur."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Përdor këtë lidhje për t'iu bashkuar një thirrjeje në Signal"
+    "messageformat": "Përdor këtë lidhje për t'iu bashkuar një thirrjeje në Tellomi"
   },
   "icu:donation--missing": {
     "messageformat": "Detajet e dhurimit nuk mund të shfaqen"
@@ -2754,7 +2754,7 @@
     "messageformat": "Kliko këtë mesazh në celular për të parë dhurimin tënd"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} dhuroi për Signal në emrin tënd"
+    "messageformat": "{sender} dhuroi për Tellomi në emrin tënd"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Kontrollo telefonin për të hapur këtë dhurim"
@@ -2811,7 +2811,7 @@
     "messageformat": "Faleminderit për përkrahjen tënde!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Ti ke bërë një dhurim për Signal në emër të {name}. Atyre do t'u jepet mundësia të shfaqin mbështetjen në profilin e tyre."
+    "messageformat": "Ti ke bërë një dhurim për Tellomi në emër të {name}. Atyre do t'u jepet mundësia të shfaqin mbështetjen në profilin e tyre."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Paketa e ngjitësve s’u instalua dot"
@@ -2823,10 +2823,10 @@
     "messageformat": "Shto ngjitës"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Seritë Artis Signal-i"
+    "messageformat": "Seritë Artis Tellomi-i"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "S’ka ngjitës Signal Artist"
+    "messageformat": "S’ka ngjitës Tellomi Artist"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "Ndarë me ty"
@@ -2862,7 +2862,7 @@
     "messageformat": "Tërhiq për të riorganizuar paketën e ngjitëseve"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "Paketat e ngjitëseve të serisë së artistëve të Signal"
+    "messageformat": "Paketat e ngjitëseve të serisë së artistëve të Tellomi"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "Paketa ngjitësesh të marra"
@@ -3147,19 +3147,19 @@
     "messageformat": "Mesazhi është shumë i gjatë për të shfaqur më shumë"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} ju dërgoi një mesazh që s’mund të përpunohet apo shfaqet, ngaqë përdor një veçori të re të Signal-it."
+    "messageformat": "{contact} ju dërgoi një mesazh që s’mund të përpunohet apo shfaqet, ngaqë përdor një veçori të re të Tellomi-it."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Mund t’i kërkoni {contact} ta ridërgojë këtë mesazh tani që përdorni një version të përditësuar të Signal-it."
+    "messageformat": "Mund t’i kërkoni {contact} ta ridërgojë këtë mesazh tani që përdorni një version të përditësuar të Tellomi-it."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Një nga pajisjet tuaja dërgoi një mesazh që s’mund të përpunohet ose shfaqet, ngaqë përdor një veçori të ri Signal-i."
+    "messageformat": "Një nga pajisjet tuaja dërgoi një mesazh që s’mund të përpunohet ose shfaqet, ngaqë përdor një veçori të ri Tellomi-i."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Mesazhe të tillë të ardhshëm do të njëkohësohen tani që përdorni një version të përditësuar të Signal-it."
+    "messageformat": "Mesazhe të tillë të ardhshëm do të njëkohësohen tani që përdorni një version të përditësuar të Tellomi-it."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Përditësoni Signal-in"
+    "messageformat": "Përditësoni Tellomi-in"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Parë"
@@ -3426,7 +3426,7 @@
     "messageformat": "Biseda u shënua si e palexuar"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Të lutem, konfiguro Signal në telefon dhe desktop që të përdorësh Krijuesin e Paketës së Ngjitëseve"
+    "messageformat": "Të lutem, konfiguro Tellomi në telefon dhe desktop që të përdorësh Krijuesin e Paketës së Ngjitëseve"
   },
   "icu:Reactions--remove": {
     "messageformat": "Hiqe reagimin"
@@ -3444,16 +3444,16 @@
     "messageformat": "Këshilla sigurie"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Mos u kthe përgjigje bisedave nga Signal"
+    "messageformat": "Mos u kthe përgjigje bisedave nga Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Signal nuk do të kërkojë kurrë përmes mesazhit kodin e regjistrimit, PIN-in ose kodin e rikthimit. Mos iu përgjigj asnjëherë një bisede që hiqet si Signal."
+    "messageformat": "Tellomi nuk do të kërkojë kurrë përmes mesazhit kodin e regjistrimit, PIN-in ose kodin e rikthimit. Mos iu përgjigj asnjëherë një bisede që hiqet si Tellomi."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "Shqyrto emrat dhe fotot"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "Shiko njoftimin “Emri nuk është verifikuar”. Në Signal, secili e vendos vetë emrin e profilit të tij."
+    "messageformat": "Shiko njoftimin “Emri nuk është verifikuar”. Në Tellomi, secili e vendos vetë emrin e profilit të tij."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "Ki kujdes nga mashtrimet"
@@ -3462,16 +3462,16 @@
     "messageformat": "Shmang mesazhet e paqarta që përpiqen të të nxisin që t'u përgjigjesh. Ki kujdes nga këshillat financiare dhe lidhjet e dyshimta të faqeve të internetit."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Mos u kthe përgjigje bisedave nga Signal"
+    "messageformat": "Mos u kthe përgjigje bisedave nga Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Signal nuk do të kërkojë kurrë përmes mesazhit kodin e regjistrimit, PIN-in ose kodin e rikthimit. Mos iu përgjigj bisedave që hiqen si Signal ose si Ndihma nga Signal. Personat keqdashës krijojnë biseda të rreme në përpjekje që të marrin kontrollin e llogarisë."
+    "messageformat": "Tellomi nuk do të kërkojë kurrë përmes mesazhit kodin e regjistrimit, PIN-in ose kodin e rikthimit. Mos iu përgjigj bisedave që hiqen si Tellomi ose si Ndihma nga Tellomi. Personat keqdashës krijojnë biseda të rreme në përpjekje që të marrin kontrollin e llogarisë."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Shqyrto emrat dhe fotot"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "Shiko njoftimin “Emri nuk është verifikuar”. Gjithsecili vendos emrin dhe foton e vet të profilit në Signal. Nëse nuk je i sigurt se nga kush vjen kërkesa e re, është më e sigurt ta shpërfillësh atë."
+    "messageformat": "Shiko njoftimin “Emri nuk është verifikuar”. Gjithsecili vendos emrin dhe foton e vet të profilit në Tellomi. Nëse nuk je i sigurt se nga kush vjen kërkesa e re, është më e sigurt ta shpërfillësh atë."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Mashtrime me para apo kripto"
@@ -3552,13 +3552,13 @@
     "messageformat": "Të raportohet si mesazh i padëshiruar?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signal do të njoftohet se ky person mund të jetë duke dërguar mesazhe të padëshiruara. Signal nuk mund të shohë përmbajtjen e asnjë bisede."
+    "messageformat": "Tellomi do të njoftohet se ky person mund të jetë duke dërguar mesazhe të padëshiruara. Tellomi nuk mund të shohë përmbajtjen e asnjë bisede."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signal do të njoftohet se personi që të ftoi në këtë grup mund të jetë duke dërguar mesazhe të padëshiruara. Signal nuk mund të shohë përmbajtjen e asnjë bisede."
+    "messageformat": "Tellomi do të njoftohet se personi që të ftoi në këtë grup mund të jetë duke dërguar mesazhe të padëshiruara. Tellomi nuk mund të shohë përmbajtjen e asnjë bisede."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signal do të njoftohet se {name}, i cili të ftoi në këtë grup, mund të jetë duke dërguar mesazhe të padëshiruara. Signal nuk mund të shohë përmbajtjen e asnjë bisede."
+    "messageformat": "Tellomi do të njoftohet se {name}, i cili të ftoi në këtë grup, mund të jetë duke dërguar mesazhe të padëshiruara. Tellomi nuk mund të shohë përmbajtjen e asnjë bisede."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Raporto si të padëshiruar"
@@ -3600,7 +3600,7 @@
     "messageformat": "Të pranohet kërkesa?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "Prano kërkesa vetëm nga njerëz që u beson. <bold>Signal nuk do të kërkojë kurrë</bold> përmes mesazhit kodin e regjistrimit, PIN-in ose kodin e rikthimit."
+    "messageformat": "Prano kërkesa vetëm nga njerëz që u beson. <bold>Tellomi nuk do të kërkojë kurrë</bold> përmes mesazhit kodin e regjistrimit, PIN-in ose kodin e rikthimit."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "Vazhdo"
@@ -3654,16 +3654,16 @@
     "messageformat": "Emri nuk është verifikuar"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Kjo është biseda zyrtare dhe e vetme nga Signal"
+    "messageformat": "Kjo është biseda zyrtare dhe e vetme nga Tellomi"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "Biseda zyrtare"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "E vetmja bisedë zyrtare nga Signal. Qëndro i përditësuar me lajmet dhe shënimet e publikimit."
+    "messageformat": "E vetmja bisedë zyrtare nga Tellomi. Qëndro i përditësuar me lajmet dhe shënimet e publikimit."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "E vetmja bisedë zyrtare nga Signal."
+    "messageformat": "E vetmja bisedë zyrtare nga Tellomi."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Qëndro i përditësuar me lajmet dhe shënimet e publikimit."
@@ -3729,10 +3729,10 @@
     "messageformat": "Thirrje video pa përgjigje"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal është ende në punë"
+    "messageformat": "Tellomi është ende në punë"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal do të vazhdojë të punojë në zonën e njoftimeve. Këtë mund ta ndryshosh te parametrat e Signal."
+    "messageformat": "Tellomi do të vazhdojë të punojë në zonën e njoftimeve. Këtë mund ta ndryshosh te parametrat e Tellomi."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Thirrje zanore hyrëse"
@@ -3951,7 +3951,7 @@
     "messageformat": "Kopjo lidhjen e thirrjes"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Shpërndaj lidhjen e thirrjes përmes Signal"
+    "messageformat": "Shpërndaj lidhjen e thirrjes përmes Tellomi"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "Të hiqet {name} nga telefonata?"
@@ -4113,7 +4113,7 @@
     "messageformat": "Version i panjohur lidhjeje"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Kjo lidhje nuk mbulohet nga ky version i Signal-it për Desktop."
+    "messageformat": "Kjo lidhje nuk mbulohet nga ky version i Tellomi-it për Desktop."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "S’bëheni Dot Pjesë e Grupit"
@@ -4719,10 +4719,10 @@
     "messageformat": "Po fshihet të dhëna përdoruesi dhe po rikthehet aplikacioni te parazgjedhjet"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Dhuroni për Signal-in"
+    "messageformat": "Dhuroni për Tellomi-in"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} mbështesin Signal"
+    "messageformat": "{name} mbështesin Tellomi"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "Po sinkronizohen mesazhet"
@@ -4839,7 +4839,7 @@
     "messageformat": "Kërkohet veprim i llogarisë"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Duhet ta hapësh Signal në telefon për të vazhduar përdorimin e llogarisë. Nëse nuk e hap Signal në telefon, llogaria do të fshihet së shpejti. <learnMoreLink>Mëso më shumë</learnMoreLink>"
+    "messageformat": "Duhet ta hapësh Tellomi në telefon për të vazhduar përdorimin e llogarisë. Nëse nuk e hap Tellomi në telefon, llogaria do të fshihet së shpejti. <learnMoreLink>Mëso më shumë</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Media nuk mund të rikthehet"
@@ -4863,10 +4863,10 @@
     "messageformat": "Shto bashkëngjitje ose sondazh"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Ky person s’përdor Signal"
+    "messageformat": "Ky person s’përdor Tellomi"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal-i për Desktop nuk mbulon mesazhe për kontakte jo Signal. Kërkojini këtij personi të instalojë Signal-in, për punë më të sigurt me mesazhet."
+    "messageformat": "Tellomi-i për Desktop nuk mbulon mesazhe për kontakte jo Tellomi. Kërkojini këtij personi të instalojë Tellomi-in, për punë më të sigurt me mesazhet."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Po kontrollohet gjendje regjistrimi kontakti"
@@ -5127,10 +5127,10 @@
     "messageformat": "Zhbllokoje"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "Signal do të njoftohet se ky person mund të jetë duke dërguar mesazhe të padëshiruara. Signal nuk mund të shohë përmbajtjen e asnjë bisede."
+    "messageformat": "Tellomi do të njoftohet se ky person mund të jetë duke dërguar mesazhe të padëshiruara. Tellomi nuk mund të shohë përmbajtjen e asnjë bisede."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "Signal do të njoftohet se personi që të ftoi në këtë grup mund të jetë duke dërguar mesazhe të padëshiruara. Signal nuk mund të shohë përmbajtjen e asnjë bisede."
+    "messageformat": "Tellomi do të njoftohet se personi që të ftoi në këtë grup mund të jetë duke dërguar mesazhe të padëshiruara. Tellomi nuk mund të shohë përmbajtjen e asnjë bisede."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "Raporto si të padëshiruar"
@@ -5289,7 +5289,7 @@
     "messageformat": "Kërko doemos që një përgjegjës të miratojë anëtarë të rinj që vijnë prej një lidhjeje grupi"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopjo lidhjen e Signal.group në kujtesën e fragmenteve"
+    "messageformat": "Kopjo lidhjen e Tellomi.group në kujtesën e fragmenteve"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Kërko anëtarët"
@@ -5431,7 +5431,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {Në versionet më të fundit të Signal, anëtarët e grupit do të shohin që e ke fshirë këtë mesazh.} other {Në versionet më të fundit të Signal, anëtarët e grupit do të shohin që i ke fshirë këto mesazhe.}}"
+    "messageformat": "{count, plural, one {Në versionet më të fundit të Tellomi, anëtarët e grupit do të shohin që e ke fshirë këtë mesazh.} other {Në versionet më të fundit të Tellomi, anëtarët e grupit do të shohin që i ke fshirë këto mesazhe.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Fshije"
@@ -5557,7 +5557,7 @@
     "messageformat": "Mesazhet boshe ose të fshira nuk mund të përcillen"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Përdor këtë lidhje për t'iu bashkuar një telefonate në Signal: {url}"
+    "messageformat": "Përdor këtë lidhje për t'iu bashkuar një telefonate në Tellomi: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "Shqyrtoni me kujdes kërkesat"
@@ -5566,7 +5566,7 @@
     "messageformat": "Këshilla sigurie"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Shqyrto me kujdes kërkesat. Signal gjeti një kontakt tjetër me të njëjtin emër. <reviewRequestLink>Shqyrto kërkesën</reviewRequestLink>"
+    "messageformat": "Shqyrto me kujdes kërkesat. Tellomi gjeti një kontakt tjetër me të njëjtin emër. <reviewRequestLink>Shqyrto kërkesën</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} anëtar grupi ka të njëjtin emër. <reviewRequestLink>Shqyrto anëtarët</reviewRequestLink>} other {{count,number} anëtarë grupi kanë të njëjtin emër. <reviewRequestLink>Shqyrto anëtarët</reviewRequestLink>}}"
@@ -5599,7 +5599,7 @@
     "messageformat": "Nuk ka grupe të tjera të përbashkëta"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Kontaktet e Signal"
+    "messageformat": "Kontaktet e Tellomi"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Ndryshoi së fundi emrin e vet të profilit nga {oldName} në {newName}"
@@ -5617,7 +5617,7 @@
     "messageformat": "Verifikojeni, që të vazhdoni shkëmbim mesazhesh"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Që të ndihmoni të pengohen në Signal mesazhe të padëshiruar, ju lutemi, plotësoni verifikimin."
+    "messageformat": "Që të ndihmoni të pengohen në Tellomi mesazhe të padëshiruar, ju lutemi, plotësoni verifikimin."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Pas verifikimit, mund të vazhdoni të shkëmbeni mesazhe. Çfarëdo mesazhesh të ndalur do të dërgohen automatikisht."
@@ -6001,7 +6001,7 @@
     "messageformat": "Doni të hidhen tej këto ndryshime?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Të mbyllet Signal dhe telefonata?"
+    "messageformat": "Të mbyllet Tellomi dhe telefonata?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Jo tani"
@@ -6101,7 +6101,7 @@
     "messageformat": "Të përgjithshme"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Dhuroni për Signal-in"
+    "messageformat": "Dhuroni për Tellomi-in"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Paraqitja"
@@ -6167,10 +6167,10 @@
     "messageformat": "Sistem"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "Tellomi Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "Signal Login përdoret për të rikthyer dhe rivendosur llogarinë. Ruaji kode në mënyrë të sigurt në një menaxher fjalëkalimesh të cilit i beson. <learnMoreLink>Mëso më shumë</learnMoreLink>."
+    "messageformat": "Tellomi Login përdoret për të rikthyer dhe rivendosur llogarinë. Ruaji kode në mënyrë të sigurt në një menaxher fjalëkalimesh të cilit i beson. <learnMoreLink>Mëso më shumë</learnMoreLink>."
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "Mëso më shumë"
@@ -6191,7 +6191,7 @@
     "messageformat": "Kjo është një pajisje e lidhur"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "Për të menaxhuar parametrat e llogarisë, hap Signal në pajisjen kryesore."
+    "messageformat": "Për të menaxhuar parametrat e llogarisë, hap Tellomi në pajisjen kryesore."
   },
   "icu:Preferences--zoom": {
     "messageformat": "Shkallë zoom-i"
@@ -6224,7 +6224,7 @@
     "messageformat": "Të mëtejshme"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "PIN Signal-i"
+    "messageformat": "PIN Tellomi-i"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "Kujtues PIN-i"
@@ -6353,7 +6353,7 @@
     "messageformat": "Nuk mund të eksportohet historiku i bisedës"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Historiku i bisedës nuk mund të eksportohet sepse Signal nuk ka leje për të shkruar skedarë në disk. Provo të ndryshosh lejet e diskut ose të përditësosh parametrat e sistemit dhe pastaj eksporto përsëri."
+    "messageformat": "Historiku i bisedës nuk mund të eksportohet sepse Tellomi nuk ka leje për të shkruar skedarë në disk. Provo të ndryshosh lejet e diskut ose të përditësosh parametrat e sistemit dhe pastaj eksporto përsëri."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Kopjeruajtja po eksportohet"
@@ -6368,7 +6368,7 @@
     "messageformat": "Transfero dosjen e kopjeruajtjeve në hapësirën ruajtëse të telefonit"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Instalo një kopje të re të Signal në telefon"
+    "messageformat": "Instalo një kopje të re të Tellomi në telefon"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "Prek te \"Rikthe ose Transfero\" dhe zgjidh \"Kopjeruajtjet në pajisje\""
@@ -6635,13 +6635,13 @@
     "messageformat": "Bllokuar më {blockedAt}"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Kopjeruajtjet e sigurta të Signal"
+    "messageformat": "Kopjeruajtjet e sigurta të Tellomi"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Kopjeruajtjet automatike me shërbimin e sigurt të ruajtjes së koduar nga skaji në skaj të Signal. Fillo në telefon. <learnMoreLink>Mëso më shumë.</learnMoreLink>"
+    "messageformat": "Kopjeruajtjet automatike me shërbimin e sigurt të ruajtjes së koduar nga skaji në skaj të Tellomi. Fillo në telefon. <learnMoreLink>Mëso më shumë.</learnMoreLink>"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Bëj kopjeruajtje të historikut të mesazheve në mënyrë që të mos i humbasësh kurrë të dhënat kur merr një telefon të ri ose kur e riinstalon sërish Signal."
+    "messageformat": "Bëj kopjeruajtje të historikut të mesazheve në mënyrë që të mos i humbasësh kurrë të dhënat kur merr një telefon të ri ose kur e riinstalon sërish Tellomi."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Të dhënat e kopjeruajtjes"
@@ -6695,7 +6695,7 @@
     "messageformat": "Krijo një kopjeruajtje të koduar nga skaji në skaj që mund ta rikthesh në telefon. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Për të rikthyer kopjeruajtjen, instalo versionin e ri të Signal në telefon. Hap aplikacionin dhe prek &quot;Rikthe ose transfero&quot;. <learnMoreLink>Mëso më shumë.</learnMoreLink>"
+    "messageformat": "Për të rikthyer kopjeruajtjen, instalo versionin e ri të Tellomi në telefon. Hap aplikacionin dhe prek &quot;Rikthe ose transfero&quot;. <learnMoreLink>Mëso më shumë.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Zgjidh një dosje"
@@ -6731,7 +6731,7 @@
     "messageformat": "Kodi i rikthimit"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "Kodi kërkohet për të rikthyer llogarinë dhe të dhënat. Ruaje në një vend të sigurt dhe mos e ndaj kurrë me askënd. Signal nuk do të dërgojë kurrë mesazh për kodin e rikthimit. <learnMoreLink>Mëso më shumë.</learnMoreLink>"
+    "messageformat": "Kodi kërkohet për të rikthyer llogarinë dhe të dhënat. Ruaje në një vend të sigurt dhe mos e ndaj kurrë me askënd. Tellomi nuk do të dërgojë kurrë mesazh për kodin e rikthimit. <learnMoreLink>Mëso më shumë.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "Mos e ndaj kodin e rikthimit"
@@ -6746,7 +6746,7 @@
     "messageformat": "Mos e ndaj kodin"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Mos e ndaj kodin e rikthimit me asnjë. Kjo do t'u lejojë atyre të marrin kontrollin e llogarisë. <strong>Signal nuk do të dërgojë kurrë mesazh</strong> për kodin e rikthimit. Mos iu përgjigj asnjëherë një bisede që hiqet si Signal. <learnMoreLink>Mëso më shumë.</learnMoreLink>"
+    "messageformat": "Mos e ndaj kodin e rikthimit me asnjë. Kjo do t'u lejojë atyre të marrin kontrollin e llogarisë. <strong>Tellomi nuk do të dërgojë kurrë mesazh</strong> për kodin e rikthimit. Mos iu përgjigj asnjëherë një bisede që hiqet si Tellomi. <learnMoreLink>Mëso më shumë.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Konfirmo kodin e rikthimit"
@@ -6758,7 +6758,7 @@
     "messageformat": "Ruaj kodin në mënyrë të sigurt"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Signal nuk do të jetë në gjendje të të ndihmojë në rikthimin e kopjeruajtjes nëse humb kodin. Ruaje në një vend të sigurt dhe mos e ndaj me të tjerët."
+    "messageformat": "Tellomi nuk do të jetë në gjendje të të ndihmojë në rikthimin e kopjeruajtjes nëse humb kodin. Ruaje në një vend të sigurt dhe mos e ndaj me të tjerët."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Vazhdo"
@@ -6809,7 +6809,7 @@
     "messageformat": "Kërkohet vërtetim për të aktivizuar kopjeruajtjet."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "Ky veprim nuk arriti të përfundohej pasi autentikimi i sistemit dështoi. Të lutem, provo përsëri ose hap aplikacionin Signal në pajisjen celulare dhe shko te parametrat e kopjeruajtjes për të parë kodin e rikthimit."
+    "messageformat": "Ky veprim nuk arriti të përfundohej pasi autentikimi i sistemit dështoi. Të lutem, provo përsëri ose hap aplikacionin Tellomi në pajisjen celulare dhe shko te parametrat e kopjeruajtjes për të parë kodin e rikthimit."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "Ndodhi një gabim gjatë kërkesës për autentifikimin e sistemit për këtë veprim."
@@ -6839,7 +6839,7 @@
     "messageformat": "Numër telefoni"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Zgjidh se kush mund ta shohë numrin tënd të telefonit dhe kush mund të të kontaktojë nëpërmjet tij në Signal."
+    "messageformat": "Zgjidh se kush mund ta shohë numrin tënd të telefonit dhe kush mund të të kontaktojë nëpërmjet tij në Tellomi."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Ndrysho…"
@@ -6869,10 +6869,10 @@
     "messageformat": "Kush mund të më gjejë nëpërmjet numrit"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Kushdo që ka e numrin tënd të telefonit do të shohë se ti ke Signal dhe mund të të shkruajë."
+    "messageformat": "Kushdo që ka e numrin tënd të telefonit do të shohë se ti ke Tellomi dhe mund të të shkruajë."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Askush nuk do ta shohë se je në Signal, nëse nuk dërgon mesazh dhe nuk ke biseda ekzistuese."
+    "messageformat": "Askush nuk do ta shohë se je në Tellomi, nëse nuk dërgon mesazh dhe nuk ke biseda ekzistuese."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Të gjithë"
@@ -6884,7 +6884,7 @@
     "messageformat": "Je i sigurt?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Nëse ndryshon \"{settingTitle} \" në \"{nobodyLabel} \" do të jetë më të vështirë për njerëzit që të të gjejnë në Signal."
+    "messageformat": "Nëse ndryshon \"{settingTitle} \" në \"{nobodyLabel} \" do të jetë më të vështirë për njerëzit që të të gjejnë në Tellomi."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Shkëmbim Mesazhesh"
@@ -6947,7 +6947,7 @@
     "messageformat": "Cakto"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Rihap Signal që të reflektohen ndryshimet"
+    "messageformat": "Rihap Tellomi që të reflektohen ndryshimet"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Për të ndryshuar gjuhën, aplikacioni duhet të rihapet."
@@ -6962,13 +6962,13 @@
     "messageformat": "Siguri ekrani"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Parandalo shkrepjet e ekranit të Signal në këtë kompjuter për më shumë privatësi."
+    "messageformat": "Parandalo shkrepjet e ekranit të Tellomi në këtë kompjuter për më shumë privatësi."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Të çaktivizohet siguria e ekranit?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Nëse çaktivizohet, Microsoft Windows mund të bëjë shkrepje të ekranit të Signal dhe t'i përdorë ato për veçori që mund të mos jenë private."
+    "messageformat": "Nëse çaktivizohet, Microsoft Windows mund të bëjë shkrepje të ekranit të Tellomi dhe t'i përdorë ato për veçori që mund të mos jenë private."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Çaktivizoje"
@@ -6989,25 +6989,25 @@
     "messageformat": "Kliko për të shkuar tek App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Hap Signal në telefonin tënd"
+    "messageformat": "Hap Tellomi në telefonin tënd"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Llogaria do të fshihet së shpejti nëse nuk hap e Signal në telefon. Ky mesazh do të fshihet nëse e ke kryer me sukses. <learnMoreLink>Mëso më shumë</learnMoreLink>"
+    "messageformat": "Llogaria do të fshihet së shpejti nëse nuk hap e Tellomi në telefon. Ky mesazh do të fshihet nëse e ke kryer me sukses. <learnMoreLink>Mëso më shumë</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Hap Signal në telefon për ta mbajtur llogarinë aktive"
+    "messageformat": "Hap Tellomi në telefon për ta mbajtur llogarinë aktive"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Mëso më shumë"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal-i po kalon vështirësi teknike. Po punojmë fort të rikthejmë shërbimin sa më shpejt që të mundet."
+    "messageformat": "Tellomi-i po kalon vështirësi teknike. Po punojmë fort të rikthejmë shërbimin sa më shpejt që të mundet."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Kërkohet përditësim"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Për të përfunduar sinkronizimin e mesazheve, përditëso tani Signal Desktop."
+    "messageformat": "Për të përfunduar sinkronizimin e mesazheve, përditëso tani Tellomi Desktop."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Përditësoje"
@@ -7016,19 +7016,19 @@
     "messageformat": "Kërkohet përditësim"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Për të vazhduar përdorimin e Signal, përditësoje në versionin më të fundit."
+    "messageformat": "Për të vazhduar përdorimin e Tellomi, përditësoje në versionin më të fundit."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Shkarko {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Rihap Signal për të instaluar përditësimin."
+    "messageformat": "Rihap Tellomi për të instaluar përditësimin."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal Desktop dështoi të përditësohej, por është i mundshëm një version i ri. Shko te {downloadUrl} dhe instalo manualisht versionin e ri, më pas ose kontakto me asistencën ose paraqit një ankesë në lidhje me këtë problem."
+    "messageformat": "Tellomi Desktop dështoi të përditësohej, por është i mundshëm një version i ri. Shko te {downloadUrl} dhe instalo manualisht versionin e ri, më pas ose kontakto me asistencën ose paraqit një ankesë në lidhje me këtë problem."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Logoja e Signal"
+    "messageformat": "Logoja e Tellomi"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "Mbrapsht"
@@ -7064,7 +7064,7 @@
     "messageformat": "Verifiko që je njeri për të vazhduar"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "Për të ndihmuar në parandalimin e mesazheve të padëshiruara në Signal, të lutem përfundo verifikimin. Pas verifikimit, mund të vazhdosh me regjistrimin."
+    "messageformat": "Për të ndihmuar në parandalimin e mesazheve të padëshiruara në Tellomi, të lutem përfundo verifikimin. Pas verifikimit, mund të vazhdosh me regjistrimin."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "Provo përsëri verifikimin"
@@ -7304,7 +7304,7 @@
     "messageformat": "PIN i pasaktë"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "Të kanë mbaruar opsionet e kodit PIN, por mund të hysh ende në llogarinë e Signal duke krijuar PIN të ri. Për privatësinë dhe sigurinë tënde, llogaria do të rikthehet pa asnjë informacion të ruajtur të profilit dhe pa parametra."
+    "messageformat": "Të kanë mbaruar opsionet e kodit PIN, por mund të hysh ende në llogarinë e Tellomi duke krijuar PIN të ri. Për privatësinë dhe sigurinë tënde, llogaria do të rikthehet pa asnjë informacion të ruajtur të profilit dhe pa parametra."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "Krijoni PIN të ri"
@@ -7334,7 +7334,7 @@
     "messageformat": "Krijoni PIN-in tuaj"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "Kodet PIN mund të ndihmojnë të rimarrësh llogarinë dhe t'i mbash informacionet të koduara me Signal. <learnMore>Mëso më shumë</learnMore>"
+    "messageformat": "Kodet PIN mund të ndihmojnë të rimarrësh llogarinë dhe t'i mbash informacionet të koduara me Tellomi. <learnMore>Mëso më shumë</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "Krijoni PIN-in tuaj"
@@ -7358,7 +7358,7 @@
     "messageformat": "Paralajmërim"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "Nëse çaktivizon kodin PIN, do të humbësh të gjitha të dhënat kur të riregjistrosh Signal. Nuk mund ta aktivizosh \"Kyçjen e regjistrimit\" kur kodi PIN është i çaktivizuar."
+    "messageformat": "Nëse çaktivizon kodin PIN, do të humbësh të gjitha të dhënat kur të riregjistrosh Tellomi. Nuk mund ta aktivizosh \"Kyçjen e regjistrimit\" kur kodi PIN është i çaktivizuar."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "Çaktivizoje PIN-in"
@@ -7367,10 +7367,10 @@
     "messageformat": "Anulo"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "Rreth kodeve PIN të Signal"
+    "messageformat": "Rreth kodeve PIN të Tellomi"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "Kodet PIN e mbrojnë informacionin e ruajtur në Signal duke e koduar, në mënyrë që vetëm ti të kesh qasje në të. Profili, parametrat dhe kontaktet do të rikthehen kur ta riinstalosh aplikacionin."
+    "messageformat": "Kodet PIN e mbrojnë informacionin e ruajtur në Tellomi duke e koduar, në mënyrë që vetëm ti të kesh qasje në të. Profili, parametrat dhe kontaktet do të rikthehen kur ta riinstalosh aplikacionin."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "Mëso më shumë"
@@ -7403,7 +7403,7 @@
     "messageformat": "Kërkohet përditësim"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "Për të vazhduar me regjistrimin, të lutem përditëso Signal në versionin më të fundit."
+    "messageformat": "Për të vazhduar me regjistrimin, të lutem përditëso Tellomi në versionin më të fundit."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "Përditësoje"
@@ -7433,7 +7433,7 @@
     "messageformat": "Kontakto ndihmën"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signal-i s’mund të mbyllet.",
+    "messageformat": "Tellomi-i s’mund të mbyllet.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7453,14 +7453,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Një version më i ri i Signal është instaluar tashmë. Je i sigurt që do të vazhdosh?",
+    "messageformat": "Një version më i ri i Tellomi është instaluar tashmë. Je i sigurt që do të vazhdosh?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Aplikacioni u vithis"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal-i u rinis pas një vithisjeje. Mund të parashtroni një njoftim vithisjeje, për ta ndihmuar Signal-in të hetojë problemin."
+    "messageformat": "Tellomi-i u rinis pas një vithisjeje. Mund të parashtroni një njoftim vithisjeje, për ta ndihmuar Tellomi-in të hetojë problemin."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Dërgo"
@@ -7565,7 +7565,7 @@
     "messageformat": "Kliko \"{buttonName} \" më poshtë"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Aktivizo \"Signal\""
+    "messageformat": "Aktivizo \"Tellomi\""
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Shko te parametrat"
@@ -7661,7 +7661,7 @@
     "messageformat": "Mëso më tepër"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Kontaktet e Signal"
+    "messageformat": "Kontaktet e Tellomi"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections}janë persona që ke zgjedhur t'u besosh, qoftë nga:"
@@ -7802,7 +7802,7 @@
     "messageformat": "Fshih postimin e përkohshëm nga"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Të gjitha kontaktet e Signal"
+    "messageformat": "Të gjitha kontaktet e Tellomi"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Të gjithë përveç..."
@@ -7880,7 +7880,7 @@
     "messageformat": "Privatësia e postimit tim të përkohshëm"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Zgjidh cili nga kontaktet e Signal mund ta shohë postimin tënd të përkohshëm. Këtë mund ta ndryshosh gjithmonë te parametrat e privatësisë. <learnMoreLink>Mëso më shumë.</learnMoreLink>"
+    "messageformat": "Zgjidh cili nga kontaktet e Tellomi mund ta shohë postimin tënd të përkohshëm. Këtë mund ta ndryshosh gjithmonë te parametrat e privatësisë. <learnMoreLink>Mëso më shumë.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Fshi postimin e përkohshëm"
@@ -7949,7 +7949,7 @@
     "messageformat": "Shkarko Bashkëngjitjen"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Aktivizo leximin e mesazheve për të parë se kush i ka parë postimet e tua të përkohshme. Hap aplikacionin e Signal në celularin tënd dhe shko te Parametrat > Postimet e përkohshme."
+    "messageformat": "Aktivizo leximin e mesazheve për të parë se kush i ka parë postimet e tua të përkohshme. Hap aplikacionin e Tellomi në celularin tënd dhe shko te Parametrat > Postimet e përkohshme."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Ende pa përgjigje"
@@ -8135,7 +8135,7 @@
     "messageformat": "Kodi QR dhe lidhja u rivendosën; emri yt i përdoruesit është {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Skano kodin QR nga telefoni për të biseduar me mua në Signal.",
+    "messageformat": "Skano kodin QR nga telefoni për të biseduar me mua në Tellomi.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8211,7 +8211,7 @@
     "messageformat": "Kaloje"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "Verifikoni PIN-in tuaj të Signal-it"
+    "messageformat": "Verifikoni PIN-in tuaj të Tellomi-it"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "Herë pas here do të kërkojmë të verifikosh kodin PIN, në mënyrë që të mos e harrosh."
@@ -8223,7 +8223,7 @@
     "messageformat": "Jo tani"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "Jepni PIN-in tuaj për Signal-in"
+    "messageformat": "Jepni PIN-in tuaj për Tellomi-in"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "Për të ndihmuar të mësosh përmendësh kodin PIN, do të kërkojmë ta vendosësh atë periodikisht. Do të pyesim më rrallë me kalimin e kohës."
@@ -8241,13 +8241,13 @@
     "messageformat": "Kodi PIN i saktë. Do të ta rikujtojmë më vonë."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal desktop së shpejti nuk do të mbështesë më versionin e {OS} të kompjuterit tënd. Për të vazhduar përdorimin e Signal, përditëso sistemin operativ të kompjuterit tënd deri më {expirationDate}. <learnMoreLink>Mëso më tepër</learnMoreLink>"
+    "messageformat": "Tellomi desktop së shpejti nuk do të mbështesë më versionin e {OS} të kompjuterit tënd. Për të vazhduar përdorimin e Tellomi, përditëso sistemin operativ të kompjuterit tënd deri më {expirationDate}. <learnMoreLink>Mëso më tepër</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal desktop nuk funksionon më në këtë kompjuter. Për të përdorur sërish Signal desktop, përditëso versionin e {OS} të kompjuterit tënd. <learnMoreLink>Mëso më tepër</learnMoreLink>"
+    "messageformat": "Tellomi desktop nuk funksionon më në këtë kompjuter. Për të përdorur sërish Tellomi desktop, përditëso versionin e {OS} të kompjuterit tënd. <learnMoreLink>Mëso më tepër</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal desktop nuk funksionon më në këtë kompjuter. Për të përdorur sërish Signal desktop, përditëso versionin e {OS} të kompjuterit tënd."
+    "messageformat": "Tellomi desktop nuk funksionon më në këtë kompjuter. Për të përdorur sërish Tellomi desktop, përditëso versionin e {OS} të kompjuterit tënd."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "I redaktuar"
@@ -8418,7 +8418,7 @@
     "messageformat": "Kopjo linkun"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Ndaj lidhjen përmes Signal"
+    "messageformat": "Ndaj lidhjen përmes Tellomi"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Fshi lidhjen"
@@ -8481,13 +8481,13 @@
     "messageformat": "Për ta ndryshuar këtë parametër, vendos \"Kush mund të shohë numrin tim\" në \"Askush\"."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Emrat e profileve në Signal zgjidhen nga mbajtësi i llogarisë së tyre:"
+    "messageformat": "Emrat e profileve në Tellomi zgjidhen nga mbajtësi i llogarisë së tyre:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Signal nuk mund të verifikojë emrat dhe fotot"
+    "messageformat": "Tellomi nuk mund të verifikojë emrat dhe fotot"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Signal nuk do të kontaktojë kurrë për të kërkuar kodin e regjistrimit, PIN-in ose kodin e rikthimit"
+    "messageformat": "Tellomi nuk do të kontaktojë kurrë për të kërkuar kodin e regjistrimit, PIN-in ose kodin e rikthimit"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "Ji i kujdesshëm ndaj llogarive që personifikohen si dikush tjetër"
@@ -8517,7 +8517,7 @@
     "messageformat": "Me krenari, enti jofitimprurës"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Dhuro për të mbështetur mesazhet private. Mbaj Signal të pavarur dhe pa reklama. <readMoreLink>Lexo më shumë</readMoreLink>"
+    "messageformat": "Dhuro për të mbështetur mesazhet private. Mbaj Tellomi të pavarur dhe pa reklama. <readMoreLink>Lexo më shumë</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Dhuro"
@@ -8541,7 +8541,7 @@
     "messageformat": "Informacioni yt është privat"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Si një ent jofitimprurës i pavarur, Signal është i përkushtuar ndaj mesazheve dhe thirrjeve private. Pa reklama, pa gjurmues, pa mbikëqyrje. Dhuro sot për të mbështetur Signal."
+    "messageformat": "Si një ent jofitimprurës i pavarur, Tellomi është i përkushtuar ndaj mesazheve dhe thirrjeve private. Pa reklama, pa gjurmues, pa mbikëqyrje. Dhuro sot për të mbështetur Tellomi."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Merr distinktivin opsional në profil kur dhuron"
@@ -8550,10 +8550,10 @@
     "messageformat": "Privatësia jote është misioni ynë"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Signal është një ent jofitimprurës. Signal është një ent jofitimprurës."
+    "messageformat": "Tellomi është një ent jofitimprurës. Tellomi është një ent jofitimprurës."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "Ikonë zemre në stilin e logos së Signal"
+    "messageformat": "Ikonë zemre në stilin e logos së Tellomi"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "OK"
@@ -8568,7 +8568,7 @@
     "messageformat": "Pyetje të dhuruesve"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Faturat nuk sinkronizohen në të gjitha pajisjet. Nëse ke riinstaluar Signal, faturat e dhurimeve të mëparshme nuk do të shfaqen."
+    "messageformat": "Faturat nuk sinkronizohen në të gjitha pajisjet. Nëse ke riinstaluar Tellomi, faturat e dhurimeve të mëparshme nuk do të shfaqen."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "S’ka dëftesa"
@@ -8598,7 +8598,7 @@
     "messageformat": "Kartë krediti ose debiti"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Vendos të dhënat e kartës së kreditit ose debitit. Signal nuk mbledh dhe as nuk ruan të dhënat personale. <learnMoreLink>Mëso më shumë</learnMoreLink>"
+    "messageformat": "Vendos të dhënat e kartës së kreditit ose debitit. Tellomi nuk mbledh dhe as nuk ruan të dhënat personale. <learnMoreLink>Mëso më shumë</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Numri i kartës"
@@ -8610,7 +8610,7 @@
     "messageformat": "MM/YY"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Dhuro {formattedCurrencyAmount} te Signal"
+    "messageformat": "Dhuro {formattedCurrencyAmount} te Tellomi"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Numri i kartës është i pavlefshëm"
@@ -8628,7 +8628,7 @@
     "messageformat": "Kodi është shumë i shkurtër"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Merr distinktivin shtesë të Signal për 30 ditë"
+    "messageformat": "Merr distinktivin shtesë të Tellomi për 30 ditë"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "Shuma minimale e dhurimit është {formattedCurrencyAmount}"
@@ -8712,7 +8712,7 @@
     "messageformat": "Dhurimi u krye me sukses, por nuk mundëm të përditësonim parametrat e distinktivit"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "Për të përditësuar parametrat e distinktivit në pajisjen celulare, shko te Parametrat → Dhuro për Signal → Distinktivët."
+    "messageformat": "Për të përditësuar parametrat e distinktivit në pajisjen celulare, shko te Parametrat → Dhuro për Tellomi → Distinktivët."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Dhurimi u ndërpre"
@@ -8769,7 +8769,7 @@
     "messageformat": "Ndodhi një gabim me dhurimin"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Dhurimi mund të mos jetë përpunuar. Kliko te “Dhuro për Signal” dhe pastaj te “Faturat e dhurimit” për të kontrolluar faturat dhe për t'i konfirmuar."
+    "messageformat": "Dhurimi mund të mos jetë përpunuar. Kliko te “Dhuro për Tellomi” dhe pastaj te “Faturat e dhurimit” për të kontrolluar faturat dhe për t'i konfirmuar."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Provo përsëri ose dërgo regjistrin e diagnostikimeve te \"Ndihma: që të ndihmojë të përfundosh dhurimin. Regjistrat e diagnostifikimeve na ndihmojnë të diagnostikojmë dhe rregullojmë problemin dhe nuk përmbajnë informacion identifikues."
@@ -8811,19 +8811,19 @@
     "messageformat": "Faleminderit për përkrahjen tënde!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Ke fituar një distinktiv dhuruesi nga Signal! Shfaqe atë në profil për të treguar mbështetjen tënde."
+    "messageformat": "Ke fituar një distinktiv dhuruesi nga Tellomi! Shfaqe atë në profil për të treguar mbështetjen tënde."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Shfaqe në Profil"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Mund ta rregullosh këtë te pajisja te Parametrat → Dhuro për Signal → Distinktivët"
+    "messageformat": "Mund ta rregullosh këtë te pajisja te Parametrat → Dhuro për Tellomi → Distinktivët"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "Si shkoi telefonata?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "Kjo na ndihmon të përmirësojmë thirrjet në Signal. Nuk do të ruhen informacione personale të identifikueshme."
+    "messageformat": "Kjo na ndihmon të përmirësojmë thirrjet në Tellomi. Nuk do të ruhen informacione personale të identifikueshme."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Kishte probleme"
@@ -8874,7 +8874,7 @@
     "messageformat": "Përshkrimi i problemeve"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Të lutem, përfshi çdo detaj që lidhet me çështjen. Çdo gjë që ndan këtu do të mbahet private dhe do të përdoret vetëm për të ndihmuar në përmirësimin e thirrjeve në Signal."
+    "messageformat": "Të lutem, përfshi çdo detaj që lidhet me çështjen. Çdo gjë që ndan këtu do të mbahet private dhe do të përdoret vetëm për të ndihmuar në përmirësimin e thirrjeve në Tellomi."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "Të lutem, përshkruaj problemin"
@@ -8940,7 +8940,7 @@
     "messageformat": "Do të duhet ta rilidhësh duke skanuar kodin QR."
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "Nëse ke paguar për Kopjeruajtjet e sigurta të Signal, të gjitha mediat do të transferohen. Përndryshe, do të përfshihen mediat e 45 ditëve të fundit."
+    "messageformat": "Nëse ke paguar për Kopjeruajtjet e sigurta të Tellomi, të gjitha mediat do të transferohen. Përndryshe, do të përfshihen mediat e 45 ditëve të fundit."
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "Transfero"
@@ -8952,14 +8952,14 @@
     "messageformat": "Të fshihen krejt të dhënat?"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "Të gjitha të dhënat aktuale në Signal Desktop do të fshihen. Më pas mund të skanosh kodin QR dhe të transferosh historikun e mesazheve nga telefoni yt."
+    "messageformat": "Të gjitha të dhënat aktuale në Tellomi Desktop do të fshihen. Më pas mund të skanosh kodin QR dhe të transferosh historikun e mesazheve nga telefoni yt."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Ky version përmban një numër përimtimesh të vockla dhe ndreqje të metash për ta mbajtur të rrjedhshme punën e Signal-it.",
+    "messageformat": "Ky version përmban një numër përimtimesh të vockla dhe ndreqje të metash për ta mbajtur të rrjedhshme punën e Tellomi-it.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Rregullime të vogla shtesë, rregullime të gabimeve dhe përmirësime të performancës. Faleminderit që përdor Signal!",
+    "messageformat": "Rregullime të vogla shtesë, rregullime të gabimeve dhe përmirësime të performancës. Faleminderit që përdor Tellomi!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -8979,7 +8979,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Rregullme të vogla, riparime të gabimeve dhe përmirësime të mbarëvajtjes.  Faleminderit që përdorni Signal!",
+    "messageformat": "Rregullme të vogla, riparime të gabimeve dhe përmirësime të mbarëvajtjes.  Faleminderit që përdorni Tellomi!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.24--1": {
