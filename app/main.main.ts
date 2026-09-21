@@ -2670,22 +2670,28 @@ app.on(
   }
 );
 
-if (!app.isDefaultProtocolClient('sgnl')) {
-  log.info('setting signal as the default app for the sgnl url scheme');
-  app.setAsDefaultProtocolClient('sgnl');
+// Tellomi: register the legacy schemes too during the per-client migration (see docs/signal/LINKS_AND_SCHEMES.md)
+for (const legacyScheme of ['sgnl', 'signalcaptcha']) {
+  if (!app.isDefaultProtocolClient(legacyScheme)) {
+    app.setAsDefaultProtocolClient(legacyScheme);
+  }
+}
+if (!app.isDefaultProtocolClient('tellomi')) {
+  log.info('setting signal as the default app for the tellomi url scheme');
+  app.setAsDefaultProtocolClient('tellomi');
 } else {
   log.info(
-    'signal is already registered as the default app for the sgnl url scheme.'
+    'signal is already registered as the default app for the tellomi url scheme.'
   );
 }
-if (!app.isDefaultProtocolClient('signalcaptcha')) {
+if (!app.isDefaultProtocolClient('tellomicaptcha')) {
   log.info(
-    'setting signal as the default app for the signalcaptcha url scheme'
+    'setting signal as the default app for the tellomicaptcha url scheme'
   );
-  app.setAsDefaultProtocolClient('signalcaptcha');
+  app.setAsDefaultProtocolClient('tellomicaptcha');
 } else {
   log.info(
-    'signal is already registered as the default app for the sgnl url scheme.'
+    'signal is already registered as the default app for the tellomi url scheme.'
   );
 }
 
@@ -3053,6 +3059,11 @@ function handleSignalRoute(route: ParsedSignalRoute) {
     mainWindow.webContents.send('show-conversation-via-signal.me', {
       kind: 'encryptedUsername',
       value: route.args.encryptedUsername,
+    });
+  } else if (route.key === 'contactByUsername') {
+    mainWindow.webContents.send('show-conversation-via-signal.me', {
+      kind: 'username',
+      value: route.args.username,
     });
   } else if (route.key === 'showConversation') {
     mainWindow.webContents.send(

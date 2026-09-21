@@ -543,8 +543,10 @@
       ]
     },
     "protocols": {
-      "name": "sgnl-url-scheme",
+      "name": "tellomi-url-scheme",
       "schemes": [
+        "tellomi",
+        "tellomicaptcha",
         "sgnl",
         "signalcaptcha"
       ]
