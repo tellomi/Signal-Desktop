@@ -51,13 +51,14 @@ describe('signalRoutes', () => {
     check('https://tell.cc', null);
     check('tellomi://tell.cc/#p', null);
     check('tellomi://tell.cc/#p/', null);
-    check('tellomi://tell.cc/p/+1234567890', null);
-    check('https://tell.cc/?p/+1234567890', null);
+    check('tellomi://tell.cc/u/p/+1234567890', null);
+    check('https://tell.cc/u?p/+1234567890', null);
+    check('https://tell.cc/#p/+1234567890', null);
   });
 
   it('normalize', () => {
     const check = createCheck({ isRoute: false, hasAppUrl: true });
-    check('http://username:password@tell.cc:8888/#p/+1234567890', null);
+    check('http://username:password@tell.cc:8888/u#p/+1234567890', null);
   });
 
   it('contactByPhoneNumber', () => {
@@ -66,10 +67,10 @@ describe('signalRoutes', () => {
       args: { phoneNumber: '+1234567890' },
     };
     const check = createCheck();
-    check('https://tell.cc/#p/+1234567890', result);
-    check('https://tell.cc#p/+1234567890', result);
-    check('tellomi://tell.cc/#p/+1234567890', result);
-    check('tellomi://tell.cc#p/+1234567890', result);
+    check('https://tell.cc/u#p/+1234567890', result);
+    check('https://tell.cc/u/#p/+1234567890', result);
+    check('tellomi://tell.cc/u#p/+1234567890', result);
+    check('tellomi://tell.cc/u/#p/+1234567890', result);
   });
 
   it('contactByEncryptedUsername', () => {
@@ -78,10 +79,10 @@ describe('signalRoutes', () => {
       args: { encryptedUsername: foo },
     };
     const check = createCheck();
-    check(`https://tell.cc/#eu/${foo}`, result);
-    check(`https://tell.cc#eu/${foo}`, result);
-    check(`tellomi://tell.cc/#eu/${foo}`, result);
-    check(`tellomi://tell.cc#eu/${foo}`, result);
+    check(`https://tell.cc/u#eu/${foo}`, result);
+    check(`https://tell.cc/u/#eu/${foo}`, result);
+    check(`tellomi://tell.cc/u#eu/${foo}`, result);
+    check(`tellomi://tell.cc/u/#eu/${foo}`, result);
   });
 
   it('groupInvites', () => {
