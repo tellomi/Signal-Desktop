@@ -359,6 +359,14 @@ export function createIPCEvents(
               setIsFetchingUUID: noop,
             });
           }
+        } else if (kind === 'username') {
+          // Tellomi: plain username from a tell.cc/<username> link
+          conversationId = await lookupConversationWithoutServiceId({
+            type: 'username',
+            username: value,
+            showUserNotFoundModal,
+            setIsFetchingUUID: noop,
+          });
         } else if (kind === 'encryptedUsername') {
           const usernameBase64 = fromWebSafeBase64(value);
           const username = await resolveUsernameByLinkBase64(usernameBase64);

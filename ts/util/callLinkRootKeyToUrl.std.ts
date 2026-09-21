@@ -6,5 +6,5 @@ export function callLinkRootKeyToUrl(rootKey: string): string | undefined {
     return;
   }
 
-  return `https://signal.link/call/#key=${rootKey}`;
+  return `https://tell.cc/call/#key=${rootKey}`;
 }
