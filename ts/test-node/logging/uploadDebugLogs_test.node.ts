@@ -45,11 +45,11 @@ describe('upload', () => {
   it('makes a request to get the S3 bucket, then uploads it there', async function (this: Mocha.Context) {
     assert.strictEqual(
       await upload({ content: 'hello world', appVersion: '1.2.3', logger }),
-      'https://debuglogs.org/abc123.gz'
+      'https://chat.tellomi.app/debuglogs/abc123.gz'
     );
 
     sinon.assert.calledOnce(this.fakeGet);
-    sinon.assert.calledWith(this.fakeGet, 'https://debuglogs.org/', {
+    sinon.assert.calledWith(this.fakeGet, 'https://chat.tellomi.app/debuglogs/', {
       responseType: 'json',
       headers: { 'User-Agent': 'Signal-Desktop/1.2.3' },
       timeout: { request: durations.MINUTE },

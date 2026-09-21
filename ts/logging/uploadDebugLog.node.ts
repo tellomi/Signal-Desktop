@@ -15,7 +15,7 @@ import { parseUnknown } from '../util/schemas.std.ts';
 
 const gzipAsync = promisify(gzip);
 
-const BASE_URL = 'https://debuglogs.org';
+const BASE_URL = 'https://chat.tellomi.app/debuglogs';   // Tellomi: self-hosted debuglogs (deploy/hk/debuglogs.py), same GET-form / POST-multipart protocol
 
 const UPLOAD_TIMEOUT = { request: durations.MINUTE };
 
