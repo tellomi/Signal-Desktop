@@ -2874,6 +2874,9 @@ ipc.on('get-config', async event => {
     buildExpiration: config.get<number>('buildExpiration'),
     challengeUrl: config.get<string>('challengeUrl'),
     serverUrl: config.get<string>('serverUrl'),
+    libsignalHostname: config.has('libsignalHostname')
+      ? config.get<string>('libsignalHostname')
+      : undefined,
     storageUrl: config.get<string>('storageUrl'),
     updatesUrl: config.get<string>('updatesUrl'),
     resourcesUrl: config.get<string>('resourcesUrl'),

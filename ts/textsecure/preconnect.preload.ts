@@ -19,7 +19,8 @@ const log = createLogger('preconnect');
 function resolveLibsignalNet(
   url: string,
   version: string,
-  certificateAuthority?: string
+  certificateAuthority?: string,
+  libsignalHostname?: string
 ): Net.Net {
   const userAgent = getUserAgent(version);
   log.info(`libsignal net url: ${url}`);
@@ -52,10 +53,10 @@ function resolveLibsignalNet(
   // comes from `certificateAuthority` when set, otherwise the platform trust store.
   const parsed = new URL(url);
   if (parsed.hostname !== 'chat.signal.org') {
-    log.info(`libsignal net environment resolved to custom server ${parsed.hostname}`);
+    log.info(`libsignal net environment resolved to custom server ${libsignalHostname ?? parsed.hostname}`);
     return new Net.Net({
       customServer: {
-        hostname: parsed.hostname,
+        hostname: libsignalHostname ?? parsed.hostname,
         chatPort: parsed.port ? parseInt(parsed.port, 10) : 443,
         rootCertificateDer: certificateAuthority
           ? pemToDer(certificateAuthority)
@@ -90,7 +91,8 @@ if (window.SignalContext.config?.serverUrl) {
   libsignalNet = resolveLibsignalNet(
     config.serverUrl,
     config.version,
-    config.certificateAuthority
+    config.certificateAuthority,
+    config.libsignalHostname
   );
 
   libsignalNet.setIpv6Enabled(!config.disableIPv6);

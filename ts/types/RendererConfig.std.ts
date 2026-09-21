@@ -61,6 +61,8 @@ export const rendererConfigSchema = z.object({
   genericServerPublicParams: configRequiredStringSchema,
   backupServerPublicParams: configRequiredStringSchema,
   serverUrl: configRequiredStringSchema,
+  // Tellomi: libsignal 的聊天主机（Omnibus，websocket / gRPC）；不填 = serverUrl 的主机名。
+  libsignalHostname: configOptionalStringSchema,
   sfuUrl: configRequiredStringSchema,
   storageUrl: configRequiredStringSchema,
   stripePublishableKey: configRequiredStringSchema,
