@@ -363,7 +363,7 @@
       "publish": [
         {
           "provider": "generic",
-          "url": "https://updates.signal.org/desktop"
+          "url": "https://updates.tellomi.app/desktop"
         }
       ],
       "mergeASARs": true,
@@ -455,7 +455,7 @@
       "publish": [
         {
           "provider": "generic",
-          "url": "https://updates.signal.org/desktop"
+          "url": "https://updates.tellomi.app/desktop"
         }
       ],
       "releaseInfo": {

@@ -16,12 +16,13 @@ describe('updater/curve', () => {
     assert.strictEqual(verified, true);
   });
 
+  // Tellomi：签名用我们自己的更新密钥（scripts/tellomi/sign-update.mjs 同一把）重算，公钥 = config updatesPublicKey
   it('verifies with our own key', () => {
     const message = Buffer.from(
       '7761a7761eccc0af7ab67546ec044e40dd1e9762f03d0c504d53fb40ceba5738-1.40.0-beta.3'
     );
     const signature = Buffer.from(
-      '982eee37076a391392879ce7a69e6ce24708cf12abd87624ae116c665e75b5404bf29fe2cd76c6213753bd16d7529f0f9116d63a63e90d2c6c8b57e17cc17100',
+      '993d6582ad3d4713e9f0ad2b65123abd131a014a5e0472beef22fe8368d001f20bdc33956bfccd74a2a4f7ef585c175d5bc26091ecdf4ec26b3842e199fb6005',
       'hex'
     );
     const publicKey = Buffer.from(
