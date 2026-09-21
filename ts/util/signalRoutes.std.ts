@@ -224,8 +224,8 @@ const paramSchema = z.string().min(1);
  */
 const contactByPhoneNumberRoute = _route('contactByPhoneNumber', {
   patterns: [
-    _pattern('https:', 'tell.cc', '{/}?', { hash: 'p/:phoneNumber' }),
-    _pattern('tellomi:', 'tell.cc', '{/}?', { hash: 'p/:phoneNumber' }),
+    _pattern('https:', 'tell.cc', '/u{/}?', { hash: 'p/:phoneNumber' }),
+    _pattern('tellomi:', 'tell.cc', '/u{/}?', { hash: 'p/:phoneNumber' }),
   ],
   schema: z.object({
     phoneNumber: paramSchema, // E164 (with +)
@@ -236,10 +236,10 @@ const contactByPhoneNumberRoute = _route('contactByPhoneNumber', {
     };
   },
   toWebUrl(args) {
-    return new URL(`https://tell.cc/#p/${args.phoneNumber}`);
+    return new URL(`https://tell.cc/u#p/${args.phoneNumber}`);
   },
   toAppUrl(args) {
-    return new URL(`tellomi://tell.cc/#p/${args.phoneNumber}`);
+    return new URL(`tellomi://tell.cc/u#p/${args.phoneNumber}`);
   },
 });
 
@@ -257,10 +257,10 @@ export const contactByEncryptedUsernameRoute = _route(
   'contactByEncryptedUsername',
   {
     patterns: [
-      _pattern('https:', 'tell.cc', '{/}?', {
+      _pattern('https:', 'tell.cc', '/u{/}?', {
         hash: 'eu/:encryptedUsername',
       }),
-      _pattern('tellomi:', 'tell.cc', '{/}?', { hash: 'eu/:encryptedUsername' }),
+      _pattern('tellomi:', 'tell.cc', '/u{/}?', { hash: 'eu/:encryptedUsername' }),
     ],
     schema: z.object({
       encryptedUsername: paramSchema, // base64url (32 bytes of entropy + 16 bytes of big-endian UUID)
@@ -271,10 +271,10 @@ export const contactByEncryptedUsernameRoute = _route(
       };
     },
     toWebUrl(args) {
-      return new URL(`https://tell.cc/#eu/${args.encryptedUsername}`);
+      return new URL(`https://tell.cc/u#eu/${args.encryptedUsername}`);
     },
     toAppUrl(args) {
-      return new URL(`tellomi://tell.cc/#eu/${args.encryptedUsername}`);
+      return new URL(`tellomi://tell.cc/u#eu/${args.encryptedUsername}`);
     },
   }
 );
