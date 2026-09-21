@@ -55,14 +55,7 @@ def main() -> int:
 
     shutil.copy(out / "desktop/png/512x512.png", img / "signal-logo-desktop-linux.png")
 
-    # 代码里内联的标：配对二维码中心（BrandedQRCode）用 ts/components/tellomiMark.std.ts
-    (HERE / "ts/components/tellomiMark.std.ts").write_text(
-        "// Tellomi 品牌标（docs/brand/logo.svg，viewBox 0 0 1024 1024，fill-rule evenodd）。\n"
-        "// 由 clients/desktop/scripts/tellomi/brand-images.py 生成，不要手改；换标只换 logo.svg 再跑一次。\n"
-        "export const TELLOMI_MARK_SIZE = 1024;\n"
-        "export const TELLOMI_MARK_PATHS: ReadonlyArray<string> = [\n"
-        + "".join("  '" + d.replace("'", "\\'") + "',\n" for d in re.findall(r'<path d="([^"]+)"', logo_svg))
-        + "];\n", encoding="utf-8")
+    # （二维码中心不放标：气泡 +「@」是同心图形，会被扫码器当成定位点，2026-09-22 拆掉；见 BrandedQRCode.dom.tsx）
 
     # 安全提示插画里画着 Signal 标的那一张（safety-tip-dont-respond.svg：圆里的 #566b98 路径）→ 换成 Tellomi 标
     tip = img / "safety-tips/safety-tip-dont-respond.svg"

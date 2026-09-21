@@ -3,7 +3,6 @@
 
 import { useMemo, type JSX } from 'react';
 import QR from 'qrcode-generator';
-import { TELLOMI_MARK_PATHS, TELLOMI_MARK_SIZE } from './tellomiMark.std.ts';
 
 export type PropsType = Readonly<{
   size: number;
@@ -11,17 +10,18 @@ export type PropsType = Readonly<{
   color: string;
 }>;
 
-
+// Tellomi: no center mark. Upstream cuts a disc out of the middle for its ring logo; our mark
+// (a speech bubble around an "@") is concentric — dark/light/dark/light/dark along a scan line, the
+// same 1:1:3:1:1 signature scanners use to find the three finder patterns — and at several sizes
+// zbar and the iPhone camera lock onto it instead of the real finders (2026-09-22, owner's iPhone
+// could not pair; offline: 0–12/12 depending on mark size, plain QR 30/30 at every size).
+// The brand lives in the surrounding screen, not inside the code.
 const AUTODETECT_TYPE_NUMBER = 0;
 const ERROR_CORRECTION_LEVEL = 'H';
-const CENTER_CUTAWAY_PERCENTAGE = 30 / 184;
-const CENTER_LOGO_PERCENTAGE = 38 / 184;
-const QR_NATIVE_SIZE = 36;
 
 type ComputeResultType = Readonly<{
   path: string;
   moduleCount: number;
-  radius: number;
 }>;
 
 function compute(link: string): ComputeResultType {
@@ -30,20 +30,9 @@ function compute(link: string): ComputeResultType {
   qr.make();
 
   const moduleCount = qr.getModuleCount();
-  const center = moduleCount / 2;
-  const radius = CENTER_CUTAWAY_PERCENTAGE * moduleCount;
 
   function hasPixel(x: number, y: number): boolean {
     if (x < 0 || y < 0 || x >= moduleCount || y >= moduleCount) {
-      return false;
-    }
-
-    const distanceFromCenter = Math.sqrt(
-      (x - center + 0.5) ** 2 + (y - center + 0.5) ** 2
-    );
-
-    // Center and 1 dot away should remain clear for the logo placement.
-    if (Math.ceil(distanceFromCenter) <= radius + 3) {
       return false;
     }
 
@@ -81,45 +70,17 @@ function compute(link: string): ComputeResultType {
   return {
     path: path.join(''),
     moduleCount,
-    radius,
   };
 }
 
 export function BrandedQRCode({ size, link, color }: PropsType): JSX.Element {
-  const { path, moduleCount, radius } = useMemo(() => compute(link), [link]);
+  const { path, moduleCount } = useMemo(() => compute(link), [link]);
 
   const QR_SCALE = size / 2 / moduleCount;
 
-  const CENTER_X = size / 2;
-  const CENTER_Y = size / 2;
-  const LOGO_SIZE = CENTER_LOGO_PERCENTAGE * size;
-  const LOGO_X = CENTER_X - LOGO_SIZE / 2;
-  const LOGO_Y = CENTER_Y - LOGO_SIZE / 2;
-  const LOGO_SCALE = LOGO_SIZE / QR_NATIVE_SIZE;
-
   return (
-    <>
-      <g transform={`scale(${QR_SCALE} ${QR_SCALE})`}>
-        <path d={path} fill={color} />
-
-        <circle
-          cx={moduleCount}
-          cy={moduleCount}
-          r={radius * 2}
-          stroke={color}
-          strokeWidth={2}
-        />
-      </g>
-
-      <g
-        transform={`translate(${LOGO_X} ${LOGO_Y}) scale(${LOGO_SCALE * (QR_NATIVE_SIZE / TELLOMI_MARK_SIZE)})`}
-        fill={color}
-        fillRule="evenodd"
-      >
-        {TELLOMI_MARK_PATHS.map(d => (
-          <path key={d.slice(0, 24)} d={d} />
-        ))}
-      </g>
-    </>
+    <g transform={`scale(${QR_SCALE} ${QR_SCALE})`}>
+      <path d={path} fill={color} />
+    </g>
   );
 }
