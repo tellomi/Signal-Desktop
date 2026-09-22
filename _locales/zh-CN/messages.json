@@ -8995,6 +8995,6 @@
     "messageformat": "改进了通知设置，增加了更多通知显示方式和时间的选项。"
   },
   "icu:WhatsNew__tellomi--0": {
-    "messageformat": "清掉了残留的 Signal 字样：窗口标题、发行说明、系统联系人、菜单链接。表情字体与搜索索引改从 tellomi.app 下载。"
+    "messageformat": "清掉了最后一批上游品牌残留：窗口标题、发行说明、系统联系人、菜单链接。表情字体与搜索索引改从 tellomi.app 下载。"
   }
 }

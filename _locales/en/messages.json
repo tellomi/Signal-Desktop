@@ -11962,7 +11962,7 @@
     "description": "Release notes for 8.27"
   },
   "icu:WhatsNew__tellomi--0": {
-    "messageformat": "Nothing left that says Signal: window title, release notes, the system contact, menu links. Emoji fonts and search indexes now come from tellomi.app.",
+    "messageformat": "Removed the last upstream brand leftovers: window title, release notes, the system contact, menu links. Emoji fonts and search indexes now come from tellomi.app.",
     "description": "Tellomi release notes; keep in sync with docs/signal/VERSIONS.md, update every release"
   }
 }
