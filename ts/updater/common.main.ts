@@ -133,6 +133,22 @@ const MAX_AUTO_RETRY_ATTEMPTS = 4;
 
 const AUTO_RETRY_DELAY = 10 * durations.MINUTE;
 
+// Tellomi: got's transport failures (socket timeout, reset, aborted response) —
+// as opposed to bad data, HTTP 4xx/5xx, or disk errors.
+function isNetworkError(error: unknown): boolean {
+  const name = (error as { name?: string } | null)?.name;
+  const code = (error as { code?: string } | null)?.code;
+  return (
+    name === 'RequestError' ||
+    name === 'ReadError' ||
+    name === 'TimeoutError' ||
+    code === 'ECONNRESET' ||
+    code === 'ETIMEDOUT' ||
+    code === 'ECONNREFUSED' ||
+    code === 'ENOTFOUND'
+  );
+}
+
 export abstract class Updater {
   protected fileName: string | undefined;
 
@@ -827,6 +843,13 @@ export abstract class Updater {
             'downloadUpdate: Failed to apply differential update',
             Errors.toLogFormat(error)
           );
+          // Tellomi: a flaky link (socket timeout / reset) is not a reason to
+          // throw away the cached installer — keep it so the next attempt can
+          // still be a ~14 MB differential instead of a 146 MB full download
+          // that is even less likely to finish on the same link.
+          if (isNetworkError(error)) {
+            throw error;
+          }
         }
       }
 
