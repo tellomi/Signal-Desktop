@@ -342,7 +342,18 @@ export abstract class Updater {
     const selectedPollTime = Math.round(
       earliestPollTime + Math.random() * POLL_INTERVAL
     );
-    const timeoutMs = selectedPollTime - now;
+    let timeoutMs = selectedPollTime - now;
+
+    // Tellomi: after a failed download we wait AUTO_RETRY_DELAY, but the poll
+    // that would retry is on the regular 30-minute grid, so the retry lands up
+    // to a full interval late (owner waited ~35 minutes for one). Poll again
+    // right after the retry deadline instead.
+    if (this.#autoRetryAfter != null && this.#autoRetryAfter > now) {
+      timeoutMs = Math.min(
+        timeoutMs,
+        this.#autoRetryAfter - now + durations.SECOND
+      );
+    }
 
     this.logger.info(`schedulePoll: polling in ${timeoutMs}ms`);
 

@@ -11962,7 +11962,7 @@
     "description": "Release notes for 8.27"
   },
   "icu:WhatsNew__tellomi--0": {
-    "messageformat": "Updates are more robust on flaky connections: a differential update interrupted by the network is retried instead of falling back to a full download. GIF search works behind TUN proxies.",
+    "messageformat": "After a download fails, the update is retried within minutes instead of waiting for the next half-hour check.",
     "description": "Tellomi release notes; keep in sync with docs/signal/VERSIONS.md, update every release"
   }
 }
