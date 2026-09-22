@@ -11960,5 +11960,9 @@
   "icu:WhatsNew__8.27--0": {
     "messageformat": "This update introduces more granular settings to give you significantly more control over your Tellomi notifications. Now you can choose what appears on the app badge, adjust notification preferences for muted threads, and more! We also added a convenient button to restore the default notification settings if you ever make so many changes that you don't even know how to get ahold of yourself anymore.",
     "description": "Release notes for 8.27"
+  },
+  "icu:WhatsNew__tellomi--0": {
+    "messageformat": "Brand colors updated (ink on light, white on dark). Automatic updates now install on macOS, and a failed download retries within minutes instead of a day.",
+    "description": "Tellomi release notes; keep in sync with docs/signal/VERSIONS.md, update every release"
   }
 }

@@ -5,7 +5,6 @@ import type { JSX } from 'react';
 
 import type { LocalizerType } from '../types/Util.std.ts';
 import { useEscapeHandling } from '../hooks/useEscapeHandling.dom.ts';
-import { tw } from '../axo/tw.dom.tsx';
 
 export type AboutProps = Readonly<{
   closeAbout: () => unknown;
@@ -54,7 +53,7 @@ export function About({
         <div>
           <a
             className="acknowledgments"
-            href="https://github.com/signalapp/Signal-Desktop/blob/main/ACKNOWLEDGMENTS.md"
+            href="https://github.com/tellomi/Signal-Desktop/blob/tellomi/ACKNOWLEDGMENTS.md"
           >
             {i18n('icu:softwareAcknowledgments')}
           </a>
@@ -63,9 +62,6 @@ export function About({
           <a className="privacy" href="https://tellomi.app/legal/">
             {i18n('icu:privacyPolicy')}
           </a>
-        </div>
-        <div className={tw('text-secondary')}>
-          {i18n('icu:signalNonProfit')}
         </div>
       </div>
     </div>

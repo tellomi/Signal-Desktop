@@ -7,7 +7,6 @@ import type { LocalizerType } from '../types/I18N.std.ts';
 import type { NavTabPanelProps } from './NavTabs.dom.tsx';
 import { WhatsNewLink } from './WhatsNewLink.dom.tsx';
 import type { SmartConversationViewProps } from '../state/smart/ConversationView.preload.tsx';
-import { tw } from '../axo/tw.dom.tsx';
 
 export type ChatsTabProps = Readonly<{
   otherTabsUnreadCount: number;
@@ -73,9 +72,7 @@ export function ChatsTab({
               <WhatsNewLink i18n={i18n} showWhatsNewModal={showWhatsNewModal} />
             </p>
             <div className="Inbox__padding" />
-            <div className={tw('absolute bottom-0 p-5 text-secondary')}>
-              {i18n('icu:signalNonProfit')}
-            </div>
+            {/* Tellomi: upstream shows "Signal is a nonprofit" here; not true of us, and there is no honest one-liner to put in its place. */}
           </div>
         )}
       </div>
