@@ -691,7 +691,7 @@ export class ConversationController {
     const conversation = await this.getOrCreateAndWait(SIGNAL_ACI, 'private', {
       muteExpiresAt: MuteExpiration.ALWAYS,
       profileAvatar: { path: SIGNAL_AVATAR_PATH },
-      profileName: 'Signal',
+      profileName: 'Tellomi',
       profileSharing: true,
     });
 
@@ -703,7 +703,7 @@ export class ConversationController {
     }
 
     if (!conversation.get('profileName')) {
-      conversation.set({ profileName: 'Signal' });
+      conversation.set({ profileName: 'Tellomi' });
       await updateConversation(conversation.attributes);
     }
 

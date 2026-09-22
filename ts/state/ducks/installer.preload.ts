@@ -278,7 +278,7 @@ function startInstaller(): ThunkAction<
         });
       } else if (event.kind === ProvisionEventKind.Envelope) {
         const { envelope } = event;
-        const defaultDeviceName = OS.getName() || 'Signal Desktop';
+        const defaultDeviceName = OS.getName() || 'Tellomi Desktop';
         const deviceName = window.SignalCI?.deviceName ?? defaultDeviceName;
 
         const finishInstallOptions: FinishInstallOptionsType = {

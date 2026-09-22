@@ -90,7 +90,7 @@ export function shouldSendToDirectConversation(
       false,
       {
         logLine: `conversation ${conversation.idForLogging()} is unregistered; refusing to send`,
-        error: new Error('Contact no longer has a Signal account'),
+        error: new Error('Contact no longer has a Tellomi account'),
       },
     ];
   }

@@ -1211,9 +1211,7 @@ function openContactUs() {
 
 function openJoinTheBeta() {
   // If we omit the language, the site will detect the language and redirect
-  drop(
-    shell.openExternal('https://tellomi.app/help/360007318471')
-  );
+  drop(shell.openExternal('https://tellomi.app/help/360007318471'));
 }
 
 function openReleaseNotes() {
@@ -1224,20 +1222,18 @@ function openReleaseNotes() {
 
   drop(
     shell.openExternal(
-      `https://github.com/signalapp/Signal-Desktop/releases/tag/v${app.getVersion()}`
+      `https://tellomi.app/download/#desktop-${app.getVersion()}`
     )
   );
 }
 
 function openSupportPage() {
   // If we omit the language, the site will detect the language and redirect
-  drop(
-    shell.openExternal('https://tellomi.app/support/sections/360001602812')
-  );
+  drop(shell.openExternal('https://tellomi.app/support/sections/360001602812'));
 }
 
 function openForums() {
-  drop(shell.openExternal('https://community.signalusers.org/'));
+  drop(shell.openExternal('https://tellomi.app/support/')); // Tellomi: no community forum yet
 }
 
 function showKeyboardShortcuts() {
@@ -1992,11 +1988,7 @@ const onDatabaseInitializationError = async (error: Error) => {
       appRelaunch();
     }
   } else if (buttonIndex === goToSupportPageButtonIndex) {
-    drop(
-      shell.openExternal(
-        'https://tellomi.app/help/9045714156314#desktop'
-      )
-    );
+    drop(shell.openExternal('https://tellomi.app/help/9045714156314#desktop'));
   }
 
   log.error('onDatabaseInitializationError: Quitting application');

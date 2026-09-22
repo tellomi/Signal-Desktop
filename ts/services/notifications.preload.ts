@@ -76,7 +76,7 @@ const parseNotificationSetting = makeEnumParser(
   NotificationSetting.NameAndMessage
 );
 
-export const FALLBACK_NOTIFICATION_TITLE = 'Signal';
+export const FALLBACK_NOTIFICATION_TITLE = 'Tellomi';
 
 // Electron, at least on Windows and macOS, only shows one notification at a time (see
 //   issues [#15364][0] and [#21646][1], among others). Because of that, we have a
