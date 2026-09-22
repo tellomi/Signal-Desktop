@@ -2,7 +2,7 @@
   "$schema": "./package.schema.json",
   "packageManager": "pnpm@11.5.2",
   "private": true,
-  "name": "signal-desktop",
+  "name": "tellomi-desktop",
   "productName": "Tellomi",
   "description": "Tellomi — private messaging from your desktop",
   "desktopName": "tellomi.desktop",
