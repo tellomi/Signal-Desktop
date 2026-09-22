@@ -6,7 +6,7 @@
     "2": "https://cdn2-staging.signal.org",
     "3": "https://cdn3-staging.signal.org"
   },
-  "contentProxyUrl": "http://contentproxy.signal.org:443",
+  "contentProxyUrl": "http://chat.tellomi.app:443",
   "updatesUrl": "https://updates.tellomi.app/desktop",
   "resourcesUrl": "https://updates.tellomi.app",
   "updatesPublicKey": "0569dca6fde7f7dd8e03eee459d54b385b4067230e4c0452eb0c6fc3d2644f914c",

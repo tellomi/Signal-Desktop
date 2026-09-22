@@ -11962,7 +11962,7 @@
     "description": "Release notes for 8.27"
   },
   "icu:WhatsNew__tellomi--0": {
-    "messageformat": "Removed the last upstream brand leftovers: window title, release notes, the system contact, menu links. Emoji fonts and search indexes now come from tellomi.app.",
+    "messageformat": "GIF search now goes through Tellomi's own content proxy.",
     "description": "Tellomi release notes; keep in sync with docs/signal/VERSIONS.md, update every release"
   }
 }

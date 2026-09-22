@@ -10,7 +10,6 @@ const asar = join(app, 'Contents/Resources/app.asar');
 const ALLOW_URL = [
   /staging\.signal\.org/, // config/default.json 的 staging 档，production.json 覆盖；只在 NODE_ENV=staging 生效
   /sfu\.staging\.voip\.signal\.org/,
-  /contentproxy\.signal\.org/, // Giphy 内容代理，等自建（Issue：Giphy key + 香港代理）
   /github\.com\/signalapp\/Signal-Desktop\.git/, // package.json 的 repository 元数据，不是界面
 ];
 const ALLOW_TEXT = [

@@ -16,7 +16,8 @@ import {
 } from '../../../util/gifCdnUrls.dom.ts';
 
 const BASE_API_URL = 'https://api.giphy.com';
-const API_KEY = 'ApVVlSyeBfNKK6UWtnBRq9CvAkWsxayB';
+// Tellomi: our own Giphy key ("tellomi other" app, beta tier 100 calls/h; upgrade before launch). Ships in the client like upstream's.
+const API_KEY = 'GvsTOXfPQO8DlO3skr26EsLGEotcXD4B';
 
 const CONTENT_RATING = 'pg-13';
 const CONTENT_BUNDLE = 'messaging_non_clips';
