@@ -89,6 +89,8 @@ $color-transparent: rgba(0, 0, 0, 0);
 
 $color-ultramarine-dark: #1851b4;
 $color-ultramarine-logo: #3b45fd;
+// Tellomi 品牌标：浅色界面用墨色，深色界面用白（docs/brand/README.md；#884）。不改上游变量名，只在标的两处用它。
+$color-tellomi-ink: #111113;
 $color-ultramarine-light: #6191f3;
 $color-ultramarine-dawn: #406ec9;
 $color-ultramarine-pastel: #abc4f8;

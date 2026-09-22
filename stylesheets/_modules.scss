@@ -42,7 +42,7 @@
 
   @include mixins.color-svg(
     '../images/signal-logo.svg',
-    light-dark(variables.$color-ultramarine-logo, variables.$color-white)
+    light-dark(variables.$color-tellomi-ink, variables.$color-white)
   );
 
   &.module-splash-screen__logo--128 {
