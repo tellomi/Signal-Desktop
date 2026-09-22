@@ -8995,6 +8995,6 @@
     "messageformat": "改进了通知设置，增加了更多通知显示方式和时间的选项。"
   },
   "icu:WhatsNew__tellomi--0": {
-    "messageformat": "品牌标配色更新（亮色墨色、暗色白色）。macOS 自动更新现在能装上了；下载失败几分钟内重试，不再等一天。"
+    "messageformat": "清掉了残留的 Signal 字样：窗口标题、发行说明、系统联系人、菜单链接。表情字体与搜索索引改从 tellomi.app 下载。"
   }
 }
