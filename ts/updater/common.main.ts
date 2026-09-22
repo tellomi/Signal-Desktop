@@ -126,9 +126,12 @@ enum CheckType {
   ForceDownload = 'ForceDownload',
 }
 
-const MAX_AUTO_RETRY_ATTEMPTS = 1;
+// Tellomi: a 146 MB full download over a CN→Cloudflare path gets aborted mid-stream
+// fairly often; upstream's one retry after a day would leave users on the old
+// version for days. Retry on the next poll (≈30 min) a few times before giving up.
+const MAX_AUTO_RETRY_ATTEMPTS = 4;
 
-const AUTO_RETRY_DELAY = durations.DAY;
+const AUTO_RETRY_DELAY = 10 * durations.MINUTE;
 
 export abstract class Updater {
   protected fileName: string | undefined;
