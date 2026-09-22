@@ -16,7 +16,7 @@
   &::before {
     @include mixins.color-svg-themed(
       '../images/signal-logo-and-wordmark.svg',
-      variables.$color-ultramarine-logo,
+      variables.$color-tellomi-ink,
       variables.$color-white
     );
     & {
