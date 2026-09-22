@@ -8995,6 +8995,6 @@
     "messageformat": "改进了通知设置，增加了更多通知显示方式和时间的选项。"
   },
   "icu:WhatsNew__tellomi--0": {
-    "messageformat": "GIF 搜索改走 Tellomi 自己的内容代理。"
+    "messageformat": "GIF 搜索在开着 TUN 代理的网络里也能用了：内容代理改走 TLS。"
   }
 }

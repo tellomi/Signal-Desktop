@@ -11962,7 +11962,7 @@
     "description": "Release notes for 8.27"
   },
   "icu:WhatsNew__tellomi--0": {
-    "messageformat": "GIF search now goes through Tellomi's own content proxy.",
+    "messageformat": "GIF search works again on networks with TUN proxies: the content proxy is now reached over TLS.",
     "description": "Tellomi release notes; keep in sync with docs/signal/VERSIONS.md, update every release"
   }
 }
