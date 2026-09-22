@@ -38,7 +38,7 @@ export function InstallScreenErrorStep({
       errorMessage = i18n('icu:installTooOld');
       buttonText = i18n('icu:upgrade');
       onClickButton = () => {
-        openLinkInWebBrowser('https://signal.org/download');
+        openLinkInWebBrowser('https://tellomi.app/download/');
       };
       shouldShowQuitButton = true;
       break;

@@ -12,7 +12,7 @@ import { AxoAlertDialog } from '../axo/AxoAlertDialog.dom.tsx';
 import { AxoButton } from '../axo/AxoButton.dom.tsx';
 
 const LEARN_MORE_LINK =
-  'https://support.signal.org/hc/articles/360007320551-Linked-Devices';
+  'https://tellomi.app/help/360007320551';
 
 export function MaybeTransferModal({
   i18n,

@@ -31,7 +31,7 @@ export type Props = {
 
 const learnMoreLink = (parts: Array<JSX.Element | string>) => (
   <a
-    href="https://support.signal.org/hc/articles/360007459591"
+    href="https://tellomi.app/help/360007459591"
     target="_blank"
     rel="noreferrer"
     className="module-message-request-actions__message__learn-more"

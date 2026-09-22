@@ -15,7 +15,7 @@ export type PropsType = {
   isMAS: boolean;
 };
 
-const WEBSITE_URL = 'https://signal.org/download/';
+const WEBSITE_URL = 'https://tellomi.app/download/';
 const APP_STORE_URL =
   'https://apps.apple.com/app/signal-private-messenger/id1230208093';
 

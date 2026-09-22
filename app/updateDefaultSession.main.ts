@@ -10,7 +10,7 @@ import type { LoggerType } from '../ts/types/Logging.std.ts';
 import { strictAssert } from '../ts/util/assert.std.ts';
 import type { IpcResponseType } from '../ts/util/desktopCapturer.preload.ts';
 
-const SPELL_CHECKER_DICTIONARY_DOWNLOAD_URL = `https://updates.signal.org/desktop/hunspell_dictionaries/${process.versions.electron}/`;
+const SPELL_CHECKER_DICTIONARY_DOWNLOAD_URL = `https://updates.tellomi.app/desktop/hunspell_dictionaries/${process.versions.electron}/`   // Tellomi: mirror Electron's hunspell dictionaries here (publish-desktop.sh dicts) — otherwise spellcheck silently downloads nothing;
 
 export function updateDefaultSession(
   session: Session,

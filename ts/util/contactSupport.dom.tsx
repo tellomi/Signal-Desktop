@@ -4,7 +4,7 @@
 import type { JSX, ReactNode } from 'react';
 
 export const CONTACT_SUPPORT_URL =
-  'https://support.signal.org/hc/requests/new?desktop';
+  'https://tellomi.app/support/';
 
 export function ContactSupportLink(parts: ReactNode): JSX.Element {
   return (

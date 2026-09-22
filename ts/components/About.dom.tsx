@@ -48,7 +48,7 @@ export function About({
         <div className="About__Body environment">{env}</div>
         <br />
         <div>
-          <a href="https://signal.org">signal.org</a>
+          <a href="https://tellomi.app">tellomi.app</a>
         </div>
         <br />
         <div>
@@ -60,7 +60,7 @@ export function About({
           </a>
         </div>
         <div>
-          <a className="privacy" href="https://signal.org/legal">
+          <a className="privacy" href="https://tellomi.app/legal/">
             {i18n('icu:privacyPolicy')}
           </a>
         </div>

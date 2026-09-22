@@ -54,7 +54,7 @@ const getQrCodeClassName = getClassNamesFor(
 );
 
 const SUPPORT_PAGE =
-  'https://support.signal.org/hc/articles/360007320551-Linked-Devices';
+  'https://tellomi.app/help/360007320551';
 
 export function InstallScreenQrCodeNotScannedStep({
   currentVersion,

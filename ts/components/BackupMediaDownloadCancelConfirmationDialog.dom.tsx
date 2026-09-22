@@ -8,7 +8,7 @@ import { AxoConfirmDialog } from '../axo/AxoConfirmDialog.dom.tsx';
 import { tw } from '../axo/tw.dom.tsx';
 
 const BACKUP_AND_RESTORE_SUPPORT_PAGE =
-  'https://support.signal.org/hc/articles/360007059752-Backup-and-Restore-Messages';
+  'https://tellomi.app/help/360007059752';
 
 const learnMoreLink = (parts: Array<string | JSX.Element>) => (
   <a

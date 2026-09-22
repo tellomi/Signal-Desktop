@@ -842,7 +842,7 @@ export function PreferencesInternal({
               i18n={i18n}
               value={sfuUrl}
               onChange={handleSfuUrlUpdate}
-              placeholder="https://sfu.voip.signal.org"
+              placeholder="https://chat.tellomi.app/callingService"
               moduleClassName="Preferences__ReadonlySqlPlayground__Textarea"
             />
           </div>

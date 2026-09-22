@@ -522,7 +522,7 @@ export function ConversationDetails({
               }
               label={i18n('icu:ConversationDetails--support-center')}
               onClick={() => {
-                openLinkInWebBrowser('https://support.signal.org');
+                openLinkInWebBrowser('https://tellomi.app/support/');
               }}
             />
             <PanelRow

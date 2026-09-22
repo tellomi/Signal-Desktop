@@ -129,7 +129,7 @@
   },
   "icu:privacyPolicy": {
     "messageformat": "Terms & Privacy Policy",
-    "description": "Shown in the about box for the link to https://signal.org/legal"
+    "description": "Shown in the about box for the link to https://tellomi.app/legal/"
   },
   "icu:About__AppEnvironment": {
     "messageformat": "{appEnv}",

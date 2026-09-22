@@ -34,7 +34,7 @@ export function ChatSessionRefreshedNotification(
     setIsDialogOpen(false);
 
     const url =
-      'https://support.signal.org/hc/requests/new?desktop&chat_refreshed';
+      'https://tellomi.app/support/&chat_refreshed';
 
     openLinkInWebBrowser(url);
   }, [setIsDialogOpen]);

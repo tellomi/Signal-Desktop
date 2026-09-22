@@ -47,7 +47,8 @@ export function createSupportUrl({
 
   // This URL needs a hardcoded language because the '?desktop' is dropped if
   //   the page auto-redirects to the proper URL
-  const url = new URL(`https://support.signal.org/hc/${language}/requests/new`);
+  const url = new URL(`https://tellomi.app/support/`);   // Tellomi: one support page; language goes in the query below
+  url.searchParams.set('lang', language);
 
   url.searchParams.set('desktop', '');
 
