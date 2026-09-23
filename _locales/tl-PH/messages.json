@@ -564,7 +564,7 @@
     "messageformat": "Ipapakita sa lahat online ang log na ito para makita ng contributors. Maaari mo itong i-download bago i-submit."
   },
   "icu:debugLogError": {
-    "messageformat": "Something went wrong with the upload! Mag-email sa support@signal.org at i-attach ang iyong log as a text file."
+    "messageformat": "Something went wrong with the upload! Mag-email sa support@tellomi.app at i-attach ang iyong log as a text file."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Debug log submitted"
@@ -2313,7 +2313,7 @@
     "messageformat": "Expired na ang version na ito ng Tellomi Desktop. Mangyaring mag-upgrade sa pinakabagong version upang magpatuloy na makapagpadala ng mensahe."
   },
   "icu:upgrade": {
-    "messageformat": "I-click para pumunta sa signal.org/download"
+    "messageformat": "I-click para pumunta sa tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mensaheng media"

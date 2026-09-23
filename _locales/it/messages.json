@@ -564,7 +564,7 @@
     "messageformat": "Questo log verrà pubblicato online affinché i contributori possano consultarlo. Puoi scaricarlo prima di inviarlo."
   },
   "icu:debugLogError": {
-    "messageformat": "Qualcosa è andato storto con il caricamento! Invia un'email a support@signal.org e allega il tuo log come file di testo."
+    "messageformat": "Qualcosa è andato storto con il caricamento! Invia un'email a support@tellomi.app e allega il tuo log come file di testo."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Log di debug inviato"
@@ -2313,7 +2313,7 @@
     "messageformat": "Questa versione di Tellomi Desktop è scaduta. Per continuare a conversare aggiornala all'ultima versione."
   },
   "icu:upgrade": {
-    "messageformat": "Clicca per andare su signal.org/download"
+    "messageformat": "Clicca per andare su tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Messaggio multimediale"

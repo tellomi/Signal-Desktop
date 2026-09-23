@@ -564,7 +564,7 @@
     "messageformat": "Aquest registre es publicarà en línia perquè els col·laboradors el puguin veure. El pots descarregar abans d'enviar-lo."
   },
   "icu:debugLogError": {
-    "messageformat": "S'ha produït un error amb la càrrega! Envieu un correu electrònic a support@signal.org i adjunteu-hi el registre com a fitxer de text."
+    "messageformat": "S'ha produït un error amb la càrrega! Envieu un correu electrònic a support@tellomi.app i adjunteu-hi el registre com a fitxer de text."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Registre de depuració enviat"
@@ -2313,7 +2313,7 @@
     "messageformat": "Aquesta versió del Tellomi Desktop ha vençut. Actualitzeu-lo a l'última versió per a poder continuar enviant i rebent missatges."
   },
   "icu:upgrade": {
-    "messageformat": "Cliqueu per a anar a signal.org/download"
+    "messageformat": "Cliqueu per a anar a tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Missatge multimèdia"

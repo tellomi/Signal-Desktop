@@ -564,7 +564,7 @@
     "messageformat": "इस लॉग को इंटरनेट पर सबके लिए पोस्ट किया जाएगा, ताकि लोग इसे देख सकें। आप चाहें, तो सबमिट करने से पहले इसे डाउनलोड करके रख लें।"
   },
   "icu:debugLogError": {
-    "messageformat": "अपलोड में कोई गड़बड़ी हुई! कृपया support@signal.org पर ईमेल करें और टेक्स्ट फ़ाइल के रूप में अपना लॉग अटैच करें।"
+    "messageformat": "अपलोड में कोई गड़बड़ी हुई! कृपया support@tellomi.app पर ईमेल करें और टेक्स्ट फ़ाइल के रूप में अपना लॉग अटैच करें।"
   },
   "icu:debugLogSuccess": {
     "messageformat": "डीबग लॉग सबमिट किया गया"
@@ -2313,7 +2313,7 @@
     "messageformat": "Tellomi डेस्कटॉप का यह वर्ज़न एक्सपायर हो गया है। मैसेज भेजने और पाने के लिए इसे अभी अपडेट करें।"
   },
   "icu:upgrade": {
-    "messageformat": "signal.org/download पर जाने के लिए क्लिक करें"
+    "messageformat": "tellomi.app/download पर जाने के लिए क्लिक करें"
   },
   "icu:mediaMessage": {
     "messageformat": "सिर्फ़ मीडिया वाला मैसेज"

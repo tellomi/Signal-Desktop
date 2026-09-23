@@ -564,7 +564,7 @@
     "messageformat": "Denna logg kommer att publiceras offentligt online så att bidragsgivare kan se den. Du kan ladda ner den innan du skickar in den."
   },
   "icu:debugLogError": {
-    "messageformat": "Något gick fel med sändningen! Skicka e-post till support@signal.org och bifoga din logg som en textfil."
+    "messageformat": "Något gick fel med sändningen! Skicka e-post till support@tellomi.app och bifoga din logg som en textfil."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Felsökningslogg har skickats"
@@ -2313,7 +2313,7 @@
     "messageformat": "Den här versionen av Tellomi Desktop har upphört att gälla. Uppgradera till den senaste versionen för att fortsätta chatta."
   },
   "icu:upgrade": {
-    "messageformat": "Klicka för att gå till signal.org/download"
+    "messageformat": "Klicka för att gå till tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mediameddelande"

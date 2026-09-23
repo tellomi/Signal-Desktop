@@ -564,7 +564,7 @@
     "messageformat": "Acest jurnal va fi publicat online pentru ca toți colaboratorii să îl poată vizualiza. Îl poți descărca înainte de a trimite."
   },
   "icu:debugLogError": {
-    "messageformat": "Ceva nu a funcționat în timpul încărcării! Te rugăm trimite un e-mail la support@signal.org și atașează jurnalul ca fișier text."
+    "messageformat": "Ceva nu a funcționat în timpul încărcării! Te rugăm trimite un e-mail la support@tellomi.app și atașează jurnalul ca fișier text."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Jurnal de depanare trimis"
@@ -2313,7 +2313,7 @@
     "messageformat": "Această versiune de Tellomi Desktop a expirat. Te rugăm actualizează la cea mai recentă versiune pentru a putea trimite mesaje în continuare."
   },
   "icu:upgrade": {
-    "messageformat": "Apasă pentru a deschide signal.org/download"
+    "messageformat": "Apasă pentru a deschide tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mesaj media"

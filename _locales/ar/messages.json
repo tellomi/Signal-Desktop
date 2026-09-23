@@ -564,7 +564,7 @@
     "messageformat": "سيُنشَر هذا السّجل علنًا على الانترنت حتى يتمكّن المساهمون من الاطِّلاع عليه. يمكنك تنزيله لمراجعته أو تعديله قبل إرساله."
   },
   "icu:debugLogError": {
-    "messageformat": "حدث خطأ ما بعملية التحميل! يرجى إرسال بريد إلكتروني إلى support@signal.org وإرفاق السجل الخاص بك كملفٍ نصي."
+    "messageformat": "حدث خطأ ما بعملية التحميل! يرجى إرسال بريد إلكتروني إلى support@tellomi.app وإرفاق السجل الخاص بك كملفٍ نصي."
   },
   "icu:debugLogSuccess": {
     "messageformat": "تمَّ إرسال سجل الأخطاء"
@@ -2313,7 +2313,7 @@
     "messageformat": "انتهت صلاحية هذا الإصدار من سيجنال Desktop. يُرجى التحديث لأحدث إصدار للتمكُّن من التراسُل."
   },
   "icu:upgrade": {
-    "messageformat": "‫يُرجى الضغط على زر الفأرة لزيارة signal.org/download"
+    "messageformat": "‫يُرجى الضغط على زر الفأرة لزيارة tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "رسالة وسائط"

@@ -564,7 +564,7 @@
     "messageformat": "این گزارش به‌صورت آنلاین برای عموم منتشر خواهد شد تا مشارکت‌کنندگان مشاهده کنند. می‌توانید قبل از ارسال، آن را دانلود کنید."
   },
   "icu:debugLogError": {
-    "messageformat": "مشکلی در بارگذاری رخ داد. لطفا گزارش خود را به صورت یک فایل متنی به support@signal.org ایمیل کنید."
+    "messageformat": "مشکلی در بارگذاری رخ داد. لطفا گزارش خود را به صورت یک فایل متنی به support@tellomi.app ایمیل کنید."
   },
   "icu:debugLogSuccess": {
     "messageformat": "گزارش رفع عیب ثبت شد"
@@ -2313,7 +2313,7 @@
     "messageformat": "این نسخه‌ی سیگنال قدیمی است. برای ارسال پیام لطفا آن را به آخرین نسخه ارتقاء دهید."
   },
   "icu:upgrade": {
-    "messageformat": "برای رفتن به signal.org/download کلیک کنید"
+    "messageformat": "برای رفتن به tellomi.app/download کلیک کنید"
   },
   "icu:mediaMessage": {
     "messageformat": "پیام رسانه ای"

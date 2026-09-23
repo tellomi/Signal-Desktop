@@ -564,7 +564,7 @@
     "messageformat": "Bu günlük katkıda bulunanların görmesi için herkese açık bir şekilde paylaşılacaktır. Göndermeden önce indirebilirsin."
   },
   "icu:debugLogError": {
-    "messageformat": "Yüklemede bir şeyler ters gitti! Lütfen support@signal.org adresine günlüğünüzü bir metin dosyası olarak eklediğiniz bir e-posta gönderin."
+    "messageformat": "Yüklemede bir şeyler ters gitti! Lütfen support@tellomi.app adresine günlüğünüzü bir metin dosyası olarak eklediğiniz bir e-posta gönderin."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Hata ayıklama günlüğü gönderildi"
@@ -2313,7 +2313,7 @@
     "messageformat": "Tellomi Desktop'ın bu sürümü kullanım dışı kaldı. İletişime devam etmek için lütfen en son sürüme yükseltin."
   },
   "icu:upgrade": {
-    "messageformat": "signal.org/download adresine gitmek için tıklayın"
+    "messageformat": "tellomi.app/download adresine gitmek için tıklayın"
   },
   "icu:mediaMessage": {
     "messageformat": "İçerik İletisi"

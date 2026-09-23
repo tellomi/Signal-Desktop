@@ -564,7 +564,7 @@
     "messageformat": "このログは、関係者が閲覧できるようにオンラインで公開されます。ログは、送信前にダウンロードすることができます。"
   },
   "icu:debugLogError": {
-    "messageformat": "アップロードできませんでした！ログのテキストファイルを support@signal.org にメールでお送りください。"
+    "messageformat": "アップロードできませんでした！ログのテキストファイルを support@tellomi.app にメールでお送りください。"
   },
   "icu:debugLogSuccess": {
     "messageformat": "デバッグログを送信しました"
@@ -2313,7 +2313,7 @@
     "messageformat": "アプリのバージョンが古すぎます。最新版にアップデートしてください。"
   },
   "icu:upgrade": {
-    "messageformat": "クリックして signal.org/download にアクセス"
+    "messageformat": "クリックして tellomi.app/download にアクセス"
   },
   "icu:mediaMessage": {
     "messageformat": "メディアメッセージ"

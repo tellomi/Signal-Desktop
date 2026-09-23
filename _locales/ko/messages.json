@@ -564,7 +564,7 @@
     "messageformat": "이 로그는 기여자들이 볼 수 있도록 온라인에 공개적으로 게시됩니다. 로그는 제출하기 전에 다운로드할 수 있습니다."
   },
   "icu:debugLogError": {
-    "messageformat": "업로드 중 문제가 발생했습니다. 로그를 텍스트 파일로 첨부하여 support@signal.org에 이메일을 보내주세요."
+    "messageformat": "업로드 중 문제가 발생했습니다. 로그를 텍스트 파일로 첨부하여 support@tellomi.app에 이메일을 보내주세요."
   },
   "icu:debugLogSuccess": {
     "messageformat": "디버그 로그 제출함"
@@ -2313,7 +2313,7 @@
     "messageformat": "이 버전의 Tellomi Desktop이 만료되었습니다. 계속 메시지를 보내려면 최신 버전으로 업데이트하세요."
   },
   "icu:upgrade": {
-    "messageformat": "클릭하여 signal.org/download로 이동"
+    "messageformat": "클릭하여 tellomi.app/download로 이동"
   },
   "icu:mediaMessage": {
     "messageformat": "미디어 메시지"

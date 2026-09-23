@@ -564,7 +564,7 @@
     "messageformat": "Log ini akan disiarkan secara terbuka dalam talian untuk dilihat oleh penyumbang. Anda boleh memuat turun fail ini sebelum menghantar."
   },
   "icu:debugLogError": {
-    "messageformat": "Ada sesuatu yang tidak kena dengan muat naik! Sila e-mel support@signal.org dan lampirkan log anda sebagai fail teks."
+    "messageformat": "Ada sesuatu yang tidak kena dengan muat naik! Sila e-mel support@tellomi.app dan lampirkan log anda sebagai fail teks."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Log nyahpepijat dihantar"
@@ -2313,7 +2313,7 @@
     "messageformat": "Versi Tellomi Desktop telah tamat tempoh. Sila naik taraf kepada versi terkini untuk meneruskan pemesejan."
   },
   "icu:upgrade": {
-    "messageformat": "Klik pergi ke signal.org/download"
+    "messageformat": "Klik pergi ke tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mesej Media"

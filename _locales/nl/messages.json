@@ -564,7 +564,7 @@
     "messageformat": "Dit log wordt online openbaar gemaakt zodat bijdragers het kunnen bekijken. Je kunt het downloaden voordat je het indient."
   },
   "icu:debugLogError": {
-    "messageformat": "Er is iets misgegaan bij het uploaden. Stuur alsjeblieft een e-mail naar support@signal.org en voeg aan die e-mail je foutopsporingslog toe als een tekstbestand."
+    "messageformat": "Er is iets misgegaan bij het uploaden. Stuur alsjeblieft een e-mail naar support@tellomi.app en voeg aan die e-mail je foutopsporingslog toe als een tekstbestand."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Foutopsporingslog succesvol geüpload"
@@ -2313,7 +2313,7 @@
     "messageformat": "Deze versie van Tellomi Desktop is verlopen. Werk bij naar de meest recente versie om gesprekken voort te kunnen zetten."
   },
   "icu:upgrade": {
-    "messageformat": "Klik hier om signal.org/download te openen"
+    "messageformat": "Klik hier om tellomi.app/download te openen"
   },
   "icu:mediaMessage": {
     "messageformat": "Mediabericht"

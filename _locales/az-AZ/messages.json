@@ -564,7 +564,7 @@
     "messageformat": "Töhfəçilərin baxması üçün bu qeyd ictimaiyyətə açıq şəkildə paylaşılacaq. Göndərməzdən əvvəl onu endirə bilərsiniz."
   },
   "icu:debugLogError": {
-    "messageformat": "Yükləmə ilə bağlı nəsə səhv getdi! Zəhmət olmasa jurnalı, mətn faylı kimi əlavə edərək support@signal.org ünvanına e-poçt olaraq göndərin."
+    "messageformat": "Yükləmə ilə bağlı nəsə səhv getdi! Zəhmət olmasa jurnalı, mətn faylı kimi əlavə edərək support@tellomi.app ünvanına e-poçt olaraq göndərin."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Sazlama jurnalı göndərildi"
@@ -2313,7 +2313,7 @@
     "messageformat": "\"Tellomi Masaüstü\"nün bu versiyasının istifadə müddəti bitib. Zəhmət olmasa mesajlaşmağa davam etmək üçün son versiyaya yüksəldin."
   },
   "icu:upgrade": {
-    "messageformat": "signal.org/download ünvanına getmək üçün klikləyin"
+    "messageformat": "tellomi.app/download ünvanına getmək üçün klikləyin"
   },
   "icu:mediaMessage": {
     "messageformat": "Media mesajı"

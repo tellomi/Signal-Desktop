@@ -564,7 +564,7 @@
     "messageformat": "Este registro se publicará online y será de acceso público para todas las personas que colaboran con nosotros. Lo puedes descargar antes de enviarlo."
   },
   "icu:debugLogError": {
-    "messageformat": "No se ha podido completar la carga. Envía el registro de depuración en un archivo de texto a support@signal.org."
+    "messageformat": "No se ha podido completar la carga. Envía el registro de depuración en un archivo de texto a support@tellomi.app."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Registro de depuración enviado"
@@ -2313,7 +2313,7 @@
     "messageformat": "Esta versión de Tellomi Desktop ha caducado. Actualiza a la última versión para seguir chateando."
   },
   "icu:upgrade": {
-    "messageformat": "Haz clic para ir a signal.org/download"
+    "messageformat": "Haz clic para ir a tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mensaje multimedia"

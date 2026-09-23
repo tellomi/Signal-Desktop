@@ -564,7 +564,7 @@
     "messageformat": "योगदानकर्त्यांना पाहाता येण्यासाठी हा लॉग सार्वजनिकरित्या प्रकाशित केला जाईल. सबमिट करण्यापूर्वी तुम्ही तो डाऊनलोड करू शकता."
   },
   "icu:debugLogError": {
-    "messageformat": "अपलोड मध्ये काहीतरी चुकले! कृपया support@signal.org ला इमेल करा आणि तुमचा लॉग टेक्स्ट फाईल रूपात संलग्न करा."
+    "messageformat": "अपलोड मध्ये काहीतरी चुकले! कृपया support@tellomi.app ला इमेल करा आणि तुमचा लॉग टेक्स्ट फाईल रूपात संलग्न करा."
   },
   "icu:debugLogSuccess": {
     "messageformat": "दुरुस्ती/डिबग लॉग सादर केला"
@@ -2313,7 +2313,7 @@
     "messageformat": "Tellomi Desktop ची ही आवृत्ती कालबाह्य झाली आहे. संदेशन सुरू ठेवण्यासाठी कृपया नवीनतम आवृत्तीवर श्रेणीसुधारित करा."
   },
   "icu:upgrade": {
-    "messageformat": "signal.org/download वर जाण्यासाठी क्लिक करा"
+    "messageformat": "tellomi.app/download वर जाण्यासाठी क्लिक करा"
   },
   "icu:mediaMessage": {
     "messageformat": "मिडिया संदेश"

@@ -564,7 +564,7 @@
     "messageformat": "Catatan ini akan diposkan online untuk umum agar para kontributor dapat melihatnya. Boleh diunduh dulu sebelum dikirim."
   },
   "icu:debugLogError": {
-    "messageformat": "Terjadi kesalahan ketika mengunggah! Kirimkan email ke support@signal.org dan lampirkan log Anda dalam bentuk teks."
+    "messageformat": "Terjadi kesalahan ketika mengunggah! Kirimkan email ke support@tellomi.app dan lampirkan log Anda dalam bentuk teks."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Log debug terkirim"
@@ -2313,7 +2313,7 @@
     "messageformat": "Versi Tellomi Desktop ini telah kedaluwarsa. Mohom memutakhirkan ke versi terbaru untuk melanjutkan pengiriman pesan."
   },
   "icu:upgrade": {
-    "messageformat": "Klik untuk pergi ke signal.org/download"
+    "messageformat": "Klik untuk pergi ke tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Pesan Media"

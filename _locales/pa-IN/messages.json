@@ -564,7 +564,7 @@
     "messageformat": "ਇਸ ਲੌਗ ਨੂੰ ਯੋਗਦਾਨ ਪਾਉਣ ਵਾਲਿਆਂ ਦੇ ਦੇਖਣ ਲਈ ਜਨਤਕ ਤੌਰ ’ਤੇ ਆਨਲਾਈਨ ਪੋਸਟ ਕੀਤਾ ਜਾਵੇਗਾ। ਤੁਸੀਂ ਇਸ ਨੂੰ ਦਰਜ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਡਾਊਨਲੋਡ ਕਰ ਸਕਦੇ ਹੋ।"
   },
   "icu:debugLogError": {
-    "messageformat": "ਅੱਪਲੋਡ ਵਿੱਚ ਕੋਈ ਗੜਬੜੀ ਆ ਗਈ ਸੀ! ਕਿਰਪਾ ਕਰਕੇ support@signal.org 'ਤੇ ਈਮੇਲ ਕਰੋ ਅਤੇ ਟੈਕਸਟ ਫਾਈਲ ਦੇ ਰੂਪ ਵਿੱਚ ਆਪਣੇ ਲੌਗ ਨੂੰ ਅਟੈਚ ਕਰੋ।"
+    "messageformat": "ਅੱਪਲੋਡ ਵਿੱਚ ਕੋਈ ਗੜਬੜੀ ਆ ਗਈ ਸੀ! ਕਿਰਪਾ ਕਰਕੇ support@tellomi.app 'ਤੇ ਈਮੇਲ ਕਰੋ ਅਤੇ ਟੈਕਸਟ ਫਾਈਲ ਦੇ ਰੂਪ ਵਿੱਚ ਆਪਣੇ ਲੌਗ ਨੂੰ ਅਟੈਚ ਕਰੋ।"
   },
   "icu:debugLogSuccess": {
     "messageformat": "ਡੀਬੱਗ ਲੌਗ ਦਰਜ ਕੀਤਾ ਗਿਆ"
@@ -2313,7 +2313,7 @@
     "messageformat": "Tellomi Desktop ਦੇ ਇਸ ਸੰਸਕਰਣ ਦੀ ਮਿਆਦ ਪੁੱਗ ਚੁੱਕੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਮੈੇਸੇਜਿੰਗ ਨੂੰ ਜਾਰੀ ਰੱਖਣ ਲਈ ਤਾਜ਼ਾ ਸੰਸਕਰਣ ਲਈ ਅਪਗ੍ਰੇਡ ਕਰੋ।"
   },
   "icu:upgrade": {
-    "messageformat": "signal.org/download ‘ਤੇ ਜਾਣ ਲਈ ਕਲਿੱਕ ਕਰੋ"
+    "messageformat": "tellomi.app/download ‘ਤੇ ਜਾਣ ਲਈ ਕਲਿੱਕ ਕਰੋ"
   },
   "icu:mediaMessage": {
     "messageformat": "ਮੀਡੀਆ ਸੁਨੇਹਾ"

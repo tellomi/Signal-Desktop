@@ -564,7 +564,7 @@
     "messageformat": "此日志将会在线上公开发布，供贡献者查看。您可以先下载再提交。"
   },
   "icu:debugLogError": {
-    "messageformat": "上传出现了问题！请发送电子邮件至 support@signal.org 并在附件中添加日志的文本文件。"
+    "messageformat": "上传出现了问题！请发送电子邮件至 support@tellomi.app 并在附件中添加日志的文本文件。"
   },
   "icu:debugLogSuccess": {
     "messageformat": "调试日志发送"
@@ -2313,7 +2313,7 @@
     "messageformat": "此版本的 Tellomi Desktop 已过期，请升级到最新版本以继续发送消息。"
   },
   "icu:upgrade": {
-    "messageformat": "点击前往 signal.org/download"
+    "messageformat": "点击前往 tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "媒体信息"

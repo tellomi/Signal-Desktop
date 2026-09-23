@@ -564,7 +564,7 @@
     "messageformat": "ეს რეესტრი საჯაროდ გამოქვეყნდება, რომ კონტრიბუტორებმა ნახონ. შეგიძლია ატვირთვამდე გადმოწერო."
   },
   "icu:debugLogError": {
-    "messageformat": "ატვირთვისას რაღაც შეცდომა მოხდა! გთხოვთ, support@signal.org -ს მიწერო და შენი რეესტრი ტექსტურ ფაილად დაურთო."
+    "messageformat": "ატვირთვისას რაღაც შეცდომა მოხდა! გთხოვთ, support@tellomi.app -ს მიწერო და შენი რეესტრი ტექსტურ ფაილად დაურთო."
   },
   "icu:debugLogSuccess": {
     "messageformat": "გაუმართაობის რეესტრი ატვირთულია"
@@ -2313,7 +2313,7 @@
     "messageformat": "This version of Tellomi Desktop has expired. Please upgrade to the latest version to continue messaging."
   },
   "icu:upgrade": {
-    "messageformat": "დააჭირე signal.org/download-ზე გადასასვლელად"
+    "messageformat": "დააჭირე tellomi.app/download-ზე გადასასვლელად"
   },
   "icu:mediaMessage": {
     "messageformat": "მედია შეტყობინება"

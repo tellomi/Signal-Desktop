@@ -18,6 +18,16 @@ RULES = [
     (re.compile(r"https://support\.signal\.org/hc/"), "https://tellomi.app/support/"),
     (re.compile(r"https://signal\.org/legal/?"), "https://tellomi.app/legal/"),
     (re.compile(r"https://updates2\.signal\.org/static/badges/"), "https://updates.tellomi.app/static/badges/"),
+    # Scheme-less text and e-mail addresses (#1045). Every rule above requires `https://`, and so did the
+    # --check regex below -- so the two user-visible strings that spell the host WITHOUT a scheme
+    # ("Click to go to signal.org/download", "Please email support@signal.org") matched nothing and
+    # --check still printed "no user-facing signal.org links left". They shipped in 0.1.8, in all 68 locales.
+    # Keep these LAST: the https:// rules above have already rewritten the real links by this point.
+    # The look-behind lists ASCII explicitly instead of `\w`, for the same reason rename-strings.py
+    # avoids `\b`: Python's `\w` includes CJK, and zh-HK / zh-Hant write "點擊進入signal.org/download"
+    # with no space -- `(?<!\w)` would silently skip two of the five languages we actually ship.
+    (re.compile(r"(?<![/@A-Za-z0-9._-])signal\.org/download/?"), "tellomi.app/download"),
+    (re.compile(r"support@signal\.org"), "support@tellomi.app"),
 ]
 SKIP = re.compile(r"(^|/)(test-[a-z]+|test|node_modules|release|build)/|_test\.|\.stories\.|signalRoutes\.std\.ts$")
 
@@ -38,8 +48,18 @@ for p in files():
     for rx, rep in RULES:
         t = rx.sub(rep, t)
     if check:
-        for m in re.finditer(r"https?://[A-Za-z0-9./_-]*signal\.org[A-Za-z0-9./_?=#-]*", t):
-            remaining.append(f"{os.path.relpath(p, ROOT)}: {m.group(0)}")
+        # Two patterns, not one. The first is the original (a scheme makes it a link, whatever the host).
+        # The second is why 0.1.8 shipped with signal.org in five languages (#1045): requiring `https://`
+        # hid both "Click to go to signal.org/download" and "Please email support@signal.org", and this
+        # check printed "no user-facing signal.org links left" the whole time.
+        # The scheme-less pattern deliberately requires a path (`signal.org/...`) or an `@`, so that bare
+        # infrastructure hosts (chat/storage/cdn*.signal.org in createHTTPSAgent, preconnect) stay out of
+        # it -- those are endpoints, not links, and they have their own checks.
+        for rx in (r"https?://[A-Za-z0-9./_-]*signal\.org[A-Za-z0-9./_?=#-]*",
+                   r"(?<![A-Za-z0-9._-])signal\.org/[A-Za-z0-9./_?=#-]*",
+                   r"[A-Za-z0-9._%+-]+@signal\.org"):
+            for m in re.finditer(rx, t):
+                remaining.append(f"{os.path.relpath(p, ROOT)}: {m.group(0)}")
     elif t != s:
         open(p, "w", encoding="utf-8").write(t); changed += 1
 if check:

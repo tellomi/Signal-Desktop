@@ -564,7 +564,7 @@
     "messageformat": "Erregistro hau publikoki argitaratuko da, laguntzaileek ikus dezaten. Bidali aurretik, deskargatu egin dezakezu."
   },
   "icu:debugLogError": {
-    "messageformat": "Arazoren bat izan da kargatzean! Bidali mezu elektroniko bat support@signal.org helbidera eta erantsi erregistroa testu-fitxategi gisa."
+    "messageformat": "Arazoren bat izan da kargatzean! Bidali mezu elektroniko bat support@tellomi.app helbidera eta erantsi erregistroa testu-fitxategi gisa."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Bidali da arazketa-erregistroa"
@@ -2313,7 +2313,7 @@
     "messageformat": "Tellomi Desktop bertsio hau iraungi da. Mesedez, mezuak bidaltzen jarraitzeko, eguneratu azken bertsiora."
   },
   "icu:upgrade": {
-    "messageformat": "Egin klik signal.org/download helbidera joateko"
+    "messageformat": "Egin klik tellomi.app/download helbidera joateko"
   },
   "icu:mediaMessage": {
     "messageformat": "Medioen Mezua"

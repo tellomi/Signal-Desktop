@@ -564,7 +564,7 @@
     "messageformat": "Regjistri do të postohet publikisht në internet që ta shohin kontribuesit. Mund ta shkarkosh përpara se ta dërgosh."
   },
   "icu:debugLogError": {
-    "messageformat": "Diç shkoi ters me ngarkimin! Ju lutemi, dërgoni një email te support@signal.org dhe bashkëngjitni si një kartelë tekst regjistrin tuaj."
+    "messageformat": "Diç shkoi ters me ngarkimin! Ju lutemi, dërgoni një email te support@tellomi.app dhe bashkëngjitni si një kartelë tekst regjistrin tuaj."
   },
   "icu:debugLogSuccess": {
     "messageformat": "U parashtrua regjistër diagnostikimi"
@@ -2313,7 +2313,7 @@
     "messageformat": "Ky version i Tellomi-it për Desktop ka skaduar. Ju lutemi, që të vazhdoni të shkëmbeni mesazhe, përmirësojeni me versionin më të ri."
   },
   "icu:upgrade": {
-    "messageformat": "Klikoni që të kalohet te signal.org/download"
+    "messageformat": "Klikoni që të kalohet te tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mesazh media"

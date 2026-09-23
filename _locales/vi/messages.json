@@ -564,7 +564,7 @@
     "messageformat": "Nhật ký này sẽ được đăng trực tuyến công khai cho những người đóng góp theo dõi. Bạn có thể tải nhật ký xuống trước khi gửi."
   },
   "icu:debugLogError": {
-    "messageformat": "Đã xảy ra sự cố với quá trình tải lên! Vui lòng gửi email tới support@signal.org và đính kèm nhật ký của bạn dưới dạng tệp văn bản."
+    "messageformat": "Đã xảy ra sự cố với quá trình tải lên! Vui lòng gửi email tới support@tellomi.app và đính kèm nhật ký của bạn dưới dạng tệp văn bản."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Đã gửi nhật ký gỡ lỗi"
@@ -2313,7 +2313,7 @@
     "messageformat": "Phiên bản này của Tellomi Desktop đã hết hạn. Vui lòng nâng cấp lên phiên bản mới nhất để tiếp tục nhắn tin."
   },
   "icu:upgrade": {
-    "messageformat": "Nhấn để truy cập signal.org/download"
+    "messageformat": "Nhấn để truy cập tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Tin nhắn Đa phương tiện"

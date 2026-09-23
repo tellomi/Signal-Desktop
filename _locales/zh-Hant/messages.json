@@ -564,7 +564,7 @@
     "messageformat": "此記錄將公開發布於線上供貢獻者查閱。你可在提交前下載該檔案。"
   },
   "icu:debugLogError": {
-    "messageformat": "上傳出了點問題！ 請傳送電子郵件至 support@signal.org 並將你的日誌作為文字檔案附上。"
+    "messageformat": "上傳出了點問題！ 請傳送電子郵件至 support@tellomi.app 並將你的日誌作為文字檔案附上。"
   },
   "icu:debugLogSuccess": {
     "messageformat": "偵錯日誌已上傳"
@@ -2313,7 +2313,7 @@
     "messageformat": "您使用的 Tellomi 桌面版已經過期，請更新到最新版來傳送訊息。"
   },
   "icu:upgrade": {
-    "messageformat": "點擊進入signal.org/download"
+    "messageformat": "點擊進入tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "媒體訊息"

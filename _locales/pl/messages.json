@@ -564,7 +564,7 @@
     "messageformat": "Dziennik zostanie udostępniony publicznie, aby twórcy aplikacji mogli go sprawdzić. Przed przesłaniem możesz go pobrać."
   },
   "icu:debugLogError": {
-    "messageformat": "Podczas przesyłania coś poszło nie tak. Wyślij e-mail na adres support@signal.org i załącz dziennik jako plik tekstowy."
+    "messageformat": "Podczas przesyłania coś poszło nie tak. Wyślij e-mail na adres support@tellomi.app i załącz dziennik jako plik tekstowy."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Dziennik debugowania przesłany"
@@ -2313,7 +2313,7 @@
     "messageformat": "Ta wersja Tellomi Desktop jest przestarzała. Aby dalej wysyłać i otrzymywać wiadomości, zaktualizuj aplikację do najnowszej wersji."
   },
   "icu:upgrade": {
-    "messageformat": "Kliknij, aby przejść na stronę signal.org/download"
+    "messageformat": "Kliknij, aby przejść na stronę tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Wiadomość multimedialna"

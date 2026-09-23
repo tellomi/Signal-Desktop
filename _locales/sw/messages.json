@@ -564,7 +564,7 @@
     "messageformat": "Kumbukumbu hii itachapishwa hadharani mtandaoni ili wachangiaji watazame. Unaweza kuipakua kabla hujawasilisha."
   },
   "icu:debugLogError": {
-    "messageformat": "Kuna hitilafu katika upakiaji! Tafadhali tuma barua pepe kwa support@signal.org  na uambatanishe na logi yako kama faili ya maandishi."
+    "messageformat": "Kuna hitilafu katika upakiaji! Tafadhali tuma barua pepe kwa support@tellomi.app  na uambatanishe na logi yako kama faili ya maandishi."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Logi ya debug imewasilishwa"
@@ -2313,7 +2313,7 @@
     "messageformat": "Toleo hili la Tellomi Desktop limeisha. Tafadhali boresha hadi kwenye toleo la hivi punde zaidi  ili uendelee kutuma ujumbe."
   },
   "icu:upgrade": {
-    "messageformat": "Bonyeza ili kwenda kwa signal.org/download"
+    "messageformat": "Bonyeza ili kwenda kwa tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Ujumbe wa Media"

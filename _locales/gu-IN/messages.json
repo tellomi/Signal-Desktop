@@ -564,7 +564,7 @@
     "messageformat": "આ લૉગ યોગદાનકર્તાઓ જોઈ શકે તે માટે સાર્વજનિક રીતે ઓનલાઇન પોસ્ટ કરવામાં આવશે. તમે સબમિટ કરતા પહેલાં તેને ડાઉનલોડ કરી શકો છો."
   },
   "icu:debugLogError": {
-    "messageformat": "અપલોડ કરવામાં કશુંક ખોટું થયું! કૃપા કરીને support@signal.org ને ઇમેઇલ કરો અને તમારા લૉગને ટેક્સ્ટ ફાઇલ તરીકે અટેચ કરો."
+    "messageformat": "અપલોડ કરવામાં કશુંક ખોટું થયું! કૃપા કરીને support@tellomi.app ને ઇમેઇલ કરો અને તમારા લૉગને ટેક્સ્ટ ફાઇલ તરીકે અટેચ કરો."
   },
   "icu:debugLogSuccess": {
     "messageformat": "ડીબગ લૉગ સબમિટ કર્યો"
@@ -2313,7 +2313,7 @@
     "messageformat": "Tellomi ડેસ્કટોપનું આ વર્ઝન સમાપ્ત થઈ ગયું છે. મેસેજિંગ ચાલુ રાખવા માટે કૃપા કરીને નવીનતમ સંસ્કરણ પર અપગ્રેડ કરો."
   },
   "icu:upgrade": {
-    "messageformat": "signal.org/download પર જવા ક્લિક કરો"
+    "messageformat": "tellomi.app/download પર જવા ક્લિક કરો"
   },
   "icu:mediaMessage": {
     "messageformat": "મીડિયા મેસેજ"

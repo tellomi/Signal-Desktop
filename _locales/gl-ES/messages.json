@@ -564,7 +564,7 @@
     "messageformat": "Este rexistro publicarase en liña de forma pública para que os colaboradores poidan velo. Podes descargalo antes de envialo."
   },
   "icu:debugLogError": {
-    "messageformat": "Algo saíu mal durante a subida! Envía un correo electrónico a support@signal.org e envía anexo o teu rexistro como ficheiro de texto."
+    "messageformat": "Algo saíu mal durante a subida! Envía un correo electrónico a support@tellomi.app e envía anexo o teu rexistro como ficheiro de texto."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Rexistro de depuración enviado"
@@ -2313,7 +2313,7 @@
     "messageformat": "This version of Tellomi Desktop has expired. Please upgrade to the latest version to continue messaging."
   },
   "icu:upgrade": {
-    "messageformat": "Premer para ir a signal.org/download"
+    "messageformat": "Premer para ir a tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mensaxe multimedia"

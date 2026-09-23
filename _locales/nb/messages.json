@@ -564,7 +564,7 @@
     "messageformat": "Denne loggen publiseres på nettet, slik at bidragsytere kan se den. Du kan laste den ned før du sender den inn."
   },
   "icu:debugLogError": {
-    "messageformat": "Noe gikk galt under opplastingen! Send en e-post til support@signal.org og legg ved loggen din som en tekstfil."
+    "messageformat": "Noe gikk galt under opplastingen! Send en e-post til support@tellomi.app og legg ved loggen din som en tekstfil."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Feilsøkingslogg sendt inn"
@@ -2313,7 +2313,7 @@
     "messageformat": "Denne versjonen av Tellomi Desktop er utdatert. Oppdater til den nyeste versjonen for å fortsette å sende meldinger."
   },
   "icu:upgrade": {
-    "messageformat": "Klikk for å gå til signal.org/download"
+    "messageformat": "Klikk for å gå til tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mediemelding"

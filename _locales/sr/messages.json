@@ -564,7 +564,7 @@
     "messageformat": "Овај извештај ће бити јавно објављен и видљив сарадницима. Можете га преузети пре отпремања."
   },
   "icu:debugLogError": {
-    "messageformat": "Дошло је до грешке приликом отпремања. Пошаљите поруку на support@signal.org и приложите извештај као текстуални фајл."
+    "messageformat": "Дошло је до грешке приликом отпремања. Пошаљите поруку на support@tellomi.app и приложите извештај као текстуални фајл."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Извештај о грешкама је послат"
@@ -2313,7 +2313,7 @@
     "messageformat": "Ова верзија Tellomi Desktop-а је застарела. Да бисте наставили са дописивањем, надоградите апликацију на најновију верзију."
   },
   "icu:upgrade": {
-    "messageformat": "Кликните да одете на signal.org/download"
+    "messageformat": "Кликните да одете на tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Медијска порука"

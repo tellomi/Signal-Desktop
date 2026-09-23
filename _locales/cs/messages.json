@@ -564,7 +564,7 @@
     "messageformat": "Tento protokol bude zveřejněn online, aby si jej mohli přispěvatelé prohlédnout. Před odesláním si jej můžete stáhnout."
   },
   "icu:debugLogError": {
-    "messageformat": "Při nahrávání se něco pokazilo! Pošlete prosím e-mail na adresu support@signal.org a přiložte protokol jako textový soubor."
+    "messageformat": "Při nahrávání se něco pokazilo! Pošlete prosím e-mail na adresu support@tellomi.app a přiložte protokol jako textový soubor."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Protokol ladění odeslán"
@@ -2313,7 +2313,7 @@
     "messageformat": "Tato verze aplikace Tellomi Desktop je zastaralá. Abyste mohli dále komunikovat, aktualizujte ji na nejnovější verzi."
   },
   "icu:upgrade": {
-    "messageformat": "Kliknutím přejedete na signal.org/download"
+    "messageformat": "Kliknutím přejedete na tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Multimediální zpráva"

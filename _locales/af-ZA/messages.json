@@ -564,7 +564,7 @@
     "messageformat": "Hierdie log sal publiek aanlyn geplaas word vir bydraers om te besigtig. Jy kan dit aflaai voordat jy dit indien."
   },
   "icu:debugLogError": {
-    "messageformat": "Iets het verkeerd geloop met die oplaai! Stuur asb. 'n e-pos aan support@signal.org en heg jou log as 'n tekslêer aan."
+    "messageformat": "Iets het verkeerd geloop met die oplaai! Stuur asb. 'n e-pos aan support@tellomi.app en heg jou log as 'n tekslêer aan."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Ontfout-log ingedien"
@@ -2313,7 +2313,7 @@
     "messageformat": "Hierdie weergawe van Tellomi Desktop het verval. Gradeer asseblief op na die jongste weergawe om voort te gaan om boodskappe te stuur en ontvang."
   },
   "icu:upgrade": {
-    "messageformat": "Klik om na signal.org/download te gaan"
+    "messageformat": "Klik om na tellomi.app/download te gaan"
   },
   "icu:mediaMessage": {
     "messageformat": "Mediaboodskap"

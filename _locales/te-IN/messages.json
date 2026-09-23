@@ -564,7 +564,7 @@
     "messageformat": "సహాయకులు వీక్షించడానికి ఈ లాగ్ బహిరంగంగా ఆన్‌లైన్‌లో పోస్ట్ చేయబడుతుంది. సమర్పించడానికి ముందు మీరు దానిని డౌన్‌లోడ్ చేసుకోవచ్చు."
   },
   "icu:debugLogError": {
-    "messageformat": "అప్‌లోడ్‌తో ఏదో తప్పు జరిగింది! దయచేసి support@signal.org కు ఇమెయిల్ చేసి, టెక్ట్స్ ఫైల్ వలే మీ లాగ్‌ని జతచేయండి."
+    "messageformat": "అప్‌లోడ్‌తో ఏదో తప్పు జరిగింది! దయచేసి support@tellomi.app కు ఇమెయిల్ చేసి, టెక్ట్స్ ఫైల్ వలే మీ లాగ్‌ని జతచేయండి."
   },
   "icu:debugLogSuccess": {
     "messageformat": "డీబగ్ లాగ్ సబ్మిట్ చేయబడింది"
@@ -2313,7 +2313,7 @@
     "messageformat": "Tellomi Desktop యొక్క ఈ వెర్షన్ గడువు ముగిసింది. సందేశాన్ని కొనసాగించడానికి దయచేసి తాజా సంస్కరణకు అభివృద్ధి చేయండి."
   },
   "icu:upgrade": {
-    "messageformat": "signal.org/download కు వెళ్లడానికి క్లిక్ చేయండి"
+    "messageformat": "tellomi.app/download కు వెళ్లడానికి క్లిక్ చేయండి"
   },
   "icu:mediaMessage": {
     "messageformat": "మీడియా సందేశం"

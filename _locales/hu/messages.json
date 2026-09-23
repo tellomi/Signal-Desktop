@@ -564,7 +564,7 @@
     "messageformat": "Ez a napló nyilvánosan elérhető lesz online, hogy a közreműködők megtekinthessék. Beküldés előtt letöltheted."
   },
   "icu:debugLogError": {
-    "messageformat": "Hiba történt a feltöltés során. Küldd el a naplófájlt szöveges csatolmányként a support@signal.org címre!"
+    "messageformat": "Hiba történt a feltöltés során. Küldd el a naplófájlt szöveges csatolmányként a support@tellomi.app címre!"
   },
   "icu:debugLogSuccess": {
     "messageformat": "Naplófájl feltöltve"
@@ -2313,7 +2313,7 @@
     "messageformat": "A Tellomi Desktop ezen verziója elavult. Kérlek frissíts a legújabb verzióra, hogy folytatni tudd a beszélgetést!"
   },
   "icu:upgrade": {
-    "messageformat": "Kattints a signal.org/download oldalra ugráshoz!"
+    "messageformat": "Kattints a tellomi.app/download oldalra ugráshoz!"
   },
   "icu:mediaMessage": {
     "messageformat": "Médiaüzenet"

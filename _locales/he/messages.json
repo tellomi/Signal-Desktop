@@ -564,7 +564,7 @@
     "messageformat": "יומן זה יפורסם באופן ציבורי באינטרנט לצפייה על ידי תורמים. ניתן להוריד אותו לפני השליחה."
   },
   "icu:debugLogError": {
-    "messageformat": "משהו השתבש עם ההעלאה! אנא שלח דוא״ל אל support@signal.org וצרף את היומן שלך כקובץ טקסט."
+    "messageformat": "משהו השתבש עם ההעלאה! אנא שלח דוא״ל אל support@tellomi.app וצרף את היומן שלך כקובץ טקסט."
   },
   "icu:debugLogSuccess": {
     "messageformat": "יומן ניפוי תקלים הוגש"
@@ -2313,7 +2313,7 @@
     "messageformat": "גרסה זו של Tellomi Desktop פגה. אנא שדרג אל הגרסה האחרונה כדי להמשיך בשליחת הודעות."
   },
   "icu:upgrade": {
-    "messageformat": "לחץ כדי ללכת אל signal.org/download"
+    "messageformat": "לחץ כדי ללכת אל tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "הודעת מדיה"

@@ -564,7 +564,7 @@
     "messageformat": "កំណត់ហេតុនេះនឹងត្រូវបានបង្ហោះជាសាធារណៈតាមអនឡាញដើម្បីឱ្យអ្នករួមចំណែកមើល។ អ្នកអាចទាញយកវាមុនពេលដាក់បញ្ជូន។"
   },
   "icu:debugLogError": {
-    "messageformat": "មានអ្វីមួយមិនប្រក្រតីជាមួយការបង្ហោះនេះ! សូមផ្ញើអ៊ីមែលទៅ support@signal.org និងភ្ជាប់កំណត់ហេតុរបស់អ្នកជាឯកសារអត្ថបទ។"
+    "messageformat": "មានអ្វីមួយមិនប្រក្រតីជាមួយការបង្ហោះនេះ! សូមផ្ញើអ៊ីមែលទៅ support@tellomi.app និងភ្ជាប់កំណត់ហេតុរបស់អ្នកជាឯកសារអត្ថបទ។"
   },
   "icu:debugLogSuccess": {
     "messageformat": "បាន​ដាក់​បញ្ជូនកំណត់​ហេតុបំបាត់បញ្ហា"
@@ -2313,7 +2313,7 @@
     "messageformat": "ជំនាន់ Tellomi Desktop នេះ បានហួសសុពលភាព។ សូមដំឡើងទីកាន់ជំនាន់ចុងក្រោយ ដើម្បីបន្តការផ្ញើសារ។"
   },
   "icu:upgrade": {
-    "messageformat": "ចុចដើម្បីទៅ signal.org/download"
+    "messageformat": "ចុចដើម្បីទៅ tellomi.app/download"
   },
   "icu:mediaMessage": {
     "messageformat": "សារមេឌា"

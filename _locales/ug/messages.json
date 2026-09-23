@@ -564,7 +564,7 @@
     "messageformat": "بۇ خاتىرە تۆھپىكارلارنىڭ كۆرۈشى ئۈچۈن توردا ئاشكارا ئېلان قىلىنىدۇ. يوللاشتىن بۇرۇن چۈشۈرۈۋالسىڭىز بولىدۇ."
   },
   "icu:debugLogError": {
-    "messageformat": "يۈكلەشتە خاتالىق كۆرۈلدى! support@signal.org گە ئېلخەت يوللاڭ ۋە خاتىرىڭىزنى تېكىست ھۆججىتى قىلىپ قىستۇرۇپ قويۇڭ."
+    "messageformat": "يۈكلەشتە خاتالىق كۆرۈلدى! support@tellomi.app گە ئېلخەت يوللاڭ ۋە خاتىرىڭىزنى تېكىست ھۆججىتى قىلىپ قىستۇرۇپ قويۇڭ."
   },
   "icu:debugLogSuccess": {
     "messageformat": "كاشىلا ھەل قىلىش خاتىرىسى تاپشۇرۇلدى"
@@ -2313,7 +2313,7 @@
     "messageformat": "بۇ Tellomi ئۈستەليۈزى نەشرىنىڭ ۋاقتى توشقان. ئۇچۇر يوللاش ۋە قوبۇل قىلىش ئۈچۈن ئۇنى يېڭىلاڭ."
   },
   "icu:upgrade": {
-    "messageformat": "بۇ يەرنى چېكىپ signal.org/download غا كىرىڭ"
+    "messageformat": "بۇ يەرنى چېكىپ tellomi.app/download غا كىرىڭ"
   },
   "icu:mediaMessage": {
     "messageformat": "ۋاسىتە ئۇچۇر"

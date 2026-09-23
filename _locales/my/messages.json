@@ -564,7 +564,7 @@
     "messageformat": "ကူညီပံ့ပိုးသူများ ကြည့်ရှုနိုင်ရန်အတွက် ဤမှတ်တမ်းကို အွန်လိုင်းတွင် လူသူမရွေးကြည့်နိုင်ရန် တင်သွားပါမည်။ မတင်သွင်းမီ ဒေါင်းလုဒ်လုပ်ထားနိုင်ပါသည်။"
   },
   "icu:debugLogError": {
-    "messageformat": "အပ်လုဒ်လုပ်ရာတွင် တစ်စုံတစ်ခု မှားယွင်းသွားသည်။ support@signal.org ကို အီးမေးလ် ပို့ပြီး သင့်မှတ်တမ်းကို စာသားဖိုင်အဖြစ် ဖိုင်တွဲပို့ပါ။"
+    "messageformat": "အပ်လုဒ်လုပ်ရာတွင် တစ်စုံတစ်ခု မှားယွင်းသွားသည်။ support@tellomi.app ကို အီးမေးလ် ပို့ပြီး သင့်မှတ်တမ်းကို စာသားဖိုင်အဖြစ် ဖိုင်တွဲပို့ပါ။"
   },
   "icu:debugLogSuccess": {
     "messageformat": "ပြစ်ချက်မှတ်တမ်း ပေးပို့ပြီး"
@@ -2313,7 +2313,7 @@
     "messageformat": "This version of Tellomi Desktop has expired. Please upgrade to the latest version to continue messaging."
   },
   "icu:upgrade": {
-    "messageformat": "signal.org/download သို့ သွားရန် နှိပ်ပါ"
+    "messageformat": "tellomi.app/download သို့ သွားရန် နှိပ်ပါ"
   },
   "icu:mediaMessage": {
     "messageformat": "မီဒီယာ မက်ဆေ့ချ်"
