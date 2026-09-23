@@ -9,6 +9,7 @@ import { Avatar, AvatarSize } from '../Avatar.dom.tsx';
 import { Spinner } from '../Spinner.dom.tsx';
 
 import type { LocalizerType } from '../../types/Util.std.ts';
+import { formatUsernameForDisplay } from '../../types/Username.std.ts';
 import type { LookupConversationWithoutServiceIdActionsType } from '../../util/lookupConversationWithoutServiceId.preload.ts';
 import type { ShowConversationType } from '../../state/ducks/conversations.preload.ts';
 
@@ -57,6 +58,9 @@ export function UsernameSearchResultListItem({
     username,
   ]);
 
+  // Tellomi (ADR-0066): `username` is the full `kaixin.01` the search completed to; show what the user typed.
+  const displayUsername = formatUsernameForDisplay(username);
+
   return (
     <ListTile
       leading={
@@ -64,12 +68,12 @@ export function UsernameSearchResultListItem({
           conversationType="direct"
           searchResult
           i18n={i18n}
-          title={username}
+          title={displayUsername}
           size={AvatarSize.THIRTY_TWO}
           badge={undefined}
         />
       }
-      title={username}
+      title={displayUsername}
       onClick={boundOnClick}
       trailing={
         isFetchingUsername ? (

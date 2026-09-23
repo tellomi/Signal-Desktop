@@ -205,16 +205,16 @@ describe('pnp/username', function (this: Mocha.Suite) {
     const usernameField = profileEditor.locator('.Input__input');
     await typeIntoInput(usernameField, NICKNAME, '');
 
-    debug('waiting for generated discriminator');
-    const discriminator = profileEditor.locator(
-      '.UsernameEditor__discriminator__input[value]'
-    );
-    await discriminator.waitFor();
+    // Tellomi (ADR-0066): there is no discriminator field any more. The only candidate is `<nickname>.01`, and the
+    // editor previews (and the profile page later shows) the nickname alone.
+    const username = `${NICKNAME}.01`;
 
-    const discriminatorValue = await discriminator.inputValue();
-    assert.match(discriminatorValue, /^\d+$/);
-
-    const username = `${NICKNAME}.${discriminatorValue}`;
+    debug('waiting for the reservation');
+    await profileEditor
+      .locator('.UsernameEditor__header__preview', {
+        hasText: new RegExp(`^${NICKNAME}$`),
+      })
+      .waitFor();
 
     debug('saving username');
     let state = await phone.expectStorageState('consistency check');
@@ -222,7 +222,9 @@ describe('pnp/username', function (this: Mocha.Suite) {
 
     debug('checking the username is saved');
     {
-      await profileEditor.getByRole('button', { name: username }).waitFor();
+      await profileEditor
+        .getByRole('button', { name: NICKNAME, exact: true })
+        .waitFor();
 
       const uuid = await server.lookupByUsername(username);
       assert.strictEqual(uuid, phone.device.aci);
@@ -273,7 +275,7 @@ describe('pnp/username', function (this: Mocha.Suite) {
       .getByRole('alertdialog')
       .filter({
         has: window.getByText(
-          `This will remove your username and disable your QR code and link. “${username}” will be available for others to claim. Are you sure?`
+          `This will remove your username and disable your QR code and link. “${NICKNAME}” will be available for others to claim. Are you sure?`
         ),
       })
       .getByRole('button', { name: 'Delete' })

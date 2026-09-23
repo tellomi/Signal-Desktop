@@ -26,6 +26,7 @@ import { I18n } from './I18n.dom.tsx';
 import { UserText } from './UserText.dom.tsx';
 import { RemoteMegaphone } from './RemoteMegaphone.dom.tsx';
 import { PinReminderMegaphone } from './PinReminderMegaphone.dom.tsx';
+import { formatUsernameForDisplay } from '../types/Username.std.ts';
 
 export type PropsType = {
   changeLocation: (newLocation: Location) => unknown;
@@ -997,7 +998,7 @@ function renderToast({
     return (
       <Toast onClose={hideToast}>
         {i18n('icu:EditUsernameModalBody__username-recovered__text', {
-          username: toast.parameters.username,
+          username: formatUsernameForDisplay(toast.parameters.username),
         })}
       </Toast>
     );

@@ -320,6 +320,9 @@
   "icu:LeftPaneFindByHelper__description--findByUsername": {
     "messageformat": "輸入用戶名稱，後面加一點同埋指定嘅配對數字。"
   },
+  "icu:LeftPaneFindByHelper__description--findByUsername--tellomi": {
+    "messageformat": "輸入對方嘅用戶名稱。"
+  },
   "icu:LeftPane__EmptyView--WithSelectedChatFolder": {
     "messageformat": "無聊天可以展示"
   },
@@ -2524,6 +2527,9 @@
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} 唔係有效嘅用戶名稱。請確保你輸入咗完整嘅用戶名稱，後面加埋專屬嘅兩位數字。"
+  },
+  "icu:startConversation--username-not-valid--tellomi": {
+    "messageformat": "{atUsername} 唔係有效嘅用戶名稱。"
   },
   "icu:startConversation--phone-number-not-found": {
     "messageformat": "搵唔到呢個用戶。「{phoneNumber}」唔係 Tellomi 嘅用戶。"
@@ -5952,6 +5958,9 @@
   "icu:ProfileEditor--username--too-many-attempts": {
     "messageformat": "嘗試次數過多，請你遲啲再試過啦"
   },
+  "icu:ProfileEditor--username--change-cooldown": {
+    "messageformat": "{days, plural, other {你啱啱先改過用戶名稱，# 日之後先可以再改。}}"
+  },
   "icu:ProfileEditor--username--unavailable": {
     "messageformat": "呢個用戶名稱唔用得"
   },
@@ -5960,6 +5969,9 @@
   },
   "icu:ProfileEditor--username--reservation-gone": {
     "messageformat": "{username} 唔可以再用。系統會為你嘅用戶名稱配對一組新嘅數字，請你再儲存多次。"
+  },
+  "icu:ProfileEditor--username--reservation-gone--tellomi": {
+    "messageformat": "{username} 嘅保留已經失效，請重新儲存。"
   },
   "icu:ProfileEditor--username--delete-general-error": {
     "messageformat": "移除唔到你個用戶名稱。請你檢查吓網絡連線，然後再試過啦。"
@@ -8113,6 +8125,9 @@
   "icu:EditUsernameModalBody__username-helper": {
     "messageformat": "用戶名稱一定會配對一組數字。"
   },
+  "icu:EditUsernameModalBody__username-helper--tellomi": {
+    "messageformat": "其他人可以用你嘅用戶名稱搵到你、傳訊息俾你，唔使知道你嘅電話號碼。可以用 {min, number}–{max, number} 個字母、數字或者底線，要用字母開頭。"
+  },
   "icu:EditUsernameModalBody__learn-more": {
     "messageformat": "了解詳情"
   },
@@ -8124,6 +8139,9 @@
   },
   "icu:EditUsernameModalBody__change-confirmation": {
     "messageformat": "更改用戶名稱會將你宜家用緊嘅二維碼同連結重設。你係咪確定？"
+  },
+  "icu:EditUsernameModalBody__change-confirmation--tellomi": {
+    "messageformat": "{days, plural, other {更改用戶名稱會將你宜家用緊嘅二維碼同連結重設，之後 # 日內唔可以再改。你係咪確定？}}"
   },
   "icu:EditUsernameModalBody__change-confirmation__continue": {
     "messageformat": "繼續"

@@ -11,6 +11,10 @@ import { strictAssert } from './assert.std.ts';
 import { createLogger } from '../logging/log.std.ts';
 import * as Errors from '../types/errors.std.ts';
 import { parsePartial, parseUnknown, safeParseUnknown } from './schemas.std.ts';
+import {
+  formatUsernameForDisplay,
+  withFixedDiscriminator,
+} from '../types/Username.std.ts';
 
 const log = createLogger('signalRoutes');
 
@@ -300,8 +304,14 @@ export const contactByUsernameRoute = _route('contactByUsername', {
     _pattern('https:', 'tell.cc', '/u{/}?', { hash: 'u/:username' }),
     _pattern('tellomi:', 'tell.cc', '/u{/}?', { hash: 'u/:username' }),
   ],
+  // Tellomi (ADR-0066): the discriminator is optional in links. A bare nickname means `<nickname>.01`; links already
+  // shared with a discriminator (`tell.cc/ceshi.57`) keep working. The web link is the display form, so it reads
+  // `tell.cc/kaixin` for `kaixin.01` and stays `tell.cc/kaixin.57` otherwise.
   schema: z.object({
-    username: z.string().regex(/^[a-zA-Z_][a-zA-Z0-9_]{2,31}\.[0-9]{2,9}$/),
+    username: z
+      .string()
+      .regex(/^[a-zA-Z_][a-zA-Z0-9_]{2,31}(\.[0-9]{2,9})?$/)
+      .transform(withFixedDiscriminator),
   }),
   parse(result) {
     return {
@@ -309,7 +319,9 @@ export const contactByUsernameRoute = _route('contactByUsername', {
     };
   },
   toWebUrl(args) {
-    return new URL(`https://tell.cc/${args.username}`);
+    return new URL(
+      `https://tell.cc/${formatUsernameForDisplay(args.username)}`
+    );
   },
   toAppUrl(args) {
     return new URL(`tellomi://tell.cc/u#u/${args.username}`);

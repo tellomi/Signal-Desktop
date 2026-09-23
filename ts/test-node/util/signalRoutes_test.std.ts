@@ -3,6 +3,7 @@
 import { assert } from 'chai';
 import type { ParsedSignalRoute } from '../../util/signalRoutes.std.ts';
 import {
+  contactByUsernameRoute,
   isSignalRoute,
   parseSignalRoute,
   toSignalRouteAppUrl,
@@ -95,8 +96,37 @@ describe('signalRoutes', () => {
     check('https://tell.cc/u/#u/ceshi.57', result);
     check('tellomi://tell.cc/u#u/ceshi.57', result);
     const invalid = createCheck({ isRoute: false, hasAppUrl: false, hasWebUrl: false });
-    invalid('https://tell.cc/u#u/nope', null);   // 用户名必须带 .数字 后缀
     invalid('https://tell.cc/u#u/', null);
+    invalid('https://tell.cc/u#u/ab', null); // 昵称至少 3 位
+    invalid('https://tell.cc/u#u/1abc', null); // 不能数字开头
+    invalid('https://tell.cc/u#u/kaixin.', null); // 有点就得有数字
+  });
+
+  // Tellomi（ADR-0066）：链接里的判别位可以省略，省略 = 固定的 .01；解析出来的总是协议层全名。
+  it('contactByUsername without a discriminator means .01', () => {
+    const result: ParsedSignalRoute = {
+      key: 'contactByUsername',
+      args: { username: 'kaixin.01' },
+    };
+    const check = createCheck();
+    check('https://tell.cc/u#u/kaixin', result);
+    check('tellomi://tell.cc/u#u/kaixin', result);
+    check('https://tell.cc/u#u/kaixin.01', result);
+  });
+
+  // 分享出去的网页链接是显示形状（.01 去掉，别的后缀保留）；唤起 App 的链接带全名，已装的旧版本也认。
+  it('contactByUsername links', () => {
+    const webUrl = (username: string) =>
+      contactByUsernameRoute.toWebUrl({ username }).toString();
+    const appUrl = (username: string) =>
+      contactByUsernameRoute.toAppUrl({ username }).toString();
+    assert.strictEqual(webUrl('kaixin.01'), 'https://tell.cc/kaixin');
+    assert.strictEqual(webUrl('KaiXin.01'), 'https://tell.cc/KaiXin');
+    assert.strictEqual(webUrl('ceshi.57'), 'https://tell.cc/ceshi.57');
+    assert.strictEqual(webUrl('kaixin'), 'https://tell.cc/kaixin');
+    assert.strictEqual(appUrl('kaixin.01'), 'tellomi://tell.cc/u#u/kaixin.01');
+    assert.strictEqual(appUrl('kaixin'), 'tellomi://tell.cc/u#u/kaixin.01');
+    assert.strictEqual(appUrl('ceshi.57'), 'tellomi://tell.cc/u#u/ceshi.57');
   });
 
   it('legacy Signal forms still parse (per-client migration)', () => {

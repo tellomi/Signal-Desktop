@@ -439,6 +439,10 @@
     "messageformat": "Enter a username followed by a dot and its set of numbers.",
     "description": "Description displayed under search input in left pane when looking up someone by username"
   },
+  "icu:LeftPaneFindByHelper__description--findByUsername--tellomi": {
+    "messageformat": "Enter the person’s username.",
+    "description": "Tellomi (ADR-0066): description on the \"Find by username\" screen. Usernames have no numeric suffix any more, so this replaces the upstream \"followed by a dot and its set of numbers\"."
+  },
   "icu:LeftPane__EmptyView--WithSelectedChatFolder": {
     "messageformat": "No chats to display",
     "description": "Left Pane > Inbox > Chat List > Empty View (when you have a custom chat folder selected)"
@@ -3355,6 +3359,10 @@
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} is not a valid username. Make sure you've entered the complete username followed by its set of digits.",
     "description": "Shown in dialog if username is invalid. Note that 'username' will be the output of at-username, no @ symbol"
+  },
+  "icu:startConversation--username-not-valid--tellomi": {
+    "messageformat": "{atUsername} is not a valid username.",
+    "description": "Tellomi (ADR-0066): shown when what the user entered cannot be a username at all. Replaces the upstream text that asks for \"its set of digits\"."
   },
   "icu:startConversation--phone-number-not-found": {
     "messageformat": "User not found. \"{phoneNumber}\" is not a Tellomi user.",
@@ -7911,6 +7919,10 @@
     "messageformat": "Too many attempts made, please try again later",
     "description": "Shown if user has made too many attempts to pick a username and has to wait before retrying"
   },
+  "icu:ProfileEditor--username--change-cooldown": {
+    "messageformat": "You changed your username recently. You can change it again in {days, plural, one {# day} other {# days}}.",
+    "description": "Tellomi (ADR-0066 §6.2): shown when the server refuses a new username because the account changed its username less than 30 days ago. {days} is the number of days left, rounded up."
+  },
   "icu:ProfileEditor--username--unavailable": {
     "messageformat": "This username is not available",
     "description": "Shown if the username is not available for registration"
@@ -7922,6 +7934,10 @@
   "icu:ProfileEditor--username--reservation-gone": {
     "messageformat": "{username} is no longer available. A new set of digits will be paired with your username, please try saving it again.",
     "description": "Shown if username reservation has expired and new one needs to be generated."
+  },
+  "icu:ProfileEditor--username--reservation-gone--tellomi": {
+    "messageformat": "{username} is no longer reserved for you. Please try saving it again.",
+    "description": "Tellomi (ADR-0066): shown when the username reserved while editing expired before it was saved. Replaces the upstream text that promises \"a new set of digits\"; the discriminator is fixed now, so saving again reserves the same username."
   },
   "icu:ProfileEditor--username--delete-general-error": {
     "messageformat": "Your username couldn’t be removed. Check your connection and try again.",
@@ -10790,6 +10806,10 @@
     "messageformat": "Usernames are always paired with a set of numbers.",
     "description": "Shown on the edit username screen"
   },
+  "icu:EditUsernameModalBody__username-helper--tellomi": {
+    "messageformat": "People can find you by your username and message you without knowing your phone number. Use {min, number}–{max, number} letters, numbers or underscores, starting with a letter.",
+    "description": "Tellomi (ADR-0066): helper under the username field. Usernames have no numeric suffix any more, so this replaces the upstream \"paired with a set of numbers\" helper. {min} / {max} are the nickname length limits from remote config."
+  },
   "icu:EditUsernameModalBody__learn-more": {
     "messageformat": "Learn More",
     "description": "Text that open a popup with information about discriminator in username"
@@ -10805,6 +10825,10 @@
   "icu:EditUsernameModalBody__change-confirmation": {
     "messageformat": "Changing your username will reset your existing QR code and link. Are you sure?",
     "description": "Body of the confirmation dialog displayed when user is about to change their username"
+  },
+  "icu:EditUsernameModalBody__change-confirmation--tellomi": {
+    "messageformat": "Changing your username will reset your existing QR code and link, and you won’t be able to change it again for {days, plural, one {# day} other {# days}}. Are you sure?",
+    "description": "Tellomi (ADR-0066 §6.2): confirmation before replacing an existing username. Every such change starts the rename cooldown, so say so before the user commits. {days} is the cooldown length (30)."
   },
   "icu:EditUsernameModalBody__change-confirmation__continue": {
     "messageformat": "Continue",
