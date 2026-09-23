@@ -99,6 +99,9 @@ export const FunPicker = memo(function FunPicker(
         handleOpenChange(true);
       },
       '$mod+Shift+G': () => {
+        if (!fun.isGifsEnabled) {
+          return;
+        }
         onChangeTab(FunPickerTabKey.GifsTab);
         handleOpenChange(true);
       },
@@ -107,7 +110,7 @@ export const FunPicker = memo(function FunPicker(
     return () => {
       window.removeEventListener('keydown', onKeyDown);
     };
-  }, [handleOpenChange, onChangeTab]);
+  }, [handleOpenChange, onChangeTab, fun.isGifsEnabled]);
 
   return (
     <DialogTrigger isOpen={props.open} onOpenChange={handleOpenChange}>
@@ -127,9 +130,11 @@ export const FunPicker = memo(function FunPicker(
             <FunPickerTab id={FunPickerTabKey.StickersTab}>
               {i18n('icu:FunPicker__Tab--Stickers')}
             </FunPickerTab>
-            <FunPickerTab id={FunPickerTabKey.GifsTab}>
-              {i18n('icu:FunPicker__Tab--Gifs')}
-            </FunPickerTab>
+            {fun.isGifsEnabled && (
+              <FunPickerTab id={FunPickerTabKey.GifsTab}>
+                {i18n('icu:FunPicker__Tab--Gifs')}
+              </FunPickerTab>
+            )}
           </FunTabList>
           <FunTabPanel id={FunPickerTabKey.EmojisTab}>
             <FunErrorBoundary>
@@ -152,14 +157,16 @@ export const FunPicker = memo(function FunPicker(
               />
             </FunErrorBoundary>
           </FunTabPanel>
-          <FunTabPanel id={FunPickerTabKey.GifsTab}>
-            <FunErrorBoundary>
-              <FunPanelGifs
-                onSelectGif={props.onSelectGif}
-                onClose={handleClose}
-              />
-            </FunErrorBoundary>
-          </FunTabPanel>
+          {fun.isGifsEnabled && (
+            <FunTabPanel id={FunPickerTabKey.GifsTab}>
+              <FunErrorBoundary>
+                <FunPanelGifs
+                  onSelectGif={props.onSelectGif}
+                  onClose={handleClose}
+                />
+              </FunErrorBoundary>
+            </FunTabPanel>
+          )}
         </FunTabs>
       </FunPopover>
     </DialogTrigger>

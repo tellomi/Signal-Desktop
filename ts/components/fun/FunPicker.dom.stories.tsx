@@ -45,6 +45,7 @@ function Template(props: TemplateProps) {
       onSelectSticker={() => null}
       // Gifs
       fetchGiphySearch={() => Promise.resolve(MOCK_GIFS_PAGINATED_ONE_PAGE)}
+      isGifsEnabled
       fetchGiphyTrending={() => Promise.resolve(MOCK_GIFS_PAGINATED_ONE_PAGE)}
       fetchGiphyFile={() => Promise.resolve(new Blob([new Uint8Array(1)]))}
       onRemoveRecentGif={() => null}

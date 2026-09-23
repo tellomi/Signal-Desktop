@@ -66,6 +66,10 @@ export const SmartFunProvider = memo(function SmartFunProvider(
     remoteConfig: items.remoteConfig,
   });
 
+  // Tellomi (ADR-0064 §4.4): server can switch the GIF tab off (global.gif.provider = none)
+  const gifProvider = items.remoteConfig?.['global.gif.provider']?.value;
+  const isGifsEnabled = gifProvider == null || gifProvider === 'giphy';
+
   // Translate recent emojis to keys
   const recentEmojisKeys = useMemo(() => {
     return recentEmojis.map(emoji => {
@@ -130,6 +134,7 @@ export const SmartFunProvider = memo(function SmartFunProvider(
       onSelectEmoji={handleSelectEmoji}
       // Stickers
       isStickerReplySendEnabled={isStickerReplySendEnabled}
+      isGifsEnabled={isGifsEnabled}
       installedStickerPacks={installedStickerPacks}
       showStickerPickerHint={showStickerPickerHint}
       onClearStickerPickerHint={handleClearStickerPickerHint}

@@ -8,6 +8,7 @@ import {
 } from '../../../textsecure/WebAPI.preload.ts';
 import { fetchInSegments } from '../../../components/fun/data/segments.std.ts';
 import { safeParseInteger } from '../../../util/numbers.std.ts';
+import * as RemoteConfig from '../../../RemoteConfig.dom.ts';
 import type { PaginatedGifResults } from '../../../components/fun/panels/FunPanelGifs.dom.tsx';
 import {
   getGifCdnUrlOrigin,
@@ -18,6 +19,16 @@ import {
 const BASE_API_URL = 'https://api.giphy.com';
 // Tellomi: our own Giphy key ("tellomi other" app, beta tier 100 calls/h; upgrade before launch). Ships in the client like upstream's.
 const API_KEY = 'GvsTOXfPQO8DlO3skr26EsLGEotcXD4B';
+
+// Tellomi (ADR-0064 §4.4): key and proxy come from the server's remote config when
+// present (global.gif.apiKey.desktop / global.gif.proxyUrl), so rotating either no
+// longer needs a release; the compiled-in values are the fallback.
+function getGiphyApiKey(): string {
+  return RemoteConfig.getValue('global.gif.apiKey.desktop') || API_KEY;
+}
+function getGifProxyUrl(): string | undefined {
+  return RemoteConfig.getValue('global.gif.proxyUrl') || undefined;
+}
 
 const CONTENT_RATING = 'pg-13';
 const CONTENT_BUNDLE = 'messaging_non_clips';
@@ -120,7 +131,7 @@ export async function fetchGiphySearch(
 ): Promise<PaginatedGifResults> {
   const url = new URL('v1/gifs/search', BASE_API_URL);
 
-  url.searchParams.set('api_key', API_KEY);
+  url.searchParams.set('api_key', getGiphyApiKey());
   url.searchParams.set('rating', CONTENT_RATING);
   url.searchParams.set('bundle', CONTENT_BUNDLE);
   url.searchParams.set('fields', GIF_FIELDS);
@@ -133,6 +144,7 @@ export async function fetchGiphySearch(
 
   const response = await fetchJsonViaProxy({
     method: 'GET',
+    proxyUrl: getGifProxyUrl(),
     url: url.toString(),
     signal,
   });
@@ -148,7 +160,7 @@ export async function fetchGiphyTrending(
 ): Promise<PaginatedGifResults> {
   const url = new URL('v1/gifs/trending', BASE_API_URL);
 
-  url.searchParams.set('api_key', API_KEY);
+  url.searchParams.set('api_key', getGiphyApiKey());
   url.searchParams.set('rating', CONTENT_RATING);
   url.searchParams.set('bundle', CONTENT_BUNDLE);
   url.searchParams.set('fields', GIF_FIELDS);
@@ -160,6 +172,7 @@ export async function fetchGiphyTrending(
 
   const response = await fetchJsonViaProxy({
     method: 'GET',
+    proxyUrl: getGifProxyUrl(),
     url: url.toString(),
     signal,
   });
@@ -181,5 +194,9 @@ export function fetchGiphyFile(
       `fetchGiphyFile: Blocked unsupported url origin: ${origin}`
     );
   }
-  return fetchInSegments(giphyCdnUrl, fetchBytesViaProxy, signal);
+  return fetchInSegments(
+    giphyCdnUrl,
+    params => fetchBytesViaProxy({ ...params, proxyUrl: getGifProxyUrl() }),
+    signal
+  );
 }

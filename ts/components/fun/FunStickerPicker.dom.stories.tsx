@@ -45,6 +45,7 @@ function Template(props: TemplateProps): JSX.Element {
       onSelectSticker={() => null}
       // Gifs
       fetchGiphySearch={() => Promise.reject()}
+      isGifsEnabled
       fetchGiphyTrending={() => Promise.reject()}
       fetchGiphyFile={() => Promise.reject()}
       onRemoveRecentGif={() => null}

@@ -86,6 +86,10 @@ const ScalarKeys = [
   'global.attachments.maxReceiveBytes',
   'global.backups.mediaTierFallbackCdnNumber',
   'global.calling.maxGroupCallRingSize',
+  // Tellomi (ADR-0064 §4.4): GIF provider config served by our server's remoteConfig.globalConfig
+  'global.gif.apiKey.desktop',
+  'global.gif.provider',
+  'global.gif.proxyUrl',
   'global.groupsv2.groupSizeHardLimit',
   'global.groupsv2.maxGroupSize',
   'global.messageQueueTimeInSeconds',

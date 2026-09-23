@@ -1514,6 +1514,8 @@ export type ProxiedRequestParams = Readonly<{
   url: string;
   headers?: HeaderListType;
   signal?: AbortSignal;
+  // Tellomi: override the content proxy (remote config); defaults to config's contentProxyUrl
+  proxyUrl?: string;
 }>;
 
 const backupFileHeadersSchema = z.object({
@@ -4478,7 +4480,7 @@ export async function fetchJsonViaProxy(
     responseType: 'jsonwithdetails',
     // TODO DESKTOP-8719
     zodSchema: z.unknown(),
-    proxyUrl: contentProxyUrl,
+    proxyUrl: params.proxyUrl ?? contentProxyUrl,
     type: params.method,
     redirect: 'follow',
     redactUrl: () => '[REDACTED_URL]',
@@ -4496,7 +4498,7 @@ export async function fetchBytesViaProxy(
 ): Promise<BytesWithDetailsType> {
   return _outerAjax(params.url, {
     responseType: 'byteswithdetails',
-    proxyUrl: contentProxyUrl,
+    proxyUrl: params.proxyUrl ?? contentProxyUrl,
     type: params.method,
     redirect: 'follow',
     redactUrl: () => '[REDACTED_URL]',

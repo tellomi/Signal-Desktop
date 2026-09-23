@@ -48,6 +48,7 @@ export type FunContextSmartProps = Readonly<{
   onSelectSticker: (stickerSelection: FunStickerSelection) => void;
 
   // GIFs
+  isGifsEnabled: boolean; // Tellomi: remote config global.gif.provider !== 'none'
   fetchGiphyTrending: typeof fetchGiphyTrending;
   fetchGiphySearch: typeof fetchGiphySearch;
   fetchGiphyFile: typeof fetchGiphyFile;
@@ -176,6 +177,7 @@ export const FunProvider = memo(function FunProvider(
       onSelectSticker={props.onSelectSticker}
       onStageStickerReply={handleStageStickerReply}
       // GIFs
+      isGifsEnabled={props.isGifsEnabled}
       fetchGiphyTrending={props.fetchGiphyTrending}
       fetchGiphySearch={props.fetchGiphySearch}
       fetchGiphyFile={props.fetchGiphyFile}
