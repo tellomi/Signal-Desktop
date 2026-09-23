@@ -7,7 +7,7 @@
   "description": "Tellomi — private messaging from your desktop",
   "desktopName": "tellomi.desktop",
   "repository": "https://github.com/signalapp/Signal-Desktop.git",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "license": "AGPL-3.0-only",
   "author": {
     "name": "Signal Messenger, LLC",

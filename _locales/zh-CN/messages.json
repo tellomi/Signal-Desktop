@@ -8995,6 +8995,6 @@
     "messageformat": "改进了通知设置，增加了更多通知显示方式和时间的选项。"
   },
   "icu:WhatsNew__tellomi--0": {
-    "messageformat": "下载失败后几分钟内就会重试，不再等下一次半小时轮询。"
+    "messageformat": "GIF 搜索的代理与密钥改由服务端下发，以后调整不用再发新版。"
   }
 }

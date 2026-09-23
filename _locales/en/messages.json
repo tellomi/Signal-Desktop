@@ -11962,7 +11962,7 @@
     "description": "Release notes for 8.27"
   },
   "icu:WhatsNew__tellomi--0": {
-    "messageformat": "After a download fails, the update is retried within minutes instead of waiting for the next half-hour check.",
+    "messageformat": "GIF search settings (provider, proxy, key) now come from the server, so they can change without an update.",
     "description": "Tellomi release notes; keep in sync with docs/signal/VERSIONS.md, update every release"
   }
 }
