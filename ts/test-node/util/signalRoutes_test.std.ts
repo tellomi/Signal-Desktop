@@ -225,6 +225,25 @@ describe('signalRoutes', () => {
     check(`tellomi://tell.cc/call#key=${foo}`, result);
   });
 
+  // Tellomi: generated call links carry no slash before `#` (`/call/` is a 404 on tell.cc and released Android only
+  // knows `/call#`), whichever shape came in.
+  it('linkCall generates the shape without a slash', () => {
+    for (const input of [
+      'https://tell.cc/call/#key=bcdf-ghkm',
+      'https://tell.cc/call#key=bcdf-ghkm',
+    ]) {
+      const url = new URL(input);
+      assert.strictEqual(
+        toSignalRouteWebUrl(url)?.toString(),
+        'https://tell.cc/call#key=bcdf-ghkm'
+      );
+      assert.strictEqual(
+        toSignalRouteAppUrl(url)?.toString(),
+        'tellomi://tell.cc/call#key=bcdf-ghkm'
+      );
+    }
+  });
+
   it('artAddStickers', () => {
     const result: ParsedSignalRoute = {
       key: 'artAddStickers',

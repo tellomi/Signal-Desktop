@@ -445,7 +445,7 @@ const captchaRoute = _route('captcha', {
  * linkCallRoute.toWebUrl({
  *   key: "123",
  * })
- * // URL { "https://signal.link/call#key=123" }
+ * // URL { "https://tell.cc/call#key=123" }
  */
 export const linkCallRoute = _route('linkCall', {
   patterns: [
@@ -463,13 +463,16 @@ export const linkCallRoute = _route('linkCall', {
       key: params.get('key'),
     };
   },
+  // Tellomi: no slash before `#`. `https://tell.cc/call/` is a 404 on the landing site (R2 answers by object key,
+  // and the key is `call`), and released Android builds only recognise `/call#` (docs/signal/LINKS_AND_SCHEMES.md).
+  // Both shapes are still accepted above, so links already sent with the slash keep opening in the app.
   toWebUrl(args) {
     const params = new URLSearchParams({ key: args.key });
-    return new URL(`https://tell.cc/call/#${params.toString()}`);
+    return new URL(`https://tell.cc/call#${params.toString()}`);
   },
   toAppUrl(args) {
     const params = new URLSearchParams({ key: args.key });
-    return new URL(`tellomi://tell.cc/call/#${params.toString()}`);
+    return new URL(`tellomi://tell.cc/call#${params.toString()}`);
   },
 });
 
