@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 import { assert } from 'chai';
 import type { ParsedSignalRoute } from '../../util/signalRoutes.std.ts';
+import { callLinkRootKeyToUrl } from '../../util/callLinkRootKeyToUrl.std.ts';
 import {
   contactByUsernameRoute,
   isSignalRoute,
@@ -242,6 +243,15 @@ describe('signalRoutes', () => {
         'tellomi://tell.cc/call#key=bcdf-ghkm'
       );
     }
+  });
+
+  // Tellomi: the in-call "copy link" builds its URL with callLinkRootKeyToUrl; it must be the same shape.
+  it('callLinkRootKeyToUrl builds the same no-slash link as linkCallRoute', () => {
+    assert.strictEqual(
+      callLinkRootKeyToUrl('bcdf-ghkm'),
+      'https://tell.cc/call#key=bcdf-ghkm'
+    );
+    assert.isUndefined(callLinkRootKeyToUrl(''));
   });
 
   it('artAddStickers', () => {
