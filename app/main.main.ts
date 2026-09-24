@@ -55,7 +55,7 @@ import './startup_config.main.ts';
 
 import type { RendererConfigType } from '../ts/types/RendererConfig.std.ts';
 import { rendererConfigSchema } from '../ts/types/RendererConfig.std.ts';
-import config from './config.main.ts';
+import config, { region } from './config.main.ts';
 import {
   Environment,
   getEnvironment,
@@ -2901,6 +2901,8 @@ ipc.on('get-config', async event => {
     appInstance: process.env.NODE_APP_INSTANCE || undefined,
     proxyUrl: process.env.HTTPS_PROXY || process.env.https_proxy || undefined,
     contentProxyUrl: config.get<string>('contentProxyUrl'),
+    outageCheckHost: config.get<string>('outageCheckHost'),
+    region,
     sfuUrl: config.get('sfuUrl'),
     reducedMotionSetting: animationSettings.prefersReducedMotion,
     registrationChallengeUrl: config.get<string>('registrationChallengeUrl'),

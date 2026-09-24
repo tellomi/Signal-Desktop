@@ -7,6 +7,7 @@ import { Environment } from '../environment.std.ts';
 import { HourCyclePreferenceSchema } from './I18N.std.ts';
 import { DNSFallbackSchema } from './DNSFallback.std.ts';
 import { themeSettingSchema } from '../util/theme.std.ts';
+import { REGION_IDS } from '../util/tellomiRegion.std.ts';
 
 const environmentSchema = z.nativeEnum(Environment);
 
@@ -45,6 +46,8 @@ export const rendererConfigSchema = z.object({
   installPath: configRequiredStringSchema,
   osRelease: configRequiredStringSchema,
   osVersion: configRequiredStringSchema,
+  // Tellomi (tellomi/tellomi#1101, #1054): the outage DNS record of the current region.
+  outageCheckHost: configRequiredStringSchema,
   availableLocales: z.array(configRequiredStringSchema),
   resolvedTranslationsLocale: configRequiredStringSchema,
   resolvedTranslationsLocaleDirection: z.enum(['ltr', 'rtl']),
@@ -55,6 +58,9 @@ export const rendererConfigSchema = z.object({
   nodeVersion: configRequiredStringSchema,
   proxyUrl: configOptionalStringSchema,
   reducedMotionSetting: z.boolean(),
+  // Tellomi (ADR-0065, tellomi/tellomi#1054): the region whose endpoints this config carries;
+  // undefined in environments without a `regions` block (development, test).
+  region: z.enum(REGION_IDS).or(z.undefined()),
   registrationChallengeUrl: configRequiredStringSchema,
   serverPublicParams: configRequiredStringSchema,
   serverTrustRoots: z.array(configRequiredStringSchema),
