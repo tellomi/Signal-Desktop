@@ -11,6 +11,7 @@ import {
   RegionSelector,
   applyRegionEndpoints,
   getEnabledRegions,
+  rebaseOrigin,
   getRegionEndpoints,
   parseRegions,
   selectStartupRegion,
@@ -30,7 +31,8 @@ function readConfig(name: string): Record<string, unknown> {
 }
 
 // What the global region must equal, byte for byte: the endpoints production.json and
-// default.json carried before regions existed, plus the outage host networkObserver hardcoded.
+// default.json carried before regions existed, plus the hosts Desktop used to hardcode
+// (networkObserver's outage host, uploadDebugLog's debuglogs URL).
 const GLOBAL_TODAY = {
   serverUrl: 'https://chat.tellomi.app',
   libsignalHostname: 'grpc.chat.tellomi.app',
@@ -49,6 +51,7 @@ const GLOBAL_TODAY = {
   updatesUrl: 'https://updates.tellomi.app/desktop',
   resourcesUrl: 'https://updates.tellomi.app',
   outageCheckHost: 'uptime.tellomi.app',
+  debugLogUrl: 'https://chat.tellomi.app/debuglogs',
 };
 
 function strings(value: unknown): Array<string> {
@@ -230,6 +233,30 @@ describe('Tellomi regions (tellomi/tellomi#1054)', () => {
     });
   });
 
+  describe('optional resources follow the region (build/optional-resources.json)', () => {
+    it('every resource lives on the global resourcesUrl host, so rebasing is a no-op there', () => {
+      const regions = productionRegions();
+      const manifest = JSON.parse(
+        readFileSync(
+          join(CONFIG_DIR, '../build/optional-resources.json'),
+          'utf8'
+        )
+      ) as Record<string, { url: string }>;
+      const entries = Object.entries(manifest);
+      assert.isAbove(entries.length, 0);
+
+      const globalOrigin = new URL(regions.global.resourcesUrl).origin;
+      for (const [name, { url }] of entries) {
+        assert.strictEqual(new URL(url).origin, globalOrigin, name);
+        assert.strictEqual(rebaseOrigin(url, regions.global.resourcesUrl), url);
+
+        const moved = new URL(rebaseOrigin(url, regions.cn.resourcesUrl));
+        assert.strictEqual(moved.host, 'updates.tellomi.cn', name);
+        assert.strictEqual(moved.pathname, new URL(url).pathname, name);
+      }
+    });
+  });
+
   describe('RegionSelector (ADR-0065 §6.5)', () => {
     function bothEnabled(): RegionsType {
       const regions = structuredClone(productionRegions());
@@ -240,13 +267,15 @@ describe('Tellomi regions (tellomi/tellomi#1054)', () => {
     function selector(
       regions: RegionsType,
       results: Partial<Record<RegionIdType, RegionProbeResultType>>,
-      clock = { now: 0 }
+      clock = { now: 0 },
+      lastSwitchAt?: number
     ) {
       const probed: Array<RegionIdType> = [];
       const instance = new RegionSelector({
         regions,
         initial: 'global',
         now: () => clock.now,
+        lastSwitchAt,
         probe: async id => {
           probed.push(id);
           const result = results[id];
@@ -301,11 +330,27 @@ describe('Tellomi regions (tellomi/tellomi#1054)', () => {
       assert.strictEqual((await instance.probe()).reason, 'stay');
     });
 
-    it('holds a faster region back for the minimum dwell time', async () => {
-      const { instance, clock } = selector(bothEnabled(), {
+    it('lets the faster region win at once when no switch is on record', async () => {
+      const { instance } = selector(bothEnabled(), {
         global: { ok: true, rttMs: 200 },
         cn: { ok: true, rttMs: 20 },
       });
+      const cold = await instance.probe();
+      assert.strictEqual(cold.reason, 'faster');
+      assert.strictEqual(cold.recommended, 'cn');
+    });
+
+    it('holds a faster region back for the minimum dwell time', async () => {
+      // Dwell counts from the last recorded switch (at t = 0), not from process start.
+      const { instance, clock } = selector(
+        bothEnabled(),
+        {
+          global: { ok: true, rttMs: 200 },
+          cn: { ok: true, rttMs: 20 },
+        },
+        { now: 0 },
+        0
+      );
 
       clock.now = REGION_SELECTOR_DEFAULTS.minDwellMs - 1;
       const early = await instance.probe();
@@ -319,6 +364,10 @@ describe('Tellomi regions (tellomi/tellomi#1054)', () => {
 
       instance.switchTo('cn');
       assert.strictEqual(instance.currentRegion(), 'cn');
+
+      // The switch itself restarts the dwell clock.
+      const again = await instance.probe();
+      assert.strictEqual(again.current, 'cn');
     });
 
     it('fails over only after consecutive failures', async () => {

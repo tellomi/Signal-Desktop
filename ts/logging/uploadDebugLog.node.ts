@@ -15,8 +15,6 @@ import { parseUnknown } from '../util/schemas.std.ts';
 
 const gzipAsync = promisify(gzip);
 
-const BASE_URL = 'https://chat.tellomi.app/debuglogs';   // Tellomi: self-hosted debuglogs (deploy/hk/debuglogs.py), same GET-form / POST-multipart protocol
-
 const UPLOAD_TIMEOUT = { request: durations.MINUTE };
 
 const tokenBodySchema = z
@@ -50,6 +48,9 @@ export type UploadOptionsType = Readonly<{
   contentType?: string;
   compress?: boolean;
   prefix?: string;
+  // Tellomi (tellomi/tellomi#1054): the current region's debuglogs endpoint, config `debugLogUrl`
+  // (self-hosted, deploy/hk/debuglogs.py; same GET-form / POST-multipart protocol as upstream).
+  baseUrl: string;
 }>;
 
 export const upload = async ({
@@ -60,10 +61,11 @@ export const upload = async ({
   contentType = 'application/gzip',
   compress = true,
   prefix,
+  baseUrl,
 }: UploadOptionsType): Promise<string> => {
   const headers = { 'User-Agent': getUserAgent(appVersion) };
 
-  const formUrl = new URL(`${BASE_URL}/`);   // Tellomi: BASE_URL has a path; keep the trailing slash so nginx location /debuglogs/ matches
+  const formUrl = new URL(`${baseUrl}/`); // Tellomi: baseUrl has a path; keep the trailing slash so nginx location /debuglogs/ matches
 
   if (prefix !== undefined) {
     formUrl.searchParams.set('prefix', prefix);
@@ -117,5 +119,5 @@ export const upload = async ({
   }
   logger.info('Debug log upload complete.');
 
-  return `${BASE_URL}/${uploadKey}`;
+  return `${baseUrl}/${uploadKey}`;
 };

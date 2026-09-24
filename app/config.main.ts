@@ -83,6 +83,14 @@ function applyStartupRegion(): RegionIdType {
   return id;
 }
 
+// A packaged build without `regions` would silently run on default.json, which points at
+// Signal's staging servers: refuse to start instead.
+if (getEnvironment() === Environment.PackagedApp && !config.has('regions')) {
+  throw new Error(
+    'config: production build has no "regions" block (tellomi/tellomi#1054)'
+  );
+}
+
 export const region: RegionIdType | undefined = config.has('regions')
   ? applyStartupRegion()
   : undefined;

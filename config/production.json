@@ -16,7 +16,8 @@
       "contentProxyUrl": "https://contentproxy.tellomi.app:443",
       "updatesUrl": "https://updates.tellomi.app/desktop",
       "resourcesUrl": "https://updates.tellomi.app",
-      "outageCheckHost": "uptime.tellomi.app"
+      "outageCheckHost": "uptime.tellomi.app",
+      "debugLogUrl": "https://chat.tellomi.app/debuglogs"
     },
     "cn": {
       "enabled": false,
@@ -34,7 +35,8 @@
       "contentProxyUrl": "https://contentproxy.tellomi.cn:443",
       "updatesUrl": "https://updates.tellomi.cn/desktop",
       "resourcesUrl": "https://updates.tellomi.cn",
-      "outageCheckHost": "uptime.tellomi.cn"
+      "outageCheckHost": "uptime.tellomi.cn",
+      "debugLogUrl": "https://chat.tellomi.cn/debuglogs"
     }
   },
   "serverPublicParams": "ADKO0hJxgxBky6XbESgxS+kxUo0+0fZinOfVIZfT+Chs1lBx0vRYvMzp+gUsbOpVRfsRMfdSwHq4GdExEyIMDhwamT0uT7OyL25KHXgAUXu56vWApb8c1mgdsd6GbfyfAOqGNAR7e8emQLSivHo+oYJVciuQVAznjbWdtjpvXMs3QMxitzmOcxhskuV+E6Md8BNIIqK6kviBf6GTVVJRIGr655FBcPf89L6Iva9ZEirT0pzQPBcGZ7mkzq56khyHLVxx3VzxCDjEUhPrco1Y4yfNqE7WA8JKi8dXA3pEslk8ztjXZ2C3nOIl1DnsaOJytFo14Gjri895dlDHCvY0s25sJlep3NrCO6U4imVVFhmc77y0dbn2FTwnOwefltRFQxz5yVvD4y50n8f6zZblT6u6w7YSdkf9glpzJOSYMdxPnHtWzzgQxPfqms2JYimZRakIqPcfnb3JIFTJqFITI3/E966PuFsB2kgZUNa+L9WUnhEw9utSJeFGltuX4IYIPPIWe1htCnrAyQgmpSoEwHseozG+FPol+YF4Hqd/WyA0DrPNr1749cXRkfwM+dNwrE59LkBf8Fp5UhtlyUW21E6wA4MLRAc2uoPXRUFzTcVykb42EYI/sAOWIfT103RvUhQfSBDYCj8uMYOonZ9fpkIL0u6zLt8zUE4CwjfbLAZ0bkKdS/baN5UMlq8cd3HZa09mvvLuL0Grl5mqRIRhUD4EhX8sVZHOzbof0Rc5JL4GvI4QOCObatrKg73D5prfLqyaJPb0TxuACl2S5fnNHs5FmqkDEw62yiUsrw5f8XYUTq5Y85s9MXBSjMUCGg+davkwDlmm1A4gqHuTzbcgGBRIh1iqWJ93cBq+uWsnMhSSdPbv4l8FUJwpruaZEj6FSw==",

@@ -10,6 +10,7 @@
   "updatesUrl": "https://updates.tellomi.app/desktop",
   "resourcesUrl": "https://updates.tellomi.app",
   "outageCheckHost": "uptime.tellomi.app",
+  "debugLogUrl": "https://chat.tellomi.app/debuglogs",
   "updatesPublicKey": "0569dca6fde7f7dd8e03eee459d54b385b4067230e4c0452eb0c6fc3d2644f914c",
   "appImageUpdatesPublicKey": "05dc20ac83f663c517718b6057f2fe34e273b88455f2149513912f24a9a380cc63",
   "sfuUrl": "https://sfu.staging.voip.signal.org/",
