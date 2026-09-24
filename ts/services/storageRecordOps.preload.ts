@@ -133,6 +133,7 @@ import {
   normalizeNotificationProfileId,
 } from '../types/NotificationProfile-node.node.ts';
 import { itemStorage } from '../textsecure/Storage.preload.ts';
+import { shouldRecordUsernameDeletion } from '../types/Username.std.ts';
 import { onHasStoriesDisabledChange } from '../textsecure/WebAPI.preload.ts';
 import { keyTransparency } from './keyTransparency.preload.ts';
 import { toNumber } from '../util/toNumber.std.ts';
@@ -2202,7 +2203,20 @@ export async function mergeAccountRecord(
     needsStorageServiceSync: false,
   });
 
-  await ourConversation.updateUsername(dropNull(username || null), {
+  const syncedUsername = dropNull(username || null);
+  // Tellomi (ADR-0066 §6.2): a username deleted on another device stays held for its owner for 30 days, and setting
+  // one here in that time starts the rename cooldown. Record the deletion like a local one so the username editor
+  // warns before that (getUsernameSaveConfirmation).
+  if (
+    shouldRecordUsernameDeletion(
+      ourConversation.get('username'),
+      syncedUsername
+    )
+  ) {
+    await itemStorage.put('tellomiUsernameDeletedAt', Date.now());
+  }
+
+  await ourConversation.updateUsername(syncedUsername, {
     shouldSave: false,
     fromStorageService: true,
   });

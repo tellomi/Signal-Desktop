@@ -5991,6 +5991,9 @@
   "icu:ProfileEditor--username--confirm-delete-body-2": {
     "messageformat": "這將刪除你的用戶名稱及停用你的二維碼和連結。「{username}」將會供其他人使用。你確定嗎？"
   },
+  "icu:ProfileEditor--username--confirm-delete-body--tellomi": {
+    "messageformat": "這將刪除你的用戶名稱及停用你的二維碼和連結。「{username}」會為你保留 {holdDays, number} 天；這期間再設定用戶名稱，之後 {days, number} 天內不能再更改。你確定嗎？"
+  },
   "icu:ProfileEditor--username--confirm-delete-button": {
     "messageformat": "刪除"
   },
@@ -8145,6 +8148,9 @@
   },
   "icu:EditUsernameModalBody__change-confirmation--tellomi": {
     "messageformat": "{days, plural, other {更改用戶名稱將重設你現有的二維碼和連結，之後 # 天內不能再更改。你確定嗎？}}"
+  },
+  "icu:EditUsernameModalBody__set-after-delete-confirmation--tellomi": {
+    "messageformat": "你在 {holdDays, number} 天內刪除過用戶名稱，現在設定也算一次更改：之後 {days, number} 天內不能再更改。你確定嗎？"
   },
   "icu:EditUsernameModalBody__change-confirmation__continue": {
     "messageformat": "繼續"

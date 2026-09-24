@@ -8,9 +8,15 @@ import { updateRemoteConfig } from '../../test-helpers/RemoteConfigStub.dom.ts';
 import {
   FIXED_DISCRIMINATOR,
   RENAME_COOLDOWN_MIN_RETRY_AFTER_SECS,
+  ReserveUsernameError,
+  USERNAME_HOLD_DAYS,
   formatUsernameForDisplay,
   getRenameCooldownDays,
+  getUsernameSaveConfirmation,
   isRenameCooldown,
+  isWithinUsernameHold,
+  planUsernameReservation,
+  shouldRecordUsernameDeletion,
   startsWithLetter,
   withFixedDiscriminator,
 } from '../../types/Username.std.ts';
@@ -261,6 +267,136 @@ describe('Username (Tellomi fixed discriminator)', () => {
       assert.isFalse(startsWithLetter('9kaixin'));
       assert.isFalse(startsWithLetter('开心'));
       assert.isFalse(startsWithLetter(''));
+    });
+  });
+
+  // ADR-0066 §6.2: what reserveUsername sends (tellomi/tellomi#1247 — Pro's review of Signal-Desktop#2 asked for these
+  // to be pinned by tests: they used to be inline and nothing went red when they changed).
+  describe('planUsernameReservation', () => {
+    it('reserves exactly one candidate, the nickname with 01', () => {
+      for (const previous of [undefined, 'hk881qa.01', 'kaixin.37']) {
+        assert.deepStrictEqual(planUsernameReservation('newname', previous), {
+          kind: 'reserve',
+          candidates: [{ nickname: 'newname', discriminator: '01' }],
+        });
+      }
+    });
+
+    it('takes the case-only shortcut only when the current discriminator is 01', () => {
+      assert.deepStrictEqual(planUsernameReservation('KaiXin', 'kaixin.01'), {
+        kind: 'caseChange',
+        username: 'KaiXin.01',
+      });
+      // An old `.37` typing its nickname again moves to `.01`: a real reservation, not a case change.
+      assert.deepStrictEqual(planUsernameReservation('KAIXIN', 'kaixin.37'), {
+        kind: 'reserve',
+        candidates: [{ nickname: 'KAIXIN', discriminator: '01' }],
+      });
+    });
+
+    it('treats moving an old `.NN` name to `.01` as a new username (ADR-0066 §六「老数据」)', () => {
+      // The hash changes and the server counts it as a rename, so the new-username rules apply.
+      assert.deepStrictEqual(planUsernameReservation('_kaixin', '_kaixin.37'), {
+        kind: 'invalid',
+        error: ReserveUsernameError.CheckStartingCharacter,
+      });
+      // Only the case-only shortcut keeps a name as it is: a 21–32 character `.01` name can still change its case.
+      const long = 'abcdefghijklmnopqrstuvwxy'; // 25
+      assert.deepStrictEqual(
+        planUsernameReservation(long.toUpperCase(), `${long}.01`),
+        { kind: 'caseChange', username: `${long.toUpperCase()}.01` }
+      );
+      // Anything else is a new nickname and is checked.
+      assert.deepStrictEqual(planUsernameReservation('_other', '_kaixin.01'), {
+        kind: 'invalid',
+        error: ReserveUsernameError.CheckStartingCharacter,
+      });
+    });
+
+    it('refuses a new nickname that does not start with a letter', () => {
+      for (const nickname of ['_kaixin', '9kaixin']) {
+        assert.deepStrictEqual(planUsernameReservation(nickname, undefined), {
+          kind: 'invalid',
+          error: ReserveUsernameError.CheckStartingCharacter,
+        });
+      }
+    });
+
+    it('lets an existing `_` username change its case', () => {
+      assert.deepStrictEqual(planUsernameReservation('_KaiXin', '_kaixin.01'), {
+        kind: 'caseChange',
+        username: '_KaiXin.01',
+      });
+    });
+
+    it('leaves an empty nickname to libsignal', () => {
+      assert.deepStrictEqual(planUsernameReservation('', undefined), {
+        kind: 'reserve',
+        candidates: [{ nickname: '', discriminator: '01' }],
+      });
+    });
+  });
+
+  // ADR-0066 §6.2: a deleted username stays held for its owner, and setting any username while it is held starts the
+  // rename cooldown, so the editor warns before it (tellomi/tellomi#1247).
+  describe('username hold and save confirmation', () => {
+    const now = Date.UTC(2026, 8, 24, 12);
+    const day = 24 * 60 * 60 * 1000;
+
+    it('records a deletion when a storage sync clears our username', () => {
+      // Deleted on another device: the AccountRecord comes back without a username.
+      assert.isTrue(shouldRecordUsernameDeletion('kaixin.01', undefined));
+      assert.isTrue(shouldRecordUsernameDeletion('kaixin.01', ''));
+      // First sync after linking, a rename, or nothing to clear.
+      assert.isFalse(shouldRecordUsernameDeletion(undefined, 'kaixin.01'));
+      assert.isFalse(shouldRecordUsernameDeletion('kaixin.01', 'bob.01'));
+      assert.isFalse(shouldRecordUsernameDeletion(undefined, undefined));
+    });
+
+    it('treats a deletion as held for USERNAME_HOLD_DAYS', () => {
+      assert.strictEqual(USERNAME_HOLD_DAYS, 30);
+      assert.isFalse(isWithinUsernameHold(undefined, now));
+      assert.isTrue(isWithinUsernameHold(now - day, now));
+      assert.isTrue(isWithinUsernameHold(now - 30 * day + 1, now));
+      assert.isFalse(isWithinUsernameHold(now - 30 * day, now));
+      // Clock moved back after the deletion: warn rather than stay silent.
+      assert.isTrue(isWithinUsernameHold(now + day, now));
+    });
+
+    it('picks the right warning before saving', () => {
+      const base = { isCaseChangeOnly: false, deletedAt: undefined, now };
+      assert.strictEqual(
+        getUsernameSaveConfirmation({ ...base, currentUsername: undefined }),
+        'none'
+      );
+      assert.strictEqual(
+        getUsernameSaveConfirmation({ ...base, currentUsername: 'kaixin.01' }),
+        'change'
+      );
+      assert.strictEqual(
+        getUsernameSaveConfirmation({
+          ...base,
+          currentUsername: 'kaixin.01',
+          isCaseChangeOnly: true,
+        }),
+        'none'
+      );
+      assert.strictEqual(
+        getUsernameSaveConfirmation({
+          ...base,
+          currentUsername: undefined,
+          deletedAt: now - day,
+        }),
+        'setAfterDelete'
+      );
+      assert.strictEqual(
+        getUsernameSaveConfirmation({
+          ...base,
+          currentUsername: undefined,
+          deletedAt: now - 31 * day,
+        }),
+        'none'
+      );
     });
   });
 

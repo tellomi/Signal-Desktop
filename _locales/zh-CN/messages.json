@@ -5991,6 +5991,9 @@
   "icu:ProfileEditor--username--confirm-delete-body-2": {
     "messageformat": "这样做将会删除您的用户名并使您的二维码和链接失效。其他用户将可以申请使用“{username}”这个用户名。确定要更改吗？"
   },
+  "icu:ProfileEditor--username--confirm-delete-body--tellomi": {
+    "messageformat": "这样做将会删除你的用户名，并使你的二维码和链接失效。“{username}”会为你保留 {holdDays, number} 天；这期间再设置用户名，之后 {days, number} 天内不能再改。确定要删除吗？"
+  },
   "icu:ProfileEditor--username--confirm-delete-button": {
     "messageformat": "删除"
   },
@@ -8145,6 +8148,9 @@
   },
   "icu:EditUsernameModalBody__change-confirmation--tellomi": {
     "messageformat": "{days, plural, other {更改用户名会重置你现有的二维码和链接，而且之后 # 天内不能再改。确定要更改吗？}}"
+  },
+  "icu:EditUsernameModalBody__set-after-delete-confirmation--tellomi": {
+    "messageformat": "你在 {holdDays, number} 天内删除过用户名，现在设置也算一次更改：之后 {days, number} 天内不能再改。确定要继续吗？"
   },
   "icu:EditUsernameModalBody__change-confirmation__continue": {
     "messageformat": "继续"

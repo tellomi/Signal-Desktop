@@ -7963,6 +7963,10 @@
     "messageformat": "This will remove your username and disable your QR code and link. “{username}” will be available for others to claim. Are you sure?",
     "description": "Shown in dialog body if user has saved an empty string to delete their username"
   },
+  "icu:ProfileEditor--username--confirm-delete-body--tellomi": {
+    "messageformat": "This will remove your username and disable your QR code and link. “{username}” stays reserved for you for {holdDays, number} days; if you set a username during that time, you won’t be able to change it again for {days, plural, one {# day} other {# days}}. Are you sure?",
+    "description": "Tellomi (ADR-0066 §6.2): delete-username confirmation. The server holds a deleted username for its owner (so it is not free for others to claim), and setting any username while it is held starts the rename cooldown. {holdDays} and {days} are both 30 today but are separate server settings."
+  },
   "icu:ProfileEditor--username--confirm-delete-button": {
     "messageformat": "Delete",
     "description": "Shown in dialog button if user has saved an empty string to delete their username"
@@ -10833,6 +10837,10 @@
   "icu:EditUsernameModalBody__change-confirmation--tellomi": {
     "messageformat": "Changing your username will reset your existing QR code and link, and you won’t be able to change it again for {days, plural, one {# day} other {# days}}. Are you sure?",
     "description": "Tellomi (ADR-0066 §6.2): confirmation before replacing an existing username. Every such change starts the rename cooldown, so say so before the user commits. {days} is the cooldown length (30)."
+  },
+  "icu:EditUsernameModalBody__set-after-delete-confirmation--tellomi": {
+    "messageformat": "You deleted your username less than {holdDays, number} days ago, so setting one now counts as a change: you won’t be able to change it again for {days, plural, one {# day} other {# days}}. Are you sure?",
+    "description": "Tellomi (ADR-0066 §6.2): shown before setting a username when there is none now but this device deleted one within the hold window; the server treats that as a change and starts the rename cooldown."
   },
   "icu:EditUsernameModalBody__change-confirmation__continue": {
     "messageformat": "Continue",

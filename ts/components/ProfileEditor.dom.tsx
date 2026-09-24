@@ -53,7 +53,11 @@ import { Emoji } from '../axo/emoji.std.ts';
 import { AxoTextField } from '../axo/fields/AxoTextField.dom.tsx';
 import { tw } from '../axo/tw.dom.tsx';
 import { AxoConfirmDialog } from '../axo/AxoConfirmDialog.dom.tsx';
-import { formatUsernameForDisplay } from '../types/Username.std.ts';
+import {
+  RENAME_COOLDOWN_DAYS,
+  USERNAME_HOLD_DAYS,
+  formatUsernameForDisplay,
+} from '../types/Username.std.ts';
 
 type ProfileEditorData = {
   firstName: string;
@@ -806,10 +810,14 @@ export function ProfileEditor({
         onOpenChange={() => setUsernameEditState(UsernameEditState.Editing)}
         // @ts-expect-error ConfirmationDialog migration: Needs title
         title={null}
+        // Tellomi (ADR-0066 §6.2): the name is held for its owner for 30 days, not free for others to claim, and
+        // setting a username during that time starts the rename cooldown — say both before the user deletes.
         description={i18n(
-          'icu:ProfileEditor--username--confirm-delete-body-2',
+          'icu:ProfileEditor--username--confirm-delete-body--tellomi',
           {
             username: displayUsername ?? '',
+            holdDays: USERNAME_HOLD_DAYS,
+            days: RENAME_COOLDOWN_DAYS,
           }
         )}
       >
