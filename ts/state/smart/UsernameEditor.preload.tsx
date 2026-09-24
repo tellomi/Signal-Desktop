@@ -9,6 +9,7 @@ import {
   getUsernameReservationState,
   getUsernameReservationObject,
   getUsernameReservationError,
+  getUsernameCooldownRetryAfterSecs,
   getRecoveredUsername,
 } from '../selectors/username.std.ts';
 import { getUsernameCorrupted } from '../selectors/items.dom.ts';
@@ -33,6 +34,7 @@ export const SmartUsernameEditor = memo(function SmartUsernameEditor({
   const recoveredUsername = useSelector(getRecoveredUsername);
   const reservation = useSelector(getUsernameReservationObject);
   const error = useSelector(getUsernameReservationError);
+  const cooldownRetryAfterSecs = useSelector(getUsernameCooldownRetryAfterSecs);
   const {
     setUsernameReservationError,
     clearUsernameReservation,
@@ -51,6 +53,7 @@ export const SmartUsernameEditor = memo(function SmartUsernameEditor({
       recoveredUsername={recoveredUsername}
       reservation={reservation}
       error={error}
+      cooldownRetryAfterSecs={cooldownRetryAfterSecs}
       setUsernameReservationError={setUsernameReservationError}
       clearUsernameReservation={clearUsernameReservation}
       reserveUsername={reserveUsername}

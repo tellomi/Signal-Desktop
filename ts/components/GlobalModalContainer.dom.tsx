@@ -38,6 +38,7 @@ import { CriticalIdlePrimaryDeviceModal } from './CriticalIdlePrimaryDeviceModal
 import { LowDiskSpaceBackupImportModal } from './LowDiskSpaceBackupImportModal.dom.tsx';
 import { KeyTransparencyOnboardingDialog } from './KeyTransparencyOnboardingDialog.dom.tsx';
 import { isUsernameValid } from '../util/Username.dom.ts';
+import { formatUsernameForDisplay } from '../types/Username.std.ts';
 import type { PinMessageDialogData } from '../state/smart/PinMessageDialog.preload.tsx';
 import { AxoConfirmDialog } from '../axo/AxoConfirmDialog.dom.tsx';
 import type { ErrorModalDataProps } from './ErrorModal.dom.tsx';
@@ -506,12 +507,14 @@ export function GlobalModalContainer({
       userNotFoundModalState.type === 'username' &&
       !isUsernameValid(userNotFoundModalState.username)
     ) {
-      content = i18n('icu:startConversation--username-not-valid', {
-        atUsername: userNotFoundModalState.username,
+      // Tellomi (ADR-0066): upstream's text asks for "its set of digits", which no username needs any more.
+      content = i18n('icu:startConversation--username-not-valid--tellomi', {
+        atUsername: formatUsernameForDisplay(userNotFoundModalState.username),
       });
     } else if (userNotFoundModalState.type === 'username') {
+      // Tellomi (ADR-0066): the lookup ran on `kaixin.01`, but the user typed / clicked `kaixin`.
       content = i18n('icu:startConversation--username-not-found', {
-        atUsername: userNotFoundModalState.username,
+        atUsername: formatUsernameForDisplay(userNotFoundModalState.username),
       });
     } else {
       throw missingCaseError(userNotFoundModalState);

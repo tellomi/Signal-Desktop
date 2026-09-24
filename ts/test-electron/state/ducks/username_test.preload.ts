@@ -10,6 +10,7 @@ import {
   getUsernameReservationState,
   getUsernameReservationError,
   getUsernameReservationObject,
+  getUsernameCooldownRetryAfterSecs,
 } from '../../../state/selectors/username.std.ts';
 import {
   UsernameEditState,
@@ -205,6 +206,55 @@ describe('electron/state/ducks/username', () => {
         );
       });
     }
+
+    // Tellomi (ADR-0066 §6.2): the rename cooldown is a 429 like rate limiting; the editor needs the Retry-After to
+    // say how many days are left, and nothing else may keep a stale number.
+    it('should keep Retry-After with the rename cooldown and clear it afterwards', () => {
+      let state = emptyState;
+
+      const abortController = new AbortController();
+
+      state = reducer(state, {
+        type: 'username/RESERVE_USERNAME_PENDING',
+        meta: { abortController },
+      });
+      state = reducer(state, {
+        type: 'username/RESERVE_USERNAME_FULFILLED',
+        payload: {
+          ok: false,
+          error: ReserveUsernameError.ChangeCooldown,
+          retryAfterSecs: 2591999,
+        },
+        meta: { abortController },
+      });
+
+      assert.strictEqual(
+        getUsernameReservationError(state),
+        UsernameReservationError.ChangeCooldown
+      );
+      assert.strictEqual(getUsernameCooldownRetryAfterSecs(state), 2591999);
+
+      state = reducer(state, {
+        type: 'username/RESERVE_USERNAME_PENDING',
+        meta: { abortController },
+      });
+      assert.strictEqual(getUsernameReservationError(state), undefined);
+      assert.strictEqual(getUsernameCooldownRetryAfterSecs(state), undefined);
+
+      state = reducer(state, {
+        type: 'username/RESERVE_USERNAME_FULFILLED',
+        payload: {
+          ok: false,
+          error: ReserveUsernameError.TooManyAttempts,
+        },
+        meta: { abortController },
+      });
+      assert.strictEqual(
+        getUsernameReservationError(state),
+        UsernameReservationError.TooManyAttempts
+      );
+      assert.strictEqual(getUsernameCooldownRetryAfterSecs(state), undefined);
+    });
 
     it('should update error on rejection', () => {
       let state = emptyState;

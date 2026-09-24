@@ -4,6 +4,16 @@
 import { assert } from 'chai';
 
 import * as Username from '../../util/Username.dom.ts';
+import { updateRemoteConfig } from '../../test-helpers/RemoteConfigStub.dom.ts';
+import {
+  FIXED_DISCRIMINATOR,
+  RENAME_COOLDOWN_MIN_RETRY_AFTER_SECS,
+  formatUsernameForDisplay,
+  getRenameCooldownDays,
+  isRenameCooldown,
+  startsWithLetter,
+  withFixedDiscriminator,
+} from '../../types/Username.std.ts';
 
 describe('Username', () => {
   describe('isUsernameValid', () => {
@@ -50,20 +60,47 @@ describe('Username', () => {
       assert.isFalse(isUsernameValid('username.001'));
       assert.isFalse(isUsernameValid('username.012'));
     });
+
+    // Tellomi (TR-ID-01, tellomi/tellomi#1181): the server sends global.nicknames.max = 20, which limits new usernames
+    // only. Existing ones up to the protocol's 32 must stay valid, or ConversationModel.updateUsername drops them.
+    describe('with global.nicknames.max = 20', () => {
+      beforeEach(async () => {
+        await updateRemoteConfig([
+          { name: 'global.nicknames.min', value: '3' },
+          { name: 'global.nicknames.max', value: '20' },
+        ]);
+      });
+
+      afterEach(async () => {
+        await updateRemoteConfig([]);
+      });
+
+      it('still accepts existing 21-32 character nicknames', () => {
+        assert.strictEqual(Username.getMaxNickname(), 20);
+        assert.isTrue(isUsernameValid('abcdefghijklmnopqrstu.01'));
+        assert.isTrue(isUsernameValid('username_with_32_characters_1234.45'));
+        assert.isFalse(isUsernameValid('username_with_33_characters_12345.67'));
+      });
+    });
   });
 
   describe('getUsernameFromSearch', () => {
     const { getUsernameFromSearch } = Username;
 
-    it('matches partial username searches without discriminator', () => {
-      assert.strictEqual(getUsernameFromSearch('use'), 'use');
-      assert.strictEqual(getUsernameFromSearch('user'), 'user');
-      assert.strictEqual(getUsernameFromSearch('usern'), 'usern');
+    // Tellomi (ADR-0066): a bare nickname is looked up as `<nickname>.01`, the only discriminator Tellomi sets.
+    it('completes a nickname without discriminator with .01', () => {
+      assert.strictEqual(getUsernameFromSearch('use'), 'use.01');
+      assert.strictEqual(getUsernameFromSearch('user'), 'user.01');
+      assert.strictEqual(getUsernameFromSearch('usern'), 'usern.01');
+      assert.strictEqual(getUsernameFromSearch('KaiXin'), 'KaiXin.01');
+    });
+
+    it('leaves a trailing dot alone (not a username yet)', () => {
       assert.strictEqual(getUsernameFromSearch('usern.'), 'usern.');
     });
 
     it('matches and strips leading @', () => {
-      assert.strictEqual(getUsernameFromSearch('@user'), 'user');
+      assert.strictEqual(getUsernameFromSearch('@user'), 'user.01');
       assert.strictEqual(getUsernameFromSearch('@user.'), 'user.');
       assert.strictEqual(getUsernameFromSearch('@user.01'), 'user.01');
     });
@@ -158,6 +195,91 @@ describe('Username', () => {
       assert.isFalse(probablyAUsername('2223'));
       assert.isFalse(probablyAUsername('+3'));
       assert.isFalse(probablyAUsername('+234234234233'));
+    });
+  });
+});
+
+// Tellomi (ADR-0066): the discriminator is fixed at `01` and hidden; every other one is shown in full.
+describe('Username (Tellomi fixed discriminator)', () => {
+  it('fixes the discriminator at 01', () => {
+    assert.strictEqual(FIXED_DISCRIMINATOR, '01');
+  });
+
+  describe('formatUsernameForDisplay', () => {
+    it('drops only the fixed discriminator', () => {
+      assert.strictEqual(formatUsernameForDisplay('kaixin.01'), 'kaixin');
+      assert.strictEqual(formatUsernameForDisplay('KaiXin.01'), 'KaiXin');
+    });
+
+    // ADR-0066 §九, the reverse case: someone else's `kaixin.57` must never be shown as `kaixin`.
+    it('shows any other discriminator in full', () => {
+      assert.strictEqual(formatUsernameForDisplay('kaixin.57'), 'kaixin.57');
+      assert.strictEqual(formatUsernameForDisplay('kaixin.101'), 'kaixin.101');
+      assert.strictEqual(formatUsernameForDisplay('kaixin.001'), 'kaixin.001');
+      assert.strictEqual(formatUsernameForDisplay('kaixin.010'), 'kaixin.010');
+    });
+
+    it('leaves strings without a discriminator alone', () => {
+      assert.strictEqual(formatUsernameForDisplay('kaixin'), 'kaixin');
+      assert.strictEqual(formatUsernameForDisplay('kaixin.'), 'kaixin.');
+    });
+  });
+
+  describe('withFixedDiscriminator', () => {
+    it('completes a bare nickname with .01', () => {
+      assert.strictEqual(withFixedDiscriminator('kaixin'), 'kaixin.01');
+      assert.strictEqual(withFixedDiscriminator('KaiXin'), 'KaiXin.01');
+    });
+
+    it('keeps an existing discriminator as typed', () => {
+      assert.strictEqual(withFixedDiscriminator('kaixin.01'), 'kaixin.01');
+      assert.strictEqual(withFixedDiscriminator('kaixin.57'), 'kaixin.57');
+    });
+
+    it('does not turn a trailing dot into a username', () => {
+      assert.strictEqual(withFixedDiscriminator('kaixin.'), 'kaixin.');
+    });
+
+    it('is idempotent', () => {
+      assert.strictEqual(
+        withFixedDiscriminator(withFixedDiscriminator('kaixin')),
+        'kaixin.01'
+      );
+    });
+  });
+
+  // ADR-0066 §六: libsignal alone would register `_kaixin.01`; new nicknames must start with a letter.
+  describe('startsWithLetter', () => {
+    it('accepts a leading letter of either case', () => {
+      assert.isTrue(startsWithLetter('kaixin'));
+      assert.isTrue(startsWithLetter('Kaixin_2'));
+      assert.isTrue(startsWithLetter('z__'));
+    });
+
+    it('refuses a leading underscore, digit or anything else', () => {
+      assert.isFalse(startsWithLetter('_kaixin'));
+      assert.isFalse(startsWithLetter('9kaixin'));
+      assert.isFalse(startsWithLetter('开心'));
+      assert.isFalse(startsWithLetter(''));
+    });
+  });
+
+  // ADR-0066 §6.2 + tellomi/tellomi#1106: the rules all three clients share for a 429 on reserve.
+  describe('rename cooldown', () => {
+    it('treats a Retry-After above an hour as the cooldown', () => {
+      assert.isFalse(isRenameCooldown(9));
+      assert.isFalse(isRenameCooldown(RENAME_COOLDOWN_MIN_RETRY_AFTER_SECS));
+      assert.isTrue(isRenameCooldown(RENAME_COOLDOWN_MIN_RETRY_AFTER_SECS + 1));
+      assert.isTrue(isRenameCooldown(2591999));
+    });
+
+    it('shows whole days, rounded up, at least one', () => {
+      assert.strictEqual(getRenameCooldownDays(2591999), 30);
+      assert.strictEqual(getRenameCooldownDays(2592000), 30);
+      assert.strictEqual(getRenameCooldownDays(86401), 2);
+      assert.strictEqual(getRenameCooldownDays(86400), 1);
+      assert.strictEqual(getRenameCooldownDays(7200), 1);
+      assert.strictEqual(getRenameCooldownDays(0), 1);
     });
   });
 });

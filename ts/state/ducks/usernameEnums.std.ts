@@ -44,4 +44,6 @@ export enum UsernameReservationError {
   AllZeroDiscriminator = 'AllZeroDiscriminator',
   LeadingZeroDiscriminator = 'LeadingZeroDiscriminator',
   TooManyAttempts = 'TooManyAttempts',
+  // Tellomi (ADR-0066 §6.2): the 30-day rename cooldown; the state's `cooldownRetryAfterSecs` says how long is left.
+  ChangeCooldown = 'ChangeCooldown',
 }

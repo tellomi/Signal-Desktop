@@ -15,6 +15,7 @@ import {
   getAccountForUsername,
   cdsLookup,
 } from '../textsecure/WebAPI.preload.ts';
+import { withFixedDiscriminator } from '../types/Username.std.ts';
 
 const log = createLogger('lookupConversationWithoutServiceId');
 
@@ -146,6 +147,9 @@ async function checkForUsername(
   if (fixedUsername.startsWith('@')) {
     fixedUsername = fixedUsername.slice(1);
   }
+  // Tellomi (ADR-0066): a bare nickname means `<nickname>.01`. Search and links already complete it; doing it
+  // here too (idempotent) keeps any other entry point from hashing a bare nickname and reporting "not found".
+  fixedUsername = withFixedDiscriminator(fixedUsername);
 
   try {
     hash = usernames.hash(fixedUsername);

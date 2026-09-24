@@ -55,6 +55,13 @@ export const getUsernameReservationError = createSelector(
   ): UsernameReservationError | undefined => reservation.error
 );
 
+// Tellomi (ADR-0066 §6.2): seconds left in the rename cooldown when the error is ChangeCooldown.
+export const getUsernameCooldownRetryAfterSecs = createSelector(
+  getUsernameReservation,
+  (reservation: UsernameReservationStateType): number | undefined =>
+    reservation.cooldownRetryAfterSecs
+);
+
 export const getRecoveredUsername = createSelector(
   getUsernameReservation,
   (reservation: UsernameReservationStateType): string | undefined =>

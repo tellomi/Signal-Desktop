@@ -11,6 +11,7 @@ import { ListTile } from '../ListTile.dom.tsx';
 import { Avatar, AvatarSize } from '../Avatar.dom.tsx';
 import { Spinner } from '../Spinner.dom.tsx';
 import { SPINNER_CLASS_NAME } from './BaseConversationListItem.dom.tsx';
+import { formatUsernameForDisplay } from '../../types/Username.std.ts';
 
 export type PropsDataType = {
   username: string;
@@ -62,7 +63,8 @@ export const UsernameCheckbox: FunctionComponent<PropsType> = memo(
       username,
     ]);
 
-    const title = username;
+    // Tellomi (ADR-0066): `username` is the full `kaixin.01` the search completed to; show what the user typed.
+    const title = formatUsernameForDisplay(username);
 
     const avatar = (
       <Avatar

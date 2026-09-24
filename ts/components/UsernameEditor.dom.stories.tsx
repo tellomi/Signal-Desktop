@@ -46,6 +46,7 @@ export default {
         UsernameReservationError.UsernameNotAvailable,
         UsernameReservationError.General,
         UsernameReservationError.TooManyAttempts,
+        UsernameReservationError.ChangeCooldown,
       ],
     },
     reservation: {
@@ -132,4 +133,24 @@ UsernameEditingGeneralError.args = {
   state: State.Open,
   error: UsernameReservationError.General,
   currentUsername: 'signaluser.12',
+};
+
+// Tellomi (ADR-0066): the preview shows `kaixin` for `kaixin.01`, and `kaixin.57` in full.
+export const TellomiWithFixedDiscriminator = Template.bind({});
+TellomiWithFixedDiscriminator.args = {
+  currentUsername: 'kaixin.01',
+};
+
+export const TellomiWithOldDiscriminator = Template.bind({});
+TellomiWithOldDiscriminator.args = {
+  currentUsername: 'kaixin.57',
+};
+
+// Tellomi (ADR-0066 §6.2): renamed less than 30 days ago; Retry-After right after a change.
+export const TellomiRenameCooldown = Template.bind({});
+TellomiRenameCooldown.args = {
+  state: State.Open,
+  error: UsernameReservationError.ChangeCooldown,
+  cooldownRetryAfterSecs: 2591999,
+  currentUsername: 'kaixin.01',
 };

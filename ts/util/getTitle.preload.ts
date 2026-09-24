@@ -11,6 +11,7 @@ import { instance, PhoneNumberFormat } from './libphonenumberInstance.std.ts';
 import { isDirectConversation } from './whatTypeOfConversation.dom.ts';
 import { isConversationEverUnregistered } from './isConversationUnregistered.dom.ts';
 import { getE164 } from './getE164.std.ts';
+import { formatUsernameForDisplay } from '../types/Username.std.ts';
 import { itemStorage } from '../textsecure/Storage.preload.ts';
 
 type TitleOptions = {
@@ -62,7 +63,8 @@ export function getTitleNoDefault(
     (isShort ? attributes.profileName : undefined) ||
     getProfileName(attributes) ||
     getNumber(attributes) ||
-    username
+    // Tellomi (ADR-0066): `kaixin.01` shows as `kaixin`; any other discriminator stays visible.
+    (username ? formatUsernameForDisplay(username) : username)
   );
 }
 

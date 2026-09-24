@@ -116,6 +116,7 @@ import { AxoSwitchItem } from '../axo/items/AxoSwitchItem.dom.tsx';
 import { AxoSelectItem } from '../axo/items/AxoSelectItem.dom.tsx';
 import { AxoClickableItem } from '../axo/items/AxoClickableItem.dom.tsx';
 import { AxoTextItem } from '../axo/items/AxoTextItem.dom.tsx';
+import { formatUsernameForDisplay } from '../types/Username.std.ts';
 
 const { isNumber, noop, partition } = lodash;
 
@@ -2636,7 +2637,7 @@ export function Preferences({
                   )}
                   {me.username && (
                     <div className="Preferences__profile-chip__username">
-                      {me.username}
+                      {formatUsernameForDisplay(me.username)}
                     </div>
                   )}
                 </div>

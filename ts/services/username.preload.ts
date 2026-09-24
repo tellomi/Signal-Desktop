@@ -17,9 +17,12 @@ import type { UsernameReservationType } from '../types/Username.std.ts';
 import {
   ReserveUsernameError,
   ConfirmUsernameResult,
+  FIXED_DISCRIMINATOR,
   getNickname,
   getDiscriminator,
   isCaseChange,
+  isRenameCooldown,
+  startsWithLetter,
 } from '../types/Username.std.ts';
 import * as Errors from '../types/errors.std.ts';
 import { createLogger } from '../logging/log.std.ts';
@@ -51,9 +54,9 @@ export type WriteUsernameOptionsType = Readonly<
     }
 >;
 
+// Tellomi (ADR-0066): there is no user-chosen discriminator any more, so no `customDiscriminator` here.
 export type ReserveUsernameOptionsType = Readonly<{
   nickname: string;
-  customDiscriminator: string | undefined;
   previousUsername: string | undefined;
   abortSignal?: AbortSignal;
 }>;
@@ -68,14 +71,15 @@ export type ReserveUsernameResultType = Readonly<
       ok: false;
       reservation?: void;
       error: ReserveUsernameError;
+      // Only for ReserveUsernameError.ChangeCooldown: seconds until the account may take a new username.
+      retryAfterSecs?: number;
     }
 >;
 
 export async function reserveUsername(
   options: ReserveUsernameOptionsType
 ): Promise<ReserveUsernameResultType> {
-  const { nickname, customDiscriminator, previousUsername, abortSignal } =
-    options;
+  const { nickname, previousUsername, abortSignal } = options;
 
   const me = window.ConversationController.getOurConversationOrThrow();
 
@@ -84,16 +88,21 @@ export async function reserveUsername(
   }
 
   try {
-    if (previousUsername !== undefined && !customDiscriminator) {
+    // Case change: the hash is case-insensitive, so the current username is re-confirmed with the new casing and
+    // nothing is reserved. Tellomi (ADR-0066): only when the current discriminator already is the fixed one. An old
+    // `kaixin.37` typing `kaixin` again means "move to the plain `kaixin`", which is an ordinary reservation of
+    // `kaixin.01` (ADR-0066 §六: old suffixes are not migrated, the normal rename flow drops them).
+    if (
+      previousUsername !== undefined &&
+      getDiscriminator(previousUsername) === FIXED_DISCRIMINATOR
+    ) {
       const previousNickname = getNickname(previousUsername);
 
-      // Case change
       if (
         previousNickname !== undefined &&
         nickname.toLowerCase() === previousNickname.toLowerCase()
       ) {
-        const previousDiscriminator = getDiscriminator(previousUsername);
-        const newUsername = `${nickname}.${previousDiscriminator}`;
+        const newUsername = `${nickname}.${FIXED_DISCRIMINATOR}`;
         const hash = usernames.hash(newUsername);
         return {
           ok: true,
@@ -102,20 +111,22 @@ export async function reserveUsername(
       }
     }
 
-    const candidates = customDiscriminator
-      ? [
-          usernames.fromParts(
-            nickname,
-            customDiscriminator,
-            getMinNickname(),
-            getMaxNickname()
-          ).username,
-        ]
-      : usernames.generateCandidates(
-          nickname,
-          getMinNickname(),
-          getMaxNickname()
-        );
+    // Tellomi (ADR-0066 §六): new nicknames start with a letter (see startsWithLetter). An empty nickname is left to
+    // libsignal, which reports it as too short.
+    if (nickname.length > 0 && !startsWithLetter(nickname)) {
+      return { ok: false, error: ReserveUsernameError.CheckStartingCharacter };
+    }
+
+    // Tellomi (ADR-0066): exactly one candidate, `<nickname>.01`, instead of upstream's 20 random discriminators.
+    // Uniqueness of the hash therefore means uniqueness of the nickname; a taken or reserved nickname is a 409.
+    const candidates = [
+      usernames.fromParts(
+        nickname,
+        FIXED_DISCRIMINATOR,
+        getMinNickname(),
+        getMaxNickname()
+      ).username,
+    ];
 
     const hashes = candidates.map(username => usernames.hash(username));
 
@@ -143,6 +154,15 @@ export async function reserveUsername(
         return { ok: false, error: ReserveUsernameError.Conflict };
       }
       if (error.is(ErrorCode.RateLimitedError)) {
+        // Tellomi (ADR-0066 §6.2): the 30-day rename cooldown is a 429 too, told apart by its Retry-After.
+        // Only reservations are refused for it; confirming (below) is not, so its sleep-and-retry stays as upstream.
+        if (isRenameCooldown(error.retryAfterSecs)) {
+          return {
+            ok: false,
+            error: ReserveUsernameError.ChangeCooldown,
+            retryAfterSecs: error.retryAfterSecs,
+          };
+        }
         return {
           ok: false,
           error: ReserveUsernameError.TooManyAttempts,

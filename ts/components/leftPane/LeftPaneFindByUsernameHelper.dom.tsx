@@ -95,8 +95,10 @@ export class LeftPaneFindByUsernameHelper extends LeftPaneHelper<LeftPaneFindByU
     const placeholder = i18n(
       'icu:LeftPaneFindByHelper__placeholder--findByUsername'
     );
+    // Tellomi (ADR-0066): upstream asks for "a username followed by a dot and its set of numbers"; there are no
+    // numbers any more (a bare nickname is looked up as `<nickname>.01`).
     const description = i18n(
-      'icu:LeftPaneFindByHelper__description--findByUsername'
+      'icu:LeftPaneFindByHelper__description--findByUsername--tellomi'
     );
     return (
       <SearchInput

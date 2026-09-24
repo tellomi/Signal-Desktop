@@ -53,6 +53,7 @@ import { Emoji } from '../axo/emoji.std.ts';
 import { AxoTextField } from '../axo/fields/AxoTextField.dom.tsx';
 import { tw } from '../axo/tw.dom.tsx';
 import { AxoConfirmDialog } from '../axo/AxoConfirmDialog.dom.tsx';
+import { formatUsernameForDisplay } from '../types/Username.std.ts';
 
 type ProfileEditorData = {
   firstName: string;
@@ -183,6 +184,10 @@ export function ProfileEditor({
   usernameLink,
   usernameLinkCorrupted,
 }: PropsType): JSX.Element {
+  // Tellomi (ADR-0066): everything this page shows, copies or draws into the QR card uses the display form
+  // (`kaixin.01` → `kaixin`; any other discriminator stays). `username` itself stays the full protocol value.
+  const displayUsername =
+    username === undefined ? undefined : formatUsernameForDisplay(username);
   const focusInputRef = useRef<HTMLInputElement | null>(null);
   const tryClose = useRef<(() => void) | null>(null);
   const [confirmDiscardModal, confirmDiscardIf] = useConfirmDiscard({
@@ -562,7 +567,7 @@ export function ProfileEditor({
       <UsernameLinkEditor
         i18n={i18n}
         link={usernameLink}
-        username={username ?? ''}
+        username={displayUsername ?? ''}
         colorId={usernameLinkColor}
         usernameLinkCorrupted={usernameLinkCorrupted}
         usernameLinkState={usernameLinkState}
@@ -594,10 +599,10 @@ export function ProfileEditor({
           label: i18n('icu:ProfileEditor--username--copy'),
           onClick: () => {
             assertDev(
-              username !== undefined,
+              displayUsername !== undefined,
               'Should not be visible without username'
             );
-            void window.navigator.clipboard.writeText(username);
+            void window.navigator.clipboard.writeText(displayUsername);
             showToast({ toastType: ToastType.CopiedUsername });
           },
         },
@@ -690,7 +695,7 @@ export function ProfileEditor({
             <i className="ProfileEditor__icon--container ProfileEditor__icon ProfileEditor__icon--username" />
           }
           label={
-            (!usernameCorrupted && username) ||
+            (!usernameCorrupted && displayUsername) ||
             i18n('icu:ProfileEditor--username')
           }
           onClick={() => {
@@ -804,7 +809,7 @@ export function ProfileEditor({
         description={i18n(
           'icu:ProfileEditor--username--confirm-delete-body-2',
           {
-            username: username ?? '',
+            username: displayUsername ?? '',
           }
         )}
       >

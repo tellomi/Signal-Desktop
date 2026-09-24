@@ -37,6 +37,8 @@ export type UsernameReservationStateType = ReadonlyDeep<{
   recoveredUsername?: string;
   reservation?: UsernameReservationType;
   error?: UsernameReservationError;
+  // Tellomi (ADR-0066 §6.2): with error ChangeCooldown, the server's Retry-After (seconds left in the cooldown).
+  cooldownRetryAfterSecs?: number;
   abortController?: AbortController;
 }>;
 
@@ -177,14 +179,12 @@ const INPUT_DELAY_MS = 500;
 
 export type ReserveUsernameOptionsType = ReadonlyDeep<{
   nickname: string;
-  customDiscriminator?: string;
   doReserveUsername?: typeof usernameServices.reserveUsername;
   delay?: number;
 }>;
 
 function reserveUsername({
   nickname,
-  customDiscriminator,
   doReserveUsername = usernameServices.reserveUsername,
   delay = INPUT_DELAY_MS,
 }: ReserveUsernameOptionsType): ThunkAction<
@@ -214,7 +214,6 @@ function reserveUsername({
       return doReserveUsername({
         previousUsername: username,
         nickname,
-        customDiscriminator,
         abortSignal,
       });
     };
@@ -432,6 +431,7 @@ export function reducer(
       usernameReservation: {
         ...usernameReservation,
         error: undefined,
+        cooldownRetryAfterSecs: undefined,
         state: UsernameReservationState.Reserving,
         abortController: meta.abortController,
       },
@@ -479,6 +479,8 @@ export function reducer(
         stateError = UsernameReservationError.LeadingZeroDiscriminator;
       } else if (error === ReserveUsernameError.TooManyAttempts) {
         stateError = UsernameReservationError.TooManyAttempts;
+      } else if (error === ReserveUsernameError.ChangeCooldown) {
+        stateError = UsernameReservationError.ChangeCooldown;
       } else {
         throw missingCaseError(error);
       }
@@ -487,6 +489,10 @@ export function reducer(
         usernameReservation: {
           state: UsernameReservationState.Open,
           error: stateError,
+          cooldownRetryAfterSecs:
+            error === ReserveUsernameError.ChangeCooldown
+              ? payload.retryAfterSecs
+              : undefined,
         },
       };
     }

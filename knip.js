@@ -75,6 +75,9 @@ const config = {
       ignoreFiles: [
         'ts/components/Profiler.dom.tsx',
         ...(PROD_ONLY ? ['ts/axo/**/*.dom.tsx'] : []),
+        // Tellomi (ADR-0066): the username editor lost its discriminator field, AutoSizeInput's only production user;
+        // only its stories use it now. Kept rather than deleted so upstream changes to it rebase cleanly.
+        ...(PROD_ONLY ? ['ts/components/AutoSizeInput.dom.tsx'] : []),
       ],
       ignoreBinaries: PROD_ONLY ? ['electron'] : [],
       storybook: {

@@ -320,6 +320,9 @@
   "icu:LeftPaneFindByHelper__description--findByUsername": {
     "messageformat": "輸入用戶名稱，後面跟著一個點及其配對數字。"
   },
+  "icu:LeftPaneFindByHelper__description--findByUsername--tellomi": {
+    "messageformat": "輸入對方的用戶名稱。"
+  },
   "icu:LeftPane__EmptyView--WithSelectedChatFolder": {
     "messageformat": "無聊天可顯示"
   },
@@ -2524,6 +2527,9 @@
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} 不是有效的用戶名稱。請確保你已輸入完整的用戶名稱，以及隨後的一組數字。"
+  },
+  "icu:startConversation--username-not-valid--tellomi": {
+    "messageformat": "{atUsername} 不是有效的用戶名稱。"
   },
   "icu:startConversation--phone-number-not-found": {
     "messageformat": "找不到使用者。\"{phoneNumber}\" 不是 Tellomi的使用者。"
@@ -5934,6 +5940,9 @@
   "icu:ProfileEditor--username--check-starting-character": {
     "messageformat": "用戶名稱不得以數字開首。"
   },
+  "icu:ProfileEditor--username--check-starting-character--tellomi": {
+    "messageformat": "用戶名稱必須以字母開首。"
+  },
   "icu:ProfileEditor--username--check-character-min-plural": {
     "messageformat": "{min, plural, other {用戶名稱必須至少包含 {min,number} 個字元。}}"
   },
@@ -5952,6 +5961,9 @@
   "icu:ProfileEditor--username--too-many-attempts": {
     "messageformat": "嘗試次數過多，請稍後再試"
   },
+  "icu:ProfileEditor--username--change-cooldown": {
+    "messageformat": "{days, plural, other {你最近更改過用戶名稱，# 天後可以再更改。}}"
+  },
   "icu:ProfileEditor--username--unavailable": {
     "messageformat": "此用戶名稱無法使用"
   },
@@ -5960,6 +5972,9 @@
   },
   "icu:ProfileEditor--username--reservation-gone": {
     "messageformat": "{username} 不再適用。系統會用一組新的數字配對你的用戶名稱，請再儲存一次。"
+  },
+  "icu:ProfileEditor--username--reservation-gone--tellomi": {
+    "messageformat": "{username} 的保留已失效，請重新儲存。"
   },
   "icu:ProfileEditor--username--delete-general-error": {
     "messageformat": "無法刪除您的用戶名稱。請檢查您的網路連線並重試。"
@@ -8113,6 +8128,9 @@
   "icu:EditUsernameModalBody__username-helper": {
     "messageformat": "用戶名稱都會與一組數字配對。"
   },
+  "icu:EditUsernameModalBody__username-helper--tellomi": {
+    "messageformat": "其他人可以透過用戶名稱找到你並傳送訊息給你，無需知道你的電話號碼。可使用 {min, number}–{max, number} 個字母、數字或底線，並以字母開頭。"
+  },
   "icu:EditUsernameModalBody__learn-more": {
     "messageformat": "了解更多"
   },
@@ -8124,6 +8142,9 @@
   },
   "icu:EditUsernameModalBody__change-confirmation": {
     "messageformat": "更改用戶名稱將重設你現有的二維碼和連結。你確定嗎？"
+  },
+  "icu:EditUsernameModalBody__change-confirmation--tellomi": {
+    "messageformat": "{days, plural, other {更改用戶名稱將重設你現有的二維碼和連結，之後 # 天內不能再更改。你確定嗎？}}"
   },
   "icu:EditUsernameModalBody__change-confirmation__continue": {
     "messageformat": "繼續"
