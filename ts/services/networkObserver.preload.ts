@@ -22,7 +22,7 @@ const OUTAGE_NO_SERVICE_ADDR = '127.0.0.2';
 // is down, and in mainland China that name is DNS-poisoned (random public IPs), so the check can never
 // conclude. Until the record exists the lookup fails and is logged, which is treated as "no outage".
 // (The upstream host name is deliberately not spelled out: one of #1101's checks is a grep for it.)
-const OUTAGE_CHECK_HOST = 'uptime.tellomi.app';
+// The host belongs to the current region (tellomi/tellomi#1054): config `outageCheckHost`.
 
 enum OnlineStatus {
   Online = 'Online',
@@ -60,21 +60,23 @@ export function initializeNetworkObserver(
 
   let outageTimer: NodeJS.Timeout | undefined;
 
+  const { outageCheckHost } = window.SignalContext.config;
+
   const checkOutage = async (): Promise<void> => {
-    electronLookup(OUTAGE_CHECK_HOST, { all: false }, (error, address) => {
+    electronLookup(outageCheckHost, { all: false }, (error, address) => {
       if (error) {
         log.error('outage check failure', error);
         return;
       }
 
       if (address === OUTAGE_HEALTY_ADDR) {
-        log.info(`got healthy response from ${OUTAGE_CHECK_HOST}`);
+        log.info(`got healthy response from ${outageCheckHost}`);
         onOutageEnd();
       } else if (address === OUTAGE_NO_SERVICE_ADDR) {
         log.warn('service is down');
         networkActions.setOutage(true);
       } else {
-        log.error(`unexpected DNS response for ${OUTAGE_CHECK_HOST}`);
+        log.error(`unexpected DNS response for ${outageCheckHost}`);
       }
     });
   };
