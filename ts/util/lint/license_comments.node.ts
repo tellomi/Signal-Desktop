@@ -190,7 +190,8 @@ async function main() {
 
     if (
       firstLine == null ||
-      !/Copyright \d{4} Signal Messenger, LLC/.test(firstLine)
+      // Tellomi: files Tellomi wrote carry its own copyright line.
+      !/Copyright \d{4} (Signal Messenger, LLC|Tellomi)/.test(firstLine)
     ) {
       const commit = await getCommitFileWasAdded(file);
       warnings.push(
