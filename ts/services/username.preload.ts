@@ -86,7 +86,8 @@ export async function reserveUsername(
 
   try {
     // Tellomi (ADR-0066): the rules live in planUsernameReservation — one candidate `<nickname>.01`, the case-only
-    // shortcut only for a current `.01`, new nicknames start with a letter.
+    // shortcut only for a current `.01`, new nicknames start with a letter and have at most 20 characters (typing
+    // your current nickname again keeps a name you already have, so neither applies).
     const plan = planUsernameReservation(nickname, previousUsername);
 
     if (plan.kind === 'caseChange') {
@@ -104,13 +105,17 @@ export async function reserveUsername(
     }
 
     // Uniqueness of the hash means uniqueness of the nickname; a taken or reserved nickname is a 409.
+    // `global.nicknames.max` (20) limits new nicknames only; libsignal still enforces its own 3–32.
+    const maxNickname = plan.keepsCurrentNickname
+      ? Math.max(getMaxNickname(), nickname.length)
+      : getMaxNickname();
     const candidates = plan.candidates.map(
       candidate =>
         usernames.fromParts(
           candidate.nickname,
           candidate.discriminator,
           getMinNickname(),
-          getMaxNickname()
+          maxNickname
         ).username
     );
 

@@ -110,8 +110,11 @@ export function UsernameEditor({
 
   const [updateState, setUpdateState] = useState(UpdateState.Original);
   const [nickname, setNickname] = useState(currentNickname);
+  // Which warning and whether it is showing are kept apart: closing only flips the second, so the dialog keeps its
+  // text through the exit animation instead of flashing the other warning.
   const [saveConfirmation, setSaveConfirmation] =
     useState<UsernameSaveConfirmation>('none');
+  const [isSaveConfirmationOpen, setIsSaveConfirmationOpen] = useState(false);
   const [isConfirmingReset, setIsConfirmingReset] = useState(false);
 
   // Clear reservation if user erases the nickname
@@ -238,6 +241,7 @@ export function UsernameEditor({
       confirmUsername();
     } else {
       setSaveConfirmation(confirmation);
+      setIsSaveConfirmationOpen(true);
     }
   }, [
     confirmUsername,
@@ -249,7 +253,7 @@ export function UsernameEditor({
 
   const onCancelSave = useCallback(() => {
     setIsConfirmingReset(false);
-    setSaveConfirmation('none');
+    setIsSaveConfirmationOpen(false);
   }, []);
 
   const onConfirmUsername = useCallback(() => {
@@ -379,7 +383,7 @@ export function UsernameEditor({
       </AxoConfirmDialog.Root>
 
       <AxoConfirmDialog.Root
-        open={saveConfirmation !== 'none'}
+        open={isSaveConfirmationOpen}
         onOpenChange={onCancelSave}
         // @ts-expect-error ConfirmationDialog migration: Needs title
         title={null}

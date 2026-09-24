@@ -8150,7 +8150,7 @@
     "messageformat": "{days, plural, other {更改用戶名稱會將你宜家用緊嘅二維碼同連結重設，之後 # 日內唔可以再改。你係咪確定？}}"
   },
   "icu:EditUsernameModalBody__set-after-delete-confirmation--tellomi": {
-    "messageformat": "你 {holdDays, number} 日內刪除過用戶名稱，宜家設定都當係更改一次：之後 {days, number} 日內唔可以再改。你係咪確定？"
+    "messageformat": "你喺 {holdDays, number} 日內刪除過用戶名稱，宜家設定都當係更改一次：之後 {days, number} 日內唔可以再改。你係咪確定？"
   },
   "icu:EditUsernameModalBody__change-confirmation__continue": {
     "messageformat": "繼續"

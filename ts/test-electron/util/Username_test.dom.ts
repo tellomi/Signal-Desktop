@@ -16,6 +16,7 @@ import {
   isRenameCooldown,
   isWithinUsernameHold,
   planUsernameReservation,
+  shouldRecordUsernameDeletion,
   startsWithLetter,
   withFixedDiscriminator,
 } from '../../types/Username.std.ts';
@@ -276,6 +277,7 @@ describe('Username (Tellomi fixed discriminator)', () => {
       for (const previous of [undefined, 'hk881qa.01', 'kaixin.37']) {
         assert.deepStrictEqual(planUsernameReservation('newname', previous), {
           kind: 'reserve',
+          keepsCurrentNickname: false,
           candidates: [{ nickname: 'newname', discriminator: '01' }],
         });
       }
@@ -289,7 +291,28 @@ describe('Username (Tellomi fixed discriminator)', () => {
       // An old `.37` typing its nickname again moves to `.01`: a real reservation, not a case change.
       assert.deepStrictEqual(planUsernameReservation('KAIXIN', 'kaixin.37'), {
         kind: 'reserve',
+        keepsCurrentNickname: true,
         candidates: [{ nickname: 'KAIXIN', discriminator: '01' }],
+      });
+    });
+
+    it('keeps the new-username tightenings off for the current nickname (same rule as Android a3 / iOS a4)', () => {
+      // An old `_kaixin.37` moving to `.01` keeps a name it already has.
+      assert.deepStrictEqual(planUsernameReservation('_kaixin', '_kaixin.37'), {
+        kind: 'reserve',
+        keepsCurrentNickname: true,
+        candidates: [{ nickname: '_kaixin', discriminator: '01' }],
+      });
+      // A 21–32 character `.01` name changing its case needs no reservation at all.
+      const long = 'abcdefghijklmnopqrstuvwxy'; // 25
+      assert.deepStrictEqual(
+        planUsernameReservation(long.toUpperCase(), `${long}.01`),
+        { kind: 'caseChange', username: `${long.toUpperCase()}.01` }
+      );
+      // Anything else is a new nickname and is checked.
+      assert.deepStrictEqual(planUsernameReservation('_other', '_kaixin.01'), {
+        kind: 'invalid',
+        error: ReserveUsernameError.CheckStartingCharacter,
       });
     });
 
@@ -312,6 +335,7 @@ describe('Username (Tellomi fixed discriminator)', () => {
     it('leaves an empty nickname to libsignal', () => {
       assert.deepStrictEqual(planUsernameReservation('', undefined), {
         kind: 'reserve',
+        keepsCurrentNickname: false,
         candidates: [{ nickname: '', discriminator: '01' }],
       });
     });
@@ -322,6 +346,16 @@ describe('Username (Tellomi fixed discriminator)', () => {
   describe('username hold and save confirmation', () => {
     const now = Date.UTC(2026, 8, 24, 12);
     const day = 24 * 60 * 60 * 1000;
+
+    it('records a deletion when a storage sync clears our username', () => {
+      // Deleted on another device: the AccountRecord comes back without a username.
+      assert.isTrue(shouldRecordUsernameDeletion('kaixin.01', undefined));
+      assert.isTrue(shouldRecordUsernameDeletion('kaixin.01', ''));
+      // First sync after linking, a rename, or nothing to clear.
+      assert.isFalse(shouldRecordUsernameDeletion(undefined, 'kaixin.01'));
+      assert.isFalse(shouldRecordUsernameDeletion('kaixin.01', 'bob.01'));
+      assert.isFalse(shouldRecordUsernameDeletion(undefined, undefined));
+    });
 
     it('treats a deletion as held for USERNAME_HOLD_DAYS', () => {
       assert.strictEqual(USERNAME_HOLD_DAYS, 30);
