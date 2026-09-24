@@ -44,16 +44,25 @@ describe('upload', () => {
 
   it('makes a request to get the S3 bucket, then uploads it there', async function (this: Mocha.Context) {
     assert.strictEqual(
-      await upload({ content: 'hello world', appVersion: '1.2.3', logger }),
+      await upload({
+        content: 'hello world',
+        appVersion: '1.2.3',
+        logger,
+        baseUrl: 'https://chat.tellomi.app/debuglogs',
+      }),
       'https://chat.tellomi.app/debuglogs/abc123.gz'
     );
 
     sinon.assert.calledOnce(this.fakeGet);
-    sinon.assert.calledWith(this.fakeGet, 'https://chat.tellomi.app/debuglogs/', {
-      responseType: 'json',
-      headers: { 'User-Agent': 'Signal-Desktop/1.2.3' },
-      timeout: { request: durations.MINUTE },
-    });
+    sinon.assert.calledWith(
+      this.fakeGet,
+      'https://chat.tellomi.app/debuglogs/',
+      {
+        responseType: 'json',
+        headers: { 'User-Agent': 'Signal-Desktop/1.2.3' },
+        timeout: { request: durations.MINUTE },
+      }
+    );
 
     const compressedContent = await gzip('hello world');
 
@@ -83,7 +92,12 @@ describe('upload', () => {
 
     let err: unknown;
     try {
-      await upload({ content: 'hello world', appVersion: '1.2.3', logger });
+      await upload({
+        content: 'hello world',
+        appVersion: '1.2.3',
+        logger,
+        baseUrl: 'https://chat.tellomi.app/debuglogs',
+      });
     } catch (e) {
       err = e;
     }
@@ -109,7 +123,12 @@ describe('upload', () => {
       try {
         // Again, these should be run serially.
         // oxlint-disable-next-line no-await-in-loop
-        await upload({ content: 'hello world', appVersion: '1.2.3', logger });
+        await upload({
+          content: 'hello world',
+          appVersion: '1.2.3',
+          logger,
+          baseUrl: 'https://chat.tellomi.app/debuglogs',
+        });
       } catch (e) {
         err = e;
       }
@@ -122,7 +141,12 @@ describe('upload', () => {
 
     let err: unknown;
     try {
-      await upload({ content: 'hello world', appVersion: '1.2.3', logger });
+      await upload({
+        content: 'hello world',
+        appVersion: '1.2.3',
+        logger,
+        baseUrl: 'https://chat.tellomi.app/debuglogs',
+      });
     } catch (e) {
       err = e;
     }

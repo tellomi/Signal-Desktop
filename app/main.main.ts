@@ -2110,7 +2110,11 @@ app.on('ready', async () => {
     realpath(rootDir),
   ]);
 
-  updateDefaultSession(session.defaultSession, log);
+  updateDefaultSession(
+    session.defaultSession,
+    log,
+    config.get<string>('updatesUrl')
+  );
 
   if (getEnvironment() !== Environment.Test) {
     installFileHandler({
@@ -2131,7 +2135,8 @@ app.on('ready', async () => {
   await mainProcessLogging.initialize(getMainWindow);
 
   const resourceService = OptionalResourceService.create(
-    join(userDataPath, 'optionalResources')
+    join(userDataPath, 'optionalResources'),
+    config.get<string>('resourcesUrl')
   );
   await EmojiService.create(resourceService);
   AssetService.create(resourceService);
@@ -2985,6 +2990,7 @@ ipc.handle('DebugLogs.upload', async (_event, content: string) => {
     content,
     appVersion: app.getVersion(),
     logger: log,
+    baseUrl: config.get<string>('debugLogUrl'),
   });
 });
 

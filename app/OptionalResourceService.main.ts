@@ -19,6 +19,7 @@ import { getGotOptions } from '../ts/updater/got.main.ts';
 import { drop } from '../ts/util/drop.std.ts';
 import { parseUnknown } from '../ts/util/schemas.std.ts';
 import { getAppRootDir } from '../ts/util/appRootDir.main.ts';
+import { rebaseOrigin } from '../ts/util/tellomiRegion.std.ts';
 
 const log = createLogger('OptionalResourceService');
 
@@ -32,6 +33,8 @@ const MAX_CACHE_SIZE = 50 * 1024 * 1024;
 
 export class OptionalResourceService {
   readonly #resourcesDir: string;
+  // Tellomi (tellomi/tellomi#1054): fetch from the current region's `resourcesUrl` host.
+  readonly #resourcesUrl: string;
   #maybeDeclaration: OptionalResourcesDictType | undefined;
 
   readonly #cache = new LRUCache<string, Buffer<ArrayBuffer>>({
@@ -42,8 +45,9 @@ export class OptionalResourceService {
 
   readonly #fileQueues = new Map<string, PQueue>();
 
-  private constructor(resourcesDir: string) {
+  private constructor(resourcesDir: string, resourcesUrl: string) {
     this.#resourcesDir = resourcesDir;
+    this.#resourcesUrl = resourcesUrl;
 
     ipcMain.handle('OptionalResourceService:getData', (_event, name) =>
       this.getData(name)
@@ -52,8 +56,11 @@ export class OptionalResourceService {
     drop(this.#lazyInit());
   }
 
-  public static create(resourcesDir: string): OptionalResourceService {
-    return new OptionalResourceService(resourcesDir);
+  public static create(
+    resourcesDir: string,
+    resourcesUrl: string
+  ): OptionalResourceService {
+    return new OptionalResourceService(resourcesDir, resourcesUrl);
   }
 
   public async getData(name: string): Promise<Buffer<ArrayBuffer> | undefined> {
@@ -178,7 +185,10 @@ export class OptionalResourceService {
   ): Promise<Buffer<ArrayBuffer>> {
     const opts = await getGotOptions();
     // @ts-expect-error https://github.com/sindresorhus/got/issues/2418#issuecomment-4071277145
-    const result: Buffer<ArrayBuffer> = await got(decl.url, opts).buffer();
+    const result: Buffer<ArrayBuffer> = await got(
+      rebaseOrigin(decl.url, this.#resourcesUrl),
+      opts
+    ).buffer();
 
     const digest = createHash('sha512').update(result).digest();
 

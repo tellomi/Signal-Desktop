@@ -67,6 +67,7 @@ const regionSchema = z
     updatesUrl: httpsUrlSchema,
     resourcesUrl: originSchema,
     outageCheckHost: hostnameSchema,
+    debugLogUrl: httpsUrlSchema,
   })
   .strict();
 
@@ -127,14 +128,27 @@ export function applyRegionEndpoints(
   }
 }
 
+// Points a URL at another host, keeping its path: the Desktop optional resources are declared
+// with absolute URLs (build/optional-resources.json) and are fetched from the current region's
+// `resourcesUrl` host instead.
+export function rebaseOrigin(url: string, base: string): string {
+  const target = new URL(url);
+  const { protocol, host } = new URL(base);
+  target.protocol = protocol;
+  target.host = host;
+  return target.toString();
+}
+
 // ---------------------------------------------------------------------------
 // Region selection (ADR-0065 §6.5). The selector decides; the caller applies the decision
 // (rebuilding libsignal's Net and the REST endpoints is the runtime-switching work in M6).
 
 // Defaults are compiled in: fetching tuned values from /v2/config needs a connection first.
 export const REGION_SELECTOR_DEFAULTS = {
-  // No latency-driven switch within this long of the previous switch. Also bounds libsignal's
-  // per-Net hostname leak (`custom_server_env` Box::leak, ADR-0065 §3.6).
+  // No latency-driven switch within this long of the last region switch, as recorded by the
+  // caller (`lastSwitchAt`). No record counts as satisfied, so on a cold start the faster region
+  // wins (ADR-0065 §6.5). Also bounds how often a region switch rebuilds libsignal's Net, which
+  // leaks its hostname each time (`custom_server_env` Box::leak, ADR-0065 §3.6).
   minDwellMs: 10 * MINUTE,
   // A single timeout never moves the user: only this many consecutive failures of the current
   // region allow a failover.
@@ -190,12 +204,15 @@ export class RegionSelector {
     initial,
     probe,
     now = Date.now,
+    lastSwitchAt = Number.NEGATIVE_INFINITY,
     thresholds = REGION_SELECTOR_DEFAULTS,
   }: {
     regions: RegionsType;
     initial: RegionIdType;
     probe: RegionProbeType;
     now?: () => number;
+    // When the region last changed (persisted by the caller); omitted = no record.
+    lastSwitchAt?: number;
     thresholds?: RegionSelectorThresholdsType;
   }) {
     if (!regions[initial].enabled) {
@@ -206,7 +223,7 @@ export class RegionSelector {
     this.#now = now;
     this.#thresholds = thresholds;
     this.#current = initial;
-    this.#since = now();
+    this.#since = lastSwitchAt;
   }
 
   currentRegion(): RegionIdType {

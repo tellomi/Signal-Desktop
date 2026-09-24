@@ -31,7 +31,7 @@ describe('updateDefaultSession', () => {
       trace: sandbox.stub(),
       child: sandbox.stub(),
     };
-    updateDefaultSession(sesh, logger);
+    updateDefaultSession(sesh, logger, 'https://updates.tellomi.app/desktop');
 
     sinon.assert.calledOnce(stub);
     sinon.assert.calledWith(
