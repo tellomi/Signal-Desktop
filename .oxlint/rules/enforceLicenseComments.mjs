@@ -3,10 +3,10 @@
 // @ts-check
 import { ESLintUtils } from '@typescript-eslint/utils';
 
-// Tellomi: files Tellomi wrote carry "Copyright <year> Tellomi"; upstream files keep Signal's
-// line. The fix keeps whichever holder the file already names, so it never rewrites one into
-// the other.
-const HOLDER = '(Signal Messenger, LLC|Tellomi)';
+// Tellomi: files we wrote name the company that holds their copyright, 重庆半格智能科技有限公司
+// (owner 2026-09-24; not the brand name). Upstream files keep Signal's line. The fix keeps
+// whichever holder the file already names, so it never rewrites one into the other.
+const HOLDER = '(Signal Messenger, LLC|重庆半格智能科技有限公司)';
 const COMMENT_LINE_1_EXACT = new RegExp(`^ Copyright \\d{4} ${HOLDER}$`);
 const COMMENT_LINE_2_EXACT = /^ SPDX-License-Identifier: AGPL-3.0-only$/;
 

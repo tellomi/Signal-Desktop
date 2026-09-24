@@ -1,4 +1,4 @@
-// Copyright 2026 Tellomi
+// Copyright 2026 重庆半格智能科技有限公司
 // SPDX-License-Identifier: AGPL-3.0-only
 
 // Tellomi (ADR-0065 §6.5, tellomi/tellomi#1054): the probe behind RegionSelector - a TCP + TLS
