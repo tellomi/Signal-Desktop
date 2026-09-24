@@ -7895,6 +7895,10 @@
     "messageformat": "Usernames cannot begin with a number.",
     "description": "Shown if user has attempted to begin their username with a number"
   },
+  "icu:ProfileEditor--username--check-starting-character--tellomi": {
+    "messageformat": "Usernames must begin with a letter.",
+    "description": "Tellomi (ADR-0066): shown when a new username starts with a digit or an underscore. Replaces the upstream \"cannot begin with a number\", which is wrong for a leading underscore."
+  },
   "icu:ProfileEditor--username--check-character-min-plural": {
     "messageformat": "Usernames must have at least {min, plural, one {# character} other {# characters}}.",
     "description": "Shown if user has attempted to enter a username with too few characters - currently min is 3"

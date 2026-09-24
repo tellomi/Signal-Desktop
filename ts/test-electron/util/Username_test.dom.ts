@@ -11,6 +11,7 @@ import {
   formatUsernameForDisplay,
   getRenameCooldownDays,
   isRenameCooldown,
+  startsWithLetter,
   withFixedDiscriminator,
 } from '../../types/Username.std.ts';
 
@@ -244,6 +245,22 @@ describe('Username (Tellomi fixed discriminator)', () => {
         withFixedDiscriminator(withFixedDiscriminator('kaixin')),
         'kaixin.01'
       );
+    });
+  });
+
+  // ADR-0066 §六: libsignal alone would register `_kaixin.01`; new nicknames must start with a letter.
+  describe('startsWithLetter', () => {
+    it('accepts a leading letter of either case', () => {
+      assert.isTrue(startsWithLetter('kaixin'));
+      assert.isTrue(startsWithLetter('Kaixin_2'));
+      assert.isTrue(startsWithLetter('z__'));
+    });
+
+    it('refuses a leading underscore, digit or anything else', () => {
+      assert.isFalse(startsWithLetter('_kaixin'));
+      assert.isFalse(startsWithLetter('9kaixin'));
+      assert.isFalse(startsWithLetter('开心'));
+      assert.isFalse(startsWithLetter(''));
     });
   });
 

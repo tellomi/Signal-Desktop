@@ -22,6 +22,7 @@ import {
   getDiscriminator,
   isCaseChange,
   isRenameCooldown,
+  startsWithLetter,
 } from '../types/Username.std.ts';
 import * as Errors from '../types/errors.std.ts';
 import { createLogger } from '../logging/log.std.ts';
@@ -108,6 +109,12 @@ export async function reserveUsername(
           reservation: { previousUsername, username: newUsername, hash },
         };
       }
+    }
+
+    // Tellomi (ADR-0066 §六): new nicknames start with a letter (see startsWithLetter). An empty nickname is left to
+    // libsignal, which reports it as too short.
+    if (nickname.length > 0 && !startsWithLetter(nickname)) {
+      return { ok: false, error: ReserveUsernameError.CheckStartingCharacter };
     }
 
     // Tellomi (ADR-0066): exactly one candidate, `<nickname>.01`, instead of upstream's 20 random discriminators.

@@ -5940,6 +5940,9 @@
   "icu:ProfileEditor--username--check-starting-character": {
     "messageformat": "用戶名稱冇得用數目字開頭。"
   },
+  "icu:ProfileEditor--username--check-starting-character--tellomi": {
+    "messageformat": "用戶名稱一定要用字母開頭。"
+  },
   "icu:ProfileEditor--username--check-character-min-plural": {
     "messageformat": "{min, plural, other {用戶名稱一定要有最少 {min,number} 個字元。}}"
   },

@@ -61,6 +61,13 @@ export function formatUsernameForDisplay(username: string): string {
   return getNickname(username) ?? username;
 }
 
+// Tellomi (ADR-0066 §六, TR-ID-01): a new nickname starts with a letter. libsignal only refuses a leading digit and
+// accepts a leading `_`; the client tightens that, the same way it tightens the maximum length. Only reservations are
+// checked: finding or keeping an existing `_name.01` still works.
+export function startsWithLetter(nickname: string): boolean {
+  return /^[a-zA-Z]/.test(nickname);
+}
+
 // A nickname typed without any `.<digits>` (search box, `tell.cc/<nickname>`) means the fixed discriminator.
 export function withFixedDiscriminator(input: string): string {
   return getDiscriminator(input) === undefined

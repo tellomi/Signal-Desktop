@@ -150,7 +150,11 @@ export function UsernameEditor({
       });
     }
     if (error === UsernameReservationError.CheckStartingCharacter) {
-      return i18n('icu:ProfileEditor--username--check-starting-character');
+      // Tellomi (ADR-0066 §六): a leading `_` is refused as well as a leading digit, so upstream's "cannot begin with
+      // a number" would be wrong for it.
+      return i18n(
+        'icu:ProfileEditor--username--check-starting-character--tellomi'
+      );
     }
     if (error === UsernameReservationError.CheckCharacters) {
       return i18n('icu:ProfileEditor--username--check-characters');
