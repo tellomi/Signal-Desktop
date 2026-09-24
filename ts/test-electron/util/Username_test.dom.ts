@@ -277,7 +277,6 @@ describe('Username (Tellomi fixed discriminator)', () => {
       for (const previous of [undefined, 'hk881qa.01', 'kaixin.37']) {
         assert.deepStrictEqual(planUsernameReservation('newname', previous), {
           kind: 'reserve',
-          keepsCurrentNickname: false,
           candidates: [{ nickname: 'newname', discriminator: '01' }],
         });
       }
@@ -291,19 +290,17 @@ describe('Username (Tellomi fixed discriminator)', () => {
       // An old `.37` typing its nickname again moves to `.01`: a real reservation, not a case change.
       assert.deepStrictEqual(planUsernameReservation('KAIXIN', 'kaixin.37'), {
         kind: 'reserve',
-        keepsCurrentNickname: true,
         candidates: [{ nickname: 'KAIXIN', discriminator: '01' }],
       });
     });
 
-    it('keeps the new-username tightenings off for the current nickname (same rule as Android a3 / iOS a4)', () => {
-      // An old `_kaixin.37` moving to `.01` keeps a name it already has.
+    it('treats moving an old `.NN` name to `.01` as a new username (ADR-0066 §六「老数据」)', () => {
+      // The hash changes and the server counts it as a rename, so the new-username rules apply.
       assert.deepStrictEqual(planUsernameReservation('_kaixin', '_kaixin.37'), {
-        kind: 'reserve',
-        keepsCurrentNickname: true,
-        candidates: [{ nickname: '_kaixin', discriminator: '01' }],
+        kind: 'invalid',
+        error: ReserveUsernameError.CheckStartingCharacter,
       });
-      // A 21–32 character `.01` name changing its case needs no reservation at all.
+      // Only the case-only shortcut keeps a name as it is: a 21–32 character `.01` name can still change its case.
       const long = 'abcdefghijklmnopqrstuvwxy'; // 25
       assert.deepStrictEqual(
         planUsernameReservation(long.toUpperCase(), `${long}.01`),
@@ -335,7 +332,6 @@ describe('Username (Tellomi fixed discriminator)', () => {
     it('leaves an empty nickname to libsignal', () => {
       assert.deepStrictEqual(planUsernameReservation('', undefined), {
         kind: 'reserve',
-        keepsCurrentNickname: false,
         candidates: [{ nickname: '', discriminator: '01' }],
       });
     });

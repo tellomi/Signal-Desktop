@@ -73,10 +73,11 @@ export function startsWithLetter(nickname: string): boolean {
 // - the case-only shortcut (re-confirm the current username with new casing; nothing is reserved and the server,
 //   seeing its own hash, starts no cooldown) only when the current discriminator already is 01 — an old `kaixin.37`
 //   typing `kaixin` means "move to `kaixin.01`", which is an ordinary reservation;
-// - the tightenings for new usernames (starts with a letter; at most `global.nicknames.max` = 20) apply only to a
-//   nickname that isn't the current one. Typing your own nickname again — new casing, or moving `_kaixin.37` to
-//   `_kaixin.01` — keeps a name you already have, so an old `_name` or a 21–32 character name is not refused. Android
-//   (a3) and iOS (a4) use the same rule. An empty nickname is left to libsignal, which reports it as too short.
+// - every reservation is a new username and follows the new-username rules (starts with a letter; at most
+//   `global.nicknames.max` = 20). That includes moving an old `_kaixin.37` to `_kaixin.01`: the hash changes and the
+//   server counts it as a rename, and ADR-0066 §六「老数据」sends that through the ordinary rename flow. Only the
+//   case-only shortcut above keeps a name as it is, so an existing `_name.01` or 21–32 character `.01` name can still
+//   change its casing. An empty nickname is left to libsignal, which reports it as too short.
 export type UsernameReservationPlan =
   | Readonly<{ kind: 'caseChange'; username: string }>
   | Readonly<{
@@ -85,8 +86,6 @@ export type UsernameReservationPlan =
     }>
   | Readonly<{
       kind: 'reserve';
-      // The typed nickname is the current one (ignoring case): the caller skips the new-username length limit.
-      keepsCurrentNickname: boolean;
       candidates: ReadonlyArray<
         Readonly<{ nickname: string; discriminator: string }>
       >;
@@ -96,28 +95,23 @@ export function planUsernameReservation(
   nickname: string,
   previousUsername: string | undefined
 ): UsernameReservationPlan {
-  const previousNickname =
-    previousUsername === undefined ? undefined : getNickname(previousUsername);
-  const keepsCurrentNickname =
-    previousNickname !== undefined &&
-    nickname.toLowerCase() === previousNickname.toLowerCase();
-
   if (
-    keepsCurrentNickname &&
     previousUsername !== undefined &&
     getDiscriminator(previousUsername) === FIXED_DISCRIMINATOR
   ) {
-    return {
-      kind: 'caseChange',
-      username: `${nickname}.${FIXED_DISCRIMINATOR}`,
-    };
+    const previousNickname = getNickname(previousUsername);
+    if (
+      previousNickname !== undefined &&
+      nickname.toLowerCase() === previousNickname.toLowerCase()
+    ) {
+      return {
+        kind: 'caseChange',
+        username: `${nickname}.${FIXED_DISCRIMINATOR}`,
+      };
+    }
   }
 
-  if (
-    !keepsCurrentNickname &&
-    nickname.length > 0 &&
-    !startsWithLetter(nickname)
-  ) {
+  if (nickname.length > 0 && !startsWithLetter(nickname)) {
     return {
       kind: 'invalid',
       error: ReserveUsernameError.CheckStartingCharacter,
@@ -126,7 +120,6 @@ export function planUsernameReservation(
 
   return {
     kind: 'reserve',
-    keepsCurrentNickname,
     candidates: [{ nickname, discriminator: FIXED_DISCRIMINATOR }],
   };
 }
