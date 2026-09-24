@@ -6,5 +6,7 @@ export function callLinkRootKeyToUrl(rootKey: string): string | undefined {
     return;
   }
 
-  return `https://tell.cc/call/#key=${rootKey}`;
+  // Tellomi: no slash before `#` — `https://tell.cc/call/` is a 404 on the landing site and released Android builds
+  // only recognise `/call#` (see linkCallRoute in signalRoutes.std.ts, which still accepts both).
+  return `https://tell.cc/call#key=${rootKey}`;
 }
