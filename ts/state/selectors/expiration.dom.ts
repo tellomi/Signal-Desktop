@@ -12,6 +12,7 @@ import {
 } from './items.dom.ts';
 import {
   getBuildExpirationTimestamp,
+  getBuildExpirationWarningDays,
   hasBuildExpired,
 } from '../../util/buildExpiration.std.ts';
 
@@ -64,4 +65,13 @@ export const hasExpired = createSelector(
       logger: log,
     });
   }
+);
+
+// Tellomi (tellomi/tellomi#1269): days left before this build expires, only inside the warning window (see
+// getBuildExpirationWarningDays); drives the left-pane "expires soon" dialog.
+export const getBuildExpiresInDays = createSelector(
+  getExpirationTimestamp,
+  (_: StateType, { now = Date.now() }: HasExpiredOptionsType = {}) => now,
+  (buildExpirationTimestamp: number, now: number): number | undefined =>
+    getBuildExpirationWarningDays({ buildExpirationTimestamp, now })
 );

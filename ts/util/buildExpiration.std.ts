@@ -3,13 +3,19 @@
 
 import { Environment, getEnvironment } from '../environment.std.ts';
 import type { LoggerType } from '../types/Logging.std.ts';
-import { isNotUpdatable } from './version.std.ts';
 import { isInPast } from './timestamp.std.ts';
 import { DAY } from './durations/index.std.ts';
 
-const NINETY_ONE_DAYS = 91 * DAY;
-const THIRTY_ONE_DAYS = 31 * DAY;
-const SIXTY_DAYS = 60 * DAY;
+// Tellomi (tellomi/tellomi#1269, spec #1143 §3.6): a build lives 180 days on every platform, whatever the
+// auto-download setting (upstream: 90 days, cut to 30 when auto-download is off). The safety window sits one day
+// above that; if it were shorter, a correct expiration would read as "set too far into the future" and the build
+// would count as expired at once. scripts/get-expire-time.mjs writes the packaged expiration from the same number.
+export const BUILD_LIFESPAN_DAYS = 180;
+const SAFE_EXPIRATION_WINDOW = (BUILD_LIFESPAN_DAYS + 1) * DAY;
+
+// Tellomi (#1269): the left pane warns during the last 14 days, like Android and iOS; upstream Desktop only says so
+// after the fact (DialogExpiredBuild).
+export const BUILD_EXPIRATION_WARNING_DAYS = 14;
 
 export type GetBuildExpirationTimestampOptionsType = Readonly<{
   version: string;
@@ -20,16 +26,13 @@ export type GetBuildExpirationTimestampOptionsType = Readonly<{
 }>;
 
 export function getBuildExpirationTimestamp({
-  version,
   packagedBuildExpiration,
   remoteBuildExpiration,
-  autoDownloadUpdate,
   logger,
 }: GetBuildExpirationTimestampOptionsType): number {
-  const localBuildExpiration =
-    isNotUpdatable(version) || autoDownloadUpdate
-      ? packagedBuildExpiration
-      : packagedBuildExpiration - SIXTY_DAYS;
+  // Tellomi (#1269): no earlier expiry when auto-download is off (upstream took 60 days off); 180 days everywhere.
+  // `version` and `autoDownloadUpdate` stay in the options type so the call sites match upstream.
+  const localBuildExpiration = packagedBuildExpiration;
 
   // Log the expiration date in this selector because it invalidates only
   // if one of the arguments changes.
@@ -55,7 +58,6 @@ export type HasBuildExpiredOptionsType = Readonly<{
 
 export function hasBuildExpired({
   buildExpirationTimestamp,
-  autoDownloadUpdate,
   now,
   logger,
 }: HasBuildExpiredOptionsType): boolean {
@@ -70,9 +72,8 @@ export function hasBuildExpired({
     return true;
   }
 
-  const safeExpirationMs = autoDownloadUpdate
-    ? NINETY_ONE_DAYS
-    : THIRTY_ONE_DAYS;
+  // Tellomi (#1269): one window for both auto-download settings, just above BUILD_LIFESPAN_DAYS.
+  const safeExpirationMs = SAFE_EXPIRATION_WINDOW;
 
   const buildExpirationDuration = buildExpirationTimestamp - now;
   const tooFarIntoFuture = buildExpirationDuration > safeExpirationMs;
@@ -85,4 +86,24 @@ export function hasBuildExpired({
   }
 
   return tooFarIntoFuture || isInPast(buildExpirationTimestamp);
+}
+
+// Tellomi (#1269): days left to show in the left-pane "expires soon" warning. Undefined outside the last
+// BUILD_EXPIRATION_WARNING_DAYS days, for dev builds without an expiration (0), and once expired, when
+// DialogExpiredBuild takes over. Rounded up, so the warning appears when exactly 14 days are left and says "1 day" on
+// the last day rather than "0 days".
+export function getBuildExpirationWarningDays({
+  buildExpirationTimestamp,
+  now,
+}: Readonly<{ buildExpirationTimestamp: number; now: number }>):
+  | number
+  | undefined {
+  if (buildExpirationTimestamp === 0) {
+    return undefined;
+  }
+  const msLeft = buildExpirationTimestamp - now;
+  if (msLeft <= 0 || msLeft > BUILD_EXPIRATION_WARNING_DAYS * DAY) {
+    return undefined;
+  }
+  return Math.ceil(msLeft / DAY);
 }

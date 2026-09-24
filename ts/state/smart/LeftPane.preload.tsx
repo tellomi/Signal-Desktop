@@ -6,6 +6,8 @@ import { useSelector } from 'react-redux';
 import { createSelector } from 'reselect';
 import type { PropsType as DialogExpiredBuildPropsType } from '../../components/DialogExpiredBuild.dom.tsx';
 import { DialogExpiredBuild } from '../../components/DialogExpiredBuild.dom.tsx';
+import type { PropsType as DialogExpiringBuildPropsType } from '../../components/DialogExpiringBuild.dom.tsx';
+import { DialogExpiringBuild } from '../../components/DialogExpiringBuild.dom.tsx';
 import type { PropsType as LeftPanePropsType } from '../../components/LeftPane.dom.tsx';
 import { LeftPane } from '../../components/LeftPane.dom.tsx';
 import type { NavTabPanelProps } from '../../components/NavTabs.dom.tsx';
@@ -64,7 +66,10 @@ import {
   getSelectedLocation,
 } from '../selectors/nav.std.ts';
 import { getCrashReportCount } from '../selectors/crashReports.std.ts';
-import { hasExpired } from '../selectors/expiration.dom.ts';
+import {
+  getBuildExpiresInDays,
+  hasExpired,
+} from '../selectors/expiration.dom.ts';
 import {
   getBackupMediaDownloadProgress,
   getNavTabsCollapsed,
@@ -174,6 +179,11 @@ function renderExpiredBuildDialog(
   props: DialogExpiredBuildPropsType
 ): JSX.Element {
   return <DialogExpiredBuild {...props} />;
+}
+function renderExpiringBuildDialog(
+  props: DialogExpiringBuildPropsType
+): JSX.Element {
+  return <DialogExpiringBuild {...props} />;
 }
 function renderLeftPaneChatFolders(): JSX.Element {
   return <SmartLeftPaneChatFolders />;
@@ -323,6 +333,8 @@ export const SmartLeftPane = memo(function SmartLeftPane({
   const crashReportCount = useSelector(getCrashReportCount);
   const getPreferredBadge = useSelector(getPreferredBadgeSelector);
   const hasAppExpired = useSelector(hasExpired);
+  // Tellomi (tellomi/tellomi#1269): the "expires soon" warning during the last 14 days.
+  const buildExpiresInDays = useSelector(getBuildExpiresInDays);
   const hasAnyCurrentCustomChatFolders = useSelector(
     getHasAnyCurrentCustomChatFolders
   );
@@ -470,6 +482,7 @@ export const SmartLeftPane = memo(function SmartLeftPane({
       hasAnyCurrentCustomChatFolders={hasAnyCurrentCustomChatFolders}
       hasClockSkewDialog={hasClockSkewDialog}
       hasExpiredDialog={hasExpiredDialog}
+      buildExpiresInDays={hasAppExpired ? undefined : buildExpiresInDays}
       hasFailedStorySends={hasFailedStorySends}
       hasNetworkDialog={hasNetworkDialog}
       hasPendingUpdate={hasPendingUpdate}
@@ -497,6 +510,7 @@ export const SmartLeftPane = memo(function SmartLeftPane({
       renderCrashReportDialog={renderCrashReportDialog}
       renderClockSkewDialog={renderClockSkewDialog}
       renderExpiredBuildDialog={renderExpiredBuildDialog}
+      renderExpiringBuildDialog={renderExpiringBuildDialog}
       renderLeftPaneChatFolders={renderLeftPaneChatFolders}
       renderMessageSearchResult={renderMessageSearchResult}
       renderConversationListItemContextMenu={

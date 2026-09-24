@@ -50,6 +50,7 @@ import { ConversationList } from './ConversationList.dom.tsx';
 import { ContactCheckboxDisabledReason } from './conversationList/ContactCheckbox.dom.tsx';
 import type { PropsType as DialogClockSkewPropsType } from './DialogClockSkew.dom.tsx';
 import type { PropsType as DialogExpiredBuildPropsType } from './DialogExpiredBuild.dom.tsx';
+import type { PropsType as DialogExpiringBuildPropsType } from './DialogExpiringBuild.dom.tsx';
 import { LeftPaneBanner } from './LeftPaneBanner.dom.tsx';
 
 import type {
@@ -92,6 +93,8 @@ export type PropsType = {
   hasAnyCurrentCustomChatFolders: boolean;
   hasClockSkewDialog: boolean;
   hasExpiredDialog: boolean;
+  // Tellomi (tellomi/tellomi#1269): days left while inside the "expires soon" window, otherwise undefined.
+  buildExpiresInDays: number | undefined;
   hasFailedStorySends: boolean;
   hasNetworkDialog: boolean;
   hasPendingUpdate: boolean;
@@ -217,6 +220,7 @@ export type PropsType = {
   renderCaptchaDialog: (props: { onSkip: () => void }) => JSX.Element;
   renderCrashReportDialog: () => JSX.Element;
   renderExpiredBuildDialog: (_: DialogExpiredBuildPropsType) => JSX.Element;
+  renderExpiringBuildDialog: (_: DialogExpiringBuildPropsType) => JSX.Element;
   renderLeftPaneChatFolders: () => JSX.Element;
   renderNotificationProfilesMenu: () => JSX.Element;
   renderToastManager: (_: Readonly<SmartToastManagerPropsType>) => JSX.Element;
@@ -246,6 +250,7 @@ export function LeftPane({
   hasAnyCurrentCustomChatFolders,
   hasClockSkewDialog,
   hasExpiredDialog,
+  buildExpiresInDays,
   hasFailedStorySends,
   hasNetworkDialog,
   hasPendingUpdate,
@@ -273,6 +278,7 @@ export function LeftPane({
   renderClockSkewDialog,
   renderCrashReportDialog,
   renderExpiredBuildDialog,
+  renderExpiringBuildDialog,
   renderLeftPaneChatFolders,
   renderMessageSearchResult,
   renderConversationListItemContextMenu,
@@ -706,6 +712,12 @@ export function LeftPane({
     maybeYellowDialog = renderRelinkDialog(commonDialogProps);
   } else if (maybeServerAlert) {
     maybeYellowDialog = maybeServerAlert;
+  } else if (buildExpiresInDays !== undefined) {
+    // Tellomi (#1269): lowest-priority yellow dialog; once the build has expired, the red DialogExpiredBuild shows.
+    maybeYellowDialog = renderExpiringBuildDialog({
+      ...commonDialogProps,
+      days: buildExpiresInDays,
+    });
   }
 
   // Update dialog
