@@ -98,7 +98,7 @@ const getExpectedHelpMenu = (
     ...(includeAbout
       ? ([
           { type: 'separator' },
-          { label: 'About Signal Desktop', click: showAbout },
+          { label: 'About Tellomi Desktop', click: showAbout },
         ] as MenuListType)
       : []),
   ],
@@ -106,9 +106,9 @@ const getExpectedHelpMenu = (
 
 const EXPECTED_MACOS: MenuListType = [
   {
-    label: 'Signal Desktop',
+    label: 'Tellomi Desktop',
     submenu: [
-      { label: 'About Signal Desktop', click: showAbout },
+      { label: 'About Tellomi Desktop', click: showAbout },
       { type: 'separator' },
       {
         label: 'Preferences…',
@@ -122,7 +122,7 @@ const EXPECTED_MACOS: MenuListType = [
       { label: 'Hide Others', role: 'hideOthers' },
       { label: 'Show All', role: 'unhide' },
       { type: 'separator' },
-      { label: 'Quit Signal', role: 'quit' },
+      { label: 'Quit Tellomi', role: 'quit' },
     ],
   },
   {
@@ -160,7 +160,7 @@ const EXPECTED_WINDOWS: MenuListType = [
         click: showSettings,
       },
       { type: 'separator' },
-      { label: 'Quit Signal', role: 'quit' },
+      { label: 'Quit Tellomi', role: 'quit' },
     ],
   },
   getExpectedEditMenu(false),
