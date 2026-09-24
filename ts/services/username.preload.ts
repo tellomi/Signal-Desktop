@@ -17,12 +17,9 @@ import type { UsernameReservationType } from '../types/Username.std.ts';
 import {
   ReserveUsernameError,
   ConfirmUsernameResult,
-  FIXED_DISCRIMINATOR,
-  getNickname,
-  getDiscriminator,
   isCaseChange,
   isRenameCooldown,
-  startsWithLetter,
+  planUsernameReservation,
 } from '../types/Username.std.ts';
 import * as Errors from '../types/errors.std.ts';
 import { createLogger } from '../logging/log.std.ts';
@@ -88,45 +85,34 @@ export async function reserveUsername(
   }
 
   try {
-    // Case change: the hash is case-insensitive, so the current username is re-confirmed with the new casing and
-    // nothing is reserved. Tellomi (ADR-0066): only when the current discriminator already is the fixed one. An old
-    // `kaixin.37` typing `kaixin` again means "move to the plain `kaixin`", which is an ordinary reservation of
-    // `kaixin.01` (ADR-0066 §六: old suffixes are not migrated, the normal rename flow drops them).
-    if (
-      previousUsername !== undefined &&
-      getDiscriminator(previousUsername) === FIXED_DISCRIMINATOR
-    ) {
-      const previousNickname = getNickname(previousUsername);
+    // Tellomi (ADR-0066): the rules live in planUsernameReservation — one candidate `<nickname>.01`, the case-only
+    // shortcut only for a current `.01`, new nicknames start with a letter.
+    const plan = planUsernameReservation(nickname, previousUsername);
 
-      if (
-        previousNickname !== undefined &&
-        nickname.toLowerCase() === previousNickname.toLowerCase()
-      ) {
-        const newUsername = `${nickname}.${FIXED_DISCRIMINATOR}`;
-        const hash = usernames.hash(newUsername);
-        return {
-          ok: true,
-          reservation: { previousUsername, username: newUsername, hash },
-        };
-      }
+    if (plan.kind === 'caseChange') {
+      // The hash is case-insensitive, so the current username is re-confirmed with the new casing and nothing is
+      // reserved.
+      const hash = usernames.hash(plan.username);
+      return {
+        ok: true,
+        reservation: { previousUsername, username: plan.username, hash },
+      };
     }
 
-    // Tellomi (ADR-0066 §六): new nicknames start with a letter (see startsWithLetter). An empty nickname is left to
-    // libsignal, which reports it as too short.
-    if (nickname.length > 0 && !startsWithLetter(nickname)) {
-      return { ok: false, error: ReserveUsernameError.CheckStartingCharacter };
+    if (plan.kind === 'invalid') {
+      return { ok: false, error: plan.error };
     }
 
-    // Tellomi (ADR-0066): exactly one candidate, `<nickname>.01`, instead of upstream's 20 random discriminators.
-    // Uniqueness of the hash therefore means uniqueness of the nickname; a taken or reserved nickname is a 409.
-    const candidates = [
-      usernames.fromParts(
-        nickname,
-        FIXED_DISCRIMINATOR,
-        getMinNickname(),
-        getMaxNickname()
-      ).username,
-    ];
+    // Uniqueness of the hash means uniqueness of the nickname; a taken or reserved nickname is a 409.
+    const candidates = plan.candidates.map(
+      candidate =>
+        usernames.fromParts(
+          candidate.nickname,
+          candidate.discriminator,
+          getMinNickname(),
+          getMaxNickname()
+        ).username
+    );
 
     const hashes = candidates.map(username => usernames.hash(username));
 
@@ -362,6 +348,9 @@ export async function deleteUsername(
   await itemStorage.remove('usernameLink');
   await doDeleteUsername(abortSignal);
   await itemStorage.remove('usernameCorrupted');
+  // Tellomi (ADR-0066 §6.2): the server now holds the old username for USERNAME_HOLD_DAYS, and setting any username
+  // while it does starts the rename cooldown. Remember when, so the editor can warn before that.
+  await itemStorage.put('tellomiUsernameDeletedAt', Date.now());
   await updateUsernameAndSyncProfile(undefined);
 }
 

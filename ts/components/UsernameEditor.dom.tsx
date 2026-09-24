@@ -18,11 +18,14 @@ import { ToastType } from '../types/Toast.dom.tsx';
 import { missingCaseError } from '../util/missingCaseError.std.ts';
 import {
   RENAME_COOLDOWN_DAYS,
+  USERNAME_HOLD_DAYS,
   formatUsernameForDisplay,
   getNickname,
   getRenameCooldownDays,
+  getUsernameSaveConfirmation,
   isCaseChange,
 } from '../types/Username.std.ts';
+import type { UsernameSaveConfirmation } from '../types/Username.std.ts';
 import {
   UsernameReservationState,
   UsernameReservationError,
@@ -49,6 +52,8 @@ export type PropsDataType = Readonly<{
   maxNickname: number;
   // Tellomi (ADR-0066 §6.2): seconds left in the rename cooldown, with error ChangeCooldown.
   cooldownRetryAfterSecs?: number;
+  // Tellomi (ADR-0066 §6.2): when this device last deleted the account's username, if it did.
+  usernameDeletedAt?: number;
 }>;
 
 export type ActionPropsDataType = Readonly<{
@@ -92,6 +97,7 @@ export function UsernameEditor({
   state,
   recoveredUsername,
   cooldownRetryAfterSecs,
+  usernameDeletedAt,
   onClose,
 }: PropsType): JSX.Element {
   const currentNickname = useMemo(() => {
@@ -104,7 +110,8 @@ export function UsernameEditor({
 
   const [updateState, setUpdateState] = useState(UpdateState.Original);
   const [nickname, setNickname] = useState(currentNickname);
-  const [isConfirmingSave, setIsConfirmingSave] = useState(false);
+  const [saveConfirmation, setSaveConfirmation] =
+    useState<UsernameSaveConfirmation>('none');
   const [isConfirmingReset, setIsConfirmingReset] = useState(false);
 
   // Clear reservation if user erases the nickname
@@ -217,16 +224,32 @@ export function UsernameEditor({
   const onSave = useCallback(() => {
     if (usernameCorrupted) {
       setIsConfirmingReset(true);
-    } else if (!currentUsername || (reservation && isCaseChange(reservation))) {
+      return;
+    }
+    // Tellomi (ADR-0066 §6.2): warn before anything that starts the 30-day rename cooldown — replacing a username,
+    // or setting one while a username this device deleted is still held (clear + set counts as a change).
+    const confirmation = getUsernameSaveConfirmation({
+      currentUsername,
+      isCaseChangeOnly: Boolean(reservation && isCaseChange(reservation)),
+      deletedAt: usernameDeletedAt,
+      now: Date.now(),
+    });
+    if (confirmation === 'none') {
       confirmUsername();
     } else {
-      setIsConfirmingSave(true);
+      setSaveConfirmation(confirmation);
     }
-  }, [confirmUsername, currentUsername, reservation, usernameCorrupted]);
+  }, [
+    confirmUsername,
+    currentUsername,
+    reservation,
+    usernameCorrupted,
+    usernameDeletedAt,
+  ]);
 
   const onCancelSave = useCallback(() => {
     setIsConfirmingReset(false);
-    setIsConfirmingSave(false);
+    setSaveConfirmation('none');
   }, []);
 
   const onConfirmUsername = useCallback(() => {
@@ -356,16 +379,22 @@ export function UsernameEditor({
       </AxoConfirmDialog.Root>
 
       <AxoConfirmDialog.Root
-        open={isConfirmingSave}
+        open={saveConfirmation !== 'none'}
         onOpenChange={onCancelSave}
         // @ts-expect-error ConfirmationDialog migration: Needs title
         title={null}
-        // Tellomi (ADR-0066 §6.2): every change confirmed here starts the rename cooldown (a first username never
+        // Tellomi (ADR-0066 §6.2): everything confirmed here starts the rename cooldown (a first username never
         // gets here), so the user hears about the 30 days before, not after.
-        description={i18n(
-          'icu:EditUsernameModalBody__change-confirmation--tellomi',
-          { days: RENAME_COOLDOWN_DAYS }
-        )}
+        description={
+          saveConfirmation === 'setAfterDelete'
+            ? i18n(
+                'icu:EditUsernameModalBody__set-after-delete-confirmation--tellomi',
+                { holdDays: USERNAME_HOLD_DAYS, days: RENAME_COOLDOWN_DAYS }
+              )
+            : i18n('icu:EditUsernameModalBody__change-confirmation--tellomi', {
+                days: RENAME_COOLDOWN_DAYS,
+              })
+        }
       >
         <AxoConfirmDialog.Cancel />
         <AxoConfirmDialog.Action

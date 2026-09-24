@@ -87,6 +87,12 @@ export const getUsernameCorrupted = createSelector(
   (state: ItemsStateType): boolean => Boolean(state.usernameCorrupted)
 );
 
+// Tellomi (ADR-0066 §6.2): when this device last deleted the account's username.
+export const getTellomiUsernameDeletedAt = createSelector(
+  getItems,
+  (state: ItemsStateType): number | undefined => state.tellomiUsernameDeletedAt
+);
+
 export const getUsernameLinkCorrupted = createSelector(
   getItems,
   (state: ItemsStateType): boolean => Boolean(state.usernameLinkCorrupted)

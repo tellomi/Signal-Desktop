@@ -12,7 +12,10 @@ import {
   getUsernameCooldownRetryAfterSecs,
   getRecoveredUsername,
 } from '../selectors/username.std.ts';
-import { getUsernameCorrupted } from '../selectors/items.dom.ts';
+import {
+  getTellomiUsernameDeletedAt,
+  getUsernameCorrupted,
+} from '../selectors/items.dom.ts';
 import { getMe } from '../selectors/conversations.dom.ts';
 import { useUsernameActions } from '../ducks/username.preload.ts';
 import { useToastActions } from '../ducks/toast.preload.ts';
@@ -35,6 +38,7 @@ export const SmartUsernameEditor = memo(function SmartUsernameEditor({
   const reservation = useSelector(getUsernameReservationObject);
   const error = useSelector(getUsernameReservationError);
   const cooldownRetryAfterSecs = useSelector(getUsernameCooldownRetryAfterSecs);
+  const usernameDeletedAt = useSelector(getTellomiUsernameDeletedAt);
   const {
     setUsernameReservationError,
     clearUsernameReservation,
@@ -54,6 +58,7 @@ export const SmartUsernameEditor = memo(function SmartUsernameEditor({
       reservation={reservation}
       error={error}
       cooldownRetryAfterSecs={cooldownRetryAfterSecs}
+      usernameDeletedAt={usernameDeletedAt}
       setUsernameReservationError={setUsernameReservationError}
       clearUsernameReservation={clearUsernameReservation}
       reserveUsername={reserveUsername}

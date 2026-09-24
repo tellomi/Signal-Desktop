@@ -224,6 +224,8 @@ export type StorageAccessType = {
   notifyForRepliesIfMuted: boolean | undefined;
   usernameLastIntegrityCheck: number;
   usernameCorrupted: boolean;
+  // Tellomi (ADR-0066 §6.2): when this device last deleted the account's username (ms); see isWithinUsernameHold.
+  tellomiUsernameDeletedAt: number;
   usernameLinkCorrupted: boolean;
   usernameLinkColor: number;
   usernameLink: {
@@ -477,6 +479,7 @@ export const STORAGE_KEYS_TO_PRESERVE_WHEN_PRIMARY = [
   'seenPinMessageDisappearingMessagesWarningCount',
   'usernameLastIntegrityCheck',
   'usernameCorrupted',
+  'tellomiUsernameDeletedAt',
   'usernameLinkCorrupted',
   'usernameLink',
   'notificationProfileOverride',
