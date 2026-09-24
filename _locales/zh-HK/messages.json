@@ -8158,6 +8158,9 @@
   "icu:EditUsernameModalBody__recover-confirmation": {
     "messageformat": "恢復用戶名稱將重設你現有的二維碼和連結。你確定嗎？"
   },
+  "icu:EditUsernameModalBody__recover-confirmation--tellomi": {
+    "messageformat": "{days, plural, other {恢復用戶名稱將重設你現有的二維碼和連結，之後 # 天內不能再更改。你確定嗎？}}"
+  },
   "icu:EditUsernameModalBody__username-recovered__text": {
     "messageformat": "你的二維碼和連結已重設，你的用戶名稱為 {username}"
   },
