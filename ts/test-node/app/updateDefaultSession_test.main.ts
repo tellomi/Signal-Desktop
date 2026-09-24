@@ -36,7 +36,7 @@ describe('updateDefaultSession', () => {
     sinon.assert.calledOnce(stub);
     sinon.assert.calledWith(
       stub,
-      `https://updates.signal.org/desktop/hunspell_dictionaries/${process.versions.electron}/`
+      `https://updates.tellomi.app/desktop/hunspell_dictionaries/${process.versions.electron}/`
     );
     sinon.assert.notCalled(logger.fatal);
     sinon.assert.notCalled(logger.error);
