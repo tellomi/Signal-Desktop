@@ -553,6 +553,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     if: github.event_name == 'pull_request'
+    # Tellomi: the fork has no AUTOMATED_GITHUB_PAT (upstream's secret), so Danger exited before checking anything
+    # ("Cannot use authenticated API requests") on every pull request. It falls back to this job's own token below,
+    # which only needs to read the pull request and the files it touches.
+    permissions:
+      contents: read
+      pull-requests: read
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
       - name: Setup pnpm
@@ -569,7 +575,7 @@ jobs:
         run: pnpm run danger:ci
         working-directory: danger
         env:
-          DANGER_GITHUB_API_TOKEN: ${{ secrets.AUTOMATED_GITHUB_PAT }}
+          DANGER_GITHUB_API_TOKEN: ${{ secrets.AUTOMATED_GITHUB_PAT || github.token }}
 
   storybook:
     name: Storybook
