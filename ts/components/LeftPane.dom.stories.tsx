@@ -11,6 +11,7 @@ import { CrashReportDialog } from './CrashReportDialog.dom.tsx';
 import { ToastManager } from './ToastManager.dom.tsx';
 import type { PropsType as DialogNetworkStatusPropsType } from './DialogNetworkStatus.dom.tsx';
 import { DialogExpiredBuild } from './DialogExpiredBuild.dom.tsx';
+import { DialogExpiringBuild } from './DialogExpiringBuild.dom.tsx';
 import { DialogNetworkStatus } from './DialogNetworkStatus.dom.tsx';
 import { DialogRelink } from './DialogRelink.dom.tsx';
 import type { PropsType as DialogUpdatePropsType } from './DialogUpdate.dom.tsx';
@@ -199,6 +200,7 @@ const useProps = (overrideProps: OverridePropsType = {}): PropsType => {
     hasClockSkewDialog: false,
     hasNetworkDialog: false,
     hasExpiredDialog: false,
+    buildExpiresInDays: undefined,
     hasRelinkDialog: false,
     hasUpdateDialog: false,
     unsupportedOSDialogType: undefined,
@@ -303,6 +305,7 @@ const useProps = (overrideProps: OverridePropsType = {}): PropsType => {
       />
     ),
     renderExpiredBuildDialog: props => <DialogExpiredBuild {...props} />,
+    renderExpiringBuildDialog: props => <DialogExpiringBuild {...props} />,
     renderUnsupportedOSDialog: props => (
       <UnsupportedOSDialog
         i18n={i18n}
@@ -507,6 +510,20 @@ export function InboxIdlePrimaryDeviceAlertNonDismissable(): JSX.Element {
             dismissedAt: Date.now() - 8 * DAY,
           },
         },
+      })}
+    />
+  );
+}
+// Tellomi（#1269）：到期前 14 天的提示排在更新提示前面，断网提示让位（最多两条）。
+export function InboxExpiringBuildWithUpdateAndNetworkDialogs(): JSX.Element {
+  return (
+    <LeftPaneInContainer
+      {...useProps({
+        buildExpiresInDays: 3,
+        hasUpdateDialog: true,
+        hasNetworkDialog: true,
+        isUpdateDownloaded: true,
+        dialogUpdate: { dialogType: DialogType.AutoUpdate },
       })}
     />
   );

@@ -12,9 +12,11 @@ const buildCreation = getBuildCreationTimestamp();
 
 const isNotUpdatable = !parseVersion(packageJson.version).isUpdatable;
 
-// NB: Build expirations are also determined via users' auto-update settings; see
-// getExpirationTimestamp
-const validDuration = isNotUpdatable ? DAY * 30 : DAY * 90;
+// NB: the remote build expiration can still shorten this; see getBuildExpirationTimestamp. (Upstream also cut it
+// for users with auto-download off; Tellomi doesn't.)
+// Tellomi (tellomi/tellomi#1269, spec #1143 §3.6): 180 days, the same on every platform; must match
+// BUILD_LIFESPAN_DAYS in ts/util/buildExpiration.std.ts (its safety window is one day longer).
+const validDuration = isNotUpdatable ? DAY * 30 : DAY * 180;
 const buildExpiration = buildCreation + validDuration;
 
 const localProductionPath = join(

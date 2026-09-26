@@ -50,6 +50,7 @@ import { ConversationList } from './ConversationList.dom.tsx';
 import { ContactCheckboxDisabledReason } from './conversationList/ContactCheckbox.dom.tsx';
 import type { PropsType as DialogClockSkewPropsType } from './DialogClockSkew.dom.tsx';
 import type { PropsType as DialogExpiredBuildPropsType } from './DialogExpiredBuild.dom.tsx';
+import type { PropsType as DialogExpiringBuildPropsType } from './DialogExpiringBuild.dom.tsx';
 import { LeftPaneBanner } from './LeftPaneBanner.dom.tsx';
 
 import type {
@@ -92,6 +93,8 @@ export type PropsType = {
   hasAnyCurrentCustomChatFolders: boolean;
   hasClockSkewDialog: boolean;
   hasExpiredDialog: boolean;
+  // Tellomi (tellomi/tellomi#1269): days left while inside the "expires soon" window, otherwise undefined.
+  buildExpiresInDays: number | undefined;
   hasFailedStorySends: boolean;
   hasNetworkDialog: boolean;
   hasPendingUpdate: boolean;
@@ -217,6 +220,7 @@ export type PropsType = {
   renderCaptchaDialog: (props: { onSkip: () => void }) => JSX.Element;
   renderCrashReportDialog: () => JSX.Element;
   renderExpiredBuildDialog: (_: DialogExpiredBuildPropsType) => JSX.Element;
+  renderExpiringBuildDialog: (_: DialogExpiringBuildPropsType) => JSX.Element;
   renderLeftPaneChatFolders: () => JSX.Element;
   renderNotificationProfilesMenu: () => JSX.Element;
   renderToastManager: (_: Readonly<SmartToastManagerPropsType>) => JSX.Element;
@@ -246,6 +250,7 @@ export function LeftPane({
   hasAnyCurrentCustomChatFolders,
   hasClockSkewDialog,
   hasExpiredDialog,
+  buildExpiresInDays,
   hasFailedStorySends,
   hasNetworkDialog,
   hasPendingUpdate,
@@ -273,6 +278,7 @@ export function LeftPane({
   renderClockSkewDialog,
   renderCrashReportDialog,
   renderExpiredBuildDialog,
+  renderExpiringBuildDialog,
   renderLeftPaneChatFolders,
   renderMessageSearchResult,
   renderConversationListItemContextMenu,
@@ -728,6 +734,16 @@ export function LeftPane({
     });
   } else if (hasClockSkewDialog) {
     maybeRedDialog = renderClockSkewDialog(commonDialogProps);
+  }
+
+  // Tellomi（#1269）：owner 规则是「已过期 > 到期前 14 天提示 > 更新提示」，所以没有红色提示时它占红色那一格（后面照旧跟
+  // 更新提示或黄色提示，最多两条）。放在黄色提示末尾会排到更新提示后面，断网 / 要重新关联时还会整条被挤掉。
+  // 过期后 buildExpiresInDays 是 undefined，由上面的 DialogExpiredBuild 接手；时钟不准（红色）时天数也不可信，不显示。
+  if (!maybeRedDialog && buildExpiresInDays !== undefined) {
+    maybeRedDialog = renderExpiringBuildDialog({
+      ...commonDialogProps,
+      days: buildExpiresInDays,
+    });
   }
 
   const dialogs = new Array<{ key: string; dialog: JSX.Element }>();
