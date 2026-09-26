@@ -5968,7 +5968,7 @@
     "messageformat": "嘗試次數過多，請稍後再試"
   },
   "icu:ProfileEditor--username--change-cooldown": {
-    "messageformat": "{days, plural, other {你最近更改過用戶名稱，# 天後可以再更改。}}"
+    "messageformat": "{days, plural, other {你最近更改過用戶名稱，# 天後可以再更改。在那之前，只能改回原來的名稱。}}"
   },
   "icu:ProfileEditor--username--unavailable": {
     "messageformat": "此用戶名稱無法使用"
@@ -5998,7 +5998,7 @@
     "messageformat": "這將刪除你的用戶名稱及停用你的二維碼和連結。「{username}」將會供其他人使用。你確定嗎？"
   },
   "icu:ProfileEditor--username--confirm-delete-body--tellomi": {
-    "messageformat": "這將刪除你的用戶名稱及停用你的二維碼和連結。「{username}」會為你保留 {holdDays, number} 天；這期間再設定用戶名稱，之後 {days, number} 天內不能再更改。你確定嗎？"
+    "messageformat": "這將刪除你的用戶名稱及停用你的二維碼和連結。「{username}」會為你保留 {holdDays, number} 天；這期間再設定用戶名稱，之後 {days, number} 天內不能再更改。如果你 {days, number} 天內改過用戶名稱，刪除後只能改回原來的名稱。你確定嗎？"
   },
   "icu:ProfileEditor--username--confirm-delete-button": {
     "messageformat": "刪除"

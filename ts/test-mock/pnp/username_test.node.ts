@@ -275,8 +275,9 @@ describe('pnp/username', function (this: Mocha.Suite) {
       .getByRole('alertdialog')
       .filter({
         has: window.getByText(
-          // Tellomi (ADR-0066 §6.2): the deleted name stays held for its owner for 30 days, not free for others.
-          `This will remove your username and disable your QR code and link. “${NICKNAME}” stays reserved for you for 30 days; if you set a username during that time, you won’t be able to change it again for 30 days. Are you sure?`
+          // Tellomi (ADR-0066 §6.2): the deleted name stays held for its owner for 30 days, not free for others;
+          // and within 30 days of a change only the original name can be taken back (owner decision, 2026-09-24).
+          `This will remove your username and disable your QR code and link. “${NICKNAME}” stays reserved for you for 30 days; if you set a username during that time, you won’t be able to change it again for 30 days. If you changed your username in the last 30 days, you can only change back to your original username after deleting it. Are you sure?`
         ),
       })
       .getByRole('button', { name: 'Delete' })

@@ -7932,8 +7932,8 @@
     "description": "Shown if user has made too many attempts to pick a username and has to wait before retrying"
   },
   "icu:ProfileEditor--username--change-cooldown": {
-    "messageformat": "You changed your username recently. You can change it again in {days, plural, one {# day} other {# days}}.",
-    "description": "Tellomi (ADR-0066 §6.2): shown when the server refuses a new username because the account changed its username less than 30 days ago. {days} is the number of days left, rounded up."
+    "messageformat": "You changed your username recently. You can change it again in {days, plural, one {# day} other {# days}}. Until then, you can only change back to your original username.",
+    "description": "Tellomi (ADR-0066 §6.2): shown when the server refuses a new username because the account changed its username less than 30 days ago. {days} is the number of days left, rounded up. Second sentence added 2026-09-25 (the owner hit the cooldown on TestFlight): during the cooldown the server only accepts this account's own held usernames."
   },
   "icu:ProfileEditor--username--unavailable": {
     "messageformat": "This username is not available",
@@ -7972,8 +7972,8 @@
     "description": "Shown in dialog body if user has saved an empty string to delete their username"
   },
   "icu:ProfileEditor--username--confirm-delete-body--tellomi": {
-    "messageformat": "This will remove your username and disable your QR code and link. “{username}” stays reserved for you for {holdDays, number} days; if you set a username during that time, you won’t be able to change it again for {days, plural, one {# day} other {# days}}. Are you sure?",
-    "description": "Tellomi (ADR-0066 §6.2): delete-username confirmation. The server holds a deleted username for its owner (so it is not free for others to claim), and setting any username while it is held starts the rename cooldown. {holdDays} and {days} are both 30 today but are separate server settings."
+    "messageformat": "This will remove your username and disable your QR code and link. “{username}” stays reserved for you for {holdDays, number} days; if you set a username during that time, you won’t be able to change it again for {days, plural, one {# day} other {# days}}. If you changed your username in the last {days, number} days, you can only change back to your original username after deleting it. Are you sure?",
+    "description": "Tellomi (ADR-0066 §6.2): delete-username confirmation. The server holds a deleted username for its owner (so it is not free for others to claim), and setting any username while it is held starts the rename cooldown. {holdDays} and {days} are both 30 today but are separate server settings. The sentence about changing back (owner decision, 2026-09-24) is shown whether or not the account is in the cooldown: during the cooldown the server only accepts this account's own held usernames, so after deleting it the original name is the only one that can be set. That sentence uses {days, number} rather than a second plural because the intl linter allows one plural per message; {days} is the fixed cooldown length (30)."
   },
   "icu:ProfileEditor--username--confirm-delete-button": {
     "messageformat": "Delete",
