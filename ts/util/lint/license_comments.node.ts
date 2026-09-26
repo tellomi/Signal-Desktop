@@ -190,7 +190,8 @@ async function main() {
 
     if (
       firstLine == null ||
-      !/Copyright \d{4} Signal Messenger, LLC/.test(firstLine)
+      // Tellomi: files we wrote name the company (重庆半格智能科技有限公司, owner 2026-09-24).
+      !/Copyright \d{4} (Signal Messenger, LLC|重庆半格智能科技有限公司)/.test(firstLine)
     ) {
       const commit = await getCommitFileWasAdded(file);
       warnings.push(

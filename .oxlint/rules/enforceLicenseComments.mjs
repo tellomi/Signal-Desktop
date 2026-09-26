@@ -3,10 +3,14 @@
 // @ts-check
 import { ESLintUtils } from '@typescript-eslint/utils';
 
-const COMMENT_LINE_1_EXACT = /^ Copyright \d{4} Signal Messenger, LLC$/;
+// Tellomi: files we wrote name the company that holds their copyright, 重庆半格智能科技有限公司
+// (owner 2026-09-24; not the brand name). Upstream files keep Signal's line. The fix keeps
+// whichever holder the file already names, so it never rewrites one into the other.
+const HOLDER = '(Signal Messenger, LLC|重庆半格智能科技有限公司)';
+const COMMENT_LINE_1_EXACT = new RegExp(`^ Copyright \\d{4} ${HOLDER}$`);
 const COMMENT_LINE_2_EXACT = /^ SPDX-License-Identifier: AGPL-3.0-only$/;
 
-const COMMENT_LINE_1_LOOSE = /Copyright (\d{4}) Signal Messenger, LLC/;
+const COMMENT_LINE_1_LOOSE = new RegExp(`Copyright (\\d{4}) ${HOLDER}`);
 const COMMENT_LINE_2_LOOSE = /SPDX-License-Identifier: AGPL-3.0-only/;
 
 export const enforceLicenseComments = ESLintUtils.RuleCreator.withoutDocs({
@@ -39,6 +43,7 @@ export const enforceLicenseComments = ESLintUtils.RuleCreator.withoutDocs({
           messageId: 'missingLicenseComment',
           fix(fixer) {
             let year = null;
+            let holder = null;
             const remove = [];
 
             for (const comment of node.comments ?? []) {
@@ -47,6 +52,7 @@ export const enforceLicenseComments = ESLintUtils.RuleCreator.withoutDocs({
 
               if (match1 != null) {
                 year = match1[1];
+                holder = match1[2];
               }
 
               if (match1 != null || match2 != null) {
@@ -55,9 +61,10 @@ export const enforceLicenseComments = ESLintUtils.RuleCreator.withoutDocs({
             }
 
             year ??= new Date().getFullYear().toString();
+            holder ??= 'Signal Messenger, LLC';
 
             const insert =
-              `// Copyright ${year} Signal Messenger, LLC\n` +
+              `// Copyright ${year} ${holder}\n` +
               '// SPDX-License-Identifier: AGPL-3.0-only\n';
 
             return [

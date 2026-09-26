@@ -14,6 +14,14 @@ import {
 } from '../ts/environment.std.ts';
 import { createLogger } from '../ts/logging/log.std.ts';
 import { getAppRootDir } from '../ts/util/appRootDir.main.ts';
+import {
+  applyRegionEndpoints,
+  getEnabledRegions,
+  getRegionEndpoints,
+  parseRegions,
+  selectStartupRegion,
+} from '../ts/util/tellomiRegion.std.ts';
+import type { RegionIdType } from '../ts/util/tellomiRegion.std.ts';
 
 const log = createLogger('config');
 
@@ -60,6 +68,32 @@ process.env.NODE_CONFIG_DIR = join(getAppRootDir(), 'config');
 // See: https://github.com/evanw/esbuild/issues/2011
 // oxlint-disable-next-line typescript/no-var-requires
 const config: Config = require('config');
+
+// Tellomi (ADR-0065 §6.6, tellomi/tellomi#1054): production.json keeps its endpoints per region.
+// Copy the startup region's endpoints over the flat keys before anything calls `config.get()`
+// (the first get() freezes the object), so every reader sees the region's values. An invalid
+// `regions` block throws here: the app must never start on whatever default.json holds
+// (tellomi/tellomi#1023). Environments without `regions` (development, test) are untouched.
+function applyStartupRegion(): RegionIdType {
+  const target = config as unknown as Record<string, unknown>;
+  const regions = parseRegions(target.regions);
+  const id = selectStartupRegion(regions);
+  applyRegionEndpoints(target, getRegionEndpoints(regions, id));
+  log.info(`region ${id} (enabled: ${getEnabledRegions(regions).join(', ')})`);
+  return id;
+}
+
+// A packaged build without `regions` would silently run on default.json, which points at
+// Signal's staging servers: refuse to start instead.
+if (getEnvironment() === Environment.PackagedApp && !config.has('regions')) {
+  throw new Error(
+    'config: production build has no "regions" block (tellomi/tellomi#1054)'
+  );
+}
+
+export const region: RegionIdType | undefined = config.has('regions')
+  ? applyStartupRegion()
+  : undefined;
 
 if (getEnvironment() !== Environment.PackagedApp) {
   config.util.getConfigSources().forEach(source => {

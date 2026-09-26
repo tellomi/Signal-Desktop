@@ -1,3 +1,5 @@
+# Copyright 2026 重庆半格智能科技有限公司
+# SPDX-License-Identifier: AGPL-3.0-only
 # Tellomi: 上游出新 release tag 后自动开「候选 rebase PR」（tellomi/tellomi#995）。
 # 只做机械部分：找最新非 beta/rc/hotfix tag → 把我们在 `tellomi` 分支上的补丁 rebase 到它 → 零冲突就推 `sync/<tag>` 并开 PR，
 # 有冲突就开 Issue 列出冲突文件。永远不自动合并；「合不合理」由人审 PR（审核清单见 PR 正文）。

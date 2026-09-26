@@ -53,7 +53,9 @@ function resolveLibsignalNet(
   // comes from `certificateAuthority` when set, otherwise the platform trust store.
   const parsed = new URL(url);
   if (parsed.hostname !== 'chat.signal.org') {
-    log.info(`libsignal net environment resolved to custom server ${libsignalHostname ?? parsed.hostname}`);
+    log.info(
+      `libsignal net environment resolved to custom server ${libsignalHostname ?? parsed.hostname}`
+    );
     return new Net.Net({
       customServer: {
         hostname: libsignalHostname ?? parsed.hostname,
@@ -88,6 +90,11 @@ export function getLibsignalNet(): Net.Net {
 if (window.SignalContext.config?.serverUrl) {
   const { config } = window.SignalContext;
 
+  // Tellomi (tellomi/tellomi#1054): in production `serverUrl` / `libsignalHostname` are the
+  // current region's (app/config.main.ts applies the region before the config reaches us).
+  log.info(
+    `libsignal net region: ${config.region ?? 'none (no regions config)'}`
+  );
   libsignalNet = resolveLibsignalNet(
     config.serverUrl,
     config.version,

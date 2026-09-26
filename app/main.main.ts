@@ -55,7 +55,7 @@ import './startup_config.main.ts';
 
 import type { RendererConfigType } from '../ts/types/RendererConfig.std.ts';
 import { rendererConfigSchema } from '../ts/types/RendererConfig.std.ts';
-import config from './config.main.ts';
+import config, { region } from './config.main.ts';
 import {
   Environment,
   getEnvironment,
@@ -2110,7 +2110,11 @@ app.on('ready', async () => {
     realpath(rootDir),
   ]);
 
-  updateDefaultSession(session.defaultSession, log);
+  updateDefaultSession(
+    session.defaultSession,
+    log,
+    config.get<string>('updatesUrl')
+  );
 
   if (getEnvironment() !== Environment.Test) {
     installFileHandler({
@@ -2131,7 +2135,8 @@ app.on('ready', async () => {
   await mainProcessLogging.initialize(getMainWindow);
 
   const resourceService = OptionalResourceService.create(
-    join(userDataPath, 'optionalResources')
+    join(userDataPath, 'optionalResources'),
+    config.get<string>('resourcesUrl')
   );
   await EmojiService.create(resourceService);
   AssetService.create(resourceService);
@@ -2901,6 +2906,8 @@ ipc.on('get-config', async event => {
     appInstance: process.env.NODE_APP_INSTANCE || undefined,
     proxyUrl: process.env.HTTPS_PROXY || process.env.https_proxy || undefined,
     contentProxyUrl: config.get<string>('contentProxyUrl'),
+    outageCheckHost: config.get<string>('outageCheckHost'),
+    region,
     sfuUrl: config.get('sfuUrl'),
     reducedMotionSetting: animationSettings.prefersReducedMotion,
     registrationChallengeUrl: config.get<string>('registrationChallengeUrl'),
@@ -2983,6 +2990,7 @@ ipc.handle('DebugLogs.upload', async (_event, content: string) => {
     content,
     appVersion: app.getVersion(),
     logger: log,
+    baseUrl: config.get<string>('debugLogUrl'),
   });
 });
 

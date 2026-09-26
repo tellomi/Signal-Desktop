@@ -1,14 +1,44 @@
 {
-  "serverUrl": "https://chat.tellomi.app",
-  "storageUrl": "https://storage.tellomi.app",
-  "cdn": {
-    "0": "https://cdn.tellomi.app",
-    "2": "https://cdn2.tellomi.app",
-    "3": "https://cdn3.tellomi.app"
+  "regions": {
+    "global": {
+      "enabled": true,
+      "serverUrl": "https://chat.tellomi.app",
+      "libsignalHostname": "grpc.chat.tellomi.app",
+      "storageUrl": "https://storage.tellomi.app",
+      "cdn": {
+        "0": "https://cdn.tellomi.app",
+        "2": "https://cdn2.tellomi.app",
+        "3": "https://cdn3.tellomi.app"
+      },
+      "sfuUrl": "https://chat.tellomi.app/callingService",
+      "challengeUrl": "https://chat.tellomi.app/captcha-tellomi/challenge/generate.html",
+      "registrationChallengeUrl": "https://chat.tellomi.app/captcha-tellomi/registration/generate.html",
+      "contentProxyUrl": "https://contentproxy.tellomi.app:443",
+      "updatesUrl": "https://updates.tellomi.app/desktop",
+      "resourcesUrl": "https://updates.tellomi.app",
+      "outageCheckHost": "uptime.tellomi.app",
+      "debugLogUrl": "https://chat.tellomi.app/debuglogs"
+    },
+    "cn": {
+      "enabled": false,
+      "serverUrl": "https://chat.tellomi.cn",
+      "libsignalHostname": "grpc.chat.tellomi.cn",
+      "storageUrl": "https://storage.tellomi.cn",
+      "cdn": {
+        "0": "https://cdn.tellomi.cn",
+        "2": "https://cdn2.tellomi.cn",
+        "3": "https://cdn3.tellomi.cn"
+      },
+      "sfuUrl": "https://chat.tellomi.cn/callingService",
+      "challengeUrl": "https://chat.tellomi.cn/captcha-tellomi/challenge/generate.html",
+      "registrationChallengeUrl": "https://chat.tellomi.cn/captcha-tellomi/registration/generate.html",
+      "contentProxyUrl": "https://contentproxy.tellomi.cn:443",
+      "updatesUrl": "https://updates.tellomi.cn/desktop",
+      "resourcesUrl": "https://updates.tellomi.cn",
+      "outageCheckHost": "uptime.tellomi.cn",
+      "debugLogUrl": "https://chat.tellomi.cn/debuglogs"
+    }
   },
-  "sfuUrl": "https://chat.tellomi.app/callingService",
-  "challengeUrl": "https://chat.tellomi.app/captcha-tellomi/challenge/generate.html",
-  "registrationChallengeUrl": "https://chat.tellomi.app/captcha-tellomi/registration/generate.html",
   "serverPublicParams": "ADKO0hJxgxBky6XbESgxS+kxUo0+0fZinOfVIZfT+Chs1lBx0vRYvMzp+gUsbOpVRfsRMfdSwHq4GdExEyIMDhwamT0uT7OyL25KHXgAUXu56vWApb8c1mgdsd6GbfyfAOqGNAR7e8emQLSivHo+oYJVciuQVAznjbWdtjpvXMs3QMxitzmOcxhskuV+E6Md8BNIIqK6kviBf6GTVVJRIGr655FBcPf89L6Iva9ZEirT0pzQPBcGZ7mkzq56khyHLVxx3VzxCDjEUhPrco1Y4yfNqE7WA8JKi8dXA3pEslk8ztjXZ2C3nOIl1DnsaOJytFo14Gjri895dlDHCvY0s25sJlep3NrCO6U4imVVFhmc77y0dbn2FTwnOwefltRFQxz5yVvD4y50n8f6zZblT6u6w7YSdkf9glpzJOSYMdxPnHtWzzgQxPfqms2JYimZRakIqPcfnb3JIFTJqFITI3/E966PuFsB2kgZUNa+L9WUnhEw9utSJeFGltuX4IYIPPIWe1htCnrAyQgmpSoEwHseozG+FPol+YF4Hqd/WyA0DrPNr1749cXRkfwM+dNwrE59LkBf8Fp5UhtlyUW21E6wA4MLRAc2uoPXRUFzTcVykb42EYI/sAOWIfT103RvUhQfSBDYCj8uMYOonZ9fpkIL0u6zLt8zUE4CwjfbLAZ0bkKdS/baN5UMlq8cd3HZa09mvvLuL0Grl5mqRIRhUD4EhX8sVZHOzbof0Rc5JL4GvI4QOCObatrKg73D5prfLqyaJPb0TxuACl2S5fnNHs5FmqkDEw62yiUsrw5f8XYUTq5Y85s9MXBSjMUCGg+davkwDlmm1A4gqHuTzbcgGBRIh1iqWJ93cBq+uWsnMhSSdPbv4l8FUJwpruaZEj6FSw==",
   "serverTrustRoots": [
     "BcLYlMOrgCUTLuLXSvW5I1FiBAub5uoawfHDNzrzyNg3"
@@ -17,7 +47,6 @@
   "backupServerPublicParams": "AJwNSU55fsFCbgaxGRD11wO1juAs8Yr5GF8FPlGzzvdJJIKH5/4CC7ZJSOe3yL2vturVaRU2Cx0n751Vt8wkj1bozK3CBV1UokxV09GWf+hdVImLGjXGYLLhnI1J2TWEe7iWHyb553EEnRb5oxr9n3lUbNAJuRmFM7hrr0Al0F0wrDD4S8lo2mGaXe0MJCOM166F8oYRQqpFeEHfiLnxA1O8ZLh7vMdv4g9jI5phpRBTsJ5IjiJrWeP0zdIGHEssUeprDZ9OUJ14m0v61eYJMKsf59Bn+mAT2a7YfB+Don9O",
   "stripePublishableKey": "pk_live_6cmGZopuTsV8novGgJJW9JpC00vLIgtQ1D",
   "updatesEnabled": true,
-  "libsignalHostname": "grpc.chat.tellomi.app",
   "directoryConfig": {
     "directoryType": "cdsi",
     "directoryCDSIUrl": "https://chat.tellomi.app",
