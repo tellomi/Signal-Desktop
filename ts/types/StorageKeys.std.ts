@@ -224,7 +224,8 @@ export type StorageAccessType = {
   notifyForRepliesIfMuted: boolean | undefined;
   usernameLastIntegrityCheck: number;
   usernameCorrupted: boolean;
-  // Tellomi (ADR-0066 §6.2): when this device last deleted the account's username (ms); see isWithinUsernameHold.
+  // Tellomi (ADR-0066 §6.2): when the account's username was last deleted (ms), here or on another device (seen via
+  // storage sync); see isWithinUsernameHold.
   tellomiUsernameDeletedAt: number;
   usernameLinkCorrupted: boolean;
   usernameLinkColor: number;

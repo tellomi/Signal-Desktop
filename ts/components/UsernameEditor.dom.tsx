@@ -52,7 +52,8 @@ export type PropsDataType = Readonly<{
   maxNickname: number;
   // Tellomi (ADR-0066 §6.2): seconds left in the rename cooldown, with error ChangeCooldown.
   cooldownRetryAfterSecs?: number;
-  // Tellomi (ADR-0066 §6.2): when this device last deleted the account's username, if it did.
+  // Tellomi (ADR-0066 §6.2): when the account's username was last deleted, here or on another device (seen via storage
+  // sync), if it was.
   usernameDeletedAt?: number;
 }>;
 
@@ -230,7 +231,8 @@ export function UsernameEditor({
       return;
     }
     // Tellomi (ADR-0066 §6.2): warn before anything that starts the 30-day rename cooldown — replacing a username,
-    // or setting one while a username this device deleted is still held (clear + set counts as a change).
+    // or setting one while a recently deleted username (deleted here or on another device) may still be held
+    // (clear + set counts as a change).
     const confirmation = getUsernameSaveConfirmation({
       currentUsername,
       isCaseChangeOnly: Boolean(reservation && isCaseChange(reservation)),
@@ -414,7 +416,12 @@ export function UsernameEditor({
         onOpenChange={onCancelSave}
         // @ts-expect-error ConfirmationDialog migration: Needs title
         title={null}
-        description={i18n('icu:EditUsernameModalBody__recover-confirmation')}
+        // Tellomi (ADR-0066 §6.2): recovering confirms a username, which the server counts as a change, so it starts
+        // (or restarts) the rename cooldown too — say so here as well, not only on a plain change.
+        description={i18n(
+          'icu:EditUsernameModalBody__recover-confirmation--tellomi',
+          { days: RENAME_COOLDOWN_DAYS }
+        )}
       >
         <AxoConfirmDialog.Cancel />
         <AxoConfirmDialog.Action

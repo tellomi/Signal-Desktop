@@ -10850,6 +10850,10 @@
     "messageformat": "Recovering your username will reset your existing QR code and link. Are you sure?",
     "description": "Body of the confirmation dialog displayed when user is about to recover their username"
   },
+  "icu:EditUsernameModalBody__recover-confirmation--tellomi": {
+    "messageformat": "Recovering your username will reset your existing QR code and link, and you won’t be able to change it again for {days, plural, one {# day} other {# days}}. Are you sure?",
+    "description": "Tellomi (ADR-0066 §6.2): confirmation before recovering a corrupted username. Recovering confirms a username, which the server counts as a change, so it starts (or restarts) the rename cooldown. {days} is the cooldown length (30)."
+  },
   "icu:EditUsernameModalBody__username-recovered__text": {
     "messageformat": "Your QR code and link have been reset and your username is {username}",
     "description": "Text of toast displayed upon successful recovery of username"

@@ -8158,6 +8158,9 @@
   "icu:EditUsernameModalBody__recover-confirmation": {
     "messageformat": "恢复您的用户名将会重置您现有的二维码和链接。确定要恢复吗？"
   },
+  "icu:EditUsernameModalBody__recover-confirmation--tellomi": {
+    "messageformat": "{days, plural, other {恢复用户名会重置你现有的二维码和链接，而且之后 # 天内不能再改。确定要恢复吗？}}"
+  },
   "icu:EditUsernameModalBody__username-recovered__text": {
     "messageformat": "您的二维码和链接已重置，您的用户名是{username}"
   },

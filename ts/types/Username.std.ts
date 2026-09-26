@@ -149,8 +149,9 @@ export const USERNAME_HOLD_DAYS = 30;
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
-// Whether a username this device deleted at `deletedAt` (ms) may still be held for the account. A deletion time in
-// the future (clock moved back) counts as recent: warning once too often beats a silent 30-day lock.
+// Whether a username deleted at `deletedAt` (ms; here, or on another device as seen via storage sync) may still be
+// held for the account. A deletion time in the future (clock moved back) counts as recent: warning once too often
+// beats a silent 30-day lock.
 export function isWithinUsernameHold(
   deletedAt: number | undefined,
   now: number
