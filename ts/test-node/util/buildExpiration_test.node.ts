@@ -1,6 +1,8 @@
 // Copyright 2026 重庆半格智能科技有限公司
 // SPDX-License-Identifier: AGPL-3.0-only
 
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { assert } from 'chai';
 
 import { createLogger } from '../../logging/log.std.ts';
@@ -92,6 +94,61 @@ describe('buildExpiration (Tellomi: 180 days, 14-day warning)', () => {
           logger,
         })
       );
+    });
+
+    // Tellomi（#1269，Pro 审 #10 的不阻塞 2）：安全窗比有效期多出的那一天是给慢了的时钟留的余量。少了它，时钟比
+    // 打包时的提交时间慢一点的人，第一次启动新版就是「已过期」。
+    it('tolerates a clock up to a day slow', () => {
+      const now = Date.now();
+      for (const autoDownloadUpdate of [true, false]) {
+        assert.isFalse(
+          hasBuildExpired({
+            buildExpirationTimestamp: now + (BUILD_LIFESPAN_DAYS + 0.5) * DAY,
+            autoDownloadUpdate,
+            now,
+            logger,
+          }),
+          `autoDownloadUpdate=${autoDownloadUpdate}`
+        );
+      }
+    });
+
+    it('expires once the expiration is more than a day past the lifespan', () => {
+      const now = Date.now();
+      assert.isTrue(
+        hasBuildExpired({
+          buildExpirationTimestamp: now + (BUILD_LIFESPAN_DAYS + 1) * DAY + 1,
+          autoDownloadUpdate: true,
+          now,
+          logger,
+        })
+      );
+    });
+  });
+
+  // Tellomi（#1269，Pro 审 #10 的不阻塞 3）：打包脚本写进去的有效期必须等于 BUILD_LIFESPAN_DAYS。只改脚本（比如改成
+  // 365 天）的话，新包的到期日超出安全窗，一启动就算「已过期」。脚本一导入就会写 config/local-production.json，
+  // 所以读源码比对；换行、缩进怎么变都认，写法改了就报错，逼人回来改这条测试。
+  describe('scripts/get-expire-time.mjs', () => {
+    it('packages updatable builds with BUILD_LIFESPAN_DAYS', () => {
+      const source = readFileSync(
+        join(__dirname, '..', '..', '..', 'scripts', 'get-expire-time.mjs'),
+        'utf8'
+      );
+      const match =
+        /validDuration\s*=\s*isNotUpdatable\s*\?\s*DAY\s*\*\s*(\d+)\s*:\s*DAY\s*\*\s*(\d+)/.exec(
+          source
+        );
+      if (match == null) {
+        throw new Error(
+          'get-expire-time.mjs no longer reads ' +
+            '"validDuration = isNotUpdatable ? DAY * <n> : DAY * <n>"; update this test'
+        );
+      }
+      const [, notUpdatableDays, updatableDays] = match;
+      assert.strictEqual(Number(updatableDays), BUILD_LIFESPAN_DAYS);
+      // adhoc 版（不能自己更新）的有效期也得落在安全窗里。
+      assert.isAtMost(Number(notUpdatableDays), BUILD_LIFESPAN_DAYS);
     });
   });
 
