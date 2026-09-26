@@ -712,12 +712,6 @@ export function LeftPane({
     maybeYellowDialog = renderRelinkDialog(commonDialogProps);
   } else if (maybeServerAlert) {
     maybeYellowDialog = maybeServerAlert;
-  } else if (buildExpiresInDays !== undefined) {
-    // Tellomi (#1269): lowest-priority yellow dialog; once the build has expired, the red DialogExpiredBuild shows.
-    maybeYellowDialog = renderExpiringBuildDialog({
-      ...commonDialogProps,
-      days: buildExpiresInDays,
-    });
   }
 
   // Update dialog
@@ -740,6 +734,16 @@ export function LeftPane({
     });
   } else if (hasClockSkewDialog) {
     maybeRedDialog = renderClockSkewDialog(commonDialogProps);
+  }
+
+  // Tellomi（#1269）：owner 规则是「已过期 > 到期前 14 天提示 > 更新提示」，所以没有红色提示时它占红色那一格（后面照旧跟
+  // 更新提示或黄色提示，最多两条）。放在黄色提示末尾会排到更新提示后面，断网 / 要重新关联时还会整条被挤掉。
+  // 过期后 buildExpiresInDays 是 undefined，由上面的 DialogExpiredBuild 接手；时钟不准（红色）时天数也不可信，不显示。
+  if (!maybeRedDialog && buildExpiresInDays !== undefined) {
+    maybeRedDialog = renderExpiringBuildDialog({
+      ...commonDialogProps,
+      days: buildExpiresInDays,
+    });
   }
 
   const dialogs = new Array<{ key: string; dialog: JSX.Element }>();

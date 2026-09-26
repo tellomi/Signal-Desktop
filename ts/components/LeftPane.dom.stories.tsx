@@ -514,6 +514,20 @@ export function InboxIdlePrimaryDeviceAlertNonDismissable(): JSX.Element {
     />
   );
 }
+// Tellomi（#1269）：到期前 14 天的提示排在更新提示前面，断网提示让位（最多两条）。
+export function InboxExpiringBuildWithUpdateAndNetworkDialogs(): JSX.Element {
+  return (
+    <LeftPaneInContainer
+      {...useProps({
+        buildExpiresInDays: 3,
+        hasUpdateDialog: true,
+        hasNetworkDialog: true,
+        isUpdateDownloaded: true,
+        dialogUpdate: { dialogType: DialogType.AutoUpdate },
+      })}
+    />
+  );
+}
 
 export function InboxUsernameCorrupted(): JSX.Element {
   return (
