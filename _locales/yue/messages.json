@@ -2318,6 +2318,9 @@
   "icu:DialogExpiringBuild__body--tellomi": {
     "messageformat": "{days, plural, other {呢個 Tellomi 桌面版本會喺 # 日後過期。過咗期之後仍然睇得到聊天紀錄，但要升級咗先可以收發訊息。}}"
   },
+  "icu:BuildExpiration__update--tellomi": {
+    "messageformat": "㩒一吓嚟更新 Tellomi"
+  },
   "icu:upgrade": {
     "messageformat": "㩒呢度去 tellomi.app/download"
   },

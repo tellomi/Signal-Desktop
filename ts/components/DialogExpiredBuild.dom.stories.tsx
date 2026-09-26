@@ -3,6 +3,7 @@
 
 import type { JSX } from 'react';
 
+import { action } from '@storybook/addon-actions';
 import type { Meta } from '@storybook/react';
 import type { PropsType } from './DialogExpiredBuild.dom.tsx';
 import { DialogExpiredBuild } from './DialogExpiredBuild.dom.tsx';
@@ -39,6 +40,22 @@ export function MAS(): JSX.Element {
         containerWidthBreakpoint={containerWidthBreakpoint}
         i18n={i18n}
         isMAS
+      />
+    </FakeLeftPaneContainer>
+  );
+}
+// Tellomi（#1269）：更新器手上有能装的版本时，按钮走 startUpdate（同更新提示的按钮）。
+export function UpdateReady(): JSX.Element {
+  const containerWidthBreakpoint = WidthBreakpoint.Wide;
+
+  return (
+    <FakeLeftPaneContainer containerWidthBreakpoint={containerWidthBreakpoint}>
+      <DialogExpiredBuild
+        containerWidthBreakpoint={containerWidthBreakpoint}
+        i18n={i18n}
+        isMAS={false}
+        upgradeAction="updater"
+        startUpdate={action('startUpdate')}
       />
     </FakeLeftPaneContainer>
   );

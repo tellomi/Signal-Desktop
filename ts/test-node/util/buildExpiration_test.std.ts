@@ -4,12 +4,15 @@
 import { assert } from 'chai';
 
 import { createLogger } from '../../logging/log.std.ts';
+import { DialogType } from '../../types/Dialogs.std.ts';
 import { DAY } from '../../util/durations/index.std.ts';
+import type { BuildUpgradeActionType } from '../../util/buildExpiration.std.ts';
 import {
   BUILD_EXPIRATION_WARNING_DAYS,
   BUILD_LIFESPAN_DAYS,
   getBuildExpirationTimestamp,
   getBuildExpirationWarningDays,
+  getBuildUpgradeAction,
   hasBuildExpired,
 } from '../../util/buildExpiration.std.ts';
 
@@ -118,6 +121,65 @@ describe('buildExpiration (Tellomi: 180 days, 14-day warning)', () => {
       assert.isUndefined(
         getBuildExpirationWarningDays({ buildExpirationTimestamp: 0, now })
       );
+    });
+  });
+
+  // Tellomi（#1269）：两条提示的按钮——更新器手上有能下载 / 安装 / 重试的版本（主进程登记了 'start-update'）才走
+  // 更新器，正在下载时不放按钮，其余打开下载页。Record 列全所有 DialogType：上游加了新状态，这里编译不过，逼人想一遍。
+  describe('getBuildUpgradeAction', () => {
+    const expected: Record<DialogType, BuildUpgradeActionType> = {
+      [DialogType.None]: 'download-page',
+      [DialogType.AutoUpdate]: 'updater',
+      [DialogType.DownloadedUpdate]: 'updater',
+      [DialogType.DownloadReady]: 'updater',
+      [DialogType.FullDownloadReady]: 'updater',
+      [DialogType.Cannot_Update]: 'updater',
+      [DialogType.Downloading]: 'none',
+      [DialogType.Cannot_Update_Require_Manual]: 'download-page',
+      [DialogType.MacOS_Read_Only]: 'download-page',
+      [DialogType.UnsupportedOS]: 'download-page',
+      [DialogType.MASUpdate]: 'download-page',
+    };
+
+    it('uses the updater only while it has an update to act on', () => {
+      for (const updateDialogType of Object.values(DialogType)) {
+        assert.strictEqual(
+          getBuildUpgradeAction({
+            isMAS: false,
+            updateDialogType,
+            didSnoozeUpdate: false,
+          }),
+          expected[updateDialogType],
+          updateDialogType
+        );
+      }
+    });
+
+    it('still uses the updater after the update dialog was snoozed', () => {
+      assert.strictEqual(
+        getBuildUpgradeAction({
+          isMAS: false,
+          updateDialogType: DialogType.None,
+          didSnoozeUpdate: true,
+        }),
+        'updater'
+      );
+    });
+
+    it('never uses the updater on the Mac App Store build', () => {
+      for (const updateDialogType of Object.values(DialogType)) {
+        for (const didSnoozeUpdate of [false, true]) {
+          assert.strictEqual(
+            getBuildUpgradeAction({
+              isMAS: true,
+              updateDialogType,
+              didSnoozeUpdate,
+            }),
+            'download-page',
+            `${updateDialogType} didSnoozeUpdate=${didSnoozeUpdate}`
+          );
+        }
+      }
     });
   });
 });

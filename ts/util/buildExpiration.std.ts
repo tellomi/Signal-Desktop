@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 import { Environment, getEnvironment } from '../environment.std.ts';
+import { DialogType } from '../types/Dialogs.std.ts';
 import type { LoggerType } from '../types/Logging.std.ts';
 import { isInPast } from './timestamp.std.ts';
 import { DAY } from './durations/index.std.ts';
@@ -106,4 +107,47 @@ export function getBuildExpirationWarningDays({
     return undefined;
   }
   return Math.ceil(msLeft / DAY);
+}
+
+// Tellomi（#1269）：「即将过期」「已过期」两条左栏提示的按钮怎么升级。
+// - 'updater'：做的和更新提示（DialogUpdate）的按钮一样，startUpdate。只在更新器已经把一个可以下载 / 安装 / 重试的
+//   版本报给界面时才这样走：只有这时主进程登记了 'start-update' 的处理函数；没登记时 startUpdate 只会弹「无法更新」。
+//   更新器没开或没在跑（开发版、adhoc 版、updatesEnabled=false）就不会报任何状态，自然落到下载页。
+// - 'download-page'：打开 tellomi.app/download（DialogExpiredBuild 在 MAS 上照上游去 App Store；Tellomi 没有 MAS 版）。
+//   更新器手上没东西时（还没查到新版本、服务器上没有更新的、自动下载还在后台进行）也走这里：不用 forceUpdate，
+//   因为它不比版本号，服务器上只有同一版时会重下一遍再重启。
+// - 'none'：更新正在下载，左栏下面的更新提示有进度条，此刻主进程也没有处理函数，按钮先不放。
+export type BuildUpgradeActionType = 'updater' | 'download-page' | 'none';
+
+const UPDATER_DIALOG_TYPES: ReadonlySet<DialogType> = new Set([
+  DialogType.AutoUpdate, // 已下载好（Linux deb：apt 已装好新版），重启即完成
+  DialogType.DownloadedUpdate, // 手动下载完，重启安装
+  DialogType.DownloadReady, // 关了自动下载：开始下载
+  DialogType.FullDownloadReady, // 差分下载失败：下载完整包
+  DialogType.Cannot_Update, // 出错后重试（同 DialogUpdate 里的「重试更新」）
+]);
+
+export function getBuildUpgradeAction({
+  isMAS,
+  updateDialogType,
+  didSnoozeUpdate,
+}: Readonly<{
+  isMAS: boolean;
+  updateDialogType: DialogType;
+  didSnoozeUpdate: boolean;
+}>): BuildUpgradeActionType {
+  if (isMAS) {
+    return 'download-page';
+  }
+  if (UPDATER_DIALOG_TYPES.has(updateDialogType)) {
+    return 'updater';
+  }
+  // 点过更新提示的 ×（snoozeUpdate）：界面上的状态回到 None，主进程的处理函数还在。
+  if (updateDialogType === DialogType.None && didSnoozeUpdate) {
+    return 'updater';
+  }
+  if (updateDialogType === DialogType.Downloading) {
+    return 'none';
+  }
+  return 'download-page';
 }

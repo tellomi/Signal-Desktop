@@ -36,6 +36,7 @@ import { useGlobalModalActions } from '../ducks/globalModals.preload.ts';
 import { useItemsActions } from '../ducks/items.preload.ts';
 import { useNetworkActions } from '../ducks/network.dom.ts';
 import { useSearchActions } from '../ducks/search.preload.ts';
+import { useUpdatesActions } from '../ducks/updates.preload.ts';
 import { useUsernameActions } from '../ducks/username.preload.ts';
 import { getPreferredBadgeSelector } from '../selectors/badges.preload.ts';
 import {
@@ -96,10 +97,13 @@ import {
   getStartSearchCounter,
 } from '../selectors/search.preload.ts';
 import {
+  getHasPendingUpdate,
+  getUpdateDialogType,
   isUpdateDownloaded as getIsUpdateDownloaded,
   isOSUnsupported,
   isUpdateDialogVisible,
 } from '../selectors/updates.std.ts';
+import { getBuildUpgradeAction } from '../../util/buildExpiration.std.ts';
 import {
   getIntl,
   getIsMacOS,
@@ -175,15 +179,44 @@ function renderCaptchaDialog({ onSkip }: { onSkip: () => void }): JSX.Element {
 function renderCrashReportDialog(): JSX.Element {
   return <SmartCrashReportDialog />;
 }
+// Tellomi（#1269）：「已过期」「即将过期」两条提示的按钮能用更新器时走更新器，规则见 getBuildUpgradeAction；
+// startUpdate 与 SmartUpdateDialog 用的是同一个 action。
+function useBuildUpgradeProps(): Required<
+  Pick<DialogExpiringBuildPropsType, 'upgradeAction' | 'startUpdate'>
+> {
+  const updateDialogType = useSelector(getUpdateDialogType);
+  const didSnoozeUpdate = useSelector(getHasPendingUpdate);
+  const { startUpdate } = useUpdatesActions();
+  return {
+    upgradeAction: getBuildUpgradeAction({
+      isMAS: OS.isMAS(),
+      updateDialogType,
+      didSnoozeUpdate,
+    }),
+    startUpdate,
+  };
+}
+const SmartDialogExpiredBuild = memo(function SmartDialogExpiredBuild(
+  props: DialogExpiredBuildPropsType
+) {
+  const upgradeProps = useBuildUpgradeProps();
+  return <DialogExpiredBuild {...props} {...upgradeProps} />;
+});
+const SmartDialogExpiringBuild = memo(function SmartDialogExpiringBuild(
+  props: DialogExpiringBuildPropsType
+) {
+  const upgradeProps = useBuildUpgradeProps();
+  return <DialogExpiringBuild {...props} {...upgradeProps} />;
+});
 function renderExpiredBuildDialog(
   props: DialogExpiredBuildPropsType
 ): JSX.Element {
-  return <DialogExpiredBuild {...props} />;
+  return <SmartDialogExpiredBuild {...props} />;
 }
 function renderExpiringBuildDialog(
   props: DialogExpiringBuildPropsType
 ): JSX.Element {
-  return <DialogExpiringBuild {...props} />;
+  return <SmartDialogExpiringBuild {...props} />;
 }
 function renderLeftPaneChatFolders(): JSX.Element {
   return <SmartLeftPaneChatFolders />;

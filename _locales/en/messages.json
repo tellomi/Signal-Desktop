@@ -3080,6 +3080,10 @@
     "messageformat": "This version of Tellomi Desktop expires in {days, plural, one {# day} other {# days}}. After that you can still read your chats, but you’ll need to upgrade to send and receive messages.",
     "description": "Tellomi (tellomi/tellomi#1269): left-pane warning during the last 14 days before this build expires; after expiry Desktop goes read-only (icu:expiredWarning). {days} is the number of days left, rounded up."
   },
+  "icu:BuildExpiration__update--tellomi": {
+    "messageformat": "Click to update Tellomi",
+    "description": "Tellomi (tellomi/tellomi#1269): action text on the left-pane \"expires soon\" (icu:DialogExpiringBuild__body--tellomi) and \"expired\" (icu:expiredWarning) dialogs when the app's own updater has a version ready to download, install or retry. Clicking it does what the update dialog's button does, which may restart the app."
+  },
   "icu:upgrade": {
     "messageformat": "Click to go to tellomi.app/download",
     "description": "Label text for button to upgrade the app to the latest version"
