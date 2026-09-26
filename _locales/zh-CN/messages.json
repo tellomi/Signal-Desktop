@@ -2315,6 +2315,12 @@
   "icu:expiredWarning": {
     "messageformat": "此版本的 Tellomi Desktop 已过期，请升级到最新版本以继续发送消息。"
   },
+  "icu:DialogExpiringBuild__body--tellomi": {
+    "messageformat": "{days, plural, other {此版本的 Tellomi Desktop 将在 # 天后过期。过期后仍能查看聊天记录，但要升级后才能收发消息。}}"
+  },
+  "icu:BuildExpiration__update--tellomi": {
+    "messageformat": "点击更新 Tellomi"
+  },
   "icu:upgrade": {
     "messageformat": "点击前往 tellomi.app/download"
   },
