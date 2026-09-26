@@ -376,7 +376,7 @@ export const groupInvitesRoute = _route('groupInvites', {
  *   pubKey: "abc",
  *   capabilities: "backuo"
  * })
- * // URL { "sgnl://linkdevice?uuid=123&pub_key=abc&capabilities=backup" }
+ * // URL { "tellomi://linkdevice?uuid=123&pub_key=abc&capabilities=backup" }
  * ```
  */
 export const linkDeviceRoute = _route('linkDevice', {
@@ -403,9 +403,9 @@ export const linkDeviceRoute = _route('linkDevice', {
       pub_key: args.pubKey,
       capabilities: args.capabilities.join(','),
     });
-    // Tellomi: keep emitting the legacy scheme in the pairing QR until Android/iOS accept tellomi://linkdevice
-    // (they scan this; the Desktop side already accepts both). Flip to tellomi:// in the same PR that updates them.
-    return new URL(`sgnl://linkdevice?${params.toString()}`);
+    // Tellomi: the pairing QR uses tellomi:// (2026-09-24). Every phone build in use accepts it: the Android and
+    // iOS tellomi branches and the released Android 0.1.1 all take both schemes. sgnl:// still parses above.
+    return new URL(`tellomi://linkdevice?${params.toString()}`);
   },
 });
 

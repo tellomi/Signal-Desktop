@@ -6,6 +6,7 @@ import { callLinkRootKeyToUrl } from '../../util/callLinkRootKeyToUrl.std.ts';
 import {
   contactByUsernameRoute,
   isSignalRoute,
+  linkDeviceRoute,
   parseSignalRoute,
   toSignalRouteAppUrl,
   toSignalRouteUrl,
@@ -177,6 +178,15 @@ describe('signalRoutes', () => {
     check(
       `tellomi://linkdevice/?uuid=${foo}&pub_key=${foo}&capabilities=backup`,
       result
+    );
+  });
+
+  it('linkDevice pairing QR is emitted as tellomi://', () => {
+    assert.strictEqual(
+      linkDeviceRoute
+        .toAppUrl({ uuid: 'abc', pubKey: 'def', capabilities: ['backup'] })
+        .toString(),
+      'tellomi://linkdevice?uuid=abc&pub_key=def&capabilities=backup'
     );
   });
 
