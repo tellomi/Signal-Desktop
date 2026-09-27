@@ -45,9 +45,17 @@ export class OptionalResourceService {
 
   readonly #fileQueues = new Map<string, PQueue>();
 
-  private constructor(resourcesDir: string, resourcesUrl: string) {
+  // Tellomi（tellomi/tellomi#1338）：跨境告知确认之前，缺的资源先等着不下载（本地已有的照常读）
+  readonly #waitForNetwork: () => Promise<void>;
+
+  private constructor(
+    resourcesDir: string,
+    resourcesUrl: string,
+    waitForNetwork: () => Promise<void>
+  ) {
     this.#resourcesDir = resourcesDir;
     this.#resourcesUrl = resourcesUrl;
+    this.#waitForNetwork = waitForNetwork;
 
     ipcMain.handle('OptionalResourceService:getData', (_event, name) =>
       this.getData(name)
@@ -58,9 +66,14 @@ export class OptionalResourceService {
 
   public static create(
     resourcesDir: string,
-    resourcesUrl: string
+    resourcesUrl: string,
+    waitForNetwork: () => Promise<void>
   ): OptionalResourceService {
-    return new OptionalResourceService(resourcesDir, resourcesUrl);
+    return new OptionalResourceService(
+      resourcesDir,
+      resourcesUrl,
+      waitForNetwork
+    );
   }
 
   public async getData(name: string): Promise<Buffer<ArrayBuffer> | undefined> {
@@ -183,6 +196,7 @@ export class OptionalResourceService {
     decl: OptionalResourceType,
     destPath: string
   ): Promise<Buffer<ArrayBuffer>> {
+    await this.#waitForNetwork();
     const opts = await getGotOptions();
     // @ts-expect-error https://github.com/sindresorhus/got/issues/2418#issuecomment-4071277145
     const result: Buffer<ArrayBuffer> = await got(

@@ -137,6 +137,10 @@ import { getAppRootDir } from '../ts/util/appRootDir.main.ts';
 import { trackHeapSize } from '../ts/util/oomNotifier.node.ts';
 import { sendDummyKeystroke } from './WindowsNotifications.main.ts';
 import { maybeMigrateSafeStorageBackend } from '../ts/util/linuxPasswordStoreMigration.main.ts';
+import {
+  TELLOMI_NETWORK_ALLOWED_CHANNEL,
+  createTellomiNetworkLatch,
+} from '../ts/util/tellomiCrossBorderNotice.std.ts';
 
 const { chmod, realpath, writeFile } = fsExtra;
 const { get, pick, isNumber, isBoolean, some, debounce, noop } = lodash;
@@ -1146,6 +1150,20 @@ ipc.on('prompt-os-auth', async (event, { reason, localeString }) => {
   event.reply(`prompt-os-auth:${reason}`, result);
 });
 
+// Tellomi（tellomi/tellomi#1338）：跨境告知点「知道了」之前，主进程也不主动联网。主窗口在本机已确认过（启动时读到
+// 版本）或刚点了「知道了」之后发 TELLOMI_NETWORK_ALLOWED_CHANNEL；在那之前自动更新（包括下面 10 分钟的兜底）、
+// 外部打开的 tellomi:// / tell.cc 链接、可选资源（大号 emoji 字体等）的下载都在这里等着，不失败也不重试。
+const tellomiNetworkLatch = createTellomiNetworkLatch();
+if (isTestEnvironment(getEnvironment()) || isMockEnvironment()) {
+  tellomiNetworkLatch.open();
+}
+ipc.on(TELLOMI_NETWORK_ALLOWED_CHANNEL, () => {
+  if (!tellomiNetworkLatch.isOpen()) {
+    log.info('tellomi: cross-border notice acknowledged, network allowed');
+  }
+  tellomiNetworkLatch.open();
+});
+
 let isReadyForUpdates = false;
 async function readyForUpdates() {
   if (isReadyForUpdates) {
@@ -1153,6 +1171,9 @@ async function readyForUpdates() {
   }
 
   isReadyForUpdates = true;
+
+  // Tellomi（tellomi/tellomi#1338）：见上面 tellomiNetworkLatch
+  await tellomiNetworkLatch.wait();
 
   // First, handle requested signal URLs
   const incomingHref = maybeGetIncomingSignalRoute(process.argv);
@@ -2136,7 +2157,9 @@ app.on('ready', async () => {
 
   const resourceService = OptionalResourceService.create(
     join(userDataPath, 'optionalResources'),
-    config.get<string>('resourcesUrl')
+    config.get<string>('resourcesUrl'),
+    // Tellomi（tellomi/tellomi#1338）：跨境告知确认之前不下载（中文界面的文字会让 Chromium 去取「Signal Emoji Large」）
+    () => tellomiNetworkLatch.wait()
   );
   await EmojiService.create(resourceService);
   AssetService.create(resourceService);

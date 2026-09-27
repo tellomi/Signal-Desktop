@@ -1589,6 +1589,75 @@
   "icu:Install__learn-more": {
     "messageformat": "了解更多"
   },
+  "icu:TellomiCrossBorder__linked_title": {
+    "messageformat": "关联设备前请了解：个人信息跨境传输"
+  },
+  "icu:TellomiCrossBorder__linked_intro": {
+    "messageformat": "这台设备将关联到您的 Tellomi 账号。个人信息跨境传输的单独同意在您的手机上取得，这台设备不再另行询问；下面是同一份告知，供您了解。关联之后，这台设备上的信息也按下面的方式处理。"
+  },
+  "icu:TellomiCrossBorder__item_where_title": {
+    "messageformat": "是否出境"
+  },
+  "icu:TellomiCrossBorder__item_where_body": {
+    "messageformat": "是。Tellomi 的服务端部署在阿里云位于中国香港的数据中心；附件、头像和服务端数据库备份存放在 Cloudflare R2（存储区域：北美西部）。您的聊天记录保存在您自己的设备上，不保存在服务器上。"
+  },
+  "icu:TellomiCrossBorder__item_recipients_title": {
+    "messageformat": "境外接收方"
+  },
+  "icu:TellomiCrossBorder__item_recipients_body": {
+    "messageformat": "· 重庆半格智能科技有限公司部署在香港的 Tellomi 服务端（中国香港）\n· 阿里云计算有限公司：为上述服务端提供云服务器（中国香港数据中心）\n· Cloudflare, Inc.（美国）：存放附件、头像、数据库备份和调试日志；通话中继；注册时的人机验证；域名解析\n· Apple Inc.（美国）：iPhone 的推送通知（APNs）\n· Google LLC（美国）：装有 Google 服务的 Android 手机的推送通知（FCM）\n· GIPHY, Inc.（美国）：仅在您使用 GIF 搜索时，经我们在香港的代理收到搜索词，看不到您的 IP 地址"
+  },
+  "icu:TellomiCrossBorder__item_contact_title": {
+    "messageformat": "联系方式"
+  },
+  "icu:TellomiCrossBorder__item_contact_body": {
+    "messageformat": "个人信息处理者：重庆半格智能科技有限公司。个人信息保护和跨境传输相关问题，请发邮件至 privacy@tellomi.app。"
+  },
+  "icu:TellomiCrossBorder__item_purpose_title": {
+    "messageformat": "处理目的"
+  },
+  "icu:TellomiCrossBorder__item_purpose_body": {
+    "messageformat": "注册和登录（含人机验证）；投递和暂存消息；存放附件、头像和数据库备份；接通语音和视频通话（含通话中继）；推送通知；域名解析；GIF 搜索；保存您主动提交的调试日志。"
+  },
+  "icu:TellomiCrossBorder__item_method_title": {
+    "messageformat": "处理方式和保存期限"
+  },
+  "icu:TellomiCrossBorder__item_method_body": {
+    "messageformat": "消息正文、个人资料、群组信息和附件内容都经过端到端加密，境外的服务器和存储服务里只有密文，Tellomi 和上述接收方都无法读取。以明文处理的只有注册所需的手机号码、账号和设备标识、推送令牌、连接时的 IP 地址等少数几项。\n保存期限：账号数据在账号存续期间保存，注销时删除；等待投递的消息送达后立即删除；附件上传后 50 天删除；服务器的网络请求日志保存 186 天。详见《隐私政策》第二十二节。"
+  },
+  "icu:TellomiCrossBorder__item_kinds_title": {
+    "messageformat": "涉及的个人信息"
+  },
+  "icu:TellomiCrossBorder__item_kinds_body": {
+    "messageformat": "手机号码；账号和设备标识；公钥；推送令牌（Android 版另有 Firebase 安装标识）；连接时的 IP 地址；用户名的哈希值；人机验证时的浏览器和设备信息；加密的消息、附件、头像、个人资料、群组信息和数据库备份（密文）；您主动提交的调试日志；使用 GIF 搜索时的搜索词。"
+  },
+  "icu:TellomiCrossBorder__item_rights_title": {
+    "messageformat": "您的权利"
+  },
+  "icu:TellomiCrossBorder__item_rights_body": {
+    "messageformat": "您可以按《隐私政策》第二十六、二十七节的方式查阅、复制、更正、删除您的个人信息，注销账号，或者撤回本同意。境外接收方处理的个人信息，也可以发邮件至 privacy@tellomi.app，由我们负责处理并协调相应接收方。"
+  },
+  "icu:TellomiCrossBorder__item_procedure_title": {
+    "messageformat": "出境的法定程序"
+  },
+  "icu:TellomiCrossBorder__item_procedure_body": {
+    "messageformat": "根据《促进和规范数据跨境流动规定》第五条第（四）项，关键信息基础设施运营者以外的个人信息处理者，自当年 1 月 1 日起累计向境外提供不满 10 万人个人信息（不含敏感个人信息）的，免予申报数据出境安全评估、订立个人信息出境标准合同和通过个人信息保护认证。Tellomi 目前属于这一情形；人数接近上述标准时，我们将依法办理。免予这些程序，不影响我们告知您、取得您的单独同意和开展个人信息保护影响评估的义务。"
+  },
+  "icu:TellomiCrossBorder__item_consent_title": {
+    "messageformat": "单独同意和撤回"
+  },
+  "icu:TellomiCrossBorder__linked_item_consent_body": {
+    "messageformat": "上述跨境传输的单独同意在您的手机上取得，这台设备不另行收集。您可以随时发邮件至 privacy@tellomi.app 撤回；撤回后，在中国大陆服务上线之前您将无法继续使用 Tellomi。"
+  },
+  "icu:TellomiCrossBorder__privacy_link": {
+    "messageformat": "查看《隐私政策》第二十、二十一节"
+  },
+  "icu:TellomiCrossBorder__third_party_link": {
+    "messageformat": "查看《第三方信息共享及 SDK 清单》"
+  },
+  "icu:TellomiCrossBorder__linked_ack": {
+    "messageformat": "知道了"
+  },
   "icu:Install__scan-this-code": {
     "messageformat": "扫描您手机上的 Tellomi 应用中的此二维码"
   },

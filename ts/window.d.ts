@@ -71,6 +71,8 @@ export type IPCType = {
   startTrackingQueryStats: () => void;
   stopTrackingQueryStats: (options?: QueryStatsOptions) => void;
   titleBarDoubleClick: () => void;
+  // Tellomi（tellomi/tellomi#1338）：跨境告知已确认，主进程可以开始自动更新、下载可选资源
+  tellomiNetworkAllowed: () => void;
   updateTrayIcon: (count: number) => void;
 };
 
