@@ -10,15 +10,18 @@ import type {
 import { tellomiLogoutKeepHistory } from '../../util/tellomiLogoutKeepHistory.std.ts';
 import { explodePromise } from '../../util/explodePromise.std.ts';
 
-// Tellomi（tellomi/tellomi#1414，ADR-0072 §4.4）：Desktop 的「退出登录（保留聊天记录）」=
-// 已链接设备调 DELETE /v1/devices/{本机 id} 删掉自己，成功后马上走现有的 unlinkAndDisconnect
-// （不等之后的 403），进入「未连接……重新关联」状态、会话保留；没网或失败就提示「退出登录需要联网」、
-// 什么都不改。
+// Tellomi（tellomi/tellomi#1414，ADR-0072 §4.4，需求 §3.2 安全要求）：Desktop 的「退出登录（保留聊天记录）」=
+// 已链接设备调 DELETE /v1/devices/{本机 id} 删掉自己；成功后先记下「已退出」标记（tellomiLoggedOut），
+// 清掉已经弹出的通知，再走现有的 unlinkAndDisconnect（不等之后的 403；会话留在本机），最后直接进关联二维码页。
+// 没网或失败就提示「退出登录需要联网」、什么都不改（不记标记）。
 describe('tellomiLogoutKeepHistory (tellomi/tellomi#1414, ADR-0072 §4.4)', () => {
   type Call =
     | { name: 'removeOurDevice'; deviceId: number }
     | { name: 'removeOurDevice:settled' }
+    | { name: 'markLoggedOut' }
+    | { name: 'clearNotifications' }
     | { name: 'unlinkAndDisconnect' }
+    | { name: 'openRelink' }
     | { name: 'showNeedsNetwork' };
 
   function setup(
@@ -26,6 +29,7 @@ describe('tellomiLogoutKeepHistory (tellomi/tellomi#1414, ADR-0072 §4.4)', () =
       deviceId: number | undefined;
       isConnected: boolean;
       removeOurDevice: (deviceId: number) => Promise<void>;
+      markLoggedOut: () => Promise<void>;
     }> = {}
   ): { deps: TellomiLogoutKeepHistoryDeps; calls: Array<Call> } {
     const calls: Array<Call> = [];
@@ -41,8 +45,18 @@ describe('tellomiLogoutKeepHistory (tellomi/tellomi#1414, ADR-0072 §4.4)', () =
           calls.push({ name: 'removeOurDevice:settled' });
         }
       },
+      markLoggedOut: async () => {
+        calls.push({ name: 'markLoggedOut' });
+        await overrides.markLoggedOut?.();
+      },
+      clearNotifications: () => {
+        calls.push({ name: 'clearNotifications' });
+      },
       unlinkAndDisconnect: async () => {
         calls.push({ name: 'unlinkAndDisconnect' });
+      },
+      openRelink: () => {
+        calls.push({ name: 'openRelink' });
       },
       showNeedsNetwork: () => {
         calls.push({ name: 'showNeedsNetwork' });
@@ -94,7 +108,7 @@ describe('tellomiLogoutKeepHistory (tellomi/tellomi#1414, ADR-0072 §4.4)', () =
   });
 
   describe('success', () => {
-    it('enters the existing unlinked state right after the server removed the device', async () => {
+    it('marks logged out, clears notifications, unlinks, then opens the link screen — in that order', async () => {
       const { deps, calls } = setup();
       const result = await tellomiLogoutKeepHistory(deps);
 
@@ -102,8 +116,38 @@ describe('tellomiLogoutKeepHistory (tellomi/tellomi#1414, ADR-0072 §4.4)', () =
       assert.deepStrictEqual(calls, [
         { name: 'removeOurDevice', deviceId: 3 },
         { name: 'removeOurDevice:settled' },
+        { name: 'markLoggedOut' },
+        { name: 'clearNotifications' },
         { name: 'unlinkAndDisconnect' },
+        { name: 'openRelink' },
       ]);
+    });
+
+    it('persists the flag before the unlink starts (a server-triggered unlink can then never show the chats)', async () => {
+      const { promise, resolve } = explodePromise<void>();
+      const { deps, calls } = setup({ markLoggedOut: () => promise });
+
+      const pending = tellomiLogoutKeepHistory(deps);
+      await new Promise(done => {
+        setTimeout(done, 0);
+      });
+      assert.deepInclude(calls, { name: 'markLoggedOut' });
+      assert.notDeepInclude(calls, { name: 'unlinkAndDisconnect' });
+
+      resolve();
+      assert.strictEqual(await pending, 'logged-out');
+    });
+
+    it('if the flag cannot be written, still unlinks and opens the link screen (the server already removed us)', async () => {
+      const { deps, calls } = setup({
+        markLoggedOut: () => Promise.reject(new Error('disk full')),
+      });
+      const result = await tellomiLogoutKeepHistory(deps);
+
+      assert.strictEqual(result, 'logged-out');
+      assert.deepInclude(calls, { name: 'unlinkAndDisconnect' });
+      assert.deepInclude(calls, { name: 'openRelink' });
+      assert.notDeepInclude(calls, { name: 'showNeedsNetwork' });
     });
 
     it('does not start unlinking before the server has answered', async () => {
@@ -157,6 +201,7 @@ describe('tellomiLogoutKeepHistory (tellomi/tellomi#1414, ADR-0072 §4.4)', () =
 
       assert.strictEqual(result, 'failed');
       assert.deepStrictEqual(calls, [{ name: 'showNeedsNetwork' }]);
+      assert.notDeepInclude(calls, { name: 'markLoggedOut' });
     });
 
     it('network error (HTTPError code 0): shows the error, stays linked', async () => {
@@ -181,7 +226,9 @@ describe('tellomiLogoutKeepHistory (tellomi/tellomi#1414, ADR-0072 §4.4)', () =
         const result = await tellomiLogoutKeepHistory(deps);
 
         assert.strictEqual(result, 'failed');
+        assert.notDeepInclude(calls, { name: 'markLoggedOut' });
         assert.notDeepInclude(calls, { name: 'unlinkAndDisconnect' });
+        assert.notDeepInclude(calls, { name: 'openRelink' });
         assert.deepInclude(calls, { name: 'showNeedsNetwork' });
       });
     }
@@ -193,6 +240,7 @@ describe('tellomiLogoutKeepHistory (tellomi/tellomi#1414, ADR-0072 §4.4)', () =
       const result = await tellomiLogoutKeepHistory(deps);
 
       assert.strictEqual(result, 'failed');
+      assert.notDeepInclude(calls, { name: 'markLoggedOut' });
       assert.notDeepInclude(calls, { name: 'unlinkAndDisconnect' });
       assert.strictEqual(
         calls.filter(call => call.name === 'showNeedsNetwork').length,

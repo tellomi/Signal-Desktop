@@ -6,6 +6,12 @@ import { assert } from 'chai';
 
 import type { WritableDB } from '../../sql/Interface.std.ts';
 import { DataReader, DataWriter, setupTests } from '../../sql/Server.node.ts';
+import { STORAGE_KEYS_TO_PRESERVE_AFTER_UNLINK } from '../../types/StorageKeys.std.ts';
+import type { TellomiLoggedOutStorage } from '../../util/tellomiLoggedOut.std.ts';
+import {
+  clearTellomiLoggedOut,
+  markTellomiLoggedOut,
+} from '../../util/tellomiLoggedOut.std.ts';
 import { createDB, getTableData, insertData } from './helpers.node.ts';
 
 // Tellomi（tellomi/tellomi#1414，ADR-0072 §4.4）：Desktop「退出登录（保留聊天记录）」删掉服务端的本机设备后，
@@ -115,5 +121,82 @@ describe('SQL/removeAllConfiguration on a linked device (tellomi/tellomi#1414)',
     const ids = itemIds();
     assert.notInclude(ids, 'password');
     assert.notInclude(ids, 'chromiumRegistrationDone');
+  });
+
+  // 需求 §3.2 安全要求：「退出登录」记下的 tellomiLoggedOut 要一直留到重新关联完成。
+  describe('the "logged out" flag (tellomiLoggedOut)', () => {
+    // 和 itemStorage 一样的 get / put / remove，落在这个测试库的 items 表上
+    function dbStorage(): TellomiLoggedOutStorage {
+      return {
+        get: key => DataReader.getAllItems(db)[key],
+        put: async (key, value) => {
+          DataWriter.createOrUpdateItem(db, { id: key, value });
+        },
+        remove: async key => {
+          DataWriter.removeItemById(db, key);
+        },
+      };
+    }
+
+    it('is on the list of items kept after an unlink', () => {
+      assert.include(
+        STORAGE_KEYS_TO_PRESERVE_AFTER_UNLINK as ReadonlyArray<string>,
+        'tellomiLoggedOut'
+      );
+    });
+
+    it('survives the unlink cleanup (ours, or the one the server disconnect triggers)', async () => {
+      await markTellomiLoggedOut(dbStorage());
+      DataWriter.removeAllConfiguration(db, false);
+
+      assert.isTrue(DataReader.getAllItems(db).tellomiLoggedOut);
+    });
+
+    it('same account relinked: still set while linking, cleared when done, chats all back', async () => {
+      const storage = dbStorage();
+      await markTellomiLoggedOut(storage);
+      DataWriter.removeAllConfiguration(db, false);
+
+      // AccountManager.createAccount, same account → removeAllConfiguration again (config only)
+      DataWriter.removeAllConfiguration(db, false);
+      assert.isTrue(
+        DataReader.getAllItems(db).tellomiLoggedOut,
+        'a link that fails half-way must not reveal the chats'
+      );
+
+      // AccountManager #registrationDone
+      await clearTellomiLoggedOut(storage);
+
+      assert.notInclude(itemIds(), 'tellomiLoggedOut');
+      assert.sameMembers(
+        getTableData(db, 'conversations').map(row => row.id),
+        ['conversation-1', 'group-1']
+      );
+      assert.sameMembers(
+        getTableData(db, 'messages').map(row => row.id),
+        ['message-1', 'message-2']
+      );
+    });
+
+    it('another account linked: everything wiped as upstream, flag gone', async () => {
+      const storage = dbStorage();
+      await markTellomiLoggedOut(storage);
+      DataWriter.removeAllConfiguration(db, false);
+
+      // AccountManager.createAccount, different account → removeAllData
+      DataWriter.removeAll(db);
+      // AccountManager #registrationDone
+      await clearTellomiLoggedOut(storage);
+
+      assert.notInclude(itemIds(), 'tellomiLoggedOut');
+      assert.deepStrictEqual(getTableData(db, 'conversations'), []);
+      assert.deepStrictEqual(getTableData(db, 'messages'), []);
+    });
+
+    it('an unlink by the phone (upstream path) never sets it', () => {
+      DataWriter.removeAllConfiguration(db, false);
+
+      assert.notInclude(itemIds(), 'tellomiLoggedOut');
+    });
   });
 });

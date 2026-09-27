@@ -153,6 +153,9 @@ export type StorageAccessType = {
   upstreamBase: string; // Tellomi: upstream Signal-Desktop base the last run was built from (see util/tellomiVersion)
   // Tellomi（tellomi/tellomi#1338）：本机点过「知道了」的跨境告知版本（'cb-1'），见 services/tellomiCrossBorderNotice
   tellomiCrossBorderNoticeVersion: string;
+  // Tellomi（tellomi/tellomi#1414）：「退出登录（保留聊天记录）」后到重新关联完成前为 true，期间看不到任何会话，
+  // 见 util/tellomiLoggedOut
+  tellomiLoggedOut: boolean;
   linkPreviews: boolean;
   universalExpireTimer: number;
   retryPlaceholders: ReadonlyArray<RetryItemType>;
@@ -418,6 +421,8 @@ export const STORAGE_KEYS_TO_PRESERVE_AFTER_UNLINK = [
   'chromiumRegistrationDoneEver',
   'version',
   'upstreamBase',
+  // Tellomi（tellomi/tellomi#1414）：unlink 清配置时必须留着，重新关联完成才清
+  'tellomiLoggedOut',
   'number_id',
   'uuid_id',
   'pni',
