@@ -10926,9 +10926,17 @@
     "messageformat": "Usernames are always paired with a set of numbers.",
     "description": "Shown on the edit username screen"
   },
-  "icu:EditUsernameModalBody__username-helper--tellomi": {
-    "messageformat": "People can find you by your username and message you without knowing your phone number. Use {min, number}–{max, number} letters, numbers or underscores, starting with a letter.",
-    "description": "Tellomi (ADR-0066): helper under the username field. Usernames have no numeric suffix any more, so this replaces the upstream \"paired with a set of numbers\" helper. {min} / {max} are the nickname length limits from remote config."
+  "icu:EditUsernameModalBody__username-rules--tellomi": {
+    "messageformat": "Lowercase letters, numbers and underscores only; starts with a letter; 3–20 characters.",
+    "description": "Tellomi (ADR-0066 §6.1b): permanent grey hint right under the username field, not an error. Usernames are lowercase only (libsignal nicknames only allow a-z, 0-9 and _); capitals are converted as they are typed. 3–20 is the length a new username may have (TR-ID-01)."
+  },
+  "icu:EditUsernameModalBody__username-lowercased--tellomi": {
+    "messageformat": "Converted to lowercase automatically",
+    "description": "Tellomi (ADR-0066 §6.1b): replaces the rule hint under the username field for about 2 seconds after typed or pasted capital letters were converted to lowercase. Grey, not an error."
+  },
+  "icu:EditUsernameModalBody__username-purpose--tellomi": {
+    "messageformat": "People can find you by your username and message you without knowing your phone number.",
+    "description": "Tellomi (ADR-0066): helper under the username field saying what a username is for. What it may contain is the rule hint right under the field (icu:EditUsernameModalBody__username-rules--tellomi). Replaces the upstream \"paired with a set of numbers\" helper."
   },
   "icu:EditUsernameModalBody__learn-more": {
     "messageformat": "Learn More",

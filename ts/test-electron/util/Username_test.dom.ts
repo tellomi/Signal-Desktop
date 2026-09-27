@@ -214,7 +214,8 @@ describe('Username (Tellomi fixed discriminator)', () => {
   describe('formatUsernameForDisplay', () => {
     it('drops only the fixed discriminator', () => {
       assert.strictEqual(formatUsernameForDisplay('kaixin.01'), 'kaixin');
-      assert.strictEqual(formatUsernameForDisplay('KaiXin.01'), 'KaiXin');
+      // Tellomi (ADR-0066 §6.1b): always shown in lowercase.
+      assert.strictEqual(formatUsernameForDisplay('KaiXin.01'), 'kaixin');
     });
 
     // ADR-0066 §九, the reverse case: someone else's `kaixin.57` must never be shown as `kaixin`.
@@ -282,15 +283,17 @@ describe('Username (Tellomi fixed discriminator)', () => {
       }
     });
 
+    // Tellomi (ADR-0066 §6.1b): the nickname sent to libsignal is lowercase, so the case-only shortcut now only turns
+    // an old mixed-case `.01` username into lowercase.
     it('takes the case-only shortcut only when the current discriminator is 01', () => {
-      assert.deepStrictEqual(planUsernameReservation('KaiXin', 'kaixin.01'), {
+      assert.deepStrictEqual(planUsernameReservation('kaixin', 'KaiXin.01'), {
         kind: 'caseChange',
-        username: 'KaiXin.01',
+        username: 'kaixin.01',
       });
       // An old `.37` typing its nickname again moves to `.01`: a real reservation, not a case change.
       assert.deepStrictEqual(planUsernameReservation('KAIXIN', 'kaixin.37'), {
         kind: 'reserve',
-        candidates: [{ nickname: 'KAIXIN', discriminator: '01' }],
+        candidates: [{ nickname: 'kaixin', discriminator: '01' }],
       });
     });
 
@@ -303,8 +306,8 @@ describe('Username (Tellomi fixed discriminator)', () => {
       // Only the case-only shortcut keeps a name as it is: a 21–32 character `.01` name can still change its case.
       const long = 'abcdefghijklmnopqrstuvwxy'; // 25
       assert.deepStrictEqual(
-        planUsernameReservation(long.toUpperCase(), `${long}.01`),
-        { kind: 'caseChange', username: `${long.toUpperCase()}.01` }
+        planUsernameReservation(long, `${long.toUpperCase()}.01`),
+        { kind: 'caseChange', username: `${long}.01` }
       );
       // Anything else is a new nickname and is checked.
       assert.deepStrictEqual(planUsernameReservation('_other', '_kaixin.01'), {
@@ -322,10 +325,10 @@ describe('Username (Tellomi fixed discriminator)', () => {
       }
     });
 
-    it('lets an existing `_` username change its case', () => {
-      assert.deepStrictEqual(planUsernameReservation('_KaiXin', '_kaixin.01'), {
+    it('lets an existing `_` username change its case (to lowercase)', () => {
+      assert.deepStrictEqual(planUsernameReservation('_kaixin', '_KaiXin.01'), {
         kind: 'caseChange',
-        username: '_KaiXin.01',
+        username: '_kaixin.01',
       });
     });
 

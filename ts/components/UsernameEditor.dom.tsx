@@ -37,6 +37,11 @@ import { Spinner } from './Spinner.dom.tsx';
 import { useConfirmDiscard } from '../hooks/useConfirmDiscard.dom.tsx';
 import { AxoButton } from '../axo/AxoButton.dom.tsx';
 import { AxoConfirmDialog } from '../axo/AxoConfirmDialog.dom.tsx';
+import {
+  LOWERCASED_HINT_MS,
+  createTemporaryFlag,
+  lowercaseNicknameInput,
+} from '../util/tellomiUsernameInput.std.ts';
 
 const { noop } = lodash;
 
@@ -106,7 +111,8 @@ export function UsernameEditor({
       return undefined;
     }
 
-    return getNickname(currentUsername);
+    // Tellomi（ADR-0066 §6.1b）：用户名一律显示小写，老数据里的大写只在显示时转
+    return getNickname(currentUsername)?.toLowerCase();
   }, [currentUsername]);
 
   const [updateState, setUpdateState] = useState(UpdateState.Original);
@@ -220,10 +226,65 @@ export function UsernameEditor({
     reserveUsername({ nickname });
   }, [updateState, nickname, reserveUsername, isConfirming]);
 
-  const onChange = useCallback((newNickname: string) => {
-    setUpdateState(UpdateState.Nickname);
-    setNickname(newNickname);
-  }, []);
+  // Tellomi（ADR-0066 §6.1b）：打了大写（包括粘贴）当场转成小写，光标不跳，规则提示换成「已自动转成小写」约 2 秒。
+  // 在受控组件重渲染之前就把 DOM 里的值和选区改好：React 看到 DOM 值已经等于新的 value，就不会再写一次（写一次光标会跳到末尾）。
+  // 输入法组字过程中不动（改了会打断组字），组字结束后再转。
+  const inputRef = useRef<HTMLInputElement | HTMLTextAreaElement | null>(null);
+  const isComposingRef = useRef(false);
+  const [isShowingLowercased, setIsShowingLowercased] = useState(false);
+  const lowercasedHint = useMemo(
+    () => createTemporaryFlag(LOWERCASED_HINT_MS, setIsShowingLowercased),
+    []
+  );
+  useEffect(() => () => lowercasedHint.dispose(), [lowercasedHint]);
+
+  const onChange = useCallback(
+    (newNickname: string) => {
+      let value = newNickname;
+      const inputEl = inputRef.current;
+      if (inputEl && !isComposingRef.current) {
+        const lowered = lowercaseNicknameInput({
+          value,
+          selectionStart: inputEl.selectionStart ?? value.length,
+          selectionEnd: inputEl.selectionEnd ?? value.length,
+        });
+        if (lowered.changed) {
+          const direction = inputEl.selectionDirection ?? undefined;
+          inputEl.value = lowered.value;
+          inputEl.setSelectionRange(
+            lowered.selectionStart,
+            lowered.selectionEnd,
+            direction
+          );
+          value = lowered.value;
+          lowercasedHint.trigger();
+        }
+      }
+      setUpdateState(UpdateState.Nickname);
+      setNickname(value);
+    },
+    [lowercasedHint]
+  );
+
+  useEffect(() => {
+    const inputEl = inputRef.current;
+    if (!inputEl) {
+      return noop;
+    }
+    const onCompositionStart = () => {
+      isComposingRef.current = true;
+    };
+    const onCompositionEnd = () => {
+      isComposingRef.current = false;
+      onChange(inputEl.value);
+    };
+    inputEl.addEventListener('compositionstart', onCompositionStart);
+    inputEl.addEventListener('compositionend', onCompositionEnd);
+    return () => {
+      inputEl.removeEventListener('compositionstart', onCompositionStart);
+      inputEl.removeEventListener('compositionend', onCompositionEnd);
+    };
+  }, [onChange]);
 
   const onSave = useCallback(() => {
     if (usernameCorrupted) {
@@ -301,6 +362,7 @@ export function UsernameEditor({
         <div className="UsernameEditor__header__preview">{title}</div>
       </div>
       <Input
+        ref={inputRef}
         moduleClassName="UsernameEditor__input"
         i18n={i18n}
         disableSpellcheck
@@ -312,6 +374,10 @@ export function UsernameEditor({
       >
         {isReserving && <Spinner size="16px" svgSize="small" />}
       </Input>
+      <UsernameRulesHint
+        i18n={i18n}
+        isShowingLowercased={isShowingLowercased}
+      />
       {errorString && (
         <div className="UsernameEditor__error">{errorString}</div>
       )}
@@ -323,11 +389,8 @@ export function UsernameEditor({
       >
         {/* Tellomi (ADR-0066): upstream says "Usernames are always paired with a set of numbers" with a "Learn more"
             about the digits. There are no digits any more; like Telegram's UsernameHelp under the field, say what a
-            username is for and what it may contain. */}
-        {i18n('icu:EditUsernameModalBody__username-helper--tellomi', {
-          min: minNickname,
-          max: maxNickname,
-        })}
+            username is for. What it may contain is the rule hint right under the field (ADR-0066 §6.1b). */}
+        {i18n('icu:EditUsernameModalBody__username-purpose--tellomi')}
       </div>
       <div className="UsernameEditor__button-footer">
         <AxoButton.Root
@@ -432,5 +495,23 @@ export function UsernameEditor({
         </AxoConfirmDialog.Action>
       </AxoConfirmDialog.Root>
     </>
+  );
+}
+
+// Tellomi（ADR-0066 §6.1b）：输入框下面常驻的一行规则提示（灰色，不是报错）；打了大写被转成小写时短暂换成
+// 「已自动转成小写」，同样是灰色。其他不合规字符的红字错误在它下面，照旧。
+export function UsernameRulesHint({
+  i18n,
+  isShowingLowercased,
+}: Readonly<{
+  i18n: LocalizerType;
+  isShowingLowercased: boolean;
+}>): JSX.Element {
+  return (
+    <div className="UsernameEditor__rules" aria-live="polite">
+      {isShowingLowercased
+        ? i18n('icu:EditUsernameModalBody__username-lowercased--tellomi')
+        : i18n('icu:EditUsernameModalBody__username-rules--tellomi')}
+    </div>
   );
 }
