@@ -578,6 +578,10 @@ export default {
 
     addCustomColor: action('addCustomColor'),
     doDeleteAllData: action('doDeleteAllData'),
+    canLogoutKeepHistory: true,
+    doLogoutKeepHistory: async () => {
+      action('doLogoutKeepHistory')();
+    },
     editCustomColor: action('editCustomColor'),
     getMessageCountBySchemaVersion: async () => [
       { schemaVersion: 10, count: 1024 },

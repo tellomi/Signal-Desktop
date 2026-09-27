@@ -2315,6 +2315,21 @@
   "icu:deleteAllDataBody": {
     "messageformat": "係咪要刪除呢個 Tellomi 桌面版版本嘅所有資料同訊息？你嘅 Tellomi 帳戶同埋手機或者其他已連結裝置上面嘅資料係唔會刪除嘅。"
   },
+  "icu:Preferences__logout-keep-history--tellomi": {
+    "messageformat": "登出（保留聊天記錄）"
+  },
+  "icu:Preferences__logout-button--tellomi": {
+    "messageformat": "登出"
+  },
+  "icu:Preferences__logout-confirm-title--tellomi": {
+    "messageformat": "登出？"
+  },
+  "icu:Preferences__logout-confirm-body--tellomi": {
+    "messageformat": "呢部電腦上面嘅聊天記錄會保留。用手機重新掃碼連返同一個帳戶之後就會恢復。"
+  },
+  "icu:Toast--logout-needs-network--tellomi": {
+    "messageformat": "登出要連線，請稍後再試。"
+  },
   "icu:deleteAllDataProgress": {
     "messageformat": "中斷緊連接，同刪除緊資料…"
   },

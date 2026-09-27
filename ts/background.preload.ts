@@ -1431,8 +1431,17 @@ async function startApp(): Promise<void> {
     }
   });
 
-  window.Whisper.events.on('unlinkAndDisconnect', () => {
-    drop(unlinkAndDisconnect());
+  // Tellomi（tellomi/tellomi#1414）：「退出登录（保留聊天记录）」会带一个回调，等本机进入「未连接」状态后再关弹窗。
+  window.Whisper.events.on('unlinkAndDisconnect', (onComplete?: () => void) => {
+    drop(
+      (async () => {
+        try {
+          await unlinkAndDisconnect();
+        } finally {
+          onComplete?.();
+        }
+      })()
+    );
   });
 
   window.Whisper.events.on('httpResponse499', () => {

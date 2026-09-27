@@ -90,6 +90,8 @@ export enum ToastType {
   StoryVideoUnsupported = 'StoryVideoUnsupported',
   TapToViewExpiredIncoming = 'TapToViewExpiredIncoming',
   TapToViewExpiredOutgoing = 'TapToViewExpiredOutgoing',
+  // Tellomi（tellomi/tellomi#1414）：「退出登录」没连上服务器 / 服务器没删成功
+  TellomiLogoutNeedsNetwork = 'TellomiLogoutNeedsNetwork',
   TooManyMessagesToDeleteForEveryone = 'TooManyMessagesToDeleteForEveryone',
   TooManyMessagesToForward = 'TooManyMessagesToForward',
   TransportError = 'TransportError',
@@ -251,6 +253,7 @@ export type AnyToast =
   | { toastType: ToastType.StoryVideoUnsupported }
   | { toastType: ToastType.TapToViewExpiredIncoming }
   | { toastType: ToastType.TapToViewExpiredOutgoing }
+  | { toastType: ToastType.TellomiLogoutNeedsNetwork }
   | {
       toastType: ToastType.TooManyMessagesToDeleteForEveryone;
       parameters: { count: number };

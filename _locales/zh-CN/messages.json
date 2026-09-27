@@ -2315,6 +2315,21 @@
   "icu:deleteAllDataBody": {
     "messageformat": "要删除此版 Tellomi Desktop 中的所有数据和消息吗？您的 Tellomi 账户和您手机或其他已链接设备上的数据不会被删除。"
   },
+  "icu:Preferences__logout-keep-history--tellomi": {
+    "messageformat": "退出登录（保留聊天记录）"
+  },
+  "icu:Preferences__logout-button--tellomi": {
+    "messageformat": "退出登录"
+  },
+  "icu:Preferences__logout-confirm-title--tellomi": {
+    "messageformat": "退出登录？"
+  },
+  "icu:Preferences__logout-confirm-body--tellomi": {
+    "messageformat": "这台电脑上的聊天记录会保留。用手机重新扫码关联同一个账号后恢复。"
+  },
+  "icu:Toast--logout-needs-network--tellomi": {
+    "messageformat": "退出登录需要联网，请稍后再试。"
+  },
   "icu:deleteAllDataProgress": {
     "messageformat": "正在断开连接并删除所有数据…"
   },

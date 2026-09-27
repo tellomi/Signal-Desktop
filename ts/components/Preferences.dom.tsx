@@ -117,6 +117,7 @@ import { AxoSelectItem } from '../axo/items/AxoSelectItem.dom.tsx';
 import { AxoClickableItem } from '../axo/items/AxoClickableItem.dom.tsx';
 import { AxoTextItem } from '../axo/items/AxoTextItem.dom.tsx';
 import { formatUsernameForDisplay } from '../types/Username.std.ts';
+import { TellomiLogoutKeepHistoryItem } from './TellomiLogoutKeepHistory.dom.tsx';
 
 const { isNumber, noop, partition } = lodash;
 
@@ -289,6 +290,9 @@ type PropsFunctionType = {
     deleteExistingBackups: boolean;
   }) => Promise<void>;
   doDeleteAllData: () => unknown;
+  // Tellomi（tellomi/tellomi#1414）：「退出登录（保留聊天记录）」这一行只在本机是已关联的电脑时出现
+  canLogoutKeepHistory: boolean;
+  doLogoutKeepHistory: () => Promise<unknown>;
   editCustomColor: (colorId: string, color: CustomColorType) => unknown;
   getMessageCountBySchemaVersion: () => Promise<MessageCountBySchemaVersionType>;
   getMessageSampleForSchemaVersion: (
@@ -482,6 +486,8 @@ export function Preferences({
   deviceName = '',
   disableLocalBackups,
   doDeleteAllData,
+  canLogoutKeepHistory,
+  doLogoutKeepHistory,
   editCustomColor,
   emojiSkinToneDefault,
   getConversationsWithCustomColor,
@@ -1064,6 +1070,12 @@ export function Preferences({
         )}
 
         <List>
+          {canLogoutKeepHistory && !weArePrimaryDevice && (
+            <TellomiLogoutKeepHistoryItem
+              i18n={i18n}
+              onLogout={doLogoutKeepHistory}
+            />
+          )}
           {!weArePrimaryDevice && (
             <ItemWithAction
               label={i18n('icu:clearDataHeader')}
