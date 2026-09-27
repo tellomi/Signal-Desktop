@@ -176,6 +176,8 @@ export type ProcessedPreview = {
   image?: ProcessedAttachment;
   description?: string;
   date?: number;
+  // Tellomi (ADR-0063 §7.4): `Preview.rich`, base64 of the bytes as received.
+  rich?: string;
 };
 
 export type ProcessedSticker = {

@@ -17,6 +17,9 @@ type GenericLinkPreviewType<Image> = {
   callLinkRoomId?: string;
   image?: Readonly<Image>;
   date?: number;
+  // Tellomi (ADR-0063 §7.4): `Preview.rich` (field 1000), base64 of the bytes as received; set on
+  // an outgoing preview, it is sent unchanged.
+  rich?: string;
 };
 
 export type LinkPreviewType = GenericLinkPreviewType<AttachmentType>;

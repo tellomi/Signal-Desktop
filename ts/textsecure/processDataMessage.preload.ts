@@ -57,6 +57,7 @@ import { createLogger } from '../logging/log.std.ts';
 
 import { toNumber } from '../util/toNumber.std.ts';
 import { Emoji } from '../axo/emoji.std.ts';
+import { richFromReceivedPreview } from '../linkPreviews/richContent.std.ts';
 import { DurationSecs, SentTimestampMs } from '@signalapp/types';
 
 const { isNumber } = lodash;
@@ -298,12 +299,16 @@ export function processPreview(
   }
 
   return preview.slice(0, 1).map(item => {
+    // Tellomi (ADR-0063 §7.4): field 1000 kept as received, unknown fields included; a preview
+    // without it keeps exactly the upstream shape.
+    const rich = richFromReceivedPreview(item);
     return {
       url: item.url ?? '',
       title: item.title ?? '',
       image: item.image ? processAttachment(item.image) : undefined,
       description: item.description ?? '',
       date: cleanLinkPreviewDate(item.date),
+      ...(rich != null ? { rich } : {}),
     };
   });
 }

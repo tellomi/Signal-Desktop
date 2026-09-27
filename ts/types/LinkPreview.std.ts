@@ -30,6 +30,8 @@ export type LinkPreviewResult = {
   image?: LinkPreviewImage;
   description: string | null;
   date: number | null;
+  // Tellomi (ADR-0063 §4.5): `Preview.rich` bytes (base64) for this preview, if any.
+  rich?: string;
 };
 
 export enum LinkPreviewSourceType {
