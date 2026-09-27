@@ -2466,10 +2466,10 @@
     "messageformat": "系統"
   },
   "icu:noteToSelf": {
-    "messageformat": "給自己的筆記"
+    "messageformat": "我的收藏"
   },
   "icu:noteToSelfHero": {
-    "messageformat": "你可以在此聊天中為自己新增註釋。 如果你的帳戶有任何已連結的裝置，則新的筆記將被同步。"
+    "messageformat": "把訊息轉寄到這裡，或直接傳給自己，隨時查看。若你的帳戶有已連結裝置，這裡的新訊息會同步過去。"
   },
   "icu:notificationDrawAttention": {
     "messageformat": "通知到達時請注意此視窗"

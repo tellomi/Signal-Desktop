@@ -139,7 +139,8 @@ export class LeftPaneComposeHelper extends LeftPaneHelper<LeftPaneComposePropsTy
   getRowCount(): number {
     let result = 0;
     if (this.#hasTopButtons()) {
-      result += 3;
+      // Tellomi（tellomi/tellomi#1369）：不列「按手机号码查找」（CDSI 关着，按号码找不到人；和安卓的新聊天页一致）。
+      result += 2;
     }
     if (this.#hasContactsHeader()) {
       result += 1 + this.#composeContacts.length;
@@ -166,11 +167,8 @@ export class LeftPaneComposeHelper extends LeftPaneHelper<LeftPaneComposePropsTy
       if (virtualRowIndex === 1) {
         return { type: RowType.FindByUsername };
       }
-      if (virtualRowIndex === 2) {
-        return { type: RowType.FindByPhoneNumber };
-      }
 
-      virtualRowIndex -= 3;
+      virtualRowIndex -= 2;
     }
 
     if (this.#hasContactsHeader()) {
