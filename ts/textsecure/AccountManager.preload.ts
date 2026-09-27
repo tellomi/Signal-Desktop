@@ -94,6 +94,7 @@ import {
   isRelinkingToSameAccount as getIsRelinkingToSameAccount,
   isCleanStart as getIsCleanStart,
 } from '../util/isRelinkingToSameAccount.std.ts';
+import { clearTellomiLoggedOut } from '../util/tellomiLoggedOut.std.ts';
 import type { PhoneNumberDiscoverability } from '../util/phoneNumberDiscoverability.std.ts';
 
 const { isNumber, omit, orderBy } = lodash;
@@ -1600,6 +1601,9 @@ export default class AccountManager extends EventTarget {
 
   async #registrationDone(): Promise<void> {
     log.info('registration done');
+    // Tellomi（tellomi/tellomi#1414）：「退出登录」后重新关联完成（同一账号：会话都回来；另一个账号：上面已经
+    // removeAllData 清空），去掉「已退出登录」标记。要在 endRegistration 之前，之后连上服务器就会打开聊天列表。
+    await clearTellomiLoggedOut(itemStorage);
     this.dispatchEvent(new Event('endRegistration'));
   }
 

@@ -3077,6 +3077,26 @@
     "messageformat": "Delete all data and messages from this version of Tellomi Desktop? Your Tellomi account and data on your phone or other linked devices will not be deleted.",
     "description": "Text describing what exactly will happen if the user clicks the button to delete all data"
   },
+  "icu:Preferences__logout-keep-history--tellomi": {
+    "messageformat": "Log out (keep chat history)",
+    "description": "Tellomi (ADR-0072 §4.4): Settings > General row next to \"Delete application data\". Logs this computer out of the account (it removes itself as a linked device) but keeps the chats stored on this computer."
+  },
+  "icu:Preferences__logout-button--tellomi": {
+    "messageformat": "Log out",
+    "description": "Tellomi (ADR-0072 §4.4): button on the \"Log out (keep chat history)\" row, and the confirm button of its dialog."
+  },
+  "icu:Preferences__logout-confirm-title--tellomi": {
+    "messageformat": "Log out?",
+    "description": "Tellomi (ADR-0072 §4.4): title of the dialog confirming \"Log out (keep chat history)\"."
+  },
+  "icu:Preferences__logout-confirm-body--tellomi": {
+    "messageformat": "Chat history on this computer will be kept. It comes back when you scan the QR code with your phone to link the same account again.",
+    "description": "Tellomi (ADR-0072 §4.4): body of the dialog confirming \"Log out (keep chat history)\". Linking a different account instead clears the chats (existing behaviour), so only the same account is promised here."
+  },
+  "icu:Toast--logout-needs-network--tellomi": {
+    "messageformat": "Logging out needs an internet connection. Please try again later.",
+    "description": "Tellomi (ADR-0072 §4.1): toast when \"Log out\" could not reach the server (offline, timeout or server error). Nothing changed; this computer is still linked."
+  },
   "icu:deleteAllDataProgress": {
     "messageformat": "Disconnecting and deleting all data…",
     "description": "Message shown to user when app is disconnected and data deleted"

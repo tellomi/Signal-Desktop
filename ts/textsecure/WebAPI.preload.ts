@@ -3023,6 +3023,21 @@ export async function unlink(): Promise<void> {
   });
 }
 
+// Tellomi（tellomi/tellomi#1414，ADR-0072 §4.4）：「退出登录（保留聊天记录）」——已链接设备把自己从账号里删掉。
+// 和上面的 unlink() 是同一个接口，区别是 id 由调用方明确给出、失败照常抛出（调用方据此提示需要联网、保持已关联），
+// 超时比默认的 30 秒短，网络卡住时不让用户一直等。
+const REMOVE_OUR_LINKED_DEVICE_TIMEOUT = 15 * SECOND;
+
+export async function removeOurLinkedDevice(deviceId: number): Promise<void> {
+  await _ajax({
+    host: 'chatService',
+    call: 'devices',
+    httpType: 'DELETE',
+    urlParameters: `/${deviceId}`,
+    timeout: REMOVE_OUR_LINKED_DEVICE_TIMEOUT,
+  });
+}
+
 export async function setupRegistrationLock(
   registrationLock: string
 ): Promise<void> {

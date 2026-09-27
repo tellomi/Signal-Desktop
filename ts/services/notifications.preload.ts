@@ -18,6 +18,7 @@ import type { StorageInterface } from '../types/Storage.d.ts';
 import type { LocalizerType } from '../types/Util.std.ts';
 import { NotificationType } from '../types/notifications.std.ts';
 import { drop } from '../util/drop.std.ts';
+import { isTellomiLoggedOut } from '../util/tellomiLoggedOut.std.ts';
 import type { Emoji } from '../axo/emoji.std.ts';
 
 const { debounce } = lodash;
@@ -127,6 +128,13 @@ class NotificationService extends EventEmitter {
     return fallbackStorage;
   }
 
+  // Tellomi（tellomi/tellomi#1414，需求 §3.2 安全要求）：「已退出登录」期间通知里不许出现任何会话内容，一律不弹
+  #isTellomiLoggedOut(): boolean {
+    return isTellomiLoggedOut({
+      tellomiLoggedOut: this.#getStorage().get('tellomiLoggedOut'),
+    });
+  }
+
   #getI18n(): LocalizerType {
     if (this.#i18n) {
       return this.#i18n;
@@ -144,6 +152,10 @@ class NotificationService extends EventEmitter {
    * which doesn't check permissions, do any filtering, etc.
    */
   public add(notificationData: Omit<NotificationDataType, 'wasShown'>): void {
+    if (this.#isTellomiLoggedOut()) {
+      log.info('NotificationService: logged out (Tellomi); not adding');
+      return;
+    }
     log.info(
       'NotificationService: adding a notification and requesting an update'
     );
@@ -180,6 +192,10 @@ class NotificationService extends EventEmitter {
     type: NotificationType;
     useTriToneSound?: boolean;
   }>): void {
+    if (this.#isTellomiLoggedOut()) {
+      log.info('NotificationService: logged out (Tellomi); not showing');
+      return;
+    }
     log.info('NotificationService: showing a notification', sentAt);
 
     if (OS.isWindows()) {

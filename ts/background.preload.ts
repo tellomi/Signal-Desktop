@@ -226,6 +226,11 @@ import {
   allowNetworkIfTellomiCrossBorderNoticeAcknowledged,
   ensureTellomiCrossBorderNoticeAcknowledged,
 } from './services/tellomiCrossBorderNotice.preload.ts';
+import {
+  isTellomiLoggedOut,
+  shouldTellomiStartOnInbox,
+} from './util/tellomiLoggedOut.std.ts';
+import { singleFlight } from './util/singleFlight.std.ts';
 import { onCallEventSync } from './util/onCallEventSync.preload.ts';
 import { sleeper } from './util/sleeper.std.ts';
 import { DAY, HOUR, SECOND } from './util/durations/index.std.ts';
@@ -316,6 +321,10 @@ const { isNumber, throttle } = lodash;
 
 const log = createLogger('background');
 const { i18n } = window.SignalContext;
+
+// Tellomi（tellomi/tellomi#1414）：见 startApp 里的 unlinkAndDisconnect。放在模块这一层，是因为 startApp 里
+// 早于它的事件回调就会调用它，函数里靠后的 const / let 那时还没初始化。
+let unlinkAndDisconnectSingleFlight: (() => Promise<void>) | undefined;
 
 export function isOverHourIntoPast(timestamp: number): boolean {
   return isNumber(timestamp) && isOlderThan(timestamp, HOUR);
@@ -1431,8 +1440,17 @@ async function startApp(): Promise<void> {
     }
   });
 
-  window.Whisper.events.on('unlinkAndDisconnect', () => {
-    drop(unlinkAndDisconnect());
+  // Tellomi（tellomi/tellomi#1414）：「退出登录（保留聊天记录）」会带一个回调，等本机进入「未连接」状态后再关弹窗。
+  window.Whisper.events.on('unlinkAndDisconnect', (onComplete?: () => void) => {
+    drop(
+      (async () => {
+        try {
+          await unlinkAndDisconnect();
+        } finally {
+          onComplete?.();
+        }
+      })()
+    );
   });
 
   window.Whisper.events.on('httpResponse499', () => {
@@ -1642,7 +1660,17 @@ async function startApp(): Promise<void> {
       window.ConversationController.getOurConversation()
     );
 
-    if (isCoreDataValid && Registration.everDone()) {
+    // Tellomi（tellomi/tellomi#1414，需求 §3.2 安全要求）：「退出登录」之后、重新关联完成之前，启动直接进关联二维码页
+    // （下面 else 分支，和从没关联过一样），不进聊天列表。手机那边取消关联（没有这个标记）照旧进聊天列表 + 「未连接」。
+    if (
+      shouldTellomiStartOnInbox({
+        isCoreDataValid,
+        registrationEverDone: Registration.everDone(),
+        isLoggedOut: isTellomiLoggedOut({
+          tellomiLoggedOut: itemStorage.get('tellomiLoggedOut'),
+        }),
+      })
+    ) {
       idleDetector.start();
 
       const registrationPartialState = itemStorage.get(
@@ -3583,7 +3611,14 @@ async function startApp(): Promise<void> {
     return false;
   }
 
-  async function unlinkAndDisconnect(): Promise<void> {
+  // Tellomi（tellomi/tellomi#1414）：「退出登录」自己触发一次，服务器删掉本机后断开连接（authError）、请求撞上 403
+  // 又会各触发一次。同一时间只跑一遍，后来的等这一遍跑完；跑完以后再触发照常再跑。
+  function unlinkAndDisconnect(): Promise<void> {
+    unlinkAndDisconnectSingleFlight ??= singleFlight(doUnlinkAndDisconnect);
+    return unlinkAndDisconnectSingleFlight();
+  }
+
+  async function doUnlinkAndDisconnect(): Promise<void> {
     window.Whisper.events.emit('unauthorized');
 
     log.warn(

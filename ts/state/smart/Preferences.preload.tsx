@@ -129,6 +129,8 @@ import {
 } from '../../types/StorageKeys.std.ts';
 import type { BlockedConversation } from '../../components/Preferences.dom.tsx';
 import { pinReminderService } from '../../services/pinReminder.preload.ts';
+import { ToastType } from '../../types/Toast.dom.tsx';
+import { runTellomiLogoutKeepHistory } from '../../util/runTellomiLogoutKeepHistory.preload.ts';
 
 function renderUpdateDialog(
   props: Readonly<{ containerWidthBreakpoint: WidthBreakpoint }>
@@ -315,6 +317,17 @@ export function SmartPreferences(): JSX.Element | null {
   const pickLocalBackupFolder = () => backupsService.pickLocalBackupFolder();
 
   const doDeleteAllData = () => renderClearingDataView();
+
+  // Tellomi（tellomi/tellomi#1414，ADR-0072 §4.4）：「退出登录（保留聊天记录）」。已经是「未连接」时不出这一行。
+  const canLogoutKeepHistory =
+    !weArePrimaryDevice && items.chromiumRegistrationDone === '';
+  // 成功后直接进关联二维码页（在 runTellomiLogoutKeepHistory 里），这里不切到聊天列表：切了会在关联页盖上来之前
+  // 闪一下会话。
+  const doLogoutKeepHistory = () =>
+    runTellomiLogoutKeepHistory({
+      showNeedsNetwork: () =>
+        showToast({ toastType: ToastType.TellomiLogoutNeedsNetwork }),
+    });
   const refreshCloudBackupStatus =
     backupsService.throttledFetchCloudBackupStatus;
   const refreshBackupSubscriptionStatus =
@@ -1042,6 +1055,8 @@ export function SmartPreferences(): JSX.Element | null {
         emojiSkinToneDefault={emojiSkinToneDefault}
         phoneNumber={phoneNumber}
         doDeleteAllData={doDeleteAllData}
+        canLogoutKeepHistory={canLogoutKeepHistory}
+        doLogoutKeepHistory={doLogoutKeepHistory}
         editCustomColor={editCustomColor}
         getConversationsWithCustomColor={getConversationsWithCustomColor}
         getMessageCountBySchemaVersion={

@@ -15,6 +15,10 @@ import {
   cancelInstall,
 } from './installer.preload.ts';
 import { startRegistration } from './standaloneInstaller.preload.ts';
+import {
+  decideTellomiOpenInbox,
+  isTellomiLoggedOut,
+} from '../../util/tellomiLoggedOut.std.ts';
 
 const log = createLogger('app');
 
@@ -65,7 +69,24 @@ export function openInbox(): ThunkAction<
   unknown,
   OpenInboxActionType
 > {
-  return async dispatch => {
+  return async (dispatch, getState) => {
+    // Tellomi（tellomi/tellomi#1414，需求 §3.2 安全要求）：这里是进聊天列表的唯一一道门。本机「已退出登录」时不开：
+    // 不在关联页就去关联页（和左栏「重新关联」同一条路），已经在关联页（包括正在关联中）就不动。
+    const state = getState();
+    const decision = decideTellomiOpenInbox({
+      isLoggedOut: isTellomiLoggedOut(state.items),
+      appView: state.app.appView,
+    });
+    if (decision === 'stay') {
+      log.warn('open inbox: logged out (Tellomi); staying on the link screen');
+      return;
+    }
+    if (decision === 'open-relink') {
+      log.warn('open inbox: logged out (Tellomi); opening the link screen');
+      window.Whisper.events.emit('setupAsNewDevice');
+      return;
+    }
+
     log.info('open inbox');
 
     await window.ConversationController.load();

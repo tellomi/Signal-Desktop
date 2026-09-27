@@ -949,6 +949,14 @@ function renderToast({
     );
   }
 
+  if (toastType === ToastType.TellomiLogoutNeedsNetwork) {
+    return (
+      <Toast onClose={hideToast}>
+        {i18n('icu:Toast--logout-needs-network--tellomi')}
+      </Toast>
+    );
+  }
+
   if (toastType === ToastType.TooManyMessagesToDeleteForEveryone) {
     return (
       <Toast onClose={hideToast}>

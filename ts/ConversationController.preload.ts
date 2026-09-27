@@ -45,6 +45,10 @@ import {
   countAllConversationsUnreadStats,
   getUnreadCountForBadge,
 } from './util/countUnreadStats.std.ts';
+import {
+  getTellomiBadgeCount,
+  isTellomiLoggedOut,
+} from './util/tellomiLoggedOut.std.ts';
 import { STORAGE_KEY_DEFAULTS } from './types/StorageKeys.std.ts';
 import { isTestOrMockEnvironment } from './environment.std.ts';
 import { isConversationAccepted } from './util/isConversationAccepted.preload.ts';
@@ -427,7 +431,13 @@ export class ConversationController {
 
     drop(itemStorage.put('unreadCount', unreadStats.unreadCount));
 
-    const total = getUnreadCountForBadge(unreadStats, unreadCountBadgeType);
+    // Tellomi（tellomi/tellomi#1414，需求 §3.2）：「已退出登录」期间角标、托盘图标、窗口标题都不带未读数
+    const total = getTellomiBadgeCount(
+      getUnreadCountForBadge(unreadStats, unreadCountBadgeType),
+      isTellomiLoggedOut({
+        tellomiLoggedOut: itemStorage.get('tellomiLoggedOut'),
+      })
+    );
 
     window.IPC.setBadgeCount(total);
     window.IPC.updateTrayIcon(total);

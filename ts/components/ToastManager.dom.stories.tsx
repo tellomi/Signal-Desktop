@@ -258,6 +258,8 @@ function getToast(toastType: ToastType): AnyToast {
       return { toastType: ToastType.TapToViewExpiredIncoming };
     case ToastType.TapToViewExpiredOutgoing:
       return { toastType: ToastType.TapToViewExpiredOutgoing };
+    case ToastType.TellomiLogoutNeedsNetwork:
+      return { toastType: ToastType.TellomiLogoutNeedsNetwork };
     case ToastType.TransportError:
       return { toastType: ToastType.TransportError };
     case ToastType.TooManyMessagesToDeleteForEveryone:
