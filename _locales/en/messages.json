@@ -12114,7 +12114,7 @@
     "description": "Release notes for 8.27"
   },
   "icu:WhatsNew__tellomi--0": {
-    "messageformat": "GIF search settings (provider, proxy, key) now come from the server, so they can change without an update.",
+    "messageformat": "Linking this computer now shows the cross-border transfer notice first. “Note to Self” is now “Saved Messages”, “Find by phone number” is gone from New Chat, and accounts without a PIN no longer get PIN reminders.",
     "description": "Tellomi release notes; keep in sync with docs/signal/VERSIONS.md, update every release"
   }
 }
