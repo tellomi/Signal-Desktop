@@ -8,6 +8,7 @@ import { createLogger } from '../../logging/log.std.ts';
 import '../context.preload.ts';
 
 // Connect websocket early
+// Tellomi（tellomi/tellomi#1338）：这里只建 libsignal Net；预连接等跨境告知放开联网之后才做（见 preconnect.preload.ts）
 import '../../textsecure/preconnect.preload.ts';
 
 import './phase0-devtools.node.ts';

@@ -19,6 +19,7 @@ import * as Errors from '../../types/errors.std.ts';
 import { strictAssert } from '../../util/assert.std.ts';
 import { drop } from '../../util/drop.std.ts';
 import { explodePromise } from '../../util/explodePromise.std.ts';
+import { TELLOMI_NETWORK_ALLOWED_CHANNEL } from '../../util/tellomiCrossBorderNotice.std.ts';
 import { DataReader } from '../../sql/Client.preload.ts';
 import type { WindowsNotificationData } from '../../services/notifications.preload.ts';
 import {
@@ -180,6 +181,9 @@ const IPC: IPCType = {
   },
   titleBarDoubleClick: () => {
     ipc.send('title-bar-double-click');
+  },
+  tellomiNetworkAllowed: () => {
+    ipc.send(TELLOMI_NETWORK_ALLOWED_CHANNEL);
   },
   updateTrayIcon: unreadCount => ipc.send('update-tray-icon', unreadCount),
   whenWindowVisible,

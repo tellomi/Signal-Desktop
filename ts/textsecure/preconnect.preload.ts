@@ -112,6 +112,18 @@ if (window.SignalContext.config?.serverUrl) {
       libsignalNet.clearProxy();
     }
   }
+}
+
+// Tellomi（tellomi/tellomi#1338）：上游在 preload 一加载就预连接聊天服务器（到 chat.tellomi.app 的 TCP + TLS），
+// 那时还没出跨境告知。改成导出，由 services/tellomiCrossBorderNotice.preload.ts 放开联网时调用：本机已确认过告知的，
+// startApp 一开始读到版本就调（和上游差不多早）；没确认过的，点「知道了」之后才调。
+let hasPreconnected = false;
+export function preconnectChat(): void {
+  // Not defined in tests
+  if (!window.SignalContext.config?.serverUrl || hasPreconnected) {
+    return;
+  }
+  hasPreconnected = true;
 
   drop(
     (async () => {

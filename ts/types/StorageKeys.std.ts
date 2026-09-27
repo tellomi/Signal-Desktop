@@ -150,7 +150,9 @@ export type StorageAccessType = {
   useRingrtcAdm: boolean;
   pni: string;
   version: string;
-  upstreamBase: string;   // Tellomi: upstream Signal-Desktop base the last run was built from (see util/tellomiVersion)
+  upstreamBase: string; // Tellomi: upstream Signal-Desktop base the last run was built from (see util/tellomiVersion)
+  // Tellomi（tellomi/tellomi#1338）：本机点过「知道了」的跨境告知版本（'cb-1'），见 services/tellomiCrossBorderNotice
+  tellomiCrossBorderNoticeVersion: string;
   linkPreviews: boolean;
   universalExpireTimer: number;
   retryPlaceholders: ReadonlyArray<RetryItemType>;
@@ -617,6 +619,8 @@ const STORAGE_KEYS_TO_REMOVE_AFTER_UNLINK = [
   'pinReminderNextInterval',
   'backupKeyViewed',
   'payments',
+  // Tellomi（tellomi/tellomi#1338）：解除关联后清掉，重新关联前再出一次跨境告知（需求说明 6.1 ④「首次打开 / 重新关联时」）
+  'tellomiCrossBorderNoticeVersion',
 ] as const satisfies ReadonlyArray<keyof StorageAccessType>;
 
 // Ensure every storage key is explicitly marked to be preserved or removed on unlink.

@@ -6,7 +6,10 @@ import { createRoot } from 'react-dom/client';
 import PQueue from 'p-queue';
 import pMap from 'p-map';
 import { v7 as generateUuid } from 'uuid';
-import { TELLOMI_UPSTREAM_BASE, isTellomiVersion } from './util/tellomiVersion.std.ts';
+import {
+  TELLOMI_UPSTREAM_BASE,
+  isTellomiVersion,
+} from './util/tellomiVersion.std.ts';
 
 import * as Registration from './util/registration.preload.ts';
 import MessageReceiver from './textsecure/MessageReceiver.preload.ts';
@@ -219,6 +222,10 @@ import { flushAttachmentDownloadQueue } from './util/attachmentDownloadQueue.pre
 import { initializeRedux } from './state/initializeRedux.preload.ts';
 import { StartupQueue } from './util/StartupQueue.std.ts';
 import { showConfirmationDialog } from './util/showConfirmationDialog.dom.tsx';
+import {
+  allowNetworkIfTellomiCrossBorderNoticeAcknowledged,
+  ensureTellomiCrossBorderNoticeAcknowledged,
+} from './services/tellomiCrossBorderNotice.preload.ts';
 import { onCallEventSync } from './util/onCallEventSync.preload.ts';
 import { sleeper } from './util/sleeper.std.ts';
 import { DAY, HOUR, SECOND } from './util/durations/index.std.ts';
@@ -332,6 +339,10 @@ export async function cleanupSessionResets(): Promise<void> {
 }
 
 async function startApp(): Promise<void> {
+  // Tellomi（tellomi/tellomi#1338）：本机已确认过当前版本的跨境告知，就照上游尽早预连接、让主进程放开联网；
+  // 没确认过的，下面 itemStorage.onready 一开始先出告知，点「知道了」之前不发起任何连接
+  drop(allowNetworkIfTellomiCrossBorderNoticeAcknowledged());
+
   if (window.initialTheme === ThemeType.light) {
     document.body.classList.add('light-theme');
   }
@@ -432,7 +443,7 @@ async function startApp(): Promise<void> {
 
   let newVersion = false;
   let lastVersion: string | undefined;
-  let lastUpstreamBaseAtStartup: string = TELLOMI_UPSTREAM_BASE;   // Tellomi
+  let lastUpstreamBaseAtStartup: string = TELLOMI_UPSTREAM_BASE; // Tellomi
 
   window.document.title = window.getTitle();
 
@@ -564,6 +575,10 @@ async function startApp(): Promise<void> {
       return;
     }
     first = false;
+
+    // Tellomi（tellomi/tellomi#1338）：跨境告知（只读版）点「知道了」之前不往下走。之后才有：已关联设备的鉴权连接
+    // （下面的 connectWebAPI）、start() 里的关联二维码（provisioning 连接）、自动更新（readyForUpdates）、各种同步。
+    await ensureTellomiCrossBorderNoticeAcknowledged();
 
     restoreRemoteConfigFromStorage({
       storage: itemStorage,
@@ -904,7 +919,9 @@ async function startApp(): Promise<void> {
     // version as the base; a profile created by a Tellomi 0.x build has no upstream history and skips them.
     const lastUpstreamBase: string =
       itemStorage.get('upstreamBase') ??
-      (isTellomiVersion(lastVersion) ? TELLOMI_UPSTREAM_BASE : (lastVersion ?? TELLOMI_UPSTREAM_BASE));
+      (isTellomiVersion(lastVersion)
+        ? TELLOMI_UPSTREAM_BASE
+        : (lastVersion ?? TELLOMI_UPSTREAM_BASE));
     await itemStorage.put('upstreamBase', TELLOMI_UPSTREAM_BASE);
     lastUpstreamBaseAtStartup = lastUpstreamBase;
 
@@ -1344,8 +1361,15 @@ async function startApp(): Promise<void> {
   }
 
   window.Whisper.events.on('setupAsNewDevice', () => {
-    window.IPC.readyForUpdates();
-    window.reduxActions.installer.startInstaller();
+    // Tellomi（tellomi/tellomi#1338）：解除关联后重新关联（左栏「重新关联」、菜单「设为新设备」）也先过跨境告知；
+    // 启动时的告知还没点时，和它共用同一页
+    drop(
+      (async () => {
+        await ensureTellomiCrossBorderNoticeAcknowledged();
+        window.IPC.readyForUpdates();
+        window.reduxActions.installer.startInstaller();
+      })()
+    );
   });
 
   window.Whisper.events.on('setupAsStandalone', () => {
