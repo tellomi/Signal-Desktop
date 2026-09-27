@@ -1,11 +1,13 @@
 // Copyright 2026 重庆半格智能科技有限公司
 // SPDX-License-Identifier: AGPL-3.0-only
 
-import { useEffect, useId, useRef } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import type { JSX } from 'react';
 
 import { tw } from '../axo/tw.dom.tsx';
 import { AxoButton } from '../axo/AxoButton.dom.tsx';
+import { Button, ButtonVariant } from './Button.dom.tsx';
+import { Modal } from './Modal.dom.tsx';
 import { TitlebarDragArea } from './TitlebarDragArea.dom.tsx';
 import type { LocalizerType } from '../types/Util.std.ts';
 import {
@@ -13,19 +15,95 @@ import {
   TELLOMI_THIRD_PARTY_LIST_URL,
 } from '../util/tellomiCrossBorderNotice.std.ts';
 
+// Tellomi（tellomi/tellomi#1338）：跨境告知的「关联设备」版（需求说明 6.6「三种弹窗」第三行）。
+// Desktop 永远是关联设备：同意在手机上取得，这里只告知，没有「同意 / 不同意」，只有一个「知道了」。
+// 空白遮罩（品牌底色）上一个现有的 Modal：DIALOG_TITLE · LINKED_DIALOG_BODY · 链接 DIALOG_FULL_NOTICE_LINK · 「知道了」；
+// 首次打开 / 重新关联时关不掉（点外面、Esc 都不关）。点链接出全文页盖在弹窗上面，「返回」回到弹窗。
+// 全文用本地字符串渲染；页面本身不发起任何网络请求，隐私政策 / 第三方清单两个链接由用户点了才交给系统浏览器
+// （主进程 will-navigate / setWindowOpenHandler → shell.openExternal）。
+
 export type PropsType = Readonly<{
   i18n: LocalizerType;
   onAcknowledge: () => void;
 }>;
 
-// Tellomi（tellomi/tellomi#1338）：跨境告知的「关联设备（只读）」版，整窗显示（需求说明 6.3「三种用法」第三行）：
-// LINKED_TITLE · LINKED_INTRO · 9 项（第 9 项正文换成 LINKED_ITEM_CONSENT_BODY）· 两个链接 · 一个「知道了」。
-// 不收集同意（同意在手机上取得），所以没有「同意 / 不同意」；也不默认聚焦按钮（需求说明 2.2）。
-// 页面本身不发起任何网络请求：链接交给系统浏览器打开（主进程 will-navigate / setWindowOpenHandler → shell.openExternal）。
 export function TellomiCrossBorderNotice({
   i18n,
   onAcknowledge,
 }: PropsType): JSX.Element {
+  const [isFullNoticeOpen, setIsFullNoticeOpen] = useState(false);
+
+  return (
+    <div className={tw('size-full bg-surface-primary')}>
+      <TitlebarDragArea />
+      {isFullNoticeOpen ? (
+        <TellomiCrossBorderFullNotice
+          i18n={i18n}
+          onClose={() => setIsFullNoticeOpen(false)}
+        />
+      ) : (
+        <Modal
+          modalName="TellomiCrossBorderNoticeDialog"
+          i18n={i18n}
+          title={i18n('icu:TellomiCrossBorder__dialog_title')}
+          noEscapeClose
+          noMouseClose
+          onTopOfEverything
+          modalFooter={
+            <Button variant={ButtonVariant.Primary} onClick={onAcknowledge}>
+              {i18n('icu:TellomiCrossBorder__linked_ack')}
+            </Button>
+          }
+        >
+          <TellomiCrossBorderNoticeDialogBody
+            i18n={i18n}
+            onOpenFullNotice={() => setIsFullNoticeOpen(true)}
+          />
+        </Modal>
+      )}
+    </div>
+  );
+}
+
+export type DialogBodyPropsType = Readonly<{
+  i18n: LocalizerType;
+  onOpenFullNotice: () => void;
+}>;
+
+// 弹窗正文就两行：LINKED_DIALOG_BODY + 打开全文的链接（没有 9 项全文）
+export function TellomiCrossBorderNoticeDialogBody({
+  i18n,
+  onOpenFullNotice,
+}: DialogBodyPropsType): JSX.Element {
+  return (
+    <div className={tw('flex flex-col items-start gap-3')}>
+      <p className={tw('type-body-large text-primary')}>
+        {i18n('icu:TellomiCrossBorder__linked_dialog_body')}
+      </p>
+      <button
+        type="button"
+        className={tw(
+          'type-body-large text-accent hover:underline',
+          'rounded-xs outline-none keyboard-mode:focus:axo-focus-ring'
+        )}
+        onClick={onOpenFullNotice}
+      >
+        {i18n('icu:TellomiCrossBorder__dialog_full_notice_link')}
+      </button>
+    </div>
+  );
+}
+
+export type FullNoticePropsType = Readonly<{
+  i18n: LocalizerType;
+  onClose: () => void;
+}>;
+
+// 全文页：FULL_NOTICE_TITLE · 9 项（第 9 项正文用 LINKED_ITEM_CONSENT_BODY）· 两个链接 · 「返回」
+export function TellomiCrossBorderFullNotice({
+  i18n,
+  onClose,
+}: FullNoticePropsType): JSX.Element {
   const titleId = useId();
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -86,7 +164,6 @@ export function TellomiCrossBorderNotice({
       aria-labelledby={titleId}
       className={tw('flex size-full flex-col bg-surface-primary text-primary')}
     >
-      <TitlebarDragArea />
       <div
         ref={scrollRef}
         tabIndex={-1}
@@ -99,11 +176,8 @@ export function TellomiCrossBorderNotice({
           )}
         >
           <h1 id={titleId} className={tw('type-title-large')}>
-            {i18n('icu:TellomiCrossBorder__linked_title')}
+            {i18n('icu:TellomiCrossBorder__full_notice_title')}
           </h1>
-          <p className={tw('mt-3 type-body-large')}>
-            {i18n('icu:TellomiCrossBorder__linked_intro')}
-          </p>
           <ol className={tw('mt-6 flex flex-col gap-5')}>
             {items.map(item => (
               <li key={item.title}>
@@ -137,12 +211,8 @@ export function TellomiCrossBorderNotice({
       <div
         className={tw('flex justify-center border-t border-primary px-8 py-4')}
       >
-        <AxoButton.Root
-          variant="strong-primary"
-          size="lg"
-          onClick={onAcknowledge}
-        >
-          {i18n('icu:TellomiCrossBorder__linked_ack')}
+        <AxoButton.Root variant="strong-secondary" size="lg" onClick={onClose}>
+          {i18n('icu:TellomiCrossBorder__full_notice_close')}
         </AxoButton.Root>
       </div>
     </div>

@@ -5,12 +5,17 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { assert } from 'chai';
 
-// Tellomi（tellomi/tellomi#1338）：Desktop 只读告知的文案要在 en / zh-CN / zh-HK / zh-Hant 四种语言里齐全（需求说明 6.3），
+// Tellomi（tellomi/tellomi#1338）：Desktop 只读告知的文案要在 en / zh-CN / zh-HK / zh-Hant 四种语言里齐全（需求说明 6.3、6.6），
 // yue 用 zh_HK 的文字（否则粤语系统回落到英文）。「境外接收方」是 Desktop 版：Apple 和 Google 两行都列（Desktop 的推送走手机）。
+// 6.6：整页改成两行小弹窗（dialog_title · linked_dialog_body · dialog_full_notice_link · 知道了）+ 点开的全文页
+// （full_notice_title · 9 项 · 两个链接 · 返回）；6.3 的整页标题、导语删掉。
 describe('tellomiCrossBorderNotice locales (tellomi/tellomi#1338)', () => {
   const KEYS = [
-    'linked_title',
-    'linked_intro',
+    'dialog_title',
+    'linked_dialog_body',
+    'dialog_full_notice_link',
+    'full_notice_title',
+    'full_notice_close',
     'item_where_title',
     'item_where_body',
     'item_recipients_title',
@@ -86,6 +91,42 @@ describe('tellomiCrossBorderNotice locales (tellomi/tellomi#1338)', () => {
         key
       );
     }
+  });
+
+  it('the keys removed by §6.6 are gone from every locale', () => {
+    const removed = [
+      'title',
+      'intro',
+      'linked_title',
+      'linked_intro',
+      'policy_updated',
+    ].map(suffix => `icu:TellomiCrossBorder__${suffix}`);
+    for (const locale of ['en', 'zh-CN', 'zh-HK', 'zh-Hant', 'yue']) {
+      const messages = load(locale);
+      for (const key of removed) {
+        assert.notProperty(messages, key, `${locale} ${key}`);
+      }
+    }
+  });
+
+  it('dialog and full-notice wording (§6.6)', () => {
+    const zhCN = load('zh-CN');
+    const en = load('en');
+    const text = (messages: Record<string, Entry>, suffix: string) =>
+      messages[`icu:TellomiCrossBorder__${suffix}`]?.messageformat;
+
+    assert.strictEqual(text(zhCN, 'dialog_title'), '个人信息出境');
+    assert.strictEqual(text(zhCN, 'full_notice_title'), '个人信息出境告知');
+    assert.strictEqual(
+      text(zhCN, 'dialog_full_notice_link'),
+      '查看《个人信息出境告知》'
+    );
+    assert.strictEqual(text(zhCN, 'full_notice_close'), '返回');
+    assert.strictEqual(text(en, 'full_notice_close'), 'Back');
+    assert.strictEqual(
+      text(en, 'dialog_title'),
+      'Cross-border transfer of personal information'
+    );
   });
 
   it('the only button says “知道了” / “Got It”', () => {

@@ -1589,11 +1589,20 @@
   "icu:Install__learn-more": {
     "messageformat": "了解多啲"
   },
-  "icu:TellomiCrossBorder__linked_title": {
-    "messageformat": "關聯裝置前請了解：個人信息跨境傳輸"
+  "icu:TellomiCrossBorder__dialog_title": {
+    "messageformat": "個人信息出境"
   },
-  "icu:TellomiCrossBorder__linked_intro": {
-    "messageformat": "這部裝置將關聯到您的 Tellomi 帳號。個人信息跨境傳輸的單獨同意在您的手機上取得，這部裝置不再另行詢問；下面是同一份告知，供您了解。關聯之後，這部裝置上的資訊也按下面的方式處理。"
+  "icu:TellomiCrossBorder__linked_dialog_body": {
+    "messageformat": "跨境傳輸的單獨同意已在您的手機上取得，這部裝置不再另行詢問。關聯之後，這部裝置上的資訊也按《個人信息出境告知》處理。"
+  },
+  "icu:TellomiCrossBorder__dialog_full_notice_link": {
+    "messageformat": "查看《個人信息出境告知》"
+  },
+  "icu:TellomiCrossBorder__full_notice_title": {
+    "messageformat": "個人信息出境告知"
+  },
+  "icu:TellomiCrossBorder__full_notice_close": {
+    "messageformat": "返回"
   },
   "icu:TellomiCrossBorder__item_where_title": {
     "messageformat": "是否出境"
