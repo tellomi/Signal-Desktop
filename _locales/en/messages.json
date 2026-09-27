@@ -3277,11 +3277,11 @@
     "description": "Label text for system theme"
   },
   "icu:noteToSelf": {
-    "messageformat": "Note to Self",
+    "messageformat": "Saved Messages",
     "description": "Name for the conversation with your own phone number"
   },
   "icu:noteToSelfHero": {
-    "messageformat": "You can add notes for yourself in this chat. If your account has any linked devices, new notes will be synced.",
+    "messageformat": "Forward messages here or send them to yourself to keep them handy. If your account has linked devices, new messages here are synced to them.",
     "description": "Description for the Note to Self conversation"
   },
   "icu:notificationDrawAttention": {

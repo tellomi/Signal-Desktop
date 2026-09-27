@@ -159,7 +159,10 @@ class PinReminderService {
     return (
       Registration.isDone() &&
       window.ConversationController.areWePrimaryDevice() &&
-      itemStorage.get('pinReminders', true)
+      itemStorage.get('pinReminders', true) &&
+      // Tellomi（tellomi/tellomi#1369）：没有 SVR、注册也不设 PIN（docs/signal/ENCLAVES.md），本机没存 PIN 就不提醒验证
+      // ——否则独立注册的主设备 Desktop 每三天弹一次「验证您的 PIN 码」，点「验证」还会在 handlePinEntry 的断言上抛错。
+      Boolean(itemStorage.get('svrPin'))
     );
   }
 

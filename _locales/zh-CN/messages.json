@@ -2466,10 +2466,10 @@
     "messageformat": "系统"
   },
   "icu:noteToSelf": {
-    "messageformat": "备忘录"
+    "messageformat": "我的收藏"
   },
   "icu:noteToSelfHero": {
-    "messageformat": "您可以在此聊天中添加备忘。如果您的账户关联了其他设备，新的备忘将会同步到其他设备上。"
+    "messageformat": "把消息转发到这里，或直接发给自己，随时查看。如果你的账号有已关联的设备，这里的新消息会同步过去。"
   },
   "icu:notificationDrawAttention": {
     "messageformat": "当收到通知时，聚焦该窗口"

@@ -43,7 +43,8 @@ describe('LeftPaneComposeHelper', () => {
   });
 
   describe('getRowCount', () => {
-    it('returns 3 (for the "new group", etc) if not searching and there are no contacts', () => {
+    // Tellomi（tellomi/tellomi#1369）：没有按手机号码查找（CDSI 关着，和安卓一致），顶部按钮只剩「新建群组 / 按用户名查找」两行。
+    it('returns 2 (for the "new group", etc) if not searching and there are no contacts', () => {
       assert.strictEqual(
         new LeftPaneComposeHelper({
           composeContacts: [],
@@ -53,11 +54,11 @@ describe('LeftPaneComposeHelper', () => {
           username: undefined,
           uuidFetchState: {},
         }).getRowCount(),
-        3
+        2
       );
     });
 
-    it('returns the number of contacts + 4 (for the "new group"+etc and header) if not searching', () => {
+    it('returns the number of contacts + 3 (for the "new group"+etc and header) if not searching', () => {
       assert.strictEqual(
         new LeftPaneComposeHelper({
           composeContacts: [getDefaultConversation(), getDefaultConversation()],
@@ -67,11 +68,11 @@ describe('LeftPaneComposeHelper', () => {
           uuidFetchState: {},
           username: undefined,
         }).getRowCount(),
-        6
+        5
       );
     });
 
-    it('returns the number of contacts + number of groups + 5 (for the "new group"+etc and the headers) if not searching', () => {
+    it('returns the number of contacts + number of groups + 4 (for the "new group"+etc and the headers) if not searching', () => {
       assert.strictEqual(
         new LeftPaneComposeHelper({
           composeContacts: [getDefaultConversation(), getDefaultConversation()],
@@ -81,7 +82,7 @@ describe('LeftPaneComposeHelper', () => {
           uuidFetchState: {},
           username: undefined,
         }).getRowCount(),
-        9
+        8
       );
     });
 
@@ -234,10 +235,7 @@ describe('LeftPaneComposeHelper', () => {
       assert.deepEqual(helper.getRow(1), {
         type: RowType.FindByUsername,
       });
-      assert.deepEqual(helper.getRow(2), {
-        type: RowType.FindByPhoneNumber,
-      });
-      assert.isUndefined(helper.getRow(3));
+      assert.isUndefined(helper.getRow(2));
     });
 
     it('returns a "new group"+etc, a header, and contacts if not searching', () => {
@@ -260,16 +258,13 @@ describe('LeftPaneComposeHelper', () => {
       assert.deepEqual(helper.getRow(1), {
         type: RowType.FindByUsername,
       });
-      assert.deepEqual(helper.getRow(2), {
-        type: RowType.FindByPhoneNumber,
-      });
-      assert.deepEqual(_testHeaderText(helper.getRow(3)), 'icu:contactsHeader');
-      assert.deepEqual(helper.getRow(4), {
+      assert.deepEqual(_testHeaderText(helper.getRow(2)), 'icu:contactsHeader');
+      assert.deepEqual(helper.getRow(3), {
         type: RowType.Contact,
         contact: composeContacts[0],
         hasContextMenu: true,
       });
-      assert.deepEqual(helper.getRow(5), {
+      assert.deepEqual(helper.getRow(4), {
         type: RowType.Contact,
         contact: composeContacts[1],
         hasContextMenu: true,
@@ -300,26 +295,23 @@ describe('LeftPaneComposeHelper', () => {
       assert.deepEqual(helper.getRow(1), {
         type: RowType.FindByUsername,
       });
-      assert.deepEqual(helper.getRow(2), {
-        type: RowType.FindByPhoneNumber,
-      });
-      assert.deepEqual(_testHeaderText(helper.getRow(3)), 'icu:contactsHeader');
-      assert.deepEqual(helper.getRow(4), {
+      assert.deepEqual(_testHeaderText(helper.getRow(2)), 'icu:contactsHeader');
+      assert.deepEqual(helper.getRow(3), {
         type: RowType.Contact,
         contact: composeContacts[0],
         hasContextMenu: true,
       });
-      assert.deepEqual(helper.getRow(5), {
+      assert.deepEqual(helper.getRow(4), {
         type: RowType.Contact,
         contact: composeContacts[1],
         hasContextMenu: true,
       });
-      assert.deepEqual(_testHeaderText(helper.getRow(6)), 'icu:groupsHeader');
-      assert.deepEqual(helper.getRow(7), {
+      assert.deepEqual(_testHeaderText(helper.getRow(5)), 'icu:groupsHeader');
+      assert.deepEqual(helper.getRow(6), {
         type: RowType.SelectSingleGroup,
         group: composeGroups[0],
       });
-      assert.deepEqual(helper.getRow(8), {
+      assert.deepEqual(helper.getRow(7), {
         type: RowType.SelectSingleGroup,
         group: composeGroups[1],
       });
