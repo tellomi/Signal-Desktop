@@ -351,6 +351,7 @@ describe('processDataMessage', () => {
           title: 'Signal Private Messenger #1',
           url: 'https://signal.org',
           date: null,
+          rich: null,
         },
         {
           description: 'Say "hello" again',
@@ -358,6 +359,7 @@ describe('processDataMessage', () => {
           title: 'Signal Private Messenger #2',
           url: 'https://signal.org',
           date: null,
+          rich: null,
         },
       ],
     });
@@ -421,6 +423,7 @@ describe('processDataMessage', () => {
           url: null,
           title: null,
           description: null,
+          rich: null,
         },
       ],
     });

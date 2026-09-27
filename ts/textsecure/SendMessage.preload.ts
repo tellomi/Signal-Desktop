@@ -105,6 +105,7 @@ import type {
 } from '../types/PinnedMessage.std.ts';
 import type { Emoji } from '../axo/emoji.std.ts';
 import type { BlockedNumber } from '../types/StorageKeys.std.ts';
+import { toOutgoingPreviewProto } from '../linkPreviews/richContent.std.ts';
 
 const log = createLogger('SendMessage');
 
@@ -155,6 +156,8 @@ export type OutgoingLinkPreviewType = Readonly<{
   isStickerPack?: boolean;
   image?: Readonly<UploadedAttachmentType>;
   date?: number;
+  // Tellomi (ADR-0063 §7.4): `Preview.rich` bytes (base64), sent unchanged.
+  rich?: string;
 }>;
 
 export type OutgoingTextAttachmentType = Omit<TextAttachmentType, 'preview'> & {
@@ -678,16 +681,8 @@ class Message {
           } satisfies Proto.DataMessage.Reaction.Params)
         : null,
 
-      preview:
-        this.preview?.map((preview): Proto.Preview.Params => {
-          return {
-            title: preview.title ?? null,
-            url: preview.url,
-            description: preview.description ?? null,
-            date: preview.date ? BigInt(preview.date) : null,
-            image: preview.image ?? null,
-          };
-        }) ?? null,
+      // Tellomi (ADR-0063 §7.4): same mapping as upstream, plus `rich`.
+      preview: this.preview?.map(toOutgoingPreviewProto) ?? null,
 
       contact,
       quote,
@@ -827,6 +822,7 @@ export class MessageSender {
             url: preview.url,
             description: null,
             date: null,
+            rich: null,
           }
         : null,
 
