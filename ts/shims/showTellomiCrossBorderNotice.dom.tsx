@@ -7,9 +7,10 @@ import { tw } from '../axo/tw.dom.tsx';
 import { TellomiCrossBorderNotice } from '../components/TellomiCrossBorderNotice.dom.tsx';
 import { AppProvider } from '../windows/AppProvider.dom.tsx';
 
-// Tellomi（tellomi/tellomi#1338）：把跨境告知（只读版）盖满整个窗口，点「知道了」后卸掉并 resolve。
+// Tellomi（tellomi/tellomi#1338）：空白遮罩盖满整个窗口，上面是跨境告知弹窗（需求说明 6.6），点「知道了」后卸掉并 resolve。
 // 不依赖 redux：启动时它出现在 itemStorage 就绪之后、redux 和 App 根节点建起来之前（盖住加载页）；
 // 重新关联时它盖在已渲染的 App 上面，这时把 #app-container 设成 inert，键盘焦点进不到后面去。
+// 弹窗（Modal）portal 到 body，用 onTopOfEverything 排在这层遮罩之上。
 export function showTellomiCrossBorderNotice(): Promise<void> {
   const { i18n } = window.SignalContext;
 

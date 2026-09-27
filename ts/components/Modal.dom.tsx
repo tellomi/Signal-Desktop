@@ -51,6 +51,8 @@ export type ModalPropsType = PropsType & {
   noTransform?: boolean;
   noEscapeClose?: boolean;
   noMouseClose?: boolean;
+  // Tellomi（tellomi/tellomi#1338）：转给 ModalHost，让弹窗盖在加载页 / 整窗遮罩之上（跨境告知弹窗）
+  onTopOfEverything?: boolean;
   theme?: Theme;
 };
 
@@ -68,6 +70,7 @@ export function Modal({
   noMouseClose,
   onBackButtonClick,
   onClose = noop,
+  onTopOfEverything,
   theme,
   title,
   hasHeaderDivider = false,
@@ -125,6 +128,7 @@ export function Modal({
       noMouseClose={noMouseClose}
       onClose={close}
       onEscape={onBackButtonClick}
+      onTopOfEverything={onTopOfEverything}
       overlayStyles={overlayStyles}
       theme={theme}
     >
