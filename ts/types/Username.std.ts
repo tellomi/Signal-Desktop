@@ -54,11 +54,14 @@ export function getDiscriminator(username: string): string | undefined {
 export const FIXED_DISCRIMINATOR = '01';
 
 // What to show for a username: the bare nickname when it carries the fixed discriminator, the full username otherwise.
+// Tellomi（ADR-0066 §6.1b，owner 2026-09-27）：一律显示小写。唯一性本来就不分大小写（libsignal 的 hash 用小写），
+// 老数据里的大写只在这里（显示时）转，不迁移。资料页、分享 / 二维码 / 用户名链接、搜索结果、会话标题都经过这里。
 export function formatUsernameForDisplay(username: string): string {
-  if (getDiscriminator(username) !== FIXED_DISCRIMINATOR) {
-    return username;
+  const lowercase = username.toLowerCase();
+  if (getDiscriminator(lowercase) !== FIXED_DISCRIMINATOR) {
+    return lowercase;
   }
-  return getNickname(username) ?? username;
+  return getNickname(lowercase) ?? lowercase;
 }
 
 // Tellomi (ADR-0066 §六, TR-ID-01): a new nickname starts with a letter. libsignal only refuses a leading digit and
@@ -92,9 +95,12 @@ export type UsernameReservationPlan =
     }>;
 
 export function planUsernameReservation(
-  nickname: string,
+  typedNickname: string,
   previousUsername: string | undefined
 ): UsernameReservationPlan {
+  // Tellomi（ADR-0066 §6.1b）：发给 libsignal 的 nickname 一律小写（编辑框已当场转过，这里兜底）。由它生成的用户名、
+  // 以及 confirmUsername 用它加密的用户名链接也就都是小写；老的 `KaiXin.01` 重新保存时走下面的「只改大小写」变成 `kaixin.01`。
+  const nickname = typedNickname.toLowerCase();
   if (
     previousUsername !== undefined &&
     getDiscriminator(previousUsername) === FIXED_DISCRIMINATOR

@@ -76,6 +76,21 @@
     text-align: end;
   }
 
+  // Tellomi (ADR-0066 §6.1b): permanent grey rule hint right under the field; briefly reads "converted to lowercase".
+  &__rules {
+    @include mixins.font-body-2;
+    font-size: 12px;
+    line-height: 17px;
+    margin-inline: 6px;
+
+    @include mixins.light-theme {
+      color: variables.$color-gray-60;
+    }
+    @include mixins.dark-theme {
+      color: variables.$color-gray-25;
+    }
+  }
+
   &__error {
     @include mixins.font-body-2;
     margin-block: 8px 12px;

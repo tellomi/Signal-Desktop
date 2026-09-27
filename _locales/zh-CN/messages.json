@@ -8215,8 +8215,14 @@
   "icu:EditUsernameModalBody__username-helper": {
     "messageformat": "用户名始终搭配一组数字。"
   },
-  "icu:EditUsernameModalBody__username-helper--tellomi": {
-    "messageformat": "别人可以用用户名找到你、给你发消息，不需要知道你的手机号。可以用 {min, number}–{max, number} 个字母、数字或下划线，以字母开头。"
+  "icu:EditUsernameModalBody__username-rules--tellomi": {
+    "messageformat": "只能用小写字母、数字和下划线，以字母开头，3–20 位。"
+  },
+  "icu:EditUsernameModalBody__username-lowercased--tellomi": {
+    "messageformat": "已自动转成小写"
+  },
+  "icu:EditUsernameModalBody__username-purpose--tellomi": {
+    "messageformat": "别人可以用用户名找到你、给你发消息，不需要知道你的手机号。"
   },
   "icu:EditUsernameModalBody__learn-more": {
     "messageformat": "了解更多"
