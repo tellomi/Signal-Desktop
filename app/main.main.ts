@@ -134,6 +134,7 @@ import { getAppErrorIcon } from '../ts/util/getAppErrorIcon.node.ts';
 import { promptOSAuth } from '../ts/util/os/promptOSAuthMain.main.ts';
 import { appRelaunch } from '../ts/util/relaunch.main.ts';
 import { getAppRootDir } from '../ts/util/appRootDir.main.ts';
+import { openExternalLink } from './linkOpen.main.ts';
 import { trackHeapSize } from '../ts/util/oomNotifier.node.ts';
 import { sendDummyKeystroke } from './WindowsNotifications.main.ts';
 import { maybeMigrateSafeStorageBackend } from '../ts/util/linuxPasswordStoreMigration.main.ts';
@@ -531,11 +532,12 @@ async function handleUrl(rawTarget: string) {
   const isDevServer = process.env.SIGNAL_ENABLE_HTTP;
 
   if ((protocol === 'http:' || protocol === 'https:') && !isDevServer) {
-    try {
-      await shell.openExternal(rawTarget);
-    } catch (error) {
-      log.error(`Failed to open url: ${Errors.toLogFormat(error)}`);
-    }
+    // Tellomi (ADR-0063 §4.9, §5.5, §6.1): per rust/links' open plan.
+    await openExternalLink({
+      url: rawTarget,
+      i18n: getResolvedMessagesLocale().i18n,
+      window: getMainWindow(),
+    });
   }
 }
 

@@ -1598,6 +1598,15 @@
   "icu:TellomiLinkCard__tellomi_user": {
     "messageformat": "Tellomi 用户"
   },
+  "icu:TellomiLinkOpen__lookalike_message": {
+    "messageformat": "这个链接的域名与 {domain} 相似，但不是它"
+  },
+  "icu:TellomiLinkOpen__open_anyway": {
+    "messageformat": "继续打开"
+  },
+  "icu:TellomiLinkOpen__link_copied": {
+    "messageformat": "已复制链接"
+  },
   "icu:TellomiCrossBorder__dialog_title": {
     "messageformat": "个人信息出境"
   },

@@ -10,7 +10,7 @@ import * as Bytes from '../Bytes.std.ts';
 // The JSON shape is `rust/links/src/classify.rs` `Card`; everything the sender wrote has already
 // been re-checked against this device's registry and the URL in the message body.
 
-const localizedNameSchema = z.object({
+export const localizedNameSchema = z.object({
   'zh-Hans': z.string(),
   'zh-Hant': z.string().optional(),
   en: z.string(),
