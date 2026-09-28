@@ -6,6 +6,7 @@ import type {
   AttachmentForUIType,
   AttachmentWithHydratedData,
 } from '../Attachment.std.ts';
+import type { LinkCardType } from '../../linkPreviews/linkCard.std.ts';
 
 type GenericLinkPreviewType<Image> = {
   title?: string;
@@ -23,7 +24,12 @@ type GenericLinkPreviewType<Image> = {
 };
 
 export type LinkPreviewType = GenericLinkPreviewType<AttachmentType>;
-export type LinkPreviewForUIType = GenericLinkPreviewType<AttachmentForUIType>;
+export type LinkPreviewForUIType =
+  GenericLinkPreviewType<AttachmentForUIType> & {
+    // Tellomi (ADR-0063 §5.1 rule 4): the receiver's decision for this preview, computed in the
+    // data layer at display time; never stored.
+    card?: LinkCardType;
+  };
 export type LinkPreviewWithHydratedData =
   GenericLinkPreviewType<AttachmentWithHydratedData>;
 
