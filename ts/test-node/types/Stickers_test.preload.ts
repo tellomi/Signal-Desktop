@@ -259,4 +259,31 @@ describe('Stickers', () => {
       );
     });
   });
+
+  // Tellomi (tellomi/tellomi#1406): ship no Signal sticker packs by default.
+  describe('blessed packs', () => {
+    const SIGNAL_PACK_IDS = [
+      '42fb75e1827c0c945cfb5ca0975db03c', // Rocky Talk
+      'ccc89a05dc077856b57351e90697976c', // My Daily Life 1
+      'fb535407d2f6497ec074df8b9c51dd1d', // Zozo the French Bulldog
+      '3044281a51307306e5442f2e9070953a', // Croco's Feelings
+      'a2414255948558316f37c1d36c64cd28', // My Daily Life 2
+      '684d2b7bcfc2eec6f57f2e7be0078e0f', // Cozy Season
+      'f19548e5afa38d1ce4f5c3191eba5e30', // Chug the Mouse
+      '9acc9e8aba563d26a4994e69263e3b25', // Bandit the Cat
+      'e61fa0867031597467ccc036cc65d403', // Swoon / Hands
+      'cca32f5b905208b7d0f1e17f23fdc185', // Swoon / Faces
+      'cfc50156556893ef9838069d3890fe49', // Day by Day
+    ];
+
+    it('treats no Signal pack as blessed', () => {
+      for (const packId of SIGNAL_PACK_IDS) {
+        assert.isFalse(Stickers.isBlessedPack(packId), packId);
+      }
+    });
+
+    it('queues no pack downloads on a fresh install', () => {
+      assert.deepEqual(Object.keys(Stickers.capturePacksToDownload({})), []);
+    });
+  });
 });

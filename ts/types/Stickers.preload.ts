@@ -170,6 +170,10 @@ const BLESSED_PACKS: Record<string, BlessedType> = {
   },
 };
 
+export function isBlessedPack(packId: string): boolean {
+  return Object.hasOwn(BLESSED_PACKS, packId);
+}
+
 const DOWNLOAD_PRIORITY_NORMAL = 0;
 const DOWNLOAD_PRIORITY_HIGH = 1;
 
@@ -330,7 +334,8 @@ export function downloadQueuedPacks(): void {
   }
 }
 
-function capturePacksToDownload(
+// Exported for tests.
+export function capturePacksToDownload(
   existingPackLookup: Record<string, StickerPackType>
 ): DownloadMap {
   const toDownload: DownloadMap = Object.create(null);
@@ -1193,7 +1198,7 @@ export async function deletePackReference(
   messageId: string,
   packId: string
 ): Promise<void> {
-  const isBlessed = Boolean(BLESSED_PACKS[packId]);
+  const isBlessed = isBlessedPack(packId);
   if (isBlessed) {
     return;
   }
@@ -1220,7 +1225,7 @@ export async function deletePackReference(
 
 // The override; doesn't honor our ref-counting scheme - just deletes it all.
 async function deletePack(packId: string): Promise<void> {
-  const isBlessed = Boolean(BLESSED_PACKS[packId]);
+  const isBlessed = isBlessedPack(packId);
   if (isBlessed) {
     return;
   }
