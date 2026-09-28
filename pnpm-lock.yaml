@@ -4537,7 +4537,7 @@ packages:
     resolution: {integrity: sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==, tarball: https://registry.npmjs.org/@sideway/pinpoint/-/pinpoint-2.0.0.tgz}
 
   '@signalapp/libsignal-client@file:vendor/signalapp-libsignal-client-0.100.0.tgz':
-    resolution: {integrity: sha512-NWoxe9IN7ZYwENsuA81Xtll68+BRhY7pVgW4GDAzikchZnBRz/cIiRq8n/cIzhC8cOBryTa431biQb4jq/YcTQ==, tarball: file:vendor/signalapp-libsignal-client-0.100.0.tgz}
+    resolution: {integrity: sha512-XeQJyId3p7XqxDNlsecY0YyzMSXfXeowdNVc7+d3DSLkWFzrU2Jg1oq2FMO6Y5ckDGR9ZQG+4fYMOVN80gn6Ng==, tarball: file:vendor/signalapp-libsignal-client-0.100.0.tgz}
     version: 0.100.0
 
   '@signalapp/minimask@1.0.1':
