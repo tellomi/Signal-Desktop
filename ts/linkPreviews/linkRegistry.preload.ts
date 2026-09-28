@@ -7,6 +7,7 @@ import { LRUCache } from 'lru-cache';
 import { LinkRegistry } from '@signalapp/libsignal-client/dist/links.js';
 
 import { createLogger } from '../logging/log.std.ts';
+import { BUNDLED_LINK_REGISTRY } from './bundledLinkRegistry.std.ts';
 import type {
   LinkCardType,
   LinkMessageContext,
@@ -20,9 +21,8 @@ import {
 
 const log = createLogger('linkRegistry');
 
-// ADR-0063 §8.1 row 3: the registry ships with the app (build/links, see package.json
-// build.files). Hot updates for Desktop come later; until then this is the only registry.
-const BUNDLED_LINK_REGISTRY = 'links-2026092702.json';
+// The bundled registry (ADR-0063 §8.1 row 3). Hot updates for Desktop come later; until then this
+// is the only registry.
 
 let registry: LinkRegistry | undefined;
 let loadFailed = false;

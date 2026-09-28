@@ -2126,6 +2126,18 @@
     "messageformat": "Tellomi user",
     "description": "Tellomi (ADR-0063 §4.8, tellomi/tellomi#1421): link card for a tell.cc user link. Subtitle under the @username, or the title itself when the link does not carry a readable username."
   },
+  "icu:TellomiLinkOpen__lookalike_message": {
+    "messageformat": "The domain of this link looks like {domain}, but it isn’t {domain}.",
+    "description": "Tellomi (ADR-0063 §6.1, tellomi/tellomi#1421): warning shown once before opening a link whose domain imitates a well-known one (same Unicode skeleton, different domain). {domain} is the well-known domain it looks like. The user can still open it."
+  },
+  "icu:TellomiLinkOpen__open_anyway": {
+    "messageformat": "Open anyway",
+    "description": "Tellomi (ADR-0063 §6.1, tellomi/tellomi#1421): button in the lookalike-domain warning that opens the link anyway."
+  },
+  "icu:TellomiLinkOpen__link_copied": {
+    "messageformat": "Link copied",
+    "description": "Tellomi (ADR-0063 §5.5, tellomi/tellomi#1421): shown when not even the default browser could open a link, so it was copied instead."
+  },
   "icu:TellomiCrossBorder__dialog_title": {
     "messageformat": "Cross-border transfer of personal information",
     "description": "Tellomi (tellomi/tellomi#1338): read-only cross-border transfer dialog Desktop shows on a blank blocking background before it makes any network connection (before the QR code on a new install; once after upgrading an already-linked install; again after an unlink). Desktop is always a linked device, so consent is collected on the phone and this only informs; wording is fixed by the privacy compliance spec §6.6 and must match iOS / Android. Dialog title."

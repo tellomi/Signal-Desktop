@@ -1,0 +1,34 @@
+{
+  "source": "tellomi/libsignal rust/links/tests/data/bridge-golden.json (tellomi-0.100.0 12ada094): the \"open_plan\" cases, verbatim",
+  "registry": "links-2026092702.json",
+  "open_plan": [
+    {
+      "plan": "{\"steps\":[{\"type\":\"installed_app_only\",\"url\":\"https://www.bilibili.com/video/BV1YDhJ6ZEL6/?spm_id_from=333.1007\"},{\"type\":\"browser\",\"url\":\"https://www.bilibili.com/video/BV1YDhJ6ZEL6/?spm_id_from=333.1007\"},{\"type\":\"copy_link\",\"url\":\"https://www.bilibili.com/video/BV1YDhJ6ZEL6/?spm_id_from=333.1007\"}],\"label\":\"open_link\",\"app_name\":{\"zh-Hans\":\"哔哩哔哩\",\"en\":\"Bilibili\"},\"lookalike\":null}",
+      "url": "https://www.bilibili.com/video/BV1YDhJ6ZEL6/?spm_id_from=333.1007"
+    },
+    {
+      "plan": "{\"steps\":[{\"type\":\"browser\",\"url\":\"https://render.alipay.com/p/f/fd-j5rqp49m/index.html\"},{\"type\":\"copy_link\",\"url\":\"https://render.alipay.com/p/f/fd-j5rqp49m/index.html\"}],\"label\":\"leaves_to\",\"app_name\":{\"zh-Hans\":\"支付宝\",\"en\":\"Alipay\"},\"lookalike\":null}",
+      "url": "https://render.alipay.com/p/f/fd-j5rqp49m/index.html"
+    },
+    {
+      "plan": "{\"steps\":[{\"type\":\"in_app\",\"url\":\"https://tell.cc/g#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"},{\"type\":\"copy_link\",\"url\":\"https://tell.cc/g#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"}],\"label\":\"in_app\",\"app_name\":null,\"lookalike\":null}",
+      "url": "https://tell.cc/g#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "plan": "{\"steps\":[{\"type\":\"browser\",\"url\":\"https://tellomi.app/download/\"},{\"type\":\"copy_link\",\"url\":\"https://tellomi.app/download/\"}],\"label\":\"open_link\",\"app_name\":null,\"lookalike\":null}",
+      "url": "https://tellomi.app/download/"
+    },
+    {
+      "plan": "{\"steps\":[{\"type\":\"installed_app_only\",\"url\":\"https://www.bi1ibili.com/video/BV1YDhJ6ZEL6\"},{\"type\":\"browser\",\"url\":\"https://www.bi1ibili.com/video/BV1YDhJ6ZEL6\"},{\"type\":\"copy_link\",\"url\":\"https://www.bi1ibili.com/video/BV1YDhJ6ZEL6\"}],\"label\":\"open_link\",\"app_name\":null,\"lookalike\":\"bilibili.com\"}",
+      "url": "https://www.bi1ibili.com/video/BV1YDhJ6ZEL6"
+    },
+    {
+      "plan": "{\"steps\":[],\"label\":\"open_link\",\"app_name\":null,\"lookalike\":null}",
+      "url": "intent://scan/#Intent;scheme=zxing;end"
+    },
+    {
+      "plan": "{\"steps\":[{\"type\":\"browser\",\"url\":\"http://www.163.com/\"},{\"type\":\"copy_link\",\"url\":\"http://www.163.com/\"}],\"label\":\"open_link\",\"app_name\":null,\"lookalike\":null}",
+      "url": "http://www.163.com/"
+    }
+  ]
+}
