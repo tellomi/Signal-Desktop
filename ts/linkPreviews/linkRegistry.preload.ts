@@ -29,7 +29,7 @@ let loadFailed = false;
 
 const cardCache = new LRUCache<string, LinkCardType | 'none'>({ max: 1000 });
 
-function getRegistry(): LinkRegistry | undefined {
+export function getLinkRegistry(): LinkRegistry | undefined {
   if (registry || loadFailed) {
     return registry;
   }
@@ -67,7 +67,7 @@ export function classifyLinkPreview(
   body: string,
   context: LinkMessageContext
 ): LinkCardType | undefined {
-  const current = getRegistry();
+  const current = getLinkRegistry();
   if (!current) {
     return undefined;
   }

@@ -13,6 +13,7 @@ import type {
   AddLinkPreviewOptionsType,
 } from '../types/LinkPreview.std.ts';
 import type { LinkPreviewImage as LinkPreviewFetchImage } from '../linkPreviews/linkPreviewFetch.preload.ts';
+import { processLinkPreviewImageBytes } from '../linkPreviews/linkPreviewFetch.preload.ts';
 import * as Errors from '../types/errors.std.ts';
 import type { StickerPackType as StickerPackDBType } from '../sql/Interface.std.ts';
 import type { MIMEType } from '../types/MIME.std.ts';
@@ -48,6 +49,19 @@ import {
   fetchLinkPreviewMetadata,
 } from '../textsecure/WebAPI.preload.ts';
 import { itemStorage } from '../textsecure/Storage.preload.ts';
+import { createProxyAgent } from '../util/createProxyAgent.node.ts';
+import type { ProxyAgent } from '../util/createProxyAgent.node.ts';
+import { performLinkFetch } from '../linkPreviews/linkFetcher.node.ts';
+import { getLinkRegistry } from '../linkPreviews/linkRegistry.preload.ts';
+import {
+  forgetUnreachableLinkHosts,
+  getUnreachableLinkHosts,
+  rememberUnreachableLinkHosts,
+} from '../linkPreviews/linkReachability.std.ts';
+import {
+  runLinkSendJob,
+  toLinkPreviewResult,
+} from '../linkPreviews/linkSendJob.std.ts';
 
 const { debounce, omit } = lodash;
 
@@ -308,10 +322,166 @@ export function sanitizeLinkPreview(
   return base;
 }
 
+async function toImageAttachment(
+  fetchedImage: LinkPreviewFetchImage
+): Promise<LinkPreviewImage | undefined> {
+  let objectUrl: undefined | string;
+  try {
+    // Ensure that this file is either small enough or is resized to meet our
+    //   requirements for attachments
+    const withBlob = await autoScale({
+      contentType: fetchedImage.contentType,
+      file: new Blob([fetchedImage.data], {
+        type: fetchedImage.contentType,
+      }),
+      highQuality: true,
+    });
+
+    const data = await fileToBytes(withBlob.file);
+    objectUrl = URL.createObjectURL(withBlob.file);
+
+    const blurHash = await imageToBlurHash(withBlob.file);
+
+    const dimensions = await VisualAttachment.getImageDimensions({
+      objectUrl,
+      logger: log,
+    });
+
+    return {
+      data,
+      size: data.byteLength,
+      ...dimensions,
+      plaintextHash: Bytes.toHex(sha256(data)),
+      contentType: stringToMIMEType(withBlob.file.type),
+      blurHash,
+    };
+  } catch (error) {
+    // We still want to show the preview if we failed to get an image
+    log.error(
+      'getPreview failed to process image for link preview:',
+      error.message
+    );
+    return undefined;
+  } finally {
+    if (objectUrl) {
+      URL.revokeObjectURL(objectUrl);
+    }
+  }
+}
+
+let linkProxyAgent: Promise<ProxyAgent> | undefined;
+let watchingNetwork = false;
+
+// ADR-0063 §4.3: the reachability memo describes the current network only.
+function forgetUnreachableHostsOnNetworkChange(): void {
+  if (watchingNetwork) {
+    return;
+  }
+  watchingNetwork = true;
+  window.addEventListener('online', forgetUnreachableLinkHosts);
+  window.addEventListener('offline', forgetUnreachableLinkHosts);
+  (
+    navigator as Navigator & { connection?: EventTarget }
+  ).connection?.addEventListener('change', forgetUnreachableLinkHosts);
+}
+
+// Tellomi (ADR-0063 §4.2 / §4.4 / §5.2, tellomi/tellomi#1421): with the link registry loaded,
+// rust/links decides what to fetch and assembles the preview (snapshot + `Preview.rich`); the
+// §4.4 fetcher does the requests; tell.cc objects use the lookups below. `undefined`: no registry,
+// fall back to Signal's own path.
+async function getTellomiPreview(
+  url: string,
+  abortSignal: Readonly<AbortSignal>
+): Promise<null | LinkPreviewResult | undefined> {
+  const registry = getLinkRegistry();
+  if (!registry) {
+    return undefined;
+  }
+  forgetUnreachableHostsOnNetworkChange();
+
+  const { proxyUrl } = window.SignalContext.config;
+  if (proxyUrl && !linkProxyAgent) {
+    linkProxyAgent = createProxyAgent(proxyUrl);
+  }
+  const agent = proxyUrl ? await linkProxyAgent : undefined;
+
+  let firstPartyPreview: null | LinkPreviewResult = null;
+  let fetchedImage: null | LinkPreviewFetchImage = null;
+
+  const outcome = await runLinkSendJob(
+    url,
+    {
+      locale: window.SignalContext.getI18nLocale(),
+      unreachableHosts: getUnreachableLinkHosts(Date.now()),
+      expandShortLinks: true,
+    },
+    {
+      begin: (target, contextJson) => registry.begin(target, contextJson),
+      fetch: request =>
+        performLinkFetch(request, {
+          isAllowedUrl: LinkPreview.shouldPreviewHref,
+          signal: abortSignal,
+          agent,
+        }),
+      firstParty: async kind => {
+        if (kind === 'tellomi.group') {
+          firstPartyPreview = await getGroupPreview(url, abortSignal);
+        } else if (kind === 'tellomi.sticker') {
+          firstPartyPreview = await getStickerPackPreview(url, abortSignal);
+        } else if (kind === 'tellomi.call') {
+          firstPartyPreview = await getCallLinkPreview(url, abortSignal);
+        }
+        return firstPartyPreview
+          ? { ok: true, title: firstPartyPreview.title ?? undefined }
+          : { ok: false };
+      },
+      acceptImage: async (body, contentType) => {
+        fetchedImage = await processLinkPreviewImageBytes(body, contentType);
+        return fetchedImage != null;
+      },
+      now: Date.now,
+    },
+    abortSignal
+  );
+  if (!outcome || abortSignal.aborted) {
+    return null;
+  }
+
+  rememberUnreachableLinkHosts(outcome.newly_unreachable_hosts, Date.now());
+  // Provider, route, level and failure classes only: never the URL (§6.5).
+  log.info(
+    `getTellomiPreview: ${outcome.provider ?? '-'}/${outcome.route ?? '-'} ` +
+      `${outcome.level} [${outcome.failures.join(',')}]`
+  );
+
+  const { preview } = outcome;
+  if (!preview) {
+    return null;
+  }
+
+  let image: LinkPreviewImage | undefined;
+  if (firstPartyPreview) {
+    // Group avatars, sticker covers and call avatars come from the client itself.
+    image = (firstPartyPreview as LinkPreviewResult).image;
+  } else if (preview.image_url && fetchedImage) {
+    image = await toImageAttachment(fetchedImage);
+  }
+  if (abortSignal.aborted) {
+    return null;
+  }
+
+  return toLinkPreviewResult(preview, image);
+}
+
 async function getPreview(
   url: string,
   abortSignal: Readonly<AbortSignal>
 ): Promise<null | LinkPreviewResult> {
+  const tellomiPreview = await getTellomiPreview(url, abortSignal);
+  if (tellomiPreview !== undefined) {
+    return tellomiPreview;
+  }
+
   if (LinkPreview.isStickerPack(url)) {
     return getStickerPackPreview(url, abortSignal);
   }
@@ -363,50 +533,9 @@ async function getPreview(
     fetchedImage = image;
   }
 
-  let imageAttachment: LinkPreviewImage | undefined;
-  if (fetchedImage) {
-    let objectUrl: undefined | string;
-    try {
-      // Ensure that this file is either small enough or is resized to meet our
-      //   requirements for attachments
-      const withBlob = await autoScale({
-        contentType: fetchedImage.contentType,
-        file: new Blob([fetchedImage.data], {
-          type: fetchedImage.contentType,
-        }),
-        highQuality: true,
-      });
-
-      const data = await fileToBytes(withBlob.file);
-      objectUrl = URL.createObjectURL(withBlob.file);
-
-      const blurHash = await imageToBlurHash(withBlob.file);
-
-      const dimensions = await VisualAttachment.getImageDimensions({
-        objectUrl,
-        logger: log,
-      });
-
-      imageAttachment = {
-        data,
-        size: data.byteLength,
-        ...dimensions,
-        plaintextHash: Bytes.toHex(sha256(data)),
-        contentType: stringToMIMEType(withBlob.file.type),
-        blurHash,
-      };
-    } catch (error) {
-      // We still want to show the preview if we failed to get an image
-      log.error(
-        'getPreview failed to process image for link preview:',
-        error.message
-      );
-    } finally {
-      if (objectUrl) {
-        URL.revokeObjectURL(objectUrl);
-      }
-    }
-  }
+  const imageAttachment = fetchedImage
+    ? await toImageAttachment(fetchedImage)
+    : undefined;
 
   if (abortSignal.aborted) {
     return null;
