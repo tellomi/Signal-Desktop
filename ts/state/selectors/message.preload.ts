@@ -47,6 +47,7 @@ import {
   isCallLink,
   isStickerPack,
 } from '../../types/LinkPreview.std.ts';
+import { classifyLinkPreview } from '../../linkPreviews/linkRegistry.preload.ts';
 import type {
   AciString,
   PniString,
@@ -419,17 +420,48 @@ const getPreviewsForMessage = (
   { hasMediaBackups }: { hasMediaBackups: boolean }
 ): Array<LinkPreviewForUIType> => {
   const { preview: previews = [] } = message;
-  return previews.map(preview => ({
-    ...preview,
-    isStickerPack: isStickerPack(preview.url),
-    isCallLink: isCallLink(preview.url),
-    domain: getSafeDomain(preview.url),
-    image: preview.image
-      ? getPropsForAttachment(preview.image, 'preview', message, {
-          hasMediaBackups,
-        })
-      : undefined,
-  }));
+  const body = message.body ?? '';
+  const linkContext = {
+    isStory: message.type === 'story',
+    attachmentContentTypes: (message.attachments ?? []).map(
+      attachment => attachment.contentType
+    ),
+  };
+  return previews.flatMap(preview => {
+    // Tellomi (ADR-0063 §5.1 rule 4): one decision, from rust/links, in the data layer.
+    const card = classifyLinkPreview(
+      {
+        url: preview.url,
+        title: preview.title,
+        description: preview.description,
+        hasImage: preview.image != null,
+        date: preview.date,
+        rich: preview.rich,
+      },
+      body,
+      linkContext
+    );
+    if (card?.level === 'plain_link') {
+      return [];
+    }
+    // Brand shells, user and official cards never show the sender's image (§7.4).
+    const showImage = card?.show_image ?? true;
+    return [
+      {
+        ...preview,
+        isStickerPack: isStickerPack(preview.url),
+        isCallLink: isCallLink(preview.url),
+        domain: getSafeDomain(preview.url),
+        image:
+          preview.image && showImage
+            ? getPropsForAttachment(preview.image, 'preview', message, {
+                hasMediaBackups,
+              })
+            : undefined,
+        card,
+      },
+    ];
+  });
 };
 
 const getReactionsForMessage = (

@@ -1589,6 +1589,15 @@
   "icu:Install__learn-more": {
     "messageformat": "了解更多"
   },
+  "icu:TellomiLinkCard__official_title": {
+    "messageformat": "Tellomi 官網"
+  },
+  "icu:TellomiLinkCard__official_badge": {
+    "messageformat": "官方"
+  },
+  "icu:TellomiLinkCard__tellomi_user": {
+    "messageformat": "Tellomi 用戶"
+  },
   "icu:TellomiCrossBorder__dialog_title": {
     "messageformat": "個人信息出境"
   },

@@ -2114,6 +2114,18 @@
     "messageformat": "Learn more",
     "description": "Button text for learn more button during error screen"
   },
+  "icu:TellomiLinkCard__official_title": {
+    "messageformat": "Tellomi website",
+    "description": "Tellomi (ADR-0063 §4.8, tellomi/tellomi#1421): fixed title of a link card for Tellomi's official website. Shown instead of whatever title the sender's preview carried, next to the official badge; the URL path is shown underneath."
+  },
+  "icu:TellomiLinkCard__official_badge": {
+    "messageformat": "Official",
+    "description": "Tellomi (ADR-0063 §4.8, tellomi/tellomi#1421): small badge on the link card for Tellomi's official website. Only this card ever shows it; the receiver decides from the link itself."
+  },
+  "icu:TellomiLinkCard__tellomi_user": {
+    "messageformat": "Tellomi user",
+    "description": "Tellomi (ADR-0063 §4.8, tellomi/tellomi#1421): link card for a tell.cc user link. Subtitle under the @username, or the title itself when the link does not carry a readable username."
+  },
   "icu:TellomiCrossBorder__dialog_title": {
     "messageformat": "Cross-border transfer of personal information",
     "description": "Tellomi (tellomi/tellomi#1338): read-only cross-border transfer dialog Desktop shows on a blank blocking background before it makes any network connection (before the QR code on a new install; once after upgrading an already-linked install; again after an unlink). Desktop is always a linked device, so consent is collected on the phone and this only informs; wording is fixed by the privacy compliance spec §6.6 and must match iOS / Android. Dialog title."

@@ -53,6 +53,7 @@ import type { RenderingContextType } from '../../types/RenderingContext.d.ts';
 import type { LinkPreviewForUIType } from '../../types/message/LinkPreviews.std.ts';
 import type { MessageStatusType } from '../../types/message/MessageStatus.std.ts';
 import { shouldUseFullSizeLinkPreviewImage } from '../../linkPreviews/shouldUseFullSizeLinkPreviewImage.std.ts';
+import { getLinkPreviewDisplay } from '../../linkPreviews/linkPreviewDisplay.std.ts';
 import type { WidthBreakpoint } from '../_util.std.ts';
 import { OutgoingGiftBadgeModal } from '../OutgoingGiftBadgeModal.dom.tsx';
 import { createLogger } from '../../logging/log.std.ts';
@@ -1608,16 +1609,19 @@ export class Message extends PureComponent<Props, State> {
     const isFullSizeImage = shouldUseFullSizeLinkPreviewImage(first);
 
     const linkPreviewDate = first.date || null;
+    // Tellomi (ADR-0063 §5.1): text per the level rust/links decided in the selector.
+    const display = getLinkPreviewDisplay(first, i18n);
     const title =
-      first.title ||
+      display.title ||
       (first.isCallLink
         ? i18n('icu:calling__call-link-default-title')
         : undefined);
     const description =
-      first.description ||
+      display.description ||
       (first.isCallLink
         ? i18n('icu:message--call-link-description')
         : undefined);
+    const { domain } = display;
 
     const isClickable = this.#areLinksEnabled();
 
@@ -1654,10 +1658,7 @@ export class Message extends PureComponent<Props, State> {
           />
         ) : null}
         <div dir="auto" className="module-message__link-preview__content">
-          {first.image &&
-          first.domain &&
-          previewHasImage &&
-          !isFullSizeImage ? (
+          {first.image && domain && previewHasImage && !isFullSizeImage ? (
             <div
               className={tw(
                 'me-2 inline-block',
@@ -1674,7 +1675,7 @@ export class Message extends PureComponent<Props, State> {
                 curveTopRight={CurveType.Tiny}
                 curveTopLeft={CurveType.Tiny}
                 alt={i18n('icu:previewThumbnail', {
-                  domain: first.domain,
+                  domain,
                 })}
                 height={first.isStickerPack ? 64 : 72}
                 width={first.isStickerPack ? 64 : 72}
@@ -1725,7 +1726,7 @@ export class Message extends PureComponent<Props, State> {
                 </div>
               )}
               <div className={tw('type-body-small text-secondary')}>
-                {first.domain}
+                {domain}
               </div>
             </div>
           ) : (
@@ -1737,7 +1738,18 @@ export class Message extends PureComponent<Props, State> {
                   : null
               )}
             >
-              <div className="module-message__link-preview__title">{title}</div>
+              <div className="module-message__link-preview__title">
+                {title}
+                {display.officialBadge ? (
+                  <span
+                    className={tw(
+                      'ms-1 type-body-small font-semibold text-secondary'
+                    )}
+                  >
+                    {i18n('icu:TellomiLinkCard__official_badge')}
+                  </span>
+                ) : null}
+              </div>
               {description && (
                 <div className="module-message__link-preview__description">
                   {unescape(description)}
@@ -1745,7 +1757,7 @@ export class Message extends PureComponent<Props, State> {
               )}
               <div className="module-message__link-preview__footer">
                 <div className="module-message__link-preview__location">
-                  {first.domain}
+                  {domain}
                 </div>
                 <LinkPreviewDate
                   date={linkPreviewDate}

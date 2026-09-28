@@ -1550,6 +1550,111 @@ LinkPreviewWithoutImage.args = {
   text: 'Be sure to look at https://www.signal.org',
 };
 
+// Tellomi (ADR-0063 §5.1, tellomi/tellomi#1421): the level comes from rust/links in the selector.
+export const LinkCardBrand = Template.bind({});
+LinkCardBrand.args = {
+  previews: [
+    {
+      domain: 'taobao.com',
+      isStickerPack: false,
+      isCallLink: false,
+      title: 'Sender-written title',
+      url: 'https://item.taobao.com/item.htm?id=1',
+      card: {
+        level: 'brand',
+        provider: 'taobao',
+        provider_name: { 'zh-Hans': '淘宝', en: 'Taobao' },
+        kind: null,
+        route: null,
+        title: null,
+        description: null,
+        attrs: [],
+        domain: 'taobao.com',
+        official_badge: false,
+        first_party: null,
+        lookalike: null,
+        show_image: false,
+        tintable: false,
+        payment: false,
+        reason: null,
+      },
+    },
+  ],
+  status: 'sent',
+  text: 'https://item.taobao.com/item.htm?id=1',
+};
+
+// Tellomi (ADR-0063 §5.1, tellomi/tellomi#1421): the level comes from rust/links in the selector.
+export const LinkCardStructured = Template.bind({});
+LinkCardStructured.args = {
+  previews: [
+    {
+      domain: 'bilibili.com',
+      isStickerPack: false,
+      isCallLink: false,
+      title: '《柯洁围棋入门课》_哔哩哔哩bilibili',
+      url: 'https://www.bilibili.com/video/BV1YDhJ6ZEL6',
+      card: {
+        level: 'structured',
+        provider: 'bilibili',
+        provider_name: { 'zh-Hans': '哔哩哔哩', en: 'Bilibili' },
+        kind: 'video',
+        route: null,
+        title: '《柯洁围棋入门课》',
+        description: null,
+        attrs: [
+          { key: 'author', value: '柯洁' },
+          { key: 'duration_ms', value: '3723000' },
+        ],
+        domain: 'bilibili.com',
+        official_badge: false,
+        first_party: null,
+        lookalike: null,
+        show_image: false,
+        tintable: false,
+        payment: false,
+        reason: null,
+      },
+    },
+  ],
+  status: 'sent',
+  text: 'Look https://www.bilibili.com/video/BV1YDhJ6ZEL6',
+};
+
+// Tellomi (ADR-0063 §5.1, tellomi/tellomi#1421): the level comes from rust/links in the selector.
+export const LinkCardOfficial = Template.bind({});
+LinkCardOfficial.args = {
+  previews: [
+    {
+      domain: 'tellomi.app',
+      isStickerPack: false,
+      isCallLink: false,
+      title: 'Account locked, reply with your code',
+      url: 'https://tellomi.app/download',
+      card: {
+        level: 'first_party',
+        provider: 'tellomi',
+        provider_name: null,
+        kind: 'tellomi.official',
+        route: null,
+        title: null,
+        description: null,
+        attrs: [],
+        domain: 'tellomi.app',
+        official_badge: true,
+        first_party: { type: 'official', path: '/download' },
+        lookalike: null,
+        show_image: false,
+        tintable: false,
+        payment: false,
+        reason: null,
+      },
+    },
+  ],
+  status: 'sent',
+  text: 'https://tellomi.app/download',
+};
+
 export const LinkPreviewWithNoDescription = Template.bind({});
 LinkPreviewWithNoDescription.args = {
   previews: [
