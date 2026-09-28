@@ -592,6 +592,34 @@ export async function fetchLinkPreviewImage(
   return processImageResponse(response, abortSignal, logger);
 }
 
+// Tellomi (ADR-0063 §4.4, tellomi/tellomi#1421): the same validation and re-encoding as
+// `processImageResponse`, for bytes the rust/links fetcher already downloaded.
+export async function processLinkPreviewImageBytes(
+  data: Uint8Array<ArrayBuffer>,
+  contentTypeHeader: string
+): Promise<null | LinkPreviewImage> {
+  if (data.byteLength < MIN_IMAGE_CONTENT_LENGTH) {
+    return null;
+  }
+  const { type: contentType } = parseContentType(contentTypeHeader);
+  if (!contentType || !VALID_IMAGE_MIME_TYPES.has(contentType)) {
+    return null;
+  }
+  if (contentType === IMAGE_GIF) {
+    return { data, contentType };
+  }
+  const { blob, contentType: newContentType } = await scaleImageToLevel({
+    fileOrBlobOrURL: new Blob([data], { type: contentType }),
+    contentType,
+    size: data.byteLength,
+    highQuality: false,
+  });
+  return {
+    data: new Uint8Array(await blobToArrayBuffer(blob)),
+    contentType: newContentType,
+  };
+}
+
 async function processImageResponse(
   response: Response,
   abortSignal: AbortSignal,
