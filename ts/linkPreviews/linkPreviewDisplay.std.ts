@@ -7,18 +7,22 @@ import type { LinkCardType } from './linkCard.std.ts';
 import { getLocalizedLinkName } from './linkCard.std.ts';
 
 // What a message bubble shows for a link preview, by the level rust/links decided (ADR-0063
-// §5.1 ladder, card-visual §3–§5). Visual details (layout, tint, action buttons) come with the
-// finalized card spec; this only keeps each level's text honest:
-// - generic: Signal's snapshot, unchanged;
-// - brand: the platform name, no image and no sender-written text;
-// - structured: the validated title and one line of attrs in place of the description;
+// §5.1 ladder), per the finalized card spec (card-visual §3.7 / §3.9 / §3.10, 2026-09-29): a
+// title, one sub line and the domain line. The sender's description never shows.
+// - generic: the snapshot title and the registrable domain;
+// - brand: the platform name and what the link is (the kind's name); no image, no sender text;
+// - structured: the validated title and the kind's sub line; a video's publish date follows the
+//   domain;
 // - first party: text computed from the URL (user, official site), never the sender's.
-// Whether the image shows is decided once, in the selector (`card.show_image`).
+// Layout, tint and action buttons are not decided here. Whether the image shows is decided once,
+// in the selector (`card.show_image`).
 export type LinkPreviewDisplayType = Readonly<{
   title: string | undefined;
   description: string | undefined;
   domain: string | undefined;
   officialBadge: boolean;
+  // A card decided the domain line, so the snapshot's own date is not shown (card-visual §3.4).
+  hideSnapshotDate: boolean;
 }>;
 
 type PreviewForDisplay = Readonly<{
@@ -28,6 +32,56 @@ type PreviewForDisplay = Readonly<{
   card?: LinkCardType;
 }>;
 
+const SEPARATOR = ' · ';
+
+const PLATFORM_NAMES: Readonly<Record<string, string>> = {
+  ios: 'iOS',
+  android: 'Android',
+};
+
+// card-visual §3.10: every kind in links/kinds.toml, reserved ones included (they only ever show
+// on brand shells).
+function getKindName(kind: string, i18n: LocalizerType): string | undefined {
+  switch (kind) {
+    case 'video':
+      return i18n('icu:TellomiLinkCard__kind_video');
+    case 'channel':
+      return i18n('icu:TellomiLinkCard__kind_channel');
+    case 'music.track':
+      return i18n('icu:TellomiLinkCard__kind_music_track');
+    case 'music.album':
+      return i18n('icu:TellomiLinkCard__kind_music_album');
+    case 'music.playlist':
+      return i18n('icu:TellomiLinkCard__kind_music_playlist');
+    case 'place':
+      return i18n('icu:TellomiLinkCard__kind_place');
+    case 'app':
+      return i18n('icu:TellomiLinkCard__kind_app');
+    case 'repo':
+      return i18n('icu:TellomiLinkCard__kind_repo');
+    case 'article':
+      return i18n('icu:TellomiLinkCard__kind_article');
+    case 'product':
+      return i18n('icu:TellomiLinkCard__kind_product');
+    case 'package':
+      return i18n('icu:TellomiLinkCard__kind_package');
+    case 'question':
+      return i18n('icu:TellomiLinkCard__kind_question');
+    case 'deal':
+      return i18n('icu:TellomiLinkCard__kind_deal');
+    case 'ride':
+      return i18n('icu:TellomiLinkCard__kind_ride');
+    case 'payment':
+      return i18n('icu:TellomiLinkCard__kind_payment');
+    case 'web':
+      return i18n('icu:TellomiLinkCard__kind_web');
+    default:
+      return undefined;
+  }
+}
+
+// `m:ss` under an hour, `h:mm:ss` from an hour; zero, negative or not a number shows nothing
+// (card-visual §3.9).
 export function formatDurationMs(
   value: string | undefined
 ): string | undefined {
@@ -63,40 +117,100 @@ export function formatLinkCardDate(
   }).format(timestamp);
 }
 
-// Attrs shown as plain text, in this order (kinds.toml). Counts, dates and coordinates wait for
-// the finalized card spec (they need localized formatting).
-const TEXT_ATTRS = [
-  'author',
-  'artist',
-  'album',
-  'developer',
-  'owner',
-  'name',
-  'address',
-  'platform',
-];
+function parseDate(value: string | undefined): number | undefined {
+  if (!value) {
+    return undefined;
+  }
+  const timestamp = Date.parse(value);
+  return Number.isNaN(timestamp) ? undefined : timestamp;
+}
 
-export function formatLinkCardAttrs(card: LinkCardType): string | undefined {
-  const byKey = new Map(card.attrs.map(({ key, value }) => [key, value]));
-  const parts: Array<string> = [];
-  for (const key of TEXT_ATTRS) {
-    const value = byKey.get(key);
-    if (value) {
-      parts.push(value);
+function joinParts(
+  ...parts: ReadonlyArray<string | undefined>
+): string | undefined {
+  const present = parts.filter((part): part is string => Boolean(part));
+  return present.length > 0 ? present.join(SEPARATOR) : undefined;
+}
+
+function getStructuredDisplay(
+  preview: PreviewForDisplay,
+  card: LinkCardType,
+  i18n: LocalizerType,
+  now: number
+): LinkPreviewDisplayType {
+  const attrs = new Map(card.attrs.map(({ key, value }) => [key, value]));
+  const text = (key: string): string | undefined => attrs.get(key) || undefined;
+  const trackCount = (): string | undefined => {
+    const count = Number(attrs.get('track_count'));
+    return Number.isSafeInteger(count) && count > 0
+      ? i18n('icu:TellomiLinkCard__track_count', { count })
+      : undefined;
+  };
+  const title = card.title || preview.title || undefined;
+  const domain = card.domain ?? preview.domain;
+  const withLine = (
+    description: string | undefined
+  ): LinkPreviewDisplayType => ({
+    title,
+    description,
+    domain,
+    officialBadge: false,
+    hideSnapshotDate: true,
+  });
+
+  switch (card.kind) {
+    case 'video': {
+      const published = parseDate(text('published_at'));
+      return {
+        ...withLine(
+          joinParts(text('author'), formatDurationMs(text('duration_ms')))
+        ),
+        domain:
+          domain && published !== undefined
+            ? `${domain}${SEPARATOR}${formatLinkCardDate(published, i18n.getLocale(), now)}`
+            : domain,
+      };
     }
+    case 'channel':
+      return withLine(joinParts(text('author')));
+    case 'music.track':
+      return withLine(
+        joinParts(
+          text('artist'),
+          text('album'),
+          formatDurationMs(text('duration_ms'))
+        )
+      );
+    case 'music.album':
+      return withLine(joinParts(text('artist'), trackCount()));
+    case 'music.playlist':
+      return withLine(joinParts(text('author'), trackCount()));
+    case 'app': {
+      const platform = text('platform');
+      return withLine(
+        joinParts(
+          text('developer'),
+          platform ? PLATFORM_NAMES[platform] : undefined
+        )
+      );
+    }
+    case 'repo':
+      return withLine(joinParts(text('owner')));
+    case 'place':
+      return {
+        ...withLine(joinParts(text('address'))),
+        title: text('name') || title || i18n('icu:TellomiLinkCard__place'),
+      };
+    default:
+      // A kind this build does not know: show it like generic.
+      return withLine(undefined);
   }
-  const duration = byKey.get('duration_ms');
-  const formatted = duration ? formatDurationMs(duration) : undefined;
-  if (formatted) {
-    parts.push(formatted);
-  }
-  return parts.length > 0 ? parts.join(' · ') : undefined;
 }
 
 export function getLinkPreviewDisplay(
   preview: PreviewForDisplay,
   i18n: LocalizerType,
-  _now: number = Date.now()
+  now: number = Date.now()
 ): LinkPreviewDisplayType {
   const { card } = preview;
   const snapshot: LinkPreviewDisplayType = {
@@ -104,6 +218,7 @@ export function getLinkPreviewDisplay(
     description: preview.description,
     domain: card?.domain ?? preview.domain,
     officialBadge: false,
+    hideSnapshotDate: false,
   };
   if (!card) {
     return { ...snapshot, domain: preview.domain };
@@ -111,24 +226,27 @@ export function getLinkPreviewDisplay(
 
   switch (card.level) {
     case 'plain_link':
-    case 'generic':
       return snapshot;
+    case 'generic':
+      return {
+        title: card.title || preview.title || undefined,
+        description: undefined,
+        domain: snapshot.domain,
+        officialBadge: false,
+        hideSnapshotDate: true,
+      };
     case 'brand':
       return {
         title: card.provider_name
           ? getLocalizedLinkName(card.provider_name, i18n.getLocale())
           : undefined,
-        description: undefined,
+        description: card.kind ? getKindName(card.kind, i18n) : undefined,
         domain: snapshot.domain,
         officialBadge: false,
+        hideSnapshotDate: true,
       };
     case 'structured':
-      return {
-        title: card.title ?? preview.title,
-        description: formatLinkCardAttrs(card),
-        domain: snapshot.domain,
-        officialBadge: false,
-      };
+      return getStructuredDisplay(preview, card, i18n, now);
     case 'first_party': {
       const firstParty = card.first_party;
       switch (firstParty?.type) {
@@ -138,6 +256,7 @@ export function getLinkPreviewDisplay(
             description: firstParty.path,
             domain: snapshot.domain,
             officialBadge: card.official_badge,
+            hideSnapshotDate: true,
           };
         case 'user': {
           const user = i18n('icu:TellomiLinkCard__tellomi_user');
@@ -146,6 +265,7 @@ export function getLinkPreviewDisplay(
             description: firstParty.display ? user : undefined,
             domain: snapshot.domain,
             officialBadge: false,
+            hideSnapshotDate: true,
           };
         }
         case 'group':
