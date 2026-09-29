@@ -3,15 +3,24 @@
 
 import type { LinkPreviewType } from '../types/message/LinkPreviews.std.ts';
 import { isImageAttachment } from '../util/Attachment.std.ts';
+import type { LinkCardLayoutType } from './linkCardVisual.std.ts';
 
 const MINIMUM_FULL_SIZE_DIMENSION = 200;
 
 export function shouldUseFullSizeLinkPreviewImage({
   isStickerPack,
   image,
-}: Readonly<LinkPreviewType>): boolean {
+  layout,
+}: Readonly<LinkPreviewType> &
+  Readonly<{ layout?: LinkCardLayoutType }>): boolean {
   if (isStickerPack || !image || !isImageAttachment(image)) {
     return false;
+  }
+
+  // Tellomi (card-visual §3.2): when rust/links decided the card's shape, that decision stands,
+  // with no threshold of our own.
+  if (layout) {
+    return layout === 'large_image';
   }
 
   const { width, height } = image;

@@ -134,4 +134,64 @@ describe('shouldUseFullSizeLinkPreviewImage', () => {
       })
     );
   });
+
+  // Tellomi (card-visual §3.2): rust/links decides the card's shape; when it did, no threshold of
+  // ours overrides it.
+  describe('when rust/links decided the layout', () => {
+    it('is a large image only for the large_image layout', () => {
+      assert.isTrue(
+        shouldUseFullSizeLinkPreviewImage({
+          ...baseLinkPreview,
+          image: fakeAttachment({ width: 1200, height: 630 }),
+          layout: 'large_image',
+        })
+      );
+    });
+
+    it('is not, for an image the old rule would have made full size, when it is an icon', () => {
+      const image = fakeAttachment({ width: 320, height: 240 });
+      assert.isTrue(
+        shouldUseFullSizeLinkPreviewImage({ ...baseLinkPreview, image })
+      );
+      assert.isFalse(
+        shouldUseFullSizeLinkPreviewImage({
+          ...baseLinkPreview,
+          image,
+          layout: 'icon',
+        })
+      );
+    });
+
+    it('is not for the other shapes, or a sticker pack, or a non-image', () => {
+      const image = fakeAttachment({ width: 1200, height: 630 });
+      for (const layout of ['first_party', 'icon', 'no_image'] as const) {
+        assert.isFalse(
+          shouldUseFullSizeLinkPreviewImage({
+            ...baseLinkPreview,
+            image,
+            layout,
+          })
+        );
+      }
+      assert.isFalse(
+        shouldUseFullSizeLinkPreviewImage({
+          ...baseLinkPreview,
+          isStickerPack: true,
+          image,
+          layout: 'large_image',
+        })
+      );
+      assert.isFalse(
+        shouldUseFullSizeLinkPreviewImage({
+          ...baseLinkPreview,
+          image: fakeAttachment({
+            contentType: VIDEO_MP4,
+            width: 1200,
+            height: 630,
+          }),
+          layout: 'large_image',
+        })
+      );
+    });
+  });
 });

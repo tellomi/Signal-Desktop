@@ -4,7 +4,11 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { LRUCache } from 'lru-cache';
-import { LinkRegistry } from '@signalapp/libsignal-client/dist/links.js';
+import {
+  LinkRegistry,
+  layout as bridgeLayout,
+  tint as bridgeTint,
+} from '@signalapp/libsignal-client/dist/links.js';
 
 import { createLogger } from '../logging/log.std.ts';
 import { BUNDLED_LINK_REGISTRY } from './bundledLinkRegistry.std.ts';
@@ -18,6 +22,14 @@ import {
   toMessageContextJson,
   toPreviewInputJson,
 } from './linkCard.std.ts';
+import type {
+  LinkCardLayoutType,
+  LinkCardTintType,
+} from './linkCardVisual.std.ts';
+import {
+  parseLinkCardLayout,
+  parseLinkCardTint,
+} from './linkCardVisual.std.ts';
 import { getLinkErrorKind } from './linkLog.std.ts';
 import { parseLinkOpenPlan } from './linkOpenPlan.std.ts';
 
@@ -126,4 +138,50 @@ export function getLinkLookalike(url: string): string | undefined {
   }
   lookalikeCache.set(key, lookalike ?? '');
   return lookalike;
+}
+
+// Which of the four card shapes (card-visual §3.2), from the pixel size of the image the card shows
+// (0 × 0 when it shows none) and its kind and level: one function in rust/links for all platforms,
+// so no threshold lives here. `undefined` when it cannot be asked: the card keeps its default look.
+export function getLinkCardLayout(
+  imageWidth: number,
+  imageHeight: number,
+  kind: string,
+  level: string
+): LinkCardLayoutType | undefined {
+  if (!isPixelSize(imageWidth) || !isPixelSize(imageHeight)) {
+    return undefined;
+  }
+  try {
+    return parseLinkCardLayout(
+      bridgeLayout(imageWidth, imageHeight, kind, level)
+    );
+  } catch (error) {
+    log.warn(`layout failed: ${getLinkErrorKind(error)}`);
+    return undefined;
+  }
+}
+
+// The card's colours from its own image (card-visual §3.3), decoded to RGBA and reduced to
+// `width` × `height` by the caller. Never called for a first-party or payment card, or inside a
+// message request (`shouldTintLinkCard`). `undefined` when it cannot be asked.
+export function tintLinkCardImage(
+  layout: LinkCardLayoutType,
+  width: number,
+  height: number,
+  rgba: Uint8Array<ArrayBuffer>
+): LinkCardTintType | undefined {
+  if (!isPixelSize(width) || !isPixelSize(height)) {
+    return undefined;
+  }
+  try {
+    return parseLinkCardTint(bridgeTint(layout, width, height, rgba));
+  } catch (error) {
+    log.warn(`tint failed: ${getLinkErrorKind(error)}`);
+    return undefined;
+  }
+}
+
+function isPixelSize(value: number): boolean {
+  return Number.isInteger(value) && value >= 0 && value <= 0xffffffff;
 }

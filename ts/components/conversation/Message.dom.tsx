@@ -53,6 +53,9 @@ import type { RenderingContextType } from '../../types/RenderingContext.d.ts';
 import type { LinkPreviewForUIType } from '../../types/message/LinkPreviews.std.ts';
 import type { MessageStatusType } from '../../types/message/MessageStatus.std.ts';
 import { shouldUseFullSizeLinkPreviewImage } from '../../linkPreviews/shouldUseFullSizeLinkPreviewImage.std.ts';
+import { shouldTintLinkCard } from '../../linkPreviews/linkCardVisual.std.ts';
+import type { GetLinkCardTintType } from './LinkPreviewTintFrame.dom.tsx';
+import { LinkPreviewTintFrame } from './LinkPreviewTintFrame.dom.tsx';
 import { getLinkPreviewDisplay } from '../../linkPreviews/linkPreviewDisplay.std.ts';
 import type { FirstPartyCardDisplayType } from '../../linkPreviews/firstPartyCard.std.ts';
 import { getFirstPartyCardDisplay } from '../../linkPreviews/firstPartyCard.std.ts';
@@ -401,6 +404,8 @@ export type PropsActions = {
   showExpiredIncomingTapToViewToast: () => unknown;
   showExpiredOutgoingTapToViewToast: () => unknown;
   showMediaNoLongerAvailableToast: () => unknown;
+  // Tellomi (card-visual §3.3): the card's colours from its own image, asked of rust/links.
+  getLinkCardTint?: GetLinkCardTintType;
   showTapToViewNotAvailableModal: (
     props: TapToViewNotAvailableModalData
   ) => void;
@@ -1594,6 +1599,8 @@ export class Message extends PureComponent<Props, State> {
       shouldCollapseAbove,
       theme,
       isLinkCardOnly,
+      getLinkCardTint,
+      isMessageRequestAccepted,
     } = this.props;
 
     // Attachments take precedence over Link Previews
@@ -1641,6 +1648,15 @@ export class Message extends PureComponent<Props, State> {
       : undefined;
 
     const isClickable = this.#areLinksEnabled();
+
+    // Tellomi (card-visual §3.2 / §3.3): the shape rust/links decided, and the tint from the card's
+    // own image, never in a message request.
+    const isIconLayout = first.layout === 'icon';
+    const shouldTint = shouldTintLinkCard({
+      card: first.card,
+      layout: first.layout,
+      isMessageRequest: !isMessageRequestAccepted,
+    });
 
     const className = classNames(
       'module-message__link-preview',
@@ -1698,7 +1714,11 @@ export class Message extends PureComponent<Props, State> {
           />
         ) : null}
         <div dir="auto" className="module-message__link-preview__content">
-          {first.image && domain && previewHasImage && !isFullSizeImage ? (
+          {first.image &&
+          domain &&
+          previewHasImage &&
+          !isFullSizeImage &&
+          !isIconLayout ? (
             <div
               className={tw(
                 'me-2 inline-block',
@@ -1773,7 +1793,7 @@ export class Message extends PureComponent<Props, State> {
             <div
               className={classNames(
                 'module-message__link-preview__text',
-                previewHasImage && !isFullSizeImage
+                previewHasImage && !isFullSizeImage && !isIconLayout
                   ? 'module-message__link-preview__text--with-icon'
                   : null
               )}
@@ -1806,6 +1826,45 @@ export class Message extends PureComponent<Props, State> {
               </div>
             </div>
           )}
+          {/* Tellomi (card-visual §3.2): an icon card has its 44px icon at the end of the text. */}
+          {first.image &&
+          domain &&
+          previewHasImage &&
+          !isFullSizeImage &&
+          isIconLayout ? (
+            <div className="module-message__link-preview__icon-image">
+              <Image
+                noBorder
+                noBackground
+                curveBottomLeft={CurveType.Small}
+                curveBottomRight={CurveType.Small}
+                curveTopRight={CurveType.Small}
+                curveTopLeft={CurveType.Small}
+                alt={i18n('icu:previewThumbnail', {
+                  domain,
+                })}
+                height={44}
+                width={44}
+                url={first.image.url}
+                attachment={first.image}
+                blurHash={first.image.blurHash}
+                onError={this.handleImageError}
+                i18n={i18n}
+                showMediaNoLongerAvailableToast={
+                  showMediaNoLongerAvailableToast
+                }
+                showVisualAttachment={() => {
+                  openLinkInWebBrowser(first.url);
+                }}
+                startDownload={() => {
+                  kickOffAttachmentDownload({ messageId: id });
+                }}
+                cancelDownload={() => {
+                  cancelAttachmentDownload({ messageId: id });
+                }}
+              />
+            </div>
+          ) : null}
         </div>
       </>
     );
@@ -1816,8 +1875,18 @@ export class Message extends PureComponent<Props, State> {
     // The link text is not shown, so the card says where it goes.
     const tooltip = isLinkCardOnly ? first.url : undefined;
 
+    // The frame carries the card's tint, when there is one (card-visual §3.3).
+    const frameProps = {
+      enabled: shouldTint,
+      getLinkCardTint,
+      imageUrl: first.image?.url,
+      layout: first.layout,
+      theme,
+    };
+
     return isClickable ? (
-      <div
+      <LinkPreviewTintFrame
+        {...frameProps}
         role="link"
         tabIndex={0}
         className={className}
@@ -1838,11 +1907,15 @@ export class Message extends PureComponent<Props, State> {
         }}
       >
         {contents}
-      </div>
+      </LinkPreviewTintFrame>
     ) : (
-      <div className={className} title={tooltip}>
+      <LinkPreviewTintFrame
+        {...frameProps}
+        className={className}
+        title={tooltip}
+      >
         {contents}
-      </div>
+      </LinkPreviewTintFrame>
     );
   }
 
