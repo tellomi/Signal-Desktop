@@ -1760,7 +1760,7 @@ export class Message extends PureComponent<Props, State> {
                   {domain}
                 </div>
                 <LinkPreviewDate
-                  date={linkPreviewDate}
+                  date={display.hideSnapshotDate ? null : linkPreviewDate}
                   className="module-message__link-preview__date"
                 />
               </div>

@@ -1598,6 +1598,60 @@
   "icu:TellomiLinkCard__tellomi_user": {
     "messageformat": "Tellomi 用戶"
   },
+  "icu:TellomiLinkCard__place": {
+    "messageformat": "位置"
+  },
+  "icu:TellomiLinkCard__kind_video": {
+    "messageformat": "影片"
+  },
+  "icu:TellomiLinkCard__kind_channel": {
+    "messageformat": "頻道"
+  },
+  "icu:TellomiLinkCard__kind_music_track": {
+    "messageformat": "單曲"
+  },
+  "icu:TellomiLinkCard__kind_music_album": {
+    "messageformat": "專輯"
+  },
+  "icu:TellomiLinkCard__kind_music_playlist": {
+    "messageformat": "歌單"
+  },
+  "icu:TellomiLinkCard__kind_place": {
+    "messageformat": "地點"
+  },
+  "icu:TellomiLinkCard__kind_app": {
+    "messageformat": "應用程式"
+  },
+  "icu:TellomiLinkCard__kind_repo": {
+    "messageformat": "程式碼倉庫"
+  },
+  "icu:TellomiLinkCard__kind_article": {
+    "messageformat": "文章"
+  },
+  "icu:TellomiLinkCard__kind_product": {
+    "messageformat": "商品"
+  },
+  "icu:TellomiLinkCard__kind_package": {
+    "messageformat": "包裹"
+  },
+  "icu:TellomiLinkCard__kind_question": {
+    "messageformat": "問答"
+  },
+  "icu:TellomiLinkCard__kind_deal": {
+    "messageformat": "團購"
+  },
+  "icu:TellomiLinkCard__kind_ride": {
+    "messageformat": "行程"
+  },
+  "icu:TellomiLinkCard__kind_payment": {
+    "messageformat": "付款"
+  },
+  "icu:TellomiLinkCard__kind_web": {
+    "messageformat": "網頁"
+  },
+  "icu:TellomiLinkCard__track_count": {
+    "messageformat": "{count, plural, other {# 首}}"
+  },
   "icu:TellomiLinkOpen__lookalike_message": {
     "messageformat": "這個連結的域名與 {domain} 相似，但不是它"
   },
