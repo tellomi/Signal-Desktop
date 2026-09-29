@@ -2198,6 +2198,50 @@
     "messageformat": "{count, plural, one {# track} other {# tracks}}",
     "description": "Tellomi (card-visual §3.9, tellomi/tellomi#1421): number of tracks in an album or playlist link card."
   },
+  "icu:TellomiLinkCard__action_message": {
+    "messageformat": "Message",
+    "description": "Tellomi (card-visual §5.2 / §3.10, tellomi/tellomi#1421): button at the bottom of a link card for a Tellomi user: start a chat with them."
+  },
+  "icu:TellomiLinkCard__action_join_group": {
+    "messageformat": "Join Group",
+    "description": "Tellomi (card-visual §5.2 / §3.10, tellomi/tellomi#1421): button at the bottom of a link card for a Tellomi group the reader is not in yet."
+  },
+  "icu:TellomiLinkCard__action_open": {
+    "messageformat": "Open",
+    "description": "Tellomi (card-visual §5.2 / §3.10, tellomi/tellomi#1421): button at the bottom of a link card for a Tellomi group the reader is already in, or for the Tellomi website."
+  },
+  "icu:TellomiLinkCard__action_join_call": {
+    "messageformat": "Join Call",
+    "description": "Tellomi (card-visual §5.2 / §3.10, tellomi/tellomi#1421): button at the bottom of a link card for a Tellomi call link."
+  },
+  "icu:TellomiLinkCard__action_add_stickers": {
+    "messageformat": "Add",
+    "description": "Tellomi (card-visual §5.2 / §3.10, tellomi/tellomi#1421): button at the bottom of a link card for a sticker pack the reader has not added yet."
+  },
+  "icu:TellomiLinkCard__action_view_stickers": {
+    "messageformat": "View",
+    "description": "Tellomi (card-visual §5.2 / §3.10, tellomi/tellomi#1421): button at the bottom of a link card for a sticker pack the reader has already added."
+  },
+  "icu:TellomiLinkCard__member_count": {
+    "messageformat": "{count, plural, one {# member} other {# members}}",
+    "description": "Tellomi (card-visual §5.2 / §3.10, tellomi/tellomi#1421): subtitle of a link card for a Tellomi group: how many members it has."
+  },
+  "icu:TellomiLinkCard__group_joined": {
+    "messageformat": "You’re a member",
+    "description": "Tellomi (card-visual §5.2 / §3.10, tellomi/tellomi#1421): subtitle of a link card for a Tellomi group the reader is already in."
+  },
+  "icu:TellomiLinkCard__sticker_count": {
+    "messageformat": "{count, plural, one {# sticker} other {# stickers}}",
+    "description": "Tellomi (card-visual §5.2 / §3.10, tellomi/tellomi#1421): subtitle of a link card for a sticker pack: how many stickers it has."
+  },
+  "icu:TellomiLinkCard__stickers_added": {
+    "messageformat": "Added",
+    "description": "Tellomi (card-visual §5.2 / §3.10, tellomi/tellomi#1421): subtitle of a link card for a sticker pack the reader has already added."
+  },
+  "icu:TellomiLinkCard__call_title": {
+    "messageformat": "Tellomi call",
+    "description": "Tellomi (card-visual §5.2 / §3.10, tellomi/tellomi#1421): title of a link card for a call link that has no room name."
+  },
   "icu:TellomiLinks__link-previews-description": {
     "messageformat": "When on, your device visits the website when you send a link.",
     "description": "Tellomi (ADR-0063 §8.1 row 9, tellomi/tellomi#1421): description under the \"Generate link previews\" setting. Says plainly that the sender's device contacts the linked website. Same wording on Android and iOS."

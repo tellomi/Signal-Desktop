@@ -1652,6 +1652,39 @@
   "icu:TellomiLinkCard__track_count": {
     "messageformat": "{count, plural, other {# 首}}"
   },
+  "icu:TellomiLinkCard__action_message": {
+    "messageformat": "傳送訊息"
+  },
+  "icu:TellomiLinkCard__action_join_group": {
+    "messageformat": "加入群組"
+  },
+  "icu:TellomiLinkCard__action_open": {
+    "messageformat": "開啟"
+  },
+  "icu:TellomiLinkCard__action_join_call": {
+    "messageformat": "加入通話"
+  },
+  "icu:TellomiLinkCard__action_add_stickers": {
+    "messageformat": "新增"
+  },
+  "icu:TellomiLinkCard__action_view_stickers": {
+    "messageformat": "查看"
+  },
+  "icu:TellomiLinkCard__member_count": {
+    "messageformat": "{count, plural, other {# 個成員}}"
+  },
+  "icu:TellomiLinkCard__group_joined": {
+    "messageformat": "你已加入"
+  },
+  "icu:TellomiLinkCard__sticker_count": {
+    "messageformat": "{count, plural, other {# 個貼圖}}"
+  },
+  "icu:TellomiLinkCard__stickers_added": {
+    "messageformat": "已新增"
+  },
+  "icu:TellomiLinkCard__call_title": {
+    "messageformat": "Tellomi 通話"
+  },
   "icu:TellomiLinks__link-previews-description": {
     "messageformat": "開啟後，傳送連結時你的裝置會存取該網站。"
   },

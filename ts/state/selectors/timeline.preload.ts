@@ -48,6 +48,8 @@ import type { ConversationType } from '../ducks/conversations.preload.ts';
 import { missingCaseError } from '../../util/missingCaseError.std.ts';
 import { getGroupMemberships } from '../../util/getGroupMemberships.dom.ts';
 import type { ContactNameColorType } from '../../types/Colors.std.ts';
+import type { LinkLocalLookupType } from '../../linkPreviews/firstPartyLocal.node.ts';
+import { getOwn } from '../../util/getOwn.std.ts';
 
 // A no-op lookup for non-story-reply items. Only story replies should take a
 // dependency on the stories slice
@@ -87,6 +89,25 @@ const getTimelineItem = (
   const getStoryReplyAttachment = message.storyReplyContext
     ? getStoryReplyAttachmentSelector(state)
     : noStoryReplyAttachment;
+  // Tellomi (card-visual §5.2): read lazily, so an item only watches the entries its first-party
+  // link card looks at (a username, a group, a sticker pack), not the whole slices.
+  const linkLocalLookup: LinkLocalLookupType = {
+    ourAci,
+    getConversationByUsername: username => {
+      const byUsername = state.conversations.conversationsByUsername;
+      return (
+        getOwn(byUsername, username) ??
+        // Older data can keep capitals (ADR-0066 §6.1b); usernames match case-insensitively.
+        Object.values(byUsername).find(
+          conversation => conversation.username?.toLowerCase() === username
+        )
+      );
+    },
+    getConversationByGroupId: groupId =>
+      getOwn(state.conversations.conversationsByGroupId, groupId),
+    isStickerPackInstalled: packId =>
+      getOwn(state.stickers.packs, packId)?.status === 'installed',
+  };
 
   return getPropsForBubble(message, {
     conversationSelector,
@@ -107,6 +128,7 @@ const getTimelineItem = (
     defaultConversationColor,
     hasMediaBackups,
     getStoryReplyAttachment,
+    linkLocalLookup,
   });
 };
 

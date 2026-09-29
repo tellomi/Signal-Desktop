@@ -54,6 +54,8 @@ import type { LinkPreviewForUIType } from '../../types/message/LinkPreviews.std.
 import type { MessageStatusType } from '../../types/message/MessageStatus.std.ts';
 import { shouldUseFullSizeLinkPreviewImage } from '../../linkPreviews/shouldUseFullSizeLinkPreviewImage.std.ts';
 import { getLinkPreviewDisplay } from '../../linkPreviews/linkPreviewDisplay.std.ts';
+import type { FirstPartyCardDisplayType } from '../../linkPreviews/firstPartyCard.std.ts';
+import { getFirstPartyCardDisplay } from '../../linkPreviews/firstPartyCard.std.ts';
 import type { WidthBreakpoint } from '../_util.std.ts';
 import { OutgoingGiftBadgeModal } from '../OutgoingGiftBadgeModal.dom.tsx';
 import { createLogger } from '../../logging/log.std.ts';
@@ -1633,6 +1635,10 @@ export class Message extends PureComponent<Props, State> {
     const { domain } = display;
     // Tellomi (card-visual §3.5 / §3.7): the no-image card of a message that is just a link.
     const isPlainLink = first.card?.level === 'plain_link';
+    // Tellomi (card-visual §5.2): a Tellomi object: avatar or cover, title, subtitle, action.
+    const firstPartyCard = first.card
+      ? getFirstPartyCardDisplay(first.card, first.firstPartyLocal, i18n)
+      : undefined;
 
     const isClickable = this.#areLinksEnabled();
 
@@ -1649,7 +1655,7 @@ export class Message extends PureComponent<Props, State> {
           !this.#shouldShowActionButton(),
       }
     );
-    const contents = isPlainLink ? (
+    const snapshotContents = isPlainLink ? (
       <div dir="auto" className="module-message__link-preview__content">
         <div className="module-message__link-preview__text">
           <div
@@ -1803,6 +1809,9 @@ export class Message extends PureComponent<Props, State> {
         </div>
       </>
     );
+    const contents = firstPartyCard
+      ? this.#renderFirstPartyLinkCard(first, firstPartyCard)
+      : snapshotContents;
 
     // The link text is not shown, so the card says where it goes.
     const tooltip = isLinkCardOnly ? first.url : undefined;
@@ -1833,6 +1842,140 @@ export class Message extends PureComponent<Props, State> {
     ) : (
       <div className={className} title={tooltip}>
         {contents}
+      </div>
+    );
+  }
+
+  // Tellomi (card-visual §5.2, ADR-0063 §4.8): the card of a Tellomi object, drawn from the URL
+  // and this device's own data. The action at the bottom is part of the card, which opens the
+  // link like any card (tell.cc links open inside the app); like Telegram's, it sits under a
+  // hairline across the card.
+  #renderFirstPartyLinkCard(
+    preview: LinkPreviewForUIType,
+    card: FirstPartyCardDisplayType
+  ): JSX.Element {
+    const {
+      i18n,
+      id,
+      kickOffAttachmentDownload,
+      cancelAttachmentDownload,
+      showMediaNoLongerAvailableToast,
+    } = this.props;
+    const knownUser = preview.firstPartyLocal?.knownUser;
+
+    let avatar: JSX.Element;
+    switch (card.type) {
+      case 'user':
+        avatar = (
+          <Avatar
+            avatarUrl={knownUser?.avatarUrl}
+            avatarPlaceholderGradient={knownUser?.avatarPlaceholderGradient}
+            badge={undefined}
+            color={knownUser?.color}
+            conversationType="direct"
+            hasAvatar={knownUser?.hasAvatar}
+            i18n={i18n}
+            phoneNumber={knownUser?.phoneNumber}
+            profileName={knownUser?.profileName}
+            size={AvatarSize.FIFTY_TWO}
+            title={card.title}
+          />
+        );
+        break;
+      case 'group':
+        avatar = (
+          <Avatar
+            avatarUrl={preview.image?.url}
+            badge={undefined}
+            conversationType="group"
+            i18n={i18n}
+            size={AvatarSize.FIFTY_TWO}
+            title={card.title}
+          />
+        );
+        break;
+      case 'call':
+        avatar = (
+          <Avatar
+            badge={undefined}
+            color={getColorForCallLink(getKeyFromCallLink(preview.url))}
+            conversationType="callLink"
+            i18n={i18n}
+            size={AvatarSize.FIFTY_TWO}
+            title={card.title}
+          />
+        );
+        break;
+      case 'sticker':
+        avatar =
+          preview.image && isImageAttachment(preview.image) ? (
+            <Image
+              noBorder
+              noBackground
+              curveBottomLeft={CurveType.Small}
+              curveBottomRight={CurveType.Small}
+              curveTopLeft={CurveType.Small}
+              curveTopRight={CurveType.Small}
+              alt={card.title}
+              height={52}
+              width={52}
+              url={preview.image.url}
+              attachment={preview.image}
+              blurHash={preview.image.blurHash}
+              onError={this.handleImageError}
+              i18n={i18n}
+              showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
+              startDownload={() => {
+                kickOffAttachmentDownload({ messageId: id });
+              }}
+              cancelDownload={() => {
+                cancelAttachmentDownload({ messageId: id });
+              }}
+            />
+          ) : (
+            <div className="module-message__link-preview__first-party-placeholder">
+              <AxoSymbol.Icon size={24} symbol="sticker" label={null} />
+            </div>
+          );
+        break;
+      case 'official':
+        avatar = (
+          <div className="module-message__link-preview__first-party-logo" />
+        );
+        break;
+      default:
+        throw missingCaseError(card.type);
+    }
+
+    return (
+      <div className="module-message__link-preview__first-party">
+        <div dir="auto" className="module-message__link-preview__content">
+          <div className="module-message__link-preview__first-party-avatar">
+            {avatar}
+          </div>
+          <div className="module-message__link-preview__text">
+            <div className="module-message__link-preview__title">
+              {card.title}
+              {card.officialBadge ? (
+                <span
+                  className={tw(
+                    'ms-1 type-body-small font-semibold text-secondary'
+                  )}
+                >
+                  {i18n('icu:TellomiLinkCard__official_badge')}
+                </span>
+              ) : null}
+            </div>
+            {card.subtitle ? (
+              <div className="module-message__link-preview__first-party-subtitle">
+                {card.subtitle}
+              </div>
+            ) : null}
+          </div>
+        </div>
+        <div className="module-message__link-preview__first-party-action">
+          {card.action}
+        </div>
       </div>
     );
   }
@@ -2595,6 +2738,10 @@ export class Message extends PureComponent<Props, State> {
 
     const onlyPreview = previews[0];
     strictAssert(onlyPreview, 'Missing onlyPreview');
+    // Tellomi (card-visual §5.2): a first-party card has its own action at the bottom.
+    if (onlyPreview.card?.level === 'first_party') {
+      return false;
+    }
     return (
       Boolean(onlyPreview.isCallLink) || Boolean(onlyPreview.isStickerPack)
     );
