@@ -12,6 +12,7 @@ import { createLogger } from '../ts/logging/log.std.ts';
 import type { LocalizerType } from '../ts/types/Util.std.ts';
 import { getAppRootDir } from '../ts/util/appRootDir.main.ts';
 import { BUNDLED_LINK_REGISTRY } from '../ts/linkPreviews/bundledLinkRegistry.std.ts';
+import { getLinkErrorKind } from '../ts/linkPreviews/linkLog.std.ts';
 import type { LinkOpenPlanType } from '../ts/linkPreviews/linkOpenPlan.std.ts';
 import {
   getDesktopOpenAction,
@@ -47,7 +48,7 @@ function getLinkOpenPlan(url: string): LinkOpenPlanType | undefined {
   try {
     return parseLinkOpenPlan(registry.openPlan(url));
   } catch (error) {
-    log.warn(`openPlan failed: ${Errors.toLogFormat(error)}`);
+    log.warn(`openPlan failed: ${getLinkErrorKind(error)}`);
     return undefined;
   }
 }
@@ -93,7 +94,7 @@ export async function openExternalLink({
   try {
     await shell.openExternal(action.url);
   } catch (error) {
-    log.error(`Failed to open url: ${Errors.toLogFormat(error)}`);
+    log.error(`Failed to open url: ${getLinkErrorKind(error)}`);
     if (action.copyOnFailure) {
       clipboard.writeText(action.url);
       await dialog.showMessageBox({

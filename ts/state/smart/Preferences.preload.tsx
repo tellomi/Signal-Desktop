@@ -697,6 +697,11 @@ export function SmartPreferences(): JSX.Element | null {
       account.captureChange('linkPreviews');
     }
   );
+  // Tellomi (ADR-0063 §8.1 row 9): this device only, so nothing to sync.
+  const [hasExpandShortLinks, onExpandShortLinksChange] = createItemsAccess(
+    'tellomiExpandShortLinks',
+    true
+  );
   const [hasPreferContactAvatars, onPreferContactAvatarsChange] =
     createItemsAccess('preferContactAvatars', false, () => {
       const account = window.ConversationController.getOurConversationOrThrow();
@@ -1081,6 +1086,7 @@ export function SmartPreferences(): JSX.Element | null {
         hasIncomingCallNotifications={hasIncomingCallNotifications}
         hasKeyTransparencyDisabled={hasKeyTransparencyDisabled}
         hasLinkPreviews={hasLinkPreviews}
+        hasExpandShortLinks={hasExpandShortLinks}
         hasMediaCameraPermissions={hasMediaCameraPermissions}
         hasMediaPermissions={hasMediaPermissions}
         hasMessageAudio={hasMessageAudio}
@@ -1143,6 +1149,7 @@ export function SmartPreferences(): JSX.Element | null {
         onKeepMutedChatsArchivedChange={onKeepMutedChatsArchivedChange}
         onLastSyncTimeChange={onLastSyncTimeChange}
         onLinkPreviewsChange={onLinkPreviewsChange}
+        onExpandShortLinksChange={onExpandShortLinksChange}
         onLocaleChange={onLocaleChange}
         onMediaCameraPermissionsChange={onMediaCameraPermissionsChange}
         onMediaPermissionsChange={onMediaPermissionsChange}

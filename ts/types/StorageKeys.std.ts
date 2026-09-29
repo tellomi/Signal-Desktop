@@ -157,6 +157,9 @@ export type StorageAccessType = {
   // 见 util/tellomiLoggedOut
   tellomiLoggedOut: boolean;
   linkPreviews: boolean;
+  // Tellomi (ADR-0063 §8.1 row 9, owner 2026-09-27): open a short link once to find where it leads
+  // before previewing it. On unless turned off here; this device only, never synced.
+  tellomiExpandShortLinks: boolean;
   universalExpireTimer: number;
   retryPlaceholders: ReadonlyArray<RetryItemType>;
   donationPermits: string;
@@ -413,6 +416,8 @@ export const STORAGE_KEYS_TO_PRESERVE_AFTER_UNLINK = [
   'textFormatting',
   'unreadCountBadgeType',
   'zoomFactor',
+  // Tellomi (ADR-0063 §8.1 row 9): a setting of this device, not of the account.
+  'tellomiExpandShortLinks',
 
   // Bookkeeping keys
   'attachmentMigration_lastProcessedIndex',

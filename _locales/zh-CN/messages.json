@@ -1652,6 +1652,15 @@
   "icu:TellomiLinkCard__track_count": {
     "messageformat": "{count, plural, other {# 首}}"
   },
+  "icu:TellomiLinks__link-previews-description": {
+    "messageformat": "开启后，发送链接时你的设备会访问该网站。"
+  },
+  "icu:TellomiLinks__expand-short-links": {
+    "messageformat": "展开短链接"
+  },
+  "icu:TellomiLinks__expand-short-links-description": {
+    "messageformat": "生成预览前，你的设备会先打开一次短链接，取得完整地址。短链接服务能看到这次访问。"
+  },
   "icu:TellomiLinkOpen__lookalike_message": {
     "messageformat": "这个链接的域名与 {domain} 相似，但不是它"
   },

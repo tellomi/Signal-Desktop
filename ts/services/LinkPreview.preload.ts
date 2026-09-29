@@ -20,7 +20,10 @@ import type { MIMEType } from '../types/MIME.std.ts';
 import * as Bytes from '../Bytes.std.ts';
 import { sha256 } from '../Crypto.node.ts';
 import * as LinkPreview from '../types/LinkPreview.std.ts';
-import { getLinkPreviewSetting } from '../util/Settings.preload.ts';
+import {
+  getExpandShortLinksSetting,
+  getLinkPreviewSetting,
+} from '../util/Settings.preload.ts';
 import { readTempData, readStickerData } from '../util/migrations.preload.ts';
 import * as Stickers from '../types/Stickers.preload.ts';
 import * as VisualAttachment from '../types/VisualAttachment.dom.ts';
@@ -52,6 +55,7 @@ import { itemStorage } from '../textsecure/Storage.preload.ts';
 import { createProxyAgent } from '../util/createProxyAgent.node.ts';
 import type { ProxyAgent } from '../util/createProxyAgent.node.ts';
 import { performLinkFetch } from '../linkPreviews/linkFetcher.node.ts';
+import { getLinkErrorKind } from '../linkPreviews/linkLog.std.ts';
 import { getLinkRegistry } from '../linkPreviews/linkRegistry.preload.ts';
 import {
   forgetUnreachableLinkHosts,
@@ -261,9 +265,10 @@ async function addLinkPreview(
     );
     linkPreviewResult = [result];
   } catch (error) {
+    // Tellomi (ADR-0063 §8.1 row 9): the kind only; a message may quote the URL.
     log.error(
       'Problem loading link preview, disabling.',
-      Errors.toLogFormat(error)
+      getLinkErrorKind(error)
     );
     disableLinkPreviews = true;
     removeLinkPreview(conversationId);
@@ -359,7 +364,7 @@ async function toImageAttachment(
     // We still want to show the preview if we failed to get an image
     log.error(
       'getPreview failed to process image for link preview:',
-      error.message
+      getLinkErrorKind(error)
     );
     return undefined;
   } finally {
@@ -413,7 +418,7 @@ async function getTellomiPreview(
     {
       locale: window.SignalContext.getI18nLocale(),
       unreachableHosts: getUnreachableLinkHosts(Date.now()),
-      expandShortLinks: true,
+      expandShortLinks: getExpandShortLinksSetting(),
     },
     {
       begin: (target, contextJson) => registry.begin(target, contextJson),
@@ -522,9 +527,10 @@ async function getPreview(
         fetchedImage = fullSizeImage;
       } catch (error) {
         // We still want to show the preview if we failed to get an image
+        // Tellomi (ADR-0063 §8.1 row 9): the kind only; a message may quote the image URL.
         log.warn(
           'getPreview failed to get image for link preview:',
-          error.message
+          getLinkErrorKind(error)
         );
         fetchedImage = null;
       }

@@ -6,6 +6,11 @@ export function getLinkPreviewSetting(): boolean {
   return itemStorage.get('linkPreviews', false);
 }
 
+// Tellomi (ADR-0063 §8.1 row 9): on unless turned off on this device; never synced.
+export function getExpandShortLinksSetting(): boolean {
+  return itemStorage.get('tellomiExpandShortLinks', true);
+}
+
 export function getTypingIndicatorSetting(): boolean {
   return itemStorage.get('typingIndicators', false);
 }

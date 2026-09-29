@@ -167,6 +167,8 @@ export type PropsDataType = {
   hasKeyTransparencyDisabled: boolean;
   hasPinReminders: boolean | undefined;
   hasLinkPreviews: boolean;
+  // Tellomi (ADR-0063 §8.1 row 9): this device only, never synced.
+  hasExpandShortLinks: boolean;
   hasMediaCameraPermissions: boolean | undefined;
   hasMediaPermissions: boolean | undefined;
   hasMessageAudio: boolean;
@@ -361,6 +363,7 @@ type PropsFunctionType = {
   onKeepMutedChatsArchivedChange: CheckboxChangeHandlerType;
   onLastSyncTimeChange: (time: number) => unknown;
   onLinkPreviewsChange: CheckboxChangeHandlerType;
+  onExpandShortLinksChange: CheckboxChangeHandlerType;
   onLocaleChange: (locale: string | null | undefined) => void;
   onMediaCameraPermissionsChange: CheckboxChangeHandlerType;
   onMediaPermissionsChange: CheckboxChangeHandlerType;
@@ -508,6 +511,7 @@ export function Preferences({
   hasIncomingCallNotifications,
   hasKeyTransparencyDisabled,
   hasLinkPreviews,
+  hasExpandShortLinks,
   hasMediaCameraPermissions,
   hasMediaPermissions,
   hasMessageAudio,
@@ -565,6 +569,7 @@ export function Preferences({
   onKeepMutedChatsArchivedChange,
   onLastSyncTimeChange,
   onLinkPreviewsChange,
+  onExpandShortLinksChange,
   onLocaleChange,
   onMediaCameraPermissionsChange,
   onMediaPermissionsChange,
@@ -1418,11 +1423,18 @@ export function Preferences({
           />
           <AxoSwitchItem.Root
             label={i18n('icu:Preferences__link-previews--title')}
-            description={i18n(
-              'icu:Preferences__link-previews--new-description'
-            )}
+            description={i18n('icu:TellomiLinks__link-previews-description')}
             checked={hasLinkPreviews}
             onCheckedChange={onLinkPreviewsChange}
+          />
+          <AxoSwitchItem.Root
+            label={i18n('icu:TellomiLinks__expand-short-links')}
+            description={i18n(
+              'icu:TellomiLinks__expand-short-links-description'
+            )}
+            disabled={!hasLinkPreviews}
+            checked={hasExpandShortLinks}
+            onCheckedChange={onExpandShortLinksChange}
           />
           <AxoSwitchItem.Root
             label={i18n('icu:Preferences__auto-convert-emoji--title')}
