@@ -79,7 +79,8 @@ describe('getLinkOnlyUrl', () => {
   });
 
   it('is undefined for a body Signal does not linkify', () => {
-    assert.isUndefined(getLinkOnlyUrl(`‮${URL}`, false));
+    assert.isUndefined(getLinkOnlyUrl(`\u202e${URL}`, false));
+    assert.isUndefined(getLinkOnlyUrl(`${URL}\u202e`, false));
   });
 
   it('is undefined when the message has anything but plain text', () => {
