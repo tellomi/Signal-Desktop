@@ -515,6 +515,18 @@ div.CompositionInput__link-preview {
   }
 }
 
+// Tellomi (ADR-0063 §5.1 rule 2): the hint shown instead of a preview for a group link that is
+// not active: one line, from the start, clear of the close button.
+div.CompositionInput__link-preview--group-link-inactive {
+  flex-direction: row;
+  justify-content: flex-start;
+  min-height: 0;
+
+  .CompositionInput__link-preview__content {
+    padding-inline-end: 32px;
+  }
+}
+
 button.CompositionInput__link-preview__close-button {
   -webkit-mask: none;
   @include mixins.rounded-corners;

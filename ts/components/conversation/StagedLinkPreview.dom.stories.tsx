@@ -135,3 +135,15 @@ CompositionInputStickerPack.args = {
   }),
   isStickerPack: true,
 };
+
+// Tellomi (ADR-0063 §5.1 rule 2, tellomi/tellomi#1421): a group link that is definitely not
+// active shows a hint instead of a preview.
+export const CompositionInputGroupLinkInactive = Template.bind({});
+CompositionInputGroupLinkInactive.args = {
+  i18n,
+  onClose: action('onClose'),
+  moduleClassName: 'CompositionInput__link-preview',
+  url: 'https://tell.cc/g#CjQKINkmHBTrNHjzMuLeH6OlhxeVDlVTxdRLNGCMhL3kBu2I',
+  isCallLink: false,
+  isGroupLinkInactive: true,
+};

@@ -35,6 +35,7 @@ export function StagedLinkPreview(props: Props): JSX.Element {
     description,
     domain,
     i18n,
+    isGroupLinkInactive,
     isStickerPack,
     moduleClassName,
     onClose,
@@ -46,6 +47,39 @@ export function StagedLinkPreview(props: Props): JSX.Element {
     'module-staged-link-preview',
     moduleClassName
   );
+
+  // Tellomi (ADR-0063 §5.1 rule 2, §8.1 row 4): the group link is definitely not active. Say so
+  // in place of a preview, with the words Android uses; nothing is sent with the message.
+  if (isGroupLinkInactive) {
+    return (
+      <div
+        dir="auto"
+        className={classNames(
+          getClassName(''),
+          getClassName('--group-link-inactive')
+        )}
+      >
+        <div
+          className={classNames(
+            getClassName('__content'),
+            getClassName('__content--only-url')
+          )}
+        >
+          <div className={getClassName('__title')}>
+            {i18n('icu:TellomiLinkCard__group_link_inactive')}
+          </div>
+        </div>
+        {onClose && (
+          <button
+            aria-label={i18n('icu:close')}
+            className={getClassName('__close-button')}
+            onClick={onClose}
+            type="button"
+          />
+        )}
+      </div>
+    );
+  }
 
   let maybeContent: JSX.Element | undefined;
   if (isLoaded) {
