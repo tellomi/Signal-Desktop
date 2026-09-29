@@ -9,6 +9,8 @@ import { getLocalizedLinkName } from './linkCard.std.ts';
 // What a message bubble shows for a link preview, by the level rust/links decided (ADR-0063
 // §5.1 ladder), per the finalized card spec (card-visual §3.7 / §3.9 / §3.10, 2026-09-29): a
 // title, one sub line and the domain line. The sender's description never shows.
+// - plain link: only as the no-image card of a message that is just the link, titled by the
+//   registrable domain (§3.5);
 // - generic: the snapshot title and the registrable domain;
 // - brand: the platform name and what the link is (the kind's name); no image, no sender text;
 // - structured: the validated title and the kind's sub line; a video's publish date follows the
@@ -226,7 +228,15 @@ export function getLinkPreviewDisplay(
 
   switch (card.level) {
     case 'plain_link':
-      return snapshot;
+      // Only reaches a bubble as the no-image card of a message that is just this link
+      // (card-visual §3.5): the domain in the title slot, written once.
+      return {
+        title: snapshot.domain,
+        description: undefined,
+        domain: undefined,
+        officialBadge: false,
+        hideSnapshotDate: true,
+      };
     case 'generic':
       return {
         title: card.title || preview.title || undefined,

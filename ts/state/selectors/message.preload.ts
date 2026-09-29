@@ -47,7 +47,16 @@ import {
   isCallLink,
   isStickerPack,
 } from '../../types/LinkPreview.std.ts';
-import { classifyLinkPreview } from '../../linkPreviews/linkRegistry.preload.ts';
+import {
+  classifyLinkPreview,
+  getLinkLookalike,
+} from '../../linkPreviews/linkRegistry.preload.ts';
+import type { LinkCardType } from '../../linkPreviews/linkCard.std.ts';
+import {
+  getLinkOnlyUrl,
+  isLinkCardOnly,
+  toPlainLinkCard,
+} from '../../linkPreviews/linkOnlyMessage.std.ts';
 import type {
   AciString,
   PniString,
@@ -415,9 +424,28 @@ const getAuthorForMessage = (
   return safe;
 };
 
+// Tellomi (card-visual §3.5 / §3.7): the no-image card of a message that is just this link, drawn
+// from the URL alone; nothing the sender wrote.
+function getPlainLinkPreview(
+  url: string,
+  card: LinkCardType
+): LinkPreviewForUIType {
+  const plain = toPlainLinkCard(card, getLinkLookalike(url));
+  return {
+    url,
+    domain: plain.domain ?? undefined,
+    isStickerPack: false,
+    isCallLink: false,
+    card: plain,
+  };
+}
+
 const getPreviewsForMessage = (
   message: MessageWithUIFieldsType,
-  { hasMediaBackups }: { hasMediaBackups: boolean }
+  {
+    hasMediaBackups,
+    linkOnlyUrl,
+  }: { hasMediaBackups: boolean; linkOnlyUrl: string | undefined }
 ): Array<LinkPreviewForUIType> => {
   const { preview: previews = [] } = message;
   const body = message.body ?? '';
@@ -427,6 +455,19 @@ const getPreviewsForMessage = (
       attachment => attachment.contentType
     ),
   };
+  if (previews.length === 0) {
+    // Tellomi (card-visual §3.5): just a link, sent without a preview (previews off, or fetching
+    // failed), still gets a card. rust/links computes its domain as for any preview.
+    if (linkOnlyUrl === undefined) {
+      return [];
+    }
+    const card = classifyLinkPreview(
+      { url: linkOnlyUrl, hasImage: false },
+      body,
+      linkContext
+    );
+    return card?.domain ? [getPlainLinkPreview(linkOnlyUrl, card)] : [];
+  }
   return previews.flatMap(preview => {
     // Tellomi (ADR-0063 §5.1 rule 4): one decision, from rust/links, in the data layer.
     const card = classifyLinkPreview(
@@ -442,7 +483,10 @@ const getPreviewsForMessage = (
       linkContext
     );
     if (card?.level === 'plain_link') {
-      return [];
+      // Shown only when the message is just this link, as the no-image card (card-visual §3.5).
+      return previews.length === 1 && preview.url === linkOnlyUrl && card.domain
+        ? [getPlainLinkPreview(preview.url, card)]
+        : [];
     }
     // Brand shells, user and official cards never show the sender's image (§7.4).
     const showImage = card?.show_image ?? true;
@@ -940,7 +984,25 @@ const getPropsForMessage = (
   const { hasMediaBackups } = options;
   const attachments = getAttachmentsForMessage(message, { hasMediaBackups });
   const author = getAuthorForMessage(message, options);
-  const previews = getPreviewsForMessage(message, { hasMediaBackups });
+  // Tellomi (card-visual §3.5): the link a message consists of, when it has nothing else.
+  const linkOnlyUrl = getLinkOnlyUrl(
+    message.body,
+    message.type === 'story' ||
+      Boolean(message.attachments?.length) ||
+      Boolean(message.bodyRanges?.length) ||
+      message.bodyAttachment != null ||
+      message.sticker != null ||
+      Boolean(message.contact?.length) ||
+      message.payment != null ||
+      message.giftBadge != null ||
+      message.poll != null ||
+      isTapToView(message) ||
+      Boolean(message.deletedForEveryone)
+  );
+  const previews = getPreviewsForMessage(message, {
+    hasMediaBackups,
+    linkOnlyUrl,
+  });
   const reactions = getReactionsForMessage(message, options);
 
   const storyReplyContext = getPropsForStoryReplyContext(message, options);
@@ -1079,6 +1141,7 @@ const getPropsForMessage = (
     id: message.id,
     isBlocked: conversation.isBlocked || false,
     isEditedMessage: Boolean(message.editHistory),
+    isLinkCardOnly: isLinkCardOnly(linkOnlyUrl, previews),
     isMessageRequestAccepted: conversation?.acceptedMessageRequest ?? true,
     isPinned,
     isSelected,

@@ -951,6 +951,12 @@ $message-padding-horizontal: 12px;
   margin-top: 4px;
 }
 
+// Tellomi (card-visual §3.5): a message that is just a link is the card alone; with no time
+// under it, the card reaches the bottom of the bubble.
+.module-message__link-preview--flush-bottom {
+  margin-bottom: -$message-padding-vertical;
+}
+
 .module-message__link-preview__content {
   padding-block: $message-padding-vertical;
   padding-inline: $message-padding-horizontal;
@@ -1038,6 +1044,32 @@ $message-padding-horizontal: 12px;
 
 .module-message__link-preview__location {
   text-transform: lowercase;
+}
+
+// Tellomi (card-visual §3.7): the no-image card of a message that is just a link has a link icon
+// at the end, where an icon card has its icon.
+.module-message__link-preview__link-icon {
+  display: flex;
+  flex-shrink: 0;
+  margin-inline-start: auto;
+  padding-inline-start: 12px;
+
+  @include mixins.light-theme {
+    color: variables.$color-gray-60;
+  }
+  @include mixins.dark-theme {
+    color: variables.$color-gray-25;
+  }
+}
+
+// Tellomi (ADR-0063 §6.1): a domain that imitates a well-known one.
+.module-message__link-preview__title--lookalike {
+  @include mixins.light-theme {
+    color: variables.$color-accent-red;
+  }
+  @include mixins.dark-theme {
+    color: variables.$color-accent-red;
+  }
 }
 
 .module-message__author {

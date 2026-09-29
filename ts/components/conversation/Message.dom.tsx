@@ -293,6 +293,9 @@ export type PropsData = {
     text: string;
   };
   previews: ReadonlyArray<LinkPreviewForUIType>;
+  // Tellomi (card-visual §3.5): the message is just the link of its only preview, so the bubble
+  // is the card alone; the link text is not shown (it stays in the tooltip and in "Copy").
+  isLinkCardOnly?: boolean;
 
   isTapToView?: boolean;
   isTapToViewExpired?: boolean;
@@ -883,6 +886,11 @@ export class Message extends PureComponent<Props, State> {
     }
 
     if (this.#shouldShowActionButton()) {
+      return MetadataPlacement.Bottom;
+    }
+
+    // Tellomi (card-visual §3.5): no text to sit next to, so under the card.
+    if (this.props.isLinkCardOnly) {
       return MetadataPlacement.Bottom;
     }
 
@@ -1583,6 +1591,7 @@ export class Message extends PureComponent<Props, State> {
       quote,
       shouldCollapseAbove,
       theme,
+      isLinkCardOnly,
     } = this.props;
 
     // Attachments take precedence over Link Previews
@@ -1622,6 +1631,8 @@ export class Message extends PureComponent<Props, State> {
         ? i18n('icu:message--call-link-description')
         : undefined);
     const { domain } = display;
+    // Tellomi (card-visual §3.5 / §3.7): the no-image card of a message that is just a link.
+    const isPlainLink = first.card?.level === 'plain_link';
 
     const isClickable = this.#areLinksEnabled();
 
@@ -1631,9 +1642,32 @@ export class Message extends PureComponent<Props, State> {
       {
         'module-message__link-preview--with-content-above': withContentAbove,
         'module-message__link-preview--nonclickable': !isClickable,
+        // Tellomi (card-visual §3.5): the card is the whole bubble when nothing follows it.
+        'module-message__link-preview--flush-bottom':
+          isLinkCardOnly &&
+          this.#getMetadataPlacement() === MetadataPlacement.NotRendered &&
+          !this.#shouldShowActionButton(),
       }
     );
-    const contents = (
+    const contents = isPlainLink ? (
+      <div dir="auto" className="module-message__link-preview__content">
+        <div className="module-message__link-preview__text">
+          <div
+            className={classNames('module-message__link-preview__title', {
+              // The domain imitates a well-known one (ADR-0063 §6.1).
+              'module-message__link-preview__title--lookalike': Boolean(
+                first.card?.lookalike
+              ),
+            })}
+          >
+            {title}
+          </div>
+        </div>
+        <div className="module-message__link-preview__link-icon">
+          <AxoSymbol.Icon size={24} symbol="link" label={null} />
+        </div>
+      </div>
+    ) : (
       <>
         {first.image && previewHasImage && isFullSizeImage ? (
           <ImageGrid
@@ -1770,11 +1804,15 @@ export class Message extends PureComponent<Props, State> {
       </>
     );
 
+    // The link text is not shown, so the card says where it goes.
+    const tooltip = isLinkCardOnly ? first.url : undefined;
+
     return isClickable ? (
       <div
         role="link"
         tabIndex={0}
         className={className}
+        title={tooltip}
         onKeyDown={(event: KeyboardEvent) => {
           if (event.key === 'Enter' || event.key === 'Space') {
             event.stopPropagation();
@@ -1793,7 +1831,9 @@ export class Message extends PureComponent<Props, State> {
         {contents}
       </div>
     ) : (
-      <div className={className}>{contents}</div>
+      <div className={className} title={tooltip}>
+        {contents}
+      </div>
     );
   }
 
@@ -2467,7 +2507,10 @@ export class Message extends PureComponent<Props, State> {
     const { metadataWidth } = this.state;
 
     const messageStatusContents = this.#getMessageStatusContents();
-    if (messageStatusContents == null && text == null) {
+    if (
+      messageStatusContents == null &&
+      (text == null || this.props.isLinkCardOnly)
+    ) {
       return null;
     }
 
@@ -2686,6 +2729,12 @@ export class Message extends PureComponent<Props, State> {
     }
 
     if (firstLinkPreview && firstLinkPreview.isCallLink) {
+      return 300;
+    }
+
+    // Tellomi (card-visual §3.5): a message that is just a link is a card, as wide as a call
+    // link's, not as narrow as its domain.
+    if (firstLinkPreview && this.props.isLinkCardOnly) {
       return 300;
     }
 
