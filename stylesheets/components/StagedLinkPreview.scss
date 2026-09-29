@@ -40,6 +40,11 @@
 .module-staged-link-preview--is-loading {
   align-items: center;
 }
+// Tellomi (ADR-0063 §5.1 rule 2): one line of text instead of a preview.
+.module-staged-link-preview--group-link-inactive {
+  align-items: center;
+  min-height: 0;
+}
 .module-staged-link-preview__loading {
   text-align: center;
   flex-grow: 1;

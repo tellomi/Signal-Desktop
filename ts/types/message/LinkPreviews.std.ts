@@ -33,6 +33,9 @@ export type LinkPreviewForUIType =
     // Tellomi (card-visual §5.2): what this device already has for a first-party card's object
     // (a known chat, a joined group, an installed pack), read locally at display time.
     firstPartyLocal?: FirstPartyLocalType;
+    // Tellomi (ADR-0063 §5.1 rule 2, §8.1 row 4): only in the composer: the group link is
+    // definitely not active, so a hint shows instead of a preview.
+    isGroupLinkInactive?: boolean;
   };
 export type LinkPreviewWithHydratedData =
   GenericLinkPreviewType<AttachmentWithHydratedData>;

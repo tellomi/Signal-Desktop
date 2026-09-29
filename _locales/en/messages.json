@@ -2242,6 +2242,10 @@
     "messageformat": "Tellomi call",
     "description": "Tellomi (card-visual §5.2 / §3.10, tellomi/tellomi#1421): title of a link card for a call link that has no room name."
   },
+  "icu:TellomiLinkCard__group_link_inactive": {
+    "messageformat": "This group link is not active",
+    "description": "Tellomi (ADR-0063 §5.1 rule 2, tellomi/tellomi#1421): shown in the message composer instead of a link preview when a group invite link in the draft is definitely not active (reset, turned off, or the group ended). Same wording as Android."
+  },
   "icu:TellomiLinks__link-previews-description": {
     "messageformat": "When on, your device visits the website when you send a link.",
     "description": "Tellomi (ADR-0063 §8.1 row 9, tellomi/tellomi#1421): description under the \"Generate link previews\" setting. Says plainly that the sender's device contacts the linked website. Same wording on Android and iOS."

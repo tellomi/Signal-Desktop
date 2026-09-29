@@ -1685,6 +1685,9 @@
   "icu:TellomiLinkCard__call_title": {
     "messageformat": "Tellomi 通话"
   },
+  "icu:TellomiLinkCard__group_link_inactive": {
+    "messageformat": "此群组链接未激活"
+  },
   "icu:TellomiLinks__link-previews-description": {
     "messageformat": "开启后，发送链接时你的设备会访问该网站。"
   },

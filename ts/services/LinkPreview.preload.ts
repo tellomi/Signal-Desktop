@@ -56,6 +56,11 @@ import { createProxyAgent } from '../util/createProxyAgent.node.ts';
 import type { ProxyAgent } from '../util/createProxyAgent.node.ts';
 import { performLinkFetch } from '../linkPreviews/linkFetcher.node.ts';
 import { getLinkErrorKind } from '../linkPreviews/linkLog.std.ts';
+import {
+  isGroupLinkInactiveError,
+  toLinkFirstPartyResult,
+} from '../linkPreviews/groupLinkState.std.ts';
+import { isAccessControlEnabled } from '../groups/util.std.ts';
 import { getLinkRegistry } from '../linkPreviews/linkRegistry.preload.ts';
 import {
   forgetUnreachableLinkHosts,
@@ -208,7 +213,7 @@ async function addLinkPreview(
   );
 
   try {
-    let result: LinkPreviewResult | null;
+    let result: LinkPreviewResult | typeof GROUP_LINK_INACTIVE | null;
     if (disableFetch) {
       result = {
         title: null,
@@ -218,6 +223,19 @@ async function addLinkPreview(
       };
     } else {
       result = await getPreview(url, thisRequestAbortController.signal);
+    }
+
+    if (result === GROUP_LINK_INACTIVE) {
+      // Tellomi (ADR-0063 §5.1 rule 2, §8.1 row 4): tell the sender, as Android does; the link
+      // stays matched, so it is not looked up again while it is in the text.
+      if (currentlyMatchedLink === url) {
+        window.reduxActions.linkPreviews.showGroupLinkInactive(
+          url,
+          source,
+          conversationId
+        );
+      }
+      return;
     }
 
     if (!result) {
@@ -394,10 +412,33 @@ function forgetUnreachableHostsOnNetworkChange(): void {
 // rust/links decides what to fetch and assembles the preview (snapshot + `Preview.rich`); the
 // §4.4 fetcher does the requests; tell.cc objects use the lookups below. `undefined`: no registry,
 // fall back to Signal's own path.
+// Tellomi (ADR-0063 §5.1 rule 2, §8.1 row 4): the group link is definitely not active. The
+// composer says so instead of showing a preview, and nothing is sent with the message.
+const GROUP_LINK_INACTIVE = Symbol('GROUP_LINK_INACTIVE');
+
+// Tellomi (ADR-0063 §4.8): what the lookups add for rust/links (`member_count`, `sticker_count`)
+// and whether the group link still lets people join.
+type GroupLinkPreviewResult = LinkPreviewResult &
+  Readonly<{ memberCount: number; isLinkActive: boolean }>;
+type StickerPackPreviewResult = LinkPreviewResult &
+  Readonly<{ stickerCount: number }>;
+
+// Tellomi: the lookups' extra fields are for rust/links only; a preview sent by Signal's own path
+// keeps its usual shape (the send path spreads the whole object into the message).
+function withoutLookupFields(
+  result: GroupLinkPreviewResult | StickerPackPreviewResult | null
+): LinkPreviewResult | null {
+  if (!result) {
+    return null;
+  }
+  const { title, url, image, description, date } = result;
+  return { title, url, image, description, date };
+}
+
 async function getTellomiPreview(
   url: string,
   abortSignal: Readonly<AbortSignal>
-): Promise<null | LinkPreviewResult | undefined> {
+): Promise<null | LinkPreviewResult | typeof GROUP_LINK_INACTIVE | undefined> {
   const registry = getLinkRegistry();
   if (!registry) {
     return undefined;
@@ -430,15 +471,30 @@ async function getTellomiPreview(
         }),
       firstParty: async kind => {
         if (kind === 'tellomi.group') {
-          firstPartyPreview = await getGroupPreview(url, abortSignal);
-        } else if (kind === 'tellomi.sticker') {
-          firstPartyPreview = await getStickerPackPreview(url, abortSignal);
-        } else if (kind === 'tellomi.call') {
+          let group: GroupLinkPreviewResult | null;
+          try {
+            group = await getGroupPreview(url, abortSignal);
+          } catch (error) {
+            if (isGroupLinkInactiveError(error)) {
+              return toLinkFirstPartyResult('inactive');
+            }
+            throw error;
+          }
+          if (group && !group.isLinkActive) {
+            return toLinkFirstPartyResult('inactive');
+          }
+          firstPartyPreview = group;
+          return toLinkFirstPartyResult(group);
+        }
+        if (kind === 'tellomi.sticker') {
+          const pack = await getStickerPackPreview(url, abortSignal);
+          firstPartyPreview = pack;
+          return toLinkFirstPartyResult(pack);
+        }
+        if (kind === 'tellomi.call') {
           firstPartyPreview = await getCallLinkPreview(url, abortSignal);
         }
-        return firstPartyPreview
-          ? { ok: true, title: firstPartyPreview.title ?? undefined }
-          : { ok: false };
+        return toLinkFirstPartyResult(firstPartyPreview);
       },
       acceptImage: async (body, contentType) => {
         fetchedImage = await processLinkPreviewImageBytes(body, contentType);
@@ -458,6 +514,10 @@ async function getTellomiPreview(
     `getTellomiPreview: ${outcome.provider ?? '-'}/${outcome.route ?? '-'} ` +
       `${outcome.level} [${outcome.failures.join(',')}]`
   );
+
+  if (outcome.group_link_invalid) {
+    return GROUP_LINK_INACTIVE;
+  }
 
   const { preview } = outcome;
   if (!preview) {
@@ -481,17 +541,17 @@ async function getTellomiPreview(
 async function getPreview(
   url: string,
   abortSignal: Readonly<AbortSignal>
-): Promise<null | LinkPreviewResult> {
+): Promise<null | LinkPreviewResult | typeof GROUP_LINK_INACTIVE> {
   const tellomiPreview = await getTellomiPreview(url, abortSignal);
   if (tellomiPreview !== undefined) {
     return tellomiPreview;
   }
 
   if (LinkPreview.isStickerPack(url)) {
-    return getStickerPackPreview(url, abortSignal);
+    return withoutLookupFields(await getStickerPackPreview(url, abortSignal));
   }
   if (LinkPreview.isGroupLink(url)) {
-    return getGroupPreview(url, abortSignal);
+    return withoutLookupFields(await getGroupPreview(url, abortSignal));
   }
   if (LinkPreview.isCallLink(url)) {
     return getCallLinkPreview(url, abortSignal);
@@ -559,7 +619,7 @@ async function getPreview(
 async function getStickerPackPreview(
   url: string,
   abortSignal: Readonly<AbortSignal>
-): Promise<null | LinkPreviewResult> {
+): Promise<null | StickerPackPreviewResult> {
   const isPackDownloaded = (
     pack?: StickerPackDBType
   ): pack is StickerPackDBType => {
@@ -649,6 +709,7 @@ async function getStickerPackPreview(
       },
       title,
       url,
+      stickerCount: pack.stickerCount || Object.keys(pack.stickers).length,
     };
   } catch (error) {
     log.error('getStickerPackPreview error:', Errors.toLogFormat(error));
@@ -663,7 +724,7 @@ async function getStickerPackPreview(
 async function getGroupPreview(
   url: string,
   abortSignal: Readonly<AbortSignal>
-): Promise<null | LinkPreviewResult> {
+): Promise<null | GroupLinkPreviewResult> {
   const urlObject = maybeParseUrl(url);
   if (!urlObject) {
     return null;
@@ -728,6 +789,9 @@ async function getGroupPreview(
     image,
     title,
     url,
+    memberCount: result.memberCount ?? 0,
+    // The same check as joining (groups/joinViaLink): a link that no longer lets anyone join.
+    isLinkActive: isAccessControlEnabled(result.addFromInviteLink),
   };
 }
 

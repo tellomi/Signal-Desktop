@@ -109,6 +109,33 @@ function addLinkPreview(
   };
 }
 
+// Tellomi (ADR-0063 §5.1 rule 2, §8.1 row 4): the group link is definitely not active. The staged
+// preview says so instead of showing one; nothing is attached to the message (the service keeps
+// no preview to send).
+function showGroupLinkInactive(
+  url: string,
+  source: LinkPreviewSourceType,
+  conversationId?: string
+): AddLinkPreviewActionType {
+  if (source === LinkPreviewSourceType.Composer) {
+    strictAssert(conversationId, 'no conversationId provided');
+  }
+
+  return {
+    type: ADD_PREVIEW,
+    payload: {
+      conversationId,
+      linkPreview: {
+        url,
+        isStickerPack: false,
+        isCallLink: false,
+        isGroupLinkInactive: true,
+      },
+      source,
+    },
+  };
+}
+
 function removeLinkPreview(
   conversationId?: string
 ): RemoveLinkPreviewActionType {
@@ -124,6 +151,7 @@ export const actions = {
   addLinkPreview,
   debouncedMaybeGrabLinkPreview,
   removeLinkPreview,
+  showGroupLinkInactive,
 };
 
 export const useLinkPreviewActions = (): BoundActionCreatorsMapObject<
