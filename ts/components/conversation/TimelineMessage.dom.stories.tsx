@@ -1867,6 +1867,101 @@ LinkCardOnlyStructured.args = {
   isLinkCardOnly: true,
 };
 
+// Tellomi (card-visual §3.2 / §3.3, tellomi/tellomi#1421): the shape rust/links decided, and the
+// colours from the card's own image. The story stands in for the bridge with the answer it gave for
+// an orange icon (`bridge-golden.json`); a card in a message request is never tinted.
+const ORANGE_TINT = {
+  tinted: true,
+  light: { background: '#FE7500', text: '#000000' },
+  dark: { background: '#994600', text: '#FFFFFF' },
+} as const;
+
+const GENERIC_CARD = {
+  level: 'generic',
+  provider: null,
+  provider_name: null,
+  kind: null,
+  route: null,
+  title: null,
+  description: null,
+  attrs: [],
+  domain: 'signal.org',
+  official_badge: false,
+  first_party: null,
+  lookalike: null,
+  show_image: true,
+  tintable: true,
+  payment: false,
+  reason: 'no_rich',
+} as const;
+
+export const LinkCardIcon = Template.bind({});
+LinkCardIcon.args = {
+  previews: [
+    {
+      domain: 'signal.org',
+      image: fakeAttachment({
+        contentType: IMAGE_PNG,
+        fileName: 'the-sax.png',
+        height: 100,
+        url: pngUrl,
+        width: 100,
+      }),
+      isStickerPack: false,
+      isCallLink: false,
+      title: 'Signal',
+      url: 'https://www.signal.org',
+      card: GENERIC_CARD,
+      layout: 'icon',
+    },
+  ],
+  status: 'sent',
+  text: 'Look https://www.signal.org',
+};
+
+export const LinkCardIconTinted = Template.bind({});
+LinkCardIconTinted.args = {
+  ...LinkCardIcon.args,
+  getLinkCardTint: () => ORANGE_TINT,
+};
+
+export const LinkCardIconTintedDark = Template.bind({});
+LinkCardIconTintedDark.args = {
+  ...LinkCardIconTinted.args,
+  theme: ThemeType.dark,
+};
+
+export const LinkCardIconTintedInMessageRequest = Template.bind({});
+LinkCardIconTintedInMessageRequest.args = {
+  ...LinkCardIconTinted.args,
+  isMessageRequestAccepted: false,
+};
+
+export const LinkCardLargeImageTinted = Template.bind({});
+LinkCardLargeImageTinted.args = {
+  previews: [
+    {
+      domain: 'signal.org',
+      image: fakeAttachment({
+        contentType: IMAGE_PNG,
+        fileName: 'the-sax.png',
+        height: 630,
+        url: pngUrl,
+        width: 1200,
+      }),
+      isStickerPack: false,
+      isCallLink: false,
+      title: 'Signal',
+      url: 'https://www.signal.org',
+      card: GENERIC_CARD,
+      layout: 'large_image',
+    },
+  ],
+  status: 'sent',
+  text: 'Look https://www.signal.org',
+  getLinkCardTint: () => ORANGE_TINT,
+};
+
 // Tellomi (card-visual §3.5 / §3.7, tellomi/tellomi#1421): just a link, without a preview or with
 // a plain-link decision: a no-image card drawn from the URL.
 export const LinkCardPlain = Template.bind({});

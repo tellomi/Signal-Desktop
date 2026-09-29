@@ -1136,6 +1136,33 @@ $message-padding-horizontal: 12px;
   }
 }
 
+// Tellomi (card-visual §3.2): an icon card has its 44px icon at the end of the text.
+.module-message__link-preview__icon-image {
+  display: flex;
+  flex-shrink: 0;
+  margin-inline-start: auto;
+  padding-inline-start: 12px;
+}
+
+// Tellomi (card-visual §3.3): a card tinted from its own image. Background and text colour come
+// from rust/links for the theme in use (contrast is checked there), as two variables set on the card.
+.module-message__link-preview--tinted {
+  .module-message__link-preview__content {
+    background-color: var(--link-card-background);
+  }
+
+  .module-message__link-preview__title,
+  .module-message__link-preview__description,
+  .module-message__link-preview__link-icon {
+    color: var(--link-card-text);
+  }
+
+  .module-message__link-preview__footer {
+    color: var(--link-card-text);
+    opacity: 0.75;
+  }
+}
+
 // Tellomi (ADR-0063 §6.1): a domain that imitates a well-known one.
 .module-message__link-preview__title--lookalike {
   @include mixins.light-theme {

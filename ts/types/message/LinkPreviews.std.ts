@@ -7,6 +7,7 @@ import type {
   AttachmentWithHydratedData,
 } from '../Attachment.std.ts';
 import type { LinkCardType } from '../../linkPreviews/linkCard.std.ts';
+import type { LinkCardLayoutType } from '../../linkPreviews/linkCardVisual.std.ts';
 import type { FirstPartyLocalType } from '../../linkPreviews/firstPartyCard.std.ts';
 
 type GenericLinkPreviewType<Image> = {
@@ -30,6 +31,9 @@ export type LinkPreviewForUIType =
     // Tellomi (ADR-0063 §5.1 rule 4): the receiver's decision for this preview, computed in the
     // data layer at display time; never stored.
     card?: LinkCardType;
+    // Tellomi (card-visual §3.2): which of the four card shapes, decided by rust/links from the
+    // shown image's pixel size and the kind, in the data layer. Absent without a registry.
+    layout?: LinkCardLayoutType;
     // Tellomi (card-visual §5.2): what this device already has for a first-party card's object
     // (a known chat, a joined group, an installed pack), read locally at display time.
     firstPartyLocal?: FirstPartyLocalType;
