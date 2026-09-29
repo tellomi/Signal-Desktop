@@ -2126,6 +2126,78 @@
     "messageformat": "Tellomi user",
     "description": "Tellomi (ADR-0063 §4.8, tellomi/tellomi#1421): link card for a tell.cc user link. Subtitle under the @username, or the title itself when the link does not carry a readable username."
   },
+  "icu:TellomiLinkCard__place": {
+    "messageformat": "Location",
+    "description": "Tellomi (card-visual §3.7, tellomi/tellomi#1421): title of a place link card that has neither a name nor a title."
+  },
+  "icu:TellomiLinkCard__kind_video": {
+    "messageformat": "Video",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"video\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__kind_channel": {
+    "messageformat": "Channel",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"channel\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__kind_music_track": {
+    "messageformat": "Song",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"music.track\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__kind_music_album": {
+    "messageformat": "Album",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"music.album\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__kind_music_playlist": {
+    "messageformat": "Playlist",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"music.playlist\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__kind_place": {
+    "messageformat": "Place",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"place\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__kind_app": {
+    "messageformat": "App",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"app\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__kind_repo": {
+    "messageformat": "Repository",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"repo\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__kind_article": {
+    "messageformat": "Article",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"article\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__kind_product": {
+    "messageformat": "Product",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"product\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__kind_package": {
+    "messageformat": "Package",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"package\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__kind_question": {
+    "messageformat": "Q&A",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"question\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__kind_deal": {
+    "messageformat": "Deal",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"deal\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__kind_ride": {
+    "messageformat": "Ride",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"ride\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__kind_payment": {
+    "messageformat": "Payment",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"payment\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__kind_web": {
+    "messageformat": "Web page",
+    "description": "Tellomi (card-visual §3.10, tellomi/tellomi#1421): what a brand-shell link card links to, shown under the platform name, for the kind \"web\" in links/kinds.toml."
+  },
+  "icu:TellomiLinkCard__track_count": {
+    "messageformat": "{count, plural, one {# track} other {# tracks}}",
+    "description": "Tellomi (card-visual §3.9, tellomi/tellomi#1421): number of tracks in an album or playlist link card."
+  },
   "icu:TellomiLinkOpen__lookalike_message": {
     "messageformat": "The domain of this link looks like {domain}, but it isn’t {domain}.",
     "description": "Tellomi (ADR-0063 §6.1, tellomi/tellomi#1421): warning shown once before opening a link whose domain imitates a well-known one (same Unicode skeleton, different domain). {domain} is the well-known domain it looks like. The user can still open it."

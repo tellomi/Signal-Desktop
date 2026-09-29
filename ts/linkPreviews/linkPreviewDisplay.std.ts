@@ -28,7 +28,12 @@ type PreviewForDisplay = Readonly<{
   card?: LinkCardType;
 }>;
 
-function formatDurationMs(value: string): string | undefined {
+export function formatDurationMs(
+  value: string | undefined
+): string | undefined {
+  if (!value) {
+    return undefined;
+  }
   const ms = Number(value);
   if (!Number.isSafeInteger(ms) || ms <= 0) {
     return undefined;
@@ -41,6 +46,21 @@ function formatDurationMs(value: string): string | undefined {
   return hours > 0
     ? `${hours}:${String(minutes).padStart(2, '0')}:${ss}`
     : `${minutes}:${ss}`;
+}
+
+// A publish date: medium length, no time, no year when it is this year (card-visual §3.9).
+export function formatLinkCardDate(
+  timestamp: number,
+  locale: string,
+  now: number = Date.now()
+): string {
+  const sameYear =
+    new Date(timestamp).getFullYear() === new Date(now).getFullYear();
+  return new Intl.DateTimeFormat(locale, {
+    year: sameYear ? undefined : 'numeric',
+    month: 'short',
+    day: 'numeric',
+  }).format(timestamp);
 }
 
 // Attrs shown as plain text, in this order (kinds.toml). Counts, dates and coordinates wait for
@@ -75,7 +95,8 @@ export function formatLinkCardAttrs(card: LinkCardType): string | undefined {
 
 export function getLinkPreviewDisplay(
   preview: PreviewForDisplay,
-  i18n: LocalizerType
+  i18n: LocalizerType,
+  _now: number = Date.now()
 ): LinkPreviewDisplayType {
   const { card } = preview;
   const snapshot: LinkPreviewDisplayType = {
