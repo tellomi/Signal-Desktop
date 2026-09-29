@@ -1655,6 +1655,167 @@ LinkCardOfficial.args = {
   text: 'https://tellomi.app/download',
 };
 
+// Tellomi (card-visual §5.2, tellomi/tellomi#1421): cards for Tellomi objects, with their action.
+const FIRST_PARTY_CARD = {
+  level: 'first_party',
+  provider: 'tellomi',
+  provider_name: null,
+  kind: null,
+  route: null,
+  title: null,
+  description: null,
+  attrs: [],
+  domain: 'tell.cc',
+  official_badge: false,
+  lookalike: null,
+  show_image: false,
+  tintable: false,
+  payment: false,
+  reason: null,
+} as const;
+
+export const LinkCardFirstPartyUser = Template.bind({});
+LinkCardFirstPartyUser.args = {
+  previews: [
+    {
+      domain: 'tell.cc',
+      isStickerPack: false,
+      isCallLink: false,
+      url: 'https://tell.cc/kaixin.57',
+      card: {
+        ...FIRST_PARTY_CARD,
+        kind: 'tellomi.user',
+        first_party: {
+          type: 'user',
+          display: '@kaixin',
+          username: 'kaixin.57',
+        },
+      },
+    },
+  ],
+  status: 'sent',
+  text: 'https://tell.cc/kaixin.57',
+  isLinkCardOnly: true,
+};
+
+export const LinkCardFirstPartyUserKnown = Template.bind({});
+LinkCardFirstPartyUserKnown.args = {
+  previews: [
+    {
+      ...(LinkCardFirstPartyUser.args.previews?.[0] ?? { url: '' }),
+      firstPartyLocal: {
+        knownUser: { title: 'Kai Xin', avatarUrl: pngUrl, hasAvatar: true },
+      },
+    },
+  ],
+  status: 'sent',
+  text: 'Add her: https://tell.cc/kaixin.57',
+};
+
+export const LinkCardFirstPartyGroup = Template.bind({});
+LinkCardFirstPartyGroup.args = {
+  previews: [
+    {
+      domain: 'tell.cc',
+      image: fakeAttachment({
+        contentType: IMAGE_PNG,
+        fileName: 'the-sax.png',
+        height: 240,
+        url: pngUrl,
+        width: 320,
+      }),
+      isStickerPack: false,
+      isCallLink: false,
+      title: '周末爬山群',
+      url: 'https://tell.cc/g#CjQKINkmHBTrNHjzMuLeH6OlhxeVDlVTxdRLNGCMhL3kBu2IEhD-qd_XOtNMPYsO6GtnyK6Y',
+      card: {
+        ...FIRST_PARTY_CARD,
+        kind: 'tellomi.group',
+        show_image: true,
+        first_party: { type: 'group', title: '周末爬山群', member_count: 12 },
+      },
+    },
+  ],
+  status: 'sent',
+  text: 'https://tell.cc/g#CjQKINkmHBTrNHjzMuLeH6OlhxeVDlVTxdRLNGCMhL3kBu2IEhD-qd_XOtNMPYsO6GtnyK6Y',
+  isLinkCardOnly: true,
+};
+
+export const LinkCardFirstPartyGroupJoined = Template.bind({});
+LinkCardFirstPartyGroupJoined.args = {
+  ...LinkCardFirstPartyGroup.args,
+  previews: [
+    {
+      ...(LinkCardFirstPartyGroup.args.previews?.[0] ?? { url: '' }),
+      firstPartyLocal: { isGroupMember: true },
+    },
+  ],
+};
+
+export const LinkCardFirstPartyCall = Template.bind({});
+LinkCardFirstPartyCall.args = {
+  previews: [
+    {
+      domain: 'tell.cc',
+      isStickerPack: false,
+      isCallLink: true,
+      title: 'Camping Prep',
+      url: 'https://tell.cc/call#key=bcdf-ghkm-npqr-stxz-bcdf-ghkm-npqr-stxz',
+      card: {
+        ...FIRST_PARTY_CARD,
+        kind: 'tellomi.call',
+        first_party: { type: 'call', title: 'Camping Prep' },
+      },
+    },
+  ],
+  status: 'sent',
+  text: 'Join us https://tell.cc/call#key=bcdf-ghkm-npqr-stxz-bcdf-ghkm-npqr-stxz',
+};
+
+export const LinkCardFirstPartySticker = Template.bind({});
+LinkCardFirstPartySticker.args = {
+  previews: [
+    {
+      domain: 'tell.cc',
+      image: fakeAttachment({
+        contentType: IMAGE_PNG,
+        fileName: 'the-sax.png',
+        height: 240,
+        url: pngUrl,
+        width: 320,
+      }),
+      isStickerPack: true,
+      isCallLink: false,
+      title: 'Bandit the Cat',
+      url: 'https://tell.cc/s#pack_id=0123456789abcdef0123456789abcdef&pack_key=abababababababababababababababababababababababababababababababab',
+      card: {
+        ...FIRST_PARTY_CARD,
+        kind: 'tellomi.sticker',
+        show_image: true,
+        first_party: {
+          type: 'sticker',
+          title: 'Bandit the Cat',
+          sticker_count: 24,
+        },
+      },
+    },
+  ],
+  status: 'sent',
+  text: 'https://tell.cc/s#pack_id=0123456789abcdef0123456789abcdef&pack_key=abababababababababababababababababababababababababababababababab',
+  isLinkCardOnly: true,
+};
+
+export const LinkCardFirstPartyStickerAdded = Template.bind({});
+LinkCardFirstPartyStickerAdded.args = {
+  ...LinkCardFirstPartySticker.args,
+  previews: [
+    {
+      ...(LinkCardFirstPartySticker.args.previews?.[0] ?? { url: '' }),
+      firstPartyLocal: { isStickerPackInstalled: true },
+    },
+  ],
+};
+
 // Tellomi (card-visual §3.5, tellomi/tellomi#1421): a message that is just the link is the card
 // alone.
 export const LinkCardOnly = Template.bind({});

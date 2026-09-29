@@ -57,6 +57,8 @@ import {
   isLinkCardOnly,
   toPlainLinkCard,
 } from '../../linkPreviews/linkOnlyMessage.std.ts';
+import type { LinkLocalLookupType } from '../../linkPreviews/firstPartyLocal.node.ts';
+import { getFirstPartyLocal } from '../../linkPreviews/firstPartyLocal.node.ts';
 import type {
   AciString,
   PniString,
@@ -239,6 +241,9 @@ export type GetPropsForBubbleOptions = Readonly<{
   getStoryReplyAttachment: (
     storyMessageId: string
   ) => AttachmentType | undefined;
+  // Tellomi (card-visual §5.2): reads of this device's own data for first-party link cards. Only
+  // the timeline passes it; without it those cards show what the URL alone says.
+  linkLocalLookup?: LinkLocalLookupType;
 }>;
 
 export function hasErrors(
@@ -445,7 +450,12 @@ const getPreviewsForMessage = (
   {
     hasMediaBackups,
     linkOnlyUrl,
-  }: { hasMediaBackups: boolean; linkOnlyUrl: string | undefined }
+    linkLocalLookup,
+  }: {
+    hasMediaBackups: boolean;
+    linkOnlyUrl: string | undefined;
+    linkLocalLookup: LinkLocalLookupType | undefined;
+  }
 ): Array<LinkPreviewForUIType> => {
   const { preview: previews = [] } = message;
   const body = message.body ?? '';
@@ -503,6 +513,10 @@ const getPreviewsForMessage = (
               })
             : undefined,
         card,
+        firstPartyLocal:
+          card?.level === 'first_party' && linkLocalLookup
+            ? getFirstPartyLocal(preview.url, card, linkLocalLookup)
+            : undefined,
       },
     ];
   });
@@ -902,6 +916,7 @@ export type GetPropsForMessageOptions = Pick<
   | 'defaultConversationColor'
   | 'hasMediaBackups'
   | 'getStoryReplyAttachment'
+  | 'linkLocalLookup'
 >;
 
 function getTextAttachment(
@@ -981,7 +996,7 @@ const getPropsForMessage = (
   const attachmentDroppedDueToSize = message.attachments?.some(
     item => item.wasTooBig
   );
-  const { hasMediaBackups } = options;
+  const { hasMediaBackups, linkLocalLookup } = options;
   const attachments = getAttachmentsForMessage(message, { hasMediaBackups });
   const author = getAuthorForMessage(message, options);
   // Tellomi (card-visual §3.5): the link a message consists of, when it has nothing else.
@@ -1002,6 +1017,7 @@ const getPropsForMessage = (
   const previews = getPreviewsForMessage(message, {
     hasMediaBackups,
     linkOnlyUrl,
+    linkLocalLookup,
   });
   const reactions = getReactionsForMessage(message, options);
 

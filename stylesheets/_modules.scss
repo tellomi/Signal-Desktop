@@ -1062,6 +1062,80 @@ $message-padding-horizontal: 12px;
   }
 }
 
+// Tellomi (card-visual §5.2): the card of a Tellomi object. Neutral, never tinted; the action
+// sits under a hairline across the card, 36px high, as Telegram draws its own objects.
+.module-message__link-preview__first-party-avatar {
+  display: flex;
+  flex-shrink: 0;
+  margin-inline-end: 12px;
+}
+
+.module-message__link-preview__first-party-logo {
+  width: 52px;
+  height: 52px;
+
+  @include mixins.color-svg-themed(
+    '../images/signal-logo.svg',
+    variables.$color-gray-90,
+    variables.$color-gray-05
+  );
+}
+
+.module-message__link-preview__first-party-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+
+  @include mixins.light-theme {
+    background-color: variables.$color-gray-15;
+    color: variables.$color-gray-60;
+  }
+  @include mixins.dark-theme {
+    background-color: variables.$color-gray-65;
+    color: variables.$color-gray-25;
+  }
+}
+
+.module-message__link-preview__first-party-subtitle {
+  @include mixins.font-body-2;
+
+  margin-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  @include mixins.light-theme {
+    color: variables.$color-gray-60;
+  }
+  @include mixins.dark-theme {
+    color: variables.$color-gray-25;
+  }
+}
+
+.module-message__link-preview__first-party-action {
+  @include mixins.font-body-1-bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  border-top: 1px solid;
+
+  @include mixins.light-theme {
+    background-color: variables.$color-gray-02;
+    border-top-color: variables.$color-black-alpha-12;
+    color: variables.$color-gray-90;
+  }
+  @include mixins.dark-theme {
+    background-color: variables.$color-gray-80;
+    border-top-color: variables.$color-white-alpha-12;
+    color: variables.$color-gray-05;
+  }
+}
+
 // Tellomi (ADR-0063 §6.1): a domain that imitates a well-known one.
 .module-message__link-preview__title--lookalike {
   @include mixins.light-theme {

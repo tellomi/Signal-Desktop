@@ -1652,6 +1652,39 @@
   "icu:TellomiLinkCard__track_count": {
     "messageformat": "{count, plural, other {# 首}}"
   },
+  "icu:TellomiLinkCard__action_message": {
+    "messageformat": "发消息"
+  },
+  "icu:TellomiLinkCard__action_join_group": {
+    "messageformat": "加入群聊"
+  },
+  "icu:TellomiLinkCard__action_open": {
+    "messageformat": "打开"
+  },
+  "icu:TellomiLinkCard__action_join_call": {
+    "messageformat": "加入通话"
+  },
+  "icu:TellomiLinkCard__action_add_stickers": {
+    "messageformat": "添加"
+  },
+  "icu:TellomiLinkCard__action_view_stickers": {
+    "messageformat": "查看"
+  },
+  "icu:TellomiLinkCard__member_count": {
+    "messageformat": "{count, plural, other {# 位成员}}"
+  },
+  "icu:TellomiLinkCard__group_joined": {
+    "messageformat": "你已加入"
+  },
+  "icu:TellomiLinkCard__sticker_count": {
+    "messageformat": "{count, plural, other {# 个贴纸}}"
+  },
+  "icu:TellomiLinkCard__stickers_added": {
+    "messageformat": "已添加"
+  },
+  "icu:TellomiLinkCard__call_title": {
+    "messageformat": "Tellomi 通话"
+  },
   "icu:TellomiLinks__link-previews-description": {
     "messageformat": "开启后，发送链接时你的设备会访问该网站。"
   },
