@@ -1652,6 +1652,15 @@
   "icu:TellomiLinkCard__track_count": {
     "messageformat": "{count, plural, other {# 首}}"
   },
+  "icu:TellomiLinks__link-previews-description": {
+    "messageformat": "開啟後，傳送連結時你的裝置會存取該網站。"
+  },
+  "icu:TellomiLinks__expand-short-links": {
+    "messageformat": "展開短連結"
+  },
+  "icu:TellomiLinks__expand-short-links-description": {
+    "messageformat": "產生預覽前，你的裝置會先開啟一次短連結，取得完整網址。短連結服務能看到這次存取。"
+  },
   "icu:TellomiLinkOpen__lookalike_message": {
     "messageformat": "這個連結的域名與 {domain} 相似，但不是它"
   },
@@ -6386,7 +6395,7 @@
     "messageformat": "縮放等級"
   },
   "icu:Preferences__link-previews--title": {
-    "messageformat": "建立連結預覽"
+    "messageformat": "產生連結預覽"
   },
   "icu:Preferences__link-previews--new-description": {
     "messageformat": "為您傳送的訊息直接從網站提取連結預覽。"

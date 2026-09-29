@@ -2198,6 +2198,18 @@
     "messageformat": "{count, plural, one {# track} other {# tracks}}",
     "description": "Tellomi (card-visual §3.9, tellomi/tellomi#1421): number of tracks in an album or playlist link card."
   },
+  "icu:TellomiLinks__link-previews-description": {
+    "messageformat": "When on, your device visits the website when you send a link.",
+    "description": "Tellomi (ADR-0063 §8.1 row 9, tellomi/tellomi#1421): description under the \"Generate link previews\" setting. Says plainly that the sender's device contacts the linked website. Same wording on Android and iOS."
+  },
+  "icu:TellomiLinks__expand-short-links": {
+    "messageformat": "Expand short links",
+    "description": "Tellomi (ADR-0063 §8.1 row 9, tellomi/tellomi#1421): switch under \"Generate link previews\": look up where a short link (for example b23.tv) leads before creating the preview. On by default, stored on this device only. Same wording on Android and iOS."
+  },
+  "icu:TellomiLinks__expand-short-links-description": {
+    "messageformat": "Before creating a preview, your device opens a short link once to find the full address. The short link service can see this.",
+    "description": "Tellomi (ADR-0063 §8.1 row 9, tellomi/tellomi#1421): description of the \"Expand short links\" switch. Same wording on Android and iOS."
+  },
   "icu:TellomiLinkOpen__lookalike_message": {
     "messageformat": "The domain of this link looks like {domain}, but it isn’t {domain}.",
     "description": "Tellomi (ADR-0063 §6.1, tellomi/tellomi#1421): warning shown once before opening a link whose domain imitates a well-known one (same Unicode skeleton, different domain). {domain} is the well-known domain it looks like. The user can still open it."

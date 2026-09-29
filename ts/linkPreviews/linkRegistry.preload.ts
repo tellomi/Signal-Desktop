@@ -18,6 +18,7 @@ import {
   toMessageContextJson,
   toPreviewInputJson,
 } from './linkCard.std.ts';
+import { getLinkErrorKind } from './linkLog.std.ts';
 import { parseLinkOpenPlan } from './linkOpenPlan.std.ts';
 
 const log = createLogger('linkRegistry');
@@ -87,7 +88,7 @@ export function classifyLinkPreview(
   try {
     card = parseLinkCard(current.classify(previewJson, body, messageJson));
   } catch (error) {
-    log.warn('classify failed', error);
+    log.warn(`classify failed: ${getLinkErrorKind(error)}`);
     card = undefined;
   }
   if (card?.reason) {
@@ -120,7 +121,7 @@ export function getLinkLookalike(url: string): string | undefined {
     lookalike =
       parseLinkOpenPlan(current.openPlan(url))?.lookalike ?? undefined;
   } catch (error) {
-    log.warn('openPlan failed', error);
+    log.warn(`openPlan failed: ${getLinkErrorKind(error)}`);
     lookalike = undefined;
   }
   lookalikeCache.set(key, lookalike ?? '');
