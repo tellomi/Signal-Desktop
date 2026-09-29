@@ -73,6 +73,24 @@ describe('getLinkPreviewDisplay', () => {
     });
   });
 
+  it('shows the registrable domain once, as the title, on a plain-link card', () => {
+    const card: LinkCardType = {
+      ...BASE,
+      level: 'plain_link',
+      title: null,
+      show_image: false,
+      tintable: false,
+      reason: 'no_title',
+    };
+    assert.deepEqual(getLinkPreviewDisplay({ ...SNAPSHOT, card }, i18n, NOW), {
+      title: 'bilibili.com',
+      description: undefined,
+      domain: undefined,
+      officialBadge: false,
+      hideSnapshotDate: true,
+    });
+  });
+
   it('shows the snapshot title and the registrable domain on a generic card, never the description', () => {
     assert.deepEqual(
       getLinkPreviewDisplay({ ...SNAPSHOT, card: BASE }, i18n, NOW),

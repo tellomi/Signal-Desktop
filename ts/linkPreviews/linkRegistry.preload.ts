@@ -18,6 +18,7 @@ import {
   toMessageContextJson,
   toPreviewInputJson,
 } from './linkCard.std.ts';
+import { parseLinkOpenPlan } from './linkOpenPlan.std.ts';
 
 const log = createLogger('linkRegistry');
 
@@ -28,6 +29,7 @@ let registry: LinkRegistry | undefined;
 let loadFailed = false;
 
 const cardCache = new LRUCache<string, LinkCardType | 'none'>({ max: 1000 });
+const lookalikeCache = new LRUCache<string, string>({ max: 1000 });
 
 export function getLinkRegistry(): LinkRegistry | undefined {
   if (registry || loadFailed) {
@@ -57,6 +59,7 @@ export function _setLinkRegistryForTesting(
   registry = value;
   loadFailed = false;
   cardCache.clear();
+  lookalikeCache.clear();
 }
 
 // Level and contents of the card for one received preview (ADR-0063 §5.1 rule 4: decided in the
@@ -95,4 +98,31 @@ export function classifyLinkPreview(
   }
   cardCache.set(key, card ?? 'none');
   return card;
+}
+
+// The well-known domain `url` imitates (ADR-0063 §6.1), from the same `open_plan` that warns
+// before opening it (app/linkOpen.main.ts); undefined when it imitates none, or without a
+// registry.
+export function getLinkLookalike(url: string): string | undefined {
+  const current = getLinkRegistry();
+  if (!current) {
+    return undefined;
+  }
+
+  const key = `${current.version}\u0000${url}`;
+  const cached = lookalikeCache.get(key);
+  if (cached !== undefined) {
+    return cached || undefined;
+  }
+
+  let lookalike: string | undefined;
+  try {
+    lookalike =
+      parseLinkOpenPlan(current.openPlan(url))?.lookalike ?? undefined;
+  } catch (error) {
+    log.warn('openPlan failed', error);
+    lookalike = undefined;
+  }
+  lookalikeCache.set(key, lookalike ?? '');
+  return lookalike;
 }

@@ -1655,6 +1655,128 @@ LinkCardOfficial.args = {
   text: 'https://tellomi.app/download',
 };
 
+// Tellomi (card-visual §3.5, tellomi/tellomi#1421): a message that is just the link is the card
+// alone.
+export const LinkCardOnly = Template.bind({});
+LinkCardOnly.args = {
+  previews: [
+    {
+      domain: 'signal.org',
+      image: fakeAttachment({
+        contentType: IMAGE_PNG,
+        fileName: 'the-sax.png',
+        height: 240,
+        url: pngUrl,
+        width: 320,
+      }),
+      isStickerPack: false,
+      isCallLink: false,
+      title: 'Signal',
+      url: 'https://www.signal.org',
+      card: {
+        level: 'generic',
+        provider: null,
+        provider_name: null,
+        kind: null,
+        route: null,
+        title: null,
+        description: null,
+        attrs: [],
+        domain: 'signal.org',
+        official_badge: false,
+        first_party: null,
+        lookalike: null,
+        show_image: true,
+        tintable: true,
+        payment: false,
+        reason: 'no_rich',
+      },
+    },
+  ],
+  status: 'sent',
+  text: 'https://www.signal.org',
+  isLinkCardOnly: true,
+};
+
+// Tellomi (card-visual §3.5, tellomi/tellomi#1421).
+export const LinkCardOnlyStructured = Template.bind({});
+LinkCardOnlyStructured.args = {
+  ...LinkCardStructured.args,
+  text: 'https://www.bilibili.com/video/BV1YDhJ6ZEL6',
+  isLinkCardOnly: true,
+};
+
+// Tellomi (card-visual §3.5 / §3.7, tellomi/tellomi#1421): just a link, without a preview or with
+// a plain-link decision: a no-image card drawn from the URL.
+export const LinkCardPlain = Template.bind({});
+LinkCardPlain.args = {
+  previews: [
+    {
+      domain: '163.com',
+      isStickerPack: false,
+      isCallLink: false,
+      url: 'https://www.163.com/news/article/K1234.html',
+      card: {
+        level: 'plain_link',
+        provider: null,
+        provider_name: null,
+        kind: null,
+        route: null,
+        title: null,
+        description: null,
+        attrs: [],
+        domain: '163.com',
+        official_badge: false,
+        first_party: null,
+        lookalike: null,
+        show_image: false,
+        tintable: false,
+        payment: false,
+        reason: 'no_title',
+      },
+    },
+  ],
+  status: 'sent',
+  text: 'https://www.163.com/news/article/K1234.html',
+  isLinkCardOnly: true,
+};
+
+// Tellomi (ADR-0063 §6.1, tellomi/tellomi#1421): the domain imitates a well-known one.
+export const LinkCardPlainLookalike = Template.bind({});
+LinkCardPlainLookalike.args = {
+  previews: [
+    {
+      domain: 'bi1ibili.com',
+      isStickerPack: false,
+      isCallLink: false,
+      url: 'https://www.bi1ibili.com/video/BV1YDhJ6ZEL6',
+      card: {
+        level: 'plain_link',
+        provider: null,
+        provider_name: null,
+        kind: null,
+        route: null,
+        title: null,
+        description: null,
+        attrs: [],
+        domain: 'bi1ibili.com',
+        official_badge: false,
+        first_party: null,
+        lookalike: 'bilibili.com',
+        show_image: false,
+        tintable: false,
+        payment: false,
+        reason: 'lookalike',
+      },
+    },
+  ],
+  status: 'sent',
+  text: 'https://www.bi1ibili.com/video/BV1YDhJ6ZEL6',
+  isLinkCardOnly: true,
+  conversationType: 'group',
+  contactNameColor: '100',
+};
+
 export const LinkPreviewWithNoDescription = Template.bind({});
 LinkPreviewWithNoDescription.args = {
   previews: [
