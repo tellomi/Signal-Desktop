@@ -46,6 +46,8 @@ import {
 import { isDownloaded } from '../../util/Attachment.std.ts';
 import type { MessageRequestState } from '../../components/conversation/MessageRequestActionsConfirmation.dom.tsx';
 import type { MessageForwardDraft } from '../../types/ForwardDraft.std.ts';
+import type { LinkPreviewType } from '../../types/message/LinkPreviews.std.ts';
+import { getForwardablePreviews } from '../../linkPreviews/forwardLinkPreviews.std.ts';
 import { hydrateRanges } from '../../util/BodyRange.node.ts';
 import {
   getConversationSelector,
@@ -933,6 +935,9 @@ function toggleDraftGifMessageSendModal(
 
 function toMessageForwardDraft(
   props: ForwardMessagePropsType,
+  // Tellomi (ADR-0063 §7.4): the message's own previews, not `props.previews`: those are what its
+  // bubble is drawn with (forwardLinkPreviews.std.ts).
+  previews: ReadonlyArray<LinkPreviewType>,
   getConversation: GetConversationByIdType
 ): MessageForwardDraft {
   return {
@@ -942,7 +947,7 @@ function toMessageForwardDraft(
     isSticker: Boolean(props.isSticker),
     messageBody: props.text,
     originalMessageId: props.id,
-    previews: props.previews ?? [],
+    previews,
   };
 }
 
@@ -1025,6 +1030,7 @@ function toggleForwardMessagesModal(
                 })
               ),
             },
+            getForwardablePreviews(message.attributes.preview),
             conversationSelector
           );
 

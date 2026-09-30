@@ -9,6 +9,7 @@ import type {
   LinkFetchRequest,
   LinkFetchResult,
 } from './linkFetchTypes.std.ts';
+import { LINK_IMAGE_CONTENT_TYPES } from './linkImageTypes.std.ts';
 
 // ADR-0063 §4.2 / §4.4 / §5.2, sender side: rust/links decides what to fetch, the client fetches
 // it and feeds the result back, rust/links assembles the preview. This drives one link's job:
@@ -145,14 +146,6 @@ export const LINK_BUDGET_MS = 10_000;
 
 // Desktop keeps its current image limits (§4.4: "images keep each platform's values").
 const LINK_IMAGE_MAX_BYTES = 1024 * 1024;
-const LINK_IMAGE_CONTENT_TYPES: ReadonlyArray<string> = [
-  'image/gif',
-  'image/x-icon',
-  'image/vnd.microsoft.icon',
-  'image/jpeg',
-  'image/png',
-  'image/webp',
-];
 
 function feed(job: LinkJobLike, id: number, result: LinkFetchResult): void {
   switch (result.type) {
