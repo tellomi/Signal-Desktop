@@ -1868,8 +1868,13 @@ async function _ajax<Type extends AjaxResponseType, OutputShape>(
     storageUrl,
     validateResponse: param.validateResponse,
     version,
+    // Tellomi: `resources` is a public static host behind a third-party edge (Cloudflare);
+    // it never gets the account's credentials (tellomi/tellomi ADR-0073 §3.12).
     unauthenticated:
-      'unauthenticated' in param ? param.unauthenticated : undefined,
+      param.host === 'resources' ||
+      ('unauthenticated' in param && param.unauthenticated)
+        ? true
+        : undefined,
     accessKey: 'accessKey' in param ? param.accessKey : undefined,
     groupSendToken:
       'groupSendToken' in param ? param.groupSendToken : undefined,
