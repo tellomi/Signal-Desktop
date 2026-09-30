@@ -2142,7 +2142,7 @@
     "messageformat": "మీ కనెక్షన్ పోయింది. Tellomi మళ్ళీ కనెక్ట్ అవుతోంది."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "సిగ్నల్ {window} ను భాగస్వామ్యం చేస్తోంది."
+    "messageformat": "Tellomi {window} ను భాగస్వామ్యం చేస్తోంది."
   },
   "icu:calling__presenting--info--unknown": {
     "messageformat": "Tellomi స్క్రీన్ పంచుకోవడం సక్రియంగా ఉంది"
@@ -2166,7 +2166,7 @@
     "messageformat": "అనుమతి అవసరం"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "మీ కంప్యూటర్ స్క్రీన్ రికార్డింగ్‌ను సమాచారాన్ని పొందటానికి సిగ్నల్‌కు అనుమతి అవసరం."
+    "messageformat": "మీ కంప్యూటర్ స్క్రీన్ రికార్డింగ్‌ను సమాచారాన్ని పొందటానికి Tellomi‌కు అనుమతి అవసరం."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "సిస్టమ్ ప్రాధాన్యతలకు వెళ్లండి."
@@ -7370,7 +7370,7 @@
     "messageformat": "Tellomi PIN ల గురించి"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "PINలు మీ సమాచారాన్ని సిగ్నల్‌లో గుప్తీకరించి నిల్వ చేస్తాయి, తద్వారా మీరు మాత్రమే దాన్ని యాక్సెస్ చేయగలరు. మీరు తిరిగి ఇన్‌స్టాల్ చేసినప్పుడు మీ ప్రొఫైల్, సెట్టింగ్‌లు మరియు పరిచయాలు పునరుద్ధరించబడతాయి."
+    "messageformat": "PINలు మీ సమాచారాన్ని Tellomi‌లో గుప్తీకరించి నిల్వ చేస్తాయి, తద్వారా మీరు మాత్రమే దాన్ని యాక్సెస్ చేయగలరు. మీరు తిరిగి ఇన్‌స్టాల్ చేసినప్పుడు మీ ప్రొఫైల్, సెట్టింగ్‌లు మరియు పరిచయాలు పునరుద్ధరించబడతాయి."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "మరింత నేర్చుకోండి"
@@ -8541,7 +8541,7 @@
     "messageformat": "మీ సమాచారం రహస్యమైనది"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "ఒక స్వతంత్ర లాభాపేక్షలేని సంస్థగా, Tellomi ప్రైవేట్ సందేశాలు పంపడం మరియు కాల్స్‌కు కట్టుబడి ఉంది. ప్రకటనలు లేవు, ట్రాకర్‌లు లేవు, నిఘా లేదు. Tellomi కు మద్దతు ఇవ్వడానికి ఈరోజే విరాళం ఇవ్వండి."
+    "messageformat": "ఒక స్వతంత్ర లాభాపేక్షలేని సంస్థగా, Signal ప్రైవేట్ సందేశాలు పంపడం మరియు కాల్స్‌కు కట్టుబడి ఉంది. ప్రకటనలు లేవు, ట్రాకర్‌లు లేవు, నిఘా లేదు. Signal కు మద్దతు ఇవ్వడానికి ఈరోజే విరాళం ఇవ్వండి."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "మీరు విరాళం ఇచ్చినప్పుడు మీ ప్రొఫైల్‌పై ఐచ్ఛిక బ్యాడ్జ్‌ను పొందండి."

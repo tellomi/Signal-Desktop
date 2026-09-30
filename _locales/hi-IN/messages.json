@@ -915,7 +915,7 @@
     "messageformat": "देखें कि इस अपडेट {whatsNew} में क्या है"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi एक गैर-लाभकारी संस्था है"
+    "messageformat": "Signal एक गैर-लाभकारी संस्था है"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "नया क्या है"
@@ -8541,7 +8541,7 @@
     "messageformat": "आपकी जानकारी गोपनीय रहती है"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "एक स्वतंत्र गैर-लाभकारी संस्था के तौर पर, Tellomi मैसेज और कॉल की जानकारी को गोपनीय बनाए रखने के लिए प्रतिबद्ध है। न कोई विज्ञापन, न कोई ट्रैकर, न ही निगरानी। Tellomi को सहयोग करने के लिए आज ही डोनेट करें।"
+    "messageformat": "एक स्वतंत्र गैर-लाभकारी संस्था के तौर पर, Signal मैसेज और कॉल की जानकारी को गोपनीय बनाए रखने के लिए प्रतिबद्ध है। न कोई विज्ञापन, न कोई ट्रैकर, न ही निगरानी। Signal को सहयोग करने के लिए आज ही डोनेट करें।"
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "डोनेट करने पर आपको अपनी प्रोफ़ाइल में एक बैज जोड़ने का विकल्प मिलेगा"
@@ -8550,7 +8550,7 @@
     "messageformat": "आपकी प्राइवेसी की सुरक्षा करना हमारा मिशन है"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi एक गैर-लाभकारी संस्था है।"
+    "messageformat": "Signal एक गैर-लाभकारी संस्था है।"
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Tellomi लोगो की शैली में दिल का आइकन"

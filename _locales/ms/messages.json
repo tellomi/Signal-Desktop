@@ -915,7 +915,7 @@
     "messageformat": "Lihat {whatsNew} dalam kemas kini ini"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi ialah organisasi bukan untung"
+    "messageformat": "Signal ialah organisasi bukan untung"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "apakah yang baharu"
@@ -8541,7 +8541,7 @@
     "messageformat": "Maklumat anda adalah peribadi"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Sebagai organisasi bukan untung yang bebas, Tellomi komited terhadap pemesejan dan panggilan peribadi. Tiada iklan, tiada penjejak, tiada pengawasan. Derma hari ini untuk menyokong Tellomi."
+    "messageformat": "Sebagai organisasi bukan untung yang bebas, Signal komited terhadap pemesejan dan panggilan peribadi. Tiada iklan, tiada penjejak, tiada pengawasan. Derma hari ini untuk menyokong Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Dapatkan lencana pilihan pada profil anda apabila anda menderma"
@@ -8550,7 +8550,7 @@
     "messageformat": "Privasi anda adalah misi kami"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi ialah organisasi bukan untung."
+    "messageformat": "Signal ialah organisasi bukan untung."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Ikon hati dalam gaya logo Tellomi"

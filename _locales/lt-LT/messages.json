@@ -915,7 +915,7 @@
     "messageformat": "Atraskite, {whatsNew} šiame atnaujinime"
   },
   "icu:signalNonProfit": {
-    "messageformat": "„Tellomi“ yra ne pelno organizacija"
+    "messageformat": "„Signal“ yra ne pelno organizacija"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "kas naujo"
@@ -8541,7 +8541,7 @@
     "messageformat": "Tavo informacija yra privati"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Kaip nepriklausoma ne pelno organizacija „Tellomi“ yra įsipareigojusi užtikrinti žinučių ir skambučių privatumą. Nebrukame reklamų, nesekame ir nestebime. Skirkite paramą šiandien ir palaikykite „Tellomi“."
+    "messageformat": "Kaip nepriklausoma ne pelno organizacija „Signal“ yra įsipareigojusi užtikrinti žinučių ir skambučių privatumą. Nebrukame reklamų, nesekame ir nestebime. Skirkite paramą šiandien ir palaikykite „Signal“."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Parėmę galite pasirinkti, kad jūsų profilyje būtų rodomas ženklelis"
@@ -8550,7 +8550,7 @@
     "messageformat": "Jūsų privatumas – mūsų misija"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "„Tellomi“ yra ne pelno organizacija."
+    "messageformat": "„Signal“ yra ne pelno organizacija."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Širdies piktograma „Tellomi“ logotipo stiliumi"

@@ -915,7 +915,7 @@
     "messageformat": "មើល {whatsNew} នៅក្នុងការធ្វើបច្ចុប្បន្នភាពនេះ"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi គឺជាអង្គការមិនស្វែងរកប្រាក់ចំណេញ"
+    "messageformat": "Signal គឺជាអង្គការមិនស្វែងរកប្រាក់ចំណេញ"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "អ្វីដែលថ្មី"
@@ -8541,7 +8541,7 @@
     "messageformat": "ព័ត៌មានរបស់អ្នកមានលក្ខណៈឯកជន"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "ក្នុងនាមជាអង្គការមិនស្វែងរកប្រាក់ចំណេញឯករាជ្យមួយ Tellomi ប្តេជ្ញាចិត្តផ្តល់នូវការផ្ញើសារ និងការហៅទូរសព្ទឯកជន។ គ្មានការផ្សាយពាណិជ្ជកម្ម គ្មានកម្មវិធីតាមដាន គ្មានការឃ្លាំមើល។ បរិច្ចាគថ្ងៃនេះដើម្បីឧបត្ថម្ភគាំទ្រដល់ Tellomi។"
+    "messageformat": "ក្នុងនាមជាអង្គការមិនស្វែងរកប្រាក់ចំណេញឯករាជ្យមួយ Signal ប្តេជ្ញាចិត្តផ្តល់នូវការផ្ញើសារ និងការហៅទូរសព្ទឯកជន។ គ្មានការផ្សាយពាណិជ្ជកម្ម គ្មានកម្មវិធីតាមដាន គ្មានការឃ្លាំមើល។ បរិច្ចាគថ្ងៃនេះដើម្បីឧបត្ថម្ភគាំទ្រដល់ Signal។"
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "ទទួលបានស្លាកជាជម្រើសនៅលើប្រូហ្វាល់របស់អ្នកនៅពេលអ្នកបរិច្ចាគ"
@@ -8550,7 +8550,7 @@
     "messageformat": "ឯកជនភាពរបស់អ្នកគឺជាបេសកកម្មរបស់យើង"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi គឺជាអង្គការមិនស្វែងរកប្រាក់ចំណេញ អំណោយរបស់សហរដ្ឋអាមេរិកអាចកាត់ពន្ធបាន។"
+    "messageformat": "Signal គឺជាអង្គការមិនស្វែងរកប្រាក់ចំណេញ អំណោយរបស់សហរដ្ឋអាមេរិកអាចកាត់ពន្ធបាន។"
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "រូបបេះដូងក្នុងរចនាប័ទ្មនៃឡូហ្គោ Tellomi"

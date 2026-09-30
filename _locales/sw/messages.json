@@ -915,7 +915,7 @@
     "messageformat": "Pata {whatsNew} katika sasisho hili"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi ni shirika lilisilo la faida"
+    "messageformat": "Signal ni shirika lilisilo la faida"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "vitu vipya"
@@ -8541,7 +8541,7 @@
     "messageformat": "Taarifa zako ni za kibinafsi"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Kama shirika lisilo la faida linalojitegemea, Tellomi imejikita katika kuhakikisha faragha ya ujumbe na simu. Hakuna matangazo, hakuna vifuatilizi, hakuna ufuatiliaji. Changia leo ili kuiunga mkono Tellomi."
+    "messageformat": "Kama shirika lisilo la faida linalojitegemea, Signal imejikita katika kuhakikisha faragha ya ujumbe na simu. Hakuna matangazo, hakuna vifuatilizi, hakuna ufuatiliaji. Changia leo ili kuiunga mkono Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Pata beji ya hiari kwenye wasifu wako unapochanga"
@@ -8550,7 +8550,7 @@
     "messageformat": "Faragha yako ni jukumu letu"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi ni shirika lilisilo la faida. Michango inayotolewa Marekani hukatwa kodi."
+    "messageformat": "Signal ni shirika lilisilo la faida. Michango inayotolewa Marekani hukatwa kodi."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Aikoni ya moyo katika mtindo wa nembo ya Tellomi"

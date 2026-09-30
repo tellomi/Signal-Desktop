@@ -1,56 +1,57 @@
 #!/usr/bin/env python3
-"""Tellomi: 把 _locales/*/messages.json 文案里的产品名「Signal」换成「Tellomi」，幂等，可在每次合并上游后重跑。
+# Copyright 2026 重庆半格智能科技有限公司
+# SPDX-License-Identifier: AGPL-3.0-only
+"""Tellomi: _locales/*/messages.json 里的品牌字符串改名，已经搬到超级仓库 scripts/brand/rename-strings.py（tellomi/tellomi#1246）。
 
-    python3 scripts/tellomi/rename-strings.py --check    # 只统计
-    python3 scripts/tellomi/rename-strings.py            # 真改，并把不动的条目列到 build/tellomi-strings-todo.txt
+这个文件只是转发，让 `python3 scripts/tellomi/rename-strings.py [--check]` 这条老命令还能用，不再自带规则：
+Android / iOS / Desktop 共用同一张表和同一套把关规则，两份规则放在两处会漂移。原来这里的那份用各语种自己的译文判分类，
+ORG_HINTS 只认中文和英文，把 3 个讲非营利组织的 key 在 55 种语言里改成了「Tellomi 是非营利组织」（157 处，已取回上游原文）；
+也不认音译、拉丁语种的变格、韩语助词和土耳其语词尾。
 
-与超级仓库 scripts/brand/rename-strings.py（Android / iOS）同一套分类，三类不动（换了就是假话 / 错话，留给人定）：
-  url       含 signal.org / signal.me / 任何链接的（我们对应页面还没有）
-  org       讲 Signal 这个组织的（非营利、捐赠、版权、Signal Messenger）
-  protocol  「Signal Protocol」这种技术名词
-只改 messageformat 的值，不碰 key、description、占位符；写回保持 2 空格缩进与原键序。"""
-import argparse, json, re, sys
-from collections import Counter
+    python3 scripts/tellomi/rename-strings.py --check          # 只统计，不改文件
+    python3 scripts/tellomi/rename-strings.py                  # 真改
+    python3 scripts/tellomi/rename-strings.py --restore-org    # 一次性：把被改坏的组织陈述从上游 tag 取回
+    python3 scripts/tellomi/rename-strings.py --stats          # 逐语种列出改了几条
+
+超级仓库在哪：环境变量 TELLOMI_SUPER_ROOT，或者这个 fork 本身就是超级仓库里的 clients/desktop。找不到就报错退出，不会退回到旧规则。
+上游基线 tag 默认是 v8.27.0（超级仓库 docs/signal/VERSIONS.md），fork 被 rebase 到新的上游 tag 之后用 BRAND_DESKTOP_UPSTREAM_REF 指过去。
+"""
+from __future__ import annotations
+
+import os
+import subprocess
+import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-OLD, NEW = "Signal", "Tellomi"
-# 不能用 \b：Python 的 \w 含 CJK，「打开Signal」里 "开" 与 "S" 之间没有词界，中日韩文案会整片漏掉（2026-09-22 owner 在配对页看见的）。
-WORD = re.compile(rf"(?<![A-Za-z0-9_]){OLD}(?![A-Za-z0-9_])")
-URL_HINTS = ("signal.org", "signal.me", "://")
-ORG_HINTS = ("501", "nonprofit", "non-profit", "非营利", "非牟利", "llc", "foundation", "signal messenger", "donat", "捐款", "捐赠", "版权", "copyright")
-PROTO_HINTS = ("signal protocol", "signal 协议")
+FORK = Path(__file__).resolve().parents[2]
 
 
-def classify(text):
-    low = text.lower()
-    if any(h in low for h in URL_HINTS): return "url"
-    if any(h in low for h in PROTO_HINTS): return "protocol"
-    if any(h in low for h in ORG_HINTS): return "org"
-    return "rename"
+def find_super_script() -> Path | None:
+    roots = []
+    if os.environ.get("TELLOMI_SUPER_ROOT"):
+        roots.append(Path(os.environ["TELLOMI_SUPER_ROOT"]))
+    roots.append(FORK.parents[1])  # <超级仓库>/clients/desktop
+    for root in roots:
+        script = root / "scripts" / "brand" / "rename-strings.py"
+        if script.is_file():
+            return script
+    return None
 
 
-def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--check", action="store_true"); a = ap.parse_args()
-    counts = Counter(); todo = []; files = 0
-    for p in sorted((ROOT / "_locales").glob("*/messages.json")):
-        raw = p.read_text(encoding="utf-8"); d = json.loads(raw); changed = 0
-        for k, v in d.items():
-            if not isinstance(v, dict) or not isinstance(v.get("messageformat"), str): continue
-            m = v["messageformat"]
-            if not WORD.search(m): continue
-            kind = classify(m)
-            if kind != "rename":
-                todo.append(f"{kind}\t{p.parent.name}\t{k}\t{m[:120]}"); counts[kind] += 1; continue
-            v["messageformat"] = WORD.sub(NEW, m); changed += 1
-        counts["rename"] += changed
-        if changed and not a.check:
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"); files += 1
-    print(f"rename={counts['rename']} url={counts['url']} org={counts['org']} protocol={counts['protocol']} files_written={files}")
-    if not a.check:
-        out = ROOT / "build" / "tellomi-strings-todo.txt"; out.parent.mkdir(exist_ok=True)
-        out.write_text("\n".join(todo) + "\n", encoding="utf-8"); print(f"待人定的条目：{out}（{len(todo)} 条）")
-    return 0
+def main() -> int:
+    script = find_super_script()
+    if script is None:
+        print(
+            "找不到超级仓库的 scripts/brand/rename-strings.py。"
+            "把 TELLOMI_SUPER_ROOT 指到 tellomi/tellomi 的检出，例如：\n"
+            f"  TELLOMI_SUPER_ROOT=<tellomi 超级仓库> python3 {Path(__file__).name} {' '.join(sys.argv[1:])}",
+            file=sys.stderr,
+        )
+        return 2
+    env = {**os.environ, "BRAND_DESKTOP_ROOT": str(FORK)}
+    return subprocess.run(
+        [sys.executable, str(script), "--platform", "desktop", *sys.argv[1:]], env=env
+    ).returncode
 
 
 if __name__ == "__main__":

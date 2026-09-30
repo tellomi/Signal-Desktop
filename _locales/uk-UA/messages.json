@@ -915,7 +915,7 @@
     "messageformat": "Дізнайтеся, {whatsNew} в цьому оновленні"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi є неприбутковою організацією"
+    "messageformat": "Signal є неприбутковою організацією"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "що нового"
@@ -8541,7 +8541,7 @@
     "messageformat": "Ваша інформація конфіденційна"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Tellomi — це незалежна неприбуткова організація, віддана ідеї конфіденційного спілкування. Без реклами, відстежування й нагляду. Підтримайте Tellomi донатом."
+    "messageformat": "Signal — це незалежна неприбуткова організація, віддана ідеї конфіденційного спілкування. Без реклами, відстежування й нагляду. Підтримайте Signal донатом."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Отримайте особливий значок профілю за донат"
@@ -8550,7 +8550,7 @@
     "messageformat": "Наша місія — ваша конфіденційність"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi є неприбутковою організацією."
+    "messageformat": "Signal є неприбутковою організацією."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Значок у вигляді серця в стилі логотипа Tellomi"

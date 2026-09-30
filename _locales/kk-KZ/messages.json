@@ -915,7 +915,7 @@
     "messageformat": "Осы жаңа нұсқадағы {whatsNew} тізімін көру"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi – коммерциялық емес жоба"
+    "messageformat": "Signal – коммерциялық емес жоба"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "жаңалықтар"
@@ -8541,7 +8541,7 @@
     "messageformat": "Ақпаратыңыз құпия сақталады"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Тәуелсіз коммерциялық емес жоба ретінде Tellomi хабар алмасу мен қоңыраулардың құпия болуын міндет көреді. Жарнамалар жоқ, трекерлер жоқ, бақылау жоқ. Tellomi-ға бүгін қаржылай қолдау көрсетіңіз."
+    "messageformat": "Тәуелсіз коммерциялық емес жоба ретінде Signal хабар алмасу мен қоңыраулардың құпия болуын міндет көреді. Жарнамалар жоқ, трекерлер жоқ, бақылау жоқ. Signal-ға бүгін қаржылай қолдау көрсетіңіз."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Сіз қаржылай қолдау көрсеткенде, профиліңізге қосымша танымбелгі беріледі"
@@ -8550,7 +8550,7 @@
     "messageformat": "Құпиялық – біздің басты міндетіміз"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi – коммерциялық емес жоба. АҚШ-тан көрсетілген қаржылай қолдауға салықтық шегерім қарастырылған."
+    "messageformat": "Signal – коммерциялық емес жоба. АҚШ-тан көрсетілген қаржылай қолдауға салықтық шегерім қарастырылған."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Tellomi логотипінің стиліндегі жүрек белгішесі"

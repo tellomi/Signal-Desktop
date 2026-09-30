@@ -63,7 +63,7 @@
     "messageformat": "Korkealaatuisen median lähetys kuluttaa enemmän dataa."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Lahjoita Signalille"
+    "messageformat": "Lahjoita Tellomille"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
     "messageformat": "<bold>Yhdistetyt laitteet</bold> mahdollistaa pääsyn Tellomi-tilille ja -viesteihin turvallisesti myös muilta laitteilta."
@@ -114,10 +114,10 @@
     "messageformat": "Tuntematon ryhmä"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Signalia ei voitu avata"
+    "messageformat": "Tellomia ei voitu avata"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Voit korjata ongelman seuraamalla tukisivun palautusopasta tai ottamalla yhteyttä Tellomi-tukeen ja pyytää apua korjaamisessa.\n\nJos sinun on käytettävä Signalia heti, voit poistaa tietosi ja yhdistää tämän tietokoneen uudelleen. Saat mahdollisuuden siirtää puhelimesi viestihistorian."
+    "messageformat": "Voit korjata ongelman seuraamalla tukisivun palautusopasta tai ottamalla yhteyttä Tellomi-tukeen ja pyytää apua korjaamisessa.\n\nJos sinun on käytettävä Tellomia heti, voit poistaa tietosi ja yhdistää tämän tietokoneen uudelleen. Saat mahdollisuuden siirtää puhelimesi viestihistorian."
   },
   "icu:databaseError": {
     "messageformat": "Tietokantavirhe"
@@ -129,10 +129,10 @@
     "messageformat": "Poista kaikki tiedot pysyvästi"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Kaikki viestihistoriasi ja mediasi poistetaan tältä laitteelta pysyvästi. Tämä ei poista mitään tietoja puhelimestasi.\n\nVoit käyttää Signalia tällä laitteella, kun olet yhdistänyt sen tiliisi uudelleen. Saat mahdollisuuden siirtää puhelimesi viestihistorian."
+    "messageformat": "Kaikki viestihistoriasi ja mediasi poistetaan tältä laitteelta pysyvästi. Tämä ei poista mitään tietoja puhelimestasi.\n\nVoit käyttää Tellomia tällä laitteella, kun olet yhdistänyt sen tiliisi uudelleen. Saat mahdollisuuden siirtää puhelimesi viestihistorian."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Tietokantasi versio ei vastaa tätä Tellomi-versiota. Varmista, että avaat Signalin uusimman version tietokoneellasi."
+    "messageformat": "Tietokantasi versio ei vastaa tätä Tellomi-versiota. Varmista, että avaat Tellomin uusimman version tietokoneellasi."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Tietokannan salausavainta ei voida käyttää, koska käyttöjärjestelmän salausavainnippu on muuttunut arvosta {previousBackend} arvoon {currentBackend}. Tämä voi tapahtua, jos työpöytäympäristö muuttuu, esimerkiksi GNOME:n ja KDE:n välillä.\n\nVaihda edelliseen työpöytäympäristöön."
@@ -507,10 +507,10 @@
     "messageformat": "Merkitsit turvanumerosi käyttäjän {name} kanssa varmentamattomaksi toisessa laitteessa"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Turvanumero, jota yrität varmentaa on vaihtunut. Yritä varmentaa uusi turvanumerosi yhteystiedon {name1} kanssa. Muista, että tämä muutos voi tarkoittaa joko sitä, että joku yrittää kaapata viestiliikennettänne, tai sitä, että {name2} on asentanut Signalin uudelleen."
+    "messageformat": "Turvanumero, jota yrität varmentaa on vaihtunut. Yritä varmentaa uusi turvanumerosi yhteystiedon {name1} kanssa. Muista, että tämä muutos voi tarkoittaa joko sitä, että joku yrittää kaapata viestiliikennettänne, tai sitä, että {name2} on asentanut Tellomin uudelleen."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Seuraavat henkilöt ovat ehkä asentaneet Signalin uudelleen tai vaihtaneet käyttämäänsä laitetta. Vahvista uusi turvanumero napsauttamalla vastaanottajaa. Tämä on valinnainen toiminto."
+    "messageformat": "Seuraavat henkilöt ovat ehkä asentaneet Tellomin uudelleen tai vaihtaneet käyttämäänsä laitetta. Vahvista uusi turvanumero napsauttamalla vastaanottajaa. Tämä on valinnainen toiminto."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Lähetä odottavat viestit"
@@ -519,7 +519,7 @@
     "messageformat": "Tarkista"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Sinulla on {count,number} kontakti, joka on ehkä asentanut Signalin uudelleen tai vaihtanut käyttämäänsä laitetta. Voit halutessasi tarkistaa hänen turvanumeronsa ennen lähettämistä.} other {Sinulla on {count,number} kontaktia, jotka ovat ehkä asentaneet Signalin uudelleen tai vaihtaneet käyttämäänsä laitetta. Voit halutessasi tarkistaa heidän turvanumeronsa ennen lähettämistä.}}"
+    "messageformat": "{count, plural, one {Sinulla on {count,number} kontakti, joka on ehkä asentanut Tellomin uudelleen tai vaihtanut käyttämäänsä laitetta. Voit halutessasi tarkistaa hänen turvanumeronsa ennen lähettämistä.} other {Sinulla on {count,number} kontaktia, jotka ovat ehkä asentaneet Tellomin uudelleen tai vaihtaneet käyttämäänsä laitetta. Voit halutessasi tarkistaa heidän turvanumeronsa ennen lähettämistä.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Kaikki kontaktit on tarkistettu. Jatka napsauttamalla Lähetä."
@@ -909,13 +909,13 @@
     "messageformat": "Etsi puhelinnumerolla"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Tervetuloa Signaliin"
+    "messageformat": "Tervetuloa Tellomiin"
   },
   "icu:whatsNew": {
     "messageformat": "Tutustu tämän version {whatsNew}"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi on voittoa tavoittelematon organisaatio."
+    "messageformat": "Signal on voittoa tavoittelematon organisaatio."
   },
   "icu:viewReleaseNotes": {
     "messageformat": "uusiin ominaisuuksiin"
@@ -1029,10 +1029,10 @@
     "messageformat": "Mykistä"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signalin päivitys ei onnistunut. <retryUpdateButton>Yritä päivittää uudelleen</retryUpdateButton> tai käy osoitteessa {url} ja suorita asennus manuaalisesti. <contactSupportLink>Ota sitten yhteyttä tukeen</contactSupportLink> ongelmaan liittyen"
+    "messageformat": "Tellomin päivitys ei onnistunut. <retryUpdateButton>Yritä päivittää uudelleen</retryUpdateButton> tai käy osoitteessa {url} ja suorita asennus manuaalisesti. <contactSupportLink>Ota sitten yhteyttä tukeen</contactSupportLink> ongelmaan liittyen"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signalin päivitys ei onnistunut. Asenna päivitys käsin osoitteesta {url}. <contactSupportLink>Ota sitten yhteyttä tukeen</contactSupportLink> ongelmaan liittyen"
+    "messageformat": "Tellomin päivitys ei onnistunut. Asenna päivitys käsin osoitteesta {url}. <contactSupportLink>Ota sitten yhteyttä tukeen</contactSupportLink> ongelmaan liittyen"
   },
   "icu:readOnlyVolume": {
     "messageformat": "Tellomi Desktop on todennäköisesti macOS-karanteenissa, eikä sitä voi päivittää automaattisesti. Yritä siirtää  {app} -sovellus  {folder} -kansioon Finderin avulla."
@@ -1080,7 +1080,7 @@
     "messageformat": "Viesti poistetaan tästä laitteesta."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Tämä viesti poistetaan kaikilta keskustelussa olevilta, jos he käyttävät Signalin uusinta versiota. He näkevät, että poistit viestin."
+    "messageformat": "Tämä viesti poistetaan kaikilta keskustelussa olevilta, jos he käyttävät Tellomin uusinta versiota. He näkevät, että poistit viestin."
   },
   "icu:from": {
     "messageformat": "Lähettäjä"
@@ -1122,7 +1122,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "”{title}” on profiilinimi, jonka tämä henkilö on asettanut Signalissa."
+    "messageformat": "”{title}” on profiilinimi, jonka tämä henkilö on asettanut Tellomissa."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Vahvistettu"
@@ -1449,7 +1449,7 @@
     "messageformat": "Lue lisää"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signalin sisältö salataan päästä päähän. Tästä syystä keskustelu täytyy joskus päivittää. Tämä ei vaikuta tietoturvaan. Tämän yhteyshenkilön viimeisin viesti ei välttämättä näy. Voit pyytää häntä lähettämään sen uudelleen."
+    "messageformat": "Tellomin sisältö salataan päästä päähän. Tästä syystä keskustelu täytyy joskus päivittää. Tämä ei vaikuta tietoturvaan. Tämän yhteyshenkilön viimeisin viesti ei välttämättä näy. Voit pyytää häntä lähettämään sen uudelleen."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Ota yhteyttä tukeen"
@@ -1476,7 +1476,7 @@
     "messageformat": "{sender} on vaihtanut puhelinnumeronsa"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Yhteystieto liittyi Signaliin"
+    "messageformat": "Yhteystieto liittyi Tellomiin"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "Keskusteluissa {obsoleteConversationTitle} ja {conversationTitle} on kyse samasta tilistä. Molempien keskusteluiden viestihistoria on täällä."
@@ -2145,7 +2145,7 @@
     "messageformat": "Tellomi jakaa {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Signalin näytönjako on aktiivinen"
+    "messageformat": "Tellomin näytönjako on aktiivinen"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Yhdistetään uudelleen…"
@@ -2187,7 +2187,7 @@
     "messageformat": "Välitä aina kaikki puhelut"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Kaikki puhelut välitetään Signalin palvelimen kautta, jotta IP-osoitteesi ei paljastu yhteystiedollesi. Heikentää puhelun laatua."
+    "messageformat": "Kaikki puhelut välitetään Tellomin palvelimen kautta, jotta IP-osoitteesi ei paljastu yhteystiedollesi. Heikentää puhelun laatua."
   },
   "icu:permissions": {
     "messageformat": "Käyttöoikeudet"
@@ -2520,7 +2520,7 @@
     "messageformat": "Muokkauksia voidaan tehdä vain 24 tunnin kuluessa tämän viestin lähettämisestä."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} ei ole Signalin käyttäjä. Varmista, että olet syöttänyt koko käyttäjänimen."
+    "messageformat": "{atUsername} ei ole Tellomin käyttäjä. Varmista, että olet syöttänyt koko käyttäjänimen."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} ei ole kelvollinen käyttäjänimi. Varmista, että olet syöttänyt koko käyttäjänimen ja sen numerosarjan."
@@ -2589,7 +2589,7 @@
     "messageformat": "Ei yhdistetty"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Napsauta tästä ja rekisteröidy uudelleen, jotta pääset taas viestimään. Tellomi Desktop ei ole rekisteröity todennäköisesti siksi, että olet rekisteröinyt puhelinnumerosi Signaliin toisella laitteella."
+    "messageformat": "Napsauta tästä ja rekisteröidy uudelleen, jotta pääset taas viestimään. Tellomi Desktop ei ole rekisteröity todennäköisesti siksi, että olet rekisteröinyt puhelinnumerosi Tellomiin toisella laitteella."
   },
   "icu:unregistered": {
     "messageformat": "Ei enää rekisteröity"
@@ -2607,7 +2607,7 @@
     "messageformat": "Lataa päivitys napsauttamalla"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signalin päivitys ei onnistunut. Yritä uudelleen napsauttamalla."
+    "messageformat": "Tellomin päivitys ei onnistunut. Yritä uudelleen napsauttamalla."
   },
   "icu:autoUpdateRestartButtonLabel": {
     "messageformat": "Käynnistä Tellomi uudelleen"
@@ -2754,7 +2754,7 @@
     "messageformat": "Katso lahjoituksen tiedot napauttamalla tätä viestiä puhelimellasi"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} lahjoitti Signalille puolestasi"
+    "messageformat": "{sender} lahjoitti Tellomille puolestasi"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Tarkista puhelimesi avataksesi tämän lahjoituksen"
@@ -2811,7 +2811,7 @@
     "messageformat": "Kiitos tuestasi!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Olet tehnyt lahjoituksen Signalille henkilön {name} puolesta. Hän saa mahdollisuuden näyttää omassa profiilissaan, että hän tukee Signalia."
+    "messageformat": "Olet tehnyt lahjoituksen Tellomille henkilön {name} puolesta. Hän saa mahdollisuuden näyttää omassa profiilissaan, että hän tukee Tellomia."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Tarrapakettia ei voitu asentaa"
@@ -3447,13 +3447,13 @@
     "messageformat": "Älä vastaa keskusteluihin, joiden lähettäjänä on Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Tellomi ei koskaan lähetä viestejä pyytääkseen rekisteröintikoodia, PIN-koodia tai palautusavainta. Älä vastaa keskusteluihin, joissa lähettäjä esittää edustavansa Signalia."
+    "messageformat": "Tellomi ei koskaan lähetä viestejä pyytääkseen rekisteröintikoodia, PIN-koodia tai palautusavainta. Älä vastaa keskusteluihin, joissa lähettäjä esittää edustavansa Tellomia."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "Tarkista nimet ja kuvat"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "Kiinnitä huomiota ilmoitukseen ”Nimeä ei ole vahvistettu”. Jokainen asettaa itse profiilinsa nimen ja kuvan Signalissa."
+    "messageformat": "Kiinnitä huomiota ilmoitukseen ”Nimeä ei ole vahvistettu”. Jokainen asettaa itse profiilinsa nimen ja kuvan Tellomissa."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "Varo huijauksia"
@@ -3465,13 +3465,13 @@
     "messageformat": "Älä vastaa keskusteluihin, joiden lähettäjänä on Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Tellomi ei koskaan lähetä viestejä pyytääkseen rekisteröintikoodia, PIN-koodia tai palautusavainta. Älä vastaa keskusteluihin, joissa lähettäjä esittää edustavansa Signalia tai Tellomi-tukea. Huijarit aloittavat väärennettyjä keskusteluja tarkoituksenaan kaapata tilisi."
+    "messageformat": "Tellomi ei koskaan lähetä viestejä pyytääkseen rekisteröintikoodia, PIN-koodia tai palautusavainta. Älä vastaa keskusteluihin, joissa lähettäjä esittää edustavansa Tellomia tai Tellomi-tukea. Huijarit aloittavat väärennettyjä keskusteluja tarkoituksenaan kaapata tilisi."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Tarkista nimet ja kuvat"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "Kiinnitä huomiota ilmoitukseen ”Nimeä ei ole vahvistettu”. Jokainen asettaa Signalissa profiilinsa nimen ja kuvan itse. Jos et ole varma, keneltä uusi pyyntö on peräisin, on turvallisinta jättää se huomiotta."
+    "messageformat": "Kiinnitä huomiota ilmoitukseen ”Nimeä ei ole vahvistettu”. Jokainen asettaa Tellomissa profiilinsa nimen ja kuvan itse. Jos et ole varma, keneltä uusi pyyntö on peräisin, on turvallisinta jättää se huomiotta."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Kryptovaluutta- tai muut rahahuijaukset"
@@ -3732,7 +3732,7 @@
     "messageformat": "Tellomi on yhä käynnissä"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Tellomi pysyy käynnissä ilmoitusalueella. Voit muuttaa tämän Signalin asetuksissa."
+    "messageformat": "Tellomi pysyy käynnissä ilmoitusalueella. Voit muuttaa tämän Tellomin asetuksissa."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Saapuva äänipuhelu"
@@ -3951,7 +3951,7 @@
     "messageformat": "Kopioi puhelulinkki"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Jaa puhelulinkki Signalissa"
+    "messageformat": "Jaa puhelulinkki Tellomissa"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "Poistetaanko {name} puhelusta?"
@@ -4719,10 +4719,10 @@
     "messageformat": "Poistetaan käyttäjätietoja ja palautetaan sovelluksen oletuksia"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Lahjoita Signalille"
+    "messageformat": "Lahjoita Tellomille"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} tukee Signalia"
+    "messageformat": "{name} tukee Tellomia"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "Synkronoidaan viestejä"
@@ -4839,7 +4839,7 @@
     "messageformat": "Tiliin liittyviä toimenpiteitä vaaditaan"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Sinun on avattava Tellomi puhelimessasi, jotta voit jatkaa tilin käyttöä. Jos et avaa Signalia puhelimellasi, tilisi poistetaan pian. <learnMoreLink>Lue lisää</learnMoreLink>"
+    "messageformat": "Sinun on avattava Tellomi puhelimessasi, jotta voit jatkaa tilin käyttöä. Jos et avaa Tellomia puhelimellasi, tilisi poistetaan pian. <learnMoreLink>Lue lisää</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Mediaa ei voi palauttaa"
@@ -4863,10 +4863,10 @@
     "messageformat": "Lisää liite tai kysely"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Tämä henkilö ei käytä Signalia."
+    "messageformat": "Tämä henkilö ei käytä Tellomia."
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Tellomi-työpöytäsovellus ei tue viestejä käyttäjille, jotka eivät käytä Signalia. Pyydä tätä henkilöä asentamaan Tellomi, jotta viestintä olisi turvallisempi."
+    "messageformat": "Tellomi-työpöytäsovellus ei tue viestejä käyttäjille, jotka eivät käytä Tellomia. Pyydä tätä henkilöä asentamaan Tellomi, jotta viestintä olisi turvallisempi."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Tarkistetaan yhteystietojen rekisteröityminen"
@@ -5178,7 +5178,7 @@
     "messageformat": "Lempinimi"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Lempinimet ja huomautukset tallennetaan Signalin päästä päähän salattua tallennuspalvelua käyttäen. Ne näkyvät vain sinulle."
+    "messageformat": "Lempinimet ja huomautukset tallennetaan Tellomin päästä päähän salattua tallennuspalvelua käyttäen. Ne näkyvät vain sinulle."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Etunimi"
@@ -5617,7 +5617,7 @@
     "messageformat": "Vahvista jatkaaksesi viestintää"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Auta vähentämään roskapostia Signalissa ja suorita vahvistaminen."
+    "messageformat": "Auta vähentämään roskapostia Tellomissa ja suorita vahvistaminen."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Voit jatkaa viestintää vahvistamisen jälkeen. Kaikki odottavat viestit lähetetään automaattisesti."
@@ -6101,7 +6101,7 @@
     "messageformat": "Yleiset"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Lahjoita Signalille"
+    "messageformat": "Lahjoita Tellomille"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Ulkonäkö"
@@ -6353,7 +6353,7 @@
     "messageformat": "Keskusteluhistoriaa ei voi viedä"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Keskusteluhistoriaa ei voida viedä, koska Signalilla ei ole oikeutta kirjoittaa tiedostoja levylle. Kokeile muuttaa levyn käyttöoikeuksia tai päivitä järjestelmäasetukset ja vie sitten uudelleen."
+    "messageformat": "Keskusteluhistoriaa ei voida viedä, koska Tellomilla ei ole oikeutta kirjoittaa tiedostoja levylle. Kokeile muuttaa levyn käyttöoikeuksia tai päivitä järjestelmäasetukset ja vie sitten uudelleen."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Viedään varmuuskopiota"
@@ -6368,7 +6368,7 @@
     "messageformat": "Siirrä varmuuskopiokansio puhelimesi tallennustilaan"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Asenna puhelimeesi uusi kopio Signalista"
+    "messageformat": "Asenna puhelimeesi uusi kopio Tellomista"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "Napauta ”Palauta tai siirrä” ja valitse ”Varmuuskopio laitteessa”."
@@ -6638,10 +6638,10 @@
     "messageformat": "Tellomi Secure -varmuuskopiointi"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automaattiset varmuuskopiot Signalin turvallisella, päästä päähän salatulla tallennuspalvelulla. Aloita puhelimellasi. <learnMoreLink>Lue lisää</learnMoreLink>."
+    "messageformat": "Automaattiset varmuuskopiot Tellomin turvallisella, päästä päähän salatulla tallennuspalvelulla. Aloita puhelimellasi. <learnMoreLink>Lue lisää</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Varmuuskopioi viestihistoriasi, jotta et koskaan menetä tietoja, kun hankit uuden puhelimen tai asennat Signalin uudelleen."
+    "messageformat": "Varmuuskopioi viestihistoriasi, jotta et koskaan menetä tietoja, kun hankit uuden puhelimen tai asennat Tellomin uudelleen."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Varmuuskopion tiedot"
@@ -6695,7 +6695,7 @@
     "messageformat": "Luo päästä päähän salattu varmuuskopio, jonka voit palauttaa puhelimeesi. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Palauta varmuuskopio asentamalla uusi kopio Signalista puhelimeesi. Avaa sovellus, napauta Palauta tai siirrä. <learnMoreLink>Lue lisää.</learnMoreLink>"
+    "messageformat": "Palauta varmuuskopio asentamalla uusi kopio Tellomista puhelimeesi. Avaa sovellus, napauta Palauta tai siirrä. <learnMoreLink>Lue lisää.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Valitse kansio"
@@ -6746,7 +6746,7 @@
     "messageformat": "Älä jaa avainta"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Älä koskaan jaa palautusavaintasi kenellekään. Palautusavaimen avulla toinen voi ottaa tilisi hallintaansa. <strong>Tellomi ei koskaan lähetä viestejä</strong> pyytääkseen palautusavainta. Älä vastaa keskusteluihin, joissa lähettäjä esittää edustavansa Signalia. <learnMoreLink>Lue lisää.</learnMoreLink>"
+    "messageformat": "Älä koskaan jaa palautusavaintasi kenellekään. Palautusavaimen avulla toinen voi ottaa tilisi hallintaansa. <strong>Tellomi ei koskaan lähetä viestejä</strong> pyytääkseen palautusavainta. Älä vastaa keskusteluihin, joissa lähettäjä esittää edustavansa Tellomia. <learnMoreLink>Lue lisää.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Vahvista palautusavain"
@@ -6839,7 +6839,7 @@
     "messageformat": "Puhelinnumero"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Valitse, kuka voi nähdä puhelinnumerosi ja kuka voi ottaa sinuun yhteyttä Signalissa sen avulla."
+    "messageformat": "Valitse, kuka voi nähdä puhelinnumerosi ja kuka voi ottaa sinuun yhteyttä Tellomissa sen avulla."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Muuta…"
@@ -6869,10 +6869,10 @@
     "messageformat": "Kuka voi löytää minut puhelinnumerolla"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Kuka tahansa, jolla on puhelinnumerosi, näkee, että olet Signalissa, ja voi aloittaa keskustelut kanssasi."
+    "messageformat": "Kuka tahansa, jolla on puhelinnumerosi, näkee, että olet Tellomissa, ja voi aloittaa keskustelut kanssasi."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Kukaan ei näe, että olet Signalissa, ellet lähetä heille viestiä tai keskustele heidän kanssaan."
+    "messageformat": "Kukaan ei näe, että olet Tellomissa, ellet lähetä heille viestiä tai keskustele heidän kanssaan."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Kaikki"
@@ -6884,7 +6884,7 @@
     "messageformat": "Oletko varma?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Jos määrität asetuksen ”{settingTitle}” tilaan ”{nobodyLabel}”, sinua on vaikea löytää Signalissa."
+    "messageformat": "Jos määrität asetuksen ”{settingTitle}” tilaan ”{nobodyLabel}”, sinua on vaikea löytää Tellomissa."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Viestintä"
@@ -6962,13 +6962,13 @@
     "messageformat": "Näytön suojaus"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Estä kuvakaappaukset Signalista tällä tietokoneella yksityisyyden parantamiseksi."
+    "messageformat": "Estä kuvakaappaukset Tellomista tällä tietokoneella yksityisyyden parantamiseksi."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Poistetaanko näytön suojaus käytöstä?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Jos se on poistettu käytöstä, Microsoft Windows voi ehkä ottaa kuvakaappauksia Signalista ja käyttää niitä ominaisuuksiin, jotka eivät välttämättä ole yksityisiä."
+    "messageformat": "Jos se on poistettu käytöstä, Microsoft Windows voi ehkä ottaa kuvakaappauksia Tellomista ja käyttää niitä ominaisuuksiin, jotka eivät välttämättä ole yksityisiä."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Poista käytöstä"
@@ -6992,7 +6992,7 @@
     "messageformat": "Avaa Tellomi puhelimessa"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Tilisi poistetaan pian, ellet avaa Signalia puhelimellasi. Tämä viesti poistuu, jos olet tehnyt sen onnistuneesti. <learnMoreLink>Lue lisää</learnMoreLink>"
+    "messageformat": "Tilisi poistetaan pian, ellet avaa Tellomia puhelimellasi. Tämä viesti poistuu, jos olet tehnyt sen onnistuneesti. <learnMoreLink>Lue lisää</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
     "messageformat": "Avaa Tellomi puhelimessasi, jotta tilisi pysyy aktiivisena"
@@ -7001,7 +7001,7 @@
     "messageformat": "Lue lisää"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signalissa ilmenee tällä hetkellä teknisiä ongelmia. Työskentelemme parhaillaan palvelun palauttamiseksi."
+    "messageformat": "Tellomissa ilmenee tällä hetkellä teknisiä ongelmia. Työskentelemme parhaillaan palvelun palauttamiseksi."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Päivitys vaaditaan"
@@ -7016,7 +7016,7 @@
     "messageformat": "Päivitys vaaditaan"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Päivitä uusimpaan versioon, jotta voit jatkaa Signalin käyttöä."
+    "messageformat": "Päivitä uusimpaan versioon, jotta voit jatkaa Tellomin käyttöä."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Lataa {downloadSize}"
@@ -7064,7 +7064,7 @@
     "messageformat": "Jatka vahvistamalla, että olet ihminen"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "Auta vähentämään roskapostia Signalissa ja suorita vahvistaminen. Voit jatkaa rekisteröintiä vahvistamisen jälkeen."
+    "messageformat": "Auta vähentämään roskapostia Tellomissa ja suorita vahvistaminen. Voit jatkaa rekisteröintiä vahvistamisen jälkeen."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "Yritä vahvistusta uudelleen"
@@ -7334,7 +7334,7 @@
     "messageformat": "Valitse tunnusluku"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "PIN-koodien avulla voit palauttaa tilisi ja pitää tietosi salattuna Signalissa. <learnMore>Lue lisää</learnMore>"
+    "messageformat": "PIN-koodien avulla voit palauttaa tilisi ja pitää tietosi salattuna Tellomissa. <learnMore>Lue lisää</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "Valitse tunnusluku"
@@ -7358,7 +7358,7 @@
     "messageformat": "Varoitus"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "Jos poistat PIN-koodin käytöstä, menetät kaikki tietosi rekisteröityessäsi Signaliin uudelleen. Et voi myöskään ottaa rekisteröintiestoa käyttöön, jos PIN-koodi on pois päältä."
+    "messageformat": "Jos poistat PIN-koodin käytöstä, menetät kaikki tietosi rekisteröityessäsi Tellomiin uudelleen. Et voi myöskään ottaa rekisteröintiestoa käyttöön, jos PIN-koodi on pois päältä."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "Poista tunnusluku käytöstä"
@@ -7370,7 +7370,7 @@
     "messageformat": "Tietoja Tellomi-PIN-koodeista"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "PIN-koodin avulla salataan Signaliin tallennetut tietosi, jotta vain sinulla on pääsy niihin. Profiilitiedot, asetukset ja yhteystiedot palautetaan, jos Tellomi asennetaan uudelleen."
+    "messageformat": "PIN-koodin avulla salataan Tellomiin tallennetut tietosi, jotta vain sinulla on pääsy niihin. Profiilitiedot, asetukset ja yhteystiedot palautetaan, jos Tellomi asennetaan uudelleen."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "Lue lisää"
@@ -7403,7 +7403,7 @@
     "messageformat": "Päivitys vaaditaan"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "Jatka rekisteröintiä päivittämällä Signalin uusimpaan versioon."
+    "messageformat": "Jatka rekisteröintiä päivittämällä Tellomin uusimpaan versioon."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "Päivitä"
@@ -7433,7 +7433,7 @@
     "messageformat": "Ota yhteyttä tukeen"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signalia ei voi sulkea.",
+    "messageformat": "Tellomia ei voi sulkea.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7453,14 +7453,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Signalin uudempi versio on jo asennettu. Haluatko varmasti jatkaa?",
+    "messageformat": "Tellomin uudempi versio on jo asennettu. Haluatko varmasti jatkaa?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Sovellus kaatui"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Tellomi käynnistettiin uudelleen virheen jälkeen. Voit lähettää virheraportin Signalille. Tämä auttaa ohjelmistovirheen tutkimisessa ja korjaamisessa."
+    "messageformat": "Tellomi käynnistettiin uudelleen virheen jälkeen. Voit lähettää virheraportin Tellomille. Tämä auttaa ohjelmistovirheen tutkimisessa ja korjaamisessa."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Lähetä"
@@ -8135,7 +8135,7 @@
     "messageformat": "QR-koodisi ja linkkisi on palautettu oletusasetukseen ja käyttäjänimesi on {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Skannaa tämä QR-koodi puhelimellasi, niin voit keskustella kanssani Signalissa.",
+    "messageformat": "Skannaa tämä QR-koodi puhelimellasi, niin voit keskustella kanssani Tellomissa.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8241,13 +8241,13 @@
     "messageformat": "Oikea PIN-koodi. Muistutamme sinua jälleen myöhemmin."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signalin työpöytäsovelluksen tuki tietokoneesi {OS}-versiolle päättyy pian. Jos haluat jatkaa Signalin käyttöä, päivitä tietokoneesi käyttöjärjestelmä {expirationDate} mennessä. <learnMoreLink>Lue lisää</learnMoreLink>"
+    "messageformat": "Tellomin työpöytäsovelluksen tuki tietokoneesi {OS}-versiolle päättyy pian. Jos haluat jatkaa Tellomin käyttöä, päivitä tietokoneesi käyttöjärjestelmä {expirationDate} mennessä. <learnMoreLink>Lue lisää</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signalin työpöytäsovellus ei enää toimi tässä tietokoneessa. Jos haluat käyttää Signalin työpöytäsovellusta uudelleen, päivitä tietokoneesi {OS}-versio. <learnMoreLink>Lue lisää</learnMoreLink>"
+    "messageformat": "Tellomin työpöytäsovellus ei enää toimi tässä tietokoneessa. Jos haluat käyttää Tellomin työpöytäsovellusta uudelleen, päivitä tietokoneesi {OS}-versio. <learnMoreLink>Lue lisää</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signalin työpöytäsovellus ei enää toimi tässä tietokoneessa. Jos haluat käyttää Signalin työpöytäsovellusta uudelleen, päivitä tietokoneesi {OS}-versio."
+    "messageformat": "Tellomin työpöytäsovellus ei enää toimi tässä tietokoneessa. Jos haluat käyttää Tellomin työpöytäsovellusta uudelleen, päivitä tietokoneesi {OS}-versio."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Muokattu"
@@ -8418,7 +8418,7 @@
     "messageformat": "Kopioi linkki"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Jaa linkki Signalissa"
+    "messageformat": "Jaa linkki Tellomissa"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Poista linkki"
@@ -8481,7 +8481,7 @@
     "messageformat": "Jos haluat muuttaa tätä asetusta, määritä Kuka näkee numeroni -asetukseksi Ei kukaan."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Signalissa profiilin nimi on tilin haltijan valittavissa:"
+    "messageformat": "Tellomissa profiilin nimi on tilin haltijan valittavissa:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
     "messageformat": "Tellomi ei voi vahvistaa nimien tai kuvien oikeellisuutta."
@@ -8541,7 +8541,7 @@
     "messageformat": "Tietosi ovat yksityisiä"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Itsenäisenä, voittoa tavoittelemattomana organisaationa Tellomi on sitoutunut yksityiseen viestintään ja puheluihin. Ei mainoksia, seurantaevästeitä tai valvontaa. Tue Signalia lahjoittamalla."
+    "messageformat": "Itsenäisenä, voittoa tavoittelemattomana organisaationa Signal on sitoutunut yksityiseen viestintään ja puheluihin. Ei mainoksia, seurantaevästeitä tai valvontaa. Tue Signalia lahjoittamalla."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Saat lahjoituksen yhteydessä merkin, jonka voit halutessasi liittää profiiliisi."
@@ -8550,7 +8550,7 @@
     "messageformat": "Sinun yksityisyytesi on tärkein tehtävämme"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi on voittoa tavoittelematon organisaatio."
+    "messageformat": "Signal on voittoa tavoittelematon organisaatio."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Tellomi-logon tyylinen sydänkuvake"
@@ -8568,7 +8568,7 @@
     "messageformat": "Usein kysyttyä lahjoituksista"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Kuitit eivät synkronoidu laitteiden välillä. Jos olet asentanut Signalin uudelleen, kuitit vanhemmista lahjoituksista eivät näy."
+    "messageformat": "Kuitit eivät synkronoidu laitteiden välillä. Jos olet asentanut Tellomin uudelleen, kuitit vanhemmista lahjoituksista eivät näy."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Ei kuitteja"
@@ -8610,7 +8610,7 @@
     "messageformat": "KK/VV"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Lahjoita Signalille {formattedCurrencyAmount}"
+    "messageformat": "Lahjoita Tellomille {formattedCurrencyAmount}"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Virheellinen kortin numero"
@@ -8712,7 +8712,7 @@
     "messageformat": "Lahjoitus onnistui, mutta merkin asetusten päivitys ei onnistunut."
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "Päivitä merkkien asetukset mobiililaitteellasi valitsemalla Asetukset → Lahjoita Signalille → Merkit."
+    "messageformat": "Päivitä merkkien asetukset mobiililaitteellasi valitsemalla Asetukset → Lahjoita Tellomille → Merkit."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Lahjoitus keskeytetty"
@@ -8769,7 +8769,7 @@
     "messageformat": "Lahjoituksen kanssa tapahtui virhe"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Lahjoitusta ei ehkä ole käsitelty. Tarkista kuitti napsauttamalla Lahjoita Signalille ja sitten Lahjoituskuitit."
+    "messageformat": "Lahjoitusta ei ehkä ole käsitelty. Tarkista kuitti napsauttamalla Lahjoita Tellomille ja sitten Lahjoituskuitit."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Yritä uudelleen tai lähetä vianetsintäloki tukeen, jotta saat apua lahjoituksesi loppuun saattamiseen. Vianetsintälokit auttavat meitä diagnosoimaan ja korjaamaan ongelman, eivätkä ne sisällä tunnistetietoja."
@@ -8811,19 +8811,19 @@
     "messageformat": "Kiitos tuestasi!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Olet ansainnut lahjoittajamerkin Signalilta! Näytä se profiilissasi osoittaaksesi, että tuet Signalia."
+    "messageformat": "Olet ansainnut lahjoittajamerkin Tellomilta! Näytä se profiilissasi osoittaaksesi, että tuet Tellomia."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Näytä profiilissa"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Voit säätää tätä mobiililaitteellasi kohdassa Asetukset → Lahjoita Signalille → Merkit"
+    "messageformat": "Voit säätää tätä mobiililaitteellasi kohdassa Asetukset → Lahjoita Tellomille → Merkit"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "Millainen oli puhelun laatu?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "Palaute auttaa meitä parantamaan puheluita Signalissa. Henkilökohtaisesti tunnistettavia tietoja ei tallenneta."
+    "messageformat": "Palaute auttaa meitä parantamaan puheluita Tellomissa. Henkilökohtaisesti tunnistettavia tietoja ei tallenneta."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Puhelussa oli ongelmia"
@@ -8955,11 +8955,11 @@
     "messageformat": "Kaikki Tellomi Desktopin sisältämät tiedot poistetaan. Sen jälkeen voit skannata QR-koodin ja siirtää viestihistorian puhelimeltasi."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Tämä versio sisältää useita pieniä parannuksia ja virhekorjauksia, jotka pitävät Signalin toiminnan sujuvana.",
+    "messageformat": "Tämä versio sisältää useita pieniä parannuksia ja virhekorjauksia, jotka pitävät Tellomin toiminnan sujuvana.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Muita pieniä lisäsäätöjä, virheenkorjauksia ja suorituskykyparannuksia. Kiitos, että käytät Signalia!",
+    "messageformat": "Muita pieniä lisäsäätöjä, virheenkorjauksia ja suorituskykyparannuksia. Kiitos, että käytät Tellomia!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -8979,7 +8979,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Pieniä säätöjä, virheenkorjauksia ja suorituskykyparannuksia. Kiitos, että käytät Signalia!",
+    "messageformat": "Pieniä säätöjä, virheenkorjauksia ja suorituskykyparannuksia. Kiitos, että käytät Tellomia!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.24--1": {

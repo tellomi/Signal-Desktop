@@ -915,7 +915,7 @@
     "messageformat": "Féach {whatsNew} sa nuashonrú seo"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Eagraíocht neamhbhrabúis is ea é Tellomi"
+    "messageformat": "Eagraíocht neamhbhrabúis is ea é Signal"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "cad atá nua"
@@ -8541,7 +8541,7 @@
     "messageformat": "Tá d'fhaisnéis príobháideach"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Mar eagraíocht neamhbhrabúis neamhspleách, tá Tellomi tiomanta do theachtaireachtaí agus do ghlaonna príobháideacha. Gan aon fhógraí, gan aon rianairí, gan aon fhaireachas. Tabhair airgead inniu chun tacú le Tellomi."
+    "messageformat": "Mar eagraíocht neamhbhrabúis neamhspleách, tá Signal tiomanta do theachtaireachtaí agus do ghlaonna príobháideacha. Gan aon fhógraí, gan aon rianairí, gan aon fhaireachas. Tabhair airgead inniu chun tacú le Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Faigh suaitheantas roghnach ar do phróifíl nuair a thugann tú airgead"
@@ -8550,7 +8550,7 @@
     "messageformat": "Ár misean; do phríobháideacht"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Eagraíocht neamhbhrabúis is ea é Tellomi."
+    "messageformat": "Eagraíocht neamhbhrabúis is ea é Signal."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Deilbhín croí i stíl lógó Tellomi"

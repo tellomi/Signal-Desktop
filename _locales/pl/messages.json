@@ -915,7 +915,7 @@
     "messageformat": "Sprawdź, {whatsNew} w tej aktualizacji"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi to organizacja non profit"
+    "messageformat": "Signal to organizacja non profit"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "co nowego"
@@ -8541,7 +8541,7 @@
     "messageformat": "Twoje dane są poufne"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Jako niezależna organizacja non profit stawiamy na poufność wiadomości i połączeń. Bez reklam, bez śledzenia, bez inwigilacji. Wpłać darowiznę i wesprzyj Tellomi."
+    "messageformat": "Jako niezależna organizacja non profit stawiamy na poufność wiadomości i połączeń. Bez reklam, bez śledzenia, bez inwigilacji. Wpłać darowiznę i wesprzyj Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "W zamian za darowiznę otrzymasz specjalną odznakę w swoim profilu"
@@ -8550,7 +8550,7 @@
     "messageformat": "Twoja prywatność jest naszą misją"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi to organizacja non profit"
+    "messageformat": "Signal to organizacja non profit"
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Ikona serca w stylu logo Tellomi"

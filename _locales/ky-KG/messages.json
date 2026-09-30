@@ -915,7 +915,7 @@
     "messageformat": "Бул жаңыртуудагы {whatsNew} көрүңүз"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi категориясындагы коммерциялык эмес уюм"
+    "messageformat": "Signal категориясындагы коммерциялык эмес уюм"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "жаңылыктар"
@@ -2553,7 +2553,7 @@
     "messageformat": "Мүчөлөрдүн саны эң жогорку чекке жетти"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Сигнал топтору {max,number} же андан аз мүчө менен жакшы иштейт. Көбүрөөк катышуучуларды кошуу билдирүүлөрдү жөнөтүүдө жана алууда кечигүүгө алып келет."
+    "messageformat": "Tellomi топтору {max,number} же андан аз мүчө менен жакшы иштейт. Көбүрөөк катышуучуларды кошуу билдирүүлөрдү жөнөтүүдө жана алууда кечигүүгө алып келет."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Бул топко ат коюңуз"
@@ -3729,10 +3729,10 @@
     "messageformat": "Жоопсуз видео чалуу"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Сигнал дагы эле иштеп жатат"
+    "messageformat": "Tellomi дагы эле иштеп жатат"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Сигнал билдирме аймагында иштей берет. Бул нерсени Tellomi'дын тууралоо бөлүмүндө өзгөртө аласыз."
+    "messageformat": "Tellomi билдирме аймагында иштей берет. Бул нерсени Tellomi'дын тууралоо бөлүмүндө өзгөртө аласыз."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Келүүчү аудио чалуу"
@@ -7433,7 +7433,7 @@
     "messageformat": "Кардарларды колдоо кызматына кайрылуу"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Сигнал жабылбай калды.",
+    "messageformat": "Tellomi жабылбай калды.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7460,7 +7460,7 @@
     "messageformat": "Колдонмо кыйрады"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Сигнал кыйрагандан кийин кайра иштетилди. Сиз Tellomi'га маселени иликтөөгө жардам берүү үчүн ката жөнүндө отчет тапшырсаңыз болот."
+    "messageformat": "Tellomi кыйрагандан кийин кайра иштетилди. Сиз Tellomi'га маселени иликтөөгө жардам берүү үчүн ката жөнүндө отчет тапшырсаңыз болот."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Жөнөтүү"
@@ -8541,7 +8541,7 @@
     "messageformat": "Маалыматыңыз купуя сакталууда"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Көзкарандысыз коммерциялык эмес уюм катары Tellomi жазышуулар менен чалуулардын купуялыгын камсыз кылганга аракет кылат. Жарнамалар жок, эч ким сизге көз салбайт жана аңдыбайт. Tellomi'га колдоо көрсөтүп, бүгүн салым кошуңуз."
+    "messageformat": "Көзкарандысыз коммерциялык эмес уюм катары Signal жазышуулар менен чалуулардын купуялыгын камсыз кылганга аракет кылат. Жарнамалар жок, эч ким сизге көз салбайт жана аңдыбайт. Signal'га колдоо көрсөтүп, бүгүн салым кошуңуз."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Салым кошконуңузда профилиңизге тийиштүү төшбелги аласыз"

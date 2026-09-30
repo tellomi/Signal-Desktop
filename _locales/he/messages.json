@@ -915,7 +915,7 @@
     "messageformat": "ראה {whatsNew} בעדכון זה"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi היא עמותה ללא מטרות רווח."
+    "messageformat": "Signal היא עמותה ללא מטרות רווח."
   },
   "icu:viewReleaseNotes": {
     "messageformat": "מה חדש"
@@ -8541,7 +8541,7 @@
     "messageformat": "המידע שלך פרטי"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "כעמותה עצמאית ללא מטרות רווח, Tellomi מחויבת להודעות ולשיחות פרטיות. בלי פרסומות, בלי מעקב, בלי ריגול. תרמו היום כדי לתמוך ב-Tellomi."
+    "messageformat": "כעמותה עצמאית ללא מטרות רווח, Signal מחויבת להודעות ולשיחות פרטיות. בלי פרסומות, בלי מעקב, בלי ריגול. תרמו היום כדי לתמוך ב-Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "ניתן לקבל תג לפרופיל בעת תרומה"
@@ -8550,7 +8550,7 @@
     "messageformat": "הפרטיות שלך היא המשימה שלנו"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi היא עמותה ללא מטרות רווח."
+    "messageformat": "Signal היא עמותה ללא מטרות רווח."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "סמל לב בסגנון הלוגו של Tellomi"

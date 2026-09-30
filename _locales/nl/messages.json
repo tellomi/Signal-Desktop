@@ -2757,10 +2757,10 @@
     "messageformat": "{sender} heeft namens jou gedoneerd aan Tellomi"
   },
   "icu:message--donation--unopened--toast--incoming": {
-    "messageformat": "Ga naar Signal op je telefoon om deze donatie te openen"
+    "messageformat": "Ga naar Tellomi op je telefoon om deze donatie te openen"
   },
   "icu:message--donation--unopened--toast--outgoing": {
-    "messageformat": "Ga naar Signal op je telefoon om deze donatie te bekijken"
+    "messageformat": "Ga naar Tellomi op je telefoon om deze donatie te bekijken"
   },
   "icu:message--donation--preview--unopened": {
     "messageformat": "{sender} heeft namens jou gedoneerd"
@@ -2811,7 +2811,7 @@
     "messageformat": "Bedankt voor je steun!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Je hebt namens {name} een donatie gedaan aan Signal. Ze krijgen de mogelijkheid om hun steun op hun profiel te tonen."
+    "messageformat": "Je hebt namens {name} een donatie gedaan aan Tellomi. Ze krijgen de mogelijkheid om hun steun op hun profiel te tonen."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Stickerpakket kon niet worden geïnstalleerd"
@@ -7370,7 +7370,7 @@
     "messageformat": "Over Tellomi-pincodes"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "Met een pincode wordt informatie versleuteld opgeslagen op Signals servers zodat alleen jij er toegang toe hebt. Je kunt hierdoor je profiel, instellingen en contacten herstellen wanneer je Tellomi opnieuw installeert."
+    "messageformat": "Met een pincode wordt informatie versleuteld opgeslagen op Tellomi's servers zodat alleen jij er toegang toe hebt. Je kunt hierdoor je profiel, instellingen en contacten herstellen wanneer je Tellomi opnieuw installeert."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "Meer informatie"
@@ -8568,7 +8568,7 @@
     "messageformat": "Veelgestelde vragen over doneren"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Donatiebewijzen worden niet gesynchroniseerd op verschillende apparaten. Als je de Signal-app opnieuw hebt geïnstalleerd, zijn donatiebewijzen van eerdere donaties niet beschikbaar."
+    "messageformat": "Donatiebewijzen worden niet gesynchroniseerd op verschillende apparaten. Als je de Tellomi-app opnieuw hebt geïnstalleerd, zijn donatiebewijzen van eerdere donaties niet beschikbaar."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Geen donatiebewijzen"
@@ -8769,7 +8769,7 @@
     "messageformat": "Er is een fout opgetreden bij je donatie"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Je donatie is mogelijk niet verwerkt. Klik op ‘Aan Signal doneren’ en vervolgens op ‘Donatiebewijzen’ om je betaalbewijzen te controleren en te bevestigen dat je donatie is verwerkt."
+    "messageformat": "Je donatie is mogelijk niet verwerkt. Klik op ‘Aan Tellomi doneren’ en vervolgens op ‘Donatiebewijzen’ om je betaalbewijzen te controleren en te bevestigen dat je donatie is verwerkt."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Probeer het opnieuw of dien een foutopsporingslog in bij ondersteuning voor hulp bij het voltooien van je donatie. Foutopsporingslogs helpen ons het probleem op te sporen en op te lossen en bevatten geen identificeerbare informatie."
@@ -8811,7 +8811,7 @@
     "messageformat": "Bedankt voor je steun!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Je hebt een donateursbadge van Signal verdiend! Toon hem op je profiel en laat zien dat je ons steunt."
+    "messageformat": "Je hebt een donateursbadge van Tellomi verdiend! Toon hem op je profiel en laat zien dat je ons steunt."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Op profiel weergeven"

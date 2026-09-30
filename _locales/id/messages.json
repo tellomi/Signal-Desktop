@@ -915,7 +915,7 @@
     "messageformat": "Lihat {whatsNew} pada pembaruan ini"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi berstatus nirlaba"
+    "messageformat": "Signal berstatus nirlaba"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "apa yang baru"
@@ -8541,7 +8541,7 @@
     "messageformat": "Informasi Anda bersifat privat"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Dengan status nirlaba dan independen, Tellomi berkomitmen menyediakan layanan perpesanan dan panggilan privat. Tanpa iklan, tanpa pelacak, tanpa pengawasan. Beri donasi sekarang untuk mendukung Tellomi."
+    "messageformat": "Dengan status nirlaba dan independen, Signal berkomitmen menyediakan layanan perpesanan dan panggilan privat. Tanpa iklan, tanpa pelacak, tanpa pengawasan. Beri donasi sekarang untuk mendukung Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Dapatkan lencana opsional di profil setelah berdonasi"
@@ -8550,7 +8550,7 @@
     "messageformat": "Privasi Anda adalah misi kami"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi berstatus nirlaba."
+    "messageformat": "Signal berstatus nirlaba."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Ikon hati dengan gaya logo Tellomi"
@@ -8811,7 +8811,7 @@
     "messageformat": "Terima kasih atas dukungan Anda!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Anda mendapatkan lencana donatur dari Signal! Tampilkan di profil untuk menunjukkan dukungan yang telah Anda berikan."
+    "messageformat": "Anda mendapatkan lencana donatur dari Tellomi! Tampilkan di profil untuk menunjukkan dukungan yang telah Anda berikan."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Tampilkan di profil"

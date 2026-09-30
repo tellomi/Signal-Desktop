@@ -915,7 +915,7 @@
     "messageformat": "Bu yeniləmədə {whatsNew} baxın"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi qeyri-kommersiya təşkilatıdır"
+    "messageformat": "Signal qeyri-kommersiya təşkilatıdır"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "hansı yeniliklərin olduğuna"
@@ -8541,7 +8541,7 @@
     "messageformat": "Məlumatınız məxfidir"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Müstəqil qeyri-kommersiya təşkilatı kimi Tellomi mesajlaşma və zənglərin məxfiliyini qoruyur. Reklamsız, təqibsiz və nəzarətsiz. Tellomi-ı dəstəkləmək üçün bu gün ianə verin."
+    "messageformat": "Müstəqil qeyri-kommersiya təşkilatı kimi Signal mesajlaşma və zənglərin məxfiliyini qoruyur. Reklamsız, təqibsiz və nəzarətsiz. Signal-ı dəstəkləmək üçün bu gün ianə verin."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "İanə verdikdə profilinizə əlavə bir nişan alırsınız"
@@ -8550,7 +8550,7 @@
     "messageformat": "Məxfiliyiniz əsas missiyamızdır"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi qeyri-kommersiya təşkilatıdır. ABŞ-da edilən ianələr vergi tutulmasından azaddır."
+    "messageformat": "Signal qeyri-kommersiya təşkilatıdır. ABŞ-da edilən ianələr vergi tutulmasından azaddır."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Tellomi loqosu tərzində ürək piktoqramı"

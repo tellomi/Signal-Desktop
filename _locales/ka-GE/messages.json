@@ -915,7 +915,7 @@
     "messageformat": "ნახე {whatsNew} ამ განახლებაში"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi-ი არაკომერციული ორგანიზაციაა"
+    "messageformat": "Signal-ი არაკომერციული ორგანიზაციაა"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "რა არის ახალი"
@@ -8541,7 +8541,7 @@
     "messageformat": "შენი ინფორმაცია კონფიდენციალურია"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "როგორც დამოუკიდებელი არაკომერციული ორგანიზაცია, Tellomi-ი კონფიდენციალურ მიმოწერასა და ზარებს უზრუნველყოფს. არანაირი რეკლამა, არანაირი ტრეკერები, არანაირი თვალთვალი. გააკეთე დონაცია დღეს, რომ Tellomi-ს მხარი დაუჭირო."
+    "messageformat": "როგორც დამოუკიდებელი არაკომერციული ორგანიზაცია, Signal-ი კონფიდენციალურ მიმოწერასა და ზარებს უზრუნველყოფს. არანაირი რეკლამა, არანაირი ტრეკერები, არანაირი თვალთვალი. გააკეთე დონაცია დღეს, რომ Signal-ს მხარი დაუჭირო."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "მიიღე არჩევითი ემბლემა შენს პროფილზე, როცა დონაციას გააკეთებ"
@@ -8550,7 +8550,7 @@
     "messageformat": "შენი კონფიდენციალურობა ჩვენი მისიაა"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi-ი არაკომერციული ორგანიზაციაა. Tellomi-ი არაკომერციული ორგანიზაციაა."
+    "messageformat": "Signal-ი არაკომერციული ორგანიზაციაა. Signal-ი არაკომერციული ორგანიზაციაა."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "გულის ხატულა Tellomi-ის ლოგოს სტილში"

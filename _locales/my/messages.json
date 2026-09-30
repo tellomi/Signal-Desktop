@@ -915,7 +915,7 @@
     "messageformat": "ဤအပ်ဒိတ်တွင် {whatsNew} ကို ကြည့်ရန်"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi သည် အကျိုးအမြတ်မယူပါ"
+    "messageformat": "Signal သည် အကျိုးအမြတ်မယူပါ"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "အသစ်များ"
@@ -8541,7 +8541,7 @@
     "messageformat": "သင့်အချက်အလက်ကို လျှို့ဝှက်ထားပါသည်"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "မှီခိုမှုကင်းသည့် အကျိုးအမြတ်မယူသော အဖွဲ့အစည်းတစ်ခုအနေဖြင့်  Tellomi သည် သီးသန့်မက်ဆေ့ချ်ပေးပို့ခြင်းနှင့် ဖုန်းခေါ်ဆိုမှုများကို အလေးအနက်ထားပါသည်။ ကြော်ငြာများ မရှိ၊ ခြေရာခံခြင်း မရှိ၊ စောင့်ကြည့်ခြင်း မရှိ။ Tellomi ကို ပံ့ပိုးရန် ယနေ့ပင် လှူဒါန်းလိုက်ပါ။"
+    "messageformat": "မှီခိုမှုကင်းသည့် အကျိုးအမြတ်မယူသော အဖွဲ့အစည်းတစ်ခုအနေဖြင့်  Signal သည် သီးသန့်မက်ဆေ့ချ်ပေးပို့ခြင်းနှင့် ဖုန်းခေါ်ဆိုမှုများကို အလေးအနက်ထားပါသည်။ ကြော်ငြာများ မရှိ၊ ခြေရာခံခြင်း မရှိ၊ စောင့်ကြည့်ခြင်း မရှိ။ Signal ကို ပံ့ပိုးရန် ယနေ့ပင် လှူဒါန်းလိုက်ပါ။"
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "လှူဒါန်းသည့်အခါ သင့်ပရိုဖိုင်တွင် ဘဲ့ဂျ်တစ်ခုရယူရန် ရွေးချယ်နိုင်သည်"
@@ -8550,7 +8550,7 @@
     "messageformat": "သင့် ကိုယ််ရေးလုံခြုံမှုသည် ကျွန်ုပ်တို့၏ ရည်မှန်းချက်ဖြစ်ပါသည်"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi သည် အကျိုးအမြတ်မယူပါ။"
+    "messageformat": "Signal သည် အကျိုးအမြတ်မယူပါ။"
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Tellomi လိုဂိုပုံစံဖြင့် အသဲပုံအိုင်ကွန်"

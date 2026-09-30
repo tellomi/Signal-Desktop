@@ -915,7 +915,7 @@
     "messageformat": "Ikusi eguneratze honen {whatsNew}"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi irabazi-asmorik gabeko erakunde bat da"
+    "messageformat": "Signal irabazi-asmorik gabeko erakunde bat da"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "berritasunak"
@@ -1476,7 +1476,7 @@
     "messageformat": "{sender}(e)k bere telefono-zenbakia aldatu du"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Kontaktua orain Signalen dago"
+    "messageformat": "Kontaktua orain Tellomin dago"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} eta {conversationTitle} kontu bera dira. Bi txatetako mezuen historia hemen dago."
@@ -7355,7 +7355,7 @@
     "messageformat": "Desaktibatu PINa"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--header": {
-    "messageformat": "Markatutako zenbakia ez dago Signalen erregistratuta. SMS bidez gonbidatu nahiko zenuke?"
+    "messageformat": "Markatutako zenbakia ez dago Tellomin erregistratuta. SMS bidez gonbidatu nahiko zenuke?"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
     "messageformat": "PINa desgaitzen baduzu, datu guztiak galduko dituzu Tellomi-en berriro erregistratzean. PINa desgaituta dagoen bitartean, ezin duzu aktibatu erregistro-blokeoa."
@@ -8541,7 +8541,7 @@
     "messageformat": "Zure informazioa pribatua da"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Irabazi asmorik gabeko erakunde independente gisa, Tellomi-ek konpromisoa du mezu pribatuekiko. Iragarkirik gabe, jarraipen-tresnarik gabe, zaintzarik gabe. Egin dohaintza bat gaur Tellomi-i laguntzeko."
+    "messageformat": "Irabazi asmorik gabeko erakunde independente gisa, Signal-ek konpromisoa du mezu pribatuekiko. Iragarkirik gabe, jarraipen-tresnarik gabe, zaintzarik gabe. Egin dohaintza bat gaur Signal-i laguntzeko."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Lortu profilerako aukerako bereizgarri bat dohaintza egitean"

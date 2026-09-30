@@ -411,7 +411,7 @@
     "messageformat": "通話"
   },
   "icu:NavTabs__ItemLabel--Stories": {
-    "messageformat": "限時動態"
+    "messageformat": "快拍"
   },
   "icu:NavTabs__ItemLabel--Settings": {
     "messageformat": "設定"
@@ -549,7 +549,7 @@
     "messageformat": "已檢查所有聯絡人，請點擊「傳送」以繼續操作。"
   },
   "icu:safetyNumberChangeDialog__confirm-remove-all": {
-    "messageformat": "{count, plural, other {你確定要從 {story} 限時動態中移除 {count,number} 位接收者嗎？}}"
+    "messageformat": "{count, plural, other {你確定要從 {story} 快拍中移除 {count,number} 位接收者嗎？}}"
   },
   "icu:safetyNumberChangeDialog__remove-all": {
     "messageformat": "全部移除"
@@ -558,13 +558,13 @@
     "messageformat": "驗證安全碼"
   },
   "icu:safetyNumberChangeDialog__remove": {
-    "messageformat": "從限動中移除"
+    "messageformat": "從快拍中移除"
   },
   "icu:safetyNumberChangeDialog__actions-contact": {
     "messageformat": "聯絡人 {contact} 的操作"
   },
   "icu:safetyNumberChangeDialog__actions-story": {
-    "messageformat": "限時動態 {story} 的操作"
+    "messageformat": "快拍 {story} 的操作"
   },
   "icu:sendAnyway": {
     "messageformat": "仍然傳送"
@@ -939,7 +939,7 @@
     "messageformat": "在此更新中查看{whatsNew}"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi 是一個非營利組織"
+    "messageformat": "Signal 是一個非營利組織"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "有什麼更新"
@@ -2712,7 +2712,7 @@
     "messageformat": "新聊天"
   },
   "icu:stories": {
-    "messageformat": "限時動態"
+    "messageformat": "快拍"
   },
   "icu:contactSearchPlaceholder": {
     "messageformat": "姓名、使用者名稱與電話號碼"
@@ -2997,7 +2997,7 @@
     "messageformat": "在手機上點按此訊息，即可查看捐款"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} 已代表你向 Signal 捐款"
+    "messageformat": "{sender} 已代表你向 Tellomi 捐款"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "請檢查手機以開啟捐款"
@@ -3054,7 +3054,7 @@
     "messageformat": "謝謝您的支持！"
   },
   "icu:modal--donation--description": {
-    "messageformat": "你已代表 {name} 向 Signal 捐款。他們可以選擇在個人檔案上展現支持。"
+    "messageformat": "你已代表 {name} 向 Tellomi 捐款。他們可以選擇在個人檔案上展現支持。"
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "貼圖包無法安裝"
@@ -7172,16 +7172,16 @@
     "messageformat": "裝置"
   },
   "icu:Preferences__turn-stories-on": {
-    "messageformat": "開啟限動"
+    "messageformat": "開啟快拍"
   },
   "icu:Preferences__turn-stories-off": {
-    "messageformat": "關閉限動"
+    "messageformat": "關閉快拍"
   },
   "icu:Preferences__turn-stories-off--action": {
     "messageformat": "關閉"
   },
   "icu:Preferences__turn-stories-off--body": {
-    "messageformat": "你將無法再分享或瀏覽限時動態。你最近分享的限時動態更新也將會被刪除。"
+    "messageformat": "你將無法再分享或瀏覽快拍。你最近分享的快拍更新也將會被刪除。"
   },
   "icu:Preferences__Language__Label": {
     "messageformat": "語言選項"
@@ -7826,16 +7826,16 @@
     "messageformat": "前往「設定」"
   },
   "icu:MyStories__title": {
-    "messageformat": "我的限時動態"
+    "messageformat": "我的快拍"
   },
   "icu:MyStories__list_item": {
-    "messageformat": "我的限時動態"
+    "messageformat": "我的快拍"
   },
   "icu:MyStories__story": {
-    "messageformat": "你的限時動態"
+    "messageformat": "你的快拍"
   },
   "icu:MyStories__download": {
-    "messageformat": "下載限時動態"
+    "messageformat": "下載快拍"
   },
   "icu:MyStories__more": {
     "messageformat": "更多選項"
@@ -7853,10 +7853,10 @@
     "messageformat": "{replyCount, plural, other {<strong>{replyCount,number}</strong> 回覆}}"
   },
   "icu:MyStories__delete": {
-    "messageformat": "刪除這個限時動態嗎？ 這樣也會為收到它的每個人而刪除。"
+    "messageformat": "刪除這個快拍嗎？ 這樣也會為收到它的每個人而刪除。"
   },
   "icu:MyStories__delete-group-story-for-me": {
-    "messageformat": "要刪除這個限時動態嗎？由於群組已結束，此內容僅會針對你個人進行刪除。"
+    "messageformat": "要刪除這個快拍嗎？由於群組已結束，此內容僅會針對你個人進行刪除。"
   },
   "icu:payment-event-notification-message-you-label": {
     "messageformat": "您已開始向 {receiver} 付款"
@@ -7931,31 +7931,31 @@
     "messageformat": "系統聯絡人中存在對方"
   },
   "icu:SignalConnectionsModal__footer": {
-    "messageformat": "除非你選擇隱藏，否則你的聯絡人能看到你的名稱、照片和「我的限時動態」貼文"
+    "messageformat": "除非你選擇隱藏，否則你的聯絡人能看到你的名稱、照片和「我的快拍」貼文"
   },
   "icu:Stories__title": {
-    "messageformat": "限時動態"
+    "messageformat": "快拍"
   },
   "icu:Stories__mine": {
-    "messageformat": "我的限時動態"
+    "messageformat": "我的快拍"
   },
   "icu:Stories__add": {
-    "messageformat": "新增一個限時動態"
+    "messageformat": "新增一個快拍"
   },
   "icu:Stories__add-story--text": {
-    "messageformat": "文字限動"
+    "messageformat": "文字快拍"
   },
   "icu:Stories__add-story--media": {
     "messageformat": "照片或影片"
   },
   "icu:Stories__hidden-stories": {
-    "messageformat": "已隱藏的限時動態"
+    "messageformat": "已隱藏的快拍"
   },
   "icu:Stories__list-empty": {
-    "messageformat": "目前沒有可顯示的近期限時動態"
+    "messageformat": "目前沒有可顯示的近期快拍"
   },
   "icu:Stories__list__empty--title": {
-    "messageformat": "沒有限時動態"
+    "messageformat": "沒有快拍"
   },
   "icu:Stories__list__empty--subtitle": {
     "messageformat": "最新資訊將出現在此處。"
@@ -7973,7 +7973,7 @@
     "messageformat": "點擊以重試"
   },
   "icu:Stories__placeholder--text": {
-    "messageformat": "點擊以檢視限時動態"
+    "messageformat": "點擊以檢視快拍"
   },
   "icu:Stories__placeholder-with-icon--text-2": {
     "messageformat": "點擊 <newStoryButtonIcon></newStoryButtonIcon> 以新增最新資訊。"
@@ -7988,34 +7988,34 @@
     "messageformat": "正在傳送反應…"
   },
   "icu:Stories__toast--hasNoSound": {
-    "messageformat": "此限動沒有聲音"
+    "messageformat": "此快拍沒有聲音"
   },
   "icu:Stories__failed-send": {
-    "messageformat": "無法將此限時動態發送給某些聯絡人。請檢查你的網路連線，然後再試一次。"
+    "messageformat": "無法將此快拍發送給某些聯絡人。請檢查你的網路連線，然後再試一次。"
   },
   "icu:StoriesSettings__title": {
-    "messageformat": "限動隱私"
+    "messageformat": "快拍隱私"
   },
   "icu:StoriesSettings__description": {
-    "messageformat": "限動會在 24 小時後自動消失。選擇你限動的瀏覽對象，或者建立新的限動並設定特定的瀏覽者或群組。"
+    "messageformat": "快拍會在 24 小時後自動消失。選擇你快拍的瀏覽對象，或者建立新的快拍並設定特定的瀏覽者或群組。"
   },
   "icu:StoriesSettings__my_stories": {
-    "messageformat": "我的限時動態"
+    "messageformat": "我的快拍"
   },
   "icu:StoriesSettings__new-list": {
-    "messageformat": "新增限時動態"
+    "messageformat": "新增快拍"
   },
   "icu:StoriesSettings__custom-story-subtitle": {
-    "messageformat": "自訂限時動態"
+    "messageformat": "自訂快拍"
   },
   "icu:StoriesSettings__group-story-subtitle": {
-    "messageformat": "群組限時動態"
+    "messageformat": "群組快拍"
   },
   "icu:StoriesSettings__viewers": {
     "messageformat": "{count, plural, other {{count,number} 個觀看者}}"
   },
   "icu:StoriesSettings__who-can-see": {
-    "messageformat": "誰能瀏覽此限動"
+    "messageformat": "誰能瀏覽此快拍"
   },
   "icu:StoriesSettings__add-viewer": {
     "messageformat": "新增觀看者"
@@ -8027,7 +8027,7 @@
     "messageformat": "移除 {title}"
   },
   "icu:StoriesSettings__remove--body": {
-    "messageformat": "此人將不再看見你的限時動態。"
+    "messageformat": "此人將不再看見你的快拍。"
   },
   "icu:StoriesSettings__replies-reactions--title": {
     "messageformat": "回覆及反應"
@@ -8036,25 +8036,25 @@
     "messageformat": "允許回覆及反應"
   },
   "icu:StoriesSettings__replies-reactions--description": {
-    "messageformat": "讓能夠瀏覽你限動的人都可以送出反應並回覆內容。"
+    "messageformat": "讓能夠瀏覽你快拍的人都可以送出反應並回覆內容。"
   },
   "icu:StoriesSettings__delete-list": {
-    "messageformat": "刪除自訂限時動態"
+    "messageformat": "刪除自訂快拍"
   },
   "icu:StoriesSettings__delete-list--confirm": {
-    "messageformat": "你確定要刪除「{name}」嗎？分享到此限時動態的更新也會被刪除。"
+    "messageformat": "你確定要刪除「{name}」嗎？分享到此快拍的更新也會被刪除。"
   },
   "icu:StoriesSettings__choose-viewers": {
     "messageformat": "選擇瀏覽者"
   },
   "icu:StoriesSettings__name-story": {
-    "messageformat": "為限時動態命名"
+    "messageformat": "為快拍命名"
   },
   "icu:StoriesSettings__name-placeholder": {
-    "messageformat": "限時動態名稱 (必填)"
+    "messageformat": "快拍名稱 (必填)"
   },
   "icu:StoriesSettings__hide-story": {
-    "messageformat": "對這些人隱藏限時動態"
+    "messageformat": "對這些人隱藏快拍"
   },
   "icu:StoriesSettings__mine__all--label": {
     "messageformat": "所有 Tellomi 聯絡人"
@@ -8066,43 +8066,43 @@
     "messageformat": "僅和這些人分享…"
   },
   "icu:StoriesSettings__mine__disclaimer--link": {
-    "messageformat": "選擇誰可瀏覽你的限時動態。此變更不會影響你已發布的限時動態。<learnMoreLink>了解更多。</learnMoreLink>"
+    "messageformat": "選擇誰可瀏覽你的快拍。此變更不會影響你已發布的快拍。<learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:StoriesSettings__context-menu": {
-    "messageformat": "限動隱私"
+    "messageformat": "快拍隱私"
   },
   "icu:StoriesSettings__view-receipts--label": {
     "messageformat": "已瀏覽標記"
   },
   "icu:StoriesSettings__view-receipts--new-description": {
-    "messageformat": "對方瀏覽限時動態時可以觀看和分享。如果停用，你就無法看到其他人瀏覽你的限時動態。"
+    "messageformat": "對方瀏覽快拍時可以觀看和分享。如果停用，你就無法看到其他人瀏覽你的快拍。"
   },
   "icu:GroupStorySettingsModal__members_title": {
-    "messageformat": "誰能瀏覽此限動"
+    "messageformat": "誰能瀏覽此快拍"
   },
   "icu:GroupStorySettingsModal__members_help": {
-    "messageformat": "「{groupTitle}」群組聊天的成員可以瀏覽和回覆此限時動態。你可以更新此群組聊天的成員資格。"
+    "messageformat": "「{groupTitle}」群組聊天的成員可以瀏覽和回覆此快拍。你可以更新此群組聊天的成員資格。"
   },
   "icu:GroupStorySettingsModal__remove_group": {
-    "messageformat": "移除群組限動"
+    "messageformat": "移除群組快拍"
   },
   "icu:StoriesSettings__remove_group--confirm": {
     "messageformat": "你確定要移除「{groupTitle}」嗎？"
   },
   "icu:SendStoryModal__choose-who-can-view": {
-    "messageformat": "選擇誰能瀏覽你的限動"
+    "messageformat": "選擇誰能瀏覽你的快拍"
   },
   "icu:SendStoryModal__title": {
     "messageformat": "傳送給"
   },
   "icu:SendStoryModal__send": {
-    "messageformat": "傳送限動"
+    "messageformat": "傳送快拍"
   },
   "icu:SendStoryModal__custom-story": {
-    "messageformat": "自訂限時動態"
+    "messageformat": "自訂快拍"
   },
   "icu:SendStoryModal__group-story": {
-    "messageformat": "群組限時動態"
+    "messageformat": "群組快拍"
   },
   "icu:SendStoryModal__only-share-with": {
     "messageformat": "僅分享給"
@@ -8114,16 +8114,16 @@
     "messageformat": "新增"
   },
   "icu:SendStoryModal__new-custom--title": {
-    "messageformat": "新自訂限時動態"
+    "messageformat": "新自訂快拍"
   },
   "icu:SendStoryModal__new-custom--name-visibility": {
-    "messageformat": "只有你可看到此限時動態的名稱。"
+    "messageformat": "只有你可看到此快拍的名稱。"
   },
   "icu:SendStoryModal__new-custom--description": {
-    "messageformat": "新增個人限時動態"
+    "messageformat": "新增個人快拍"
   },
   "icu:SendStoryModal__new-group--title": {
-    "messageformat": "新的群組限動"
+    "messageformat": "新的群組快拍"
   },
   "icu:SendStoryModal__new-group--description": {
     "messageformat": "分享至現有的群組"
@@ -8132,28 +8132,28 @@
     "messageformat": "選擇群組"
   },
   "icu:SendStoryModal__my-stories-privacy": {
-    "messageformat": "我的限動隱私設定"
+    "messageformat": "我的快拍隱私設定"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "選擇哪些 Tellomi 人脈可以瀏覽你的限時動態。你可以隨時在隱私設定中進行更改。<learnMoreLink>了解更多。</learnMoreLink>"
+    "messageformat": "選擇哪些 Tellomi 人脈可以瀏覽你的快拍。你可以隨時在隱私設定中進行更改。<learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
-    "messageformat": "刪除限動"
+    "messageformat": "刪除快拍"
   },
   "icu:SendStoryModal__confirm-remove-group": {
-    "messageformat": "要移除限動嗎？這樣會從你的清單中移除此限動，但你仍然可以瀏覽此群組中的限動。"
+    "messageformat": "要移除快拍嗎？這樣會從你的清單中移除此快拍，但你仍然可以瀏覽此群組中的快拍。"
   },
   "icu:SendStoryModal__announcements-only": {
-    "messageformat": "只有管理員可以向此群組傳送限時動態。"
+    "messageformat": "只有管理員可以向此群組傳送快拍。"
   },
   "icu:Stories__settings-toggle--title": {
-    "messageformat": "分享及瀏覽限動"
+    "messageformat": "分享及瀏覽快拍"
   },
   "icu:Stories__settings-toggle--description": {
-    "messageformat": "若選擇退出限動，你將無法再分享或瀏覽限動。"
+    "messageformat": "若選擇退出快拍，你將無法再分享或瀏覽快拍。"
   },
   "icu:Stories__settings-toggle--button": {
-    "messageformat": "關閉限動"
+    "messageformat": "關閉快拍"
   },
   "icu:StoryViewer__pause": {
     "messageformat": "暫停"
@@ -8204,7 +8204,7 @@
     "messageformat": "下載附件"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "啟用已讀標記，看看誰瀏覽了你的限時動態。在你的行動裝置上開啟 Tellomi 應用程式，然後前往「設定」 >「限時動態」"
+    "messageformat": "啟用已讀標記，看看誰瀏覽了你的快拍。在你的行動裝置上開啟 Tellomi 應用程式，然後前往「設定」 >「快拍」"
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "未有回覆"
@@ -8219,13 +8219,13 @@
     "messageformat": "回覆"
   },
   "icu:StoryViewsNRepliesModal__reacted--you": {
-    "messageformat": "對限時動態表達了心情回應"
+    "messageformat": "對快拍表達了心情回應"
   },
   "icu:StoryViewsNRepliesModal__reacted--someone-else": {
-    "messageformat": "對限時動態表達了心情回應"
+    "messageformat": "對快拍表達了心情回應"
   },
   "icu:StoryViewsNRepliesModal__not-a-member": {
-    "messageformat": "由於你不再是這群組的成員，因此你無法回覆此限時動態。"
+    "messageformat": "由於你不再是這群組的成員，因此你無法回覆此快拍。"
   },
   "icu:StoryViewsNRepliesModal__delete-reply": {
     "messageformat": "為我刪除"
@@ -8237,13 +8237,13 @@
     "messageformat": "複製時間戳記"
   },
   "icu:StoryListItem__label": {
-    "messageformat": "限時動態"
+    "messageformat": "快拍"
   },
   "icu:StoryListItem__unhide": {
-    "messageformat": "取消隱藏限時動態"
+    "messageformat": "取消隱藏快拍"
   },
   "icu:StoryListItem__hide": {
-    "messageformat": "隱藏限時動態"
+    "messageformat": "隱藏快拍"
   },
   "icu:StoryListItem__go-to-chat": {
     "messageformat": "到聊天"
@@ -8255,25 +8255,25 @@
     "messageformat": "資訊"
   },
   "icu:StoryListItem__hide-modal--body": {
-    "messageformat": "要隱藏限時動態嗎？ 來自{name}的最新限時動態更新將不再出現在限時動態清單的頂部。"
+    "messageformat": "要隱藏快拍嗎？ 來自{name}的最新快拍更新將不再出現在快拍清單的頂部。"
   },
   "icu:StoryListItem__hide-modal--confirm": {
     "messageformat": "隱藏"
   },
   "icu:StoryImage__error2": {
-    "messageformat": "無法下載限動。{name} 必須再次分享該限動。"
+    "messageformat": "無法下載快拍。{name} 必須再次分享該快拍。"
   },
   "icu:StoryImage__error--you": {
-    "messageformat": "無法下載限動。你必須再次分享該限動。"
+    "messageformat": "無法下載快拍。你必須再次分享該快拍。"
   },
   "icu:StoryCreator__error--video-unsupported": {
-    "messageformat": "由於系統不支援此檔案格式，因此無法將影片張貼至限動"
+    "messageformat": "由於系統不支援此檔案格式，因此無法將影片張貼至快拍"
   },
   "icu:StoryCreator__error--video-too-long": {
-    "messageformat": "{maxDurationInSec, plural, other {由於影片超過 {maxDurationInSec,number} 秒，因此無法將影片發布至限時動態。}}"
+    "messageformat": "{maxDurationInSec, plural, other {由於影片超過 {maxDurationInSec,number} 秒，因此無法將影片發布至快拍。}}"
   },
   "icu:StoryCreator__error--video-too-big": {
-    "messageformat": "由於影片的檔案大小超過 {limit,number}{units}，因此無法發布至限時動態。"
+    "messageformat": "由於影片的檔案大小超過 {limit,number}{units}，因此無法發布至快拍。"
   },
   "icu:StoryCreator__error--video-error": {
     "messageformat": "無法載入影片"
@@ -8288,7 +8288,7 @@
     "messageformat": "文字沒有背景顏色"
   },
   "icu:StoryCreator__story-bg": {
-    "messageformat": "變更限動背景顏色"
+    "messageformat": "變更快拍背景顏色"
   },
   "icu:StoryCreator__next": {
     "messageformat": "下一步"
@@ -8312,7 +8312,7 @@
     "messageformat": "窄體"
   },
   "icu:StoryCreator__control--text": {
-    "messageformat": "新增限動文字"
+    "messageformat": "新增快拍文字"
   },
   "icu:StoryCreator__control--link": {
     "messageformat": "新增連結"
@@ -8321,13 +8321,13 @@
     "messageformat": "輸入或貼上 URL"
   },
   "icu:StoryCreator__link-preview-empty": {
-    "messageformat": "為大家新增你的限動連結"
+    "messageformat": "為大家新增你的快拍連結"
   },
   "icu:Stories__failed-send--full": {
-    "messageformat": "限時動態發送失敗"
+    "messageformat": "快拍發送失敗"
   },
   "icu:Stories__failed-send--partial": {
-    "messageformat": "無法將限時動態發送給全部接收者"
+    "messageformat": "無法將快拍發送給全部接收者"
   },
   "icu:TextAttachment__placeholder": {
     "messageformat": "新增文字"
@@ -8336,25 +8336,25 @@
     "messageformat": "訪問連結"
   },
   "icu:Quote__story": {
-    "messageformat": "限時動態"
+    "messageformat": "快拍"
   },
   "icu:Quote__story-reaction": {
-    "messageformat": "對{name} 一個限時動態的反應"
+    "messageformat": "對{name} 一個快拍的反應"
   },
   "icu:Quote__story-reaction--you": {
-    "messageformat": "對你的限時動態表達了心情"
+    "messageformat": "對你的快拍表達了心情"
   },
   "icu:Quote__story-reaction--single": {
-    "messageformat": "對一則限時動態回應"
+    "messageformat": "對一則快拍回應"
   },
   "icu:Quote__story-reaction-notification--incoming": {
-    "messageformat": "已向你的限動送出 {emoji}"
+    "messageformat": "已向你的快拍送出 {emoji}"
   },
   "icu:Quote__story-reaction-notification--outgoing": {
-    "messageformat": "你對 {name} 的限時動態表達了 {emoji} 心情"
+    "messageformat": "你對 {name} 的快拍表達了 {emoji} 心情"
   },
   "icu:Quote__story-reaction-notification--outgoing--nameless": {
-    "messageformat": "你對一個限時動態表達了 {emoji} 心情"
+    "messageformat": "你對一個快拍表達了 {emoji} 心情"
   },
   "icu:Quote__story-unavailable": {
     "messageformat": "不再提供"
@@ -8790,7 +8790,7 @@
     "messageformat": "以非營利為榮"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "捐款以支持私密訊息功能。讓 Signal 保持獨立且無廣告。<readMoreLink>閱讀全文</readMoreLink>"
+    "messageformat": "捐款以支持私密訊息功能。讓 Tellomi 保持獨立且無廣告。<readMoreLink>閱讀全文</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "捐款"
@@ -8823,7 +8823,7 @@
     "messageformat": "保障你的隱私是我們的使命"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi 是一個非營利組織。"
+    "messageformat": "Signal 是一個非營利組織。"
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "以 Tellomi 標誌風格呈現的心形圖示"
@@ -8841,7 +8841,7 @@
     "messageformat": "贊助者常見問題"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "收據不會跨裝置進行同步。若你已重新安裝 Signal，恕未能提供先前捐款的收據。"
+    "messageformat": "收據不會跨裝置進行同步。若你已重新安裝 Tellomi，恕未能提供先前捐款的收據。"
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "未有收據"
@@ -8883,7 +8883,7 @@
     "messageformat": "MM/YY"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "捐款 {formattedCurrencyAmount} 給 Signal"
+    "messageformat": "捐款 {formattedCurrencyAmount} 給 Tellomi"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "付款卡號碼無效"
@@ -8901,7 +8901,7 @@
     "messageformat": "代碼太短"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "獲取為期 30 天的 Signal 捐款徽章"
+    "messageformat": "獲取為期 30 天的 Tellomi 捐款徽章"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "最低捐款金額為 {formattedCurrencyAmount}"
@@ -8985,7 +8985,7 @@
     "messageformat": "捐款成功，但我們無法更新你的徽章設定"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "要更新行動裝置的徽章設定，請前往「設定」→「捐款給 Signal」→「徽章」。"
+    "messageformat": "要更新行動裝置的徽章設定，請前往「設定」→「捐款給 Tellomi」→「徽章」。"
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "捐款中斷"
@@ -9042,7 +9042,7 @@
     "messageformat": "捐款時發生錯誤"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "可能尚未處理你的捐款。點擊「捐款給 Signal」，然後點擊「捐款收據」以查看你的收據並確認。"
+    "messageformat": "可能尚未處理你的捐款。點擊「捐款給 Tellomi」，然後點擊「捐款收據」以查看你的收據並確認。"
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "再試一次或向支援團隊提交除錯日誌，以取得協助完成捐款。除錯日誌可協助我們診斷並修正問題，而且不包含識別資料。"
@@ -9084,13 +9084,13 @@
     "messageformat": "謝謝您的支持！"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "你已獲得 Signal 的捐款者徽章！在你的個人檔案中展示徽章，表現你對我們的支持。"
+    "messageformat": "你已獲得 Tellomi 的捐款者徽章！在你的個人檔案中展示徽章，表現你對我們的支持。"
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "在個人資訊中展示"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "你可以在行動裝置的「設定 → 捐款給 Signal → 徽章」中更改此項目"
+    "messageformat": "你可以在行動裝置的「設定 → 捐款給 Tellomi → 徽章」中更改此項目"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "通話順利嗎？"

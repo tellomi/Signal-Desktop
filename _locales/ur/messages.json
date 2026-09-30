@@ -915,7 +915,7 @@
     "messageformat": "اس اپ ڈیٹ میں {whatsNew} دیکھیں"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi ایک غیر منافع بخش ایپ ہے"
+    "messageformat": "Signal ایک غیر منافع بخش ایپ ہے"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "نیا کیا ہے"
@@ -6001,7 +6001,7 @@
     "messageformat": "کیا آپ یہ تبدیلیاں ضائع کرنا چاہتے ہیں؟"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "سگنل کو بند کریں اور کال کو ختم کریں؟"
+    "messageformat": "Tellomi کو بند کریں اور کال کو ختم کریں؟"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "ابھی نہیں"
@@ -8541,7 +8541,7 @@
     "messageformat": "آپ کی معلومات پرائیویٹ ہے"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "ایک خود مختار غیر منافع بخش ایپ کے طور پر، Tellomi نجی میسجنگ اور کالز کی فراہمی کے لیے پُرعزم ہے۔ کوئی اشتہارات، کوئی ٹریکرز، کوئی نگرانی نہیں۔ Tellomi کو سپورٹ کرنے کے لیے ابھی عطیہ کریں۔"
+    "messageformat": "ایک خود مختار غیر منافع بخش ایپ کے طور پر، Signal نجی میسجنگ اور کالز کی فراہمی کے لیے پُرعزم ہے۔ کوئی اشتہارات، کوئی ٹریکرز، کوئی نگرانی نہیں۔ Signal کو سپورٹ کرنے کے لیے ابھی عطیہ کریں۔"
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "عطیہ کرنے پر اپنی پروفائل پر ایک اختیاری بیج حاصل کریں"
@@ -8550,7 +8550,7 @@
     "messageformat": "آپ کی پرائیویسی ہمارا مشن ہے"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi ایک غیر منافع بخش ایپ ہے۔"
+    "messageformat": "Signal ایک غیر منافع بخش ایپ ہے۔"
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Tellomi لوگو کے انداز میں دل والا آئیکن"
@@ -8811,7 +8811,7 @@
     "messageformat": "آپ کی سپورٹ کا شکریہ!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "آپ نے سگنل سے ڈونر بیج حاصل کیا ہے! اپنا تعاون ظاہر کرنے کے لیے اسے اپنے پروفائل پر دکھائیں۔"
+    "messageformat": "آپ نے Tellomi سے ڈونر بیج حاصل کیا ہے! اپنا تعاون ظاہر کرنے کے لیے اسے اپنے پروفائل پر دکھائیں۔"
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "پروفائل پر ڈسپلے کریں"

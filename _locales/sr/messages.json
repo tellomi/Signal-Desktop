@@ -915,7 +915,7 @@
     "messageformat": "Погледајте {whatsNew} у овом ажурирању"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi је непрофитна организација"
+    "messageformat": "Signal је непрофитна организација"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "шта je ново"
@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>Дошло је до неочекиване грешке.</paragraph><paragraph>Молимо вас, покушајте поново.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Сигнал не може да повеже овај уређај користећи вашу тренутну мрежу."
+    "messageformat": "Tellomi не може да повеже овај уређај користећи вашу тренутну мрежу."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Пробај поново"
@@ -8541,7 +8541,7 @@
     "messageformat": "Ваши подаци су приватни"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Као независна непрофитна организација, Tellomi гарантује приватност порука и позива. Без огласа, без праћења, без надзора. Донирајте данас да подржите Tellomi."
+    "messageformat": "Као независна непрофитна организација, Signal гарантује приватност порука и позива. Без огласа, без праћења, без надзора. Донирајте данас да подржите Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Донирањем ћете добити значку коју ћете моћи да прикажете на профилу"
@@ -8550,7 +8550,7 @@
     "messageformat": "Ваша приватност је наша мисија"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi је непрофитна организација."
+    "messageformat": "Signal је непрофитна организација."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Икона срца у стилу логотипа Tellomi-а"

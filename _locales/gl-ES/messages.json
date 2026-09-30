@@ -915,7 +915,7 @@
     "messageformat": "Ver {whatsNew} nesta actualización"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi é unha organización sen ánimo de lucro"
+    "messageformat": "Signal é unha organización sen ánimo de lucro"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "novidades"
@@ -8541,7 +8541,7 @@
     "messageformat": "A túa información é completamente privada"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Como organización independente sen ánimo de lucro, Tellomi ten un firme compromiso coa mensaxería e as chamadas privadas. Sen anuncios, sen rastrexadores, sen vixilancia. Fai a túa doazón para apoiar a Tellomi."
+    "messageformat": "Como organización independente sen ánimo de lucro, Signal ten un firme compromiso coa mensaxería e as chamadas privadas. Sen anuncios, sen rastrexadores, sen vixilancia. Fai a túa doazón para apoiar a Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Obtén unha insignia opcional para o teu perfil ao doar"
@@ -8550,7 +8550,7 @@
     "messageformat": "A túa privacidade é a nosa razón de ser"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi é unha organización sen ánimo de lucro."
+    "messageformat": "Signal é unha organización sen ánimo de lucro."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Icona de corazón no estilo do logotipo de Tellomi"
@@ -8568,7 +8568,7 @@
     "messageformat": "Preguntas frecuentes sobre doantes"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Os comprobantes non se sincronizan nos dispositivos. Se volviches instalar Signal, os comprobantes de donativos anteriores non estarán dispoñibles."
+    "messageformat": "Os comprobantes non se sincronizan nos dispositivos. Se volviches instalar Tellomi, os comprobantes de donativos anteriores non estarán dispoñibles."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Sen comprobantes"
@@ -8769,7 +8769,7 @@
     "messageformat": "Produciuse un erro co teu donativo"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "É posible que a túa doazón non se procesase. Preme en «Doar a Signal» e en «Recibos de donativo» para consultar e verificar todos os recibos."
+    "messageformat": "É posible que a túa doazón non se procesase. Preme en «Doar a Tellomi» e en «Recibos de donativo» para consultar e verificar todos os recibos."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Volve intentalo ou envía o rexistro de depuración a Axuda para que poidan axudarche a completar o teu donativo. Os rexistros de depuración axúdannos a diagnosticar e solucionar os erros e non conteñen ningunha información identificadora."

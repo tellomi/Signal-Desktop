@@ -2355,7 +2355,7 @@
     "messageformat": "I går {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signalet kan muligvis ikke behandle en indgående besked."
+    "messageformat": "Tellomi kan muligvis ikke behandle en indgående besked."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Beskeden er for langt."
@@ -2811,7 +2811,7 @@
     "messageformat": "Tak for din støtte!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Du har foretaget en donation til Signal på vegne af {name}. De vil få mulighed for at vise deres støtte på deres profil."
+    "messageformat": "Du har foretaget en donation til Tellomi på vegne af {name}. De vil få mulighed for at vise deres støtte på deres profil."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Klistermærkepakke kunne ikke installeres"
@@ -3732,7 +3732,7 @@
     "messageformat": "Tellomi kører stadig"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Tellomi fortsætter med at sende notifikationer. Du kan ændre dette i Signals indstillinger."
+    "messageformat": "Tellomi fortsætter med at sende notifikationer. Du kan ændre dette i Tellomis indstillinger."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Indgående stemmeopkald"
@@ -6638,7 +6638,7 @@
     "messageformat": "Sikre Tellomi-sikkerhedskopier"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automatiske sikkerhedskopier med Signals sikre E2E-krypterede lagertjeneste. Kom i gang på din telefon. <learnMoreLink>Få mere at vide.</learnMoreLink>"
+    "messageformat": "Automatiske sikkerhedskopier med Tellomis sikre E2E-krypterede lagertjeneste. Kom i gang på din telefon. <learnMoreLink>Få mere at vide.</learnMoreLink>"
   },
   "icu:Preferences--backup-section-description": {
     "messageformat": "Sikkerhedskopier din beskedhistorik, så du aldrig mister data, når du får en ny telefon eller geninstallerer Tellomi."
@@ -8568,7 +8568,7 @@
     "messageformat": "Ofte stillede spørgsmål om donationer"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Kvitteringer synkroniseres ikke på tværs af enheder. Hvis du har geninstalleret Signal, vil kvitteringer fra tidligere donationer ikke være tilgængelige."
+    "messageformat": "Kvitteringer synkroniseres ikke på tværs af enheder. Hvis du har geninstalleret Tellomi, vil kvitteringer fra tidligere donationer ikke være tilgængelige."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Ingen kvitteringer"
@@ -8769,7 +8769,7 @@
     "messageformat": "Der opstod en fejl i forbindelse med din donation."
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Din donation er muligvis ikke blevet gennemført. Klik på “Donér til Signal”, og klik derefter “Donationskvitteringer” for at tjekke dine kvitteringer og bekræfte."
+    "messageformat": "Din donation er muligvis ikke blevet gennemført. Klik på “Donér til Tellomi”, og klik derefter “Donationskvitteringer” for at tjekke dine kvitteringer og bekræfte."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Prøv igen, eller send en fejlfindingslog til support for at få hjælp til at fuldføre din donation. Fejlfindingslogfiler hjælper os med at diagnosticere og løse problemet og indeholder ikke identificerende oplysninger."

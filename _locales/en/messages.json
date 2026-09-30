@@ -96,7 +96,7 @@
     "description": "Additional detail about the sent media quality setting"
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Donate to Signal",
+    "messageformat": "Donate to Tellomi",
     "description": "The title of the preferences pane for donating to signal"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
@@ -3975,7 +3975,7 @@
     "description": "Shown in a message's bubble when you've sent a donation badge to a contact."
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} donated to Signal on your behalf",
+    "messageformat": "{sender} donated to Tellomi on your behalf",
     "description": "Shown in a message's bubble when you've received a donation badge from a contact."
   },
   "icu:message--donation--unopened--toast--incoming": {
@@ -4051,7 +4051,7 @@
     "description": "The title of the outgoing donation badge detail dialog"
   },
   "icu:modal--donation--description": {
-    "messageformat": "You've made a donation to Signal on behalf of {name}. They'll be given the option to show their support on their profile.",
+    "messageformat": "You've made a donation to Tellomi on behalf of {name}. They'll be given the option to show their support on their profile.",
     "description": "The description of the outgoing donation badge detail dialog"
   },
   "icu:stickers--toast--InstallFailed": {
@@ -6591,7 +6591,7 @@
     "description": "Shown with a progress spinner after the user has selected to delete their account, at the bottom of the screen"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Donate to Signal",
+    "messageformat": "Donate to Tellomi",
     "description": "In the badge dialog. This button is shown under sustainer badges, taking users to some instructions"
   },
   "icu:BadgeDialog__name-supports-signal": {
@@ -8449,7 +8449,7 @@
     "description": "Button to switch the settings view"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Donate to Signal",
+    "messageformat": "Donate to Tellomi",
     "description": "Button to switch the settings view"
   },
   "icu:Preferences__button--appearance": {
@@ -11691,7 +11691,7 @@
     "description": "Title shown at the top of the donations preferences page"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Donate to support private messaging. Keep Signal independent and ad-free. <readMoreLink>Read more</readMoreLink>",
+    "messageformat": "Donate to support private messaging. Keep Tellomi independent and ad-free. <readMoreLink>Read more</readMoreLink>",
     "description": "Description text explaining Signal's donation model with learn more link"
   },
   "icu:PreferencesDonations__donate-button": {
@@ -11759,7 +11759,7 @@
     "description": "Menu item to view donor FAQs"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Receipts do not sync across devices. If you have reinstalled Signal, receipts from previous donations will not be available.",
+    "messageformat": "Receipts do not sync across devices. If you have reinstalled Tellomi, receipts from previous donations will not be available.",
     "description": "Information about donation receipts syncing limitations"
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
@@ -11815,7 +11815,7 @@
     "description": "When entering payment card expiration date, this is the placeholder value in the date input box when it is empty. Please specify a value which would be reasonable to see in a payment or checkout form. The format is Month/Year to match the global credit card expiration date format. The localized value is suggested to contain 2 characters for month and 2 characters for year. In CJK languages single characters are acceptable for month and year e.g. 月 and 年. Month and year should be separated by a forward slash (/) because after the user begins typing the date, the app will automatically separate them with a slash."
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Donate {formattedCurrencyAmount} to Signal",
+    "messageformat": "Donate {formattedCurrencyAmount} to Tellomi",
     "description": "Title above the payment card entry form after selecting a donation amount. Amount includes the currency symbol and is formatted in the locale's standard format. Examples: Donate $10; Donate ¥1000; Donate €10"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
@@ -11951,7 +11951,7 @@
     "description": "Modal title shown when donation completes successfully but badge application fails"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "To update your badge settings on your mobile device, go to Settings → Donate to Signal → Badges.",
+    "messageformat": "To update your badge settings on your mobile device, go to Settings → Donate to Tellomi → Badges.",
     "description": "Modal body text shown when badge application fails after successful donation"
   },
   "icu:Donations__DonationInterrupted": {
@@ -12027,7 +12027,7 @@
     "description": "Title of the dialog shown when some unknown error has happened during a user's attempted donation. This will show when we detect an error but haven't designed a string for the error type."
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Your donation might not have been processed. Click on “Donate to Signal” and then “Donation Receipts” to check your receipts and confirm.",
+    "messageformat": "Your donation might not have been processed. Click on “Donate to Tellomi” and then “Donation Receipts” to check your receipts and confirm.",
     "description": "An explanation for the 'error occurred' dialog"
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
@@ -12091,7 +12091,7 @@
     "description": "Toggle label for displaying the donation badge on user's profile in the 'thanks for your donation' modal"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "You can adjust this on your mobile device under Settings → Donate to Signal → Badges",
+    "messageformat": "You can adjust this on your mobile device under Settings → Donate to Tellomi → Badges",
     "description": "Help text below the toggle in donation thank you modal"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
