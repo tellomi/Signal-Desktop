@@ -6001,7 +6001,7 @@
     "messageformat": "کیا آپ یہ تبدیلیاں ضائع کرنا چاہتے ہیں؟"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "سگنل کو بند کریں اور کال کو ختم کریں؟"
+    "messageformat": "Tellomi کو بند کریں اور کال کو ختم کریں؟"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "ابھی نہیں"
@@ -8811,7 +8811,7 @@
     "messageformat": "آپ کی سپورٹ کا شکریہ!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "آپ نے سگنل سے ڈونر بیج حاصل کیا ہے! اپنا تعاون ظاہر کرنے کے لیے اسے اپنے پروفائل پر دکھائیں۔"
+    "messageformat": "آپ نے Tellomi سے ڈونر بیج حاصل کیا ہے! اپنا تعاون ظاہر کرنے کے لیے اسے اپنے پروفائل پر دکھائیں۔"
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "پروفائل پر ڈسپلے کریں"

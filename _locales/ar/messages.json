@@ -63,10 +63,10 @@
     "messageformat": "لاحظ أنَّ إرسال وسائط بجودة عالية سوف يستخدم كمية أكبر من البيانات."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "تبرَّع لسيجنال"
+    "messageformat": "تبرَّع لـ Tellomi"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "تُتيح لك <bold>الأجهزة المُرتبِطة</bold> الوصول إلى حسابك على سيجنال ورسائلك بأمان على أي من أجهزتك الإضافية."
+    "messageformat": "تُتيح لك <bold>الأجهزة المُرتبِطة</bold> الوصول إلى حسابك على Tellomi ورسائلك بأمان على أي من أجهزتك الإضافية."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "يُمكنك ربط جهاز كمبيوتر، أو جهاز لوحي، أو هاتف إضافي."
@@ -114,10 +114,10 @@
     "messageformat": "مجموعة غير معروفة"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "تعذَّر فتح سيجنال"
+    "messageformat": "تعذَّر فتح Tellomi"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "للمساعدة في حلّ هذه المشكلة، اتّبع دليل الاستعادة على صفحة الدعم أو تواصَل مع قسم الدعم في سيجنال لمساعدتك على حلّ المشكلة.\n\nإذا كُنتَ بحاجة إلى استخدام سيجنال الآن، يُمكنك مسح بياناتك وإعادة ربط هذا الحاسوب. سَيكون لديك الخيار لتحويل سِجل رسائلك من هاتفك."
+    "messageformat": "للمساعدة في حلّ هذه المشكلة، اتّبع دليل الاستعادة على صفحة الدعم أو تواصَل مع قسم الدعم في Tellomi لمساعدتك على حلّ المشكلة.\n\nإذا كُنتَ بحاجة إلى استخدام Tellomi الآن، يُمكنك مسح بياناتك وإعادة ربط هذا الحاسوب. سَيكون لديك الخيار لتحويل سِجل رسائلك من هاتفك."
   },
   "icu:databaseError": {
     "messageformat": "حدث خطأ في قاعدة البيانات"
@@ -129,10 +129,10 @@
     "messageformat": "حذف جميع البيانات نهائيًا"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "سيُحذَف سِجل رسائلك والوسائط بشكل نهائي من هذا الجهاز. لن يُؤدي هذا إلى حذف أي بيانات من هاتفك.\n\nستتمكَّن من استخدام سيجنال على هذا الجهاز بعد إعادة ربطه. سَيكون لديك الخيار لتحويل سِجل رسائلك من هاتفك."
+    "messageformat": "سيُحذَف سِجل رسائلك والوسائط بشكل نهائي من هذا الجهاز. لن يُؤدي هذا إلى حذف أي بيانات من هاتفك.\n\nستتمكَّن من استخدام Tellomi على هذا الجهاز بعد إعادة ربطه. سَيكون لديك الخيار لتحويل سِجل رسائلك من هاتفك."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "لا يتطابق إصدار قاعدة بياناتك مع إصدار سيجنال هذا. تأكَّد من فتح أحدث إصدار لِسيجنال على حاسوبك."
+    "messageformat": "لا يتطابق إصدار قاعدة بياناتك مع إصدار Tellomi هذا. تأكَّد من فتح أحدث إصدار لـ Tellomi على حاسوبك."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "تعذَّر الوصول إلى مفتاح تشفير قاعدة البيانات لأن الواجهة الخلفية لحلقة مفاتيح تشفير نظام التشغيل تغيَّرت من {previousBackend} إلى {currentBackend}. يُمكن أن يَحدث هذا إذا تغيَّرت بيئة سطح المكتب، مثلًا بين GNOME وKDE.\n\nيُرجى الرجوع إلى بيئة سطح المكتب السابقة."
@@ -183,7 +183,7 @@
     "messageformat": "إظهار الكل"
   },
   "icu:appMenuQuit": {
-    "messageformat": "مغادرة سيجنال"
+    "messageformat": "مغادرة Tellomi"
   },
   "icu:editMenuUndo": {
     "messageformat": "تراجُع"
@@ -507,10 +507,10 @@
     "messageformat": "حدَّدت أن رقم أمانك مع {name} لم يتم التحقُّق منه عن طريق جهازٍ آخر."
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "رقم الأمان الذي تحاول التحقُّق منه قد تغيَّر. يُرجى معاينة رقم الأمان الجديد الخاص بك مع {name1} وتذكّر أن هذا التغيُّر يمكن أن يكون سببه أنّ هناك من يحاول اعتراض رسائلك أو أن {name2} ببساطة أعاد تثبيت سيجنال."
+    "messageformat": "رقم الأمان الذي تحاول التحقُّق منه قد تغيَّر. يُرجى معاينة رقم الأمان الجديد الخاص بك مع {name1} وتذكّر أن هذا التغيُّر يمكن أن يكون سببه أنّ هناك من يحاول اعتراض رسائلك أو أن {name2} ببساطة أعاد تثبيت Tellomi."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "قد يكون هؤلاء الأشخاص أعادوا تثبيت سيجنال أو غيَّروا أجهزتهم. انقر على مُستلِمٍ ما للتأكُّد من رقم الأمان الجديد الخاص بهم. هذا الإجراء اختياري."
+    "messageformat": "قد يكون هؤلاء الأشخاص أعادوا تثبيت Tellomi أو غيَّروا أجهزتهم. انقر على مُستلِمٍ ما للتأكُّد من رقم الأمان الجديد الخاص بهم. هذا الإجراء اختياري."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "إرسال الرسائل المُعلَّقة"
@@ -519,7 +519,7 @@
     "messageformat": "مراجعة"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, zero {لديك {count,number} جهات اتصال قد يكونوا أعادوا تثبيت سيجنال أو غيّروا أجهزتهم. يمكنك مراجعة أرقام الأمان الخاصة بهم قبل الإرسال.} one {لديك {count,number} جهة اتصال قد يكون أعاد تثبيت سيجنال أو غيّر جهازه. يمكنك مراجعة أرقام الأمان الخاصة به قبل الإرسال.} two {لديك {count,number} جهتي اتصال قد يكونا أعادا تثبيت سيجنال أو غيّرا أجهزتهما. يمكنك مراجعة أرقام الأمان الخاصة بهما قبل الإرسال.} few {لديك {count,number} جهات اتصال قد يكونوا أعادوا تثبيت سيجنال أو غيّروا أجهزتهم. يمكنك مراجعة أرقام الأمان الخاصة بهم قبل الإرسال.} many {لديك {count,number} جهة اتصال قد يكونوا أعادوا تثبيت سيجنال أو غيّروا أجهزتهم. يمكنك مراجعة أرقام الأمان الخاصة بهم قبل الإرسال.} other {لديك {count,number} جهة اتصال قد يكونوا أعادوا تثبيت سيجنال أو غيّروا أجهزتهم. يمكنك مراجعة أرقام الأمان الخاصة بهم قبل الإرسال.}}"
+    "messageformat": "{count, plural, zero {لديك {count,number} جهات اتصال قد يكونوا أعادوا تثبيت Tellomi أو غيّروا أجهزتهم. يمكنك مراجعة أرقام الأمان الخاصة بهم قبل الإرسال.} one {لديك {count,number} جهة اتصال قد يكون أعاد تثبيت Tellomi أو غيّر جهازه. يمكنك مراجعة أرقام الأمان الخاصة به قبل الإرسال.} two {لديك {count,number} جهتي اتصال قد يكونا أعادا تثبيت Tellomi أو غيّرا أجهزتهما. يمكنك مراجعة أرقام الأمان الخاصة بهما قبل الإرسال.} few {لديك {count,number} جهات اتصال قد يكونوا أعادوا تثبيت Tellomi أو غيّروا أجهزتهم. يمكنك مراجعة أرقام الأمان الخاصة بهم قبل الإرسال.} many {لديك {count,number} جهة اتصال قد يكونوا أعادوا تثبيت Tellomi أو غيّروا أجهزتهم. يمكنك مراجعة أرقام الأمان الخاصة بهم قبل الإرسال.} other {لديك {count,number} جهة اتصال قد يكونوا أعادوا تثبيت Tellomi أو غيّروا أجهزتهم. يمكنك مراجعة أرقام الأمان الخاصة بهم قبل الإرسال.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "تمَّت مراجعة كل جهات الاتصال. انقر إرسال للمتابعة."
@@ -627,16 +627,16 @@
     "messageformat": "تمَّ التحقُّق من التشفير تلقائيًا لهذه الدردشة. "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "بالنسبة لِجهات الاتصال المُرتبِطين بك عبر رقم الهاتف، يُمكن لتطبيق سيجنال التحقُّق تلقائيًا من أمان الاتصال باستخدام عملية تُسمّى شفافية المفاتيح. للمزيد من الأمان، تحقَّق من التشفير من طرف لطرف يدويًا من خلال مقارنة الأرقام على الشاشة السابقة أو مسح الكود على جهازه(ا)."
+    "messageformat": "بالنسبة لِجهات الاتصال المُرتبِطين بك عبر رقم الهاتف، يُمكن لتطبيق Tellomi التحقُّق تلقائيًا من أمان الاتصال باستخدام عملية تُسمّى شفافية المفاتيح. للمزيد من الأمان، تحقَّق من التشفير من طرف لطرف يدويًا من خلال مقارنة الأرقام على الشاشة السابقة أو مسح الكود على جهازه(ا)."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "التحقُّق التلقائي غير متوفِّر لهذه الدردشة."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "لا يمكن لسيجنال التحقُّق تلقائيًا من تشفير هذه الدردشة. قد يكون هذا بسبب أن {name} غيَّر رقم هاتفه أو إعدادات الخصوصية الخاصة برقم هاتفه. التحقُّق من التشفير من طرف لطرف يدويًا عن طريق مقارنة الأرقام على الشاشة السابقة أو مسح الكود على جهازه(ا)."
+    "messageformat": "لا يمكن لـ Tellomi التحقُّق تلقائيًا من تشفير هذه الدردشة. قد يكون هذا بسبب أن {name} غيَّر رقم هاتفه أو إعدادات الخصوصية الخاصة برقم هاتفه. التحقُّق من التشفير من طرف لطرف يدويًا عن طريق مقارنة الأرقام على الشاشة السابقة أو مسح الكود على جهازه(ا)."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "يمكن لسيجنال التحقُّق تلقائيًا من التشفير في الدردشات التي تكون متصلًا فيها بشخص ما عبر رقم الهاتف. إذا تمَّ بدء الدردشة باسم مُستخدِم أو مجموعة مشتركة، تحقَّق من التشفير من طرف لطرف من خلال مقارنة الأرقام على الشاشة السابقة أو مسح الكود على جهازه(ا)."
+    "messageformat": "يمكن لـ Tellomi التحقُّق تلقائيًا من التشفير في الدردشات التي تكون متصلًا فيها بشخص ما عبر رقم الهاتف. إذا تمَّ بدء الدردشة باسم مُستخدِم أو مجموعة مشتركة، تحقَّق من التشفير من طرف لطرف من خلال مقارنة الأرقام على الشاشة السابقة أو مسح الكود على جهازه(ا)."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "حسنًا"
@@ -675,10 +675,10 @@
     "messageformat": "لا، شكرًا"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "يُمكن لسيجنال الآن التحقُّق تلقائيًا من التشفير"
+    "messageformat": "يُمكن لـ Tellomi الآن التحقُّق تلقائيًا من التشفير"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "بالنسبة لجهات الاتصال المُرتبطين بك عبر رقم الهاتف، يُمكن لتطبيق سيجنال التحقُّق تلقائيًا من أمان الاتصال باستخدام عملية تُسمّى شفافية المفاتيح. لِتعزيز الأمان، يُمكنك التحقُّق من الاتصالات يدويًا باستخدام كود الـ QR أو من خلال مقارنة أرقام الأمان."
+    "messageformat": "بالنسبة لجهات الاتصال المُرتبطين بك عبر رقم الهاتف، يُمكن لتطبيق Tellomi التحقُّق تلقائيًا من أمان الاتصال باستخدام عملية تُسمّى شفافية المفاتيح. لِتعزيز الأمان، يُمكنك التحقُّق من الاتصالات يدويًا باستخدام كود الـ QR أو من خلال مقارنة أرقام الأمان."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "متابعة"
@@ -837,7 +837,7 @@
     "messageformat": "مُنشِئ مجموعة المُلصَقات في سيجنال"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "عن سيجنال Desktop"
+    "messageformat": "عن Tellomi Desktop"
   },
   "icu:screenShareWindow": {
     "messageformat": "مشاركة الشاشة"
@@ -855,7 +855,7 @@
     "messageformat": "المغادرة"
   },
   "icu:signalDesktop": {
-    "messageformat": "سيجنال Desktop"
+    "messageformat": "Tellomi Desktop"
   },
   "icu:search": {
     "messageformat": "بحث"
@@ -909,7 +909,7 @@
     "messageformat": "إيجاد بحسب رقم الهاتف"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "مرحبًا بك في سيجنال"
+    "messageformat": "مرحبًا بك في Tellomi"
   },
   "icu:whatsNew": {
     "messageformat": "اطَّلِع على {whatsNew} في هذا التحديث"
@@ -999,13 +999,13 @@
     "messageformat": "أنت"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "لإرسال رسائل صوتية، اسمح لسيجنال Desktop بالوصول إلى الميكروفون."
+    "messageformat": "لإرسال رسائل صوتية، اسمح لـ Tellomi Desktop بالوصول إلى الميكروفون."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "للاتصال، يجب أن تسمح لسيجنال Desktop بالوصول إلى الميكروفون."
+    "messageformat": "للاتصال، يجب أن تسمح لـ Tellomi Desktop بالوصول إلى الميكروفون."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "للقيام بمكالمات الفيديو، يجب السماح لسيجنال Desktop بالوصول إلى الكاميرا."
+    "messageformat": "للقيام بمكالمات الفيديو، يجب السماح لـ Tellomi Desktop بالوصول إلى الكاميرا."
   },
   "icu:allowAccess": {
     "messageformat": "منح الصلاحية"
@@ -1029,13 +1029,13 @@
     "messageformat": "كتم"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "تعذَّر تحديث سيجنال. <retryUpdateButton>جرِّب التحديث من جديد</retryUpdateButton> أو زُر {url} لتثبيته يدويًا. ثم <contactSupportLink>تواصَل مع قسم الدعم</contactSupportLink> حول هذه المشكلة"
+    "messageformat": "تعذَّر تحديث Tellomi. <retryUpdateButton>جرِّب التحديث من جديد</retryUpdateButton> أو زُر {url} لتثبيته يدويًا. ثم <contactSupportLink>تواصَل مع قسم الدعم</contactSupportLink> حول هذه المشكلة"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "تعذَّر تحديث سيجنال. زُر {url} لتثبيته يدويًا. ثم <contactSupportLink>تواصَل مع قسم الدعم</contactSupportLink> حول هذه المشكلة"
+    "messageformat": "تعذَّر تحديث Tellomi. زُر {url} لتثبيته يدويًا. ثم <contactSupportLink>تواصَل مع قسم الدعم</contactSupportLink> حول هذه المشكلة"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "من المحتمل أن يكون سيجنال Desktop في وحدة عزل نظام iOS، لذا لن يكون قادرًا على التحديث التلقائي. يُرجى محاولة نقل {app} إلى {folder} باستخدام Finder."
+    "messageformat": "من المحتمل أن يكون Tellomi Desktop في وحدة عزل نظام iOS، لذا لن يكون قادرًا على التحديث التلقائي. يُرجى محاولة نقل {app} إلى {folder} باستخدام Finder."
   },
   "icu:ok": {
     "messageformat": "موافق"
@@ -1080,7 +1080,7 @@
     "messageformat": "ستُحذَف هذه الرسالة من هذا الجهاز."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "ستُحذَف هذه الرسالة لكل من كان في هذه الدردشة إن كانوا يستخدمون إصدارًا حديثًا مِن سيجنال. سيتمكّنون من رؤية أنك قد حذفت رسالة."
+    "messageformat": "ستُحذَف هذه الرسالة لكل من كان في هذه الدردشة إن كانوا يستخدمون إصدارًا حديثًا مِن Tellomi. سيتمكّنون من رؤية أنك قد حذفت رسالة."
   },
   "icu:from": {
     "messageformat": "مِن"
@@ -1122,7 +1122,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "\"{title}\" هو اسم الحساب الشخصي الذي حدَّده هذا الشخص لنفسه في سيجنال."
+    "messageformat": "\"{title}\" هو اسم الحساب الشخصي الذي حدَّده هذا الشخص لنفسه في Tellomi."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "مُتحقَّق منه"
@@ -1137,7 +1137,7 @@
     "messageformat": "لا توجد رسائل مباشرة مع {name}"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "جهة اتصال سيجنال"
+    "messageformat": "جهة اتصال Tellomi"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} موجود في جهات اتصال نظامك"
@@ -1449,7 +1449,7 @@
     "messageformat": "اعرف المزيد"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "يستخدم سيجنال التشفير من طرف لِطرف وقد يحتاج إلى تحديث جلسة الدردشة الخاصة بك في بعض الأحيان. لا يؤثر هذا على أمان الدردشة ولكن قد تكون فوّتَ رسالة من جهة الاتصال هذه، ويُمكِنُك أن تطلب منها إعادة إرسالها."
+    "messageformat": "يستخدم Tellomi التشفير من طرف لِطرف وقد يحتاج إلى تحديث جلسة الدردشة الخاصة بك في بعض الأحيان. لا يؤثر هذا على أمان الدردشة ولكن قد تكون فوّتَ رسالة من جهة الاتصال هذه، ويُمكِنُك أن تطلب منها إعادة إرسالها."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "الاتصال بالدعم"
@@ -1476,7 +1476,7 @@
     "messageformat": "قام {sender} بتغيير رقم هاتفه"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "انضمَّت جهة الاتصال إلى سيجنال"
+    "messageformat": "انضمَّت جهة الاتصال إلى Tellomi"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} و{conversationTitle} هما نفس الحساب. سَتجد سِجل رسائلك مع الدردشتين هنا."
@@ -1566,7 +1566,7 @@
     "messageformat": "تعذَّر تنزيل الوسائط"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "تحقَّق من اتصال حاسوبك وهاتفك بالإنترنت. افتح سيجنال على هاتفك، ثم حاوِل التنزيل من جديد."
+    "messageformat": "تحقَّق من اتصال حاسوبك وهاتفك بالإنترنت. افتح Tellomi على هاتفك، ثم حاوِل التنزيل من جديد."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "لم تعد هذه الوسائط متوفرة على هاتفك ويتعذَّر تنزيلها."
@@ -1587,10 +1587,10 @@
     "messageformat": "اعرف المزيد"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "امسح هذا الكود ضوئيًا في تطبيق سيجنال على هاتفك"
+    "messageformat": "امسح هذا الكود ضوئيًا في تطبيق Tellomi على هاتفك"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "افتح تطبيق سيجنال على هاتفك"
+    "messageformat": "افتح تطبيق Tellomi على هاتفك"
   },
   "icu:Install__instructions__2": {
     "messageformat": "انقر على {settings}، ثم انقر على {linkedDevices}"
@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>‫حدث خطأ غير متوقَّع.</paragraph><paragraph>يُرجى المحاولة مرّة أخرى.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "لا يُمكن لسيجنال ربط هذا الجهاز باستخدام شبكتك الحالية."
+    "messageformat": "لا يُمكن لـ Tellomi ربط هذا الجهاز باستخدام شبكتك الحالية."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "إعادة المُحاولة"
@@ -1626,7 +1626,7 @@
     "messageformat": "هل ترغبُ بحذف جميع البيانات؟"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "يبدو أنك تحاول ربط حساب سيجنال آخر بهذا الحاسوب. إذا واصلت، فستُحذف جميع البيانات الموجودة حالياً على سيجنال Desktop."
+    "messageformat": "يبدو أنك تحاول ربط حساب Tellomi آخر بهذا الحاسوب. إذا واصلت، فستُحذف جميع البيانات الموجودة حالياً على Tellomi Desktop."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "متابعة"
@@ -1641,7 +1641,7 @@
     "messageformat": "‫اسم الجهاز"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "لتغيير اسم هذا الجهاز، افتح تطبيق سيجنال على هاتفك وانتقل إلى \"الإعدادات\" > \"الأجهزة المُرتبِطة\""
+    "messageformat": "لتغيير اسم هذا الجهاز، افتح تطبيق Tellomi على هاتفك وانتقل إلى \"الإعدادات\" > \"الأجهزة المُرتبِطة\""
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "لون الرمز التعبيري"
@@ -1833,7 +1833,7 @@
     "messageformat": "التحقُّق التلقائي من المفاتيح"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "عند التفعيل، سيحاول سيجنال التحقُّق تلقائيًا من تشفير المحاثات الفردية."
+    "messageformat": "عند التفعيل، سيحاول Tellomi التحقُّق تلقائيًا من تشفير المحاثات الفردية."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "اعرف المزيد"
@@ -1851,7 +1851,7 @@
     "messageformat": "عُذرًا، لديك أجهزة كثيرة مرتبطة مُسبقًا. حاوِل إزالة بعضها."
   },
   "icu:installTooOld": {
-    "messageformat": "قُم بتحديث سيجنال على هذا الجهاز لتستطيع ربط هاتفك."
+    "messageformat": "قُم بتحديث Tellomi على هذا الجهاز لتستطيع ربط هاتفك."
   },
   "icu:installErrorHeader": {
     "messageformat": "حدث خطأ ما!"
@@ -1902,7 +1902,7 @@
     "messageformat": "لم يعد رابط هذه المكالمة صالحًا."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "مكالمة سيجنال"
+    "messageformat": "مكالمة Tellomi"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "تعذَّر حذف الرابط. تحقَّق من اتصالك بالشبكة ثم حاوِل مرّة أخرى."
@@ -2076,16 +2076,16 @@
     "messageformat": "{count, plural, zero {{count,number} أشخاص في هذه المكالمة} one {{count,number} شخص في هذه المكالمة} two {{count,number} شخصان في هذه المكالمة} few {{count,number} أشخاصٍ في هذه المكالمة} many {{count,number} شخصًا في هذه المكالمة} other {{count,number} شخصٍ في هذه المكالمة}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "سوف يرن سيجنال على {person}"
+    "messageformat": "سوف يرن Tellomi على {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "سوف يرن سيجنال على {first} و{second}"
+    "messageformat": "سوف يرن Tellomi على {first} و{second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "سوف يرن سيجنال على {first}، و{second} و{third}"
+    "messageformat": "سوف يرن Tellomi على {first}، و{second} و{third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, zero {سَيتصل سيجنال بـ {first} و{second} و{others,number} آخرين} one {سَيتصل سيجنال بـ {first} و{second} و{others,number} آخر} two {سَيتصل سيجنال بـ {first} و{second} و{others,number} آخرين} few {سَيتصل سيجنال بـ {first} و{second} و{others,number} آخرين} many {سَيتصل سيجنال بـ {first} و{second} و{others,number} آخرين} other {سَيتصل سيجنال بـ {first} و{second} و{others,number} آخرين}}"
+    "messageformat": "{others, plural, zero {سَيتصل Tellomi بـ {first} و{second} و{others,number} آخرين} one {سَيتصل Tellomi بـ {first} و{second} و{others,number} آخر} two {سَيتصل Tellomi بـ {first} و{second} و{others,number} آخرين} few {سَيتصل Tellomi بـ {first} و{second} و{others,number} آخرين} many {سَيتصل Tellomi بـ {first} و{second} و{others,number} آخرين} other {سَيتصل Tellomi بـ {first} و{second} و{others,number} آخرين}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "سيتم إشعار {person}"
@@ -2139,13 +2139,13 @@
     "messageformat": "جارٍ إعادة الاتصال…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "انقطع اتصالك. سيجنال يُعيد الاتصال."
+    "messageformat": "انقطع اتصالك. Tellomi يُعيد الاتصال."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "يشارك سيجنال {window}."
+    "messageformat": "يشارك Tellomi {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "ميزة مشاركة الشاشة على سيجنال مُفعَّلة"
+    "messageformat": "ميزة مشاركة الشاشة على Tellomi مُفعَّلة"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "جارٍ إعادة الاتصال…"
@@ -2166,7 +2166,7 @@
     "messageformat": "الحصول على الإذن مطلوب"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "يحتاج سيجنال إذن الوصول إلى تسجيل شاشة الحاسوب."
+    "messageformat": "يحتاج Tellomi إذن الوصول إلى تسجيل شاشة الحاسوب."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "انتقِل إلى تفضيلات النظام."
@@ -2175,7 +2175,7 @@
     "messageformat": "اضغط على أيقونة القفل التي في يسار الجزء السفلي، ثم أدخِل كلمة سر الحاسوب."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "على اليمين، حدِّد المربع الذي بجانب سيجنال. إذا لم يظهر لك سيجنال في اللائحة، يكفي الضغط على + لإضافته."
+    "messageformat": "على اليمين، حدِّد المربع الذي بجانب Tellomi. إذا لم يظهر لك Tellomi في اللائحة، يكفي الضغط على + لإضافته."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "فتح تفضيلات النظام"
@@ -2187,7 +2187,7 @@
     "messageformat": "إعادة توجيه المكالمات دائمًا"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "إعادة توجيه جميع المكالمات عبر خوادم سيجنال لتجنُّب الإفصاح عن عنوان IP الخاص بك لجهة الاتصال. تفعيل هذه الخاصية سيُقلِّل من جودة المكالمة.‬"
+    "messageformat": "إعادة توجيه جميع المكالمات عبر خوادم Tellomi لتجنُّب الإفصاح عن عنوان IP الخاص بك لجهة الاتصال. تفعيل هذه الخاصية سيُقلِّل من جودة المكالمة.‬"
   },
   "icu:permissions": {
     "messageformat": "الأذونات"
@@ -2205,10 +2205,10 @@
     "messageformat": "إظهار تنبيه تنسيق النص عند تحديد النص"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "سيتمُّ تفعيل التدقيق الإملائي عندما تقوم بتشغيل سيجنال في المرّة القادمة."
+    "messageformat": "سيتمُّ تفعيل التدقيق الإملائي عندما تقوم بتشغيل Tellomi في المرّة القادمة."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "سيتمُّ تعطيل التدقيق الإملائي عندما تقوم بتشغيل سيجنال المرّة القادمة."
+    "messageformat": "سيتمُّ تعطيل التدقيق الإملائي عندما تقوم بتشغيل Tellomi المرّة القادمة."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "تصغير إلى نافذة النظام"
@@ -2232,7 +2232,7 @@
     "messageformat": "هل ترغبُ بحذف جميع البيانات؟"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "هل ترغبُ بحذف جميع البيانات والرسائل من هذا الإصدار من سيجنال Desktop؟ حساب سيجنال الخاص بك وبياناتك على هاتفك أو أي أجهزة أخرى مُرتبِطة لن يتم حذفها."
+    "messageformat": "هل ترغبُ بحذف جميع البيانات والرسائل من هذا الإصدار من Tellomi Desktop؟ حساب Tellomi الخاص بك وبياناتك على هاتفك أو أي أجهزة أخرى مُرتبِطة لن يتم حذفها."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "جارٍ فصل وحذف جميع البيانات…"
@@ -2241,7 +2241,7 @@
     "messageformat": "حذف الحساب"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "سَيؤدي هذا إلى حذف معلومات حسابك، وملفك الشخصي، وجميع الرسائل الخاصة بك. وسيتم أيضًا استبعادك من جميع مجموعات سيجنال."
+    "messageformat": "سَيؤدي هذا إلى حذف معلومات حسابك، وملفك الشخصي، وجميع الرسائل الخاصة بك. وسيتم أيضًا استبعادك من جميع مجموعات Tellomi."
   },
   "icu:deleteAccountButton": {
     "messageformat": "حذف الحساب"
@@ -2250,10 +2250,10 @@
     "messageformat": "هل ترغبُ بحذف الحساب؟"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "سَيؤدي هذا إلى حذف معلومات حسابك، وحسابك الشخصي، وجميع الرسائل الخاصة بك. وسَيتم أيضًا استبعادك من جميع مجموعات سيجنال. سيتمُّ إغلاق التطبيق بعد اكتمال هذه العملية."
+    "messageformat": "سَيؤدي هذا إلى حذف معلومات حسابك، وحسابك الشخصي، وجميع الرسائل الخاصة بك. وسَيتم أيضًا استبعادك من جميع مجموعات Tellomi. سيتمُّ إغلاق التطبيق بعد اكتمال هذه العملية."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "لديك بيانات قديمة لم تعد تنفع من تثبيت سابق لسيجنال Desktop. إذا اخترتَ المتابعة، فستُحذَف وستبدأ بعدها من الصفر."
+    "messageformat": "لديك بيانات قديمة لم تعد تنفع من تثبيت سابق لـ Tellomi Desktop. إذا اخترتَ المتابعة، فستُحذَف وستبدأ بعدها من الصفر."
   },
   "icu:deleteOldData": {
     "messageformat": "حذف البيانات القديمة"
@@ -2310,7 +2310,7 @@
     "messageformat": "حذف جزئي، انقر لعرض التفاصيل"
   },
   "icu:expiredWarning": {
-    "messageformat": "انتهت صلاحية هذا الإصدار من سيجنال Desktop. يُرجى التحديث لأحدث إصدار للتمكُّن من التراسُل."
+    "messageformat": "انتهت صلاحية هذا الإصدار من Tellomi Desktop. يُرجى التحديث لأحدث إصدار للتمكُّن من التراسُل."
   },
   "icu:upgrade": {
     "messageformat": "‫يُرجى الضغط على زر الفأرة لزيارة tellomi.app/download"
@@ -2322,7 +2322,7 @@
     "messageformat": "استيراد جهات الاتصال"
   },
   "icu:syncExplanation": {
-    "messageformat": "استيراد كل مجموعات و جهات اتصال سيجنال من هاتفك المحمول."
+    "messageformat": "استيراد كل مجموعات و جهات اتصال Tellomi من هاتفك المحمول."
   },
   "icu:syncNow": {
     "messageformat": "استيراد اﻵن"
@@ -2355,7 +2355,7 @@
     "messageformat": "البارحة {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "قد يكون سيجنال غير قادر على معالجة رسالة واردة."
+    "messageformat": "قد يكون Tellomi غير قادر على معالجة رسالة واردة."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "نص الرسالة طويل جدًا."
@@ -2520,13 +2520,13 @@
     "messageformat": "لا يُمكن إحداث التعديلات إلاّ في غضون 24 ساعة من وقت إرسال هذه الرسالة."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "لم يعُد {atUsername} من مُستخدِمي سيجنال. تأكَّد من إدخالك لاسم المُستخدِم الكامل."
+    "messageformat": "لم يعُد {atUsername} من مُستخدِمي Tellomi. تأكَّد من إدخالك لاسم المُستخدِم الكامل."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} ليس اسم مُستخدِم صالح. تأكَّد من أنك أدخلت اسم المُستخدم كاملًا متبوعًا بمجموعة الأرقام الخاصة به."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "‫لم يُعثَر على المُستخدِم. إن « {phoneNumber} » ليس مُستخدِمًا لسيجنال."
+    "messageformat": "‫لم يُعثَر على المُستخدِم. إن « {phoneNumber} » ليس مُستخدِمًا لـ Tellomi."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "‫لم يُعثَر على المُستخدِم. إن \"{phoneNumber}\" ليس رقم هاتف صحيح."
@@ -2547,13 +2547,13 @@
     "messageformat": "وصلت المجموعة إلى الحد الأقصى."
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "أقصى حد للأعضاء في مجموعات سيجنال هو {max,number} عضوًا."
+    "messageformat": "أقصى حد للأعضاء في مجموعات Tellomi هو {max,number} عضوًا."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "وصل عدد الأعضاء إلى الحدّ المُوصى به"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "تعمل مجموعات سيجنال بشكل أفضل مع {max,number} عضوًا أو أقل. سيؤدي إضافة المزيد من الأعضاء إلى تأخُّر في إرسال الرسائل واستلامها."
+    "messageformat": "تعمل مجموعات Tellomi بشكل أفضل مع {max,number} عضوًا أو أقل. سيؤدي إضافة المزيد من الأعضاء إلى تأخُّر في إرسال الرسائل واستلامها."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "أطلِق اسمًا على هذه المجموعة"
@@ -2583,13 +2583,13 @@
     "messageformat": "فشل تحديث المجموعة. يُرجى التحقُّق من اتصالك بالإنترنت ثم المحاولة مرّة أخرى."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "انقر على زر الفأرة لإعادة ربط سيجنال Desktop مع جهازك المحمول للاستمرار في التراسُل."
+    "messageformat": "انقر على زر الفأرة لإعادة ربط Tellomi Desktop مع جهازك المحمول للاستمرار في التراسُل."
   },
   "icu:unlinked": {
     "messageformat": "غير مرتبط"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "انقر لإعادة التسجيل ومتابعة المراسلة. نسخة سيجنال Desktop غير مُسجّلة، غالبًا بسبب قيامك بتسجيل رقم هاتفك على سيجنال باستخدام جهازٍ مختلف."
+    "messageformat": "انقر لإعادة التسجيل ومتابعة المراسلة. نسخة Tellomi Desktop غير مُسجّلة، غالبًا بسبب قيامك بتسجيل رقم هاتفك على Tellomi باستخدام جهازٍ مختلف."
   },
   "icu:unregistered": {
     "messageformat": "لم يعد مُسجَّلًا"
@@ -2601,16 +2601,16 @@
     "messageformat": "إعادة مُحاولة التحديث"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "انقر لإعادة تشغيل سيجنال"
+    "messageformat": "انقر لإعادة تشغيل Tellomi"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "انقر لتنزيل التحديث"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "‫لم يتمكن سيجنال من التحديث. يُرجى النقر للمحاولة مرّة أخرى."
+    "messageformat": "‫لم يتمكن Tellomi من التحديث. يُرجى النقر للمحاولة مرّة أخرى."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "‫إعادة تشغيل سيجنال‬"
+    "messageformat": "‫إعادة تشغيل Tellomi‬"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "تجاهل التحديث"
@@ -2742,7 +2742,7 @@
     "messageformat": "بعض الملفات المُرفَقة كبيرة جدًا لإظهارها."
   },
   "icu:message--call-link-description": {
-    "messageformat": "استخدِم هذا الرابط للانضمام إلى مكالمة سيجنال"
+    "messageformat": "استخدِم هذا الرابط للانضمام إلى مكالمة Tellomi"
   },
   "icu:donation--missing": {
     "messageformat": "تعذَّر إيجاد معلومات التبرُّع"
@@ -2754,7 +2754,7 @@
     "messageformat": "انقر على هذه الرسالة على الهاتف المحمول لِعرض تبرُّعك"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "قدَّمَ {sender} تبرُّعًا لسيجنال نيابة عنك"
+    "messageformat": "قدَّمَ {sender} تبرُّعًا لـ Tellomi نيابة عنك"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "تحقَّق من هاتفك لفتح هذا التبرُّع"
@@ -2811,7 +2811,7 @@
     "messageformat": "شكرًا لدعمك!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "قدَّمتَ تبرُّعًا لسيجنال نيابةً عن {name}. سَيتمُّ منحهم خيار إظهار دعمهم على حسابهم الشخصي."
+    "messageformat": "قدَّمتَ تبرُّعًا لـ Tellomi نيابةً عن {name}. سَيتمُّ منحهم خيار إظهار دعمهم على حسابهم الشخصي."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "لم يتم تثبيت مجموعة المُلصَقات"
@@ -2823,10 +2823,10 @@
     "messageformat": "إضافة مُلصَقات"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "المُلصَقات الفنية على سيجنال"
+    "messageformat": "المُلصَقات الفنية على Tellomi"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "لا توجد حزَم مُلصَقات فنية على سيجنال"
+    "messageformat": "لا توجد حزَم مُلصَقات فنية على Tellomi"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "تمَّت مشاركتها معك"
@@ -2862,7 +2862,7 @@
     "messageformat": "اسحب لإعادة ترتيب حزمة المُلصَقات"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "حُزَم المُلصَقات الفنية على سيجنال"
+    "messageformat": "حُزَم المُلصَقات الفنية على Tellomi"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "حُزَم المُلصَقات المُستلَمة"
@@ -3147,19 +3147,19 @@
     "messageformat": "الرسالة طويلة جدًا لعرض المزيد"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "أرسَلَ {contact} لك رسالة لا يمكن معالجتها ولا عرضها لأنها تستخدم ميزة سيجنال جديدة."
+    "messageformat": "أرسَلَ {contact} لك رسالة لا يمكن معالجتها ولا عرضها لأنها تستخدم ميزة Tellomi جديدة."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "بما أنك أصبحت تستخدم إصدار سيجنال مُحدَّث، يمكنك الطلب من {contact} إعادة إرسال هذه الرسالة."
+    "messageformat": "بما أنك أصبحت تستخدم إصدار Tellomi مُحدَّث، يمكنك الطلب من {contact} إعادة إرسال هذه الرسالة."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "أرسلَ أحد أجهزتك رسالة لا يمكن معالجتها ولا عرضها لأنها تستخدم ميزة سيجنال جديدة."
+    "messageformat": "أرسلَ أحد أجهزتك رسالة لا يمكن معالجتها ولا عرضها لأنها تستخدم ميزة Tellomi جديدة."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "الرسائل المستقبلية كهذه ستتمُّ مزامنتها الآن كونك تستخدم نسخة مُحدَّثة من سيجنال."
+    "messageformat": "الرسائل المستقبلية كهذه ستتمُّ مزامنتها الآن كونك تستخدم نسخة مُحدَّثة من Tellomi."
   },
   "icu:Message--update-signal": {
-    "messageformat": "‫تحديث سيجنال‬"
+    "messageformat": "‫تحديث Tellomi‬"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "تمَّت المشاهدة"
@@ -3426,7 +3426,7 @@
     "messageformat": "تمَّ تحديد الدردشة على أنها غير مقروءة"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "يُرجى إعداد سيجنال في هاتفك وفي الحاسوب لاستخدام مُنشِئ مجموعة المُلصَقات"
+    "messageformat": "يُرجى إعداد Tellomi في هاتفك وفي الحاسوب لاستخدام مُنشِئ مجموعة المُلصَقات"
   },
   "icu:Reactions--remove": {
     "messageformat": "إزالة التفاعل"
@@ -3444,16 +3444,16 @@
     "messageformat": "نصائح السلامة"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "لا تردّ على الدردشات الواردة من سيجنال"
+    "messageformat": "لا تردّ على الدردشات الواردة من Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "لن يُرسِل لك سيجنال أبدًا رسالة يطلب فيها كود التسجيل أو رقم التعريف الشخصي (PIN) أو مفتاح الاستعادة الخاص بك. تجنَّب الرد نهائيًا على الدردشات التي تدعي أنها مُرسَلة من طرف سيجنال."
+    "messageformat": "لن يُرسِل لك Tellomi أبدًا رسالة يطلب فيها كود التسجيل أو رقم التعريف الشخصي (PIN) أو مفتاح الاستعادة الخاص بك. تجنَّب الرد نهائيًا على الدردشات التي تدعي أنها مُرسَلة من طرف Tellomi."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "دَقِّق في الأسماء والصور"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "ابحث عن إشعار \"لم يُتَحقّق من الاسم\". يُحدِّد كل مُستخدِم اسم حسابه الشخصي على سيجنال."
+    "messageformat": "ابحث عن إشعار \"لم يُتَحقّق من الاسم\". يُحدِّد كل مُستخدِم اسم حسابه الشخصي على Tellomi."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "اِحذر من عمليات الاحتيال"
@@ -3462,16 +3462,16 @@
     "messageformat": "تجنَّب الرسائل الغامضة التي تحاول استدراجك للرد عليها. اِحذر من النصائح المالية والروابط الإلكترونية المشبوهة."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "لا تردّ على الدردشات الواردة من سيجنال"
+    "messageformat": "لا تردّ على الدردشات الواردة من Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "لن يُرسِل لك سيجنال أبدًا رسالة يطلب فيها كود التسجيل أو رقم التعريف الشخصي (PIN) أو مفتاح الاستعادة. تجنَّب الرد نهائيًا على الدردشات التي تدعي أنها مُرسَلة من طرف سيجنال أو قسم الدعم في سيجنال. تقوم جهات خبيثة باستخدام أسماء وهمية لمحاولة الاستيلاء على حسابك."
+    "messageformat": "لن يُرسِل لك Tellomi أبدًا رسالة يطلب فيها كود التسجيل أو رقم التعريف الشخصي (PIN) أو مفتاح الاستعادة. تجنَّب الرد نهائيًا على الدردشات التي تدعي أنها مُرسَلة من طرف Tellomi أو قسم الدعم في Tellomi. تقوم جهات خبيثة باستخدام أسماء وهمية لمحاولة الاستيلاء على حسابك."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "دَقِّق في الأسماء والصور"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "ابحث عن إشعار \"لم يتم التحقّق من الاسم\". يُحدِّد كل شخص اسم حسابه الشخصي وصورته في سيجنال. إذا كُنتَ غير متأكِّد من مصدر الطلب الجديد، فمن الأفضل تجاهله."
+    "messageformat": "ابحث عن إشعار \"لم يتم التحقّق من الاسم\". يُحدِّد كل شخص اسم حسابه الشخصي وصورته في Tellomi. إذا كُنتَ غير متأكِّد من مصدر الطلب الجديد، فمن الأفضل تجاهله."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "عمليات الاحتيال المالي أو الخاص بالعملات المشفرة"
@@ -3552,13 +3552,13 @@
     "messageformat": "هل تريد الإبلاغ عن جهة الاتصال؟"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "سَيتمُّ إشعار سيجنال أن هذا الشخص قد يكون يرسِل رسائل غير مرغوب فيها. لا يُمكن لسيجنال رؤية محتوى أي دردشات."
+    "messageformat": "سَيتمُّ إشعار Tellomi أن هذا الشخص قد يكون يرسِل رسائل غير مرغوب فيها. لا يُمكن لـ Tellomi رؤية محتوى أي دردشات."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "سَيتمُّ إشعار سيجنال بأن الشخص الذي دعاك للانضمام إلى هذه المجموعة، قد يكون أرسل رسائل غير مرغوب فيها. لا يُمكن لِسيجنال رؤية مُحتوى أي دردشات."
+    "messageformat": "سَيتمُّ إشعار Tellomi بأن الشخص الذي دعاك للانضمام إلى هذه المجموعة، قد يكون أرسل رسائل غير مرغوب فيها. لا يُمكن لـ Tellomi رؤية مُحتوى أي دردشات."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "سيتمُّ إشعار سيجنال بأن {name}، الذي دعاك للانضمام إلى هذه المجموعة، قد يكون أرسل رسائل غير مرغوب فيها. لا يمكن لسيجنال رؤية محتوى أي دردشات."
+    "messageformat": "سيتمُّ إشعار Tellomi بأن {name}، الذي دعاك للانضمام إلى هذه المجموعة، قد يكون أرسل رسائل غير مرغوب فيها. لا يمكن لـ Tellomi رؤية محتوى أي دردشات."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "الإبلاغ"
@@ -3600,7 +3600,7 @@
     "messageformat": "هل ترغبُ بقبول الطلب؟"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "لا تقبَل الطلبات إلّا من الأشخاص الذين تثق بهم. <bold>لن يُرسِل لك سيجنال أبدًا</bold> رسالة يطلب فيها كود التسجيل أو رقم التعريف الشخصي (PIN) أو مفتاح الاستعادة الخاص بك."
+    "messageformat": "لا تقبَل الطلبات إلّا من الأشخاص الذين تثق بهم. <bold>لن يُرسِل لك Tellomi أبدًا</bold> رسالة يطلب فيها كود التسجيل أو رقم التعريف الشخصي (PIN) أو مفتاح الاستعادة الخاص بك."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "متابعة"
@@ -3654,16 +3654,16 @@
     "messageformat": "الاسم غير مُتحقَّق منه"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "هذه هي الدردشة الوحيدة والرسمية من سيجنال."
+    "messageformat": "هذه هي الدردشة الوحيدة والرسمية من Tellomi."
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "دردشة رسمية"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "الدردشة الوحيدة الرسمية من سيجنال. ابقَ على اطِّلاع على آخر الأخبار وملاحظات الإصدارات."
+    "messageformat": "الدردشة الوحيدة الرسمية من Tellomi. ابقَ على اطِّلاع على آخر الأخبار وملاحظات الإصدارات."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "الدردشة الوحيدة الرسمية من سيجنال."
+    "messageformat": "الدردشة الوحيدة الرسمية من Tellomi."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "ابقَ على اطِّلاع على آخر الأخبار وملاحظات الإصدارات."
@@ -3729,10 +3729,10 @@
     "messageformat": "مكالمة فيديو لم يتم الرد عليها"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "لا يزال سيجنال قيد التشغيل"
+    "messageformat": "لا يزال Tellomi قيد التشغيل"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "سيَستمر سيجنال بالعمل في منطقة الإشعارات. يُمكنك تغيير هذا في إعدادات سيجنال."
+    "messageformat": "سيَستمر Tellomi بالعمل في منطقة الإشعارات. يُمكنك تغيير هذا في إعدادات Tellomi."
   },
   "icu:incomingAudioCall": {
     "messageformat": "مكالمة صوتية واردة"
@@ -3951,7 +3951,7 @@
     "messageformat": "نسخ رابط المكالمة"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "مشاركة رابط المكالمة عبر سيجنال"
+    "messageformat": "مشاركة رابط المكالمة عبر Tellomi"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "هل ترغبُ بإزالة {name} من المكالمة؟"
@@ -4113,7 +4113,7 @@
     "messageformat": "نسخة الرابط غير صالحة"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "هذا الرابط غير مدعوم بواسطة هذا اﻹصدار من سيجنال Desktop."
+    "messageformat": "هذا الرابط غير مدعوم بواسطة هذا اﻹصدار من Tellomi Desktop."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "لم يتمكن من الانضمام إلى المجموعة."
@@ -4719,10 +4719,10 @@
     "messageformat": "يجري حذف بيانات المُستخدِم ثم سيُعاد إعداد التطبيق."
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "تبرَّع لسيجنال"
+    "messageformat": "تبرَّع لـ Tellomi"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} يدعم سيجنال"
+    "messageformat": "{name} يدعم Tellomi"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "جارٍ مزامنة الرسائل"
@@ -4839,7 +4839,7 @@
     "messageformat": "إجراء مطلوب خاص بالحساب"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "يَجب فتح سيجنال على هاتفك لتواصل استخدام هذا الحساب. إذا لم تفتح سيجنال على هاتفك، سيتمُّ حذف حسابك قريبًا. <learnMoreLink>اعرف المزيد</learnMoreLink>"
+    "messageformat": "يَجب فتح Tellomi على هاتفك لتواصل استخدام هذا الحساب. إذا لم تفتح Tellomi على هاتفك، سيتمُّ حذف حسابك قريبًا. <learnMoreLink>اعرف المزيد</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "تعذَّر استرجاع الوسائط."
@@ -4863,10 +4863,10 @@
     "messageformat": "إضافة مرفق أو استطلاع"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "‫لا يستخدم هذا الشخص سيجنال"
+    "messageformat": "‫لا يستخدم هذا الشخص Tellomi"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "‫لا يدعم سيجنال Desktop جهات اتصال غير مُسجَّلة في سيجنال. يجب الطلب من هذا الشخص أن يقوم بتثبيت سيجنال للتراسُل بشكلٍ آمن."
+    "messageformat": "‫لا يدعم Tellomi Desktop جهات اتصال غير مُسجَّلة في Tellomi. يجب الطلب من هذا الشخص أن يقوم بتثبيت Tellomi للتراسُل بشكلٍ آمن."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "جارٍ التحقُّق من حالة تسجيل جهة الاتصال"
@@ -5127,10 +5127,10 @@
     "messageformat": "رفع الحظر"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "سَيتم إشعار سيجنال أن هذا الشخص قد يكون أرسل رسائل غير مرغوب فيها. لا يُمكن لسيجنال رؤية محتوى أي دردشات."
+    "messageformat": "سَيتم إشعار Tellomi أن هذا الشخص قد يكون أرسل رسائل غير مرغوب فيها. لا يُمكن لـ Tellomi رؤية محتوى أي دردشات."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "سَيتم إشعار سيجنال بأن الشخص، الذي دعاك للانضمام إلى هذه المجموعة، قد يكون أرسل رسائل غير مرغوب فيها. لا يُمكن لسيجنال رؤية محتوى أي دردشات."
+    "messageformat": "سَيتم إشعار Tellomi بأن الشخص، الذي دعاك للانضمام إلى هذه المجموعة، قد يكون أرسل رسائل غير مرغوب فيها. لا يُمكن لـ Tellomi رؤية محتوى أي دردشات."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "الإبلاغ"
@@ -5178,7 +5178,7 @@
     "messageformat": "اسم مستعار"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "يَتمُّ تخزين الأسماء المُستعارة والملاحظات باستخدام سيجنال وهي مُشفَّرة من طرف لطرف. تكون الأسماء المُستعارة والملاحظات مرئية لك فقط."
+    "messageformat": "يَتمُّ تخزين الأسماء المُستعارة والملاحظات باستخدام Tellomi وهي مُشفَّرة من طرف لطرف. تكون الأسماء المُستعارة والملاحظات مرئية لك فقط."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "الاسم"
@@ -5431,7 +5431,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, zero {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من سيجنال أنك حذفت هذه الرسائل.} one {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من سيجنال أنك حذفت هذه الرسالة.} two {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من سيجنال أنك حذفت هتين الرسالتين.} few {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من سيجنال أنك حذفت هذه الرسائل.} many {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من سيجنال أنك حذفت هذه الرسائل.} other {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من سيجنال أنك حذفت هذه الرسائل.}}"
+    "messageformat": "{count, plural, zero {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من Tellomi أنك حذفت هذه الرسائل.} one {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من Tellomi أنك حذفت هذه الرسالة.} two {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من Tellomi أنك حذفت هتين الرسالتين.} few {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من Tellomi أنك حذفت هذه الرسائل.} many {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من Tellomi أنك حذفت هذه الرسائل.} other {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من Tellomi أنك حذفت هذه الرسائل.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "حذف"
@@ -5557,7 +5557,7 @@
     "messageformat": "لا يمكن إعادة توجيه الرسائل الفارغة أو المحذوفة"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "استخدِم هذا الرابط للانضمام إلى مكالمة سيجنال: {url}"
+    "messageformat": "استخدِم هذا الرابط للانضمام إلى مكالمة Tellomi: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "مراجعة الطلبات بعناية"
@@ -5566,7 +5566,7 @@
     "messageformat": "نصائح السلامة"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "مراجعة الطلبات بعناية. وجد سيجنال جهة اتصال أخرى بنفس الاسم. <reviewRequestLink>مُراجعة الطلب</reviewRequestLink>"
+    "messageformat": "مراجعة الطلبات بعناية. وجد Tellomi جهة اتصال أخرى بنفس الاسم. <reviewRequestLink>مُراجعة الطلب</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, zero {{count,number} عضو بالمجموعة لهم نفس الاسم. <reviewRequestLink>راجِع الأعضاء</reviewRequestLink>} one {{count,number} عضو بالمجموعة له نفس الاسم. <reviewRequestLink>راجِع الأعضاء</reviewRequestLink>} two {{count,number} عضوان بالمجموعة لهما نفس الاسم. <reviewRequestLink>راجِع الأعضاء</reviewRequestLink>} few {{count,number} أعضاء بالمجموعة لهم نفس الاسم. <reviewRequestLink>راجِع الأعضاء</reviewRequestLink>} many {{count,number} عضوًا بالمجموعة لهم نفس الاسم. <reviewRequestLink>راجِع الأعضاء</reviewRequestLink>} other {{count,number} عضوٍ بالمجموعة لهم نفس الاسم. <reviewRequestLink>راجِع الأعضاء</reviewRequestLink>}}"
@@ -5599,7 +5599,7 @@
     "messageformat": "لا وجود لمجموعات أخرى مشتركة"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "جهة اتصال سيجنال"
+    "messageformat": "جهة اتصال Tellomi"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "غيَّرَ مؤخَّرًا عضو اسم حسابه الشخصي من {oldName} إلى {newName}"
@@ -5617,7 +5617,7 @@
     "messageformat": "قُم بالتحقُّق لمواصلة المراسلة"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "لمنع وصول الرسائل غير المرغوب فيها في سيجنال، يُرجى إتمام التحقُّق."
+    "messageformat": "لمنع وصول الرسائل غير المرغوب فيها في Tellomi، يُرجى إتمام التحقُّق."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "بعد التحقُّق، يمكنك مواصلة التراسُل. كل الرسائل المتوقفة مؤقتًا سوف تُرسَل تلقائيًا."
@@ -6001,7 +6001,7 @@
     "messageformat": "هل تريد تجاهل هذه التغييرات؟"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "هل تريد إغلاق سيجنال وإنهاء المكالمة؟"
+    "messageformat": "هل تريد إغلاق Tellomi وإنهاء المكالمة؟"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "ليس الآن"
@@ -6101,7 +6101,7 @@
     "messageformat": "عام"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "تبرَّع لسيجنال"
+    "messageformat": "تبرَّع لـ Tellomi"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "المظهر"
@@ -6191,7 +6191,7 @@
     "messageformat": "هذا جهاز مُرتبِط"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "لإدارة إعدادات حسابك، افتح تطبيق سيجنال على جهازك الأساسي."
+    "messageformat": "لإدارة إعدادات حسابك، افتح تطبيق Tellomi على جهازك الأساسي."
   },
   "icu:Preferences--zoom": {
     "messageformat": "مستوى التقريب"
@@ -6224,7 +6224,7 @@
     "messageformat": "مُتقدِّم"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "رقم PIN على سيجنال"
+    "messageformat": "رقم PIN على Tellomi"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "تذكيرات رقم التعريف الشخصي (PIN)"
@@ -6353,7 +6353,7 @@
     "messageformat": "يتعذَّر تصدير سجل الدردشة"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "يتعذَّر تصدير سجل الدردشة الخاص بك لأن سيجنال ليس لديه الإذن لكتابة الملفات على القرص. حاوِل تغيير أذونات قرصك أو حدِّث إعدادات نظامك ثم حاوِل التصدير من جديد."
+    "messageformat": "يتعذَّر تصدير سجل الدردشة الخاص بك لأن Tellomi ليس لديه الإذن لكتابة الملفات على القرص. حاوِل تغيير أذونات قرصك أو حدِّث إعدادات نظامك ثم حاوِل التصدير من جديد."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "جارٍ تصدير النسخة الاحتياطية"
@@ -6368,7 +6368,7 @@
     "messageformat": "انقل مجلد النسخة الاحتياطية إلى مساحة تخزين هاتفك"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "ثبِّت نسخة جديدة من سيجنال على هاتفك"
+    "messageformat": "ثبِّت نسخة جديدة من Tellomi على هاتفك"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "انقر على \"الاستعادة أو النقل\" واختر \"النسخة الاحتياطية على الجهاز\""
@@ -6635,13 +6635,13 @@
     "messageformat": "محظور في {blockedAt}"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "النسخ الاحتياطية الآمنة على سيجنال"
+    "messageformat": "النسخ الاحتياطية الآمنة على Tellomi"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "نسخ احتياطية تلقائية باستخدام خدمة التخزين المُشفَّرة من طرف لِطرف التي يوفّرها سيجنال. ابدأ العملية على هاتفك. <learnMoreLink>اعرف المزيد.</learnMoreLink>"
+    "messageformat": "نسخ احتياطية تلقائية باستخدام خدمة التخزين المُشفَّرة من طرف لِطرف التي يوفّرها Tellomi. ابدأ العملية على هاتفك. <learnMoreLink>اعرف المزيد.</learnMoreLink>"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "أنشِئ نسخة احتياطية من سجل رسائلك كي لا تفقد بياناتك أبدًا عندما تستخدم هاتفًا جديدًا أو تعيد تثبيت سيجنال."
+    "messageformat": "أنشِئ نسخة احتياطية من سجل رسائلك كي لا تفقد بياناتك أبدًا عندما تستخدم هاتفًا جديدًا أو تعيد تثبيت Tellomi."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "تفاصيل النسخ الاحتياطي"
@@ -6671,13 +6671,13 @@
     "messageformat": "تمَّ إلغاء الاشتراك"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "يُمكنك إدارة أو إلغاء اشتراكك في النسخ الاحتياطية الآمنة على سيجنال من هاتفك."
+    "messageformat": "يُمكنك إدارة أو إلغاء اشتراكك في النسخ الاحتياطية الآمنة على Tellomi من هاتفك."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "يُمكنك إدارة أو ترقية النسخ الاحتياطية الآمنة على سيجنال من هاتفك."
+    "messageformat": "يُمكنك إدارة أو ترقية النسخ الاحتياطية الآمنة على Tellomi من هاتفك."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "يُمكنك إدارة أو تجديد اشتراك نسخك الاحتياطية الآمنة على سيجنال من هاتفك."
+    "messageformat": "يُمكنك إدارة أو تجديد اشتراك نسخك الاحتياطية الآمنة على Tellomi من هاتفك."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "آخِر نسخة احتياطية"
@@ -6695,7 +6695,7 @@
     "messageformat": "أنشِئ نسخة احتياطية مُشفَّرة من طرف لطرف يمكنك الوصول إليها من هاتفك. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "لاستعادة نسخة احتياطية، ثبِّت نسخة جديدة من تطبيق سيجنال على هاتفك. افتح التطبيق وانقر على &quot;الاستعادة أو النقل.&quot; <learnMoreLink>اعرف المزيد.</learnMoreLink>"
+    "messageformat": "لاستعادة نسخة احتياطية، ثبِّت نسخة جديدة من تطبيق Tellomi على هاتفك. افتح التطبيق وانقر على &quot;الاستعادة أو النقل.&quot; <learnMoreLink>اعرف المزيد.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "اختر مجلدًا"
@@ -6731,7 +6731,7 @@
     "messageformat": "مفتاح الاستعادة الخاص بك"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "هذا المفتاح مطلوب لاسترجاع بياناتك وحسابك. احتفِظ بمفتاح الاستعادة الخاص بك في مكانٍ آمن ولا تشارِكه مع أي أحد. لن يُرسِل لك سيجنال أبدًا رسالة يطلب فيها مفتاح الاستعادة. <learnMoreLink>اعرف المزيد.</learnMoreLink>"
+    "messageformat": "هذا المفتاح مطلوب لاسترجاع بياناتك وحسابك. احتفِظ بمفتاح الاستعادة الخاص بك في مكانٍ آمن ولا تشارِكه مع أي أحد. لن يُرسِل لك Tellomi أبدًا رسالة يطلب فيها مفتاح الاستعادة. <learnMoreLink>اعرف المزيد.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "لا تشارِك مفتاح الاستعادة"
@@ -6746,7 +6746,7 @@
     "messageformat": "لا تشارِك المفتاح"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "لا تشارِك مفتاح الاستعادة الخاص بك مع أي أحد. سيمكنه هذا من الاستيلاء على حسابك. <strong>لن يُرسِل لك سيجنال أبدًا رسالة</strong> يطلب فيها مفتاح الاستعادة. تجنَّب الرد نهائيًا على الدردشات التي تدعي أنها مُرسَلة من طرف سيجنال. <learnMoreLink>اعرف المزيد.</learnMoreLink>"
+    "messageformat": "لا تشارِك مفتاح الاستعادة الخاص بك مع أي أحد. سيمكنه هذا من الاستيلاء على حسابك. <strong>لن يُرسِل لك Tellomi أبدًا رسالة</strong> يطلب فيها مفتاح الاستعادة. تجنَّب الرد نهائيًا على الدردشات التي تدعي أنها مُرسَلة من طرف Tellomi. <learnMoreLink>اعرف المزيد.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "قُم بتأكيد مفتاح الاستعادة الخاص بك"
@@ -6758,7 +6758,7 @@
     "messageformat": "حافِظ على مفتاحك في مكانٍ آمن."
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "لن يتمكّن سيجنال من مُساعدتك على استعادة نسختك الاحتياطية إذا فقدتَ مفتاحك. احتفِظ بمفتاحك في مكانٍ آمن، ولا تُشاركه مع أي أحد."
+    "messageformat": "لن يتمكّن Tellomi من مُساعدتك على استعادة نسختك الاحتياطية إذا فقدتَ مفتاحك. احتفِظ بمفتاحك في مكانٍ آمن، ولا تُشاركه مع أي أحد."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "متابعة"
@@ -6809,7 +6809,7 @@
     "messageformat": "المصادقة مطلوبة لتفعيل النسخ الاحتياطية."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "تعذّر إكمال هذا الإجراء بسبب فشل المصادقة. يُرجى المحاولة من جديد أو فتح تطبيق سيجنال على جهازك المحمول والانتقال إلى إعدادات النسخ الاحتياطي لعرض مفتاح الاستعادة الخاص بك."
+    "messageformat": "تعذّر إكمال هذا الإجراء بسبب فشل المصادقة. يُرجى المحاولة من جديد أو فتح تطبيق Tellomi على جهازك المحمول والانتقال إلى إعدادات النسخ الاحتياطي لعرض مفتاح الاستعادة الخاص بك."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "حدث خطأ أثناء طلب مصادقة النظام لهذا الإجراء."
@@ -6839,7 +6839,7 @@
     "messageformat": "رقم الهاتف"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "اختر من يُمكنه رؤية رقم هاتفك ومن يمكنه الاتصال بك على سيجنال باستخدامه."
+    "messageformat": "اختر من يُمكنه رؤية رقم هاتفك ومن يمكنه الاتصال بك على Tellomi باستخدامه."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "تغيير…"
@@ -6869,10 +6869,10 @@
     "messageformat": "مَن يُمكنه إيجادي من خلال رقمي"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "أي شخص لديه رقم هاتفك سَيرى أنك مُتواجد على سيجنال وسيتمكّن من بدء دردشات معك."
+    "messageformat": "أي شخص لديه رقم هاتفك سَيرى أنك مُتواجد على Tellomi وسيتمكّن من بدء دردشات معك."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "لن يتمكّن أي أحد من رؤيتك على سيجنال إلاّ إذا راسلته أو كانت لديك دردشة موجودة معه."
+    "messageformat": "لن يتمكّن أي أحد من رؤيتك على Tellomi إلاّ إذا راسلته أو كانت لديك دردشة موجودة معه."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "الكل"
@@ -6884,7 +6884,7 @@
     "messageformat": "هل أنت متأكِّد؟"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "إذا غيَّرتَ \"{settingTitle}\" إلى \"{nobodyLabel}\"، سيصعّب هذا الاختيار على الناس إيجادك على سيجنال."
+    "messageformat": "إذا غيَّرتَ \"{settingTitle}\" إلى \"{nobodyLabel}\"، سيصعّب هذا الاختيار على الناس إيجادك على Tellomi."
   },
   "icu:Preferences--messaging": {
     "messageformat": "التراسُل"
@@ -6947,7 +6947,7 @@
     "messageformat": "تعيين"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "إعادة تشغيل سيجنال للتطبيق"
+    "messageformat": "إعادة تشغيل Tellomi للتطبيق"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "لتغيير اللغة، يجب إعادة تشغيل التطبيق."
@@ -6962,13 +6962,13 @@
     "messageformat": "تأمين الشاشة"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "منع التقاط لقطات شاشة لسيجنال على هذا الكمبيوتر لمزيد من الخصوصية."
+    "messageformat": "منع التقاط لقطات شاشة لـ Tellomi على هذا الكمبيوتر لمزيد من الخصوصية."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "هل ترغبُ بتعطيل أمان الشاشة؟"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "إذا قُمتَ بتعطيل هذا الخيار، قد يسمح هذا لـ Microsoft Windows بالتقاط لقطات شاشة لسيجنال واستخدامها في ميزات قد لا تكون خاصة."
+    "messageformat": "إذا قُمتَ بتعطيل هذا الخيار، قد يسمح هذا لـ Microsoft Windows بالتقاط لقطات شاشة لـ Tellomi واستخدامها في ميزات قد لا تكون خاصة."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "تعطيل"
@@ -6989,25 +6989,25 @@
     "messageformat": "انقر للانتقال إلى متجر App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "افتح تطبيق سيجنال على هاتفك"
+    "messageformat": "افتح تطبيق Tellomi على هاتفك"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "سَيتمُّ حذف حسابك قريبًا إلّا إذا فتحتَ سيجنال على هاتفك. سَتختفي هذه الرسالة إذا قُمتَ بذلك. <learnMoreLink>اعرف المزيد</learnMoreLink>"
+    "messageformat": "سَيتمُّ حذف حسابك قريبًا إلّا إذا فتحتَ Tellomi على هاتفك. سَتختفي هذه الرسالة إذا قُمتَ بذلك. <learnMoreLink>اعرف المزيد</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "افتح سيجنال على هاتفك لإبقاء حسابك نشِطًا"
+    "messageformat": "افتح Tellomi على هاتفك لإبقاء حسابك نشِطًا"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "اعرف المزيد"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "سيجنال يواجِهُ صُعوبات تَقنية. نعملُ بجد لاستعادة الخِدمة في أسرع وقتٍ ممكن."
+    "messageformat": "Tellomi يواجِهُ صُعوبات تَقنية. نعملُ بجد لاستعادة الخِدمة في أسرع وقتٍ ممكن."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "التحديث مطلوب"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "لإكمال مزامنة رسائلك، قُم بتحديث سيجنال Desktop الآن."
+    "messageformat": "لإكمال مزامنة رسائلك، قُم بتحديث Tellomi Desktop الآن."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "تحديث"
@@ -7016,19 +7016,19 @@
     "messageformat": "التحديث مطلوب"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "لِمواصلة استخدام سيجنال، عليك التحديث إلى آخر إصدار."
+    "messageformat": "لِمواصلة استخدام Tellomi، عليك التحديث إلى آخر إصدار."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "تنزيل {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "أعِد تشغيل سيجنال لتثبيت التحديث."
+    "messageformat": "أعِد تشغيل Tellomi لتثبيت التحديث."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "تعذَّر تحديث سيجنال Desktop، لكن هناك إصدار جديد متوفر. انتقِل إلى {downloadUrl} وثبِّت الإصدار الجديد يدويًا، ثم تواصَل مع الدعم أو بلِّغ عن خطأ بشأن هذا المشكلة."
+    "messageformat": "تعذَّر تحديث Tellomi Desktop، لكن هناك إصدار جديد متوفر. انتقِل إلى {downloadUrl} وثبِّت الإصدار الجديد يدويًا، ثم تواصَل مع الدعم أو بلِّغ عن خطأ بشأن هذا المشكلة."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "شعار سيجنال"
+    "messageformat": "شعار Tellomi"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "الرجوع"
@@ -7064,7 +7064,7 @@
     "messageformat": "تحقّق من أنك إنسان للمتابعة"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "لمنع وصول الرسائل غير المرغوب فيها في سيجنال، يُرجى إتمام التحقُّق. بعد التحقُّق، يمكنك مواصلة التسجيل."
+    "messageformat": "لمنع وصول الرسائل غير المرغوب فيها في Tellomi، يُرجى إتمام التحقُّق. بعد التحقُّق، يمكنك مواصلة التسجيل."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "حاول التحقُّق من جديد"
@@ -7304,7 +7304,7 @@
     "messageformat": "رقم التعريف الشخصي (PIN) غير صحيح"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "استنفدتَ تخمينات رقم التعريف الشخصي (PIN) المسموحة لك، ولكن مازال بإمكانك الوصول إلى حسابك على سيجنال من خلال إنشاء رقم تعريف لشخصي (PIN) جديد. للحفاظ على خصوصيتك وأمانك، ستتمُّ استعادة حسابك بدون أي معلومات حساب أو إعدادات محفوظة."
+    "messageformat": "استنفدتَ تخمينات رقم التعريف الشخصي (PIN) المسموحة لك، ولكن مازال بإمكانك الوصول إلى حسابك على Tellomi من خلال إنشاء رقم تعريف لشخصي (PIN) جديد. للحفاظ على خصوصيتك وأمانك، ستتمُّ استعادة حسابك بدون أي معلومات حساب أو إعدادات محفوظة."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "إنشاء رقم تعريف شخصي (PIN) جديد"
@@ -7334,7 +7334,7 @@
     "messageformat": "أنشِئ رقم الـ PIN"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "يمكن أن تساعدك أرقام التعريف الشخصية (PIN) على استعادة حسابك والحفاظ على معلوماتك مُشفَّرة مع سيجنال. <learnMore>اعرف المزيد</learnMore>"
+    "messageformat": "يمكن أن تساعدك أرقام التعريف الشخصية (PIN) على استعادة حسابك والحفاظ على معلوماتك مُشفَّرة مع Tellomi. <learnMore>اعرف المزيد</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "أنشِئ رقم الـ PIN"
@@ -7367,10 +7367,10 @@
     "messageformat": "إلغاء"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "نبذة حول رقم الـ (PIN) على سيجنال"
+    "messageformat": "نبذة حول رقم الـ (PIN) على Tellomi"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "يُمكِّنك رقم التعريف الشخصي (PIN) من حفظ معلوماتك بشكلٍ مُشفَّر في سيجنال بحيث يمكنك الوصول إليها وحدك. سَتتمُّ استعادة حسابك وإعداداتك وجهات اتصالك عند إعادة تثبيت سيجنال."
+    "messageformat": "يُمكِّنك رقم التعريف الشخصي (PIN) من حفظ معلوماتك بشكلٍ مُشفَّر في Tellomi بحيث يمكنك الوصول إليها وحدك. سَتتمُّ استعادة حسابك وإعداداتك وجهات اتصالك عند إعادة تثبيت Tellomi."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "اعرف المزيد"
@@ -7403,7 +7403,7 @@
     "messageformat": "التحديث مطلوب"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "لمتابعة التسجيل، يُرجى التحديث إلى أحدث إصدار من سيجنال."
+    "messageformat": "لمتابعة التسجيل، يُرجى التحديث إلى أحدث إصدار من Tellomi."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "تحديث"
@@ -7433,7 +7433,7 @@
     "messageformat": "الاتصال بالدعم"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "‫لا يمكن إغلاق سيجنال.",
+    "messageformat": "‫لا يمكن إغلاق Tellomi.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7453,14 +7453,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "هناك إصدار أحدث من سيجنال مُثبَّت بالفعل. هل أنت متأكِّد من أنك تريد المواصلة؟",
+    "messageformat": "هناك إصدار أحدث من Tellomi مُثبَّت بالفعل. هل أنت متأكِّد من أنك تريد المواصلة؟",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "فشل عمل التطبيق"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "عاد سيجنال للعمل بعد توقفه. يمكنك إرسال تقرير التوقُّف عن العمل لمساعدة سيجنال على التحقيق في هذه المشكلة."
+    "messageformat": "عاد Tellomi للعمل بعد توقفه. يمكنك إرسال تقرير التوقُّف عن العمل لمساعدة Tellomi على التحقيق في هذه المشكلة."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "أرسلْ"
@@ -7565,7 +7565,7 @@
     "messageformat": "اضغط على \"{buttonName}\" في الأسفل"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "تشغيل \"سيجنال\""
+    "messageformat": "تشغيل \"Tellomi\""
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "انتقِل إلى الإعدادات"
@@ -7661,7 +7661,7 @@
     "messageformat": "اعرف المزيد"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "جهات اتصال سيجنال"
+    "messageformat": "جهات اتصال Tellomi"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} هم أشخاص اخترتَ أن تثق بهم سواءً عبر:"
@@ -7802,7 +7802,7 @@
     "messageformat": "إخفاء القصة عن"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "جميع جهات اتصال سيجنال"
+    "messageformat": "جميع جهات اتصال Tellomi"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "الكل باستثناء…"
@@ -7880,7 +7880,7 @@
     "messageformat": "خصوصية قصّتي"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "اختر من يُمكنه مشاهدة قصتك من جهات اتصال سيجنال. يُمكنك تغيير هذا في أي وقت في إعدادات الخصوصية. <learnMoreLink>اعرف المزيد.</learnMoreLink>"
+    "messageformat": "اختر من يُمكنه مشاهدة قصتك من جهات اتصال Tellomi. يُمكنك تغيير هذا في أي وقت في إعدادات الخصوصية. <learnMoreLink>اعرف المزيد.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "حذف القصة"
@@ -7949,7 +7949,7 @@
     "messageformat": "تنزيل الملف المُرفَق"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "فعِّل ميزة \"إيصالات القراءة\" لرؤية من شاهد قِصصك. افتح تطبيق سيجنال في جهاز الهاتف المحمول ثم انتقل إلى \"الإعدادات\" > \"القصص\"."
+    "messageformat": "فعِّل ميزة \"إيصالات القراءة\" لرؤية من شاهد قِصصك. افتح تطبيق Tellomi في جهاز الهاتف المحمول ثم انتقل إلى \"الإعدادات\" > \"القصص\"."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "لا ردود حاليًا"
@@ -8135,7 +8135,7 @@
     "messageformat": "تمَّت إعادة تعيين رابط وكود الـ QR، واسم المُستخدم الخاص بك هو {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "امسح كود الـ QR هذا باستخدام هاتفك للدردشة معي على سيجنال.",
+    "messageformat": "امسح كود الـ QR هذا باستخدام هاتفك للدردشة معي على Tellomi.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8211,7 +8211,7 @@
     "messageformat": "تجاهُل"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "التحقُّق من ‫رقم التعريف الشخصي (PIN) على سيجنال"
+    "messageformat": "التحقُّق من ‫رقم التعريف الشخصي (PIN) على Tellomi"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "من حين لآخر سنُطالبك بالتحقُّق من رقم التعريف الشخصي (PIN) حتى يسهل عليك تذكره."
@@ -8223,7 +8223,7 @@
     "messageformat": "ليس الآن"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "أدخِل رقم التعريف الشخصي (PIN) الخاص بك على سيجنال"
+    "messageformat": "أدخِل رقم التعريف الشخصي (PIN) الخاص بك على Tellomi"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "لمُساعدتك في حفظ رقم التعريف الشخصي (PIN) الخاص بك، سوف نسألك لإدخاله من حينٍ لآخر. سنسألك عنه بشكلٍ أقل مع مرور الوقت."
@@ -8241,13 +8241,13 @@
     "messageformat": "رقم التعريف الشخصي (PIN) صحيح. سنُذكِّرك مرّة أخرى لاحقًا."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "سيتوقف تطبيق سيجنال الخاص بالحاسوب عن دعم إصدار {OS} على جهازك قريبًا. للاستمرار في استخدام سيجنال، يُرجى تحديث نظام تشغيل حاسوبك قبل {expirationDate}. <learnMoreLink>اعرف المزيد</learnMoreLink>"
+    "messageformat": "سيتوقف تطبيق Tellomi الخاص بالحاسوب عن دعم إصدار {OS} على جهازك قريبًا. للاستمرار في استخدام Tellomi، يُرجى تحديث نظام تشغيل حاسوبك قبل {expirationDate}. <learnMoreLink>اعرف المزيد</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "لم يعُد تطبيق سيجنال يَعمل على هذا الحاسوب. لاستخدام تطبيق سيجنال الخاص بالحاسوب مرّة أخرى، يُرجى تحديث إصدار حاسوبك {OS}. <learnMoreLink>اعرف المزيد</learnMoreLink>"
+    "messageformat": "لم يعُد تطبيق Tellomi يَعمل على هذا الحاسوب. لاستخدام تطبيق Tellomi الخاص بالحاسوب مرّة أخرى، يُرجى تحديث إصدار حاسوبك {OS}. <learnMoreLink>اعرف المزيد</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "لم يعُد تطبيق سيجنال يَعمل على هذا الحاسوب. لاستخدام تطبيق سيجنال الخاص بالحاسوب مرّة أخرى، يُرجى تحديث إصدار {OS} لحاسوبك."
+    "messageformat": "لم يعُد تطبيق Tellomi يَعمل على هذا الحاسوب. لاستخدام تطبيق Tellomi الخاص بالحاسوب مرّة أخرى، يُرجى تحديث إصدار {OS} لحاسوبك."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "تمَّ التعديل"
@@ -8418,7 +8418,7 @@
     "messageformat": "نسخ الرابط"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "مشاركة الرابط عبر سيجنال"
+    "messageformat": "مشاركة الرابط عبر Tellomi"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "حذف الرابط"
@@ -8481,13 +8481,13 @@
     "messageformat": "لتغيير هذا الإعداد، اختر \"لا أحد\" عند تحديد \"مَن يُمكنه رؤية رقمي\"."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "يقوم أصحاب الحسابات الشخصية في سيجنال باختيار أسماء حساباتهم الشخصية:"
+    "messageformat": "يقوم أصحاب الحسابات الشخصية في Tellomi باختيار أسماء حساباتهم الشخصية:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "لا يُمكن لسيجنال التحقُّق من الأسماء والصور."
+    "messageformat": "لا يُمكن لـ Tellomi التحقُّق من الأسماء والصور."
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "لن يُرسِل لك سيجنال أبدًا رسالة يطلب فيها كود التسجيل أو رقم التعريف الشخصي (PIN) أو مفتاح الاستعادة الخاص بك."
+    "messageformat": "لن يُرسِل لك Tellomi أبدًا رسالة يطلب فيها كود التسجيل أو رقم التعريف الشخصي (PIN) أو مفتاح الاستعادة الخاص بك."
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "كُن حذرًا من الحسابات التي تنتحل شخصية الآخرين."
@@ -8517,7 +8517,7 @@
     "messageformat": "شركة غير ربحية بالفعل"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "تبرَّع لدعم المراسلة الخصوصية. ساعِد في إبقاء سيجنال مستقلًا وخاليًا من الإعلانات. <readMoreLink>اقرأ المزيد</readMoreLink>"
+    "messageformat": "تبرَّع لدعم المراسلة الخصوصية. ساعِد في إبقاء Tellomi مستقلًا وخاليًا من الإعلانات. <readMoreLink>اقرأ المزيد</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "تبرَّع"
@@ -8553,7 +8553,7 @@
     "messageformat": "سيجنال شركة غير ربحية."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "أيقونة القلب بأسلوب شعار سيجنال"
+    "messageformat": "أيقونة القلب بأسلوب شعار Tellomi"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "موافق"
@@ -8568,7 +8568,7 @@
     "messageformat": "الأسئلة الشائعة للمُتبرِّعين"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "لا تتم مزامنة الإيصالات عبر الأجهزة. إذا أعدتَ تثبيت سيجنال، فلن تصبح إيصالات التبرُّعات السابقة متاحة."
+    "messageformat": "لا تتم مزامنة الإيصالات عبر الأجهزة. إذا أعدتَ تثبيت Tellomi، فلن تصبح إيصالات التبرُّعات السابقة متاحة."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "لا توجد إيصالات"
@@ -8598,7 +8598,7 @@
     "messageformat": "بطاقة الائتمان أو الخصم"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "أدخِل تفاصيل بطاقتك الائتمانية أو بطاقة الخصم. لا يقوم سيجنال بجمع أو تخزين معلوماتك الشخصية. <learnMoreLink>اعرف المزيد</learnMoreLink>"
+    "messageformat": "أدخِل تفاصيل بطاقتك الائتمانية أو بطاقة الخصم. لا يقوم Tellomi بجمع أو تخزين معلوماتك الشخصية. <learnMoreLink>اعرف المزيد</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "رقم البطاقة"
@@ -8610,7 +8610,7 @@
     "messageformat": "الشهر/السنة"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "تبرَّع بـ {formattedCurrencyAmount} لسيجنال"
+    "messageformat": "تبرَّع بـ {formattedCurrencyAmount} لـ Tellomi"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "رقم البطاقة غير صحيح"
@@ -8628,7 +8628,7 @@
     "messageformat": "الكود قصير جدًا"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "احصل على شارة دعم سيجنال لمدة 30 يومًا."
+    "messageformat": "احصل على شارة دعم Tellomi لمدة 30 يومًا."
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "الحد الأدنى الذي يُمكنك التبرُّع به هو {formattedCurrencyAmount}"
@@ -8712,7 +8712,7 @@
     "messageformat": "تبرَّعتَ بنجاح، لكن تعذَّر علينا تحديث إعدادات شارتك."
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "لِتحديث إعدادات شارتك على جهازك المحمول، انتقل إلى: \"الإعدادات\" ← \"تبرَّع لسيجنال\" ← الشارات."
+    "messageformat": "لِتحديث إعدادات شارتك على جهازك المحمول، انتقل إلى: \"الإعدادات\" ← \"تبرَّع لـ Tellomi\" ← الشارات."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "تمَّت مقاطعة التبرُّع"
@@ -8769,7 +8769,7 @@
     "messageformat": "حدث خطأ ما في تبرُّعك."
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "ربما لم تتمّ معالجة تبرُّعك. اضغط على \"تبرَّع لسيجنال\"، ثم \"إيصالات التبرُّع\" للتحقُّق من إيصالاتك والتأكيد."
+    "messageformat": "ربما لم تتمّ معالجة تبرُّعك. اضغط على \"تبرَّع لـ Tellomi\"، ثم \"إيصالات التبرُّع\" للتحقُّق من إيصالاتك والتأكيد."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "حاوِل من جديد أو أرسِل سِجل الأخطاء لفريق الدعم للحصول على المساعدة لإكمال تبرُّعك. تساعدنا سِجلات الأخطاء في تشخيص المشكلة وإصلاحها، وهي لا تحتوي على معلومات تعريفية عن المُستخدِم."
@@ -8811,19 +8811,19 @@
     "messageformat": "شكرًا لدعمك!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "حصلتَ على شارة مُتبرِّع من سيجنال! اعرضها في حسابك الشخصي لإظهار دعمك."
+    "messageformat": "حصلتَ على شارة مُتبرِّع من Tellomi! اعرضها في حسابك الشخصي لإظهار دعمك."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "عرض في الحساب الشخصي"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "يُمكنك تعديلُها على جهازك المحمول في: الإعدادات ← تبرَّع لسيجنال ← الشارات."
+    "messageformat": "يُمكنك تعديلُها على جهازك المحمول في: الإعدادات ← تبرَّع لـ Tellomi ← الشارات."
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "كيف كانت مكالمتك؟"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "يساعدنا هذا على تحسين مكالمات سيجنال. لن يتم تخزين أي معلومات تعريف شخصية."
+    "messageformat": "يساعدنا هذا على تحسين مكالمات Tellomi. لن يتم تخزين أي معلومات تعريف شخصية."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "واجهت مشاكل"
@@ -8874,7 +8874,7 @@
     "messageformat": "وصف المشكلات"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "يُرجى مشاركة كافة التفاصيل المتعلقة بالمشكلة. ستظل جميع المعلومات التي تشاركها هنا سرية، وسَتُستخدَم لتحسين مكالمات سيجنال فقط."
+    "messageformat": "يُرجى مشاركة كافة التفاصيل المتعلقة بالمشكلة. ستظل جميع المعلومات التي تشاركها هنا سرية، وسَتُستخدَم لتحسين مكالمات Tellomi فقط."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "يُرجى وصف مشكلتك"
@@ -8940,7 +8940,7 @@
     "messageformat": "سَتحتاج إلى إعادة الربط عبر مسح رمز QR."
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "إذا كان لديك اشتراك مدفوع في \"النسخ الاحتياطية الآمنة لسيجنال\"، فستُنقل جميع الوسائط الخاصة بك. وإلا فستُنقل الوسائط الخاصة بك لآخر 45 يوماً فقط."
+    "messageformat": "إذا كان لديك اشتراك مدفوع في \"النسخ الاحتياطية الآمنة لـ Tellomi\"، فستُنقل جميع الوسائط الخاصة بك. وإلا فستُنقل الوسائط الخاصة بك لآخر 45 يوماً فقط."
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "نقل"
@@ -8952,14 +8952,14 @@
     "messageformat": "هل ترغبُ بحذف جميع البيانات؟"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "ستُحذف جميع البيانات الحالية في تطبيق سيجنال Desktop. يُمكنك بعد ذلك مسح رمز الـ QR ونقل سِجل رسائلك من هاتفك."
+    "messageformat": "ستُحذف جميع البيانات الحالية في تطبيق Tellomi Desktop. يُمكنك بعد ذلك مسح رمز الـ QR ونقل سِجل رسائلك من هاتفك."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "يحتوي هذا الإصدار على عدد من التعديلات الصغيرة وإصلاحات الأخطاء للحفاظ على عمل سيجنال بسلاسة.",
+    "messageformat": "يحتوي هذا الإصدار على عدد من التعديلات الصغيرة وإصلاحات الأخطاء للحفاظ على عمل Tellomi بسلاسة.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "تعديلات صغيرة إضافية وإصلاحات للأخطاء وتحسينات في الأداء. شكرًا على استخدام تطبيق سيجنال!",
+    "messageformat": "تعديلات صغيرة إضافية وإصلاحات للأخطاء وتحسينات في الأداء. شكرًا على استخدام تطبيق Tellomi!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -8979,7 +8979,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "تعديلات صغيرة، وإصلاح أعطال، وتحسينات للأداء. شكرًا على استخدامك سيجنال!",
+    "messageformat": "تعديلات صغيرة، وإصلاح أعطال، وتحسينات للأداء. شكرًا على استخدامك Tellomi!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.24--1": {
@@ -8992,6 +8992,6 @@
     "messageformat": "قد يكون البحث عن ذاتك رحلة مستمرة مدى الحياة، ولكن لتسهيل الأمر قليلًا، سَتظهر الآن باسم \"أنت\" في نافذة البحث عن أعضاء المجموعة."
   },
   "icu:WhatsNew__8.27--0": {
-    "messageformat": "يُقدِّم هذا التحديث إعدادات أكثر تفصيلًا لمنحك تحكُّمًا أكبر بكثير في إشعارات سيجنال. يمكنك الآن اختيار ما يظهر على شارة التطبيق، وضبط تفضيلات الإشعارات للدردشات المكتومة، والمزيد! أضفنا أيضًا زرًا مناسبًا لاستعادة إعدادات الإشعارات الافتراضية إذا قُمتَ بإجراء الكثير من التغييرات ولم تعد تعرف كيفية ضبطها."
+    "messageformat": "يُقدِّم هذا التحديث إعدادات أكثر تفصيلًا لمنحك تحكُّمًا أكبر بكثير في إشعارات Tellomi. يمكنك الآن اختيار ما يظهر على شارة التطبيق، وضبط تفضيلات الإشعارات للدردشات المكتومة، والمزيد! أضفنا أيضًا زرًا مناسبًا لاستعادة إعدادات الإشعارات الافتراضية إذا قُمتَ بإجراء الكثير من التغييرات ولم تعد تعرف كيفية ضبطها."
   }
 }

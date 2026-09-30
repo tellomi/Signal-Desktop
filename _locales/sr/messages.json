@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>Дошло је до неочекиване грешке.</paragraph><paragraph>Молимо вас, покушајте поново.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Сигнал не може да повеже овај уређај користећи вашу тренутну мрежу."
+    "messageformat": "Tellomi не може да повеже овај уређај користећи вашу тренутну мрежу."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Пробај поново"

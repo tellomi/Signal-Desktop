@@ -3159,7 +3159,7 @@
     "messageformat": "최신 버전의 Tellomi을 사용 중이므로 앞으로는 이와 같은 메시지도 정상적으로 동기화됩니다."
   },
   "icu:Message--update-signal": {
-    "messageformat": "시그널 최신 버전으로 업데이트"
+    "messageformat": "Tellomi 최신 버전으로 업데이트"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "조회함"

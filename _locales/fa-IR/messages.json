@@ -63,10 +63,10 @@
     "messageformat": "ارسال رسانه با کیفیت بالا از داده‌های بیشتری استفاده خواهد کرد."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "حمایت از سیگنال"
+    "messageformat": "حمایت از Tellomi"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "<bold>دستگاه‌های متصل</bold> به شما امکان می‌دهند به حساب سیگنال و پیام‌های خود در سایر دستگاه‌هایتان دسترسی امن داشته باشید."
+    "messageformat": "<bold>دستگاه‌های متصل</bold> به شما امکان می‌دهند به حساب Tellomi و پیام‌های خود در سایر دستگاه‌هایتان دسترسی امن داشته باشید."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "می‌توانید دسک‌تاپ، تبلت یا تلفن دیگری را به آن متصل کنید."
@@ -114,10 +114,10 @@
     "messageformat": "گروه ناشناخته"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "سیگنال باز نمی‌شود"
+    "messageformat": "Tellomi باز نمی‌شود"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "برای کمک به رفع مشکل، راهنمای بازیابی را در صفحه پشتیبانی دنبال کنید یا با پشتیبانی سیگنال تماس بگیرید تا در رفع مشکل کمکتان کنند.\n\nاگر می‌خواهید فوراً از سیگنال استفاده کنید، می‌توانید داده‌های خود را حذف و این دسک‌تاپ را مجدداً پیوند دهید. شما می‌توانید تاریخچه پیام را از تلفن خود منتقل کنید."
+    "messageformat": "برای کمک به رفع مشکل، راهنمای بازیابی را در صفحه پشتیبانی دنبال کنید یا با پشتیبانی Tellomi تماس بگیرید تا در رفع مشکل کمکتان کنند.\n\nاگر می‌خواهید فوراً از Tellomi استفاده کنید، می‌توانید داده‌های خود را حذف و این دسک‌تاپ را مجدداً پیوند دهید. شما می‌توانید تاریخچه پیام را از تلفن خود منتقل کنید."
   },
   "icu:databaseError": {
     "messageformat": "خطای پایگاه داده"
@@ -129,10 +129,10 @@
     "messageformat": "حذف دائمی تمام داده‌ها"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "کل تاریخچه پیام و رسانه شما به‌طور دائم از این دستگاه حذف خواهد شد. این کار موجب حذف داده‌ها از تلفن شما نمی‌شود.\n\nپس از پیوند دادن مجدد سیگنال، قادر به استفاده از آن در این دستگاه خواهید بود. شما می‌توانید تاریخچه پیام را از تلفن خود منتقل کنید."
+    "messageformat": "کل تاریخچه پیام و رسانه شما به‌طور دائم از این دستگاه حذف خواهد شد. این کار موجب حذف داده‌ها از تلفن شما نمی‌شود.\n\nپس از پیوند دادن مجدد Tellomi، قادر به استفاده از آن در این دستگاه خواهید بود. شما می‌توانید تاریخچه پیام را از تلفن خود منتقل کنید."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "نسخه پایگاه داده شما با این نسخه سیگنال مطابقت ندارد. مطمئن شوید که جدیدترین نسخه سیگنال را در رایانه‌تان باز می‌کنید."
+    "messageformat": "نسخه پایگاه داده شما با این نسخه Tellomi مطابقت ندارد. مطمئن شوید که جدیدترین نسخه Tellomi را در رایانه‌تان باز می‌کنید."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "دسترسی به کلید رمزگذاری پایگاه داده امکان‌پذیر نیست زیرا پشتیبان کلید رمزگذاری سیستم عامل از {previousBackend} به {currentBackend} تغییر کرده است. اگر محیط دسک‌تاپ مثلاً از GNOME به KDE تغییر کند، ممکن است این اتفاق بیفتد.\n\nلطفاً به محیط دسک‌تاپ قبلی بروید."
@@ -183,7 +183,7 @@
     "messageformat": "نمایش همه"
   },
   "icu:appMenuQuit": {
-    "messageformat": "خروج از سیگنال"
+    "messageformat": "خروج از Tellomi"
   },
   "icu:editMenuUndo": {
     "messageformat": "لغو"
@@ -507,10 +507,10 @@
     "messageformat": "شما کد امنیتی خود با {name} را از یک دستگاه دیگر به عنوان تایید نشده علامت زدید"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "شمارهٔ امنیتی که شما در تلاش برای تایید آن هستید تغییر کرده است. لطفاً شمارهٔ امنیتی جدید خود را با{name1}بازبینی کنید. به یاد داشته باشید، این تغییر بدین معناست که شخصی در تلاش برای رهگیری ارتباطات شماست و یا اینکه {name2}   مجددا سیگنال را نصب کرده است."
+    "messageformat": "شمارهٔ امنیتی که شما در تلاش برای تایید آن هستید تغییر کرده است. لطفاً شمارهٔ امنیتی جدید خود را با{name1}بازبینی کنید. به یاد داشته باشید، این تغییر بدین معناست که شخصی در تلاش برای رهگیری ارتباطات شماست و یا اینکه {name2}   مجددا Tellomi را نصب کرده است."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "افراد زیر ممکن است سیگنال را دوباره نصب کرده باشند یا دستگاه خود را تغییر داده باشند. برای تأیید شماره ایمنی جدید، روی یکی از گیرنده‌ها کلیک کنید. این کار انتخابی است."
+    "messageformat": "افراد زیر ممکن است Tellomi را دوباره نصب کرده باشند یا دستگاه خود را تغییر داده باشند. برای تأیید شماره ایمنی جدید، روی یکی از گیرنده‌ها کلیک کنید. این کار انتخابی است."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "ارسال پیام‌های معلق"
@@ -519,7 +519,7 @@
     "messageformat": "مرور"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {شما {count,number} آشنا دارید که ممکن است سیگنال را دوباره نصب کرده یا دستگاه خود را تغییر داده باشد. شما به صورت اختیاری می‌توانید شماره ایمنی او را قبل از ارسال بررسی کنید.} other {شما {count,number} آشنا دارید که ممکن است سیگنال را دوباره نصب کرده یا دستگاه خود را تغییر داده باشند. شما به صورت اختیاری می‌توانید شماره ایمنی آن‌ها را قبل از ارسال بررسی کنید.}}"
+    "messageformat": "{count, plural, one {شما {count,number} آشنا دارید که ممکن است Tellomi را دوباره نصب کرده یا دستگاه خود را تغییر داده باشد. شما به صورت اختیاری می‌توانید شماره ایمنی او را قبل از ارسال بررسی کنید.} other {شما {count,number} آشنا دارید که ممکن است Tellomi را دوباره نصب کرده یا دستگاه خود را تغییر داده باشند. شما به صورت اختیاری می‌توانید شماره ایمنی آن‌ها را قبل از ارسال بررسی کنید.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "تمام آشنایان بررسی شده‌اند، برای ادامه روی ارسال کلیک کنید."
@@ -627,16 +627,16 @@
     "messageformat": "رمزگذاری برای این گفتگو تأیید خودکار شده است "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "برای افرادی که از طریق شماره تلفن به آن‌ها متصل هستید، سیگنال می‌تواند با استفاده از فرایندی به نام «شفافیت کلید» به‌طور خودکار تأیید کند که اتصال امن است. برای امنیت بیشتر، رمزگذاری سرتاسری را به‌صورت دستی با مقایسه اعداد در صفحه قبلی یا اسکن کردن کد روی دستگاه او تأیید کنید."
+    "messageformat": "برای افرادی که از طریق شماره تلفن به آن‌ها متصل هستید، Tellomi می‌تواند با استفاده از فرایندی به نام «شفافیت کلید» به‌طور خودکار تأیید کند که اتصال امن است. برای امنیت بیشتر، رمزگذاری سرتاسری را به‌صورت دستی با مقایسه اعداد در صفحه قبلی یا اسکن کردن کد روی دستگاه او تأیید کنید."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "تأیید خودکار برای این گفتگو در دسترس نیست"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "سیگنال نمی‌تواند رمزگذاری برای این گفتگو را به‌طور خودکار تأیید کند. احتمالاً چون {name} شماره تلفن یا تنظیمات حریم خصوصی شماره تلفن خود را تغییر داده است. با مقایسه اعداد در صفحه قبلی یا اسکن کردن کد روی دستگاه او، رمزگذاری سرتاسری را به‌صورت دستی تأیید کنید."
+    "messageformat": "Tellomi نمی‌تواند رمزگذاری برای این گفتگو را به‌طور خودکار تأیید کند. احتمالاً چون {name} شماره تلفن یا تنظیمات حریم خصوصی شماره تلفن خود را تغییر داده است. با مقایسه اعداد در صفحه قبلی یا اسکن کردن کد روی دستگاه او، رمزگذاری سرتاسری را به‌صورت دستی تأیید کنید."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "سیگنال فقط در گفتگوهایی می‌تواند رمزگذاری را به‌صورت خودکار تأیید کند که از طریق شماره تلفن به فرد مقابل متصل هستید. اگر گفتگو با یک نام کاربری یا از طریق گروه مشترکی شروع شده است، رمزگذاری سرتاسری را با مقایسه اعداد در صفحه قبلی یا اسکن کردن کد روی دستگاه او تأیید کنید."
+    "messageformat": "Tellomi فقط در گفتگوهایی می‌تواند رمزگذاری را به‌صورت خودکار تأیید کند که از طریق شماره تلفن به فرد مقابل متصل هستید. اگر گفتگو با یک نام کاربری یا از طریق گروه مشترکی شروع شده است، رمزگذاری سرتاسری را با مقایسه اعداد در صفحه قبلی یا اسکن کردن کد روی دستگاه او تأیید کنید."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "خوب"
@@ -675,10 +675,10 @@
     "messageformat": "نه ممنون"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "سیگنال اکنون می‌تواند رمزگذاری را به‌طور خودکار تأیید کند"
+    "messageformat": "Tellomi اکنون می‌تواند رمزگذاری را به‌طور خودکار تأیید کند"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "برای مخاطبانی که از طریق شماره تلفن به آن‌ها متصل هستید، سیگنال می‌تواند با استفاده از فرایندی به نام «شفافیت کلید» به‌طور خودکار تأیید کند که اتصال امن است. برای امنیت بیشتر، همچنان می‌توانید مخاطبان را به‌صورت دستی و با استفاده از کد QR یا مقایسه شماره ایمنی تأیید کنید."
+    "messageformat": "برای مخاطبانی که از طریق شماره تلفن به آن‌ها متصل هستید، Tellomi می‌تواند با استفاده از فرایندی به نام «شفافیت کلید» به‌طور خودکار تأیید کند که اتصال امن است. برای امنیت بیشتر، همچنان می‌توانید مخاطبان را به‌صورت دستی و با استفاده از کد QR یا مقایسه شماره ایمنی تأیید کنید."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "ادامه"
@@ -837,7 +837,7 @@
     "messageformat": "سازنده بسته استیکر"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "درباره سیگنال Desktop"
+    "messageformat": "درباره Tellomi Desktop"
   },
   "icu:screenShareWindow": {
     "messageformat": "اشتراک صفحه"
@@ -855,7 +855,7 @@
     "messageformat": "خروج"
   },
   "icu:signalDesktop": {
-    "messageformat": "سیگنال Desktop"
+    "messageformat": "Tellomi Desktop"
   },
   "icu:search": {
     "messageformat": "جستجو"
@@ -909,7 +909,7 @@
     "messageformat": "جستجو با شماره تلفن"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "به سیگنال خوش‌آمدید"
+    "messageformat": "به Tellomi خوش‌آمدید"
   },
   "icu:whatsNew": {
     "messageformat": "{whatsNew} را در این به‌روزرسانی ببینید"
@@ -999,13 +999,13 @@
     "messageformat": "شما"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "برای فرستادن پیام‌های صوتی، به سیگنال دسکتاپ اجازه دسترسی به میکروفون خود را بدهید."
+    "messageformat": "برای فرستادن پیام‌های صوتی، به Tellomi دسکتاپ اجازه دسترسی به میکروفون خود را بدهید."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "برای تماس، شما باید به سیگنال دسکتاپ، اجازه دسترسی به میکروفون خود را بدهید."
+    "messageformat": "برای تماس، شما باید به Tellomi دسکتاپ، اجازه دسترسی به میکروفون خود را بدهید."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "برای فعال کردن تماس تصویری، سیگنال دسکتاپ نیازمند اجازه دسترسی به دوربین سیستم را دارد."
+    "messageformat": "برای فعال کردن تماس تصویری، Tellomi دسکتاپ نیازمند اجازه دسترسی به دوربین سیستم را دارد."
   },
   "icu:allowAccess": {
     "messageformat": "اجازه دسترسی بدهید"
@@ -1029,13 +1029,13 @@
     "messageformat": "بی‌صدا"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "سیگنال به‌روزرسانی نشد. برای نصب دستی، <retryUpdateButton>به‌روزرسانی را دوباره امتحان کنید</retryUpdateButton> یا به {url} مراجعه کنید. سپس برای رفع این مشکل، با <contactSupportLink>پشتیبانی تماس بگیرید</contactSupportLink>"
+    "messageformat": "Tellomi به‌روزرسانی نشد. برای نصب دستی، <retryUpdateButton>به‌روزرسانی را دوباره امتحان کنید</retryUpdateButton> یا به {url} مراجعه کنید. سپس برای رفع این مشکل، با <contactSupportLink>پشتیبانی تماس بگیرید</contactSupportLink>"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "سیگنال به‌روزرسانی نشد. برای نصب دستی به {url} مراجعه کنید. سپس برای رفع این مشکل، با <contactSupportLink>پشتیبانی تماس بگیرید</contactSupportLink>"
+    "messageformat": "Tellomi به‌روزرسانی نشد. برای نصب دستی به {url} مراجعه کنید. سپس برای رفع این مشکل، با <contactSupportLink>پشتیبانی تماس بگیرید</contactSupportLink>"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "سیگنال دسکتاپ  احتمالا در قرنطینه macOS می باشد، و قادر به به‌روزرسانی خودکار نیست. لطفاً محل {app} را با استفاده از Finder به {folder} تغییر دهید."
+    "messageformat": "Tellomi دسکتاپ  احتمالا در قرنطینه macOS می باشد، و قادر به به‌روزرسانی خودکار نیست. لطفاً محل {app} را با استفاده از Finder به {folder} تغییر دهید."
   },
   "icu:ok": {
     "messageformat": "باشه"
@@ -1080,7 +1080,7 @@
     "messageformat": "این پیام از روی این دستگاه پاک خواهد شد."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "این پیام برای همه در این گفتگو در صورتی که از نسخهٔ اخیر سیگنال استفاده کنند، پاک خواهد شد. آن‌ها قادر خواهند بود ببینند که شما پیامی را پاک کردید."
+    "messageformat": "این پیام برای همه در این گفتگو در صورتی که از نسخهٔ اخیر Tellomi استفاده کنند، پاک خواهد شد. آن‌ها قادر خواهند بود ببینند که شما پیامی را پاک کردید."
   },
   "icu:from": {
     "messageformat": "از"
@@ -1122,7 +1122,7 @@
     "messageformat": "‏{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "‏«{title} » نام نمایه‌ای است که این شخص برای خود در سیگنال تنظیم کرده است."
+    "messageformat": "‏«{title} » نام نمایه‌ای است که این شخص برای خود در Tellomi تنظیم کرده است."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "تایید شده"
@@ -1137,7 +1137,7 @@
     "messageformat": "پیام مستقیمی با {name} وجود ندارد"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "آشنا در سیگنال"
+    "messageformat": "آشنا در Tellomi"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "‏{name} در مخاطبان سیستم شما است"
@@ -1449,7 +1449,7 @@
     "messageformat": "بیشتر بدانید"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "سیگنال از رمزگذاری سرتاسری استفاده می‌کند و شاید گاهی نیاز به تازه‌سازی نشست گفتگوی شما داشته باشد. این کار روی امنیت گفتگوی شما تأثیری نمی‌گذارد، اما ممکن است پیامی از این مخاطب را از دست بدهید و می‌توانید از او بخواهید که آن را دوباره ارسال کند."
+    "messageformat": "Tellomi از رمزگذاری سرتاسری استفاده می‌کند و شاید گاهی نیاز به تازه‌سازی نشست گفتگوی شما داشته باشد. این کار روی امنیت گفتگوی شما تأثیری نمی‌گذارد، اما ممکن است پیامی از این مخاطب را از دست بدهید و می‌توانید از او بخواهید که آن را دوباره ارسال کند."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "تماس با پشتیبانی"
@@ -1476,7 +1476,7 @@
     "messageformat": "{sender}شماره تلفن خود را تغییر داد"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "مخاطب به سیگنال پیوست"
+    "messageformat": "مخاطب به Tellomi پیوست"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} و {conversationTitle} یک حساب هستند. تاریخچه پیام هر دو گفتگوی شما اینجاست."
@@ -1566,7 +1566,7 @@
     "messageformat": "رسانه دانلود نمی‌شود"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "اتصال اینترنت دسک‌تاپ و تلفن خود را بررسی کنید. سیگنال را در تلفن خود باز کنید، سپس دوباره دانلود کنید."
+    "messageformat": "اتصال اینترنت دسک‌تاپ و تلفن خود را بررسی کنید. Tellomi را در تلفن خود باز کنید، سپس دوباره دانلود کنید."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "این رسانه دیگر در تلفن شما در دسترس نیست و دانلود نمی‌شود."
@@ -1587,10 +1587,10 @@
     "messageformat": "بیشتر یاد بگیرید"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "این کد را در برنامه سیگنال روی گوشی خود اسکن کنید"
+    "messageformat": "این کد را در برنامه Tellomi روی گوشی خود اسکن کنید"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "باز کردن سیگنال روی گوشی"
+    "messageformat": "باز کردن Tellomi روی گوشی"
   },
   "icu:Install__instructions__2": {
     "messageformat": "روی {settings}کلیک کنید، سپس روی {linkedDevices}کلیک کنید."
@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>خطای غیرمنتظره‌ای رخ داد.</paragraph><paragraph>لطفاً دوباره تلاش کنید.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "سیگنال با شبکه فعلی شما نمی‌تواند این دستگاه را متصل کند."
+    "messageformat": "Tellomi با شبکه فعلی شما نمی‌تواند این دستگاه را متصل کند."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "تلاش مجدد"
@@ -1626,7 +1626,7 @@
     "messageformat": "پاک کردن همه اطلاعات؟"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "در حال تلاش برای پیوند دادن یک حساب متفاوت سیگنال به این دسکتاپ هستید. اگر ادامه دهید، همه داده‌های فعلی در سیگنال دسک‌تاپ حذف خواهند شد."
+    "messageformat": "در حال تلاش برای پیوند دادن یک حساب متفاوت Tellomi به این دسکتاپ هستید. اگر ادامه دهید، همه داده‌های فعلی در Tellomi دسک‌تاپ حذف خواهند شد."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "ادامه"
@@ -1641,7 +1641,7 @@
     "messageformat": "نام دستگاه"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "برای تغییر نام این دستگاه، سیگنال را در گوشی خود باز کنید و به «تنظیمات > دستگاه‌های متصل‌شده» بروید"
+    "messageformat": "برای تغییر نام این دستگاه، Tellomi را در گوشی خود باز کنید و به «تنظیمات > دستگاه‌های متصل‌شده» بروید"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "رنگ پوست ایموجی"
@@ -1833,7 +1833,7 @@
     "messageformat": "تأیید رمز خودکار"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "در صورت فعال بودن، سیگنال تلاش می‌کند رمزگذاری گفتگوهای فرد به فرد را به‌صورت خودکار تأیید کند."
+    "messageformat": "در صورت فعال بودن، Tellomi تلاش می‌کند رمزگذاری گفتگوهای فرد به فرد را به‌صورت خودکار تأیید کند."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "بیشتر بدانید"
@@ -1851,7 +1851,7 @@
     "messageformat": "متاسفانه دستگاه‌های زیادی را به حسابتان متصل کرده‌اید. تعدادی را حذف کنید."
   },
   "icu:installTooOld": {
-    "messageformat": "برای اتصال به تلفن همراه سیگنال را در این دستگاه به‌روزرسانی کنید"
+    "messageformat": "برای اتصال به تلفن همراه Tellomi را در این دستگاه به‌روزرسانی کنید"
   },
   "icu:installErrorHeader": {
     "messageformat": "خطایی رخ‌ داد!"
@@ -1902,7 +1902,7 @@
     "messageformat": "این پیوند تماس دیگر معتبر نیست."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "تماس با سیگنال"
+    "messageformat": "تماس با Tellomi"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "پیوند قابل حذف نیست. اتصال خود را بررسی و دوباره تلاش کنید."
@@ -2076,16 +2076,16 @@
     "messageformat": "{count, plural, one {{count,number} نفر در این تماس حضور دارد} other {{count,number} نفر در این تماس حضور دارند}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "سیگنال به {person} زنگ خواهد زد"
+    "messageformat": "Tellomi به {person} زنگ خواهد زد"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "سیگنال به {first} و {second} زنگ خواهد زد"
+    "messageformat": "Tellomi به {first} و {second} زنگ خواهد زد"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "سیگنال به {first}، {second}، و {third} زنگ خواهد زد"
+    "messageformat": "Tellomi به {first}، {second}، و {third} زنگ خواهد زد"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {سیگنال به {first}، {second} و {others,number} نفر دیگر زنگ خواهد زد} other {سیگنال با {first}، {second} و {others,number} نفر دیگر زنگ خواهد زد}}"
+    "messageformat": "{others, plural, one {Tellomi به {first}، {second} و {others,number} نفر دیگر زنگ خواهد زد} other {Tellomi با {first}، {second} و {others,number} نفر دیگر زنگ خواهد زد}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} آگاه خواهد شد"
@@ -2139,13 +2139,13 @@
     "messageformat": "در حال اتصال دوباره..."
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "اتصال شما قطع شد. سیگنال در حال اتصال مجدد است."
+    "messageformat": "اتصال شما قطع شد. Tellomi در حال اتصال مجدد است."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "سیگنال در حال اشتراک {window} است."
+    "messageformat": "Tellomi در حال اشتراک {window} است."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "اشتراک‌گذاری صفحه در سیگنال فعال است"
+    "messageformat": "اشتراک‌گذاری صفحه در Tellomi فعال است"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "در حال اتصال دوباره..."
@@ -2166,7 +2166,7 @@
     "messageformat": "مجوز نیاز است"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "سیگنال به مجوز برای دسترسی به ضبط صفحهٔ کامپیوتر شما نیاز دارد."
+    "messageformat": "Tellomi به مجوز برای دسترسی به ضبط صفحهٔ کامپیوتر شما نیاز دارد."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "به تنظیمات سیستم بروید."
@@ -2175,7 +2175,7 @@
     "messageformat": "روی آیکون قفل در پایین سمت چپ کلیک کنید و گذرواژهٔ کامپیوتر خود را وارد کنید."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "در سمت راست، جعبهٔ کنار سیگنال را علامت بزنید. اگر سیگنال را در فهرست نمی‌بینید، روی + برای افزودن آن کلیک کنید."
+    "messageformat": "در سمت راست، جعبهٔ کنار Tellomi را علامت بزنید. اگر Tellomi را در فهرست نمی‌بینید، روی + برای افزودن آن کلیک کنید."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "تنظیمات سیستم را باز کنید"
@@ -2187,7 +2187,7 @@
     "messageformat": "عبور تمامی تماس‌ها از سرور سیگنال"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "گذراندن تمامی تماس‌ها از سرور سیگنال به منظور جلوگیری از آشکار شدن نشانی اینترنتی شما برای مخاطبانتان. فعال‌سازی این گزینه باعث کاهش کیفیت تماس می‌گردد."
+    "messageformat": "گذراندن تمامی تماس‌ها از سرور Tellomi به منظور جلوگیری از آشکار شدن نشانی اینترنتی شما برای مخاطبانتان. فعال‌سازی این گزینه باعث کاهش کیفیت تماس می‌گردد."
   },
   "icu:permissions": {
     "messageformat": "مجوزها"
@@ -2205,10 +2205,10 @@
     "messageformat": "با انتخاب متن، کادر ظاهرشونده قالب‌بندی متن نشان داده شود"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "در اجرای بعدی سیگنال بررسی املائی فعال خواهد شد"
+    "messageformat": "در اجرای بعدی Tellomi بررسی املائی فعال خواهد شد"
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "در اجرای بعدی سیگنال بررسی املائی غیرفعال خواهد شد"
+    "messageformat": "در اجرای بعدی Tellomi بررسی املائی غیرفعال خواهد شد"
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "کمینه کردن به نوار سیستم"
@@ -2232,7 +2232,7 @@
     "messageformat": "پاک کردن همه اطلاعات؟"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "همۀ داده‌ها و پیام‌ها از این نسخه سیگنال دسکتاپ پاک شود؟ داده‌ها و حساب سیگنال شما در تلفن‌تان و سایر دستگاههای متصل‌شده پاک نخواهد شد."
+    "messageformat": "همۀ داده‌ها و پیام‌ها از این نسخه Tellomi دسکتاپ پاک شود؟ داده‌ها و حساب Tellomi شما در تلفن‌تان و سایر دستگاههای متصل‌شده پاک نخواهد شد."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "در حال قطع اتصال و حذف تمام داده‌ها…"
@@ -2241,7 +2241,7 @@
     "messageformat": "پاک کردن حساب"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "این گزینه اطلاعات حساب کاربری، نمایه، و تمامی پیام‌های شما را حذف می‌کند. از همه گروه‌های سیگنال نیز حذف خواهید شد."
+    "messageformat": "این گزینه اطلاعات حساب کاربری، نمایه، و تمامی پیام‌های شما را حذف می‌کند. از همه گروه‌های Tellomi نیز حذف خواهید شد."
   },
   "icu:deleteAccountButton": {
     "messageformat": "پاک کردن حساب"
@@ -2250,10 +2250,10 @@
     "messageformat": "حساب حذف شود؟"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "این گزینه اطلاعات حساب کاربری، نمایه، و تمامی پیام‌های شما را حذف می‌کند. از همه گروه‌های سیگنال نیز حذف خواهید شد. پس از تکمیل این فرایند، برنامه بسته خواهد شد."
+    "messageformat": "این گزینه اطلاعات حساب کاربری، نمایه، و تمامی پیام‌های شما را حذف می‌کند. از همه گروه‌های Tellomi نیز حذف خواهید شد. پس از تکمیل این فرایند، برنامه بسته خواهد شد."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "از نصب گذشته سیگنال دسکتاپ اطلاعات منسوخی برجا مانده است. اگر ادامه دهید این اطلاعات پاک خواهد شد و از نو آغاز خواهید کرد."
+    "messageformat": "از نصب گذشته Tellomi دسکتاپ اطلاعات منسوخی برجا مانده است. اگر ادامه دهید این اطلاعات پاک خواهد شد و از نو آغاز خواهید کرد."
   },
   "icu:deleteOldData": {
     "messageformat": "پاک کردن اطلاعات قدیمی"
@@ -2310,7 +2310,7 @@
     "messageformat": "تا حدودی حذف شد، برای جزئیات، کلیک کنید"
   },
   "icu:expiredWarning": {
-    "messageformat": "این نسخه‌ی سیگنال قدیمی است. برای ارسال پیام لطفا آن را به آخرین نسخه ارتقاء دهید."
+    "messageformat": "این نسخه‌ی Tellomi قدیمی است. برای ارسال پیام لطفا آن را به آخرین نسخه ارتقاء دهید."
   },
   "icu:upgrade": {
     "messageformat": "برای رفتن به tellomi.app/download کلیک کنید"
@@ -2322,7 +2322,7 @@
     "messageformat": "وارد کردن مخاطبین"
   },
   "icu:syncExplanation": {
-    "messageformat": "واردسازی لیست تمام گروه‌ها و مخاطب‌های سیگنال از گوشی موبایل شما."
+    "messageformat": "واردسازی لیست تمام گروه‌ها و مخاطب‌های Tellomi از گوشی موبایل شما."
   },
   "icu:syncNow": {
     "messageformat": "انجام واردسازی"
@@ -2355,7 +2355,7 @@
     "messageformat": "دیروز {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "سیگنال ممکن است پیام دریافتی را پردازش نکند."
+    "messageformat": "Tellomi ممکن است پیام دریافتی را پردازش نکند."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "متن پیام بیش از حد طولانی می باشد."
@@ -2520,13 +2520,13 @@
     "messageformat": "ویرایش‌ها فقط تا ۲۴ ساعت بعد از ارسال این پیام قابل اعمال هستند."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "‏{atUsername} کاربر سیگنال نیست. مطمئن شوید که نام کاربری را کامل وارد کرده‌اید."
+    "messageformat": "‏{atUsername} کاربر Tellomi نیست. مطمئن شوید که نام کاربری را کامل وارد کرده‌اید."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "‏{atUsername} نام کاربری معتبری نیست. مطمئن شوید که نام کاربری را کامل و همراه با مجموعه ارقام بعد از آن وارد کرده‌اید."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "کاربر یافت نشد. \"{phoneNumber}\" کاربر سیگنال نیست."
+    "messageformat": "کاربر یافت نشد. \"{phoneNumber}\" کاربر Tellomi نیست."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "کاربر یافت نشد. \"{phoneNumber}\" شماره تلفن معتبری نیست."
@@ -2547,13 +2547,13 @@
     "messageformat": "به حداکثر اندازهٔ گروه رسیدید"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "گروه های سیگنال می توانند حداکثر {max,number} عضو داشته باشند."
+    "messageformat": "گروه های Tellomi می توانند حداکثر {max,number} عضو داشته باشند."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "تعداد اعضا به انتها رسیده است"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "گروه‌های سیگنال با {max,number} عضو یا کمتر به بهترین شکل عمل می‌کنند. افزودن اعضای بیشتر باعث به وجود آمدن تأخیر در ارسال و دریافت پیام‌ها خواهد شد."
+    "messageformat": "گروه‌های Tellomi با {max,number} عضو یا کمتر به بهترین شکل عمل می‌کنند. افزودن اعضای بیشتر باعث به وجود آمدن تأخیر در ارسال و دریافت پیام‌ها خواهد شد."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "نامی برای گروه انتخاب کنید"
@@ -2583,13 +2583,13 @@
     "messageformat": "به‌روزرسانی گروه ناموفق بود. اتصال خود را بررسی و دوباره امتحان کنید."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "برای ادامهٔ پیام‌رسانی کلیک کنید تا سیگنال دسکتاپ را به دستگاه تلفن همراه خود پیوند دهید."
+    "messageformat": "برای ادامهٔ پیام‌رسانی کلیک کنید تا Tellomi دسکتاپ را به دستگاه تلفن همراه خود پیوند دهید."
   },
   "icu:unlinked": {
     "messageformat": "جدا شد"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "برای ثبت‌نام دوباره یا ادامه ارسال پیام، کلیک کنید. سیگنال دسک‌تاپ ثبت‌نام نشده است، احتمالاً چون شماره تلفن خود را با سیگنال در دستگاه دیگری ثبت کرده‌اید."
+    "messageformat": "برای ثبت‌نام دوباره یا ادامه ارسال پیام، کلیک کنید. Tellomi دسک‌تاپ ثبت‌نام نشده است، احتمالاً چون شماره تلفن خود را با Tellomi در دستگاه دیگری ثبت کرده‌اید."
   },
   "icu:unregistered": {
     "messageformat": "دیگر ثبت‌نام‌شده نیست"
@@ -2601,16 +2601,16 @@
     "messageformat": "دوباره به‌روزرسانی کنید"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "برای راه‌اندازی دوبارهٔ سیگنال کلیک کنید"
+    "messageformat": "برای راه‌اندازی دوبارهٔ Tellomi کلیک کنید"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "برای بارگیری به‌روزرسانی کلیک کنید"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "سیگنال به‌روزرسانی نشد. برای امتحان مجدد کلیک کنید."
+    "messageformat": "Tellomi به‌روزرسانی نشد. برای امتحان مجدد کلیک کنید."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "راه اندازی مجدد سیگنال"
+    "messageformat": "راه اندازی مجدد Tellomi"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "رد بروزرسانی"
@@ -2742,7 +2742,7 @@
     "messageformat": "برخی فایل‌های پیوست برای نمایش خیلی بزرگ هستند."
   },
   "icu:message--call-link-description": {
-    "messageformat": "از این پیوند برای پیوستن به یک تماس سیگنال استفاده کنید"
+    "messageformat": "از این پیوند برای پیوستن به یک تماس Tellomi استفاده کنید"
   },
   "icu:donation--missing": {
     "messageformat": "دریافت جزئیات کمک مالی امکان‌پذیر نیست"
@@ -2754,7 +2754,7 @@
     "messageformat": "برای مشاهده کمک مالی خود، روی این پیام در تلفن همراهتان ضربه بزنید"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} از طرف شما به سیگنال کمک مالی کرد"
+    "messageformat": "{sender} از طرف شما به Tellomi کمک مالی کرد"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "برای باز کردن این کمک مالی، تلفن‌تان را ببینید"
@@ -2811,7 +2811,7 @@
     "messageformat": "از حمایت شما سپاسگزاریم!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "شما از طرف {name} به سیگنال کمک مالی کرده‌اید. به او امکان داده می‌شود که حمایت خود را در نمایه ‌اش نشان دهد."
+    "messageformat": "شما از طرف {name} به Tellomi کمک مالی کرده‌اید. به او امکان داده می‌شود که حمایت خود را در نمایه ‌اش نشان دهد."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "پک استیکر نمی تواند نصب شود"
@@ -2823,10 +2823,10 @@
     "messageformat": "افزودن استیکر"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "سری های هنرمند سیگنال"
+    "messageformat": "سری های هنرمند Tellomi"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "هیچ استیکر هنرمند سیگنال موجود نمی باشد"
+    "messageformat": "هیچ استیکر هنرمند Tellomi موجود نمی باشد"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "به‌اشتراک‌گذاشته‌شده با شما"
@@ -2862,7 +2862,7 @@
     "messageformat": "برای مرتب‌سازی مجدد بسته استیکر، بکشید"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "بسته‌های استیکر مجموعه هنرمندان سیگنال"
+    "messageformat": "بسته‌های استیکر مجموعه هنرمندان Tellomi"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "بسته‌های استیکر دریافت‌شده"
@@ -3147,19 +3147,19 @@
     "messageformat": "پیام برای نمایش بیش‌ازحد طولانی است"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "پیامی را برای شما ارسال کرد که پردازش یا نمایش داده نمی شود زیرا از ویژگی جدید سیگنال استفاده می کند.{contact}"
+    "messageformat": "پیامی را برای شما ارسال کرد که پردازش یا نمایش داده نمی شود زیرا از ویژگی جدید Tellomi استفاده می کند.{contact}"
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "اکنون که از نسخه به روز شده سیگنال استفاده می کنید ، می توانید برای تماس مجدد با این پیام از {contact} بخواهید."
+    "messageformat": "اکنون که از نسخه به روز شده Tellomi استفاده می کنید ، می توانید برای تماس مجدد با این پیام از {contact} بخواهید."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "پیامی که دریافت کرده‌اید قابل نمایش یا قابل پردازش نیست چون که به یک ویژگی جدید سیگنال نیاز دارد."
+    "messageformat": "پیامی که دریافت کرده‌اید قابل نمایش یا قابل پردازش نیست چون که به یک ویژگی جدید Tellomi نیاز دارد."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "حالا که از یک نسخه‌ی به‌روز سیگنال استفاده می‌کنید می‌توانید از بخواهید که این پیام را دوباره برایتان بفرستد."
+    "messageformat": "حالا که از یک نسخه‌ی به‌روز Tellomi استفاده می‌کنید می‌توانید از بخواهید که این پیام را دوباره برایتان بفرستد."
   },
   "icu:Message--update-signal": {
-    "messageformat": "به‌روزرسانی سیگنال"
+    "messageformat": "به‌روزرسانی Tellomi"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "مشاهده شده"
@@ -3426,7 +3426,7 @@
     "messageformat": "گفتگو به‌عنوان خوانده‌نشده علامت‌گذاری شد"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "لطفاً برای استفاده از سازنده بسته استیکر، سیگنال را روی تلفن و دسکتاپ خود نصب کنید"
+    "messageformat": "لطفاً برای استفاده از سازنده بسته استیکر، Tellomi را روی تلفن و دسکتاپ خود نصب کنید"
   },
   "icu:Reactions--remove": {
     "messageformat": "حذف واکنش"
@@ -3444,16 +3444,16 @@
     "messageformat": "نکات ایمنی"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "به گفتگوها از سیگنال پاسخ ندهید"
+    "messageformat": "به گفتگوها از Tellomi پاسخ ندهید"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "سیگنال هیچ‌وقت برای کد ثبت‌نام، پین یا رمز بازیابی به شما پیام نمی‌دهد. هیچ‌وقت به گفتگویی که وانمود می‌کند سیگنال است پاسخ ندهید."
+    "messageformat": "Tellomi هیچ‌وقت برای کد ثبت‌نام، پین یا رمز بازیابی به شما پیام نمی‌دهد. هیچ‌وقت به گفتگویی که وانمود می‌کند Tellomi است پاسخ ندهید."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "مرور نام‌ها و عکس‌ها"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "به دنبال اطلاعیه «نام تأیید نشده است» باشید. هر کسی در سیگنال، نام نمایه خودش را تنظیم می‌کند."
+    "messageformat": "به دنبال اطلاعیه «نام تأیید نشده است» باشید. هر کسی در Tellomi، نام نمایه خودش را تنظیم می‌کند."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "مراقب کلاهبرداری‌ها باشید"
@@ -3462,16 +3462,16 @@
     "messageformat": "از پیام‌های مبهمی که سعی می‌کنند شما را به پاسخ دادن اغوا کنند اجتناب کنید. در مورد توصیه‌های مالی و پیوندهای مشکوک وب احتیاط کنید."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "به گفتگوها از سیگنال پاسخ ندهید"
+    "messageformat": "به گفتگوها از Tellomi پاسخ ندهید"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "سیگنال هیچ‌وقت برای کد ثبت‌نام، پین یا رمز بازیابی به شما پیام نمی‌دهد. به گفتگوهایی که وانمود می‌کنند سیگنال یا پشتیبانی سیگنال هستند پاسخ ندهید. خرابکارها نام‌های جعلی می‌سازند تا سعی کنند کنترل حسابتان را به دست بگیرند."
+    "messageformat": "Tellomi هیچ‌وقت برای کد ثبت‌نام، پین یا رمز بازیابی به شما پیام نمی‌دهد. به گفتگوهایی که وانمود می‌کنند Tellomi یا پشتیبانی Tellomi هستند پاسخ ندهید. خرابکارها نام‌های جعلی می‌سازند تا سعی کنند کنترل حسابتان را به دست بگیرند."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "مرور نام‌ها و عکس‌ها"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "به دنبال اطلاعیه «نام تأیید نشده است» باشید. هر کسی در سیگنال، نام نمایه و عکس خودش را تنظیم می‌کند. اگر مطمئن نیستید درخواستی از طرف چه کسی است، امن‌تر است که آن را نادیده بگیرید."
+    "messageformat": "به دنبال اطلاعیه «نام تأیید نشده است» باشید. هر کسی در Tellomi، نام نمایه و عکس خودش را تنظیم می‌کند. اگر مطمئن نیستید درخواستی از طرف چه کسی است، امن‌تر است که آن را نادیده بگیرید."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "کلاه‌برداری‌های پولی یا رمزارز"
@@ -3552,13 +3552,13 @@
     "messageformat": "به‌عنوان هرزنامه گزارش شود؟"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "سیگنال مطلع خواهد شد که این فرد ممکن است در حال ارسال هرزنامه باشد. سیگنال نمی‌تواند محتوای هیچ گفتگویی را ببیند."
+    "messageformat": "Tellomi مطلع خواهد شد که این فرد ممکن است در حال ارسال هرزنامه باشد. Tellomi نمی‌تواند محتوای هیچ گفتگویی را ببیند."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "سیگنال مطلع خواهد شد که فردی که شما را به این گروه دعوت کرده ممکن است در حال ارسال هرزنامه باشد. سیگنال نمی‌تواند محتوای هیچ گفتگویی را ببیند."
+    "messageformat": "Tellomi مطلع خواهد شد که فردی که شما را به این گروه دعوت کرده ممکن است در حال ارسال هرزنامه باشد. Tellomi نمی‌تواند محتوای هیچ گفتگویی را ببیند."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "سیگنال مطلع خواهد شد که {name} که شما را به این گروه دعوت کرده ممکن است در حال ارسال هرزنامه باشد. سیگنال نمی‌تواند محتوای هیچ گفتگویی را ببیند."
+    "messageformat": "Tellomi مطلع خواهد شد که {name} که شما را به این گروه دعوت کرده ممکن است در حال ارسال هرزنامه باشد. Tellomi نمی‌تواند محتوای هیچ گفتگویی را ببیند."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "به‌عنوان هرزنامه گزارش شود"
@@ -3600,7 +3600,7 @@
     "messageformat": "درخواست پذیرفته شود؟"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "درخواست‌ها را فقط از افراد مورد اعتمادتان بپذیرید. <bold>سیگنال هیچ‌وقت</bold> برای کد ثبت‌نام، پین یا رمز بازیابی به شما پیام نمی‌دهد."
+    "messageformat": "درخواست‌ها را فقط از افراد مورد اعتمادتان بپذیرید. <bold>Tellomi هیچ‌وقت</bold> برای کد ثبت‌نام، پین یا رمز بازیابی به شما پیام نمی‌دهد."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "ادامه"
@@ -3654,16 +3654,16 @@
     "messageformat": "نام تأیید نشده است"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "این گفتگوی رسمی و انحصاری سیگنال است"
+    "messageformat": "این گفتگوی رسمی و انحصاری Tellomi است"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "گفتگوی رسمی"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "تنها گفتگوی رسمی از سیگنال. از اخبار و تغییرات جدید با خبر شوید."
+    "messageformat": "تنها گفتگوی رسمی از Tellomi. از اخبار و تغییرات جدید با خبر شوید."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "تنها گفتگوی رسمی از سیگنال."
+    "messageformat": "تنها گفتگوی رسمی از Tellomi."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "از اخبار و تغییرات جدید با خبر شوید."
@@ -3729,10 +3729,10 @@
     "messageformat": "تماس تصویری بی‌پاسخ"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "سیگنال هنوز در حال اجراست"
+    "messageformat": "Tellomi هنوز در حال اجراست"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "سیگنال در ناحیه اعلان به کار خود ادامه خواهد داد. می‌توانید این حالت را در تنظیمات سیگنال تغییر دهید."
+    "messageformat": "Tellomi در ناحیه اعلان به کار خود ادامه خواهد داد. می‌توانید این حالت را در تنظیمات Tellomi تغییر دهید."
   },
   "icu:incomingAudioCall": {
     "messageformat": "تماس صوتی دریافتی"
@@ -3951,7 +3951,7 @@
     "messageformat": "کپی پیوند تماس"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "اشتراک‌گذاری پیوند تماس از طریق سیگنال"
+    "messageformat": "اشتراک‌گذاری پیوند تماس از طریق Tellomi"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "{name} از تماس حذف شود؟"
@@ -4113,7 +4113,7 @@
     "messageformat": "نسخه پیوند ناشناخته"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "این پیوند را این نسخه از سیگنال دسکتاپ پشتیبانی نمی‌کند."
+    "messageformat": "این پیوند را این نسخه از Tellomi دسکتاپ پشتیبانی نمی‌کند."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "امکان پیوستن به گروه وجود ندارد"
@@ -4719,10 +4719,10 @@
     "messageformat": "در حال حذف داده‌های کاربر و بازنشانی برنامه"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "حمایت از سیگنال"
+    "messageformat": "حمایت از Tellomi"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} از سیگنال پشتیبانی می‌کند"
+    "messageformat": "{name} از Tellomi پشتیبانی می‌کند"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "در حال همگام‌سازی پیام‌ها"
@@ -4839,7 +4839,7 @@
     "messageformat": "نیازبه اقدام در حساب"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "برای ادامه استفاده از این حساب، باید سیگنال را در تلفن خود باز کنید. اگر سیگنال را در تلفن خود باز نکنید، حساب شما به زودی حذف خواهد شد. <learnMoreLink>اطلاعات بیشتر</learnMoreLink>"
+    "messageformat": "برای ادامه استفاده از این حساب، باید Tellomi را در تلفن خود باز کنید. اگر Tellomi را در تلفن خود باز نکنید، حساب شما به زودی حذف خواهد شد. <learnMoreLink>اطلاعات بیشتر</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "رسانه بازیابی نشد"
@@ -4863,10 +4863,10 @@
     "messageformat": "افزودن پیوست یا نظرسنجی"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "این فرد از سیگنال استفاده نمی‌کند"
+    "messageformat": "این فرد از Tellomi استفاده نمی‌کند"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "سیگنال دسکتاپ از پیام‌رسانی با مخاطبین غیر-سیگنال پشتیبانی نمی‌کند. از این فرد بخواهید تا برای یک تجربهٔ پیام‌رسانی امن‌تر سیگنال را نصب کند."
+    "messageformat": "Tellomi دسکتاپ از پیام‌رسانی با مخاطبین غیر-Tellomi پشتیبانی نمی‌کند. از این فرد بخواهید تا برای یک تجربهٔ پیام‌رسانی امن‌تر Tellomi را نصب کند."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "در حال بررسی وضعیت ثبت‌نام مخاطب"
@@ -5127,10 +5127,10 @@
     "messageformat": "رفع مسدودیت"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "سیگنال مطلع خواهد شد که این فرد ممکن است در حال ارسال هرزنامه باشد. سیگنال نمی‌تواند محتوای هیچ گفتگویی را ببیند."
+    "messageformat": "Tellomi مطلع خواهد شد که این فرد ممکن است در حال ارسال هرزنامه باشد. Tellomi نمی‌تواند محتوای هیچ گفتگویی را ببیند."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "سیگنال مطلع خواهد شد که فردی که شما را به این گروه دعوت کرده ممکن است در حال ارسال هرزنامه باشد. سیگنال نمی‌تواند محتوای هیچ گفتگویی را ببیند."
+    "messageformat": "Tellomi مطلع خواهد شد که فردی که شما را به این گروه دعوت کرده ممکن است در حال ارسال هرزنامه باشد. Tellomi نمی‌تواند محتوای هیچ گفتگویی را ببیند."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "به‌عنوان هرزنامه گزارش شود"
@@ -5178,7 +5178,7 @@
     "messageformat": "نام مستعار"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "نام‌های مستعار و یادداشت‌ها در سیگنال ذخیره می‌شوند و سرتاسر رمزگذاری شده‌اند. این‌ها فقط برای شما قابل‌مشاهده هستند."
+    "messageformat": "نام‌های مستعار و یادداشت‌ها در Tellomi ذخیره می‌شوند و سرتاسر رمزگذاری شده‌اند. این‌ها فقط برای شما قابل‌مشاهده هستند."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "نام کوچک"
@@ -5431,7 +5431,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {اعضای گروه در جدیدترین نسخه‌های سیگنال خواهند دید که شما این پیام را حذف کردید.} other {اعضای گروه در جدیدترین نسخه‌های سیگنال خواهند دید که شما این پیام‌ها را حذف کردید.}}"
+    "messageformat": "{count, plural, one {اعضای گروه در جدیدترین نسخه‌های Tellomi خواهند دید که شما این پیام را حذف کردید.} other {اعضای گروه در جدیدترین نسخه‌های Tellomi خواهند دید که شما این پیام‌ها را حذف کردید.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "پاک کردن"
@@ -5557,7 +5557,7 @@
     "messageformat": "امکان بازارسال پیام‌های خالی یا پاک‌شده وجود ندارد"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "با استفاده از این پیوند به تماس سیگنال بپیوندید: {url}"
+    "messageformat": "با استفاده از این پیوند به تماس Tellomi بپیوندید: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "درخواست‌ها را با دقت بازنگری کنید"
@@ -5566,7 +5566,7 @@
     "messageformat": "نکات ایمنی"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "درخواست‌ها را با دقت بررسی کنید. سیگنال مخاطب دیگری با همین نام پیدا کرد. <reviewRequestLink>درخواست بررسی</reviewRequestLink>"
+    "messageformat": "درخواست‌ها را با دقت بررسی کنید. Tellomi مخاطب دیگری با همین نام پیدا کرد. <reviewRequestLink>درخواست بررسی</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} عضو گروه نام یکسانی دارند. <reviewRequestLink>بررسی اعضا</reviewRequestLink>} other {{count,number} عضو گروه نام یکسانی دارند. <reviewRequestLink>بررسی اعضا</reviewRequestLink>}}"
@@ -5599,7 +5599,7 @@
     "messageformat": "گروه مشترک دیگری وجود ندارد"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "آشنا در سیگنال"
+    "messageformat": "آشنا در Tellomi"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "به‌تازگی نام نمایه خود را از {oldName} به {newName} تغییر داد"
@@ -5617,7 +5617,7 @@
     "messageformat": "برای ادامهٔ پیام‌‌رسانی تأیید کنید"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "برای کمک به جلوگیری از هرزنگاری یا اسپم در سیگنال، لطفاً تأیید را کامل کنید."
+    "messageformat": "برای کمک به جلوگیری از هرزنگاری یا اسپم در Tellomi، لطفاً تأیید را کامل کنید."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "پس از تأیید کردن، می‌توانید به پیام‌رسانی ادامه دهید. هر پیام متوقف شده‌ای به صورت خودکار ارسال خواهد شد."
@@ -6001,7 +6001,7 @@
     "messageformat": "آیا می‌خواهید این تغییرات را دور بیاندازید؟"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "سیگنال بسته شود و تماس پایان یابد؟"
+    "messageformat": "Tellomi بسته شود و تماس پایان یابد؟"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "حالا نه"
@@ -6101,7 +6101,7 @@
     "messageformat": "عمومی"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "حمایت از سیگنال"
+    "messageformat": "حمایت از Tellomi"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "ظاهر برنامه"
@@ -6191,7 +6191,7 @@
     "messageformat": "این یک دستگاه متصل است"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "برای مدیریت تنظیمات حساب، برنامه سیگنال را در دستگاه اصلی‌تان باز کنید."
+    "messageformat": "برای مدیریت تنظیمات حساب، برنامه Tellomi را در دستگاه اصلی‌تان باز کنید."
   },
   "icu:Preferences--zoom": {
     "messageformat": "سطح بزرگنمایی"
@@ -6224,7 +6224,7 @@
     "messageformat": "پیشرفته"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "پین سیگنال"
+    "messageformat": "پین Tellomi"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "یاد‌آورهای پین"
@@ -6353,7 +6353,7 @@
     "messageformat": "امکان صدور تاریخچه گفتگو وجود ندارد"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "امکان صدور تاریخچه گفتگوی شما وجود ندارد زیرا سیگنال اجازه نوشتن فایل‌ها روی دیسک را ندارد. مجوزهای دیسک خود را تغییر دهید یا تنظیمات سیستم خود را به‌روزرسانی کنید و سپس دوباره صادر کنید."
+    "messageformat": "امکان صدور تاریخچه گفتگوی شما وجود ندارد زیرا Tellomi اجازه نوشتن فایل‌ها روی دیسک را ندارد. مجوزهای دیسک خود را تغییر دهید یا تنظیمات سیستم خود را به‌روزرسانی کنید و سپس دوباره صادر کنید."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "در حال خروجی گرفتن از نسخه پشتیبان"
@@ -6368,7 +6368,7 @@
     "messageformat": "پوشه پشتیبان خود را به فضای ذخیره‌سازی تلفنتان انتقال دهید"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "نسخه جدید سیگنال را در تلفنتان نصب کنید"
+    "messageformat": "نسخه جدید Tellomi را در تلفنتان نصب کنید"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "روی «بازیابی یا انتقال» ضربه بزنید و «پشتیبان‌گیری در دستگاه» را انتخاب کنید"
@@ -6635,13 +6635,13 @@
     "messageformat": "مسدودشده در {blockedAt}"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "پشتیبان‌های امن سیگنال"
+    "messageformat": "پشتیبان‌های امن Tellomi"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "پشتیبان‌گیری خودکار با سرویس ذخیره‌سازی سرتاسر رمزگذاری‌شده و امن سیگنال. از تلفن خود شروع کنید. <learnMoreLink>اطلاعات بیشتر</learnMoreLink>."
+    "messageformat": "پشتیبان‌گیری خودکار با سرویس ذخیره‌سازی سرتاسر رمزگذاری‌شده و امن Tellomi. از تلفن خود شروع کنید. <learnMoreLink>اطلاعات بیشتر</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "از تاریخچه پیام خود پشتیبان‌گیری کنید تا بعد از خرید تلفن جدید یا نصب مجدد سیگنال، هرگز اطلاعات خود را از دست ندهید."
+    "messageformat": "از تاریخچه پیام خود پشتیبان‌گیری کنید تا بعد از خرید تلفن جدید یا نصب مجدد Tellomi، هرگز اطلاعات خود را از دست ندهید."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "جزئیات پشتیبان"
@@ -6671,13 +6671,13 @@
     "messageformat": "اشتراک لغو شد"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "می‌توانید اشتراک «پشتیبان‌گیری امن سیگنال» خود را در تلفنتان مدیریت یا لغو کنید."
+    "messageformat": "می‌توانید اشتراک «پشتیبان‌گیری امن Tellomi» خود را در تلفنتان مدیریت یا لغو کنید."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "می‌توانید «پشتیبان‌گیری امن سیگنال» را در تلفنتان مدیریت کنید یا ارتقا دهید."
+    "messageformat": "می‌توانید «پشتیبان‌گیری امن Tellomi» را در تلفنتان مدیریت کنید یا ارتقا دهید."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "می‌توانید اشتراک «پشتیبان‌گیری امن سیگنال» خود را در تلفنتان مدیریت یا تمدید کنید."
+    "messageformat": "می‌توانید اشتراک «پشتیبان‌گیری امن Tellomi» خود را در تلفنتان مدیریت یا تمدید کنید."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "آخرین پشتیبان‌گیری"
@@ -6695,7 +6695,7 @@
     "messageformat": "یک نسخه پشتیبان سرتاسر رمزگذاری‌شده ایجاد کنید که بتوانید آن را در تلفن خود بازیابی کنید. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "برای بازیابی نسخه پشتیبان، نسخه جدید سیگنال را در تلفن خود نصب کنید. برنامه را باز کنید و و روی «بازیابی یا انتقال» ضربه بزنید. <learnMoreLink>اطلاعات بیشتر.</learnMoreLink>"
+    "messageformat": "برای بازیابی نسخه پشتیبان، نسخه جدید Tellomi را در تلفن خود نصب کنید. برنامه را باز کنید و و روی «بازیابی یا انتقال» ضربه بزنید. <learnMoreLink>اطلاعات بیشتر.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "انتخاب پوشه"
@@ -6731,7 +6731,7 @@
     "messageformat": "رمز بازیابی شما"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "این رمز برای بازیابی حساب و اطلاعات شما ضروری است. آن را در جایی امن نگهداری کنید و هرگز آن را با کسی به اشتراک نگذارید. سیگنال هرگز برای رمز بازیابی به شما پیام نمی‌دهد. <learnMoreLink>اطلاعات بیشتر.</learnMoreLink>"
+    "messageformat": "این رمز برای بازیابی حساب و اطلاعات شما ضروری است. آن را در جایی امن نگهداری کنید و هرگز آن را با کسی به اشتراک نگذارید. Tellomi هرگز برای رمز بازیابی به شما پیام نمی‌دهد. <learnMoreLink>اطلاعات بیشتر.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "رمز بازیابی را به اشتراک نگذارید"
@@ -6746,7 +6746,7 @@
     "messageformat": "رمز را به اشتراک نگذارید"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "رمز بازیابی خود را با کسی به اشتراک نگذارید. با این کار می‌توانند کنترل حسابتان را به دست بگیرند. سیگنال هرگز برای رمز بازیابی <strong>به شما پیام نمی‌دهد.</strong> هیچ‌وقت به گفتگویی که وانمود می‌کند سیگنال است پاسخ ندهید. <learnMoreLink>اطلاعات بیشتر.</learnMoreLink>"
+    "messageformat": "رمز بازیابی خود را با کسی به اشتراک نگذارید. با این کار می‌توانند کنترل حسابتان را به دست بگیرند. Tellomi هرگز برای رمز بازیابی <strong>به شما پیام نمی‌دهد.</strong> هیچ‌وقت به گفتگویی که وانمود می‌کند Tellomi است پاسخ ندهید. <learnMoreLink>اطلاعات بیشتر.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "رمز بازیابی خود را تأیید کنید"
@@ -6758,7 +6758,7 @@
     "messageformat": "در مراقبت از کلید خود بکوشید"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "اگر کلید خود را گم کنید، سیگنال نمی‌تواند در بازیابی نسخه پشتیبان به شما کمک کند. آن را در مکانی امن و مطمئن نگهداری کنید و با دیگران به اشتراک نگذارید."
+    "messageformat": "اگر کلید خود را گم کنید، Tellomi نمی‌تواند در بازیابی نسخه پشتیبان به شما کمک کند. آن را در مکانی امن و مطمئن نگهداری کنید و با دیگران به اشتراک نگذارید."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "ادامه"
@@ -6809,7 +6809,7 @@
     "messageformat": "برای فعال‌سازی پشتیبان‌گیری، احراز هویت لازم است."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "این اقدام قابل‌تکمیل نیست، زیرا احراز هویت سیستم انجام نشد. لطفاً دوباره تلاش کنید یا برنامه سیگنال را در دستگاه همراهتان باز کنید و برای مشاهده رمز بازیابی، به «تنظیمات پشتیبان» بروید."
+    "messageformat": "این اقدام قابل‌تکمیل نیست، زیرا احراز هویت سیستم انجام نشد. لطفاً دوباره تلاش کنید یا برنامه Tellomi را در دستگاه همراهتان باز کنید و برای مشاهده رمز بازیابی، به «تنظیمات پشتیبان» بروید."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "هنگام درخواست احراز هویت سیستم برای این اقدام، خطایی رخ داد."
@@ -6839,7 +6839,7 @@
     "messageformat": "شماره تلفن"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "انتخاب کنید که چه‌کسی بتواند شماره تلفن شما را ببیند و از طریق شماره تلفن‌تان در سیگنال با شما تماس بگیرد."
+    "messageformat": "انتخاب کنید که چه‌کسی بتواند شماره تلفن شما را ببیند و از طریق شماره تلفن‌تان در Tellomi با شما تماس بگیرد."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "تغییر…"
@@ -6869,10 +6869,10 @@
     "messageformat": "چه‌کسی می‌تواند من را با شماره تلفنم پیدا کند"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "هر کسی که شماره تلفن شما را داشته باشد خواهد دید که شما در سیگنال هستید و می‌تواند گفتگو با شما شروع به گفتگو کند."
+    "messageformat": "هر کسی که شماره تلفن شما را داشته باشد خواهد دید که شما در Tellomi هستید و می‌تواند گفتگو با شما شروع به گفتگو کند."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "هیچ‌کسی قادر به مشاهدۀ آنلاین بودن شما در سیگنال نیست، مگر اینکه به کسی پیام دهید یا گفتگوی فعلی با او داشته باشید."
+    "messageformat": "هیچ‌کسی قادر به مشاهدۀ آنلاین بودن شما در Tellomi نیست، مگر اینکه به کسی پیام دهید یا گفتگوی فعلی با او داشته باشید."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "همه"
@@ -6884,7 +6884,7 @@
     "messageformat": "مطمئن هستید؟"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "اگر «{settingTitle}» را به «{nobodyLabel}» تغییر دهید، افراد سخت‌تر می‌توانند شما را در سیگنال پیدا کنند."
+    "messageformat": "اگر «{settingTitle}» را به «{nobodyLabel}» تغییر دهید، افراد سخت‌تر می‌توانند شما را در Tellomi پیدا کنند."
   },
   "icu:Preferences--messaging": {
     "messageformat": "‌پیام‌رسانی"
@@ -6947,7 +6947,7 @@
     "messageformat": "تنظیم"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "برای اعمال کردن، سیگنال را بازراه‌اندازی کنید"
+    "messageformat": "برای اعمال کردن، Tellomi را بازراه‌اندازی کنید"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "برای تغییر زبان، برنامه باید بازراه‌اندازی شود."
@@ -6962,13 +6962,13 @@
     "messageformat": "امنیت صفحه‌نمایش"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "برای افزایش حریم خصوصی، از گرفتن اسکرین‌شات از سیگنال در این رایانه جلوگیری می‌کند."
+    "messageformat": "برای افزایش حریم خصوصی، از گرفتن اسکرین‌شات از Tellomi در این رایانه جلوگیری می‌کند."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "امنیت صفحه‌نمایش غیرفعال شود؟"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "اگر غیرفعال شود، ممکن است «مایکروسافت ویندوز» بتواند از سیگنال اسکرین‌شات بگیرد و از آن برای قابلیت‌هایی استفاده کند که ممکن است خصوصی نباشند."
+    "messageformat": "اگر غیرفعال شود، ممکن است «مایکروسافت ویندوز» بتواند از Tellomi اسکرین‌شات بگیرد و از آن برای قابلیت‌هایی استفاده کند که ممکن است خصوصی نباشند."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "غیرفعال کردن"
@@ -6989,25 +6989,25 @@
     "messageformat": "برای رفتن به App Store کلیک کنید"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "باز کردن سیگنال روی گوشی"
+    "messageformat": "باز کردن Tellomi روی گوشی"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "اگر سیگنال را در تلفن خود باز نکنید، حساب شما به‌زودی حذف خواهد شد. اگر این کار را با موفقیت انجام داده باشید، این پیام از بین خواهد رفت. <learnMoreLink>اطلاعات بیشتر</learnMoreLink>"
+    "messageformat": "اگر Tellomi را در تلفن خود باز نکنید، حساب شما به‌زودی حذف خواهد شد. اگر این کار را با موفقیت انجام داده باشید، این پیام از بین خواهد رفت. <learnMoreLink>اطلاعات بیشتر</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "سیگنال را روی گوشی خود باز کنید تا حسابتان فعال بماند"
+    "messageformat": "Tellomi را روی گوشی خود باز کنید تا حسابتان فعال بماند"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "بیشتر بدانید"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "سیگنال با مشکلات فنی روبروست. به سختی تلاش میکنیم تا سرویس را تا حد ممکن سریعا برگردانیم."
+    "messageformat": "Tellomi با مشکلات فنی روبروست. به سختی تلاش میکنیم تا سرویس را تا حد ممکن سریعا برگردانیم."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "به‌روزرسانی لازم است"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "برای تکمیل همگام‌سازی پیام‌های خود، اکنون سیگنال دسک‌تاپ را به‌روزرسانی کنید."
+    "messageformat": "برای تکمیل همگام‌سازی پیام‌های خود، اکنون Tellomi دسک‌تاپ را به‌روزرسانی کنید."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "به‌روزرسانی"
@@ -7016,19 +7016,19 @@
     "messageformat": "به‌روزرسانی لازم است"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "برای ادامه استفاده از سیگنال، باید به جدیدترین نسخه به‌روزرسانی کنید."
+    "messageformat": "برای ادامه استفاده از Tellomi، باید به جدیدترین نسخه به‌روزرسانی کنید."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "دانلود {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "برای نصب نسخه به‌روزرسانی، سیگنال را بازراه‌اندازی کنید."
+    "messageformat": "برای نصب نسخه به‌روزرسانی، Tellomi را بازراه‌اندازی کنید."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "سیگنال دسکتاپ به‌روزرسانی نشد، اما نسخه جدیدی در دسترس است. به {downloadUrl} بروید و نسخه جدید را به‌طور دستی نصب کنید، سپس یا با پشتیبانی تماس بگیرید یا درباره این مشکل، اشکالی را گزارش کنید."
+    "messageformat": "Tellomi دسکتاپ به‌روزرسانی نشد، اما نسخه جدیدی در دسترس است. به {downloadUrl} بروید و نسخه جدید را به‌طور دستی نصب کنید، سپس یا با پشتیبانی تماس بگیرید یا درباره این مشکل، اشکالی را گزارش کنید."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "لوگوی سیگنال"
+    "messageformat": "لوگوی Tellomi"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "بازگشت"
@@ -7064,7 +7064,7 @@
     "messageformat": "برای ادامه، تأیید کنید که انسان هستید"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "برای کمک به جلوگیری از هرزنگاری در سیگنال، لطفاً تأیید را کامل کنید. پس از تایید، می‌توانید به ثبت‌نام ادامه دهید."
+    "messageformat": "برای کمک به جلوگیری از هرزنگاری در Tellomi، لطفاً تأیید را کامل کنید. پس از تایید، می‌توانید به ثبت‌نام ادامه دهید."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "تلاش دوباره برای تأیید"
@@ -7304,7 +7304,7 @@
     "messageformat": "پین نادرست"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "شانس شما برای حدس رمزتان تمام شد، ولی کماکان می توانید با ایجاد یک رمز جدید به حساب سیگنال خود دسترسی داشته باشید. برای امنیت و حریم خصوصی شما، حساب کاربری شما بدون اطلاعات پروفایل و تنظیماتتان بازیابی خواهد شد."
+    "messageformat": "شانس شما برای حدس رمزتان تمام شد، ولی کماکان می توانید با ایجاد یک رمز جدید به حساب Tellomi خود دسترسی داشته باشید. برای امنیت و حریم خصوصی شما، حساب کاربری شما بدون اطلاعات پروفایل و تنظیماتتان بازیابی خواهد شد."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "ایجاد پین جدید"
@@ -7334,7 +7334,7 @@
     "messageformat": "پین خود را ایجاد کنید"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "با کمک پین می‌توانید حسابتان را بازیابی کنید و اطلاعات حساب سیگنال‌تان را رمزگذاری‌شده نگه دارید. <learnMore>اطلاعات بیشتر</learnMore>"
+    "messageformat": "با کمک پین می‌توانید حسابتان را بازیابی کنید و اطلاعات حساب Tellomi‌تان را رمزگذاری‌شده نگه دارید. <learnMore>اطلاعات بیشتر</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "پین خود را ایجاد کنید"
@@ -7358,7 +7358,7 @@
     "messageformat": "هشدار"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "اگر پین را غیرفعال کنید، هنگام ثبت‌نام مجدد در سیگنال، تمامی داده‌ها را از دست خواهید داد. وقتی پین غیرفعال است، نمی‌توانید قفل ثبت‌نام را روشن کنید."
+    "messageformat": "اگر پین را غیرفعال کنید، هنگام ثبت‌نام مجدد در Tellomi، تمامی داده‌ها را از دست خواهید داد. وقتی پین غیرفعال است، نمی‌توانید قفل ثبت‌نام را روشن کنید."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "غیرفعال کردن پین"
@@ -7367,10 +7367,10 @@
     "messageformat": "لغو"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "درباره پین‌های سیگنال"
+    "messageformat": "درباره پین‌های Tellomi"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "پین‌ها اطلاعات ذخیره‌شده شما نزد سیگنال را رمزگذاری‌شده نگه می‌دارند تا فقط شما به آن دسترسی داشته باشید. نمایه، تنظیمات و مخاطبان شما هنگام نصب دوبارۀ سیگنال بازیابی می‌شوند."
+    "messageformat": "پین‌ها اطلاعات ذخیره‌شده شما نزد Tellomi را رمزگذاری‌شده نگه می‌دارند تا فقط شما به آن دسترسی داشته باشید. نمایه، تنظیمات و مخاطبان شما هنگام نصب دوبارۀ Tellomi بازیابی می‌شوند."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "بیشتر بدانید"
@@ -7403,7 +7403,7 @@
     "messageformat": "به‌روزرسانی لازم است"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "برای ادامه ثبت‌نام، لطفاً به جدیدترین نسخه سیگنال به‌روزرسانی کنید."
+    "messageformat": "برای ادامه ثبت‌نام، لطفاً به جدیدترین نسخه Tellomi به‌روزرسانی کنید."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "به‌روزرسانی"
@@ -7433,7 +7433,7 @@
     "messageformat": "ارتباط با پشتیبانی"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "سیگنال بسته نمی شود",
+    "messageformat": "Tellomi بسته نمی شود",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7453,14 +7453,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "نسخه جدیدتری از سیگنال نصب شده است. مطمئن هستید که می‌خواهید ادامه دهید؟",
+    "messageformat": "نسخه جدیدتری از Tellomi نصب شده است. مطمئن هستید که می‌خواهید ادامه دهید؟",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "برنامه خراب شد"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "سیگنال بعد از خرابی بازراه‌اندازی شد. می‌توانید گزارش خرابی را برای کمک به سیگنال جهت تحقیق روی این موضوع ارسال کنید."
+    "messageformat": "Tellomi بعد از خرابی بازراه‌اندازی شد. می‌توانید گزارش خرابی را برای کمک به Tellomi جهت تحقیق روی این موضوع ارسال کنید."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "ارسال"
@@ -7565,7 +7565,7 @@
     "messageformat": "روی « {buttonName} » در زیر کلیک کنید"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "«سیگنال» را روشن کنید"
+    "messageformat": "«Tellomi» را روشن کنید"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "رفتن به تنظیمات"
@@ -7661,7 +7661,7 @@
     "messageformat": "بیشتر بدانید"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "آشنایان در سیگنال"
+    "messageformat": "آشنایان در Tellomi"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} افرادی هستند که به دلایل زیر تصمیم گرفته‌اید به آن‌ها اعتماد کنید:"
@@ -7802,7 +7802,7 @@
     "messageformat": "استوری پنهان شود از"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "همه آشنایان در سیگنال"
+    "messageformat": "همه آشنایان در Tellomi"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "همه به‌جز..."
@@ -7880,7 +7880,7 @@
     "messageformat": "حریم شخصی استوری من"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "انتخاب کنید که کدام یک از آشنایان در سیگنال بتواند استوری شما را ببیند. همیشه می‌توانید این را در تنظیمات حریم شخصی تغییر دهید. <learnMoreLink>اطلاعات بیشتر.</learnMoreLink>"
+    "messageformat": "انتخاب کنید که کدام یک از آشنایان در Tellomi بتواند استوری شما را ببیند. همیشه می‌توانید این را در تنظیمات حریم شخصی تغییر دهید. <learnMoreLink>اطلاعات بیشتر.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "پاک کردن استوری"
@@ -7949,7 +7949,7 @@
     "messageformat": "بارگیری پیوست"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "رسیدهای بازدید را فعال کنید تا بتوانید ببینید چه کسی از استوری‌های شما بازدید کرده است. برنامه سیگنال را روی دستگاه تلفن همراه خود باز کنید و به «تنظیمات > استوری‌ها» بروید"
+    "messageformat": "رسیدهای بازدید را فعال کنید تا بتوانید ببینید چه کسی از استوری‌های شما بازدید کرده است. برنامه Tellomi را روی دستگاه تلفن همراه خود باز کنید و به «تنظیمات > استوری‌ها» بروید"
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "هنوز پاسخی داده نشده است"
@@ -8135,7 +8135,7 @@
     "messageformat": "پیوند و کد QR شما بازنشانی شده و نام کاربری شما {username} است"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "برای گفتگو با من در سیگنال، این کد QR را با تلفن خود اسکن کنید.",
+    "messageformat": "برای گفتگو با من در Tellomi، این کد QR را با تلفن خود اسکن کنید.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8211,7 +8211,7 @@
     "messageformat": "رد کردن"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "پین سیگنال خود را تأیید کنید"
+    "messageformat": "پین Tellomi خود را تأیید کنید"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "ما هر از گاهی از شما می خواهیم که رمز خود را وارد کنید تا آن را فراموش نکنید."
@@ -8223,7 +8223,7 @@
     "messageformat": "حالا نه"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "پین سیگنال خود را وارد کنید"
+    "messageformat": "پین Tellomi خود را وارد کنید"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "برای کمک به شما در به خاطر سپردن پین خود ، از شما می خواهیم که به صورت دوره ای آن را وارد کنید. با گذشت زمان کمتر سؤال خواهیم کرد."
@@ -8241,13 +8241,13 @@
     "messageformat": "پین درست است. بعداً دوباره به شما یادآوری خواهیم کرد."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "سیگنال دسکتاپ به‌زودی دیگر از نسخه {OS} رایانه شما پشتیبانی نخواهد کرد. برای ادامه استفاده از سیگنال، سیستم‌عامل رایانه خود را تا تاریخ {expirationDate} به‌روزرسانی کنید. <learnMoreLink>اطلاعات بیشتر</learnMoreLink>"
+    "messageformat": "Tellomi دسکتاپ به‌زودی دیگر از نسخه {OS} رایانه شما پشتیبانی نخواهد کرد. برای ادامه استفاده از Tellomi، سیستم‌عامل رایانه خود را تا تاریخ {expirationDate} به‌روزرسانی کنید. <learnMoreLink>اطلاعات بیشتر</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "سیگنال دسکتاپ دیگر روی این رایانه کار نمی‌کند. برای استفاده دوباره از سیگنال دسکتاپ، نسخه {OS} رایانه خود را به‌روزرسانی کنید. <learnMoreLink>اطلاعات بیشتر</learnMoreLink>"
+    "messageformat": "Tellomi دسکتاپ دیگر روی این رایانه کار نمی‌کند. برای استفاده دوباره از Tellomi دسکتاپ، نسخه {OS} رایانه خود را به‌روزرسانی کنید. <learnMoreLink>اطلاعات بیشتر</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "سیگنال دسکتاپ دیگر روی این رایانه کار نمی‌کند. برای استفاده دوباره از سیگنال دسکتاپ، نسخه {OS} رایانه خود را به‌روزرسانی کنید."
+    "messageformat": "Tellomi دسکتاپ دیگر روی این رایانه کار نمی‌کند. برای استفاده دوباره از Tellomi دسکتاپ، نسخه {OS} رایانه خود را به‌روزرسانی کنید."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "ویرایش‌شده"
@@ -8418,7 +8418,7 @@
     "messageformat": "کپی کردن پیوند"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "اشتراک‌گذاری پیوند از طریق سیگنال"
+    "messageformat": "اشتراک‌گذاری پیوند از طریق Tellomi"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "حذف پیوند"
@@ -8481,13 +8481,13 @@
     "messageformat": "برای تغییر این تنظیمات، «چه‌کسی می‌تواند شمارۀ من را ببیند» را روی «هیچ‌کس» تنظیم کنید."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "نام نمایه در سیگنال توسط دارنده حساب انتخاب می‌شود:"
+    "messageformat": "نام نمایه در Tellomi توسط دارنده حساب انتخاب می‌شود:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "سیگنال نمی‌تواند نام‌ها و عکس‌ها را تأیید کند"
+    "messageformat": "Tellomi نمی‌تواند نام‌ها و عکس‌ها را تأیید کند"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "سیگنال هیچ‌وقت برای کد ثبت‌نام، پین یا رمز بازیابی با شما تماس نمی‌گیرد"
+    "messageformat": "Tellomi هیچ‌وقت برای کد ثبت‌نام، پین یا رمز بازیابی با شما تماس نمی‌گیرد"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "مراقب حساب‌هایی باشید که خود را به جای دیگران جا می‌زنند"
@@ -8517,7 +8517,7 @@
     "messageformat": "با افتخار، غیرانتفاعی هستیم"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "برای حمایت از پیام‌رسانی خصوصی، کمک مالی اهدا کنید. سیگنال را مستقل و بدون تبلیغات نگه دارید. <readMoreLink>بیشتر بخوانید</readMoreLink>"
+    "messageformat": "برای حمایت از پیام‌رسانی خصوصی، کمک مالی اهدا کنید. Tellomi را مستقل و بدون تبلیغات نگه دارید. <readMoreLink>بیشتر بخوانید</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "اهدای کمک مالی"
@@ -8553,7 +8553,7 @@
     "messageformat": "سیگنال یک شرکت غیرانتفاعی است. اهداهای داخل ایالات متحده مالیات‌پذیر هستند."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "آیکون قلب به‌سبک لوگوی سیگنال"
+    "messageformat": "آیکون قلب به‌سبک لوگوی Tellomi"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "باشه"
@@ -8568,7 +8568,7 @@
     "messageformat": "پرسش‌های متداول حامیان"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "رسیدها بین دستگاه‌ها همگام‌سازی نمی‌شوند. اگر سیگنال را دوباره نصب کرده باشید، رسید کمک‌های مالی قبلی در دسترس نخواهد بود."
+    "messageformat": "رسیدها بین دستگاه‌ها همگام‌سازی نمی‌شوند. اگر Tellomi را دوباره نصب کرده باشید، رسید کمک‌های مالی قبلی در دسترس نخواهد بود."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "رسیدی موجود نیست"
@@ -8598,7 +8598,7 @@
     "messageformat": "کارت اعتباری یا دبیت کارت"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "مشخصات کارت اعتباری یا نقدی خود را وارد کنید. سیگنال اطلاعات شخصی شما را جمع آوری یا ذخیره نمی‌کند. <learnMoreLink>اطلاعات بیشتر</learnMoreLink>"
+    "messageformat": "مشخصات کارت اعتباری یا نقدی خود را وارد کنید. Tellomi اطلاعات شخصی شما را جمع آوری یا ذخیره نمی‌کند. <learnMoreLink>اطلاعات بیشتر</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "شماره کارت"
@@ -8610,7 +8610,7 @@
     "messageformat": "سال/ماه"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "{formattedCurrencyAmount} به سیگنال اهدا کنید"
+    "messageformat": "{formattedCurrencyAmount} به Tellomi اهدا کنید"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "شماره کارت نامعتبر است"
@@ -8628,7 +8628,7 @@
     "messageformat": "کد بیش از حد کوتاه است"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "نشان ارتقاء سیگنال را به مدت ۳۰ روز دریافت کنید"
+    "messageformat": "نشان ارتقاء Tellomi را به مدت ۳۰ روز دریافت کنید"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "حداقل مبلغ اهدای مالی: {formattedCurrencyAmount}"
@@ -8712,7 +8712,7 @@
     "messageformat": "اهدای مالی باموفقیت انجام شد، اما نتوانستیم تنظیمات نشان شما را به‌روزرسانی کنیم"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "برای به‌روزرسانی تنظیمات نشان خود در دستگاه تلفن همراهتان، به «تنظیمات > اهدای کمک مالی به سیگنال > نشان‌ها» بروید."
+    "messageformat": "برای به‌روزرسانی تنظیمات نشان خود در دستگاه تلفن همراهتان، به «تنظیمات > اهدای کمک مالی به Tellomi > نشان‌ها» بروید."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "اختلال در کمک مالی"
@@ -8769,7 +8769,7 @@
     "messageformat": "خطایی در اهدای مالی شما رخ داده است"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "ممکن است اهدای مالی شما پردازش نشده باشد. برای بررسی رسیدهای خود و تأیید، روی «اهدای کمک مالی به سیگنال» و سپس «رسید اهدا» کلیک کنید."
+    "messageformat": "ممکن است اهدای مالی شما پردازش نشده باشد. برای بررسی رسیدهای خود و تأیید، روی «اهدای کمک مالی به Tellomi» و سپس «رسید اهدا» کلیک کنید."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "دوباره امتحان کنید یا برای کمک در تکمیل اهدای مالی‌تان، گزارش اشکال‌زدایی را به بخش «پشتیبانی» ارائه دهید. گزارش‌های اشکال‌زدایی به ما کمک می‌کنند که مشکل را شناسایی و رفع کنیم و حاوی اطلاعاتی که منجر به شناسایی افراد شود نیست."
@@ -8811,19 +8811,19 @@
     "messageformat": "از حمایت شما سپاسگزاریم!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "شما یک نشان اهداکننده از سیگنال به‌دست آورده‌اید! برای نشان دادن حمایت خود، آن را در نمایه خود نمایش دهید."
+    "messageformat": "شما یک نشان اهداکننده از Tellomi به‌دست آورده‌اید! برای نشان دادن حمایت خود، آن را در نمایه خود نمایش دهید."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "نمایش روی پروفایل"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "می‌توانید این را در دستگاه تلفن همراهتان در «تنظیمات ← اهدای کمک مالی به سیگنال ← نشان‌ها» تنظیم کنید."
+    "messageformat": "می‌توانید این را در دستگاه تلفن همراهتان در «تنظیمات ← اهدای کمک مالی به Tellomi ← نشان‌ها» تنظیم کنید."
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "تماستان چطور بود؟"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "این کمک می‌کند تا تماس‌های سیگنال را بهبود دهیم. اطلاعات شخصی قابل‌شناسایی ذخیره نخواهد شد."
+    "messageformat": "این کمک می‌کند تا تماس‌های Tellomi را بهبود دهیم. اطلاعات شخصی قابل‌شناسایی ذخیره نخواهد شد."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "مشکل داشت"
@@ -8874,7 +8874,7 @@
     "messageformat": "شرح مشکلات"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "لطفاً هرگونه جزئیات مرتبط با مشکل را ارائه دهید. هرچه که با ما به اشتراک می‌گذارید خصوصی خواهد ماند و فقط برای کمک به بهبود تماس‌ها در سیگنال استفاده خواهد شد."
+    "messageformat": "لطفاً هرگونه جزئیات مرتبط با مشکل را ارائه دهید. هرچه که با ما به اشتراک می‌گذارید خصوصی خواهد ماند و فقط برای کمک به بهبود تماس‌ها در Tellomi استفاده خواهد شد."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "لطفاً مشکلتان را شرح دهید"
@@ -8940,7 +8940,7 @@
     "messageformat": "برای پیوند دادن دوباره، باید کد QR را اسکن کنید."
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "اگر از «پشتیبان‌گیری امن سیگنال» پولی استفاده می‌کنید، تمام رسانه‌های شما منتقل خواهند شد. در غیر این صورت، رسانه‌های ۴۵ روز اخیرتان منتقل خواهند شد."
+    "messageformat": "اگر از «پشتیبان‌گیری امن Tellomi» پولی استفاده می‌کنید، تمام رسانه‌های شما منتقل خواهند شد. در غیر این صورت، رسانه‌های ۴۵ روز اخیرتان منتقل خواهند شد."
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "انتقال"
@@ -8952,14 +8952,14 @@
     "messageformat": "پاک کردن همه اطلاعات؟"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "همه داده‌های فعلی در سیگنال دسک‌تاپ حذف خواهند شد. سپس می‌توانید یک کد QR را اسکن کرده و تاریخچه پیام‌های خود را از تلفنتان منتقل کنید."
+    "messageformat": "همه داده‌های فعلی در Tellomi دسک‌تاپ حذف خواهند شد. سپس می‌توانید یک کد QR را اسکن کرده و تاریخچه پیام‌های خود را از تلفنتان منتقل کنید."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "این نسخه شامل شماری از بهینه سازی های کوچک و رفع عیب برای تداوم اجرای راحت سیگنال می باشد",
+    "messageformat": "این نسخه شامل شماری از بهینه سازی های کوچک و رفع عیب برای تداوم اجرای راحت Tellomi می باشد",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "تغییرات کوچک، رفع اشکالات و بهبود بیشتر عملکرد. از شما بابت استفاده از سیگنال سپاسگزاریم!",
+    "messageformat": "تغییرات کوچک، رفع اشکالات و بهبود بیشتر عملکرد. از شما بابت استفاده از Tellomi سپاسگزاریم!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -8979,7 +8979,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "تغییرات کوچک، رفع اشکالات و بهبود عملکرد. بابت استفاده از سیگنال سپاسگزاریم!",
+    "messageformat": "تغییرات کوچک، رفع اشکالات و بهبود عملکرد. بابت استفاده از Tellomi سپاسگزاریم!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.24--1": {

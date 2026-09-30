@@ -1587,10 +1587,10 @@
     "messageformat": "আরও জানুন"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "আপনার ফোনে সিগন্যাল অ্যাপে এই কোডটি স্ক্যান করুন"
+    "messageformat": "আপনার ফোনে Tellomi অ্যাপে এই কোডটি স্ক্যান করুন"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "আপনার ফোনে সিগন্যাল খুলুন"
+    "messageformat": "আপনার ফোনে Tellomi খুলুন"
   },
   "icu:Install__instructions__2": {
     "messageformat": "ট্যাপ করে {settings}-এ যান, তারপর ট্যাপ করুন {linkedDevices}"
@@ -2079,10 +2079,10 @@
     "messageformat": "Tellomi {person} কে রিং করবে"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "সিগন্যাল {first} এবং {second} কে রিং করবে"
+    "messageformat": "Tellomi {first} এবং {second} কে রিং করবে"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "সিগন্যাল কল করবে {first}, {second}, and {third}"
+    "messageformat": "Tellomi কল করবে {first}, {second}, and {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
     "messageformat": "{others, plural, one {Tellomi {first}, {second}, এবং অন্য {others,number} জনকে রিং করবে} other {Tellomi {first}, {second}, এবং অন্য {others,number} জনকে রিং করবে}}"
@@ -6989,7 +6989,7 @@
     "messageformat": "App Store-এ যেতে ক্লিক করুন"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "আপনার ফোনে সিগন্যাল খুলুন"
+    "messageformat": "আপনার ফোনে Tellomi খুলুন"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
     "messageformat": "আপনি আপনার ফোনে Tellomi না খুললে আপনার অ্যাকাউন্ট শীঘ্রই মুছে ফেলা হবে। আপনি যদি এটি সফলভাবে করেন তবে এই মেসেজটি চলে যাবে। <learnMoreLink>আরো জানুন</learnMoreLink>"
@@ -8955,7 +8955,7 @@
     "messageformat": "Tellomi Desktop-এ থাকা সব বর্তমান ডেটা মুছে ফেলা হবে। এরপর আপনি একটি QR কোড স্ক্যান করে আপনার ফোন থেকে মেসেজের ইতিহাস ট্রান্সফার করতে পারবেন।"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "সিগন্যালকে মসৃণভাবে চলমান রাখতে এই সংস্করণে অনেকগুলি ছোটখাট পরিবর্তন রয়েছে এবং বাগ সংশোধন করা হয়েছে।",
+    "messageformat": "Tellomi-কে মসৃণভাবে চলমান রাখতে এই সংস্করণে অনেকগুলি ছোটখাট পরিবর্তন রয়েছে এবং বাগ সংশোধন করা হয়েছে।",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {

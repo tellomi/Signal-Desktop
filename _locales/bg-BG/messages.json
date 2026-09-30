@@ -837,7 +837,7 @@
     "messageformat": "Създател на пакета със стикери"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Относно Сигнал Десктоп"
+    "messageformat": "Относно Tellomi Десктоп"
   },
   "icu:screenShareWindow": {
     "messageformat": "Сподели екрана"
@@ -855,7 +855,7 @@
     "messageformat": "Изход"
   },
   "icu:signalDesktop": {
-    "messageformat": "Сигнал Десктоп"
+    "messageformat": "Tellomi Десктоп"
   },
   "icu:search": {
     "messageformat": "Търсене"
@@ -909,7 +909,7 @@
     "messageformat": "Намиране по телефонен номер"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Добре дошли в Сигнал"
+    "messageformat": "Добре дошли в Tellomi"
   },
   "icu:whatsNew": {
     "messageformat": "Вижте {whatsNew} в тази актуализация"
@@ -2310,7 +2310,7 @@
     "messageformat": "Частично изтрито, кликнете за повече информация"
   },
   "icu:expiredWarning": {
-    "messageformat": "Тази версия на Сигнал за компютър вече е остаряла. Моля, обновете до последната версия, за да можете да изпращате съобщения."
+    "messageformat": "Тази версия на Tellomi за компютър вече е остаряла. Моля, обновете до последната версия, за да можете да изпращате съобщения."
   },
   "icu:upgrade": {
     "messageformat": "Кликнете, за да отидете на tellomi.app/download"
@@ -2322,7 +2322,7 @@
     "messageformat": "Импортиране на контакти"
   },
   "icu:syncExplanation": {
-    "messageformat": "Вкарване на всички Сигнал групи и контакти от Вашето мобилно устройство."
+    "messageformat": "Вкарване на всички Tellomi групи и контакти от Вашето мобилно устройство."
   },
   "icu:syncNow": {
     "messageformat": "Вкарай сега"
@@ -5617,7 +5617,7 @@
     "messageformat": "Потвърдете, за да продължите да пишете"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "С цел да предотвратим спам в Сигнал, моля потвърдете."
+    "messageformat": "С цел да предотвратим спам в Tellomi, моля потвърдете."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "След потвърждение ще можете да продължите да пишете. Всички задържани съобщения ще бъдат автоматично изпратени."

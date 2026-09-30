@@ -1029,10 +1029,10 @@
     "messageformat": "ئۈنسىز"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "سىگنال يېڭىلىنالمىدى. <retryUpdateButton>يېڭىلاشنى قايتا سىناڭ</retryUpdateButton> ياكى {url} نى زىيارەت قىلىپ قولدا قاچىلاڭ. ئاندىن ، بۇ مەسىلە ھەققىدە <contactSupportLink>ياردەم ئۈچۈن ئالاقىلىشىڭ</contactSupportLink>"
+    "messageformat": "Tellomi يېڭىلىنالمىدى. <retryUpdateButton>يېڭىلاشنى قايتا سىناڭ</retryUpdateButton> ياكى {url} نى زىيارەت قىلىپ قولدا قاچىلاڭ. ئاندىن ، بۇ مەسىلە ھەققىدە <contactSupportLink>ياردەم ئۈچۈن ئالاقىلىشىڭ</contactSupportLink>"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "سىگنال يېڭىلىنالمىدى. قولدا قاچىلاش ئۈچۈن {url} نى زىيارەت قىلىڭ. ئاندىن ، بۇ مەسىلە ھەققىدە <contactSupportLink>ياردەم ئۈچۈن ئالاقىلىشىڭ</contactSupportLink>"
+    "messageformat": "Tellomi يېڭىلىنالمىدى. قولدا قاچىلاش ئۈچۈن {url} نى زىيارەت قىلىڭ. ئاندىن ، بۇ مەسىلە ھەققىدە <contactSupportLink>ياردەم ئۈچۈن ئالاقىلىشىڭ</contactSupportLink>"
   },
   "icu:readOnlyVolume": {
     "messageformat": "Tellomi ئۈستەليۈزى نەشرى macOS نىڭ ئايرىۋېتىلگەن رايونىدا بولۇشى مۇمكىن، ئاپتوماتىك يېڭىلىغىلى بولمايدۇ. «{app}» نى Finder دا «{folder}» گە يۆتكەڭ."
@@ -2145,7 +2145,7 @@
     "messageformat": "Tellomi {window} ئېكرانىنى ئورتاقلىشىۋاتىدۇ."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "سىگنالنىڭ ئېكران ئورتاقلىشىشى قوزغىتىلدى"
+    "messageformat": "Tellomiنىڭ ئېكران ئورتاقلىشىشى قوزغىتىلدى"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "قايتا ئۇلىنىۋاتىدۇ..."
@@ -2232,7 +2232,7 @@
     "messageformat": "بارلىق سانلىق مەلۇماتنى ئۆچۈرەمسىز؟"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Tellomi ئۈستەليۈزىنىڭ بۇ قېتىملىق نەشرىدىكى بارلىق سانلىق مەلۇمات ۋە ئۇچۇرلارنى ئۆچۈرەمسىز؟ سىگنال ھېساباتىڭىز ، تېلېفونىڭىز ياكى باشقا ئۇلانغان ئۈسكۈنىلەردىكى سانلىق مەلۇماتلىرىڭىز ئۆچۈرۈلمەيدۇ."
+    "messageformat": "Tellomi ئۈستەليۈزىنىڭ بۇ قېتىملىق نەشرىدىكى بارلىق سانلىق مەلۇمات ۋە ئۇچۇرلارنى ئۆچۈرەمسىز؟ Tellomi ھېساباتىڭىز ، تېلېفونىڭىز ياكى باشقا ئۇلانغان ئۈسكۈنىلەردىكى سانلىق مەلۇماتلىرىڭىز ئۆچۈرۈلمەيدۇ."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "بارلىق سانلىق مەلۇماتلارنى ئۇلىنىشتىن ئاجرىتىۋاتىدۇ ۋە ئۆچۈرىۋاتىدۇ…"
@@ -2355,7 +2355,7 @@
     "messageformat": "تۈنۈگۈن {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "سىگنال كەلگەن ئۇچۇرنى بىر تەرەپ قىلالمىغان بولۇشى مۇمكىن."
+    "messageformat": "Tellomi كەلگەن ئۇچۇرنى بىر تەرەپ قىلالمىغان بولۇشى مۇمكىن."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "ئۇچۇر زىيادە ئۇزۇن."
@@ -5557,7 +5557,7 @@
     "messageformat": "قۇرۇق ياكى ئۆچۈرۈلگەن ئۇچۇرلارنى ئۇلاپ يوللىغىلى بولمايدۇ"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "بۇ ئۇلانما بىلەن بىر سىگنال چاقىرىقىغا قېتىلىڭ: {url}"
+    "messageformat": "بۇ ئۇلانما بىلەن بىر Tellomi چاقىرىقىغا قېتىلىڭ: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "تەلەپلەرنى ئەستايىدىللىق بىلەن تەكشۈرۈڭ"
@@ -6641,7 +6641,7 @@
     "messageformat": "Tellomiنىڭ بىخەتەر ، ئاخىرىغىچە مەخپىيلەشتۈرۈلگەن ساقلاش مۇلازىمىتى بىلەن ئاپتوماتىك زاپاسلاش. تېلېفونىڭىزدىن باشلاڭ. <learnMoreLink>تەپسىلاتى</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "ئۇچۇرلىشىش تارىخىڭىزنى زاپاسلاڭ ، يېڭى تېلېفون ئالغاندا ياكى سىگنالنى قايتا قاچىلىغاندا سانلىق مەلۇماتنى ھەرگىز يوقىتىپ قويمايسىز."
+    "messageformat": "ئۇچۇرلىشىش تارىخىڭىزنى زاپاسلاڭ ، يېڭى تېلېفون ئالغاندا ياكى Tellomiنى قايتا قاچىلىغاندا سانلىق مەلۇماتنى ھەرگىز يوقىتىپ قويمايسىز."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "زاپاسلاش تەپسىلاتى"
@@ -6758,7 +6758,7 @@
     "messageformat": "ئاچقۇچىڭىزنى بىخەتەر ساقلاڭ"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "ئەگەر ئاچقۇچڭىزنى يوقىتىپ قويسىڭىز ، سىگنال ياردەملىشىپ زاپاسلاشنى ئەسلىگە كەلتۈرەلمەيدۇ. ئۇنى بىخەتەر جايدا ساقلاڭ ، ھەمدە باشقىلار بىلەن ئورتاقلاشماڭ."
+    "messageformat": "ئەگەر ئاچقۇچڭىزنى يوقىتىپ قويسىڭىز ، Tellomi ياردەملىشىپ زاپاسلاشنى ئەسلىگە كەلتۈرەلمەيدۇ. ئۇنى بىخەتەر جايدا ساقلاڭ ، ھەمدە باشقىلار بىلەن ئورتاقلاشماڭ."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "داۋاملاشتۇرۇش"
@@ -7007,7 +7007,7 @@
     "messageformat": "يېڭىلاش كېرەك"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "ئۇچۇرلىرىڭىزنى ماسقەدەملەش ئۈچۈن ، سىگنال ئۈستەليۈزىنى ھازىرلا يېڭىلاڭ."
+    "messageformat": "ئۇچۇرلىرىڭىزنى ماسقەدەملەش ئۈچۈن ، Tellomi ئۈستەليۈزىنى ھازىرلا يېڭىلاڭ."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "يېڭىلا"
@@ -8817,7 +8817,7 @@
     "messageformat": "ئارخىپتا كۆرسىتىش"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "بۇنى كۆچمە ئۈسكۈنىڭىزدە «تەڭشەك → سىگنالغا ئىئانە قىلىش → ئىزنەك» ئارقىلىق تەڭشىيەلەيسىز"
+    "messageformat": "بۇنى كۆچمە ئۈسكۈنىڭىزدە «تەڭشەك → Tellomiغا ئىئانە قىلىش → ئىزنەك» ئارقىلىق تەڭشىيەلەيسىز"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "تېلېفونلىشىش جەريانى قانداق بولدى؟"
