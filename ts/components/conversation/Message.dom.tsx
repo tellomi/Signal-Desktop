@@ -62,6 +62,10 @@ import { LinkPreviewTintFrame } from './LinkPreviewTintFrame.dom.tsx';
 import { getLinkPreviewDisplay } from '../../linkPreviews/linkPreviewDisplay.std.ts';
 import type { FirstPartyCardDisplayType } from '../../linkPreviews/firstPartyCard.std.ts';
 import { getFirstPartyCardDisplay } from '../../linkPreviews/firstPartyCard.std.ts';
+import {
+  getFirstPartyCardAriaLabel,
+  getLinkCardAriaLabel,
+} from '../../linkPreviews/linkCardA11y.std.ts';
 import type { WidthBreakpoint } from '../_util.std.ts';
 import { OutgoingGiftBadgeModal } from '../OutgoingGiftBadgeModal.dom.tsx';
 import { createLogger } from '../../logging/log.std.ts';
@@ -142,6 +146,12 @@ const log = createLogger('Message');
 const EXPIRATION_CHECK_MINIMUM = 2000;
 const EXPIRED_DELAY = 600;
 const GROUP_AVATAR_SIZE = AvatarSize.TWENTY_EIGHT;
+
+// What a Ctrl / Cmd click opens instead of selecting the message. Tellomi (card-visual §3.6): a
+// Tellomi object's card is a group with a button, no longer a `role=link`, but a click on it still
+// opens its link, so it is named here; a card that cannot be opened (a message request) is not.
+const OPENS_ON_CLICK_SELECTOR =
+  'a[href], [role=link], .module-message__link-preview:not(.module-message__link-preview--nonclickable)';
 const STICKER_SIZE = 200;
 const GIF_SIZE = 300;
 // Note: this needs to match the animation time
@@ -1931,8 +1941,23 @@ export class Message extends PureComponent<Props, State> {
         </div>
       </>
     );
+    // Opening the card: a click anywhere on it, and Enter or Space from the keyboard. The space
+    // bar's `key` is " " (audit S5: this used to compare it with "Space", which no key has, so
+    // only Enter worked); Space is taken here so that it does not scroll the page.
+    const openFromKeyboard = (event: KeyboardEvent): void => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.stopPropagation();
+        event.preventDefault();
+
+        openLinkInWebBrowser(first.url);
+      }
+    };
     const contents = firstPartyCard
-      ? this.#renderFirstPartyLinkCard(first, firstPartyCard)
+      ? this.#renderFirstPartyLinkCard(
+          first,
+          firstPartyCard,
+          isClickable ? openFromKeyboard : undefined
+        )
       : snapshotContents;
 
     // The link text is not shown, so the card says where it goes.
@@ -1947,27 +1972,45 @@ export class Message extends PureComponent<Props, State> {
       theme,
     };
 
+    const openFromClick = (event: MouseEvent): void => {
+      event.stopPropagation();
+      event.preventDefault();
+
+      openLinkInWebBrowser(first.url);
+    };
+
+    if (isClickable && firstPartyCard) {
+      // Tellomi (card-visual §3.6, §5.2): a Tellomi object's card is one sentence for a screen
+      // reader ("Tellomi group, Book club, 12 members, button: Join Group") with one real button
+      // in it, the action row; the keyboard goes to the button, the mouse to anywhere on the card.
+      return (
+        <LinkPreviewTintFrame
+          {...frameProps}
+          role="group"
+          aria-label={getFirstPartyCardAriaLabel(i18n, firstPartyCard)}
+          className={className}
+          title={tooltip}
+          onClick={openFromClick}
+        >
+          {contents}
+        </LinkPreviewTintFrame>
+      );
+    }
+
     return isClickable ? (
       <LinkPreviewTintFrame
         {...frameProps}
         role="link"
         tabIndex={0}
+        // Tellomi (card-visual §3.6): "Link, <title>, <domain>".
+        aria-label={getLinkCardAriaLabel(i18n, {
+          title,
+          domain: first.card?.domain ?? first.domain,
+        })}
         className={className}
         title={tooltip}
-        onKeyDown={(event: KeyboardEvent) => {
-          if (event.key === 'Enter' || event.key === 'Space') {
-            event.stopPropagation();
-            event.preventDefault();
-
-            openLinkInWebBrowser(first.url);
-          }
-        }}
-        onClick={(event: MouseEvent) => {
-          event.stopPropagation();
-          event.preventDefault();
-
-          openLinkInWebBrowser(first.url);
-        }}
+        onKeyDown={openFromKeyboard}
+        onClick={openFromClick}
       >
         {contents}
       </LinkPreviewTintFrame>
@@ -1988,7 +2031,10 @@ export class Message extends PureComponent<Props, State> {
   // hairline across the card.
   #renderFirstPartyLinkCard(
     preview: LinkPreviewForUIType,
-    card: FirstPartyCardDisplayType
+    card: FirstPartyCardDisplayType,
+    // Set when the card can be opened: the action row is then its button, and what the row and the
+    // card's name say is not read again (card-visual §3.6).
+    openFromKeyboard: ((event: KeyboardEvent) => void) | undefined
   ): JSX.Element {
     const {
       i18n,
@@ -2055,6 +2101,9 @@ export class Message extends PureComponent<Props, State> {
               alt={card.title}
               height={52}
               width={52}
+              // The cover is hidden from a screen reader with the rest of the card's text, so
+              // nothing in it may take the keyboard either.
+              tabIndex={openFromKeyboard ? -1 : undefined}
               url={preview.image.url}
               attachment={preview.image}
               blurHash={preview.image.blurHash}
@@ -2085,7 +2134,11 @@ export class Message extends PureComponent<Props, State> {
 
     return (
       <div className="module-message__link-preview__first-party">
-        <div dir="auto" className="module-message__link-preview__content">
+        <div
+          dir="auto"
+          className="module-message__link-preview__content"
+          aria-hidden={openFromKeyboard ? true : undefined}
+        >
           <div className="module-message__link-preview__first-party-avatar">
             {avatar}
           </div>
@@ -2109,9 +2162,20 @@ export class Message extends PureComponent<Props, State> {
             ) : null}
           </div>
         </div>
-        <div className="module-message__link-preview__first-party-action">
-          {card.action}
-        </div>
+        {openFromKeyboard ? (
+          <div
+            className="module-message__link-preview__first-party-action"
+            role="button"
+            tabIndex={0}
+            onKeyDown={openFromKeyboard}
+          >
+            {card.action}
+          </div>
+        ) : (
+          <div className="module-message__link-preview__first-party-action">
+            {card.action}
+          </div>
+        )}
       </div>
     );
   }
@@ -3872,7 +3936,7 @@ export class Message extends PureComponent<Props, State> {
             }
 
             const target = event.target as HTMLElement;
-            const link = target.closest('a[href], [role=link]');
+            const link = target.closest(OPENS_ON_CLICK_SELECTOR);
 
             if (event.currentTarget.contains(link)) {
               return;

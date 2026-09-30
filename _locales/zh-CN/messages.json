@@ -1709,6 +1709,21 @@
   "icu:TellomiLinkCard__group_link_inactive": {
     "messageformat": "此群组链接未激活"
   },
+  "icu:TellomiLinkCard__a11y_separator": {
+    "messageformat": "，"
+  },
+  "icu:TellomiLinkCard__a11y_link": {
+    "messageformat": "链接"
+  },
+  "icu:TellomiLinkCard__a11y_button_with_action": {
+    "messageformat": "按钮：{action}"
+  },
+  "icu:TellomiLinkCard__a11y_kind_group": {
+    "messageformat": "Tellomi 群组"
+  },
+  "icu:TellomiLinkCard__a11y_kind_sticker_pack": {
+    "messageformat": "Tellomi 贴纸包"
+  },
   "icu:TellomiLinks__link-previews-description": {
     "messageformat": "开启后，发送链接时你的设备会访问该网站。"
   },

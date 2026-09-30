@@ -1709,6 +1709,21 @@
   "icu:TellomiLinkCard__group_link_inactive": {
     "messageformat": "此群組連結不在使用中"
   },
+  "icu:TellomiLinkCard__a11y_separator": {
+    "messageformat": "，"
+  },
+  "icu:TellomiLinkCard__a11y_link": {
+    "messageformat": "連結"
+  },
+  "icu:TellomiLinkCard__a11y_button_with_action": {
+    "messageformat": "按鈕：{action}"
+  },
+  "icu:TellomiLinkCard__a11y_kind_group": {
+    "messageformat": "Tellomi 群組"
+  },
+  "icu:TellomiLinkCard__a11y_kind_sticker_pack": {
+    "messageformat": "Tellomi 貼圖包"
+  },
   "icu:TellomiLinks__link-previews-description": {
     "messageformat": "開啟後，傳送連結時你的裝置會存取該網站。"
   },
