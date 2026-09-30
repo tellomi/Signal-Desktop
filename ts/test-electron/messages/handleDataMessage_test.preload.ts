@@ -10,6 +10,7 @@ import { v4 as uuid } from 'uuid';
 import { LinkRegistry } from '@signalapp/libsignal-client/dist/links.js';
 
 import { _setLinkRegistryForTesting } from '../../linkPreviews/linkRegistry.preload.ts';
+import { setOnLogCallback } from '../../logging/log.std.ts';
 import { handleDataMessage } from '../../messages/handleDataMessage.preload.ts';
 import type { MessageAttributesType } from '../../model-types.d.ts';
 import { MessageModel } from '../../models/messages.preload.ts';
@@ -263,6 +264,26 @@ describe('handleDataMessage', () => {
         assert.deepEqual(saved.get('preview'), [], 'without the preview');
       });
     }
+
+    it('writes neither the link nor what follows its # to any log, whichever module writes it', async () => {
+      const lines: Array<string> = [];
+      setOnLogCallback((_level, line) => {
+        lines.push(line);
+      });
+      try {
+        await receiveWithPreview('https://tell.cc/call#key=canary-in-fragment');
+      } finally {
+        setOnLogCallback(() => undefined);
+      }
+
+      assert.isTrue(
+        lines.some(line => line.includes('cannot be read')),
+        'the drop is logged'
+      );
+      for (const line of lines) {
+        assert.notInclude(line.toLowerCase(), 'canary', line);
+      }
+    });
 
     it('still keeps and marks the preview of a call link whose key can be read', async () => {
       const url =
