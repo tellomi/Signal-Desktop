@@ -9,10 +9,16 @@ import {
 } from '../types/Username.std.ts';
 import { parseIntWithFallback } from './parseIntWithFallback.std.ts';
 
+// Tellomi: the limit for *creating* a username. The server sends `global.nicknames.max` = 20 and Android hard-codes 20;
+// upstream falls back to 32 when the flag is missing, which would let a client without a fetched config create 21-32
+// character usernames the server cannot check (it only sees hashes). So the fallback is 20 too. Recognising existing
+// usernames uses PROTOCOL_MAX_NICKNAME below and is not affected.
+const DEFAULT_MAX_NICKNAME = 20;
+
 export function getMaxNickname(): number {
   return parseIntWithFallback(
     RemoteConfig.getValue('global.nicknames.max'),
-    32
+    DEFAULT_MAX_NICKNAME
   );
 }
 export function getMinNickname(): number {

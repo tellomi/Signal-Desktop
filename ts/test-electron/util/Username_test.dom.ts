@@ -90,6 +90,37 @@ describe('Username', () => {
     });
   });
 
+  // Tellomi: creating a username is limited to 20 (server global.nicknames.max, Android constant) even when the server sent
+  // nothing; a served value still wins. Recognising existing usernames is a separate, wider range (isUsernameValid above).
+  describe('getMaxNickname / getMinNickname fallback', () => {
+    afterEach(async () => {
+      await updateRemoteConfig([]);
+    });
+
+    it('falls back to 3 / 20 when the server sent nothing', async () => {
+      await updateRemoteConfig([]);
+      assert.strictEqual(Username.getMinNickname(), 3);
+      assert.strictEqual(Username.getMaxNickname(), 20);
+    });
+
+    it('uses the served values', async () => {
+      await updateRemoteConfig([
+        { name: 'global.nicknames.min', value: '4' },
+        { name: 'global.nicknames.max', value: '24' },
+      ]);
+      assert.strictEqual(Username.getMinNickname(), 4);
+      assert.strictEqual(Username.getMaxNickname(), 24);
+    });
+
+    it('keeps accepting existing 21-32 character usernames with no served config', async () => {
+      await updateRemoteConfig([]);
+      assert.isTrue(Username.isUsernameValid('abcdefghijklmnopqrstu.01'));
+      assert.isTrue(
+        Username.isUsernameValid('username_with_32_characters_1234.45')
+      );
+    });
+  });
+
   describe('getUsernameFromSearch', () => {
     const { getUsernameFromSearch } = Username;
 
