@@ -1138,27 +1138,30 @@ $message-padding-horizontal: 12px;
 }
 
 // Tellomi (card-visual §3.2, owner 2026-09-30): an icon card follows how Telegram draws a small
-// preview image (iOS ChatMessageAttachedContentNode, `inlineMediaAndSize` / `inlineMediaEdgeInset`):
-// a 54px square at the top end of the card, 6px in from the top and the end, corners 4px. The card
-// is at least the image plus 6px above and below, and the text column keeps clear of the image.
+// preview image (iOS ChatMessageAttachedContentNode): a 54px square (`inlineMediaAndSize`) at the top
+// end of the card, 6px down from the top (`inlineMediaEdgeInset`), its end edge at the same inset
+// as the text starts from (`insets.right` = the bubble's text inset), corners 4px. The card is at
+// least the image plus 6px above and below, and the text column stops 6px short of the image.
 $link-card-icon-size: 54px;
 $link-card-icon-inset: 6px;
+$link-card-icon-inset-end: $message-padding-horizontal;
+$link-card-icon-gap: 6px;
 
 .module-message__link-preview__content--icon {
   box-sizing: border-box;
   min-height: $link-card-icon-size + 2 * $link-card-icon-inset;
 
-  // Text ends a 6px gap before the icon: the icon and its inset, minus the padding the card has.
+  // The card already pads the text by the same amount the icon sits in from the end.
   .module-message__link-preview__text {
-    padding-inline-end: $link-card-icon-size + $link-card-icon-inset * 2 -
-      $message-padding-horizontal;
+    padding-inline-end: $link-card-icon-size + $link-card-icon-gap +
+      $link-card-icon-inset-end - $message-padding-horizontal;
   }
 }
 
 .module-message__link-preview__icon-image {
   position: absolute;
   inset-block-start: $link-card-icon-inset;
-  inset-inline-end: $link-card-icon-inset;
+  inset-inline-end: $link-card-icon-inset-end;
   display: flex;
   width: $link-card-icon-size;
   height: $link-card-icon-size;

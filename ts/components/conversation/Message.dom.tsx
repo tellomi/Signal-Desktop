@@ -1842,7 +1842,7 @@ export class Message extends PureComponent<Props, State> {
             </div>
           )}
           {/* Tellomi (card-visual §3.2, owner 2026-09-30): an icon card has a 54px square icon at
-              the top end of the card, 6px in, corners 4px (Telegram's small preview image). */}
+              the top end of the card, 6px down, corners 4px (Telegram's small preview image). */}
           {first.image &&
           domain &&
           previewHasImage &&
