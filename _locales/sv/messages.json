@@ -1608,7 +1608,7 @@
     "messageformat": "<paragraph>Ett oväntat fel uppstod.</paragraph><paragraph>Försök igen.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signalen kan inte länka den här enheten med ditt nuvarande nätverk."
+    "messageformat": "Tellomi kan inte länka den här enheten med ditt nuvarande nätverk."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Försök igen"
@@ -2811,7 +2811,7 @@
     "messageformat": "Tack för ditt stöd!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "{name} har gjort en donation till Signal för din räkning. De får möjlighet att visa sitt stöd på sin profil."
+    "messageformat": "{name} har gjort en donation till Tellomi för din räkning. De får möjlighet att visa sitt stöd på sin profil."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Klistermärkespaketet kan inte installeras"
@@ -6638,7 +6638,7 @@
     "messageformat": "Säkerhetskopiering av Tellomi"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automatiska säkerhetskopieringar med Signals säkra totalsträckskrypterade lagringstjänst. Kom igång på din telefon. <learnMoreLink>Läs mer</learnMoreLink>."
+    "messageformat": "Automatiska säkerhetskopieringar med Tellomis säkra totalsträckskrypterade lagringstjänst. Kom igång på din telefon. <learnMoreLink>Läs mer</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
     "messageformat": "Säkerhetskopiera din meddelandehistorik så att du aldrig förlorar data när du skaffar en ny telefon eller installerar om Tellomi."
@@ -8568,7 +8568,7 @@
     "messageformat": "Vanliga frågor för donatorer"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Kvitton synkroniseras inte mellan enheter. Om du har installerat om Signal kommer kvitton från tidigare donationer inte vara tillgängliga."
+    "messageformat": "Kvitton synkroniseras inte mellan enheter. Om du har installerat om Tellomi kommer kvitton från tidigare donationer inte vara tillgängliga."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Inga kvitton"
@@ -8769,7 +8769,7 @@
     "messageformat": "Ett fel uppstod med din donation"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Din donation kanske inte har behandlats. Klicka på Donera till Signal och sedan på Donationskvitton för att kontrollera dina kvitton och bekräfta."
+    "messageformat": "Din donation kanske inte har behandlats. Klicka på Donera till Tellomi och sedan på Donationskvitton för att kontrollera dina kvitton och bekräfta."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Försök igen eller skicka in en felsökningslogg till supporten för hjälp med att slutföra din donation. Felsökningsloggar hjälper oss att diagnostisera och åtgärda problemet och innehåller inte identifierande information."
@@ -8811,7 +8811,7 @@
     "messageformat": "Tack för ditt stöd!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Du har fått ett donationsmärke från Signal! Visa den i din profil för att visa upp ditt stöd."
+    "messageformat": "Du har fått ett donationsmärke från Tellomi! Visa den i din profil för att visa upp ditt stöd."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Visa på profilen"

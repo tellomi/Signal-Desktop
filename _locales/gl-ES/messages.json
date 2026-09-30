@@ -8568,7 +8568,7 @@
     "messageformat": "Preguntas frecuentes sobre doantes"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Os comprobantes non se sincronizan nos dispositivos. Se volviches instalar Signal, os comprobantes de donativos anteriores non estarán dispoñibles."
+    "messageformat": "Os comprobantes non se sincronizan nos dispositivos. Se volviches instalar Tellomi, os comprobantes de donativos anteriores non estarán dispoñibles."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Sen comprobantes"
@@ -8769,7 +8769,7 @@
     "messageformat": "Produciuse un erro co teu donativo"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "É posible que a túa doazón non se procesase. Preme en «Doar a Signal» e en «Recibos de donativo» para consultar e verificar todos os recibos."
+    "messageformat": "É posible que a túa doazón non se procesase. Preme en «Doar a Tellomi» e en «Recibos de donativo» para consultar e verificar todos os recibos."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Volve intentalo ou envía o rexistro de depuración a Axuda para que poidan axudarche a completar o teu donativo. Os rexistros de depuración axúdannos a diagnosticar e solucionar os erros e non conteñen ningunha información identificadora."

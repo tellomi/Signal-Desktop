@@ -8517,7 +8517,7 @@
     "messageformat": "Orgulhosamente sem fins lucrativos"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Faça um donativo para apoiar as mensagens com privacidade. Mantenha o Signal independente e sem anúncios. <readMoreLink>Ler mais</readMoreLink>"
+    "messageformat": "Faça um donativo para apoiar as mensagens com privacidade. Mantenha o Tellomi independente e sem anúncios. <readMoreLink>Ler mais</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Doar"
@@ -8769,7 +8769,7 @@
     "messageformat": "Ocorreu um erro com o seu donativo"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "O seu donativo pode não ter sido processado. Clique em \"Doar para o Signal\" e, em seguida, em \"Recibos de doação\" para verificar os seus recibos e confirmar."
+    "messageformat": "O seu donativo pode não ter sido processado. Clique em \"Doar para o Tellomi\" e, em seguida, em \"Recibos de doação\" para verificar os seus recibos e confirmar."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Tente novamente ou envie ao Suporte um relatório de depuração para obter ajuda na conclusão do seu donativo. Os relatórios de depuração ajudam-nos a diagnosticar e corrigir o problema e não contêm informações pessoais."

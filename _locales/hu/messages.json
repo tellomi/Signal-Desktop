@@ -117,7 +117,7 @@
     "messageformat": "A Tellomi nem nyitható meg"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "A probléma megoldásához kövesd a támogatási oldalon található helyreállítási útmutatót, vagy lépj kapcsolatba a Tellomi ügyfélszolgálatával.\n\nHa azonnal használnod kell a Signalt, törölheted az adataidat, és újra összekapcsolhatod ezt az asztali számítógépet. Lehetőséged lesz az üzenetek előzményeinek átvitelére a telefonodról."
+    "messageformat": "A probléma megoldásához kövesd a támogatási oldalon található helyreállítási útmutatót, vagy lépj kapcsolatba a Tellomi ügyfélszolgálatával.\n\nHa azonnal használnod kell a Tellomit, törölheted az adataidat, és újra összekapcsolhatod ezt az asztali számítógépet. Lehetőséged lesz az üzenetek előzményeinek átvitelére a telefonodról."
   },
   "icu:databaseError": {
     "messageformat": "Adatbázishiba"
@@ -129,7 +129,7 @@
     "messageformat": "Az összes adat végleges törlése"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Az összes üzenetelőzmény és médiafájl véglegesen törlésre kerül erről az eszközről. Ez nem törli az adatokat a telefonodról.\n\nAz újbóli összekapcsolás után használhatod a Signalt ezen az eszközön. Lehetőséged lesz az üzenetek előzményeinek átvitelére a telefonodról."
+    "messageformat": "Az összes üzenetelőzmény és médiafájl véglegesen törlésre kerül erről az eszközről. Ez nem törli az adatokat a telefonodról.\n\nAz újbóli összekapcsolás után használhatod a Tellomit ezen az eszközön. Lehetőséged lesz az üzenetek előzményeinek átvitelére a telefonodról."
   },
   "icu:databaseError__startOldVersion": {
     "messageformat": "Az adatbázisod verziója nem egyezik a Tellomi ezen verziójával. Győződj meg róla, hogy a Tellomi legújabb verzióját nyitod meg a számítógépeden."
@@ -138,7 +138,7 @@
     "messageformat": "Nem lehet hozzáférni az adatbázis titkosítási kulcsához, mert az operációs rendszer titkosítási kulcstartó háttérrendszere {previousBackend} értékről {currentBackend} értékre változott. Ez akkor fordulhat elő, ha az asztali környezet megváltozik, például a GNOME és a KDE között.\n\nKérjük, válts az előző asztali környezetre."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Nem lehet hozzáférni az adatbázis titkosítási kulcsához, mert az operációs rendszer titkosítási kulcstartó háttérrendszere {previousBackend} értékről {currentBackend} értékre változott. Ez akkor fordulhat elő, ha az asztali környezet megváltozik, például a GNOME és a KDE között.\n\nKérjük, válts az előző asztali környezetre, vagy próbáld meg futtatni a Signalt a --password-store=\"{previousBackendFlag}\" parancssori jelzővel."
+    "messageformat": "Nem lehet hozzáférni az adatbázis titkosítási kulcsához, mert az operációs rendszer titkosítási kulcstartó háttérrendszere {previousBackend} értékről {currentBackend} értékre változott. Ez akkor fordulhat elő, ha az asztali környezet megváltozik, például a GNOME és a KDE között.\n\nKérjük, válts az előző asztali környezetre, vagy próbáld meg futtatni a Tellomit a --password-store=\"{previousBackendFlag}\" parancssori jelzővel."
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -183,7 +183,7 @@
     "messageformat": "Összes megjelenítése"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Kilépés a Signalból"
+    "messageformat": "Kilépés a Tellomiból"
   },
   "icu:editMenuUndo": {
     "messageformat": "Visszavonás"
@@ -507,10 +507,10 @@
     "messageformat": "Biztonsági számodat korábban nem hitelesnek jelölted {name} nevű partnereddel egy másik eszközön."
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "A hitelesítés alatt álló biztonsági szám megváltozott. Kérlek ellenőrizd új biztonsági számodat {name1} nevű partnereddel! Ez utalhat arra, hogy valaki megpróbálja lehallgatni a beszélgetéseteket, de azt is jelentheti, hogy {name2} egyszerűen csak újratelepítette a Signalt."
+    "messageformat": "A hitelesítés alatt álló biztonsági szám megváltozott. Kérlek ellenőrizd új biztonsági számodat {name1} nevű partnereddel! Ez utalhat arra, hogy valaki megpróbálja lehallgatni a beszélgetéseteket, de azt is jelentheti, hogy {name2} egyszerűen csak újratelepítette a Tellomit."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Elképzelhető, hogy az alábbi személyek újratelepítették a Signalt, vagy eszközt cseréltek. Az új biztonsági szám megerősítéséhez koppints egy felhasználóra! Ez a lépés nem kötelező."
+    "messageformat": "Elképzelhető, hogy az alábbi személyek újratelepítették a Tellomit, vagy eszközt cseréltek. Az új biztonsági szám megerősítéséhez koppints egy felhasználóra! Ez a lépés nem kötelező."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Függőben levő üzenetek küldése"
@@ -519,7 +519,7 @@
     "messageformat": "Felülvizsgálat"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Van {count,number} olyan névjegyed, aki újratelepítette a Signalt, vagy eszközt cserélt. Küldés előtt opcionálisan felülvizsgálhatod a biztonsági számát.} other {Van {count,number} olyan névjegyed, aki újratelepítette a Signalt, vagy eszközt cserélt. Küldés előtt opcionálisan felülvizsgálhatod a biztonsági számát.}}"
+    "messageformat": "{count, plural, one {Van {count,number} olyan névjegyed, aki újratelepítette a Tellomit, vagy eszközt cserélt. Küldés előtt opcionálisan felülvizsgálhatod a biztonsági számát.} other {Van {count,number} olyan névjegyed, aki újratelepítette a Tellomit, vagy eszközt cserélt. Küldés előtt opcionálisan felülvizsgálhatod a biztonsági számát.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Minden névjegy ellenőrzése megtörtént, a folytatáshoz koppints a Küldés gombra."
@@ -1122,7 +1122,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "A(z) „ {title}” az a profilnév, amelyet ez a személy beállított magának a Signalban."
+    "messageformat": "A(z) „ {title}” az a profilnév, amelyet ez a személy beállított magának a Tellomiban."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Ellenőrzött"
@@ -1476,7 +1476,7 @@
     "messageformat": "{sender} megváltoztatta a telefonszámát"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Ismerős csatlakozott a Signalhoz"
+    "messageformat": "Ismerős csatlakozott a Tellomihoz"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} és {conversationTitle} ugyanaz a fiók. Itt található mindkét csevegés üzenetelőzménye."
@@ -1590,7 +1590,7 @@
     "messageformat": "Olvasd be ezt a kódot a Tellomi telefonos alkalmazással!"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Nyisd meg a Signalt a telefonodon!"
+    "messageformat": "Nyisd meg a Tellomit a telefonodon!"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Kattints a {settings}, majd a {linkedDevices} menüpontra"
@@ -1851,7 +1851,7 @@
     "messageformat": "Sajnáljuk, de már túl sok párosított eszközöd van. Próbálj kitörölni néhányat!"
   },
   "icu:installTooOld": {
-    "messageformat": "A telefonod párosításához frissítsd a Signalt ezen az eszközön!"
+    "messageformat": "A telefonod párosításához frissítsd a Tellomit ezen az eszközön!"
   },
   "icu:installErrorHeader": {
     "messageformat": "Probléma merült fel!"
@@ -2166,7 +2166,7 @@
     "messageformat": "Engedély szükséges"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "A Signalnak engedélyre van szüksége a képernyő rögzítéséhez."
+    "messageformat": "A Tellominak engedélyre van szüksége a képernyő rögzítéséhez."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Nyisd meg a Rendszerbeállításokat!"
@@ -2175,7 +2175,7 @@
     "messageformat": "Kattints a lakat ikonra bal-alul, és gépeld be számítógéped jelszavát!"
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Jobboldalt pipáld ki a Signalt. Ha nem találod a listában, használd a + gombot a hozzáadáshoz!"
+    "messageformat": "Jobboldalt pipáld ki a Tellomit. Ha nem találod a listában, használd a + gombot a hozzáadáshoz!"
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Nyisd meg a Rendszerbeállításokat!"
@@ -2526,7 +2526,7 @@
     "messageformat": "A(z) {atUsername} érvénytelen felhasználónév. Győződj meg róla, hogy a teljes felhasználónevet és a hozzá tartozó számjegyeket is megadtad."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Felhasználó nem található: \"{phoneNumber}\" nincs regisztrálva a Signalra."
+    "messageformat": "Felhasználó nem található: \"{phoneNumber}\" nincs regisztrálva a Tellomira."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "A felhasználó nem található. A(z) {phoneNumber} nem érvényes telefonszám."
@@ -2589,7 +2589,7 @@
     "messageformat": "Nincs párosítva"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Kattints ide az újbóli regisztrációhoz és az üzenetváltás folytatásához. A Tellomi Desktop valószínűleg azért nincs regisztrálva, mert egy másik eszközön regisztráltad a telefonszámodat a Signalnál."
+    "messageformat": "Kattints ide az újbóli regisztrációhoz és az üzenetváltás folytatásához. A Tellomi Desktop valószínűleg azért nincs regisztrálva, mert egy másik eszközön regisztráltad a telefonszámodat a Tellominál."
   },
   "icu:unregistered": {
     "messageformat": "Már nincs regisztrálva"
@@ -2754,7 +2754,7 @@
     "messageformat": "Az adomány mobilon való megtekintéséhez koppints erre az üzenetre"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} adományozott a Signalnak a nevedben"
+    "messageformat": "{sender} adományozott a Tellominak a nevedben"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Az adomány megnyitásához ellenőrizd a telefonod"
@@ -3426,7 +3426,7 @@
     "messageformat": "A csevegés olvasatlanként megjelölve"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "A matricacsomag létrehozásához állítsd be a Signalt a telefonodon, valamint az asztali alkalmazáson is"
+    "messageformat": "A matricacsomag létrehozásához állítsd be a Tellomit a telefonodon, valamint az asztali alkalmazáson is"
   },
   "icu:Reactions--remove": {
     "messageformat": "Reakció eltávolítása"
@@ -3453,7 +3453,7 @@
     "messageformat": "Nevek és fotók felülvizsgálata"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "Vigyázz a „Név nincs ellenőrizve” értesítések esetén. A Signalban mindenki saját maga állítja be a profilnevét."
+    "messageformat": "Vigyázz a „Név nincs ellenőrizve” értesítések esetén. A Tellomiban mindenki saját maga állítja be a profilnevét."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "Vigyázz a csalásokra"
@@ -3465,13 +3465,13 @@
     "messageformat": "Ne válaszolj a Tellomi csevegéseire"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "A Tellomi soha nem küld üzenetet a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban. Ne válaszolj olyan csevegésekre, amelyek a Signalnak vagy a Tellomi ügyfélszolgálatának adják ki magukat. A rosszindulatú szereplők hamis neveket adnak meg, hogy megpróbálják átvenni az irányítást a fiókod felett."
+    "messageformat": "A Tellomi soha nem küld üzenetet a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban. Ne válaszolj olyan csevegésekre, amelyek a Tellominak vagy a Tellomi ügyfélszolgálatának adják ki magukat. A rosszindulatú szereplők hamis neveket adnak meg, hogy megpróbálják átvenni az irányítást a fiókod felett."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Nevek és fotók felülvizsgálata"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "Vigyázz a „Név nincs ellenőrizve” értesítések esetén. A Signalban mindenki saját maga állítja be a profilnevét és fotóját. Ha nem vagy biztos benne, hogy kitől érkezett egy új kérés, biztonságosabb, ha figyelmen kívül hagyod."
+    "messageformat": "Vigyázz a „Név nincs ellenőrizve” értesítések esetén. A Tellomiban mindenki saját maga állítja be a profilnevét és fotóját. Ha nem vagy biztos benne, hogy kitől érkezett egy új kérés, biztonságosabb, ha figyelmen kívül hagyod."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Kripto- vagy pénzzel kapcsolatos átverések"
@@ -3660,10 +3660,10 @@
     "messageformat": "Hivatalos csevegés"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Az egyetlen hivatalos csevegés a Signaltól. Legyél naprakész a hírekkel és a frissítésekkel kapcsolatban."
+    "messageformat": "Az egyetlen hivatalos csevegés a Tellomitól. Legyél naprakész a hírekkel és a frissítésekkel kapcsolatban."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Az egyetlen hivatalos csevegés a Signaltól."
+    "messageformat": "Az egyetlen hivatalos csevegés a Tellomitól."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Legyél naprakész a hírekkel és a frissítésekkel kapcsolatban."
@@ -3951,7 +3951,7 @@
     "messageformat": "Híváslink másolása"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Híváslink megosztása a Signalon keresztül"
+    "messageformat": "Híváslink megosztása a Tellomin keresztül"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "{name} eltávolítása a hívásból?"
@@ -4722,7 +4722,7 @@
     "messageformat": "Adomány a Tellomi számára"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} támogatja a Signalt"
+    "messageformat": "{name} támogatja a Tellomit"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "Üzenetek szinkronizálása"
@@ -4839,7 +4839,7 @@
     "messageformat": "Fiókművelet szükséges"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "A fiók használatának folytatásához meg kell nyitnod a Signalt a telefonodon. Ha nem nyitod meg a Signalt a telefonodon, a fiókod hamarosan törlődik. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "A fiók használatának folytatásához meg kell nyitnod a Tellomit a telefonodon. Ha nem nyitod meg a Tellomit a telefonodon, a fiókod hamarosan törlődik. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Nem lehet visszaállítani a médiafájlt"
@@ -4863,10 +4863,10 @@
     "messageformat": "Melléklet vagy szavazás hozzáadása"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Ez a személy nem használ Signalt"
+    "messageformat": "Ez a személy nem használ Tellomit"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "A Tellomi Desktop nem támogatja nem-Tellomi kontaktokkal való üzenetváltást. Biztonságosabb üzenetváltás érdekében kérd meg ezt a személyt, hogy telepítse a Signalt!"
+    "messageformat": "A Tellomi Desktop nem támogatja nem-Tellomi kontaktokkal való üzenetváltást. Biztonságosabb üzenetváltás érdekében kérd meg ezt a személyt, hogy telepítse a Tellomit!"
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Ellenőrizzük a kontakt regisztrációjának státuszát"
@@ -6001,7 +6001,7 @@
     "messageformat": "Elveted a módosításokat?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Bezárod a Signalt és befejezed a hívást?"
+    "messageformat": "Bezárod a Tellomit és befejezed a hívást?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Később"
@@ -6695,7 +6695,7 @@
     "messageformat": "Készíts egy végponttól végpontig titkosított biztonsági mentést, amelyet visszaállíthatsz a telefonodon. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Egy biztonsági mentés visszaállításához először is telepítsd a Signalt a telefonodra. Nyisd meg az alkalmazást, koppints a „Visszaállítás vagy áthelyezés” opcióra. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Egy biztonsági mentés visszaállításához először is telepítsd a Tellomit a telefonodra. Nyisd meg az alkalmazást, koppints a „Visszaállítás vagy áthelyezés” opcióra. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Válassz egy mappát"
@@ -6839,7 +6839,7 @@
     "messageformat": "Telefonszám"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Válaszd ki, hogy ki láthatja a telefonszámod, és ki léphet kapcsolatba veled a Signalon keresztül."
+    "messageformat": "Válaszd ki, hogy ki láthatja a telefonszámod, és ki léphet kapcsolatba veled a Tellomin keresztül."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Módosítás…"
@@ -6869,10 +6869,10 @@
     "messageformat": "Ki találhat meg a telefonszámom szerint?"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Bárki, aki tudja a telefonszámodat, látni fogja, hogy használod a Signalt, és csevegést kezdeményezhet veled."
+    "messageformat": "Bárki, aki tudja a telefonszámodat, látni fogja, hogy használod a Tellomit, és csevegést kezdeményezhet veled."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Senki sem láthatja, hogy használod a Signalt, hacsak nem küldesz valakinek üzenetet, vagy nem folytatsz csevegést valakivel."
+    "messageformat": "Senki sem láthatja, hogy használod a Tellomit, hacsak nem küldesz valakinek üzenetet, vagy nem folytatsz csevegést valakivel."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Mindenki"
@@ -6884,7 +6884,7 @@
     "messageformat": "Biztos vagy benne?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Ha a(z) „{settingTitle}” elemet „{nobodyLabel}” értékre módosítod, azzal megnehezíted, hogy mások megtaláljanak téged a Signalon."
+    "messageformat": "Ha a(z) „{settingTitle}” elemet „{nobodyLabel}” értékre módosítod, azzal megnehezíted, hogy mások megtaláljanak téged a Tellomin."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Üzenetküldés"
@@ -6947,7 +6947,7 @@
     "messageformat": "Beállítás"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Az alkalmazáshoz indítsa újra a Signalt"
+    "messageformat": "Az alkalmazáshoz indítsa újra a Tellomit"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "A nyelv módosításához az alkalmazást újra kell indítani."
@@ -6968,7 +6968,7 @@
     "messageformat": "Kikapcsolod a képernyőbiztonságot?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Ha le van tiltva, ez lehetővé teheti a Microsoft Windows számára, hogy képernyőképeket készítsen a Signalról, és azokat olyan funkciókhoz használja, amelyek nem feltétlenül privátak."
+    "messageformat": "Ha le van tiltva, ez lehetővé teheti a Microsoft Windows számára, hogy képernyőképeket készítsen a Tellomiról, és azokat olyan funkciókhoz használja, amelyek nem feltétlenül privátak."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Letiltás"
@@ -6989,10 +6989,10 @@
     "messageformat": "Az App Store megnyitásához kattints"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Nyisd meg a Signalt a telefonodon!"
+    "messageformat": "Nyisd meg a Tellomit a telefonodon!"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "A fiókod hamarosan törlésre kerül, hacsak nem nyitod meg a Signalt a telefonodon. Ez az üzenet eltűnik, ha sikerrel jártál. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "A fiókod hamarosan törlésre kerül, hacsak nem nyitod meg a Tellomit a telefonodon. Ez az üzenet eltűnik, ha sikerrel jártál. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
     "messageformat": "Ahhoz, hogy a fiókod aktív maradjon, nyisd meg a Tellomi appot."
@@ -7022,7 +7022,7 @@
     "messageformat": "Letöltés {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "A frissítés telepítéséhez indítsd újra a Signalt."
+    "messageformat": "A frissítés telepítéséhez indítsd újra a Tellomit."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
     "messageformat": "A Tellomi Desktop frissítése nem sikerült, de elérhető egy új verzió. Nyisd meg a {downloadUrl} weboldalt, és telepítsd manuálisan az új verziót, majd lépj kapcsolatba az ügyfélszolgálattal, vagy jelentsd a hibát a problémával kapcsolatban."
@@ -7064,7 +7064,7 @@
     "messageformat": "A folytatáshoz igazold, hogy ember vagy"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "A Signalon keresztül érkező spam üzenetek kiszűrése érdekében végezd el az ellenőrzést. Az ellenőrzést követően folytathatod a regisztrációt."
+    "messageformat": "A Tellomin keresztül érkező spam üzenetek kiszűrése érdekében végezd el az ellenőrzést. Az ellenőrzést követően folytathatod a regisztrációt."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "Újbóli ellenőrzés"
@@ -7433,7 +7433,7 @@
     "messageformat": "Segítségkérés"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Nem sikerült bezárni a Signalt.",
+    "messageformat": "Nem sikerült bezárni a Tellomit.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -8135,7 +8135,7 @@
     "messageformat": "A QR-kódod és hivatkozásod visszaállításra került, a felhasználóneved pedig {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Olvasd be ezt a QR-kódot a telefonoddal és csevegj velem a Signalban.",
+    "messageformat": "Olvasd be ezt a QR-kódot a telefonoddal és csevegj velem a Tellomiban.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8418,7 +8418,7 @@
     "messageformat": "Hivatkozás másolása"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Hivatkozás megosztása a Signalon keresztül"
+    "messageformat": "Hivatkozás megosztása a Tellomin keresztül"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Hivatkozás törlése"
@@ -8481,7 +8481,7 @@
     "messageformat": "A beállítás módosításához állítsd a „Ki láthatja a telefonszámomat” „Senki” lehetőségre."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "A profilneveket a Signalon a fióktulajdonos választja ki:"
+    "messageformat": "A profilneveket a Tellomin a fióktulajdonos választja ki:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
     "messageformat": "A Tellomi nem tudja ellenőrizni a neveket és a fotókat"
@@ -8568,7 +8568,7 @@
     "messageformat": "Adományozás GYIK"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "A nyugták nem szinkronizálódnak az eszközök között. Ha újratelepítetted a Signalt, korábbi adományaid nyugtái nem lesznek elérhetők."
+    "messageformat": "A nyugták nem szinkronizálódnak az eszközök között. Ha újratelepítetted a Tellomit, korábbi adományaid nyugtái nem lesznek elérhetők."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Nincsenek nyugták"
@@ -8610,7 +8610,7 @@
     "messageformat": "HH/ÉÉ"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Adományozz {formattedCurrencyAmount} összeget a Signalnak"
+    "messageformat": "Adományozz {formattedCurrencyAmount} összeget a Tellominak"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Érvénytelen kártyaszám"
@@ -8712,7 +8712,7 @@
     "messageformat": "Az adományozás sikeres volt, de nem tudtuk frissíteni a jelvényed beállításait."
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "A jelvénybeállítások frissítéséhez lépj a mobileszközödön a Beállítások → Adományozás a Signalnak → Jelvények menüpontra."
+    "messageformat": "A jelvénybeállítások frissítéséhez lépj a mobileszközödön a Beállítások → Adományozás a Tellominak → Jelvények menüpontra."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Adományozás megszakadt"
@@ -8769,7 +8769,7 @@
     "messageformat": "Hiba történt az adományoddal"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Lehetséges, hogy az adományodat nem dolgoztuk fel. A nyugták ellenőrzéséhez és megerősítéséhez kattints az „Adományozás a Signalnak” lehetőségre, majd az „Adományt igazoló nyugták” opcióra."
+    "messageformat": "Lehetséges, hogy az adományodat nem dolgoztuk fel. A nyugták ellenőrzéséhez és megerősítéséhez kattints az „Adományozás a Tellominak” lehetőségre, majd az „Adományt igazoló nyugták” opcióra."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Próbáld újra, vagy küldj egy hibanaplót az Ügyfélszolgálatnak, és kérj segítséget az adományozás befejezéséhez. A hibanaplók segítenek diagnosztizálni és kijavítani a problémát, és nem tartalmaznak azonosító információkat."
@@ -8811,13 +8811,13 @@
     "messageformat": "Köszönjük a támogatásodat!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Kaptál egy adományozói jelvényt a Signaltól! Tedd ki a profilodra, és mutasd meg, hogy te is adományoztál!"
+    "messageformat": "Kaptál egy adományozói jelvényt a Tellomitól! Tedd ki a profilodra, és mutasd meg, hogy te is adományoztál!"
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Megjelenítés profilképen"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Ezt a mobilkészülékeden a Beállítások → Adományozás a Signalnak → Jelvények menüpontban állíthatod be."
+    "messageformat": "Ezt a mobilkészülékeden a Beállítások → Adományozás a Tellominak → Jelvények menüpontban állíthatod be."
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "Milyen volt a hívás minősége?"
@@ -8959,7 +8959,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "További apró módosítások, hibajavítások és teljesítménynövelések. Köszönjük, hogy a Signalt használod!",
+    "messageformat": "További apró módosítások, hibajavítások és teljesítménynövelések. Köszönjük, hogy a Tellomit használod!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -8979,7 +8979,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Apró finomítások, hibajavítások és teljesítménynövelések. Köszönjük, hogy a Signalt használod!",
+    "messageformat": "Apró finomítások, hibajavítások és teljesítménynövelések. Köszönjük, hogy a Tellomit használod!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.24--1": {

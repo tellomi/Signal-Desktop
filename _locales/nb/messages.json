@@ -117,7 +117,7 @@
     "messageformat": "Kunne ikke åpne Tellomi"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Du kan følge veiledningen på hjelpesiden vår eller ta kontakt med Signals brukerstøtte for å få hjelp.\n\nHvis du trenger tilgang til Tellomi umiddelbart, kan du slette alle dataene og koble til skrivebordet på nytt. Du har muligheten til å overføre meldingsloggen fra telefonen din."
+    "messageformat": "Du kan følge veiledningen på hjelpesiden vår eller ta kontakt med Tellomis brukerstøtte for å få hjelp.\n\nHvis du trenger tilgang til Tellomi umiddelbart, kan du slette alle dataene og koble til skrivebordet på nytt. Du har muligheten til å overføre meldingsloggen fra telefonen din."
   },
   "icu:databaseError": {
     "messageformat": "Databasefeil"
@@ -1029,10 +1029,10 @@
     "messageformat": "Demp"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Tellomi kunne ikke oppdateres. <retryUpdateButton>Prøv på nytt</retryUpdateButton>, eller gå til {url} for å installere oppdateringen manuelt. Etterpå kan du <contactSupportLink>gi Signals brukerstøtte beskjed</contactSupportLink> om problemet."
+    "messageformat": "Tellomi kunne ikke oppdateres. <retryUpdateButton>Prøv på nytt</retryUpdateButton>, eller gå til {url} for å installere oppdateringen manuelt. Etterpå kan du <contactSupportLink>gi Tellomis brukerstøtte beskjed</contactSupportLink> om problemet."
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Tellomi kunne ikke oppdateres. Gå til {url} for å installere oppdateringen manuelt. Etterpå kan du <contactSupportLink>gi Signals brukerstøtte beskjed</contactSupportLink> om problemet."
+    "messageformat": "Tellomi kunne ikke oppdateres. Gå til {url} for å installere oppdateringen manuelt. Etterpå kan du <contactSupportLink>gi Tellomis brukerstøtte beskjed</contactSupportLink> om problemet."
   },
   "icu:readOnlyVolume": {
     "messageformat": "Tellomi Desktop er sannsynligvis i en macOS-karantene, og vil derfor ikke kunne oppdatere seg automatisk. Prøv å flytte {app} til {folder} ved bruk av Finder."
@@ -3465,7 +3465,7 @@
     "messageformat": "Ikke svar på meldinger fra Tellomi"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Tellomi kommer aldri til å be deg om å sende registreringskoden, PIN-koden eller sikkerhetskoden din. Ikke svar på meldinger som tilsynelatende kommer fra Tellomi eller Signals brukerstøtte. Svindlere kan lage falske navn for å hacke kontoen din."
+    "messageformat": "Tellomi kommer aldri til å be deg om å sende registreringskoden, PIN-koden eller sikkerhetskoden din. Ikke svar på meldinger som tilsynelatende kommer fra Tellomi eller Tellomis brukerstøtte. Svindlere kan lage falske navn for å hacke kontoen din."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Se gjennom navn og bilder"
@@ -6638,7 +6638,7 @@
     "messageformat": "Sikre sikkerhetskopier på Tellomi"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automatisk sikkerhetskopiering med Signals sikre, ende-til-ende-krypterte lagringstjeneste. Kom i gang på mobilen din. <learnMoreLink>Les mer</learnMoreLink>."
+    "messageformat": "Automatisk sikkerhetskopiering med Tellomis sikre, ende-til-ende-krypterte lagringstjeneste. Kom i gang på mobilen din. <learnMoreLink>Les mer</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
     "messageformat": "Ta en sikkerhetskopi av meldingsloggen din, slik at du ikke mister dataene dine når du bytter telefon eller installerer Tellomi på nytt."

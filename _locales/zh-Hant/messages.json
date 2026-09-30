@@ -2997,7 +2997,7 @@
     "messageformat": "在手機上點按此訊息，即可查看捐款"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} 已代表你向 Signal 捐款"
+    "messageformat": "{sender} 已代表你向 Tellomi 捐款"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "請檢查手機以開啟捐款"
@@ -3054,7 +3054,7 @@
     "messageformat": "謝謝您的支持！"
   },
   "icu:modal--donation--description": {
-    "messageformat": "你已代表 {name} 向 Signal 捐款。他們可以選擇在個人檔案上展現支持。"
+    "messageformat": "你已代表 {name} 向 Tellomi 捐款。他們可以選擇在個人檔案上展現支持。"
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "貼圖包無法安裝"
@@ -8790,7 +8790,7 @@
     "messageformat": "以非營利為榮"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "捐款以支持私密訊息功能。讓 Signal 保持獨立且無廣告。<readMoreLink>閱讀全文</readMoreLink>"
+    "messageformat": "捐款以支持私密訊息功能。讓 Tellomi 保持獨立且無廣告。<readMoreLink>閱讀全文</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "捐款"
@@ -8841,7 +8841,7 @@
     "messageformat": "贊助者常見問題"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "收據不會跨裝置進行同步。若你已重新安裝 Signal，恕未能提供先前捐款的收據。"
+    "messageformat": "收據不會跨裝置進行同步。若你已重新安裝 Tellomi，恕未能提供先前捐款的收據。"
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "未有收據"
@@ -8883,7 +8883,7 @@
     "messageformat": "MM/YY"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "捐款 {formattedCurrencyAmount} 給 Signal"
+    "messageformat": "捐款 {formattedCurrencyAmount} 給 Tellomi"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "付款卡號碼無效"
@@ -8901,7 +8901,7 @@
     "messageformat": "代碼太短"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "獲取為期 30 天的 Signal 捐款徽章"
+    "messageformat": "獲取為期 30 天的 Tellomi 捐款徽章"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "最低捐款金額為 {formattedCurrencyAmount}"
@@ -8985,7 +8985,7 @@
     "messageformat": "捐款成功，但我們無法更新你的徽章設定"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "要更新行動裝置的徽章設定，請前往「設定」→「捐款給 Signal」→「徽章」。"
+    "messageformat": "要更新行動裝置的徽章設定，請前往「設定」→「捐款給 Tellomi」→「徽章」。"
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "捐款中斷"
@@ -9042,7 +9042,7 @@
     "messageformat": "捐款時發生錯誤"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "可能尚未處理你的捐款。點擊「捐款給 Signal」，然後點擊「捐款收據」以查看你的收據並確認。"
+    "messageformat": "可能尚未處理你的捐款。點擊「捐款給 Tellomi」，然後點擊「捐款收據」以查看你的收據並確認。"
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "再試一次或向支援團隊提交除錯日誌，以取得協助完成捐款。除錯日誌可協助我們診斷並修正問題，而且不包含識別資料。"
@@ -9084,13 +9084,13 @@
     "messageformat": "謝謝您的支持！"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "你已獲得 Signal 的捐款者徽章！在你的個人檔案中展示徽章，表現你對我們的支持。"
+    "messageformat": "你已獲得 Tellomi 的捐款者徽章！在你的個人檔案中展示徽章，表現你對我們的支持。"
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "在個人資訊中展示"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "你可以在行動裝置的「設定 → 捐款給 Signal → 徽章」中更改此項目"
+    "messageformat": "你可以在行動裝置的「設定 → 捐款給 Tellomi → 徽章」中更改此項目"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "通話順利嗎？"

@@ -63,7 +63,7 @@
     "messageformat": "Ang pag-send ng high quality media will use more data."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Mag-donate sa Signal"
+    "messageformat": "Mag-donate sa Tellomi"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
     "messageformat": "Tinutulungan ka ng <bold>Linked Devices</bold> na i-access ang Tellomi account at messages mo nang ligtas sa anumang additional devices mo."
@@ -2754,7 +2754,7 @@
     "messageformat": "I-tap ang message na ito sa mobile para makita ang donation mo"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "Nag-donate sa Signal si {sender} para sa iyo"
+    "messageformat": "Nag-donate sa Tellomi si {sender} para sa iyo"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "I-check ang iyong phone para mabuksan ang donation na ito"
@@ -2811,7 +2811,7 @@
     "messageformat": "Maraming salamat sa iyong suporta!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Nag-donate ka sa Signal para kay {name}. Mabibigyan siya ng option na ipakita sa kanyang profile ang kanyang suporta."
+    "messageformat": "Nag-donate ka sa Tellomi para kay {name}. Mabibigyan siya ng option na ipakita sa kanyang profile ang kanyang suporta."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Hindi ma-install ang sticker pack"
@@ -4719,7 +4719,7 @@
     "messageformat": "Binubura ang user data at nire-reset ang app"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Mag-donate sa Signal"
+    "messageformat": "Mag-donate sa Tellomi"
   },
   "icu:BadgeDialog__name-supports-signal": {
     "messageformat": "Sinusuportahan ni {name} ang Tellomi"
@@ -6101,7 +6101,7 @@
     "messageformat": "General"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Mag-donate sa Signal"
+    "messageformat": "Mag-donate sa Tellomi"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Hitsura"
@@ -8517,7 +8517,7 @@
     "messageformat": "Proudly Nonprofit"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Mag-donate para suportahan ang private messaging. Panatilihing malaya at ad-free ang Signal. <readMoreLink>Magbasa pa</readMoreLink>"
+    "messageformat": "Mag-donate para suportahan ang private messaging. Panatilihing malaya at ad-free ang Tellomi. <readMoreLink>Magbasa pa</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Mag-donate"
@@ -8568,7 +8568,7 @@
     "messageformat": "Donor FAQs"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Hindi nagsi-sync ang receipts sa iba't-ibang devices. Kung ni-reinstall mo ang Signal app, hindi magiging available ang receipts ng lumang donations."
+    "messageformat": "Hindi nagsi-sync ang receipts sa iba't-ibang devices. Kung ni-reinstall mo ang Tellomi app, hindi magiging available ang receipts ng lumang donations."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Walang receipts"
@@ -8610,7 +8610,7 @@
     "messageformat": "MM/YY"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Mag-donate ng {formattedCurrencyAmount} sa Signal"
+    "messageformat": "Mag-donate ng {formattedCurrencyAmount} sa Tellomi"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Invalid ang card number"
@@ -8712,7 +8712,7 @@
     "messageformat": "Pumasok ang donation, pero hindi namin ma-update ang iyong badge settings"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "Para i-update ang badge settings mo sa iyong device, pumunta sa Settings → Mag-donate sa Signal → Badges."
+    "messageformat": "Para i-update ang badge settings mo sa iyong device, pumunta sa Settings → Mag-donate sa Tellomi → Badges."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Naputol ang pag-donate"
@@ -8769,7 +8769,7 @@
     "messageformat": "Nagkaroon ng error sa iyong donation"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Maaaring hindi naproseso ang iyong donation. I-click ang \"Mag-donate sa Signal\" at i-click ang \"Donation Receipts\" para ma-check at ma-confirm ang iyong mga resibo."
+    "messageformat": "Maaaring hindi naproseso ang iyong donation. I-click ang \"Mag-donate sa Tellomi\" at i-click ang \"Donation Receipts\" para ma-check at ma-confirm ang iyong mga resibo."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Subukan ulit o mag-submit ng debug log sa Support para matulungan kang makumpleto ang donation mo. Ang debug logs ay makatutulong sa amin para ma-diagnose at maayos ang issue, at wala itong nilalaman na identifying information."
@@ -8817,7 +8817,7 @@
     "messageformat": "I-display sa Profile"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Maaari mo itong ayusin sa iyong mobile device sa Settings → Mag-donate sa Signal → Badges"
+    "messageformat": "Maaari mo itong ayusin sa iyong mobile device sa Settings → Mag-donate sa Tellomi → Badges"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "Kumusta ang tawag mo?"

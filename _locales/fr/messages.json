@@ -8811,7 +8811,7 @@
     "messageformat": "Merci pour votre soutien !"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Vous avez gagné un macaron de donateur Signal ! Affichez-le sur votre profil pour montrer que vous nous soutenez."
+    "messageformat": "Vous avez gagné un macaron de donateur Tellomi ! Affichez-le sur votre profil pour montrer que vous nous soutenez."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Afficher sur mon profil"
