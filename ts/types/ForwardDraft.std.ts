@@ -6,7 +6,7 @@ import type { ReadonlyMessageAttributesType } from '../model-types.d.ts';
 import type { AttachmentForUIType } from './Attachment.std.ts';
 import { isVoiceMessage, isDownloaded } from '../util/Attachment.std.ts';
 import type { HydratedBodyRangesType } from './BodyRange.std.ts';
-import type { LinkPreviewForUIType } from './message/LinkPreviews.std.ts';
+import type { LinkPreviewType } from './message/LinkPreviews.std.ts';
 
 const { orderBy } = lodash;
 
@@ -17,7 +17,9 @@ export type MessageForwardDraft = Readonly<{
   isSticker: boolean;
   messageBody?: string;
   originalMessageId: string | null; // null for new messages
-  previews: ReadonlyArray<LinkPreviewForUIType>;
+  // Tellomi (ADR-0063 §7.4): the previews as a message stores them (`rich` as received), which a
+  // forwarded copy sends on; what a preview shown on screen has besides that is not in here.
+  previews: ReadonlyArray<LinkPreviewType>;
 }>;
 
 export type ForwardMessageData = Readonly<{
