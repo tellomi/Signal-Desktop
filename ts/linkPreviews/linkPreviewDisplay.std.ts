@@ -34,7 +34,10 @@ type PreviewForDisplay = Readonly<{
   card?: LinkCardType;
 }>;
 
-const SEPARATOR = ' · ';
+// card-visual §3.7: the parts of the sub line are joined by U+00B7; the domain and the publish
+// date of a video, on the domain line, by U+22C5 (a different dot, on purpose).
+const SEPARATOR = ' \u00B7 ';
+const DOMAIN_DATE_SEPARATOR = ' \u22C5 ';
 
 const PLATFORM_NAMES: Readonly<Record<string, string>> = {
   ios: 'iOS',
@@ -83,7 +86,8 @@ function getKindName(kind: string, i18n: LocalizerType): string | undefined {
 }
 
 // `m:ss` under an hour, `h:mm:ss` from an hour; zero, negative or not a number shows nothing
-// (card-visual §3.9).
+// (card-visual §3.9), and neither does a duration that rounds to zero seconds (1 to 499 ms):
+// `0:00` would say the video has no length.
 export function formatDurationMs(
   value: string | undefined
 ): string | undefined {
@@ -95,6 +99,9 @@ export function formatDurationMs(
     return undefined;
   }
   const totalSeconds = Math.round(ms / 1000);
+  if (totalSeconds <= 0) {
+    return undefined;
+  }
   const hours = Math.floor(totalSeconds / 3600);
   const minutes = Math.floor((totalSeconds % 3600) / 60);
   const seconds = totalSeconds % 60;
@@ -169,7 +176,7 @@ function getStructuredDisplay(
         ),
         domain:
           domain && published !== undefined
-            ? `${domain}${SEPARATOR}${formatLinkCardDate(published, i18n.getLocale(), now)}`
+            ? `${domain}${DOMAIN_DATE_SEPARATOR}${formatLinkCardDate(published, i18n.getLocale(), now)}`
             : domain,
       };
     }

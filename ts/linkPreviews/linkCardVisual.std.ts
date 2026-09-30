@@ -19,6 +19,15 @@ export type LinkCardLayoutType =
   // Title, domain and a link glyph; grey.
   | 'no_image';
 
+// card-visual §3.2 / §3.8: the picture of a large-image card is 1.91:1 at its widest and square at
+// its tallest (width ÷ height). A picture outside that range is cropped around its centre: the
+// box is given the clamped shape and the picture covers it. This is geometry, not a decision:
+// whether a card is a large-image card at all is `layout()` in rust/links.
+export const LARGE_IMAGE_ASPECT_RATIO_LIMITS = {
+  min: 1,
+  max: 1.91,
+} as const;
+
 const LAYOUTS: ReadonlyArray<LinkCardLayoutType> = [
   'first_party',
   'large_image',

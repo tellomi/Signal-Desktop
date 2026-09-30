@@ -1621,6 +1621,48 @@ LinkCardStructured.args = {
   text: 'Look https://www.bilibili.com/video/BV1YDhJ6ZEL6',
 };
 
+// Tellomi (card-visual §3.7, audit A4): a video's publish date follows the domain, joined by U+22C5;
+// the parts of the sub line are joined by U+00B7.
+export const LinkCardStructuredWithDate = Template.bind({});
+LinkCardStructuredWithDate.args = {
+  previews: [
+    {
+      ...LinkCardStructured.args?.previews?.[0],
+      domain: 'bilibili.com',
+      isStickerPack: false,
+      isCallLink: false,
+      url: 'https://www.bilibili.com/video/BV1YDhJ6ZEL6',
+      card: {
+        ...(LinkCardStructured.args?.previews?.[0]?.card ?? {
+          level: 'structured',
+          provider: null,
+          provider_name: null,
+          kind: 'video',
+          route: null,
+          title: null,
+          description: null,
+          attrs: [],
+          domain: 'bilibili.com',
+          official_badge: false,
+          first_party: null,
+          lookalike: null,
+          show_image: false,
+          tintable: false,
+          payment: false,
+          reason: null,
+        }),
+        attrs: [
+          { key: 'author', value: '柯洁' },
+          { key: 'duration_ms', value: '3723000' },
+          { key: 'published_at', value: '2025-12-01T08:00:00+08:00' },
+        ],
+      },
+    },
+  ],
+  status: 'sent',
+  text: 'Look https://www.bilibili.com/video/BV1YDhJ6ZEL6',
+};
+
 // Tellomi (ADR-0063 §5.1, tellomi/tellomi#1421): the level comes from rust/links in the selector.
 export const LinkCardOfficial = Template.bind({});
 LinkCardOfficial.args = {
@@ -1978,6 +2020,190 @@ LinkCardLargeImageTinted.args = {
   ],
   status: 'sent',
   text: 'Look https://www.signal.org',
+  getLinkCardTint: () => ORANGE_TINT,
+};
+
+// Tellomi (card-visual §3.2, audit B3): the picture of a large-image card is 1.91:1 at its widest and
+// square at its tallest; one outside that range is cropped around its centre. The story stands in
+// for `layout()` (large_image) and declares the picture's size as the sender's pointer would.
+export const LinkCardLargeImageWide = Template.bind({});
+LinkCardLargeImageWide.args = {
+  previews: [
+    {
+      domain: 'signal.org',
+      image: fakeAttachment({
+        contentType: IMAGE_JPEG,
+        fileName: 'wide.jpg',
+        height: 300,
+        url: '/fixtures/wide.jpg',
+        width: 1800,
+      }),
+      isStickerPack: false,
+      isCallLink: false,
+      title: 'A picture six times as wide as it is high',
+      url: 'https://www.signal.org',
+      card: GENERIC_CARD,
+      layout: 'large_image',
+    },
+  ],
+  status: 'sent',
+  text: 'Look https://www.signal.org',
+};
+
+export const LinkCardLargeImageTall = Template.bind({});
+LinkCardLargeImageTall.args = {
+  previews: [
+    {
+      domain: 'signal.org',
+      image: fakeAttachment({
+        contentType: IMAGE_JPEG,
+        fileName: 'snow.jpg',
+        height: 2048,
+        url: '/fixtures/snow.jpg',
+        width: 1152,
+      }),
+      isStickerPack: false,
+      isCallLink: false,
+      title: 'A picture taller than it is wide',
+      url: 'https://www.signal.org',
+      card: GENERIC_CARD,
+      layout: 'large_image',
+    },
+  ],
+  status: 'sent',
+  text: 'Look https://www.signal.org',
+};
+
+export const LinkCardLargeImageTallDark = Template.bind({});
+LinkCardLargeImageTallDark.args = {
+  ...LinkCardLargeImageTall.args,
+  theme: ThemeType.dark,
+};
+
+// Tellomi (card-visual §3.2 / §3.7, audit B4): a card with no picture has the link glyph at its
+// end, like the plain-link card; the title keeps to two lines and the domain to one.
+export const LinkCardNoImage = Template.bind({});
+LinkCardNoImage.args = {
+  previews: [
+    {
+      domain: 'signal.org',
+      isStickerPack: false,
+      isCallLink: false,
+      title: 'Signal',
+      url: 'https://www.signal.org',
+      card: GENERIC_CARD,
+      layout: 'no_image',
+    },
+  ],
+  status: 'sent',
+  text: 'Look https://www.signal.org',
+};
+
+export const LinkCardNoImageDark = Template.bind({});
+LinkCardNoImageDark.args = {
+  ...LinkCardNoImage.args,
+  theme: ThemeType.dark,
+};
+
+export const LinkCardNoImageLongText = Template.bind({});
+LinkCardNoImageLongText.args = {
+  previews: [
+    {
+      domain:
+        'a-very-long-registrable-domain-name-that-does-not-fit-on-one-line.example.com',
+      isStickerPack: false,
+      isCallLink: false,
+      title:
+        'A very long page title that has to be wrapped over several lines beside the link glyph and then cut off at the second line',
+      url: 'https://www.signal.org',
+      card: {
+        ...GENERIC_CARD,
+        domain:
+          'a-very-long-registrable-domain-name-that-does-not-fit-on-one-line.example.com',
+      },
+      layout: 'no_image',
+    },
+  ],
+  status: 'sent',
+  text: 'Look https://www.signal.org',
+};
+
+// Audit S6: a picture whose size the sender did not declare decides `no_image`; it is not drawn as
+// the old thumbnail beside the text.
+export const LinkCardPictureOfUnknownSize = Template.bind({});
+LinkCardPictureOfUnknownSize.args = {
+  previews: [
+    {
+      domain: 'signal.org',
+      image: fakeAttachment({
+        contentType: IMAGE_PNG,
+        fileName: 'the-sax.png',
+        height: undefined,
+        url: pngUrl,
+        width: undefined,
+      }),
+      isStickerPack: false,
+      isCallLink: false,
+      title: 'Signal',
+      url: 'https://www.signal.org',
+      card: GENERIC_CARD,
+      layout: 'no_image',
+    },
+  ],
+  status: 'sent',
+  text: 'Look https://www.signal.org',
+};
+
+// Tellomi (card-visual §3.7, audit A20): the sub line and the domain line are one line each, cut at
+// the end when they do not fit.
+export const LinkCardStructuredOneLine = Template.bind({});
+LinkCardStructuredOneLine.args = {
+  previews: [
+    {
+      domain: 'bilibili.com',
+      image: fakeAttachment({
+        contentType: IMAGE_PNG,
+        fileName: 'the-sax.png',
+        height: 100,
+        url: pngUrl,
+        width: 100,
+      }),
+      isStickerPack: false,
+      isCallLink: false,
+      title: 'A video with a long uploader name and a long domain line',
+      url: 'https://www.bilibili.com/video/BV1YDhJ6ZEL6',
+      card: {
+        level: 'structured',
+        provider: 'bilibili',
+        provider_name: { 'zh-Hans': '哔哩哔哩', en: 'Bilibili' },
+        kind: 'video',
+        route: null,
+        title: 'A video with a long uploader name and a long domain line',
+        description: null,
+        attrs: [
+          {
+            key: 'author',
+            value:
+              'An uploader whose name is much longer than the card is wide',
+          },
+          { key: 'duration_ms', value: '3723000' },
+          { key: 'published_at', value: '2026-01-05T08:00:00+08:00' },
+        ],
+        domain:
+          'a-very-long-registrable-domain-name-that-does-not-fit-on-one-line.example.com',
+        official_badge: false,
+        first_party: null,
+        lookalike: null,
+        show_image: true,
+        tintable: true,
+        payment: false,
+        reason: null,
+      },
+      layout: 'icon',
+    },
+  ],
+  status: 'sent',
+  text: 'Look https://www.bilibili.com/video/BV1YDhJ6ZEL6',
   getLinkCardTint: () => ORANGE_TINT,
 };
 

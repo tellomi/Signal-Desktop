@@ -13,6 +13,7 @@ import type {
   AttachmentForUIType,
   AttachmentType,
 } from '../../types/Attachment.std.ts';
+import type { AspectRatioLimitsType } from '../../util/Attachment.std.ts';
 import {
   areAllAttachmentsVisual,
   getAlt,
@@ -33,6 +34,8 @@ export type DirectionType = 'incoming' | 'outgoing';
 
 export type Props = {
   attachments: ReadonlyArray<AttachmentForUIType>;
+  // Tellomi (card-visual §3.2): for a single picture, the range its box's shape may take.
+  aspectRatioLimits?: AspectRatioLimitsType;
   bottomOverlay?: boolean;
   direction: DirectionType;
   isSticker?: boolean;
@@ -113,6 +116,7 @@ function getCurves({
 
 export function ImageGrid({
   attachments,
+  aspectRatioLimits,
   bottomOverlay,
   direction,
   i18n,
@@ -201,7 +205,8 @@ export function ImageGrid({
     strictAssert(attachment, 'Missing attachment');
     const { height, width } = getImageDimensionsForTimeline(
       attachment,
-      isSticker ? stickerSize : undefined
+      isSticker ? stickerSize : undefined,
+      aspectRatioLimits
     );
 
     return (

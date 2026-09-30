@@ -50,6 +50,8 @@ export enum AvatarSize {
   FORTY = 40,
   FORTY_EIGHT = 48,
   FIFTY_TWO = 52,
+  // Tellomi (card-visual §5.2): the avatar on a Tellomi user's link card.
+  FIFTY_SIX = 56,
   SEVENTY_TWO = 72,
   SIXTY_FOUR = 64,
   EIGHTY = 80,
