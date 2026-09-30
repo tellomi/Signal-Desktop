@@ -12346,7 +12346,7 @@
     "description": "Release notes for 8.27"
   },
   "icu:WhatsNew__tellomi--0": {
-    "messageformat": "Linking this computer now shows the cross-border transfer notice first. “Note to Self” is now “Saved Messages”, “Find by phone number” is gone from New Chat, and accounts without a PIN no longer get PIN reminders.",
+    "messageformat": "Link previews are now cards: videos, songs, places, apps and shops are recognised at a glance, tinted from their own picture, and open straight in the app. New: log out and keep your chat history on this computer. Usernames are always lowercase and renaming waits 180 days. Checking for updates no longer includes any account information. About now lists the terms, privacy policy and source code.",
     "description": "Tellomi release notes; keep in sync with docs/signal/VERSIONS.md, update every release"
   }
 }
