@@ -951,6 +951,36 @@ $message-padding-horizontal: 12px;
   margin-top: 4px;
 }
 
+// Tellomi (card-visual §3.6 / §3.8, audit C5): a card that can be opened lays a translucent layer
+// over itself while it is pressed, in the colour of its own text (black on a light card, white on a
+// dark one: the tint's text colour when there is one), and never changes its background. The
+// keyboard focus ring (the upstream one above) is the focus state; a card that cannot be opened
+// has neither.
+.module-message__link-preview:not(.module-message__link-preview--nonclickable) {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.12s ease-out;
+
+    @include mixins.light-theme {
+      background-color: var(--link-card-text, #{variables.$color-black});
+    }
+    @include mixins.dark-theme {
+      background-color: var(--link-card-text, #{variables.$color-white});
+    }
+  }
+
+  &:active::after {
+    opacity: 0.12;
+    transition: none;
+  }
+}
+
 // Tellomi (card-visual §3.5): a message that is just a link is the card alone; with no time
 // under it, the card reaches the bottom of the bubble.
 .module-message__link-preview--flush-bottom {
@@ -1124,6 +1154,15 @@ $message-padding-horizontal: 12px;
   justify-content: center;
   height: 36px;
   border-top: 1px solid;
+  outline: none;
+
+  // Tellomi (card-visual §3.6): the action row is the card's button, so it is what the keyboard
+  // focuses; the ring is inside the row because the card clips what is drawn outside it.
+  @include mixins.keyboard-mode {
+    &:focus {
+      box-shadow: inset 0 0 0 2px variables.$color-ultramarine;
+    }
+  }
 
   @include mixins.light-theme {
     background-color: variables.$color-gray-02;

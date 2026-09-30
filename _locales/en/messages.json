@@ -2274,6 +2274,26 @@
     "messageformat": "This group link is not active",
     "description": "Tellomi (ADR-0063 §5.1 rule 2, tellomi/tellomi#1421): shown in the message composer instead of a link preview when a group invite link in the draft is definitely not active (reset, turned off, or the group ended). Same wording as Android."
   },
+  "icu:TellomiLinkCard__a11y_separator": {
+    "messageformat": ", ",
+    "description": "Tellomi (card-visual §3.6, tellomi/tellomi#1421): what goes between the parts of the sentence a screen reader says for a link card, for example \"Link, Title, example.com\". A comma and a space in English, a full-width comma in Chinese. The same words on Android and iOS."
+  },
+  "icu:TellomiLinkCard__a11y_link": {
+    "messageformat": "Link",
+    "description": "Tellomi (card-visual §3.6, tellomi/tellomi#1421): first part of what a screen reader says for a link card to a website, before its title and its domain. The same words on Android and iOS."
+  },
+  "icu:TellomiLinkCard__a11y_button_with_action": {
+    "messageformat": "button: {action}",
+    "description": "Tellomi (card-visual §3.6, tellomi/tellomi#1421): last part of what a screen reader says for the card of a Tellomi object (a group, a user, a call, a sticker pack, the website): that it has a button, and what the button says. {action} is the label of the button at the bottom of the card, for example \"Join Group\". The same words on Android and iOS."
+  },
+  "icu:TellomiLinkCard__a11y_kind_group": {
+    "messageformat": "Tellomi group",
+    "description": "Tellomi (card-visual §3.6, tellomi/tellomi#1421): first part of what a screen reader says for the link card of a Tellomi group, before the group name and the member count. The same words on Android and iOS."
+  },
+  "icu:TellomiLinkCard__a11y_kind_sticker_pack": {
+    "messageformat": "Tellomi sticker pack",
+    "description": "Tellomi (card-visual §3.6, tellomi/tellomi#1421): first part of what a screen reader says for the link card of a Tellomi sticker pack, before the pack name and the sticker count. The same words on Android and iOS."
+  },
   "icu:TellomiLinks__link-previews-description": {
     "messageformat": "When on, your device visits the website when you send a link.",
     "description": "Tellomi (ADR-0063 §8.1 row 9, tellomi/tellomi#1421): description under the \"Generate link previews\" setting. Says plainly that the sender's device contacts the linked website. Same wording on Android and iOS."
