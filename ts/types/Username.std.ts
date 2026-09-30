@@ -20,7 +20,7 @@ export enum ReserveUsernameError {
   AllZeroDiscriminator = 'AllZeroDiscriminator',
   LeadingZeroDiscriminator = 'LeadingZeroDiscriminator',
   TooManyAttempts = 'TooManyAttempts',
-  // Tellomi (ADR-0066 §6.2): changed username less than 30 days ago; carries retryAfterSecs.
+  // Tellomi (ADR-0066 §6.2): changed username less than 180 days ago; carries retryAfterSecs.
   ChangeCooldown = 'ChangeCooldown',
 }
 
@@ -137,16 +137,16 @@ export function withFixedDiscriminator(input: string): string {
     : input;
 }
 
-// Tellomi (ADR-0066 §6.2): the server answers a reservation made during the 30-day rename cooldown with
+// Tellomi (ADR-0066 §6.2): the server answers a reservation made during the 180-day rename cooldown with
 // `429 + Retry-After` (seconds left, rounded up), the same status as ordinary rate limiting. Ordinary limiting is the
 // `usernameReserve` leaky bucket (100 per 15 minutes, one permit back every ~9 s), so its Retry-After is seconds; the
 // cooldown's is days. Anything above an hour is the cooldown. Android / iOS use the same rule (tellomi/tellomi#1106).
 export const RENAME_COOLDOWN_MIN_RETRY_AFTER_SECS = 3600;
 
 // Length of the cooldown a username change starts; the server's AccountsManager.USERNAME_CHANGE_COOLDOWN
-// (tellomi/Signal-Server#4). Only used to warn before a change; how long is actually left always comes from the
+// (tellomi/Signal-Server#4, 180 days since #8, owner 2026-09-27). Only used to warn before a change; how long is actually left always comes from the
 // server's Retry-After.
-export const RENAME_COOLDOWN_DAYS = 30;
+export const RENAME_COOLDOWN_DAYS = 180;
 
 // How long the server keeps a cleared or replaced username for its old owner: Accounts.USERNAME_HOLD_DURATION
 // (30 days in tellomi/Signal-Server). While such a hold is live, confirming any username — even the same one again —
@@ -157,7 +157,7 @@ const DAY_MS = 24 * 60 * 60 * 1000;
 
 // Whether a username deleted at `deletedAt` (ms; here, or on another device as seen via storage sync) may still be
 // held for the account. A deletion time in the future (clock moved back) counts as recent: warning once too often
-// beats a silent 30-day lock.
+// beats a silent 180-day lock.
 export function isWithinUsernameHold(
   deletedAt: number | undefined,
   now: number
@@ -210,7 +210,7 @@ export function isRenameCooldown(retryAfterSecs: number): boolean {
 }
 
 // Days to show for the cooldown: rounded up and at least 1, never "tomorrow" or hours (same on all three clients,
-// tellomi/tellomi#1106). 2,591,999 s right after a change reads "30 days"; two hours left reads "1 day".
+// tellomi/tellomi#1106). 15,551,999 s right after a change reads "180 days"; two hours left reads "1 day".
 export function getRenameCooldownDays(retryAfterSecs: number): number {
   return Math.max(1, Math.ceil(retryAfterSecs / (24 * 60 * 60)));
 }
