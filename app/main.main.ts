@@ -135,6 +135,7 @@ import { promptOSAuth } from '../ts/util/os/promptOSAuthMain.main.ts';
 import { appRelaunch } from '../ts/util/relaunch.main.ts';
 import { getAppRootDir } from '../ts/util/appRootDir.main.ts';
 import { openExternalLink } from './linkOpen.main.ts';
+import { startLinkRegistryUpdater } from './linkRegistryUpdater.main.ts';
 import { trackHeapSize } from '../ts/util/oomNotifier.node.ts';
 import { sendDummyKeystroke } from './WindowsNotifications.main.ts';
 import { maybeMigrateSafeStorageBackend } from '../ts/util/linuxPasswordStoreMigration.main.ts';
@@ -1187,6 +1188,11 @@ async function readyForUpdates() {
 
   // Discard value even if we don't handle a saved URL.
   macInitialOpenUrlRoute = undefined;
+
+  // Tellomi (ADR-0063 §4.7): the link registry is data that updates without a release.
+  if (!isTestEnvironment(getEnvironment())) {
+    startLinkRegistryUpdater();
+  }
 
   // Second, start checking for app updates
   try {
@@ -2908,6 +2914,7 @@ ipc.on('get-config', async event => {
     storageUrl: config.get<string>('storageUrl'),
     updatesUrl: config.get<string>('updatesUrl'),
     resourcesUrl: config.get<string>('resourcesUrl'),
+    updatesPublicKey: config.get<string>('updatesPublicKey'),
     cdnUrl0: config.get<string>('cdn.0'),
     cdnUrl2: config.get<string>('cdn.2'),
     cdnUrl3: config.get<string>('cdn.3'),

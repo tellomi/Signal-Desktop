@@ -27,6 +27,7 @@ global.window = {
       storageUrl: 'https://127.0.0.1:9',
       updatesUrl: 'https://127.0.0.1:9',
       resourcesUrl: 'https://127.0.0.1:9',
+      updatesPublicKey: '05' + '00'.repeat(32),
       version: packageJson.version,
     },
     crypto: new Crypto(),
