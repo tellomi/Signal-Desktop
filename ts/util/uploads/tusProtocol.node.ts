@@ -339,6 +339,7 @@ const BACKOFF_JITTER_MS = 100;
 /**
  * Attempts to resume an upload using the TUS protocol.
  * @throws {ResponseError} If the server responded with an error.
+ * @throws {Error} If the upload is still incomplete after `maxRetries` attempts.
  * @param params
  */
 export async function tusResumeUpload({
@@ -386,7 +387,7 @@ export async function tusResumeUpload({
     });
 
     if (uploadOffset === fileSize) {
-      break;
+      return;
     }
 
     const readable = reader(filePath, uploadOffset);
@@ -405,7 +406,15 @@ export async function tusResumeUpload({
     });
 
     if (done) {
-      break;
+      return;
     }
   }
+
+  // Every round either ended with the server reporting the full file or with a
+  // successful PATCH (both `return` above). Falling out of the loop means each
+  // PATCH died at the transport level, so the upload is incomplete.
+  throw new Error(
+    `tusProtocol: ResumeUpload(${toLogId(fileName)}): ` +
+      `upload incomplete after ${maxRetries} attempts`
+  );
 }
