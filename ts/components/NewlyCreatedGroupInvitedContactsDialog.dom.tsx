@@ -79,9 +79,7 @@ export function NewlyCreatedGroupInvitedContactsDialog({
         'icu:NewlyCreatedGroupInvitedContactsDialog--body--learn-more'
       )}
       onClickSecondaryButton={() => {
-        openLinkInWebBrowser(
-          'https://tellomi.app/help/360007319331'
-        );
+        openLinkInWebBrowser('https://tellomi.app/help/360007319331');
       }}
       onClose={onClose}
       title={i18n('icu:NewlyCreatedGroupInvitedContactsDialog--title', {

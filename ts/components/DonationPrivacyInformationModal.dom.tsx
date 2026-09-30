@@ -19,9 +19,7 @@ export function DonationPrivacyInformationModal({
   onClose,
 }: DonationPrivacyInformationModalProps): JSX.Element {
   const handleDonationFAQsClick = () => {
-    openLinkInWebBrowser(
-      'https://tellomi.app/help/360031949872'
-    );
+    openLinkInWebBrowser('https://tellomi.app/help/360031949872');
   };
 
   return (

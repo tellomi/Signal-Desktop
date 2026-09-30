@@ -53,8 +53,7 @@ const getQrCodeClassName = getClassNamesFor(
   'module-InstallScreenQrCodeNotScannedStep__qr-code'
 );
 
-const SUPPORT_PAGE =
-  'https://tellomi.app/help/360007320551';
+const SUPPORT_PAGE = 'https://tellomi.app/help/360007320551';
 
 export function InstallScreenQrCodeNotScannedStep({
   currentVersion,

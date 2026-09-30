@@ -7,8 +7,7 @@ import { I18n } from './I18n.dom.tsx';
 import { AxoConfirmDialog } from '../axo/AxoConfirmDialog.dom.tsx';
 import { tw } from '../axo/tw.dom.tsx';
 
-const BACKUP_AND_RESTORE_SUPPORT_PAGE =
-  'https://tellomi.app/help/360007059752';
+const BACKUP_AND_RESTORE_SUPPORT_PAGE = 'https://tellomi.app/help/360007059752';
 
 const learnMoreLink = (parts: Array<string | JSX.Element>) => (
   <a
