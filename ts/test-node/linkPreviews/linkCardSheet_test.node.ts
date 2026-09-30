@@ -156,6 +156,27 @@ describe('the link card acceptance sheet', () => {
     );
   });
 
+  // card-visual §5.2, row `tellomi.user`: "known on this device → the real avatar; otherwise the
+  // default avatar". The row shows both, and says which is which.
+  it('shows both avatars of a Tellomi user: one this device knows, with its picture, and one it does not', () => {
+    const row = SHEET_ROWS.find(
+      candidate => candidate.id === 'first-party-user'
+    );
+    assert.isDefined(row);
+    const known = row?.full.preview.firstPartyLocal?.knownUser;
+    assert.isDefined(
+      known?.avatarUrl,
+      'a user this device knows has a picture'
+    );
+    assert.isTrue(known?.hasAvatar);
+    assert.isUndefined(
+      row?.required.preview.firstPartyLocal,
+      'a user this device does not know has nothing from it'
+    );
+    assert.isDefined(row?.full.note, 'the cell says which avatar it shows');
+    assert.isDefined(row?.required.note, 'the cell says which avatar it shows');
+  });
+
   describe('"all fields" has every field of the kind, "required only" has none of the others', () => {
     for (const { name, row, state, cell } of CELLS) {
       const card = cell.preview.card;

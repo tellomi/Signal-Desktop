@@ -179,6 +179,9 @@ function Cell({
         {preview.card?.level} · {preview.card?.kind ?? 'no kind'} ·{' '}
         {preview.layout}
       </div>
+      {cell.note ? (
+        <div style={{ fontSize: 11, opacity: 0.65 }}>{cell.note}</div>
+      ) : null}
     </div>
   );
 }
