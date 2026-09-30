@@ -601,10 +601,12 @@ describe('messaging/testLinkPreview', function (this: Mocha.Suite) {
       // What the timeline shows of the preview.
       const card = message.locator('.module-message__link-preview');
       await card.waitFor();
+      // The words of the card, line by line. A line with no letter or digit is an icon (the link
+      // glyph of a card without a picture is a character of an icon font), not a word.
       const lines = (await card.innerText())
         .split('\n')
         .map(line => line.trim())
-        .filter(Boolean);
+        .filter(line => /[\p{L}\p{N}]/u.test(line));
       assert.deepEqual(lines, expected, `in ${String(locale)}`);
 
       // What Desktop stored: `rich` as it arrived, unknown fields included, or not at all.
