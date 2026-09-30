@@ -46,3 +46,36 @@
 .About__Body {
   user-select: text;
 }
+
+.About__Links {
+  line-height: 1.7;
+}
+
+.About__ContactLabel {
+  opacity: 0.7;
+}
+
+.About__CopyAddress {
+  @include mixins.button-reset;
+
+  cursor: pointer;
+  text-decoration: underline;
+
+  @include mixins.light-theme {
+    color: variables.$color-ultramarine;
+  }
+  @include mixins.dark-theme {
+    color: variables.$color-ultramarine-pastel;
+  }
+}
+
+.About__Copied {
+  margin-inline-start: 8px;
+  opacity: 0.7;
+}
+
+.About__Source {
+  font-size: 12px;
+  max-width: 380px;
+  opacity: 0.8;
+}

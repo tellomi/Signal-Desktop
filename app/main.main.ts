@@ -1355,7 +1355,7 @@ async function showAbout() {
 
   const options = {
     width: 500,
-    height: 500,
+    height: 600,
     resizable: false,
     title: getResolvedMessagesLocale().i18n('icu:aboutSignalDesktop'),
     titleBarStyle: nonMainTitleBarStyle,

@@ -87,7 +87,28 @@
     "messageformat": "軟件鳴謝"
   },
   "icu:privacyPolicy": {
-    "messageformat": "條款同私隱政策"
+    "messageformat": "私隱政策"
+  },
+  "icu:About__Website": {
+    "messageformat": "官方網站"
+  },
+  "icu:About__ContactSupport": {
+    "messageformat": "聯絡客服"
+  },
+  "icu:About__ContactPrivacy": {
+    "messageformat": "私隱同個人資料"
+  },
+  "icu:About__ContactAbuse": {
+    "messageformat": "違規舉報"
+  },
+  "icu:About__Copied": {
+    "messageformat": "已複製"
+  },
+  "icu:About__Terms": {
+    "messageformat": "條款"
+  },
+  "icu:About__SourceCode": {
+    "messageformat": "Tellomi 用 GNU AGPLv3 發布；原始碼可以喺 {sourceLink} 攞到。"
   },
   "icu:About__AppEnvironment": {
     "messageformat": "{appEnv}"
