@@ -17,6 +17,7 @@ import type { LoggerType } from '../types/Logging.std.ts';
 import { scaleImageToLevel } from '../util/scaleImageToLevel.preload.ts';
 import { createLogger } from '../logging/log.std.ts';
 import { shouldPreviewHref } from '../types/LinkPreview.std.ts';
+import { toCanonicalLinkImageType } from './linkImageTypes.std.ts';
 
 const log = createLogger('linkPreviewFetch');
 
@@ -171,7 +172,8 @@ const parseContentType = (headerValue: string | null): ParsedContentType => {
   }
 
   return {
-    type: stringToMIMEType(rawType),
+    // Tellomi (ADR-0063 §4.4, audit S2): an icon is one type here, whichever name it came with.
+    type: stringToMIMEType(toCanonicalLinkImageType(rawType)),
     charset,
   };
 };
@@ -596,7 +598,9 @@ export async function fetchLinkPreviewImage(
 // `processImageResponse`, for bytes the rust/links fetcher already downloaded.
 export async function processLinkPreviewImageBytes(
   data: Uint8Array<ArrayBuffer>,
-  contentTypeHeader: string
+  contentTypeHeader: string,
+  // What decodes and re-encodes the picture; only a test passes another one.
+  scale: typeof scaleImageToLevel = scaleImageToLevel
 ): Promise<null | LinkPreviewImage> {
   if (data.byteLength < MIN_IMAGE_CONTENT_LENGTH) {
     return null;
@@ -608,7 +612,7 @@ export async function processLinkPreviewImageBytes(
   if (contentType === IMAGE_GIF) {
     return { data, contentType };
   }
-  const { blob, contentType: newContentType } = await scaleImageToLevel({
+  const { blob, contentType: newContentType } = await scale({
     fileOrBlobOrURL: new Blob([data], { type: contentType }),
     contentType,
     size: data.byteLength,

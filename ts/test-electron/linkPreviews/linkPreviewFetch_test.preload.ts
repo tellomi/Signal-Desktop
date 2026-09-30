@@ -16,6 +16,7 @@ import type { LoggerType } from '../../types/Logging.std.ts';
 import {
   fetchLinkPreviewImage,
   fetchLinkPreviewMetadata,
+  processLinkPreviewImageBytes,
 } from '../../linkPreviews/linkPreviewFetch.preload.ts';
 
 async function readFixtureImage(
@@ -1205,6 +1206,13 @@ describe('link preview fetching', () => {
         contentType: 'image/x-icon',
         fixtureFilename: 'kitten-1-64-64.ico',
       },
+      {
+        // Tellomi (ADR-0063 §4.4, audit S2): the IANA name of the same format.
+        title: 'ICO labelled image/vnd.microsoft.icon',
+        contentType: 'image/vnd.microsoft.icon',
+        scaledContentType: 'image/x-icon',
+        fixtureFilename: 'kitten-1-64-64.ico',
+      },
     ].forEach(({ title, contentType, scaledContentType, fixtureFilename }) => {
       it(`handles ${title} images`, async () => {
         const fixture = await readFixtureImage(fixtureFilename);
@@ -1463,6 +1471,40 @@ describe('link preview fetching', () => {
           fakeFetch,
           'https://signal.org/img',
           abortController.signal
+        )
+      );
+    });
+  });
+  // Tellomi (ADR-0063 §4.4, audit S2): the send path (rust/links' fetcher brings the bytes) takes
+  // the same pictures under the same names as the fetcher it replaces.
+  describe('processLinkPreviewImageBytes', () => {
+    [
+      { label: 'image/x-icon', contentType: 'image/x-icon' },
+      {
+        label: 'image/vnd.microsoft.icon',
+        contentType: 'image/vnd.microsoft.icon',
+      },
+    ].forEach(({ label, contentType }) => {
+      it(`takes an ICO labelled ${label}, as image/x-icon`, async () => {
+        const fixture = await readFixtureImage('kitten-1-64-64.ico');
+        const result = await processLinkPreviewImageBytes(
+          new Uint8Array(fixture),
+          contentType
+        );
+        assert.strictEqual(
+          result?.contentType,
+          stringToMIMEType('image/x-icon')
+        );
+        assert.isNotEmpty(result?.data);
+      });
+    });
+
+    it('leaves out what is not a picture', async () => {
+      const fixture = await readFixtureImage('kitten-1-64-64.ico');
+      assert.isNull(
+        await processLinkPreviewImageBytes(
+          new Uint8Array(fixture),
+          'image/svg+xml'
         )
       );
     });
