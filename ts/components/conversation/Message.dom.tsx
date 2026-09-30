@@ -53,7 +53,10 @@ import type { RenderingContextType } from '../../types/RenderingContext.d.ts';
 import type { LinkPreviewForUIType } from '../../types/message/LinkPreviews.std.ts';
 import type { MessageStatusType } from '../../types/message/MessageStatus.std.ts';
 import { shouldUseFullSizeLinkPreviewImage } from '../../linkPreviews/shouldUseFullSizeLinkPreviewImage.std.ts';
-import { shouldTintLinkCard } from '../../linkPreviews/linkCardVisual.std.ts';
+import {
+  LARGE_IMAGE_ASPECT_RATIO_LIMITS,
+  shouldTintLinkCard,
+} from '../../linkPreviews/linkCardVisual.std.ts';
 import type { GetLinkCardTintType } from './LinkPreviewTintFrame.dom.tsx';
 import { LinkPreviewTintFrame } from './LinkPreviewTintFrame.dom.tsx';
 import { getLinkPreviewDisplay } from '../../linkPreviews/linkPreviewDisplay.std.ts';
@@ -1652,6 +1655,22 @@ export class Message extends PureComponent<Props, State> {
     // Tellomi (card-visual §3.2 / §3.3): the shape rust/links decided, and the tint from the card's
     // own image, never in a message request.
     const isIconLayout = first.layout === 'icon';
+    // Tellomi (card-visual §3.2 / §3.7): a card with no picture (a generic page with no image, a
+    // brand shell with no bundled icon, a payment shell) has the link glyph at its end, as the
+    // plain-link card does; its text is one line for the sub line and one for the domain. A Signal
+    // call link or sticker pack keeps the look Signal gives it.
+    const isNoImageLayout =
+      first.layout === 'no_image' && !first.isCallLink && !first.isStickerPack;
+    // rust/links decided the card's shape: the sender's picture is drawn only as that shape says,
+    // never as the old 72px thumbnail beside the text (audit S6: a picture of unknown size decides
+    // `no_image`). Without a decision (no registry) the preview stays as Signal draws it.
+    const hasLayoutDecision = first.layout !== undefined;
+    const hasCard = first.card !== undefined;
+    const linkIcon = (
+      <div className="module-message__link-preview__link-icon">
+        <AxoSymbol.Icon size={24} symbol="link" label={null} />
+      </div>
+    );
     // Tellomi (ADR-0063 §九.6, card-visual §3.7): a brand shell's icon from the files that ship
     // with the app. It is the card's image for the shape and the tint; the sender's is not shown.
     const brandIcon =
@@ -1695,15 +1714,18 @@ export class Message extends PureComponent<Props, State> {
             {title}
           </div>
         </div>
-        <div className="module-message__link-preview__link-icon">
-          <AxoSymbol.Icon size={24} symbol="link" label={null} />
-        </div>
+        {linkIcon}
       </div>
     ) : (
       <>
         {first.image && previewHasImage && isFullSizeImage ? (
           <ImageGrid
             attachments={[first.image]}
+            aspectRatioLimits={
+              first.layout === 'large_image'
+                ? LARGE_IMAGE_ASPECT_RATIO_LIMITS
+                : undefined
+            }
             withContentAbove={withContentAbove}
             direction={direction}
             shouldCollapseAbove={shouldCollapseAbove}
@@ -1733,7 +1755,7 @@ export class Message extends PureComponent<Props, State> {
           domain &&
           previewHasImage &&
           !isFullSizeImage &&
-          !isIconLayout ? (
+          !hasLayoutDecision ? (
             <div
               className={tw(
                 'me-2 inline-block',
@@ -1808,7 +1830,7 @@ export class Message extends PureComponent<Props, State> {
             <div
               className={classNames(
                 'module-message__link-preview__text',
-                previewHasImage && !isFullSizeImage && !isIconLayout
+                previewHasImage && !isFullSizeImage && !hasLayoutDecision
                   ? 'module-message__link-preview__text--with-icon'
                   : null
               )}
@@ -1826,11 +1848,23 @@ export class Message extends PureComponent<Props, State> {
                 ) : null}
               </div>
               {description && (
-                <div className="module-message__link-preview__description">
+                <div
+                  className={classNames(
+                    'module-message__link-preview__description',
+                    {
+                      'module-message__link-preview__description--one-line':
+                        hasCard,
+                    }
+                  )}
+                >
                   {unescape(description)}
                 </div>
               )}
-              <div className="module-message__link-preview__footer">
+              <div
+                className={classNames('module-message__link-preview__footer', {
+                  'module-message__link-preview__footer--one-line': hasCard,
+                })}
+              >
                 <div className="module-message__link-preview__location">
                   {domain}
                 </div>
@@ -1893,6 +1927,7 @@ export class Message extends PureComponent<Props, State> {
               />
             </div>
           ) : null}
+          {isNoImageLayout ? linkIcon : null}
         </div>
       </>
     );
@@ -1978,7 +2013,7 @@ export class Message extends PureComponent<Props, State> {
             i18n={i18n}
             phoneNumber={knownUser?.phoneNumber}
             profileName={knownUser?.profileName}
-            size={AvatarSize.FIFTY_TWO}
+            size={AvatarSize.FIFTY_SIX}
             title={card.title}
           />
         );

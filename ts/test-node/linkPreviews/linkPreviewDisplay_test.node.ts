@@ -179,10 +179,12 @@ describe('getLinkPreviewDisplay', () => {
       },
       '《柯洁围棋入门课》'
     );
+    // card-visual §3.7: the sub line's parts are joined by U+00B7, the domain line's domain and
+    // date by U+22C5 (a different dot, on purpose).
     assert.deepEqual(getLinkPreviewDisplay({ ...SNAPSHOT, card }, i18n, NOW), {
       title: '《柯洁围棋入门课》',
-      description: '柯洁 · 1:02:03',
-      domain: 'bilibili.com · Sep 1',
+      description: '柯洁 \u00B7 1:02:03',
+      domain: 'bilibili.com \u22C5 Sep 1',
       officialBadge: false,
       hideSnapshotDate: true,
     });
@@ -394,15 +396,50 @@ describe('getLinkPreviewDisplay', () => {
 describe('formatDurationMs', () => {
   it('rounds to seconds, m:ss under an hour and h:mm:ss from an hour', () => {
     assert.strictEqual(formatDurationMs('500'), '0:01');
+    assert.strictEqual(formatDurationMs('1499'), '0:01');
+    assert.strictEqual(formatDurationMs('1500'), '0:02');
     assert.strictEqual(formatDurationMs('225000'), '3:45');
     assert.strictEqual(formatDurationMs('3727000'), '1:02:07');
+  });
+
+  it('shows nothing when the duration rounds to zero seconds (1 to 499 ms)', () => {
+    assert.isUndefined(formatDurationMs('1'));
+    assert.isUndefined(formatDurationMs('499'));
+    assert.strictEqual(
+      formatDurationMs('500'),
+      '0:01',
+      'the next one up shows'
+    );
   });
 
   it('shows nothing for zero, negative or not a number', () => {
     assert.isUndefined(formatDurationMs('0'));
     assert.isUndefined(formatDurationMs('-5'));
+    assert.isUndefined(formatDurationMs('-499'));
     assert.isUndefined(formatDurationMs('long'));
+    assert.isUndefined(formatDurationMs('NaN'));
+    assert.isUndefined(formatDurationMs('Infinity'));
+    assert.isUndefined(formatDurationMs('1.5'));
+    assert.isUndefined(formatDurationMs('9007199254740993'));
+    assert.isUndefined(formatDurationMs(''));
     assert.isUndefined(formatDurationMs(undefined));
+  });
+
+  it('leaves the duration off a video whose duration rounds to zero', () => {
+    const card: LinkCardType = {
+      ...BASE,
+      level: 'structured',
+      kind: 'video',
+      title: 'Title',
+      attrs: [
+        { key: 'author', value: 'Up' },
+        { key: 'duration_ms', value: '499' },
+      ],
+    };
+    assert.strictEqual(
+      getLinkPreviewDisplay({ ...SNAPSHOT, card }, i18n, NOW).description,
+      'Up'
+    );
   });
 });
 

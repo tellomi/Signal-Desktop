@@ -412,9 +412,15 @@ type DimensionsType = {
   width: number;
 };
 
+// Tellomi (card-visual §3.2): the range of shapes a box may take, as width ÷ height.
+export type AspectRatioLimitsType = Readonly<{ min: number; max: number }>;
+
 export function getImageDimensionsForTimeline(
   attachment: Pick<AttachmentType, 'width' | 'height'>,
-  forcedWidth?: number
+  forcedWidth?: number,
+  // Tellomi (card-visual §3.2): a picture outside this range gets a box of the nearest shape in
+  // it; drawn with `object-fit: cover`, the picture is cropped around its centre.
+  aspectRatioLimits?: AspectRatioLimitsType
 ): DimensionsType {
   const { height, width } = attachment;
   if (!height || !width) {
@@ -424,7 +430,14 @@ export function getImageDimensionsForTimeline(
     };
   }
 
-  const aspectRatio = height / width;
+  let aspectRatio = height / width;
+  if (aspectRatioLimits) {
+    // height ÷ width is the other way up: the widest shape has the smallest value.
+    aspectRatio = Math.min(
+      Math.max(aspectRatio, 1 / aspectRatioLimits.max),
+      1 / aspectRatioLimits.min
+    );
+  }
   const targetWidth =
     forcedWidth ||
     Math.max(

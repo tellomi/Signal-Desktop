@@ -1047,6 +1047,30 @@ $message-padding-horizontal: 12px;
   text-transform: lowercase;
 }
 
+// Tellomi (card-visual §3.7, audit A20): on a card the sub line and the domain line are one line
+// each, cut at the end when they do not fit (the title keeps its two). A preview no card decided
+// (no registry) keeps the upstream description and footer above.
+.module-message__link-preview__description--one-line {
+  display: block;
+  -webkit-line-clamp: unset;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.module-message__link-preview__footer--one-line {
+  flex-wrap: nowrap;
+
+  .module-message__link-preview__location {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    // The registrable domain rust/links computes is lower case already; the line may also carry
+    // a video's publish date, whose month must keep its capital ("Dec 1, 2025").
+    text-transform: none;
+  }
+}
+
 // Tellomi (card-visual §3.7): the no-image card of a message that is just a link has a link icon
 // at the end, where an icon card has its icon.
 .module-message__link-preview__link-icon {
