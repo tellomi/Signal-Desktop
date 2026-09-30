@@ -6,7 +6,6 @@ import { useEffect, useRef, useState } from 'react';
 
 import type { LocalizerType } from '../types/Util.std.ts';
 import { useEscapeHandling } from '../hooks/useEscapeHandling.dom.ts';
-import { I18n } from './I18n.dom.tsx';
 import {
   ABOUT_CONTACTS,
   ABOUT_SOURCE_URL,
@@ -65,6 +64,13 @@ export function About({
   } else {
     env = i18n('icu:About__AppEnvironment', { appEnv });
   }
+
+  // The About window runs with contextIsolation, so `i18n` reaches it through the context bridge as a bare
+  // function: `getIntl()` (which <I18n> needs) is gone. The sentence only has one plain placeholder, so split around it.
+  const SOURCE_MARK = '\u0001';
+  const [sourceBefore, sourceAfter] = i18n('icu:About__SourceCode', {
+    sourceLink: SOURCE_MARK,
+  }).split(SOURCE_MARK);
 
   return (
     <div className="About">
@@ -127,17 +133,11 @@ export function About({
         </div>
         <br />
         <div className="About__Source">
-          <I18n
-            i18n={i18n}
-            id="icu:About__SourceCode"
-            components={{
-              sourceLink: (
-                <a className="source" href={ABOUT_SOURCE_URL}>
-                  {ABOUT_SOURCE_URL.replace('https://', '')}
-                </a>
-              ),
-            }}
-          />
+          {sourceBefore}
+          <a className="source" href={ABOUT_SOURCE_URL}>
+            {ABOUT_SOURCE_URL.replace('https://', '')}
+          </a>
+          {sourceAfter}
         </div>
       </div>
     </div>

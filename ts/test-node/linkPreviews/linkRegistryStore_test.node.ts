@@ -15,6 +15,7 @@ import { join } from 'node:path';
 
 import type { LinkRegistryDeps } from '../../linkPreviews/linkRegistryStore.node.ts';
 import {
+  linkRegistryFetchInit,
   checkForLinkRegistryUpdate,
   loadBestLinkRegistry,
   parseLinkRegistryPointer,
@@ -339,5 +340,16 @@ describe('link registry hot update', () => {
       assert.strictEqual((await promise).status, 'failed');
       assert.lengthOf(urls, 1);
     });
+  });
+});
+
+describe('linkRegistryFetchInit', () => {
+  it('skips custom protocol handlers, refuses redirects and carries a timeout', () => {
+    // bypassCustomProtocolHandlers: without it net.fetch hits protocol_filter's ERR_ACCESS_DENIED handler.
+    const init = linkRegistryFetchInit(30_000);
+    assert.strictEqual(init.bypassCustomProtocolHandlers, true);
+    assert.strictEqual(init.redirect, 'error');
+    assert.instanceOf(init.signal, AbortSignal);
+    assert.isFalse(init.signal.aborted);
   });
 });
