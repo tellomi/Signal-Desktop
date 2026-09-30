@@ -19,6 +19,7 @@ import type { ScreenShareStatus } from './types/Calling.std.ts';
 import type { MessageCache } from './services/MessageCache.preload.ts';
 import type { StateType } from './state/reducer.preload.ts';
 import type { CIType } from './CI.preload.ts';
+import type { LinkTestToolsType } from './linkPreviews/linkTestTools.preload.ts';
 import type { IPCEventsType } from './util/createIPCEvents.preload.ts';
 import type { SignalContextType } from './windows/context.preload.ts';
 import type { PropsPreloadType as PreferencesPropsType } from './components/Preferences.dom.tsx';
@@ -201,6 +202,9 @@ declare global {
 
     // Test only
     SignalCI?: CIType;
+    // Tellomi (ADR-0063 §8.1 row 2): only where linkTestToolsGate.std.ts says so, never in a
+    // packaged app.
+    TellomiTestTools?: LinkTestToolsType;
 
     // TODO DESKTOP-4801
     SignalContext: SignalContextType;
