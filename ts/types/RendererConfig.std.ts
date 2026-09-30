@@ -75,6 +75,7 @@ export const rendererConfigSchema = z.object({
   theme: themeSettingSchema,
   updatesUrl: configRequiredStringSchema,
   resourcesUrl: configRequiredStringSchema,
+  updatesPublicKey: configRequiredStringSchema,
   userDataPath: configRequiredStringSchema,
   version: configRequiredStringSchema,
 

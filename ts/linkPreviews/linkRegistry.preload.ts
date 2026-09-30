@@ -1,7 +1,7 @@
 // Copyright 2026 重庆半格智能科技有限公司
 // SPDX-License-Identifier: AGPL-3.0-only
 
-import { readFileSync } from 'node:fs';
+import { ipcRenderer as ipc } from 'electron';
 import { join } from 'node:path';
 import { LRUCache } from 'lru-cache';
 import {
@@ -31,38 +31,86 @@ import {
   parseLinkCardTint,
 } from './linkCardVisual.std.ts';
 import { getLinkErrorKind } from './linkLog.std.ts';
+import {
+  LINK_REGISTRY_UPDATE_DIR,
+  loadBestLinkRegistry,
+} from './linkRegistryStore.node.ts';
 import { parseLinkOpenPlan } from './linkOpenPlan.std.ts';
 
 const log = createLogger('linkRegistry');
 
-// The bundled registry (ADR-0063 §8.1 row 3). Hot updates for Desktop come later; until then this
-// is the only registry.
+// The link registry (ADR-0063 §8.1 rows 2–3): the bundled one, or a hot-updated one on top of it when rust/links
+// accepts that (linkRegistryStore.node.ts). The main process downloads updates and says so when one is stored.
 
 let registry: LinkRegistry | undefined;
 let loadFailed = false;
+let listening = false;
 
 const cardCache = new LRUCache<string, LinkCardType | 'none'>({ max: 1000 });
 const lookalikeCache = new LRUCache<string, string>({ max: 1000 });
 
-export function getLinkRegistry(): LinkRegistry | undefined {
-  if (registry || loadFailed) {
-    return registry;
+function listenForUpdates(): void {
+  if (listening) {
+    return;
   }
+  listening = true;
+  // Not there when this module is loaded outside Electron (unit tests).
+  ipc?.on?.('link-registry-updated', () => {
+    reloadLinkRegistry();
+  });
+}
+
+function loadRegistry(): void {
   try {
-    const path = join(
-      window.SignalContext.config.installPath,
-      'build',
-      'links',
-      BUNDLED_LINK_REGISTRY
-    );
-    registry = LinkRegistry.load(new Uint8Array(readFileSync(path)));
-    log.info(`loaded bundled registry ${registry.version}`);
+    const { config } = window.SignalContext;
+    const loaded = loadBestLinkRegistry({
+      bundledPath: join(
+        config.installPath,
+        'build',
+        'links',
+        BUNDLED_LINK_REGISTRY
+      ),
+      updateDir: join(config.userDataPath, LINK_REGISTRY_UPDATE_DIR),
+      publicKey: Buffer.from(config.updatesPublicKey, 'hex'),
+      deps: {
+        load: envelope => LinkRegistry.load(envelope),
+        loadUpdate: (envelope, signatureHex, publicKey, currentVersion) =>
+          LinkRegistry.loadUpdate(
+            envelope,
+            signatureHex,
+            publicKey,
+            currentVersion
+          ),
+      },
+    });
+    registry = loaded.registry;
+    loadFailed = false;
+    log.info(`loaded ${loaded.source} registry ${registry.version}`);
   } catch (error) {
     // Never break message rendering: without a registry every preview shows as Signal does.
     loadFailed = true;
-    log.error('failed to load the bundled registry', error);
+    log.error('failed to load the link registry', error);
   }
+}
+
+export function getLinkRegistry(): LinkRegistry | undefined {
+  listenForUpdates();
+  if (registry || loadFailed) {
+    return registry;
+  }
+  loadRegistry();
   return registry;
+}
+
+// A newer registry was stored: take it (or stay with the current one when it does not pass). Cards are decided per
+// registry version, so the caches need no clearing; messages drawn from now on use the new one.
+export function reloadLinkRegistry(): void {
+  const before = registry?.version;
+  loadRegistry();
+  if (registry?.version !== before) {
+    cardCache.clear();
+    lookalikeCache.clear();
+  }
 }
 
 /** @testexport */
