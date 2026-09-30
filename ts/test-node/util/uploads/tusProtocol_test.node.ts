@@ -2,15 +2,22 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 // oxlint-disable-next-line typescript/no-restricted-imports
 import { assert, expect } from 'chai';
+import { Readable } from 'node:stream';
+import { Headers, Response } from 'node-fetch';
+import * as sinon from 'sinon';
 import {
   _getUploadMetadataHeader,
   _tusCreateWithUploadRequest,
   _tusGetCurrentOffsetRequest,
   _tusResumeUploadRequest,
+  tusResumeUpload,
   tusUpload,
+  type FetchFunctionType,
+  type TusFileReader,
 } from '../../../util/uploads/tusProtocol.node.ts';
 import { TestServer, body } from './helpers.node.ts';
 import { toLogFormat } from '../../../types/errors.std.ts';
+import { MINUTE } from '../../../util/durations/index.std.ts';
 
 describe('tusProtocol', () => {
   describe('_getUploadMetadataHeader', () => {
@@ -456,6 +463,201 @@ describe('tusProtocol', () => {
         },
       });
       assert.strictEqual(callCount, 2);
+    });
+  });
+
+  describe('retries exhausted', () => {
+    type FakeCall = { method: string; uploadOffset: string | null };
+
+    const FILE = new Uint8Array([1, 2, 3, 4, 5, 6]);
+    const params = {
+      endpoint: 'https://cdn.example.test/upload/attachments',
+      headers: {},
+      fileName: 'mock-file-name',
+      filePath: 'mock-file-path',
+      fileSize: FILE.byteLength,
+      maxRetries: 3,
+    };
+    const socketError = () => new Error('socket hang up');
+
+    let sandbox: sinon.SinonSandbox;
+    let clock: sinon.SinonFakeTimers;
+
+    beforeEach(() => {
+      sandbox = sinon.createSandbox();
+      // Only the backoff sleeps; streams and promises keep their real timing.
+      clock = sandbox.useFakeTimers({ toFake: ['setTimeout', 'clearTimeout'] });
+    });
+
+    afterEach(() => {
+      sandbox.restore();
+    });
+
+    // Stands in for the tus endpoint at the `fetchFn` boundary. The last entry
+    // of each list repeats once the list runs out. A 'transport-error' PATCH
+    // rejects like a dropped socket, which `_tusResumeUploadRequest` reports as
+    // `false` rather than throwing. POST always drops, as in a failed create.
+    function createFakeTus({
+      headOffsets,
+      patchOutcomes,
+    }: {
+      headOffsets: ReadonlyArray<number>;
+      patchOutcomes: ReadonlyArray<'ok' | 'transport-error'>;
+    }) {
+      const calls = new Array<FakeCall>();
+      let headCount = 0;
+      let patchCount = 0;
+
+      const fetchFn: FetchFunctionType = async (_url, init) => {
+        const { method = 'GET' } = init;
+        calls.push({
+          method,
+          uploadOffset: new Headers(init.headers).get('Upload-Offset'),
+        });
+
+        switch (method) {
+          case 'HEAD': {
+            const offset =
+              headOffsets[Math.min(headCount, headOffsets.length - 1)];
+            headCount += 1;
+            return new Response(undefined, {
+              status: 200,
+              headers: { 'Upload-Offset': String(offset) },
+            });
+          }
+          case 'PATCH': {
+            const outcome =
+              patchOutcomes[Math.min(patchCount, patchOutcomes.length - 1)];
+            patchCount += 1;
+            if (outcome === 'transport-error') {
+              throw socketError();
+            }
+            return new Response(undefined, { status: 204 });
+          }
+          case 'POST':
+            throw socketError();
+          default:
+            throw new Error(`Unexpected ${method} request`);
+        }
+      };
+
+      return {
+        fetchFn,
+        countOf: (method: string) => calls.filter(c => c.method === method),
+      };
+    }
+
+    function createReader() {
+      const offsets = new Array<number | undefined>();
+      const reader: TusFileReader = (_filePath, offset) => {
+        offsets.push(offset);
+        return Readable.from([FILE.subarray(offset ?? 0)]);
+      };
+      return { reader, offsets };
+    }
+
+    it('rejects when every PATCH fails at the transport level', async () => {
+      const fake = createFakeTus({
+        headOffsets: [0],
+        patchOutcomes: ['transport-error'],
+      });
+      const { reader } = createReader();
+      const caught = new Array<Error>();
+
+      const result = assert.isRejected(
+        tusResumeUpload({
+          ...params,
+          reader,
+          fetchFn: fake.fetchFn,
+          onCaughtError: error => caught.push(error),
+        }),
+        /upload incomplete after 3 attempts/
+      );
+      await clock.tickAsync(MINUTE);
+      await result;
+
+      // It really did retry before giving up.
+      assert.lengthOf(fake.countOf('HEAD'), 3);
+      assert.lengthOf(fake.countOf('PATCH'), 3);
+      assert.lengthOf(caught, 3);
+    });
+
+    it('resolves when a PATCH succeeds after one transport failure', async () => {
+      const fake = createFakeTus({
+        // The dropped PATCH got 3 bytes across before dying.
+        headOffsets: [0, 3],
+        patchOutcomes: ['transport-error', 'ok'],
+      });
+      const { reader, offsets } = createReader();
+
+      const result = assert.isFulfilled(
+        tusResumeUpload({ ...params, reader, fetchFn: fake.fetchFn })
+      );
+      await clock.tickAsync(MINUTE);
+      await result;
+
+      assert.deepStrictEqual(
+        fake.countOf('PATCH').map(c => c.uploadOffset),
+        ['0', '3']
+      );
+      assert.deepStrictEqual(offsets, [0, 3]);
+    });
+
+    it('resolves when only the final attempt succeeds', async () => {
+      const fake = createFakeTus({
+        headOffsets: [0],
+        patchOutcomes: ['transport-error', 'transport-error', 'ok'],
+      });
+      const { reader } = createReader();
+
+      const result = assert.isFulfilled(
+        tusResumeUpload({ ...params, reader, fetchFn: fake.fetchFn })
+      );
+      await clock.tickAsync(MINUTE);
+      await result;
+
+      assert.lengthOf(fake.countOf('PATCH'), 3);
+    });
+
+    it('resolves without a PATCH when the server already has the whole file', async () => {
+      const fake = createFakeTus({
+        headOffsets: [FILE.byteLength],
+        patchOutcomes: ['transport-error'],
+      });
+      const { reader, offsets } = createReader();
+
+      const result = assert.isFulfilled(
+        tusResumeUpload({ ...params, reader, fetchFn: fake.fetchFn })
+      );
+      await clock.tickAsync(MINUTE);
+      await result;
+
+      assert.lengthOf(fake.countOf('HEAD'), 1);
+      assert.lengthOf(fake.countOf('PATCH'), 0);
+      assert.isEmpty(offsets);
+    });
+
+    it('tusUpload rejects when the create and every resume all fail', async () => {
+      const fake = createFakeTus({
+        headOffsets: [0],
+        patchOutcomes: ['transport-error'],
+      });
+      const { reader } = createReader();
+
+      const result = assert.isRejected(
+        tusUpload({
+          ...params,
+          reader,
+          fetchFn: fake.fetchFn,
+          filePath: 'mock-file-path',
+        }),
+        /upload incomplete after 3 attempts/
+      );
+      await clock.tickAsync(MINUTE);
+      await result;
+
+      assert.lengthOf(fake.countOf('POST'), 1);
+      assert.lengthOf(fake.countOf('PATCH'), 3);
     });
   });
 });
