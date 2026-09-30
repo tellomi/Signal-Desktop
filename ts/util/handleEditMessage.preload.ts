@@ -9,7 +9,7 @@ import type {
 } from '../model-types.d.ts';
 import * as Edits from '../messageModifiers/Edits.preload.ts';
 import { createLogger } from '../logging/log.std.ts';
-import { getValidLinkPreviews } from './getValidLinkPreviews.node.ts';
+import { getReceivedLinkPreviews } from '../linkPreviews/receivedLinkPreviews.preload.ts';
 import { ReadStatus } from '../messages/MessageReadStatus.std.ts';
 import { DataWriter } from '../sql/Client.preload.ts';
 import { drop } from './drop.std.ts';
@@ -139,10 +139,17 @@ export async function handleEditMessage(
   );
 
   const incomingPreview = upgradedEditedMessageData.preview ?? [];
-  const validatedPreview = getValidLinkPreviews(
+  // Tellomi (ADR-0063 §5.1 rule 4, §7.4): as for a new message; an edit keeps the attachments of
+  // the message it edits.
+  const validatedPreview = getReceivedLinkPreviews(
     incomingPreview,
     upgradedEditedMessageData.body,
-    { isStory: false }
+    {
+      isStory: false,
+      attachmentContentTypes: (mainMessage.attachments ?? []).map(
+        attachment => attachment.contentType
+      ),
+    }
   );
 
   if (validatedPreview.length < incomingPreview.length) {
