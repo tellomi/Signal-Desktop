@@ -190,6 +190,11 @@ export type RegionDecisionType = Readonly<{
   results: ReadonlyMap<RegionIdType, RegionProbeResultType>;
 }>;
 
+/**
+ * Tellomi (ADR-0065 §6.5): built and tested, but the caller that switches region at runtime is M6
+ * (docs/signal/REGION_PROFILE.md), so for now only the tests import it.
+ * @testexport
+ */
 export class RegionSelector {
   readonly #regions: RegionsType;
   readonly #probe: RegionProbeType;

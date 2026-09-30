@@ -78,6 +78,9 @@ const config = {
         // Tellomi (ADR-0066): the username editor lost its discriminator field, AutoSizeInput's only production user;
         // only its stories use it now. Kept rather than deleted so upstream changes to it rebase cleanly.
         ...(PROD_ONLY ? ['ts/components/AutoSizeInput.dom.tsx'] : []),
+        // Tellomi (ADR-0065 §6.5): the TLS probe behind RegionSelector (see the @testexport there). Its caller, runtime
+        // region switching, is M6 (docs/signal/REGION_PROFILE.md); only the tests import it until then.
+        ...(PROD_ONLY ? ['ts/util/tellomiRegionProbe.node.ts'] : []),
       ],
       ignoreBinaries: PROD_ONLY ? ['electron'] : [],
       storybook: {

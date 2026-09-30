@@ -104,7 +104,7 @@ export function getLinkRegistry(): LinkRegistry | undefined {
 
 // A newer registry was stored: take it (or stay with the current one when it does not pass). Cards are decided per
 // registry version, so the caches need no clearing; messages drawn from now on use the new one.
-export function reloadLinkRegistry(): void {
+function reloadLinkRegistry(): void {
   const before = registry?.version;
   loadRegistry();
   if (registry?.version !== before) {
