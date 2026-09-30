@@ -4,3 +4,7 @@
 // ADR-0063 §8.1 row 3: the link registry that ships with the app, under build/links (see
 // package.json build.files). Both the renderer (classify) and the main process (open plan) load it.
 export const BUNDLED_LINK_REGISTRY = 'links-2026092702.json';
+
+// ADR-0063 §九.6: the brand shells' icons ship next to it, in build/links/icons (package.json
+// build.files); only the renderer reads them, and only from here.
+export const BUNDLED_LINK_ICONS_DIR = 'icons';

@@ -7,6 +7,7 @@ import type {
   AttachmentWithHydratedData,
 } from '../Attachment.std.ts';
 import type { LinkCardType } from '../../linkPreviews/linkCard.std.ts';
+import type { LinkCardIconType } from '../../linkPreviews/linkCardIcon.std.ts';
 import type { LinkCardLayoutType } from '../../linkPreviews/linkCardVisual.std.ts';
 import type { FirstPartyLocalType } from '../../linkPreviews/firstPartyCard.std.ts';
 
@@ -34,6 +35,10 @@ export type LinkPreviewForUIType =
     // Tellomi (card-visual §3.2): which of the four card shapes, decided by rust/links from the
     // shown image's pixel size and the kind, in the data layer. Absent without a registry.
     layout?: LinkCardLayoutType;
+    // Tellomi (ADR-0063 §九.6, card-visual §3.7): a brand shell's icon from the files that ship
+    // with the app, read locally at display time. Absent for every other card, for a shell rust/
+    // links names no icon for, and for an icon that is not bundled.
+    cardIcon?: LinkCardIconType;
     // Tellomi (card-visual §5.2): what this device already has for a first-party card's object
     // (a known chat, a joined group, an installed pack), read locally at display time.
     firstPartyLocal?: FirstPartyLocalType;

@@ -610,6 +610,7 @@
       "build/locale-display-names.json",
       "build/country-display-names.json",
       "build/links/links-*.json",
+      "build/links/icons/*.png",
       "build/dns-fallback.json",
       "build/optional-resources.json",
       "build/jumbomoji.json",

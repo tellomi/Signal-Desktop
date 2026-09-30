@@ -1652,6 +1652,16 @@ export class Message extends PureComponent<Props, State> {
     // Tellomi (card-visual §3.2 / §3.3): the shape rust/links decided, and the tint from the card's
     // own image, never in a message request.
     const isIconLayout = first.layout === 'icon';
+    // Tellomi (ADR-0063 §九.6, card-visual §3.7): a brand shell's icon from the files that ship
+    // with the app. It is the card's image for the shape and the tint; the sender's is not shown.
+    const brandIcon =
+      first.card?.level === 'brand' ? first.cardIcon : undefined;
+    // An icon card: the picture is a small square at the top end of the card, the text beside it.
+    const hasIconImage =
+      isIconLayout &&
+      Boolean(domain) &&
+      (Boolean(brandIcon) ||
+        Boolean(first.image && previewHasImage && !isFullSizeImage));
     const shouldTint = shouldTintLinkCard({
       card: first.card,
       layout: first.layout,
@@ -1713,7 +1723,12 @@ export class Message extends PureComponent<Props, State> {
             showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
           />
         ) : null}
-        <div dir="auto" className="module-message__link-preview__content">
+        <div
+          dir="auto"
+          className={classNames('module-message__link-preview__content', {
+            'module-message__link-preview__content--icon': hasIconImage,
+          })}
+        >
           {first.image &&
           domain &&
           previewHasImage &&
@@ -1826,7 +1841,8 @@ export class Message extends PureComponent<Props, State> {
               </div>
             </div>
           )}
-          {/* Tellomi (card-visual §3.2): an icon card has its 44px icon at the end of the text. */}
+          {/* Tellomi (card-visual §3.2, owner 2026-09-30): an icon card has a 54px square icon at
+              the top end of the card, 6px down, corners 4px (Telegram's small preview image). */}
           {first.image &&
           domain &&
           previewHasImage &&
@@ -1836,15 +1852,15 @@ export class Message extends PureComponent<Props, State> {
               <Image
                 noBorder
                 noBackground
-                curveBottomLeft={CurveType.Small}
-                curveBottomRight={CurveType.Small}
-                curveTopRight={CurveType.Small}
-                curveTopLeft={CurveType.Small}
+                curveBottomLeft={CurveType.Tiny}
+                curveBottomRight={CurveType.Tiny}
+                curveTopRight={CurveType.Tiny}
+                curveTopLeft={CurveType.Tiny}
                 alt={i18n('icu:previewThumbnail', {
                   domain,
                 })}
-                height={44}
-                width={44}
+                height={54}
+                width={54}
                 url={first.image.url}
                 attachment={first.image}
                 blurHash={first.image.blurHash}
@@ -1865,6 +1881,18 @@ export class Message extends PureComponent<Props, State> {
               />
             </div>
           ) : null}
+          {brandIcon && domain && isIconLayout ? (
+            <div className="module-message__link-preview__icon-image">
+              <img
+                alt=""
+                className="module-message__link-preview__brand-icon"
+                draggable={false}
+                height={54}
+                src={brandIcon.url}
+                width={54}
+              />
+            </div>
+          ) : null}
         </div>
       </>
     );
@@ -1879,7 +1907,7 @@ export class Message extends PureComponent<Props, State> {
     const frameProps = {
       enabled: shouldTint,
       getLinkCardTint,
-      imageUrl: first.image?.url,
+      imageUrl: brandIcon ? brandIcon.url : first.image?.url,
       layout: first.layout,
       theme,
     };

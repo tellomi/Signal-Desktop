@@ -43,6 +43,8 @@ const storybookConfig: StorybookConfig = {
     { from: '../fonts', to: 'fonts' },
     { from: '../images', to: 'images' },
     { from: '../fixtures', to: 'fixtures' },
+    // Tellomi: the brand shells' icons, as the app ships them.
+    { from: '../build/links/icons', to: 'link-icons' },
   ],
 
   swc() {

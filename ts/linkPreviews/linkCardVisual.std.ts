@@ -14,7 +14,7 @@ export type LinkCardLayoutType =
   | 'first_party'
   // Image on top, full card width; the title bar underneath.
   | 'large_image'
-  // Text on the left, a 44 px square icon on the right, the whole card tinted.
+  // Text on the left, a 54 px square icon at the top right (6 px down, corners 4 px), the whole card tinted.
   | 'icon'
   // Title, domain and a link glyph; grey.
   | 'no_image';
