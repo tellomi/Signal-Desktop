@@ -292,6 +292,184 @@ describe('getReceivedLinkPreviews', () => {
     });
   });
 
+  // ADR-0063 §5.1 rule 2 (a preview that goes wrong never becomes an error): a preview whose link
+  // cannot be read costs that one preview, never the message it came in. Signal reads a call
+  // link's key to derive the room id and throws when it is not a key; the message handler lets
+  // that end the whole message, so nothing was stored. Sticker pack and group invite links are
+  // not read in a way that can fail when a message arrives: their tests pin that, so the day
+  // something starts reading them, these say so.
+  describe('a preview whose link cannot be read', () => {
+    const CALL_KEY = 'bcdf-ghkm-npqr-stxz-bcdf-ghkm-npqr-stxz';
+    const GOOD_CALL = `https://tell.cc/call#key=${CALL_KEY}`;
+    const PACK_ID = '0123456789abcdef0123456789abcdef';
+    const PACK_KEY = 'ab'.repeat(32);
+
+    type FilterType = Readonly<{
+      name: string;
+      run: (
+        previews: ReadonlyArray<LinkPreviewType>,
+        body: string
+      ) => Array<LinkPreviewType>;
+    }>;
+
+    // Signal's own filter alone, and the one the message handler runs: Signal's with rust/links'
+    // decision in it.
+    const filters: ReadonlyArray<FilterType> = [
+      {
+        name: 'Signal’s own filter',
+        run: (previews, body) =>
+          getValidLinkPreviews(previews, body, { isStory: false }),
+      },
+      {
+        name: 'the filter with rust/links’ decision',
+        run: (previews, body) => receive(previews, body),
+      },
+    ];
+
+    function preview(url: string): LinkPreviewType {
+      return toPreview({ url, title: 'A title' }, { withImage: false });
+    }
+
+    const UNREADABLE_CALL_LINKS: ReadonlyArray<readonly [string, string]> = [
+      ['a key that is not one', 'https://tell.cc/call#key=not-a-key'],
+      ['an empty key', 'https://tell.cc/call#key='],
+      ['no key at all', 'https://tell.cc/call#room=1'],
+      [
+        'the wrong check characters',
+        `https://tell.cc/call#key=${CALL_KEY.slice(0, -1)}y`,
+      ],
+      [
+        'a key in capitals',
+        `https://tell.cc/call#key=${CALL_KEY.toUpperCase()}`,
+      ],
+      ['a key cut short', 'https://tell.cc/call#key=bcdf-ghkm-npqr'],
+      ['the signal.link host', 'https://signal.link/call#key=not-a-key'],
+      ['a slash before the #', 'https://tell.cc/call/#key=not-a-key'],
+    ];
+
+    for (const { name, run } of filters) {
+      for (const [what, url] of UNREADABLE_CALL_LINKS) {
+        it(`${name}: drops a call link preview with ${what}, and throws nothing`, () => {
+          assert.deepEqual(run([preview(url)], `join ${url}`), []);
+        });
+      }
+    }
+
+    it('leaves the other previews of the message alone, before and after it', () => {
+      const bad = 'https://tell.cc/call#key=not-a-key';
+      for (const { name, run } of filters) {
+        assert.deepEqual(
+          run([preview(bad), preview(NETEASE)], `${bad} ${NETEASE}`).map(
+            ({ url }) => url
+          ),
+          [NETEASE],
+          `${name}: after`
+        );
+        assert.deepEqual(
+          run([preview(NETEASE), preview(bad)], `${NETEASE} ${bad}`).map(
+            ({ url }) => url
+          ),
+          [NETEASE],
+          `${name}: before`
+        );
+      }
+    });
+
+    it('still marks a call link whose key can be read, next to one that cannot', () => {
+      const bad = 'https://tell.cc/call#key=not-a-key';
+      for (const { name, run } of filters) {
+        const result = run(
+          [preview(bad), preview(GOOD_CALL)],
+          `${bad} ${GOOD_CALL}`
+        );
+        assert.deepEqual(
+          result.map(({ url }) => url),
+          [GOOD_CALL],
+          name
+        );
+        assert.isTrue(result[0]?.isCallLink, name);
+        assert.match(result[0]?.callLinkRoomId ?? '', /^[\da-f]{64}$/, name);
+      }
+    });
+
+    it('is dropped by Signal’s own check, before any key is read, when the key has characters a link cannot have', () => {
+      const url = 'https://tell.cc/call#key=垃圾';
+      for (const { name, run } of filters) {
+        assert.deepEqual(run([preview(url)], url), [], name);
+      }
+    });
+
+    it('logs the drop, with the kind of the error and never the link or what follows its #', () => {
+      const lines: Array<string> = [];
+      setOnLogCallback((_level, line) => {
+        lines.push(line);
+      });
+      try {
+        const url = 'https://tell.cc/call#key=canary-in-fragment';
+        for (const { run } of filters) {
+          run([preview(url)], `join ${url}`);
+        }
+        assert.isTrue(
+          lines.some(line => line.includes('cannot be read')),
+          'the drop is logged'
+        );
+        for (const line of lines) {
+          assert.notInclude(line.toLowerCase(), 'canary', line);
+          assert.notInclude(line, 'https://', line);
+        }
+      } finally {
+        setOnLogCallback(() => undefined);
+      }
+    });
+
+    const UNREAD_STICKER_PACKS: ReadonlyArray<readonly [string, string]> = [
+      [
+        'a pack key that is not hex',
+        `https://tell.cc/s#pack_id=${PACK_ID}&pack_key=zzzz`,
+      ],
+      [
+        'a pack key one digit short',
+        `https://tell.cc/s#pack_id=${PACK_ID}&pack_key=${PACK_KEY.slice(1)}`,
+      ],
+      [
+        'a pack id that is not hex',
+        `https://tell.cc/s#pack_id=nothex&pack_key=${PACK_KEY}`,
+      ],
+      ['no pack at all', 'https://tell.cc/s#garbage'],
+      [
+        'the signal.art host',
+        `https://signal.art/addstickers#pack_id=${PACK_ID}&pack_key=zz`,
+      ],
+    ];
+    const UNREAD_GROUP_INVITES: ReadonlyArray<readonly [string, string]> = [
+      ['a # that is not base64', 'https://tell.cc/g#!!!!garbage'],
+      ['base64 that is not an invite', 'https://tell.cc/g#AAAA'],
+      ['the signal.group host', 'https://signal.group/#garbage'],
+      ['a slash in the #', 'https://tell.cc/g#a/b'],
+    ];
+
+    for (const { name, run } of filters) {
+      for (const [what, url] of [
+        ...UNREAD_STICKER_PACKS.map(
+          ([label, link]) =>
+            [`a sticker pack link with ${label}`, link] as const
+        ),
+        ...UNREAD_GROUP_INVITES.map(
+          ([label, link]) =>
+            [`a group invite link with ${label}`, link] as const
+        ),
+      ]) {
+        it(`${name}: keeps ${what}, reads nothing that can fail the message`, () => {
+          const result = run([preview(url)], `see ${url}`);
+          assert.deepEqual(
+            result.map(({ url: kept }) => kept),
+            [url]
+          );
+        });
+      }
+    }
+  });
+
   describe('rich content', () => {
     const OVERSIZED =
       '§6.1 oversized RichContent (kind of 33 characters) is dropped whole → generic';
