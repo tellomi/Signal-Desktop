@@ -63,7 +63,7 @@
     "messageformat": "Yüksek kalitede içerik göndermek daha fazla veri kullanacaktır."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Tellomi'e Bağış Yap"
+    "messageformat": "Tellomi'ye Bağış Yap"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
     "messageformat": "<bold>Bağlı Cihazlar</bold>, eklediğin diğer cihazlardan Tellomi hesabına ve mesajlarına güvenli bir şekilde erişmeni sağlar."
@@ -117,7 +117,7 @@
     "messageformat": "Tellomi Açılamıyor"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Sorunu çözmeye yardımcı olması için destek sayfasındaki kurtarma kılavuzunu takip et ya da Tellomi destek ile iletişime geç.\n\nTellomi'i hemen kullanman gerekiyorsa, verilerini silebilir ve bu masaüstünü yeniden bağlayabilirsin. Telefonundan mesaj geçmişini aktarma seçeneğin bulunacaktır."
+    "messageformat": "Sorunu çözmeye yardımcı olması için destek sayfasındaki kurtarma kılavuzunu takip et ya da Tellomi destek ile iletişime geç.\n\nTellomi'yi hemen kullanman gerekiyorsa, verilerini silebilir ve bu masaüstünü yeniden bağlayabilirsin. Telefonundan mesaj geçmişini aktarma seçeneğin bulunacaktır."
   },
   "icu:databaseError": {
     "messageformat": "Veritabanı hatası"
@@ -129,16 +129,16 @@
     "messageformat": "Tüm Verileri Kalıcı Olarak Sil"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Tüm mesaj geçmişin ve medyan bu cihazdan kalıcı olarak silinecektir. Bu işlem telefonundaki hiçbir veriyi silmez.\n\nTellomi'i yeniden bağladıktan sonra bu cihazda kullanabileceksin. Telefonundan mesaj geçmişini aktarma seçeneğin bulunacaktır."
+    "messageformat": "Tüm mesaj geçmişin ve medyan bu cihazdan kalıcı olarak silinecektir. Bu işlem telefonundaki hiçbir veriyi silmez.\n\nTellomi'yi yeniden bağladıktan sonra bu cihazda kullanabileceksin. Telefonundan mesaj geçmişini aktarma seçeneğin bulunacaktır."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Veri tabanının sürümü Tellomi'in bu sürümüyle eşleşmiyor. Bilgisayarında Tellomi'in en son sürümünü açtığından emin ol."
+    "messageformat": "Veri tabanının sürümü Tellomi'nin bu sürümüyle eşleşmiyor. Bilgisayarında Tellomi'nin en son sürümünü açtığından emin ol."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "İşletim sistemi şifreleme anahtarı arka ucunu {previousBackend} değerinden {currentBackend} değerine değiştirdiği için veritabanı şifreleme anahtarına erişilemiyor. Bu durum, örneğin GNOME ve KDE arasında masaüstü ortamı değiştiğinde meydana gelebilir.\n\nLütfen önceki masaüstü ortamına geç."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "İşletim sistemi şifreleme anahtarının arka ucu {previousBackend} değerinden {currentBackend} değerine değiştirildiği için veritabanı şifreleme anahtarına erişilemiyor. Bu durum, örneğin GNOME ve KDE arasında masaüstü ortamı değiştiğinde meydana gelebilir.\n\nLütfen önceki masaüstü ortamına geç ya da Tellomi'i --password-store=\"{previousBackendFlag}\" komut satırı işareti ile çalıştırmayı dene."
+    "messageformat": "İşletim sistemi şifreleme anahtarının arka ucu {previousBackend} değerinden {currentBackend} değerine değiştirildiği için veritabanı şifreleme anahtarına erişilemiyor. Bu durum, örneğin GNOME ve KDE arasında masaüstü ortamı değiştiğinde meydana gelebilir.\n\nLütfen önceki masaüstü ortamına geç ya da Tellomi'yi --password-store=\"{previousBackendFlag}\" komut satırı işareti ile çalıştırmayı dene."
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -507,10 +507,10 @@
     "messageformat": "{name} ile olan Güvenlik Numaranızı başka bir cihazdan doğrulanmamış olarak işaretlediniz"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Doğrulamaya çalıştığınız güvenlik numarası değişti. Lütfen {name1} ile olan yeni güvenlik numaranızı gözden geçirin. Unutmayın, bu değişiklik birisinin iletişiminizi kesmeye çalıştığı ya da {name2} Tellomi'i yeniden yüklemiş olduğu anlamına gelebilir."
+    "messageformat": "Doğrulamaya çalıştığınız güvenlik numarası değişti. Lütfen {name1} ile olan yeni güvenlik numaranızı gözden geçirin. Unutmayın, bu değişiklik birisinin iletişiminizi kesmeye çalıştığı ya da {name2} Tellomi'yi yeniden yüklemiş olduğu anlamına gelebilir."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Aşağıdaki kişiler Tellomi'i yeniden yüklemiş veya cihazlarını değiştirmiş olabilirler. Yeni güvenlik numarasını onaylamak için kişilerden birine tıkla. Bu işlem isteğe bağlıdır."
+    "messageformat": "Aşağıdaki kişiler Tellomi'yi yeniden yüklemiş veya cihazlarını değiştirmiş olabilirler. Yeni güvenlik numarasını onaylamak için kişilerden birine tıkla. Bu işlem isteğe bağlıdır."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Bekleyen iletileri gönder"
@@ -519,7 +519,7 @@
     "messageformat": "İnceleme"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Tellomi'i yeniden yüklemiş veya cihazını değiştirmiş olabilecek {count,number} bağlantın var. İsteğe bağlı olarak, göndermeden önce güvenlik numarasını inceleyebilirsin.} other {Tellomi'i yeniden yüklemiş veya cihazlarını değiştirmiş olabilecek {count,number} bağlantın var. İsteğe bağlı olarak, göndermeden önce güvenlik numaralarını inceleyebilirsin.}}"
+    "messageformat": "{count, plural, one {Tellomi'yi yeniden yüklemiş veya cihazını değiştirmiş olabilecek {count,number} bağlantın var. İsteğe bağlı olarak, göndermeden önce güvenlik numarasını inceleyebilirsin.} other {Tellomi'yi yeniden yüklemiş veya cihazlarını değiştirmiş olabilecek {count,number} bağlantın var. İsteğe bağlı olarak, göndermeden önce güvenlik numaralarını inceleyebilirsin.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Tüm bağlantılar gözden geçirildi, devam etmek için gönder butonuna tıkla."
@@ -909,7 +909,7 @@
     "messageformat": "Telefon numarasına göre bul"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Tellomi'e Hoşgeldin"
+    "messageformat": "Tellomi'ye Hoşgeldin"
   },
   "icu:whatsNew": {
     "messageformat": "Bu güncellemede {whatsNew} olduğunu görün"
@@ -1476,7 +1476,7 @@
     "messageformat": "{sender} telefon numarasını değiştirdi"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Kontaklarınızdan biri Tellomi'e katıldı"
+    "messageformat": "Kontaklarınızdan biri Tellomi'ye katıldı"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} ve {conversationTitle} aynı hesap. Her iki sohbetin mesaj geçmişi burada."
@@ -1566,7 +1566,7 @@
     "messageformat": "Medya indirilemiyor"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Masaüstünün ve telefonunun internet bağlantısını kontrol et. Telefonunda Tellomi'i aç, ardından yeniden indirmeyi dene."
+    "messageformat": "Masaüstünün ve telefonunun internet bağlantısını kontrol et. Telefonunda Tellomi'yi aç, ardından yeniden indirmeyi dene."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Bu medya artık telefonunda mevcut değil ve indirilemez."
@@ -1590,7 +1590,7 @@
     "messageformat": "Bu kodu telefonunuzdaki Tellomi uygulamasıyla tarayın"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Tellomi'ı telefonunda aç"
+    "messageformat": "Tellomi'yi telefonunda aç"
   },
   "icu:Install__instructions__2": {
     "messageformat": "{settings}'a basın, sonra da {linkedDevices}'a tıklayın"
@@ -1641,7 +1641,7 @@
     "messageformat": "Cihaz adı"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Bu cihazın adını değiştirmek için telefonunda Tellomi'i aç ve Ayarlar > Bağlı Cihazlar bölümüne git"
+    "messageformat": "Bu cihazın adını değiştirmek için telefonunda Tellomi'yi aç ve Ayarlar > Bağlı Cihazlar bölümüne git"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Emoji ten rengi"
@@ -1851,7 +1851,7 @@
     "messageformat": "Üzgünüz, halihazırda bağlı olan çok fazla cihazınız var. Bazılarını kaldırmayı deneyin."
   },
   "icu:installTooOld": {
-    "messageformat": "Bu cihazı telefonunuza bağlamak için bu cihazdaki Tellomi'i güncelleyin."
+    "messageformat": "Bu cihazı telefonunuza bağlamak için bu cihazdaki Tellomi'yi güncelleyin."
   },
   "icu:installErrorHeader": {
     "messageformat": "Bir şeyler ters gitti!"
@@ -2166,7 +2166,7 @@
     "messageformat": "İzin gerekiyor"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Tellomi'in bilgisayarınızın ekran kaydına ulaşmak için izne ihtiyacı var."
+    "messageformat": "Tellomi'nin bilgisayarınızın ekran kaydına ulaşmak için izne ihtiyacı var."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Sistem Özelliklerine gidin."
@@ -2175,7 +2175,7 @@
     "messageformat": "Sol alttaki kilit simgesine tıklayın ve bilgisayarınızın parolasını girin."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Sağ tarafta, Tellomi'in yanındaki kutuyu seçin. Eğer listede Tellomi'i göremiyorsanız + düğmesine tıklayarak onu ekleyin."
+    "messageformat": "Sağ tarafta, Tellomi'nin yanındaki kutuyu seçin. Eğer listede Tellomi'yi göremiyorsanız + düğmesine tıklayarak onu ekleyin."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Sistem Özelliklerini Aç"
@@ -2589,7 +2589,7 @@
     "messageformat": "Bağlantı koparıldı"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Yeniden kaydolmak ve mesajlaşmaya devam etmek için tıkla. Tellomi Desktop'ın kaydedilmemiş olmasının nedeni büyük olasılıkla telefon numaranın farklı bir cihazda Tellomi'a kaydedilmiş olmasıdır."
+    "messageformat": "Yeniden kaydolmak ve mesajlaşmaya devam etmek için tıkla. Tellomi Desktop'ın kaydedilmemiş olmasının nedeni büyük olasılıkla telefon numaranın farklı bir cihazda Tellomi'ye kaydedilmiş olmasıdır."
   },
   "icu:unregistered": {
     "messageformat": "Artık kayıtlı değil"
@@ -2601,7 +2601,7 @@
     "messageformat": "Güncellemeyi yeniden dene"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Tellomi'i yeniden başlatmak için tıklayın"
+    "messageformat": "Tellomi'yi yeniden başlatmak için tıklayın"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Güncellemeyi indirmek için tıklayın"
@@ -2610,7 +2610,7 @@
     "messageformat": "Tellomi güncellenemedi. Tekrar denemek için tıklayın."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Tellomi'i Yeniden Başlat"
+    "messageformat": "Tellomi'yi Yeniden Başlat"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Güncellemeyi yoksay"
@@ -2754,7 +2754,7 @@
     "messageformat": "Bağışını görüntülemek için cep telefonunda bu mesaja dokun"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} senin adına Tellomi'e bağış yaptı"
+    "messageformat": "{sender} senin adına Tellomi'ye bağış yaptı"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Bu bağışı açmak için telefonunu kontrol et"
@@ -2811,7 +2811,7 @@
     "messageformat": "Desteğin için teşekkürler!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "{name} adına Tellomi'e bağış yaptın. Böylece Tellomi'e olan desteklerini profillerinde gösterebilecekler."
+    "messageformat": "{name} adına Tellomi'ye bağış yaptın. Böylece Tellomi'ye olan desteklerini profillerinde gösterebilecekler."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Çıkartma paketi yüklenemedi"
@@ -3147,19 +3147,19 @@
     "messageformat": "Mesaj, daha fazlasını görüntüleyemeyecek kadar uzun"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} size Tellomi'in yeni özelliğini kullanan bir ileti gönderdiği için işlenemiyor veya görüntülenemiyor."
+    "messageformat": "{contact} size Tellomi'nin yeni özelliğini kullanan bir ileti gönderdiği için işlenemiyor veya görüntülenemiyor."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Tellomi'in güncel sürümünü kullandığınıza göre {contact} kişisinin iletiyi tekrar göndermesini isteyebilirsiniz."
+    "messageformat": "Tellomi'nin güncel sürümünü kullandığınıza göre {contact} kişisinin iletiyi tekrar göndermesini isteyebilirsiniz."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Cihazlarınızdan biri Tellomi'in yeni özelliğini kullanan bir ileti gönderdiği için işlenemiyor veya görüntülenemiyor."
+    "messageformat": "Cihazlarınızdan biri Tellomi'nin yeni özelliğini kullanan bir ileti gönderdiği için işlenemiyor veya görüntülenemiyor."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Tellomi'in güncel sürümünü kullandığınıza göre gelecekteki buna benzer iletiler artık eşitlenecektir."
+    "messageformat": "Tellomi'nin güncel sürümünü kullandığınıza göre gelecekteki buna benzer iletiler artık eşitlenecektir."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Tellomi'i Güncelle"
+    "messageformat": "Tellomi'yi Güncelle"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Görüldü"
@@ -3426,7 +3426,7 @@
     "messageformat": "Sohbet okunmadı olarak işaretlendi"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Çıkartma Paketi Oluşturucu'yu kullanmak için lütfen Tellomi'i telefonunda ve bilgisayarında kur"
+    "messageformat": "Çıkartma Paketi Oluşturucu'yu kullanmak için lütfen Tellomi'yi telefonunda ve bilgisayarında kur"
   },
   "icu:Reactions--remove": {
     "messageformat": "Tepkiyi kaldır"
@@ -3444,7 +3444,7 @@
     "messageformat": "Güvenlik ipuçları"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Tellomi'dan gelen sohbetleri yanıtlama"
+    "messageformat": "Tellomi'den gelen sohbetleri yanıtlama"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
     "messageformat": "Tellomi hiçbir zaman kayıt kodun, PIN kodun veya kurtarma anahtarın için sana mesaj atmaz. Tellomi olduğunu iddia eden bir sohbeti hiçbir zaman yanıtlama."
@@ -3453,7 +3453,7 @@
     "messageformat": "Adları ve fotoğrafları incele"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "\"Ad doğrulanmadı\" bildirimini ara. Herkes Tellomi'da kendi profil adını ayarlar."
+    "messageformat": "\"Ad doğrulanmadı\" bildirimini ara. Herkes Tellomi'de kendi profil adını ayarlar."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "Dolandırıcılıklara dikkat et"
@@ -3462,7 +3462,7 @@
     "messageformat": "Yanıtlamanı sağlamaya çalışan belirsiz mesajlardan kaçın. Finansal ipuçları ve şüpheli web bağlantılarına karşı dikkatli ol."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Tellomi'dan gelen sohbetleri yanıtlama"
+    "messageformat": "Tellomi'den gelen sohbetleri yanıtlama"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
     "messageformat": "Tellomi hiçbir zaman kayıt kodun, PIN kodun veya kurtarma anahtarın için sana mesaj atmaz. Tellomi veya Tellomi Destek olduğunu iddia eden sohbetleri yanıtlama. Kötü niyetli kişiler hesabını ele geçirmek için sahte adlar oluşturabilir."
@@ -3471,7 +3471,7 @@
     "messageformat": "Adları ve fotoğrafları incele"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "\"Ad doğrulanmadı\" bildirimini ara. Herkes Tellomi'da kendi profil adını ve fotoğrafını ayarlar. Yeni bir isteğin kimden geldiğinden emin değilsen, isteği yok saymak daha güvenlidir."
+    "messageformat": "\"Ad doğrulanmadı\" bildirimini ara. Herkes Tellomi'de kendi profil adını ve fotoğrafını ayarlar. Yeni bir isteğin kimden geldiğinden emin değilsen, isteği yok saymak daha güvenlidir."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Kripto veya para dolandırıcılıkları"
@@ -3654,16 +3654,16 @@
     "messageformat": "Ad doğrulanmadı"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Bu, Tellomi'in resmi ve tek sohbetidir"
+    "messageformat": "Bu, Tellomi'nin resmi ve tek sohbetidir"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "Resmi sohbet"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Tellomi'dan gelen tek resmi sohbet. Haberler ve sürüm notları ile güncel bilgilere eriş."
+    "messageformat": "Tellomi'den gelen tek resmi sohbet. Haberler ve sürüm notları ile güncel bilgilere eriş."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Tellomi'dan gelen tek resmi sohbet."
+    "messageformat": "Tellomi'den gelen tek resmi sohbet."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Haberler ve sürüm notları ile güncel bilgilere eriş."
@@ -4719,10 +4719,10 @@
     "messageformat": "Kullanıcı verilerini silme ve uygulamayı sıfırlama"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Tellomi'e Bağış Yap"
+    "messageformat": "Tellomi'ye Bağış Yap"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} Tellomi'ı destekliyor"
+    "messageformat": "{name} Tellomi'yi destekliyor"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "Mesajlar senkronize ediliyor"
@@ -4839,7 +4839,7 @@
     "messageformat": "Hesap işlemi gerekli"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Bu hesabı kullanmaya devam etmek için telefonunda Tellomi'ı açman gerekiyor. Telefonunda Tellomi'ı açmazsan, hesabın kısa süre içinde silinecektir. <learnMoreLink>Dahasını öğren</learnMoreLink>"
+    "messageformat": "Bu hesabı kullanmaya devam etmek için telefonunda Tellomi'yi açman gerekiyor. Telefonunda Tellomi'yi açmazsan, hesabın kısa süre içinde silinecektir. <learnMoreLink>Dahasını öğren</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Medya geri yüklenemiyor"
@@ -5431,7 +5431,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {Tellomi'ın en güncel sürümlerinde grup üyeleri, bu mesajı senin sildiğini görecektir.} other {Tellomi'ın en güncel sürümlerinde grup üyeleri, bu mesajları senin sildiğini görecektir.}}"
+    "messageformat": "{count, plural, one {Tellomi'nin en güncel sürümlerinde grup üyeleri, bu mesajı senin sildiğini görecektir.} other {Tellomi'nin en güncel sürümlerinde grup üyeleri, bu mesajları senin sildiğini görecektir.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Sil"
@@ -6101,7 +6101,7 @@
     "messageformat": "Genel"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Tellomi'e Bağış Yap"
+    "messageformat": "Tellomi'ye Bağış Yap"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Görünüm"
@@ -6191,7 +6191,7 @@
     "messageformat": "Bu bir bağlı cihazdır"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "Hesap ayarlarını yönetmek için ana cihazında Tellomi'ı aç."
+    "messageformat": "Hesap ayarlarını yönetmek için ana cihazında Tellomi'yi aç."
   },
   "icu:Preferences--zoom": {
     "messageformat": "Yakınlaştırma seviyesi"
@@ -6353,7 +6353,7 @@
     "messageformat": "Sohbet geçmişi dışa aktarılamıyor"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Tellomi'ın diske dosya yazma izni olmadığı için sohbet geçmişin dışa aktarılamıyor. Diskinin izinlerini değiştirmeyi veya sistem ayarlarını güncellemeyi dene ve ardından tekrar dışa aktar."
+    "messageformat": "Tellomi'nin diske dosya yazma izni olmadığı için sohbet geçmişin dışa aktarılamıyor. Diskinin izinlerini değiştirmeyi veya sistem ayarlarını güncellemeyi dene ve ardından tekrar dışa aktar."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Yedekleme dışa aktarılıyor"
@@ -6368,7 +6368,7 @@
     "messageformat": "Yedekleme klasörünü telefonunun depolama alanına aktar"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Telefonuna Tellomi'ın yeni bir kopyasını yükle"
+    "messageformat": "Telefonuna Tellomi'nin yeni bir kopyasını yükle"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "\"Geri Yükle veya Aktar\"a dokun ve \"Cihazda Yedekleme\"yi seç"
@@ -6638,10 +6638,10 @@
     "messageformat": "Tellomi Güvenli Yedeklemeler"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Tellomi'ın uçtan uca şifrelenmiş güvenli depolama hizmeti ile otomatik yedeklemeler. Telefonunla başla. <learnMoreLink>Dahasını öğren</learnMoreLink>."
+    "messageformat": "Tellomi'nin uçtan uca şifrelenmiş güvenli depolama hizmeti ile otomatik yedeklemeler. Telefonunla başla. <learnMoreLink>Dahasını öğren</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Mesaj geçmişini yedekle böylece yeni bir telefon aldığında veya Tellomi'i yeniden yüklediğinde asla veri kaybetmezsin."
+    "messageformat": "Mesaj geçmişini yedekle böylece yeni bir telefon aldığında veya Tellomi'yi yeniden yüklediğinde asla veri kaybetmezsin."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Yedekleme detayları"
@@ -6695,7 +6695,7 @@
     "messageformat": "Telefonuna geri yükleyebileceğin uçtan uca şifrelenmiş bir yedekleme oluştur. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Bir yedeklemeyi geri yüklemek için telefonuna Tellomi'ın yeni bir kopyasını yükle. Uygulamayı aç ve &quot;Geri yükle veya aktar&quot;a dokun. <learnMoreLink>Dahasını öğren.</learnMoreLink>"
+    "messageformat": "Bir yedeklemeyi geri yüklemek için telefonuna Tellomi'nin yeni bir kopyasını yükle. Uygulamayı aç ve &quot;Geri yükle veya aktar&quot;a dokun. <learnMoreLink>Dahasını öğren.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Klasör seç"
@@ -6947,7 +6947,7 @@
     "messageformat": "Ayarla"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Uygulamak için Tellomi'i yeniden başlat"
+    "messageformat": "Uygulamak için Tellomi'yi yeniden başlat"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Dili değiştirmek için uygulamanın yeniden başlatılması gerekiyor."
@@ -6962,13 +6962,13 @@
     "messageformat": "Ekran güvenliği"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Ek gizlilik için bu bilgisayarda Tellomi'ın ekran görüntülerini engelle."
+    "messageformat": "Ek gizlilik için bu bilgisayarda Tellomi'nin ekran görüntülerini engelle."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Ekran güvenliği devre dışı bırakılsın mı?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Devre dışı bırakılırsa, Microsoft Windows Tellomi'ın ekran görüntülerini yakalayabilir ve gizliliği olmayabilecek özellikler için kullanabilir."
+    "messageformat": "Devre dışı bırakılırsa, Microsoft Windows Tellomi'nin ekran görüntülerini yakalayabilir ve gizliliği olmayabilecek özellikler için kullanabilir."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Devre dışı bırak"
@@ -6989,13 +6989,13 @@
     "messageformat": "App Store'a gitmek için tıkla"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Tellomi'ı telefonunda aç"
+    "messageformat": "Tellomi'yi telefonunda aç"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Tellomi'i telefonunda açmazsan hesabın yakında silinecek. Bunu başarılı bir şekilde gerçekleştirdiysen bu mesaj kaybolur. <learnMoreLink>Dahasını öğren</learnMoreLink>"
+    "messageformat": "Tellomi'yi telefonunda açmazsan hesabın yakında silinecek. Bunu başarılı bir şekilde gerçekleştirdiysen bu mesaj kaybolur. <learnMoreLink>Dahasını öğren</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Hesabını aktif tutmak için telefonunda Tellomi'i aç"
+    "messageformat": "Hesabını aktif tutmak için telefonunda Tellomi'yi aç"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Daha fazla bilgi"
@@ -7016,13 +7016,13 @@
     "messageformat": "Güncelleme Gerekli"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Tellomi'i kullanmaya devam etmek için en son sürüme güncellemen gerekir."
+    "messageformat": "Tellomi'yi kullanmaya devam etmek için en son sürüme güncellemen gerekir."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "{downloadSize} indir"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Güncellemeyi yüklemek için Tellomi'i yeniden başlat."
+    "messageformat": "Güncellemeyi yüklemek için Tellomi'yi yeniden başlat."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
     "messageformat": "Tellomi Desktop güncellenemedi ancak yeni bir sürümü mevcuttur. {downloadUrl} adresine giderek yeni sürümü manuel olarak kur, ardından destekle iletişime geç ya da bu sorunla ilgili bir hata bildir."
@@ -7064,7 +7064,7 @@
     "messageformat": "Devam etmek için insan olduğunu doğrula"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "Tellomi'da istenmeyen mesajları önlemek için lütfen doğrulamayı tamamla. Doğrulama sonrasında kayıt işlemine devam edebilirsin."
+    "messageformat": "Tellomi'de istenmeyen mesajları önlemek için lütfen doğrulamayı tamamla. Doğrulama sonrasında kayıt işlemine devam edebilirsin."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "Yeniden doğrulamayı dene"
@@ -7358,7 +7358,7 @@
     "messageformat": "Uyarı"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "PIN'i devre dışı bırakırsan, Tellomi'a yeniden kaydolduğunda tüm verileri kaybedersin. PIN devre dışı kaldığında, Kaydolma Kilidini açamazsın."
+    "messageformat": "PIN'i devre dışı bırakırsan, Tellomi'ye yeniden kaydolduğunda tüm verileri kaybedersin. PIN devre dışı kaldığında, Kaydolma Kilidini açamazsın."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "PIN'i devre dışı bırak"
@@ -7403,7 +7403,7 @@
     "messageformat": "Güncelleme gerekli"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "Kayıt işlemine devam etmek için lütfen Tellomi'ın en son sürümüne güncelle."
+    "messageformat": "Kayıt işlemine devam etmek için lütfen Tellomi'nin en son sürümüne güncelle."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "Güncelle"
@@ -7453,14 +7453,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Tellomi'in daha yeni bir sürümü zaten kurulu. Devam etmek istediğine emin misin?",
+    "messageformat": "Tellomi'nin daha yeni bir sürümü zaten kurulu. Devam etmek istediğine emin misin?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Uygulama çöktü"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Tellomi bir hata sonrası yeniden başlatıldı. Bir hata raporu göndererek Tellomi'in sorunu incelemesine yardımcı olabilirsin."
+    "messageformat": "Tellomi bir hata sonrası yeniden başlatıldı. Bir hata raporu göndererek Tellomi'nin sorunu incelemesine yardımcı olabilirsin."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Gönder"
@@ -8241,7 +8241,7 @@
     "messageformat": "PIN doğru. Sana sonra tekrar hatırlatacağız."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Tellomi masaüstü, yakında bilgisayarının {OS} sürümünü artık desteklemeyecek. Tellomi'i kullanmaya devam etmek için {expirationDate} tarihine kadar bilgisayarının işletim sistemini güncelle. <learnMoreLink>Daha fazlasını öğren</learnMoreLink>"
+    "messageformat": "Tellomi masaüstü, yakında bilgisayarının {OS} sürümünü artık desteklemeyecek. Tellomi'yi kullanmaya devam etmek için {expirationDate} tarihine kadar bilgisayarının işletim sistemini güncelle. <learnMoreLink>Daha fazlasını öğren</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
     "messageformat": "Tellomi masaüstü artık bu bilgisayarda çalışmıyor. Tellomi masaüstünü tekrar kullanmak için bilgisayarının {OS} sürümünü güncelle. <learnMoreLink>Daha fazlasını öğren</learnMoreLink>"
@@ -8517,7 +8517,7 @@
     "messageformat": "Gururla Kâr Amacı Gütmeyen"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Özel mesajlaşmayı desteklemek için bağış yap. Tellomi'ı bağımsız ve reklamsız tut. <readMoreLink>Devamını oku</readMoreLink>"
+    "messageformat": "Özel mesajlaşmayı desteklemek için bağış yap. Tellomi'yi bağımsız ve reklamsız tut. <readMoreLink>Devamını oku</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Bağış yap"
@@ -8568,7 +8568,7 @@
     "messageformat": "Bağışçılar için SSS"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Makbuzlar cihazlar arasında senkronize edilmez. Tellomi'ı yeniden yüklediysen, önceki bağışların makbuzları mevcut olmayacaktır."
+    "messageformat": "Makbuzlar cihazlar arasında senkronize edilmez. Tellomi'yi yeniden yüklediysen, önceki bağışların makbuzları mevcut olmayacaktır."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Alıcı yok"
@@ -8610,7 +8610,7 @@
     "messageformat": "AA/YY"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Tellomi'e {formattedCurrencyAmount} bağış yap"
+    "messageformat": "Tellomi'ye {formattedCurrencyAmount} bağış yap"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Geçersiz kart numarası"
@@ -8712,7 +8712,7 @@
     "messageformat": "Bağış başarılı oldu ancak rozet ayarlarını güncelleyemedik"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "Mobil cihazında rozet ayarlarını güncellemek için Ayarlar → Tellomi'a Bağış Yap → Rozetler bölümüne git."
+    "messageformat": "Mobil cihazında rozet ayarlarını güncellemek için Ayarlar → Tellomi'ye Bağış Yap → Rozetler bölümüne git."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Bağış kesildi"
@@ -8769,7 +8769,7 @@
     "messageformat": "Bağışınla ilgili bir hata oluştu"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Bağışın işleme alınmamış olabilir. Makbuzlarını kontrol etmek ve onaylamak için \"Tellomi'a Bağış Yap\" seçeneğine, ardından \"Bağış Makbuzları\"na tıkla."
+    "messageformat": "Bağışın işleme alınmamış olabilir. Makbuzlarını kontrol etmek ve onaylamak için \"Tellomi'ye Bağış Yap\" seçeneğine, ardından \"Bağış Makbuzları\"na tıkla."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Tekrar dene veya bağışını tamamlamana yardımcı olması için Destek bölümüne bir hata ayıklama günlüğü gönder. Hata ayıklama günlükleri, sorunu teşhis etmemize ve düzeltmemize yardımcı olur ve tanımlayıcı bilgiler içermezler."
@@ -8811,19 +8811,19 @@
     "messageformat": "Desteğin için teşekkürler!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Tellomi'dan bir bağışçı rozeti kazandın! Desteğini göstermek için rozeti profilinde sergile."
+    "messageformat": "Tellomi'den bir bağışçı rozeti kazandın! Desteğini göstermek için rozeti profilinde sergile."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Profilde göster"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Bunu mobil cihazında Ayarlar → Tellomi'a Bağış Yap → Rozetler bölümünden ayarlayabilirsin"
+    "messageformat": "Bunu mobil cihazında Ayarlar → Tellomi'ye Bağış Yap → Rozetler bölümünden ayarlayabilirsin"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "Araman nasıldı?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "Bu, Tellomi'daki aramaları iyileştirmemize yardımcı olur. Kişisel olarak tanımlanabilir hiçbir bilgi saklanmaz."
+    "messageformat": "Bu, Tellomi'deki aramaları iyileştirmemize yardımcı olur. Kişisel olarak tanımlanabilir hiçbir bilgi saklanmaz."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Sorunlar yaşadım"
@@ -8874,7 +8874,7 @@
     "messageformat": "Sorunların tanımı"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Lütfen konuyla ilgili tüm ayrıntıları ekle. Burada paylaştığın her şey gizli tutulacak ve yalnızca Tellomi'daki aramaların iyileştirilmesine yardımcı olmak için kullanılacaktır."
+    "messageformat": "Lütfen konuyla ilgili tüm ayrıntıları ekle. Burada paylaştığın her şey gizli tutulacak ve yalnızca Tellomi'deki aramaların iyileştirilmesine yardımcı olmak için kullanılacaktır."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "Lütfen problemini açıkla"
@@ -8955,11 +8955,11 @@
     "messageformat": "Tellomi Desktop'taki tüm güncel veriler silinecektir. Ardından bir kare kod tarayabilir ve mesaj geçmişini telefonundan aktarabilirsin."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Bu sürüm Tellomi'in sorunsuz çalışması için gereken bir takım küçük düzeltme ve hata gidermelerini içerir.",
+    "messageformat": "Bu sürüm Tellomi'nin sorunsuz çalışması için gereken bir takım küçük düzeltme ve hata gidermelerini içerir.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "İlave ince ayarlar, hata düzeltmeleri ve performans geliştirmeleri. Tellomi'i kullandığın için teşekkürler!",
+    "messageformat": "İlave ince ayarlar, hata düzeltmeleri ve performans geliştirmeleri. Tellomi'yi kullandığın için teşekkürler!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -8979,7 +8979,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Küçük ince ayarlar, hata düzeltmeleri ve performans geliştirmeleri yaptık. Tellomi'i kullandığın için teşekkürler!",
+    "messageformat": "Küçük ince ayarlar, hata düzeltmeleri ve performans geliştirmeleri yaptık. Tellomi'yi kullandığın için teşekkürler!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.24--1": {
