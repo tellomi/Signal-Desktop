@@ -2,10 +2,30 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 import type { ReceivedLinkPreviewDecisionType } from '../linkPreviews/linkCard.std.ts';
+import { getLinkErrorKind } from '../linkPreviews/linkLog.std.ts';
+import { createLogger } from '../logging/log.std.ts';
 import type { LinkPreviewType } from '../types/message/LinkPreviews.std.ts';
 import * as LinkPreview from '../types/LinkPreview.std.ts';
 import { getRoomIdFromCallLink } from './callLinksRingrtc.node.ts';
 import { isNotNil } from './isNotNil.std.ts';
+
+const log = createLogger('getValidLinkPreviews');
+
+// Tellomi (ADR-0063 §5.1 rule 2: a preview that goes wrong never becomes an error): the room a call
+// link opens is derived from its key, and a link whose key is not one (`#key=garbage`, no key at
+// all) makes that throw. Signal lets it end the whole message, which was then never stored and never
+// confirmed. One preview that cannot be read is one preview lost, like any other invalid one.
+function getCallLinkRoomId(url: string): string | undefined {
+  try {
+    return getRoomIdFromCallLink(url);
+  } catch (error) {
+    // Only the kind of the error, never the link: its key is in the `#` part (§6.5).
+    log.warn(
+      `dropped a call link preview whose key cannot be read: ${getLinkErrorKind(error)}`
+    );
+    return undefined;
+  }
+}
 
 // What of a preview is kept once rust/links has decided (ADR-0063 §7.4): `rich` as received, or
 // gone; the picture, or gone (a preview without one is never downloaded).
@@ -66,10 +86,14 @@ export function getValidLinkPreviews(
       const kept = decision ? applyDecision(item, decision) : item;
 
       if (LinkPreview.isCallLink(item.url)) {
+        const callLinkRoomId = getCallLinkRoomId(item.url);
+        if (callLinkRoomId === undefined) {
+          return null;
+        }
         return {
           ...kept,
           isCallLink: true,
-          callLinkRoomId: getRoomIdFromCallLink(item.url),
+          callLinkRoomId,
         };
       }
 
