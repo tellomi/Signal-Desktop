@@ -23,6 +23,7 @@ export default {
     platform: 'darwin',
     arch: 'arm64',
     version: '1.2.3',
+    copyText: () => Promise.resolve(),
   },
 } satisfies ComponentMeta<AboutProps>;
 

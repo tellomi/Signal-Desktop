@@ -128,8 +128,36 @@
     "description": "Shown in the about box for the link to software acknowledgments"
   },
   "icu:privacyPolicy": {
-    "messageformat": "Terms & Privacy Policy",
-    "description": "Shown in the about box for the link to https://tellomi.app/legal/"
+    "messageformat": "Privacy Policy",
+    "description": "Shown in the about box for the link to the Privacy Policy page"
+  },
+  "icu:About__Website": {
+    "messageformat": "Website",
+    "description": "AboutWindow > label before the website address"
+  },
+  "icu:About__ContactSupport": {
+    "messageformat": "Contact support",
+    "description": "AboutWindow > label before the support email address; clicking the address copies it"
+  },
+  "icu:About__ContactPrivacy": {
+    "messageformat": "Privacy and personal data",
+    "description": "AboutWindow > label before the privacy email address; clicking the address copies it"
+  },
+  "icu:About__ContactAbuse": {
+    "messageformat": "Report abuse",
+    "description": "AboutWindow > label before the abuse-report email address; clicking the address copies it"
+  },
+  "icu:About__Copied": {
+    "messageformat": "Copied",
+    "description": "AboutWindow > shown next to an email address for two seconds after it was copied"
+  },
+  "icu:About__Terms": {
+    "messageformat": "Terms of Service",
+    "description": "Shown in the about box for the link to the Terms of Service page"
+  },
+  "icu:About__SourceCode": {
+    "messageformat": "Tellomi is released under the GNU AGPLv3. Source code is available at {sourceLink}.",
+    "description": "AboutWindow > licence sentence; {sourceLink} is the address of the source-code page and must stay untranslated"
   },
   "icu:About__AppEnvironment": {
     "messageformat": "{appEnv}",

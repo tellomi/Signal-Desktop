@@ -28,6 +28,7 @@ createRoot(app).render(
       arch={AboutWindowProps.arch}
       i18n={i18n}
       version={window.SignalContext.getVersion()}
+      copyText={text => navigator.clipboard.writeText(text)}
     />
   </AppProvider>
 );
