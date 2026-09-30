@@ -27,7 +27,7 @@ import {
 import { ReadStatus } from '../../messages/MessageReadStatus.std.ts';
 import { MessageAudio } from './MessageAudio.dom.tsx';
 import { computePeaks } from '../VoiceNotesPlaybackContext.dom.tsx';
-import { pngUrl } from '../../storybook/Fixtures.std.ts';
+import { pngUrl, taobaoBrandIconUrl } from '../../storybook/Fixtures.std.ts';
 import { getDefaultConversation } from '../../test-helpers/getDefaultConversation.std.ts';
 import { WidthBreakpoint } from '../_util.std.ts';
 import { DAY, HOUR, MINUTE, SECOND } from '../../util/durations/index.std.ts';
@@ -1925,6 +1925,25 @@ LinkCardIconTinted.args = {
   getLinkCardTint: () => ORANGE_TINT,
 };
 
+// A long title keeps clear of the icon (its column is 54px narrower) and stops at two lines.
+export const LinkCardIconTintedLongTitle = Template.bind({});
+LinkCardIconTintedLongTitle.args = {
+  ...LinkCardIconTinted.args,
+  previews: [
+    {
+      ...LinkCardIcon.args?.previews?.[0],
+      domain: 'signal.org',
+      isStickerPack: false,
+      isCallLink: false,
+      url: 'https://www.signal.org',
+      title:
+        'A very long page title that has to be wrapped over several lines beside the small square picture and then cut off at the second line',
+      card: GENERIC_CARD,
+      layout: 'icon',
+    },
+  ],
+};
+
 export const LinkCardIconTintedDark = Template.bind({});
 LinkCardIconTintedDark.args = {
   ...LinkCardIconTinted.args,
@@ -1960,6 +1979,134 @@ LinkCardLargeImageTinted.args = {
   status: 'sent',
   text: 'Look https://www.signal.org',
   getLinkCardTint: () => ORANGE_TINT,
+};
+
+// Tellomi (ADR-0063 §九.6, card-visual §3.7 / §3.3): brand shells. Taobao has an icon that ships with
+// the app: the icon card, tinted from that icon (ORANGE_TINT is what rust/links `tint()` answers for
+// taobao.png). Meituan has no official icon: name, kind and domain only. Alipay is a payment shell:
+// never tinted. The sender's own picture is never shown on a shell.
+const BRAND_CARD = {
+  level: 'brand',
+  provider: 'taobao',
+  provider_name: { 'zh-Hans': '淘宝', en: 'Taobao' },
+  kind: 'product',
+  route: 'item',
+  title: null,
+  description: null,
+  attrs: [],
+  domain: 'taobao.com',
+  official_badge: false,
+  first_party: null,
+  lookalike: null,
+  show_image: false,
+  icon: 'taobao.png',
+  tintable: true,
+  payment: false,
+  reason: null,
+} as const;
+
+const TAOBAO_URL = 'https://item.taobao.com/item.htm?id=100032608854';
+
+export const LinkCardBrandShellIcon = Template.bind({});
+LinkCardBrandShellIcon.args = {
+  previews: [
+    {
+      domain: 'taobao.com',
+      isStickerPack: false,
+      isCallLink: false,
+      url: TAOBAO_URL,
+      card: BRAND_CARD,
+      cardIcon: { url: taobaoBrandIconUrl, width: 114, height: 114 },
+      layout: 'icon',
+    },
+  ],
+  status: 'sent',
+  text: TAOBAO_URL,
+  isLinkCardOnly: true,
+  getLinkCardTint: () => ORANGE_TINT,
+};
+
+export const LinkCardBrandShellIconDark = Template.bind({});
+LinkCardBrandShellIconDark.args = {
+  ...LinkCardBrandShellIcon.args,
+  theme: ThemeType.dark,
+};
+
+export const LinkCardBrandShellIconInMessageRequest = Template.bind({});
+LinkCardBrandShellIconInMessageRequest.args = {
+  ...LinkCardBrandShellIcon.args,
+  isMessageRequestAccepted: false,
+};
+
+const MEITUAN_URL =
+  'https://g.meituan.com/app/gfe-app-page-tuan/detail-mt.html?dealId=123456789';
+
+export const LinkCardBrandShellNoIcon = Template.bind({});
+LinkCardBrandShellNoIcon.args = {
+  previews: [
+    {
+      domain: 'meituan.com',
+      isStickerPack: false,
+      isCallLink: false,
+      url: MEITUAN_URL,
+      card: {
+        ...BRAND_CARD,
+        provider: 'meituan',
+        provider_name: { 'zh-Hans': '美团', en: 'Meituan' },
+        kind: 'deal',
+        route: 'deal',
+        domain: 'meituan.com',
+        icon: null,
+      },
+      layout: 'no_image',
+    },
+  ],
+  status: 'sent',
+  text: MEITUAN_URL,
+  isLinkCardOnly: true,
+  getLinkCardTint: () => ORANGE_TINT,
+};
+
+export const LinkCardBrandShellNoIconDark = Template.bind({});
+LinkCardBrandShellNoIconDark.args = {
+  ...LinkCardBrandShellNoIcon.args,
+  theme: ThemeType.dark,
+};
+
+const ALIPAY_URL = 'https://render.alipay.com/p/f/fd-j5rqp49m/index.html';
+
+export const LinkCardPaymentShell = Template.bind({});
+LinkCardPaymentShell.args = {
+  previews: [
+    {
+      domain: 'alipay.com',
+      isStickerPack: false,
+      isCallLink: false,
+      url: ALIPAY_URL,
+      card: {
+        ...BRAND_CARD,
+        provider: 'alipay',
+        provider_name: { 'zh-Hans': '支付宝', en: 'Alipay' },
+        kind: 'web',
+        route: null,
+        domain: 'alipay.com',
+        icon: null,
+        tintable: false,
+        payment: true,
+      },
+      layout: 'no_image',
+    },
+  ],
+  status: 'sent',
+  text: ALIPAY_URL,
+  isLinkCardOnly: true,
+  getLinkCardTint: () => ORANGE_TINT,
+};
+
+export const LinkCardPaymentShellDark = Template.bind({});
+LinkCardPaymentShellDark.args = {
+  ...LinkCardPaymentShell.args,
+  theme: ThemeType.dark,
 };
 
 // Tellomi (card-visual §3.5 / §3.7, tellomi/tellomi#1421): just a link, without a preview or with

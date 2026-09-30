@@ -5,6 +5,7 @@ import type { ReadonlyDeep } from 'type-fest';
 import { z } from 'zod';
 
 import * as Bytes from '../Bytes.std.ts';
+import { isLinkIconFileName } from './linkCardIcon.std.ts';
 
 // ADR-0063 §4.2 / §5.1 / §5.3: what rust/links' `classify` decided for one received preview.
 // The JSON shape is `rust/links/src/classify.rs` `Card`; everything the sender wrote has already
@@ -36,6 +37,16 @@ const firstPartySchema = z.discriminatedUnion('type', [
   z.object({ type: z.literal('official'), path: z.string() }),
 ]);
 
+// `Card.icon` (rust/links, brand level only): the file name of the icon that ships with the app.
+// Absent from a native module that predates the field, null for a shell without an official icon.
+// A name that is not an icon file name is treated as no icon rather than dropping the card.
+const iconSchema = z
+  .unknown()
+  .transform((value): string | null =>
+    isLinkIconFileName(value) ? value : null
+  )
+  .optional();
+
 const linkCardSchema = z.object({
   level: z.enum([
     'plain_link',
@@ -56,6 +67,7 @@ const linkCardSchema = z.object({
   first_party: firstPartySchema.nullable(),
   lookalike: z.string().nullable(),
   show_image: z.boolean(),
+  icon: iconSchema,
   tintable: z.boolean(),
   payment: z.boolean(),
   reason: z.string().nullable(),

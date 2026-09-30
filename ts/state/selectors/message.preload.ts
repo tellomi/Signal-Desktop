@@ -49,6 +49,7 @@ import {
 } from '../../types/LinkPreview.std.ts';
 import {
   classifyLinkPreview,
+  getLinkCardBrandIcon,
   getLinkCardLayout,
   getLinkLookalike,
 } from '../../linkPreviews/linkRegistry.preload.ts';
@@ -502,6 +503,9 @@ const getPreviewsForMessage = (
     // Brand shells, user and official cards never show the sender's image (§7.4).
     const showImage = card?.show_image ?? true;
     const shownImage = preview.image && showImage ? preview.image : undefined;
+    // Tellomi (ADR-0063 §九.6, card-visual §3.7): a brand shell shows the icon that ships with the
+    // app, when rust/links names one and it is there; that icon is the card's image from here on.
+    const cardIcon = getLinkCardBrandIcon(card);
     return [
       {
         ...preview,
@@ -515,11 +519,12 @@ const getPreviewsForMessage = (
               })
             : undefined,
         card,
+        cardIcon,
         // Tellomi (card-visual §3.2): the card's shape, from rust/links, in the data layer.
         layout: card
           ? getLinkCardLayout(
-              shownImage?.width ?? 0,
-              shownImage?.height ?? 0,
+              cardIcon?.width ?? shownImage?.width ?? 0,
+              cardIcon?.height ?? shownImage?.height ?? 0,
               card.kind ?? '',
               card.level
             )

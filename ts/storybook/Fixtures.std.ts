@@ -15,3 +15,7 @@ export const landscapeGreenUrl = '/fixtures/1000x50-green.jpeg';
 export const portraitTealUrl = '/fixtures/50x1000-teal.jpeg';
 
 export const squareStickerUrl = '/fixtures/512x515-thumbs-up-lincoln.webp';
+
+// Tellomi (ADR-0063 §九.6): the brand shells' icons as the app ships them (build/links/icons, served
+// by .storybook/main.ts staticDirs).
+export const taobaoBrandIconUrl = '/link-icons/taobao.png';

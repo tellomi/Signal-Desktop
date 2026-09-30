@@ -11,7 +11,10 @@ import {
 } from '@signalapp/libsignal-client/dist/links.js';
 
 import { createLogger } from '../logging/log.std.ts';
-import { BUNDLED_LINK_REGISTRY } from './bundledLinkRegistry.std.ts';
+import {
+  BUNDLED_LINK_ICONS_DIR,
+  BUNDLED_LINK_REGISTRY,
+} from './bundledLinkRegistry.std.ts';
 import type {
   LinkCardType,
   LinkMessageContext,
@@ -30,6 +33,8 @@ import {
   parseLinkCardLayout,
   parseLinkCardTint,
 } from './linkCardVisual.std.ts';
+import type { LinkCardIconType } from './linkCardIcon.std.ts';
+import { readBundledLinkIcon } from './linkCardIcon.node.ts';
 import { getLinkErrorKind } from './linkLog.std.ts';
 import {
   LINK_REGISTRY_UPDATE_DIR,
@@ -48,6 +53,7 @@ let listening = false;
 
 const cardCache = new LRUCache<string, LinkCardType | 'none'>({ max: 1000 });
 const lookalikeCache = new LRUCache<string, string>({ max: 1000 });
+const iconCache = new LRUCache<string, LinkCardIconType | 'none'>({ max: 64 });
 
 function listenForUpdates(): void {
   if (listening) {
@@ -121,6 +127,7 @@ export function _setLinkRegistryForTesting(
   loadFailed = false;
   cardCache.clear();
   lookalikeCache.clear();
+  iconCache.clear();
 }
 
 // Level and contents of the card for one received preview (ADR-0063 §5.1 rule 4: decided in the
@@ -186,6 +193,46 @@ export function getLinkLookalike(url: string): string | undefined {
   }
   lookalikeCache.set(key, lookalike ?? '');
   return lookalike;
+}
+
+// A brand shell's icon (ADR-0063 §九.6): the file rust/links names in the card, read from the icons
+// that ship with the app (build/links/icons) — never the network, never the sender's image.
+// `undefined` when the card names none, when the file is not bundled (a brand pulled in by a hot
+// update), or when it cannot be read: the shell then shows just the name and the domain. The
+// files never change while the app runs, so each is read once.
+/** @testexport */
+export function getBundledLinkIcon(
+  fileName: string | null | undefined
+): LinkCardIconType | undefined {
+  if (!fileName) {
+    return undefined;
+  }
+  const cached = iconCache.get(fileName);
+  if (cached !== undefined) {
+    return cached === 'none' ? undefined : cached;
+  }
+
+  let icon: LinkCardIconType | undefined;
+  try {
+    const { config } = window.SignalContext;
+    icon = readBundledLinkIcon(
+      join(config.installPath, 'build', 'links', BUNDLED_LINK_ICONS_DIR),
+      fileName
+    );
+  } catch (error) {
+    log.warn(`brand icon failed: ${getLinkErrorKind(error)}`);
+    icon = undefined;
+  }
+  iconCache.set(fileName, icon ?? 'none');
+  return icon;
+}
+
+// The icon a card shows in place of a picture: only a brand shell has one (card-visual §3.7: "随包
+// 图标，有才显示"), and never the sender's image.
+export function getLinkCardBrandIcon(
+  card: LinkCardType | undefined
+): LinkCardIconType | undefined {
+  return card?.level === 'brand' ? getBundledLinkIcon(card.icon) : undefined;
 }
 
 // Which of the four card shapes (card-visual §3.2), from the pixel size of the image the card shows
