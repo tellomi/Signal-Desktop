@@ -33,8 +33,7 @@ export function ChatSessionRefreshedNotification(
   const wrappedContactSupport = useCallback(() => {
     setIsDialogOpen(false);
 
-    const url =
-      'https://tellomi.app/support/&chat_refreshed';
+    const url = 'https://tellomi.app/support/&chat_refreshed';
 
     openLinkInWebBrowser(url);
   }, [setIsDialogOpen]);

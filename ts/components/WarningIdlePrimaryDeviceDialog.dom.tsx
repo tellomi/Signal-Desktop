@@ -17,8 +17,7 @@ export type Props = {
   i18n: LocalizerType;
 };
 
-const SUPPORT_PAGE =
-  'https://tellomi.app/help/9021007554074';
+const SUPPORT_PAGE = 'https://tellomi.app/help/9021007554074';
 
 export function WarningIdlePrimaryDeviceDialog({
   containerWidthBreakpoint,

@@ -39,8 +39,7 @@ import { AxoSymbol } from '../axo/AxoSymbol.dom.tsx';
 const { noop } = lodash;
 const log = createLogger('PreferencesLocalBackups');
 
-const SIGNAL_USER_SAFETY_LINK =
-  'https://tellomi.app/help/9932566320410';
+const SIGNAL_USER_SAFETY_LINK = 'https://tellomi.app/help/9932566320410';
 
 export function PreferencesLocalBackups({
   backupKey,

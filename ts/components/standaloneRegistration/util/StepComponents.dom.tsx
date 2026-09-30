@@ -9,8 +9,7 @@ import { tw } from '../../../axo/tw.dom.tsx';
 import type { LocalizerType } from '../../../types/I18N.std.ts';
 import { AxoIconButton } from '../../../axo/AxoIconButton.dom.tsx';
 
-export const PIN_ARTICLE_ON_SUPPORT =
-  'https://tellomi.app/help/360007059792';
+export const PIN_ARTICLE_ON_SUPPORT = 'https://tellomi.app/help/360007059792';
 
 export function Container({
   children,

@@ -3,8 +3,7 @@
 
 import type { JSX, ReactNode } from 'react';
 
-export const CONTACT_SUPPORT_URL =
-  'https://tellomi.app/support/';
+export const CONTACT_SUPPORT_URL = 'https://tellomi.app/support/';
 
 export function ContactSupportLink(parts: ReactNode): JSX.Element {
   return (

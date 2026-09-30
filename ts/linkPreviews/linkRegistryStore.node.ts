@@ -24,10 +24,10 @@ const log = createLogger('linkRegistryStore');
 // renderer (classify) and the main process (open plan) alike, so both see the same registry.
 
 /** The envelope schema this build reads (rust/links). Updates come as `links/s<N>/latest.json`. */
-export const SUPPORTED_LINK_REGISTRY_SCHEMA = 1;
+const SUPPORTED_LINK_REGISTRY_SCHEMA = 1;
 
 /** Envelopes are ~100 KB; anything much bigger is not one. */
-export const MAX_LINK_REGISTRY_BYTES = 2 * 1024 * 1024;
+const MAX_LINK_REGISTRY_BYTES = 2 * 1024 * 1024;
 
 /** Under the app's user data directory. */
 export const LINK_REGISTRY_UPDATE_DIR = 'link-registry';

@@ -11,8 +11,7 @@ import { I18n } from './I18n.dom.tsx';
 import { AxoAlertDialog } from '../axo/AxoAlertDialog.dom.tsx';
 import { AxoButton } from '../axo/AxoButton.dom.tsx';
 
-const LEARN_MORE_LINK =
-  'https://tellomi.app/help/360007320551';
+const LEARN_MORE_LINK = 'https://tellomi.app/help/360007320551';
 
 export function MaybeTransferModal({
   i18n,

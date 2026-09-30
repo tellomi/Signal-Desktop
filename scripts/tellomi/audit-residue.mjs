@@ -1,3 +1,5 @@
+// Copyright 2026 重庆半格智能科技有限公司
+// SPDX-License-Identifier: AGPL-3.0-only
 // Tellomi: 对着**打好的包**（app.asar）查 Signal 残留，不看源码——源码 grep 会漏掉 bundle 里拼出来的字符串，也会把注释算进去。
 //   node scripts/tellomi/audit-residue.mjs [release/mac-arm64/Tellomi.app]      # 退出码 1 = 有未在白名单里的残留
 // 查三样：1) signal.* / signalapp / debuglogs.org 的 URL；2) 文案（_locales 压缩后的 messages.json）里的「Signal」；3) html 的 <title>。

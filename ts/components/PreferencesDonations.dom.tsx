@@ -324,9 +324,7 @@ function DonationsHome({
         <ListBoxItem
           className="PreferencesDonations__list-item"
           onAction={() => {
-            openLinkInWebBrowser(
-              'https://tellomi.app/help/360031949872'
-            );
+            openLinkInWebBrowser('https://tellomi.app/help/360031949872');
           }}
         >
           <span className="PreferencesDonations__list-item__icon PreferencesDonations__list-item__icon--faqs" />

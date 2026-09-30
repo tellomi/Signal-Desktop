@@ -14,7 +14,7 @@ GlobalErrors.addHandler();
 // set such that only we have read access to our files
 process.umask(0o077);
 
-export const AUMID = 'app.tellomi.desktop';   // Tellomi: must equal build.appId (Windows toast identity), not derived from package name
+export const AUMID = 'app.tellomi.desktop'; // Tellomi: must equal build.appId (Windows toast identity), not derived from package name
 log.info('Set Windows Application User Model ID (AUMID)', {
   AUMID,
 });

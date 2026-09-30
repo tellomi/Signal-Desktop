@@ -31,9 +31,7 @@ export function DeliveryIssueDialog(props: PropsType): ReactElement {
     <>
       <Button
         onClick={() =>
-          openLinkInWebBrowser(
-            'https://tellomi.app/help/4404859745690'
-          )
+          openLinkInWebBrowser('https://tellomi.app/help/4404859745690')
         }
         size={ButtonSize.Medium}
         variant={ButtonVariant.Secondary}

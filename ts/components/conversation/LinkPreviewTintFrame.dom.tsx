@@ -56,7 +56,7 @@ async function readReducedRgba(
 
 // The tint of a card, once its image is on this device: undefined until then, and for good when it
 // cannot be read (the card keeps its default colours).
-export function useLinkCardTint({
+function useLinkCardTint({
   enabled,
   imageUrl,
   layout,

@@ -35,13 +35,26 @@ function toUrl(input: URL | string): URL | null {
 // Tellomi: sgnl → tellomi, signalcaptcha → tellomicaptcha (docs/signal/LINKS_AND_SCHEMES.md)
 // Tellomi: accept the legacy Signal scheme/hosts too, so each client can migrate on its own day;
 // generation (toWebUrl / toAppUrl) already emits the Tellomi forms.
-const SignalRouteProtocols = ['https:', 'tellomi:', 'tellomicaptcha:', 'sgnl:', 'signalcaptcha:'] as const;
+const SignalRouteProtocols = [
+  'https:',
+  'tellomi:',
+  'tellomicaptcha:',
+  'sgnl:',
+  'signalcaptcha:',
+] as const;
 
 /**
  * List of hostnames that are used by Signal routes.
  * This doesn't include app-only routes like `linkdevice` or `verify`.
  */
-const SignalRouteHostnames = ['tell.cc', 'signal.me', 'signal.group', 'signal.link', 'signal.art', 'signaldonations.org'] as const;
+const SignalRouteHostnames = [
+  'tell.cc',
+  'signal.me',
+  'signal.group',
+  'signal.link',
+  'signal.art',
+  'signaldonations.org',
+] as const;
 
 /**
  * Type to help maintain {@link SignalRouteHostnames}, real hostnames should go there.
@@ -268,8 +281,12 @@ export const contactByEncryptedUsernameRoute = _route(
       _pattern('https:', 'tell.cc', '/u{/}?', {
         hash: 'eu/:encryptedUsername',
       }),
-      _pattern('https:', 'signal.me', '{/}?', { hash: 'eu/:encryptedUsername' }),
-      _pattern('tellomi:', 'tell.cc', '/u{/}?', { hash: 'eu/:encryptedUsername' }),
+      _pattern('https:', 'signal.me', '{/}?', {
+        hash: 'eu/:encryptedUsername',
+      }),
+      _pattern('tellomi:', 'tell.cc', '/u{/}?', {
+        hash: 'eu/:encryptedUsername',
+      }),
       _pattern('sgnl:', 'signal.me', '{/}?', { hash: 'eu/:encryptedUsername' }),
     ],
     schema: z.object({
@@ -346,7 +363,9 @@ export const groupInvitesRoute = _route('groupInvites', {
     _pattern('tellomi:', 'tell.cc', '/g{/}?', {
       hash: ':inviteCode([^\\/]+)',
     }),
-    _pattern('https:', 'signal.group', '{/}?', { hash: ':inviteCode([^\\/]+)' }),
+    _pattern('https:', 'signal.group', '{/}?', {
+      hash: ':inviteCode([^\\/]+)',
+    }),
     _pattern('sgnl:', 'signal.group', '{/}?', { hash: ':inviteCode([^\\/]+)' }),
     _pattern('tellomi:', 'joingroup', '{/}?', { hash: ':inviteCode([^\\/]+)' }),
     _pattern('sgnl:', 'joingroup', '{/}?', { hash: ':inviteCode([^\\/]+)' }),
