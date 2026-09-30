@@ -14,7 +14,6 @@ import type {
 } from '../types/LinkPreview.std.ts';
 import type { LinkPreviewImage as LinkPreviewFetchImage } from '../linkPreviews/linkPreviewFetch.preload.ts';
 import { processLinkPreviewImageBytes } from '../linkPreviews/linkPreviewFetch.preload.ts';
-import * as Errors from '../types/errors.std.ts';
 import type { StickerPackType as StickerPackDBType } from '../sql/Interface.std.ts';
 import type { MIMEType } from '../types/MIME.std.ts';
 import * as Bytes from '../Bytes.std.ts';
@@ -395,6 +394,17 @@ async function toImageAttachment(
 let linkProxyAgent: Promise<ProxyAgent> | undefined;
 let watchingNetwork = false;
 
+// What makes the requests rust/links asks for (§4.4). Only a test puts another one here, so that
+// the whole send path can run without a network.
+let fetchLink: typeof performLinkFetch = performLinkFetch;
+
+/** @testexport */
+export function _setLinkFetchForTesting(
+  value: typeof performLinkFetch | undefined
+): void {
+  fetchLink = value ?? performLinkFetch;
+}
+
 // ADR-0063 §4.3: the reachability memo describes the current network only.
 function forgetUnreachableHostsOnNetworkChange(): void {
   if (watchingNetwork) {
@@ -464,7 +474,7 @@ async function getTellomiPreview(
     {
       begin: (target, contextJson) => registry.begin(target, contextJson),
       fetch: request =>
-        performLinkFetch(request, {
+        fetchLink(request, {
           isAllowedUrl: LinkPreview.shouldPreviewHref,
           signal: abortSignal,
           agent,
@@ -712,7 +722,9 @@ async function getStickerPackPreview(
       stickerCount: pack.stickerCount || Object.keys(pack.stickers).length,
     };
   } catch (error) {
-    log.error('getStickerPackPreview error:', Errors.toLogFormat(error));
+    // Tellomi (ADR-0063 §6.5, §8.1 row 9): the kind only; the error may quote the link, and the
+    // pack's id and key are in its fragment.
+    log.error('getStickerPackPreview error:', getLinkErrorKind(error));
     return null;
   } finally {
     if (id) {
@@ -772,9 +784,10 @@ async function getGroupPreview(
         ),
       };
     } catch (error) {
-      const errorString = Errors.toLogFormat(error);
+      // Tellomi (ADR-0063 §6.5, §8.1 row 9): the kind only; the avatar is decrypted with keys
+      // from the link's fragment, and the error may quote them.
       log.error(
-        `getGroupPreview/${logId}: Failed to fetch avatar ${errorString}`
+        `getGroupPreview/${logId}: Failed to fetch avatar ${getLinkErrorKind(error)}`
       );
     }
   }
