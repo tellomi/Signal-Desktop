@@ -291,7 +291,7 @@ export function UsernameEditor({
       setIsConfirmingReset(true);
       return;
     }
-    // Tellomi (ADR-0066 §6.2): warn before anything that starts the 30-day rename cooldown — replacing a username,
+    // Tellomi (ADR-0066 §6.2): warn before anything that starts the 180-day rename cooldown — replacing a username,
     // or setting one while a recently deleted username (deleted here or on another device) may still be held
     // (clear + set counts as a change).
     const confirmation = getUsernameSaveConfirmation({
@@ -453,7 +453,7 @@ export function UsernameEditor({
         // @ts-expect-error ConfirmationDialog migration: Needs title
         title={null}
         // Tellomi (ADR-0066 §6.2): everything confirmed here starts the rename cooldown (a first username never
-        // gets here), so the user hears about the 30 days before, not after.
+        // gets here), so the user hears about the 180 days before, not after.
         description={
           saveConfirmation === 'setAfterDelete'
             ? i18n(

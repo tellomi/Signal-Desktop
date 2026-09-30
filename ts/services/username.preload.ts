@@ -140,7 +140,7 @@ export async function reserveUsername(
         return { ok: false, error: ReserveUsernameError.Conflict };
       }
       if (error.is(ErrorCode.RateLimitedError)) {
-        // Tellomi (ADR-0066 §6.2): the 30-day rename cooldown is a 429 too, told apart by its Retry-After.
+        // Tellomi (ADR-0066 §6.2): the 180-day rename cooldown is a 429 too, told apart by its Retry-After.
         // Only reservations are refused for it; confirming (below) is not, so its sleep-and-retry stays as upstream.
         if (isRenameCooldown(error.retryAfterSecs)) {
           return {

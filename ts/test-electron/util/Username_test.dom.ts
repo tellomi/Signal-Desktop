@@ -410,9 +410,12 @@ describe('Username (Tellomi fixed discriminator)', () => {
       assert.isFalse(isRenameCooldown(RENAME_COOLDOWN_MIN_RETRY_AFTER_SECS));
       assert.isTrue(isRenameCooldown(RENAME_COOLDOWN_MIN_RETRY_AFTER_SECS + 1));
       assert.isTrue(isRenameCooldown(2591999));
+      assert.isTrue(isRenameCooldown(15551999));
     });
 
     it('shows whole days, rounded up, at least one', () => {
+      assert.strictEqual(getRenameCooldownDays(15551999), 180);
+      assert.strictEqual(getRenameCooldownDays(15552000), 180);
       assert.strictEqual(getRenameCooldownDays(2591999), 30);
       assert.strictEqual(getRenameCooldownDays(2592000), 30);
       assert.strictEqual(getRenameCooldownDays(86401), 2);
