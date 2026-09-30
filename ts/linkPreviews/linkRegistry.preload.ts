@@ -51,6 +51,10 @@ let registry: LinkRegistry | undefined;
 let loadFailed = false;
 let listening = false;
 
+// Who wants to know that the registry in use changed (a hot update was taken): the timeline, whose
+// items are memoized and would otherwise keep the cards they were drawn with.
+const registryListeners = new Set<() => void>();
+
 const cardCache = new LRUCache<string, LinkCardType | 'none'>({ max: 1000 });
 const lookalikeCache = new LRUCache<string, string>({ max: 1000 });
 const iconCache = new LRUCache<string, LinkCardIconType | 'none'>({ max: 64 });
@@ -108,14 +112,34 @@ export function getLinkRegistry(): LinkRegistry | undefined {
   return registry;
 }
 
-// A newer registry was stored: take it (or stay with the current one when it does not pass). Cards are decided per
-// registry version, so the caches need no clearing; messages drawn from now on use the new one.
-function reloadLinkRegistry(): void {
+// The version of the registry cards are decided with, as text ('' when there is none): a value a
+// component can hold on to, and that changes exactly when the registry in use does (ADR-0063 §5.4
+// row 3, §8.4: a hot update reaches the messages already on screen too).
+export function getLinkRegistryVersion(): string {
+  // Loads it on first use, so the first answer is the one that stays.
+  return getLinkRegistry()?.version.toString() ?? '';
+}
+
+export function subscribeToLinkRegistry(listener: () => void): () => void {
+  registryListeners.add(listener);
+  return () => {
+    registryListeners.delete(listener);
+  };
+}
+
+// A newer registry was stored: take it (or stay with the current one when it does not pass). The card caches are keyed
+// by registry version, so what is in them is only dropped to free it. Messages drawn from now on use the new registry;
+// the ones on screen are memoized and would keep the card they were drawn with, so they are told, and redraw.
+/** @testexport */
+export function reloadLinkRegistry(): void {
   const before = registry?.version;
   loadRegistry();
   if (registry?.version !== before) {
     cardCache.clear();
     lookalikeCache.clear();
+    for (const listener of [...registryListeners]) {
+      listener();
+    }
   }
 }
 
