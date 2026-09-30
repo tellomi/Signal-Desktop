@@ -411,7 +411,7 @@
     "messageformat": "通话"
   },
   "icu:NavTabs__ItemLabel--Stories": {
-    "messageformat": "动态"
+    "messageformat": "快拍"
   },
   "icu:NavTabs__ItemLabel--Settings": {
     "messageformat": "设置"
@@ -543,13 +543,13 @@
     "messageformat": "检查"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, other {您有 {count,number} 位密友可能已重新安装 Tellomi 或更改设备。在给对方发送内容之前，您可以检查对方的安全码，此为非必选操作。}}"
+    "messageformat": "{count, plural, other {您有 {count,number} 位好友可能已重新安装 Tellomi 或更改设备。在给对方发送内容之前，您可以检查对方的安全码，此为非必选操作。}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
-    "messageformat": "已检查所有密友，请点击发送以继续操作。"
+    "messageformat": "已检查所有好友，请点击发送以继续操作。"
   },
   "icu:safetyNumberChangeDialog__confirm-remove-all": {
-    "messageformat": "{count, plural, other {您确定要从{story}动态中移除 {count,number} 位接收人吗？}}"
+    "messageformat": "{count, plural, other {您确定要从{story}快拍中移除 {count,number} 位接收人吗？}}"
   },
   "icu:safetyNumberChangeDialog__remove-all": {
     "messageformat": "全部移除"
@@ -558,13 +558,13 @@
     "messageformat": "验证安全码"
   },
   "icu:safetyNumberChangeDialog__remove": {
-    "messageformat": "移除出动态"
+    "messageformat": "移除出快拍"
   },
   "icu:safetyNumberChangeDialog__actions-contact": {
     "messageformat": "联系人相关操作：{contact}"
   },
   "icu:safetyNumberChangeDialog__actions-story": {
-    "messageformat": "动态相关操作：{story}"
+    "messageformat": "快拍相关操作：{story}"
   },
   "icu:sendAnyway": {
     "messageformat": "仍要发送"
@@ -1161,7 +1161,7 @@
     "messageformat": "与{name}没有私聊消息"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Tellomi 密友"
+    "messageformat": "好友"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name}在您的系统通讯录中"
@@ -2712,7 +2712,7 @@
     "messageformat": "新聊天"
   },
   "icu:stories": {
-    "messageformat": "动态"
+    "messageformat": "快拍"
   },
   "icu:contactSearchPlaceholder": {
     "messageformat": "姓名、用户名或手机号码"
@@ -5842,7 +5842,7 @@
     "messageformat": "没有其它共同群组"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Tellomi 密友"
+    "messageformat": "好友"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "最近已将其昵称从{oldName}更改为{newName}"
@@ -7172,16 +7172,16 @@
     "messageformat": "设备"
   },
   "icu:Preferences__turn-stories-on": {
-    "messageformat": "开启动态"
+    "messageformat": "开启快拍"
   },
   "icu:Preferences__turn-stories-off": {
-    "messageformat": "关闭动态"
+    "messageformat": "关闭快拍"
   },
   "icu:Preferences__turn-stories-off--action": {
     "messageformat": "关闭"
   },
   "icu:Preferences__turn-stories-off--body": {
-    "messageformat": "您将无法再分享或浏览动态。您最近发布的动态更新也将会被删除。"
+    "messageformat": "您将无法再分享或浏览快拍。您最近发布的快拍更新也将会被删除。"
   },
   "icu:Preferences__Language__Label": {
     "messageformat": "语言"
@@ -7826,16 +7826,16 @@
     "messageformat": "前往设置"
   },
   "icu:MyStories__title": {
-    "messageformat": "我的动态"
+    "messageformat": "我的快拍"
   },
   "icu:MyStories__list_item": {
-    "messageformat": "我的动态"
+    "messageformat": "我的快拍"
   },
   "icu:MyStories__story": {
-    "messageformat": "您的动态"
+    "messageformat": "您的快拍"
   },
   "icu:MyStories__download": {
-    "messageformat": "下载动态"
+    "messageformat": "下载快拍"
   },
   "icu:MyStories__more": {
     "messageformat": "更多选项"
@@ -7853,10 +7853,10 @@
     "messageformat": "{replyCount, plural, other {<strong>{replyCount,number}</strong> 个回复}}"
   },
   "icu:MyStories__delete": {
-    "messageformat": "要删除此动态吗？收到此动态的所有人也将看不到此动态。"
+    "messageformat": "要删除此快拍吗？收到此快拍的所有人也将看不到此快拍。"
   },
   "icu:MyStories__delete-group-story-for-me": {
-    "messageformat": "要删除此动态吗？由于该群组已解散，此动态将仅对您删除。"
+    "messageformat": "要删除此快拍吗？由于该群组已解散，此快拍将仅对您删除。"
   },
   "icu:payment-event-notification-message-you-label": {
     "messageformat": "您向{receiver}发起了付款"
@@ -7916,7 +7916,7 @@
     "messageformat": "了解更多"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Tellomi 密友"
+    "messageformat": "好友"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} 是您选择信任的人，选择方式有："
@@ -7931,31 +7931,31 @@
     "messageformat": "对方在您的系统通讯录中"
   },
   "icu:SignalConnectionsModal__footer": {
-    "messageformat": "您的密友能看到您的名称和照片，还能看到您在“我的动态”中发布的帖子，除非您向对方隐藏动态。"
+    "messageformat": "您的好友能看到您的名称和照片，还能看到您在“我的快拍”中发布的帖子，除非您向对方隐藏快拍。"
   },
   "icu:Stories__title": {
-    "messageformat": "动态"
+    "messageformat": "快拍"
   },
   "icu:Stories__mine": {
-    "messageformat": "我的动态"
+    "messageformat": "我的快拍"
   },
   "icu:Stories__add": {
-    "messageformat": "添加动态"
+    "messageformat": "添加快拍"
   },
   "icu:Stories__add-story--text": {
-    "messageformat": "文本动态"
+    "messageformat": "文本快拍"
   },
   "icu:Stories__add-story--media": {
     "messageformat": "照片或视频"
   },
   "icu:Stories__hidden-stories": {
-    "messageformat": "隐藏的动态"
+    "messageformat": "隐藏的快拍"
   },
   "icu:Stories__list-empty": {
-    "messageformat": "当前没有可以显示的近期动态"
+    "messageformat": "当前没有可以显示的近期快拍"
   },
   "icu:Stories__list__empty--title": {
-    "messageformat": "无动态"
+    "messageformat": "无快拍"
   },
   "icu:Stories__list__empty--subtitle": {
     "messageformat": "新的更新将会在这里显示。"
@@ -7973,10 +7973,10 @@
     "messageformat": "点击重试"
   },
   "icu:Stories__placeholder--text": {
-    "messageformat": "点击查看动态"
+    "messageformat": "点击查看快拍"
   },
   "icu:Stories__placeholder-with-icon--text-2": {
-    "messageformat": "点击 <newStoryButtonIcon></newStoryButtonIcon> 来添加新动态吧。"
+    "messageformat": "点击 <newStoryButtonIcon></newStoryButtonIcon> 来添加新快拍吧。"
   },
   "icu:Stories__from-to-group": {
     "messageformat": "{name}发送给{group}"
@@ -7988,34 +7988,34 @@
     "messageformat": "正在发送回应……"
   },
   "icu:Stories__toast--hasNoSound": {
-    "messageformat": "此动态没有声音"
+    "messageformat": "此快拍没有声音"
   },
   "icu:Stories__failed-send": {
-    "messageformat": "此动态无法发送给一些用户。请检查您的网络连接并重试。"
+    "messageformat": "此快拍无法发送给一些用户。请检查您的网络连接并重试。"
   },
   "icu:StoriesSettings__title": {
-    "messageformat": "动态隐私"
+    "messageformat": "快拍隐私"
   },
   "icu:StoriesSettings__description": {
-    "messageformat": "动态将会在 24 小时后自动消失。请选择谁可以查看您的动态，或创建对特定访客或群组可见的新动态。"
+    "messageformat": "快拍将会在 24 小时后自动消失。请选择谁可以查看您的快拍，或创建对特定访客或群组可见的新快拍。"
   },
   "icu:StoriesSettings__my_stories": {
-    "messageformat": "我的动态"
+    "messageformat": "我的快拍"
   },
   "icu:StoriesSettings__new-list": {
-    "messageformat": "新动态"
+    "messageformat": "新快拍"
   },
   "icu:StoriesSettings__custom-story-subtitle": {
-    "messageformat": "自定义动态"
+    "messageformat": "自定义快拍"
   },
   "icu:StoriesSettings__group-story-subtitle": {
-    "messageformat": "群组动态"
+    "messageformat": "群组快拍"
   },
   "icu:StoriesSettings__viewers": {
     "messageformat": "{count, plural, other {{count,number} 位访客}}"
   },
   "icu:StoriesSettings__who-can-see": {
-    "messageformat": "谁可以看到此动态"
+    "messageformat": "谁可以看到此快拍"
   },
   "icu:StoriesSettings__add-viewer": {
     "messageformat": "添加访客"
@@ -8027,7 +8027,7 @@
     "messageformat": "移除{title}"
   },
   "icu:StoriesSettings__remove--body": {
-    "messageformat": "此人将无法再看到您的动态。"
+    "messageformat": "此人将无法再看到您的快拍。"
   },
   "icu:StoriesSettings__replies-reactions--title": {
     "messageformat": "回复和回应"
@@ -8036,28 +8036,28 @@
     "messageformat": "允许回复和回应"
   },
   "icu:StoriesSettings__replies-reactions--description": {
-    "messageformat": "允许动态的可见对象回应和回复。"
+    "messageformat": "允许快拍的可见对象回应和回复。"
   },
   "icu:StoriesSettings__delete-list": {
-    "messageformat": "删除自定义动态"
+    "messageformat": "删除自定义快拍"
   },
   "icu:StoriesSettings__delete-list--confirm": {
-    "messageformat": "您确定要删除“{name}”吗？分享到此动态的更新也将会被删除。"
+    "messageformat": "您确定要删除“{name}”吗？分享到此快拍的更新也将会被删除。"
   },
   "icu:StoriesSettings__choose-viewers": {
     "messageformat": "选择访客"
   },
   "icu:StoriesSettings__name-story": {
-    "messageformat": "动态命名"
+    "messageformat": "快拍命名"
   },
   "icu:StoriesSettings__name-placeholder": {
-    "messageformat": "动态名称（必填）"
+    "messageformat": "快拍名称（必填）"
   },
   "icu:StoriesSettings__hide-story": {
-    "messageformat": "对谁隐藏动态："
+    "messageformat": "对谁隐藏快拍："
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "所有 Tellomi 密友"
+    "messageformat": "所有好友"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "所有人，除了……"
@@ -8066,43 +8066,43 @@
     "messageformat": "只分享给……"
   },
   "icu:StoriesSettings__mine__disclaimer--link": {
-    "messageformat": "选择谁可以看您的动态。此更改不会影响您已发送的动态。<learnMoreLink>了解更多。</learnMoreLink>"
+    "messageformat": "选择谁可以看您的快拍。此更改不会影响您已发送的快拍。<learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:StoriesSettings__context-menu": {
-    "messageformat": "动态隐私"
+    "messageformat": "快拍隐私"
   },
   "icu:StoriesSettings__view-receipts--label": {
     "messageformat": "浏览回执"
   },
   "icu:StoriesSettings__view-receipts--new-description": {
-    "messageformat": "查看并分享动态的浏览情况。如果禁用此功能，您将无法看到其他人浏览了您的动态。"
+    "messageformat": "查看并分享快拍的浏览情况。如果禁用此功能，您将无法看到其他人浏览了您的快拍。"
   },
   "icu:GroupStorySettingsModal__members_title": {
-    "messageformat": "谁可以看到此动态"
+    "messageformat": "谁可以看到此快拍"
   },
   "icu:GroupStorySettingsModal__members_help": {
-    "messageformat": "“{groupTitle}”群组聊天中的成员可以浏览和回复此动态。您可以更新此群组聊天的成员资格设置。"
+    "messageformat": "“{groupTitle}”群组聊天中的成员可以浏览和回复此快拍。您可以更新此群组聊天的成员资格设置。"
   },
   "icu:GroupStorySettingsModal__remove_group": {
-    "messageformat": "移除群组动态"
+    "messageformat": "移除群组快拍"
   },
   "icu:StoriesSettings__remove_group--confirm": {
     "messageformat": "确定要移除“{groupTitle}”吗？"
   },
   "icu:SendStoryModal__choose-who-can-view": {
-    "messageformat": "选择谁可以看您的动态"
+    "messageformat": "选择谁可以看您的快拍"
   },
   "icu:SendStoryModal__title": {
     "messageformat": "发送给"
   },
   "icu:SendStoryModal__send": {
-    "messageformat": "发送动态"
+    "messageformat": "发送快拍"
   },
   "icu:SendStoryModal__custom-story": {
-    "messageformat": "自定义动态"
+    "messageformat": "自定义快拍"
   },
   "icu:SendStoryModal__group-story": {
-    "messageformat": "群组动态"
+    "messageformat": "群组快拍"
   },
   "icu:SendStoryModal__only-share-with": {
     "messageformat": "只分享给"
@@ -8114,16 +8114,16 @@
     "messageformat": "新建"
   },
   "icu:SendStoryModal__new-custom--title": {
-    "messageformat": "新自定义动态"
+    "messageformat": "新自定义快拍"
   },
   "icu:SendStoryModal__new-custom--name-visibility": {
-    "messageformat": "只有您能看到此动态的名称。"
+    "messageformat": "只有您能看到此快拍的名称。"
   },
   "icu:SendStoryModal__new-custom--description": {
     "messageformat": "仅对特定用户可见"
   },
   "icu:SendStoryModal__new-group--title": {
-    "messageformat": "新群组动态"
+    "messageformat": "新群组快拍"
   },
   "icu:SendStoryModal__new-group--description": {
     "messageformat": "分享给一个现有群组"
@@ -8132,28 +8132,28 @@
     "messageformat": "选择群组"
   },
   "icu:SendStoryModal__my-stories-privacy": {
-    "messageformat": "我的动态隐私"
+    "messageformat": "我的快拍隐私"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "选择哪些 Tellomi 密友可以看您的动态。您可以随时在隐私设置中对此进行更改。<learnMoreLink>了解更多。</learnMoreLink>"
+    "messageformat": "选择哪些好友可以看您的快拍。您可以随时在隐私设置中对此进行更改。<learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
-    "messageformat": "删除动态"
+    "messageformat": "删除快拍"
   },
   "icu:SendStoryModal__confirm-remove-group": {
-    "messageformat": "要移除动态吗？此操作将会从您的列表中移除此动态，不过您仍然可以查看此群组的动态。"
+    "messageformat": "要移除快拍吗？此操作将会从您的列表中移除此快拍，不过您仍然可以查看此群组的快拍。"
   },
   "icu:SendStoryModal__announcements-only": {
-    "messageformat": "只有管理员可以给该群组发送动态。"
+    "messageformat": "只有管理员可以给该群组发送快拍。"
   },
   "icu:Stories__settings-toggle--title": {
-    "messageformat": "分享和浏览动态"
+    "messageformat": "分享和浏览快拍"
   },
   "icu:Stories__settings-toggle--description": {
-    "messageformat": "如果您选择关闭动态，您将无法再分享或浏览动态。"
+    "messageformat": "如果您选择关闭快拍，您将无法再分享或浏览快拍。"
   },
   "icu:Stories__settings-toggle--button": {
-    "messageformat": "关闭动态"
+    "messageformat": "关闭快拍"
   },
   "icu:StoryViewer__pause": {
     "messageformat": "暂停"
@@ -8204,7 +8204,7 @@
     "messageformat": "下载附件"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "启用浏览回执功能，看看谁浏览了您的动态。如要启用此功能，请在您的移动设备中打开 Tellomi 应用，然后前往“设置>动态”。"
+    "messageformat": "启用浏览回执功能，看看谁浏览了您的快拍。如要启用此功能，请在您的移动设备中打开 Tellomi 应用，然后前往“设置>快拍”。"
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "未有回复"
@@ -8219,13 +8219,13 @@
     "messageformat": "回复"
   },
   "icu:StoryViewsNRepliesModal__reacted--you": {
-    "messageformat": "回应了此动态"
+    "messageformat": "回应了此快拍"
   },
   "icu:StoryViewsNRepliesModal__reacted--someone-else": {
-    "messageformat": "回应了此动态"
+    "messageformat": "回应了此快拍"
   },
   "icu:StoryViewsNRepliesModal__not-a-member": {
-    "messageformat": "您已不是此群组的成员，因此不能回复此动态。"
+    "messageformat": "您已不是此群组的成员，因此不能回复此快拍。"
   },
   "icu:StoryViewsNRepliesModal__delete-reply": {
     "messageformat": "对我删除"
@@ -8237,13 +8237,13 @@
     "messageformat": "复制时间戳"
   },
   "icu:StoryListItem__label": {
-    "messageformat": "动态"
+    "messageformat": "快拍"
   },
   "icu:StoryListItem__unhide": {
-    "messageformat": "取消隐藏动态"
+    "messageformat": "取消隐藏快拍"
   },
   "icu:StoryListItem__hide": {
-    "messageformat": "隐藏动态"
+    "messageformat": "隐藏快拍"
   },
   "icu:StoryListItem__go-to-chat": {
     "messageformat": "前往聊天"
@@ -8255,25 +8255,25 @@
     "messageformat": "信息"
   },
   "icu:StoryListItem__hide-modal--body": {
-    "messageformat": "要隐藏动态吗？隐藏后{name}的新动态更新将不会显示在动态列表的顶部。"
+    "messageformat": "要隐藏快拍吗？隐藏后{name}的新快拍更新将不会显示在快拍列表的顶部。"
   },
   "icu:StoryListItem__hide-modal--confirm": {
     "messageformat": "隐藏"
   },
   "icu:StoryImage__error2": {
-    "messageformat": "无法下载动态。{name}需要再分享一遍。"
+    "messageformat": "无法下载快拍。{name}需要再分享一遍。"
   },
   "icu:StoryImage__error--you": {
-    "messageformat": "无法下载动态。您需要再分享一遍。"
+    "messageformat": "无法下载快拍。您需要再分享一遍。"
   },
   "icu:StoryCreator__error--video-unsupported": {
-    "messageformat": "不支持此文件格式，视频无法发布到动态中。"
+    "messageformat": "不支持此文件格式，视频无法发布到快拍中。"
   },
   "icu:StoryCreator__error--video-too-long": {
-    "messageformat": "{maxDurationInSec, plural, other {视频时长超过了 {maxDurationInSec,number} 秒，无法发布到动态中。}}"
+    "messageformat": "{maxDurationInSec, plural, other {视频时长超过了 {maxDurationInSec,number} 秒，无法发布到快拍中。}}"
   },
   "icu:StoryCreator__error--video-too-big": {
-    "messageformat": "视频的大小超过了 {limit,number}{units}，无法发布到动态中。"
+    "messageformat": "视频的大小超过了 {limit,number}{units}，无法发布到快拍中。"
   },
   "icu:StoryCreator__error--video-error": {
     "messageformat": "加载视频失败"
@@ -8288,7 +8288,7 @@
     "messageformat": "文本无背景色"
   },
   "icu:StoryCreator__story-bg": {
-    "messageformat": "更改动态背景颜色"
+    "messageformat": "更改快拍背景颜色"
   },
   "icu:StoryCreator__next": {
     "messageformat": "下一步"
@@ -8312,7 +8312,7 @@
     "messageformat": "Condensed 字体"
   },
   "icu:StoryCreator__control--text": {
-    "messageformat": "添加动态文本"
+    "messageformat": "添加快拍文本"
   },
   "icu:StoryCreator__control--link": {
     "messageformat": "添加链接"
@@ -8321,13 +8321,13 @@
     "messageformat": "输入或粘贴 URL"
   },
   "icu:StoryCreator__link-preview-empty": {
-    "messageformat": "为您的动态访客添加链接"
+    "messageformat": "为您的快拍访客添加链接"
   },
   "icu:Stories__failed-send--full": {
-    "messageformat": "动态发送失败"
+    "messageformat": "快拍发送失败"
   },
   "icu:Stories__failed-send--partial": {
-    "messageformat": "动态无法发送给所有接收人"
+    "messageformat": "快拍无法发送给所有接收人"
   },
   "icu:TextAttachment__placeholder": {
     "messageformat": "添加文本"
@@ -8336,25 +8336,25 @@
     "messageformat": "访问链接"
   },
   "icu:Quote__story": {
-    "messageformat": "动态"
+    "messageformat": "快拍"
   },
   "icu:Quote__story-reaction": {
-    "messageformat": "回应了{name}的动态"
+    "messageformat": "回应了{name}的快拍"
   },
   "icu:Quote__story-reaction--you": {
-    "messageformat": "回应了您的动态"
+    "messageformat": "回应了您的快拍"
   },
   "icu:Quote__story-reaction--single": {
-    "messageformat": "回应了动态"
+    "messageformat": "回应了快拍"
   },
   "icu:Quote__story-reaction-notification--incoming": {
-    "messageformat": "用 {emoji} 回应了您的动态"
+    "messageformat": "用 {emoji} 回应了您的快拍"
   },
   "icu:Quote__story-reaction-notification--outgoing": {
-    "messageformat": "您用 {emoji} 回应了{name}的动态"
+    "messageformat": "您用 {emoji} 回应了{name}的快拍"
   },
   "icu:Quote__story-reaction-notification--outgoing--nameless": {
-    "messageformat": "您用 {emoji} 回应了一个动态"
+    "messageformat": "您用 {emoji} 回应了一个快拍"
   },
   "icu:Quote__story-unavailable": {
     "messageformat": "已不存在"
