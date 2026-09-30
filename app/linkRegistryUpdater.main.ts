@@ -13,6 +13,7 @@ import { BUNDLED_LINK_REGISTRY } from '../ts/linkPreviews/bundledLinkRegistry.st
 import {
   checkForLinkRegistryUpdate,
   LINK_REGISTRY_UPDATE_DIR,
+  linkRegistryFetchInit,
   loadBestLinkRegistry,
 } from '../ts/linkPreviews/linkRegistryStore.node.ts';
 import { reloadLinkOpenRegistry } from './linkOpen.main.ts';
@@ -40,10 +41,10 @@ async function fetchBytes(
   url: string,
   maxBytes: number
 ): Promise<Uint8Array<ArrayBuffer>> {
-  const response = await net.fetch(url, {
-    redirect: 'error',
-    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
-  });
+  const response = await net.fetch(
+    url,
+    linkRegistryFetchInit(REQUEST_TIMEOUT_MS)
+  );
   if (!response.ok) {
     throw new Error(`HTTP ${response.status}`);
   }

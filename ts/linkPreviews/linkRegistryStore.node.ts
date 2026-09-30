@@ -32,6 +32,26 @@ const MAX_LINK_REGISTRY_BYTES = 2 * 1024 * 1024;
 /** Under the app's user data directory. */
 export const LINK_REGISTRY_UPDATE_DIR = 'link-registry';
 
+/**
+ * Options for the main process' `net.fetch` of the registry pointer and envelope.
+ *
+ * `bypassCustomProtocolHandlers` is load-bearing: app/protocol_filter.node.ts installs a handler on the default
+ * session that answers every http(s) request with ERR_ACCESS_DENIED (the renderer must not load web content), and
+ * `net.fetch` goes through that session. Without this option the hot update can never download anything in a
+ * packaged app (found on a real Electron 43.5 run, 2026-09-30, tellomi/tellomi#1421).
+ */
+export function linkRegistryFetchInit(timeoutMs: number): {
+  bypassCustomProtocolHandlers: true;
+  redirect: 'error';
+  signal: AbortSignal;
+} {
+  return {
+    bypassCustomProtocolHandlers: true,
+    redirect: 'error',
+    signal: AbortSignal.timeout(timeoutMs),
+  };
+}
+
 const KEEP_UPDATES = 2;
 const ENVELOPE_FILE = /^links-(\d{1,12})\.json$/;
 
