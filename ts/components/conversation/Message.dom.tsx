@@ -2060,7 +2060,10 @@ export class Message extends PureComponent<Props, State> {
             phoneNumber={knownUser?.phoneNumber}
             profileName={knownUser?.profileName}
             size={AvatarSize.FIFTY_SIX}
-            title={card.title}
+            // card-visual §5.2: a user this device knows has their avatar, any other the default
+            // one. The title would give the initials of "Tellomi user" or of the @name the link
+            // carries, neither of which is a name; no title, no initials.
+            title={knownUser ? card.title : ''}
           />
         );
         break;

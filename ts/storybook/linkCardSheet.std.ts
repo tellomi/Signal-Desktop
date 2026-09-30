@@ -88,6 +88,9 @@ export type SheetCellType = Readonly<{
   // The colour of the picture the card draws itself with (the sender's picture, or a brand shell's
   // bundled icon), when it has one: the key into `SHEET_TINTS`.
   pictureColor?: SheetColorType;
+  // What this state of the card is, for whoever reads the sheet: a line under the card in the
+  // story, not part of the card.
+  note?: string;
 }>;
 
 export type SheetRowType = Readonly<{
@@ -697,8 +700,11 @@ export const SHEET_ROWS: ReadonlyArray<SheetRowType> = [
           },
         },
       }),
+      note: '本地认识 → 真头像',
     },
     required: {
+      // Nothing from this device: the card draws the default avatar (card-visual §5.2), not the
+      // initials of "Tellomi user".
       preview: makePreview(
         'https://tell.cc/u#eu/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
         {
@@ -710,6 +716,7 @@ export const SHEET_ROWS: ReadonlyArray<SheetRowType> = [
           layout: 'first_party',
         }
       ),
+      note: '本地不认识 → 默认头像，不画首字母',
     },
   },
   {
