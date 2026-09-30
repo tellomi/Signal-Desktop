@@ -1,6 +1,7 @@
 // Copyright 2021 Signal Messenger, LLC
 // SPDX-License-Identifier: AGPL-3.0-only
 
+import { useSyncExternalStore } from 'react';
 import { useSelector } from 'react-redux';
 import { createSelector } from 'reselect';
 import { isEmpty } from 'lodash';
@@ -49,16 +50,25 @@ import { missingCaseError } from '../../util/missingCaseError.std.ts';
 import { getGroupMemberships } from '../../util/getGroupMemberships.dom.ts';
 import type { ContactNameColorType } from '../../types/Colors.std.ts';
 import type { LinkLocalLookupType } from '../../linkPreviews/firstPartyLocal.node.ts';
+import {
+  getLinkRegistryVersion,
+  subscribeToLinkRegistry,
+} from '../../linkPreviews/linkRegistry.preload.ts';
 import { getOwn } from '../../util/getOwn.std.ts';
 
 // A no-op lookup for non-story-reply items. Only story replies should take a
 // dependency on the stories slice
 const noStoryReplyAttachment = () => undefined;
 
-const getTimelineItem = (
+// `_linkRegistryVersion` is not read: it is an argument so that the memoized item (see `useProxySelector`,
+// which compares every argument, and only the parts of the state that were read) is drawn again when a hot
+// update changed the link registry the cards are decided with. The registry is not part of the state.
+/** @testexport */
+export const getTimelineItem = (
   state: StateType,
   messageId: string | undefined,
-  contactNameColors: Map<string, ContactNameColorType>
+  contactNameColors: Map<string, ContactNameColorType>,
+  _linkRegistryVersion: string
 ): TimelineItemType | undefined => {
   if (messageId === undefined) {
     return undefined;
@@ -143,8 +153,19 @@ export const useTimelineItem = (
   const contactNameColors = useSelector(
     getCachedConversationMemberColorsSelector
   )(conversationId);
+  // Tellomi (ADR-0063 §5.4 row 3, §8.4): a hot update of the link registry changes the card of messages
+  // that are already on screen (a provider dropped to a brand shell), so the item is drawn again then.
+  const linkRegistryVersion = useSyncExternalStore(
+    subscribeToLinkRegistry,
+    getLinkRegistryVersion
+  );
 
-  return useProxySelector(getTimelineItem, messageId, contactNameColors);
+  return useProxySelector(
+    getTimelineItem,
+    messageId,
+    contactNameColors,
+    linkRegistryVersion
+  );
 };
 
 export type DirectConversationWithSameTitleContactSpoofingWarning =
