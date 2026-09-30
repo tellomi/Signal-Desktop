@@ -47,7 +47,7 @@ import { strictAssert } from '../util/assert.std.ts';
 import { isAciString } from '../util/isAciString.std.ts';
 import { copyFromQuotedMessage } from './copyQuote.preload.ts';
 import { findStoryMessage } from '../util/findStoryMessage.preload.ts';
-import { getValidLinkPreviews } from '../util/getValidLinkPreviews.node.ts';
+import { getReceivedLinkPreviews } from '../linkPreviews/receivedLinkPreviews.preload.ts';
 import { getStoryExpirationStartTimestamp } from '../util/expirationTimer.std.ts';
 import { normalizeServiceId } from '../types/ServiceId.std.ts';
 import { BodyRange, trimMessageWhitespace } from '../types/BodyRange.std.ts';
@@ -509,9 +509,18 @@ export async function handleDataMessage(
       const now = new Date().getTime();
       const incomingPreview = dataMessage.preview || [];
 
-      const preview = getValidLinkPreviews(incomingPreview, dataMessage.body, {
-        isStory: isStory(message.attributes),
-      });
+      // Tellomi (ADR-0063 §5.1 rule 4, §7.4): Signal's filter with rust/links' receive-time
+      // decision: the whole preview goes, or its `rich`, or its picture (never downloaded).
+      const preview = getReceivedLinkPreviews(
+        incomingPreview,
+        dataMessage.body,
+        {
+          isStory: isStory(message.attributes),
+          attachmentContentTypes: (dataMessage.attachments ?? []).map(
+            attachment => attachment.contentType
+          ),
+        }
+      );
 
       if (preview.length < incomingPreview.length) {
         log.warn(

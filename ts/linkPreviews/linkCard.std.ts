@@ -88,6 +88,36 @@ export function parseLinkCard(json: string): LinkCardType | undefined {
   return result.success ? result.data : undefined;
 }
 
+// `rust/links` `ReceiveCheck` (ADR-0063 §7.4): what to do with a received preview before it is
+// stored. `keep_preview` false drops the whole preview (the message itself is kept); `keep_preview`
+// true with `keep_rich` false drops only `rich`, the snapshot stays.
+const receiveCheckSchema = z.object({
+  keep_preview: z.boolean(),
+  keep_rich: z.boolean(),
+});
+
+export type ReceiveCheckType = z.infer<typeof receiveCheckSchema>;
+
+export function parseReceiveCheck(json: string): ReceiveCheckType | undefined {
+  let value: unknown;
+  try {
+    value = JSON.parse(json);
+  } catch {
+    return undefined;
+  }
+  const result = receiveCheckSchema.safeParse(value);
+  return result.success ? result.data : undefined;
+}
+
+// What a received preview becomes before it is stored (ADR-0063 §5.1 rule 4, §7.4): rust/links'
+// `receive_check`, and whether the card `classify` decides at that moment shows the preview's
+// picture. A picture no card shows is not kept, so it is never downloaded (§7.4).
+export type ReceivedLinkPreviewDecisionType = Readonly<{
+  keepPreview: boolean;
+  keepRich: boolean;
+  keepImage: boolean;
+}>;
+
 export type LinkPreviewForClassify = Readonly<{
   url: string;
   title?: string;
