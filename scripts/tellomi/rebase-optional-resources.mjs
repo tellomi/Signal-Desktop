@@ -1,3 +1,5 @@
+// Copyright 2026 重庆半格智能科技有限公司
+// SPDX-License-Identifier: AGPL-3.0-only
 // Tellomi: build/optional-resources.json（emoji 字体 / emoji 搜索索引 / jumbomoji / 通话 DRED 权重，运行时按需下载，sha512 钉死）
 // 上游指向 updates2.signal.org；我们镜像到 updates.tellomi.app 同路径（超级仓库 scripts/release/publish-desktop.sh resources 负责下载校验上传），
 // 这里只把 host 换掉。幂等；上游每次跑 get-emoji-locales / get-jumbomoji 之后重跑一次。
