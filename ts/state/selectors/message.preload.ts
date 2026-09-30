@@ -53,7 +53,10 @@ import {
   getLinkCardLayout,
   getLinkLookalike,
 } from '../../linkPreviews/linkRegistry.preload.ts';
-import type { LinkCardType } from '../../linkPreviews/linkCard.std.ts';
+import type {
+  LinkCardType,
+  LinkMessageContext,
+} from '../../linkPreviews/linkCard.std.ts';
 import {
   getLinkOnlyUrl,
   isLinkCardOnly,
@@ -447,14 +450,34 @@ function getPlainLinkPreview(
   };
 }
 
+// Tellomi (card-visual §3.3 and §7.3 last paragraph, ADR-0063 §8.1 row 6): the card of a link in a
+// message request, where the sender is a stranger, is the domain card: the no-image card drawn from
+// the URL alone (a link glyph and the registrable domain rust/links computes from it, in red when
+// it imitates a well-known one). rust/links decides on a preview stripped down to its URL, so
+// nothing the sender wrote can reach the card (title, sub line, picture, a brand shell's icon, the
+// avatar, group name or action of a first-party card, the official badge), `toPlainLinkCard` drops
+// what a first-party URL adds anyway, and the preview's image is never read. Without a registry
+// there is no domain to compute, so there is no card: the text stays, as in Signal.
+function getMessageRequestPreview(
+  url: string,
+  body: string,
+  context: LinkMessageContext
+): LinkPreviewForUIType | undefined {
+  const card = classifyLinkPreview({ url, hasImage: false }, body, context);
+  return card?.domain ? getPlainLinkPreview(url, card) : undefined;
+}
+
 const getPreviewsForMessage = (
   message: MessageWithUIFieldsType,
   {
     hasMediaBackups,
+    isMessageRequest,
     linkOnlyUrl,
     linkLocalLookup,
   }: {
     hasMediaBackups: boolean;
+    // An incoming message in a conversation whose message request is not accepted yet.
+    isMessageRequest: boolean;
     linkOnlyUrl: string | undefined;
     linkLocalLookup: LinkLocalLookupType | undefined;
   }
@@ -467,6 +490,18 @@ const getPreviewsForMessage = (
       attachment => attachment.contentType
     ),
   };
+  if (isMessageRequest) {
+    // A message that is just a link gets its card even without a preview (as below); one with a
+    // preview gets it in the preview's place. Only the URL of a preview is looked at.
+    const urls =
+      previews.length > 0
+        ? previews.map(preview => preview.url)
+        : [linkOnlyUrl].filter(isNotNil);
+    return urls.flatMap(url => {
+      const preview = getMessageRequestPreview(url, body, linkContext);
+      return preview ? [preview] : [];
+    });
+  }
   if (previews.length === 0) {
     // Tellomi (card-visual §3.5): just a link, sent without a preview (previews off, or fetching
     // failed), still gets a card. rust/links computes its domain as for any preview.
@@ -1015,6 +1050,10 @@ const getPropsForMessage = (
   const { hasMediaBackups, linkLocalLookup } = options;
   const attachments = getAttachmentsForMessage(message, { hasMediaBackups });
   const author = getAuthorForMessage(message, options);
+  const conversation = getConversation(message, options.conversationSelector);
+  const isMessageRequestAccepted = conversation?.acceptedMessageRequest ?? true;
+  // Tellomi (card-visual §7.3): what a stranger's link shows in a message request, below.
+  const isMessageRequest = isIncoming(message) && !isMessageRequestAccepted;
   // Tellomi (card-visual §3.5): the link a message consists of, when it has nothing else.
   const linkOnlyUrl = getLinkOnlyUrl(
     message.body,
@@ -1032,6 +1071,7 @@ const getPropsForMessage = (
   );
   const previews = getPreviewsForMessage(message, {
     hasMediaBackups,
+    isMessageRequest,
     linkOnlyUrl,
     linkLocalLookup,
   });
@@ -1062,7 +1102,6 @@ const getPropsForMessage = (
     ? DurationInSeconds.toMillis(expireTimer)
     : undefined;
 
-  const conversation = getConversation(message, conversationSelector);
   const isGroup = conversation.type === 'group';
   const bodyRanges = processBodyRanges(message, isGroup, options);
   const quote = getPropsForQuote(message, { ...options, isGroup });
@@ -1173,8 +1212,10 @@ const getPropsForMessage = (
     id: message.id,
     isBlocked: conversation.isBlocked || false,
     isEditedMessage: Boolean(message.editHistory),
-    isLinkCardOnly: isLinkCardOnly(linkOnlyUrl, previews),
-    isMessageRequestAccepted: conversation?.acceptedMessageRequest ?? true,
+    // Tellomi (card-visual §7.3): in a message request the link text stays: the card is not
+    // clickable there, and the long-press menu that would show the full URL does not exist yet.
+    isLinkCardOnly: !isMessageRequest && isLinkCardOnly(linkOnlyUrl, previews),
+    isMessageRequestAccepted,
     isPinned,
     isSelected,
     isSelectMode,

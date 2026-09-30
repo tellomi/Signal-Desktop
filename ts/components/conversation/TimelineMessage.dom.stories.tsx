@@ -2180,6 +2180,39 @@ LinkCardPlainLookalike.args = {
   contactNameColor: '100',
 };
 
+// Tellomi (card-visual §7.3, ADR-0063 §8.1 row 6): a stranger's link in a message request is the
+// domain card the selector builds from the URL alone (a link glyph and the domain, nothing the
+// sender wrote): not clickable, not tinted, no picture, and the link text stays under it, even when
+// the message is just the link.
+export const LinkCardDomainInMessageRequest = Template.bind({});
+LinkCardDomainInMessageRequest.args = {
+  ...LinkCardPlain.args,
+  text: 'Have a look https://www.163.com/news/article/K1234.html',
+  isLinkCardOnly: false,
+  isMessageRequestAccepted: false,
+};
+
+export const LinkCardDomainInMessageRequestDark = Template.bind({});
+LinkCardDomainInMessageRequestDark.args = {
+  ...LinkCardDomainInMessageRequest.args,
+  theme: ThemeType.dark,
+};
+
+export const LinkCardDomainInMessageRequestLinkOnly = Template.bind({});
+LinkCardDomainInMessageRequestLinkOnly.args = {
+  ...LinkCardPlain.args,
+  isLinkCardOnly: false,
+  isMessageRequestAccepted: false,
+};
+
+export const LinkCardDomainInMessageRequestLookalike = Template.bind({});
+LinkCardDomainInMessageRequestLookalike.args = {
+  ...LinkCardPlainLookalike.args,
+  text: 'Have a look https://www.bi1ibili.com/video/BV1YDhJ6ZEL6',
+  isLinkCardOnly: false,
+  isMessageRequestAccepted: false,
+};
+
 export const LinkPreviewWithNoDescription = Template.bind({});
 LinkPreviewWithNoDescription.args = {
   previews: [
