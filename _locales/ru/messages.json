@@ -915,7 +915,7 @@
     "messageformat": "Посмотрите, {whatsNew} в этом обновлении"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi — некоммерческая организация"
+    "messageformat": "Signal — некоммерческая организация"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "что нового"
@@ -8541,7 +8541,7 @@
     "messageformat": "Ваша информация конфиденциальна"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Как независимая некоммерческая организация, Tellomi заботится о приватности сообщений и звонков. Без рекламы, без трекеров, без слежки. Пожертвуйте сегодня, чтобы поддержать Tellomi."
+    "messageformat": "Как независимая некоммерческая организация, Signal заботится о приватности сообщений и звонков. Без рекламы, без трекеров, без слежки. Пожертвуйте сегодня, чтобы поддержать Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "По желанию получите значок в профиле после пожертвования"
@@ -8550,7 +8550,7 @@
     "messageformat": "Ваша приватность — наша миссия"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi — некоммерческая организация."
+    "messageformat": "Signal — некоммерческая организация."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Значок сердца в стиле логотипа Tellomi"

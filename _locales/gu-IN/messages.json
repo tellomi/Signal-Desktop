@@ -915,7 +915,7 @@
     "messageformat": "આ અપડેટમાં {whatsNew} જુઓ"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi બિનનફાકારક સંસ્થા છે"
+    "messageformat": "Signal બિનનફાકારક સંસ્થા છે"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "નવું શું છે"
@@ -8541,7 +8541,7 @@
     "messageformat": "તમારી માહિતી ખાનગી છે"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "એક સ્વતંત્ર બિનનફાકારક સંસ્થા તરીકે, Tellomi ખાનગી મેસેજિંગ અને કૉલ માટે પ્રતિબદ્ધ છે. કોઈ જાહેરાતો નહીં, કોઈ પગેરું નહીં, કોઈ દેખરેખ નહીં. Tellomiને સપોર્ટ આપવા માટે આજે જ દાન આપો."
+    "messageformat": "એક સ્વતંત્ર બિનનફાકારક સંસ્થા તરીકે, Signal ખાનગી મેસેજિંગ અને કૉલ માટે પ્રતિબદ્ધ છે. કોઈ જાહેરાતો નહીં, કોઈ પગેરું નહીં, કોઈ દેખરેખ નહીં. Signalને સપોર્ટ આપવા માટે આજે જ દાન આપો."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "દાન કરતી વખતે તમારી પ્રોફાઇલ પર એક વૈકલ્પિક બૅજ મેળવો"
@@ -8550,7 +8550,7 @@
     "messageformat": "તમારી પ્રાઇવસી એ અમારું મિશન છે"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi બિનનફાકારક સંસ્થા છે. US દાન કર કપાતપાત્ર છે."
+    "messageformat": "Signal બિનનફાકારક સંસ્થા છે. US દાન કર કપાતપાત્ર છે."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Tellomi લૉગોની શૈલીમાં હાર્ટ આઇકન"

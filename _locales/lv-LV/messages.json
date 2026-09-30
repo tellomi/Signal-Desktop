@@ -915,7 +915,7 @@
     "messageformat": "Apskatiet, kādi {whatsNew} iekļauti šajā atjauninājumā"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi ir bezpeļņas organizācija"
+    "messageformat": "Signal ir bezpeļņas organizācija"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "jaunumi"
@@ -8541,7 +8541,7 @@
     "messageformat": "Jūsu informācija ir konfidenciāla"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Tellomi ir neatkarīga bezpeļņas organizācija, kas ir apņēmusies nodrošināt privātu ziņojumapmaiņu un zvanu pakalpojumu. Bez reklāmām, bez izsekotājiem, bez novērošanas. Ziedojiet šodien, lai atbalstītu Tellomi."
+    "messageformat": "Signal ir neatkarīga bezpeļņas organizācija, kas ir apņēmusies nodrošināt privātu ziņojumapmaiņu un zvanu pakalpojumu. Bez reklāmām, bez izsekotājiem, bez novērošanas. Ziedojiet šodien, lai atbalstītu Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Ziedojot saņemsiet nozīmīti, ko pēc izvēles varat rādīt profilā"
@@ -8550,7 +8550,7 @@
     "messageformat": "Jūsu privātums — mūsu misija"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi ir bezpeļņas organizācija. Par ziedojumiem tiek piemēroti nodokļu atvieglojumi."
+    "messageformat": "Signal ir bezpeļņas organizācija. Par ziedojumiem tiek piemēroti nodokļu atvieglojumi."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Sirds ikona Tellomi logotipa stilā"

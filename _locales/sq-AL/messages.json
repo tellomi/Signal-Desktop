@@ -915,7 +915,7 @@
     "messageformat": "Shihni {whatsNew} në këtë përditësim"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi është një ent jofitimprurës"
+    "messageformat": "Signal është një ent jofitimprurës"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "ç’ka të re"
@@ -8541,7 +8541,7 @@
     "messageformat": "Informacioni yt është privat"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Si një ent jofitimprurës i pavarur, Tellomi është i përkushtuar ndaj mesazheve dhe thirrjeve private. Pa reklama, pa gjurmues, pa mbikëqyrje. Dhuro sot për të mbështetur Tellomi."
+    "messageformat": "Si një ent jofitimprurës i pavarur, Signal është i përkushtuar ndaj mesazheve dhe thirrjeve private. Pa reklama, pa gjurmues, pa mbikëqyrje. Dhuro sot për të mbështetur Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Merr distinktivin opsional në profil kur dhuron"
@@ -8550,7 +8550,7 @@
     "messageformat": "Privatësia jote është misioni ynë"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi është një ent jofitimprurës. Tellomi është një ent jofitimprurës."
+    "messageformat": "Signal është një ent jofitimprurës. Signal është një ent jofitimprurës."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Ikonë zemre në stilin e logos së Tellomi"

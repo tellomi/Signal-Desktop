@@ -915,7 +915,7 @@
     "messageformat": "Bu güncellemede {whatsNew} olduğunu görün"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi kâr amacı gütmeyen bir kuruluştur"
+    "messageformat": "Signal kâr amacı gütmeyen bir kuruluştur"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "nelerin yeni"
@@ -8541,7 +8541,7 @@
     "messageformat": "Bilgilerin gizlidir"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Kâr amacı gütmeyen, bağımsız bir kuruluş olan Tellomi, özel mesajlaşma ve aramalara önem verir. Reklam yok, takip yok, gözetleme yok. Tellomi'ı desteklemek için bugün bağış yap."
+    "messageformat": "Kâr amacı gütmeyen, bağımsız bir kuruluş olan Signal, özel mesajlaşma ve aramalara önem verir. Reklam yok, takip yok, gözetleme yok. Signal'ı desteklemek için bugün bağış yap."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Bağış yaptığında profilinde isteğe bağlı bir rozet al"
@@ -8550,7 +8550,7 @@
     "messageformat": "Gizliliğin görevimizdir"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi kâr amacı gütmeyen bir kuruluştur."
+    "messageformat": "Signal kâr amacı gütmeyen bir kuruluştur."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Tellomi logosu tarzında kalp simgesi"

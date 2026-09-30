@@ -915,7 +915,7 @@
     "messageformat": "Δες {whatsNew} σε αυτή την αναβάθμιση"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Το Tellomi είναι ένας μη κερδοσκοπικός οργανισμός"
+    "messageformat": "Το Signal είναι ένας μη κερδοσκοπικός οργανισμός"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "τι είναι καινούργιο"
@@ -8541,7 +8541,7 @@
     "messageformat": "Τα στοιχεία σου είναι ιδιωτικά"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Ως ανεξάρτητος μη κερδοσκοπικός οργανισμός, το Tellomi έχει δεσμευτεί για ιδιωτικά μηνύματα και κλήσεις. Χωρίς διαφημίσεις, παρακολούθηση, επιτήρηση. Κάνε σήμερα μια δωρεά για να στηρίξεις το Tellomi."
+    "messageformat": "Ως ανεξάρτητος μη κερδοσκοπικός οργανισμός, το Signal έχει δεσμευτεί για ιδιωτικά μηνύματα και κλήσεις. Χωρίς διαφημίσεις, παρακολούθηση, επιτήρηση. Κάνε σήμερα μια δωρεά για να στηρίξεις το Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Απόκτησε ένα προαιρετικό σήμα στο προφίλ σου όταν κάνεις δωρεά"
@@ -8550,7 +8550,7 @@
     "messageformat": "Η ιδιωτικότητά σου είναι η αποστολή μας"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Το Tellomi είναι ένας μη κερδοσκοπικός οργανισμός."
+    "messageformat": "Το Signal είναι ένας μη κερδοσκοπικός οργανισμός."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Εικονίδιο καρδιάς στο στυλ του λογότυπου Tellomi"

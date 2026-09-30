@@ -915,7 +915,7 @@
     "messageformat": "이 업데이트의 {whatsNew} 보기"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi은 비영리단체입니다"
+    "messageformat": "Signal은 비영리단체입니다"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "새로운 기능"
@@ -8541,7 +8541,7 @@
     "messageformat": "개인 정보는 비공개로 유지됩니다."
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Tellomi은 독립적인 비영리단체로, 메시지와 통화의 프라이버시 보호를 핵심 가치로 삼고 있습니다. 광고도, 추적도, 감시도 없습니다. Tellomi의 사명을 지지하신다면 지금 후원해 주세요."
+    "messageformat": "Signal은 독립적인 비영리단체로, 메시지와 통화의 프라이버시 보호를 핵심 가치로 삼고 있습니다. 광고도, 추적도, 감시도 없습니다. Signal의 사명을 지지하신다면 지금 후원해 주세요."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "후원하면 프로필에 표시되는 배지를 받을 수 있어요."
@@ -8550,7 +8550,7 @@
     "messageformat": "개인정보 보호는 Tellomi의 사명입니다."
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi은 비영리단체입니다."
+    "messageformat": "Signal은 비영리단체입니다."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Tellomi 로고 스타일의 하트 아이콘"

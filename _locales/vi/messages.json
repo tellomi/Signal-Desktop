@@ -915,7 +915,7 @@
     "messageformat": "Nhìn xem {whatsNew} trong bản cập nhật này"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi là một tổ chức phi lợi nhuận"
+    "messageformat": "Signal là một tổ chức phi lợi nhuận"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "có gì mới"
@@ -8541,7 +8541,7 @@
     "messageformat": "Thông tin của bạn là riêng tư"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Là một tổ chức phi lợi nhuận độc lập, Tellomi cam kết cung cấp dịch vụ nhắn tin và cuộc gọi riêng tư. Không quảng cáo, không trình theo dấu, không theo dõi. Ủng hộ ngay hôm nay để hỗ trợ Tellomi."
+    "messageformat": "Là một tổ chức phi lợi nhuận độc lập, Signal cam kết cung cấp dịch vụ nhắn tin và cuộc gọi riêng tư. Không quảng cáo, không trình theo dấu, không theo dõi. Ủng hộ ngay hôm nay để hỗ trợ Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Nhận huy hiệu (không bắt buộc) trên hồ sơ của bạn khi bạn ủng hộ"
@@ -8550,7 +8550,7 @@
     "messageformat": "Quyền riêng tư của bạn là sứ mệnh của chúng tôi"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi là một tổ chức phi lợi nhuận."
+    "messageformat": "Signal là một tổ chức phi lợi nhuận."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Biểu tượng trái tim theo phong cách của logo Tellomi"

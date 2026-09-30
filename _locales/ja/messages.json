@@ -915,7 +915,7 @@
     "messageformat": "このアップデートの{whatsNew}をご覧ください"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomiは非営利団体です"
+    "messageformat": "Signalは非営利団体です"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "更新情報"
@@ -8541,7 +8541,7 @@
     "messageformat": "お客様の個人情報は保護されています"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Tellomiは、独立した非営利団体としてメッセージと通話のプライバシーを守ることに取り組んでいます。広告なし、トラッキングなし、監視なし。Tellomiのこの取り組みのために、ご支援をお願いします。"
+    "messageformat": "Signalは、独立した非営利団体としてメッセージと通話のプライバシーを守ることに取り組んでいます。広告なし、トラッキングなし、監視なし。Signalのこの取り組みのために、ご支援をお願いします。"
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "寄付をすると、プロフィールにバッジが表示（任意）されます"
@@ -8550,7 +8550,7 @@
     "messageformat": "皆さんのプライバシーを守ることが私たちの使命です"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomiは非営利団体です。"
+    "messageformat": "Signalは非営利団体です。"
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Tellomiロゴ風のハートアイコン"

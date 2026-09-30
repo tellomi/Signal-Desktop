@@ -915,7 +915,7 @@
     "messageformat": "Pozrite sa na {whatsNew} v tejto aktualizácii"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi je nezisková organizácia"
+    "messageformat": "Signal je nezisková organizácia"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "čo je nové"
@@ -8541,7 +8541,7 @@
     "messageformat": "Vaše údaje sú súkromné"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Ako nezávislá nezisková organizácia Tellomi zaisťuje maximálne súkromie pre správy a hovory. Žiadne reklamy, žiadne sledovače, žiadne monitorovanie. Prispejte ešte dnes a podporte Tellomi."
+    "messageformat": "Ako nezávislá nezisková organizácia Signal zaisťuje maximálne súkromie pre správy a hovory. Žiadne reklamy, žiadne sledovače, žiadne monitorovanie. Prispejte ešte dnes a podporte Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Prispejte a získajte odznak na svojom profile"
@@ -8550,7 +8550,7 @@
     "messageformat": "Záleží nám na vašom súkromí"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi je nezisková organizácia."
+    "messageformat": "Signal je nezisková organizácia."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Ikona srdca v štýle loga Tellomi"

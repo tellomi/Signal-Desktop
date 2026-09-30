@@ -915,7 +915,7 @@
     "messageformat": "Видете {whatsNew}во оваа верзија"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi е непрофитна организација"
+    "messageformat": "Signal е непрофитна организација"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "што има ново"
@@ -8541,7 +8541,7 @@
     "messageformat": "Вашите податоци се приватни"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Како независна непрофитна организација, Tellomi е посветен на приватни пораки и повици. Без реклами, без тракери, без надзор. Донирајте денес за да го поддржите Tellomi."
+    "messageformat": "Како независна непрофитна организација, Signal е посветен на приватни пораки и повици. Без реклами, без тракери, без надзор. Донирајте денес за да го поддржите Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Кога донирате, можете на вашиот профил да ставите беџ за донатори"
@@ -8550,7 +8550,7 @@
     "messageformat": "Вашата приватност е наша мисија"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi е непрофитна организација."
+    "messageformat": "Signal е непрофитна организација."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Икона срце во стилот на логото на Tellomi"

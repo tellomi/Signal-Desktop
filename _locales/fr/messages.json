@@ -915,7 +915,7 @@
     "messageformat": "Consulter {whatsNew} de cette mise à jour"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi est un organisme à but non lucratif"
+    "messageformat": "Signal est un organisme à but non lucratif"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "les nouveautés"
@@ -8541,7 +8541,7 @@
     "messageformat": "Vos données sont confidentielles"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Tellomi est un organisme indépendant à but non lucratif, qui s'engage à protéger la confidentialité de vos communications. Ici, aucune publicité, aucun cookie de suivi, aucune surveillance. Faites un don pour soutenir Tellomi."
+    "messageformat": "Signal est un organisme indépendant à but non lucratif, qui s'engage à protéger la confidentialité de vos communications. Ici, aucune publicité, aucun cookie de suivi, aucune surveillance. Faites un don pour soutenir Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Lorsque vous faites un don, vous pouvez afficher un macaron sur votre profil."
@@ -8550,7 +8550,7 @@
     "messageformat": "Notre mission : protéger votre vie privée."
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi est un organisme à but non lucratif."
+    "messageformat": "Signal est un organisme à but non lucratif."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Icône cœur ressemblant au logo Tellomi"

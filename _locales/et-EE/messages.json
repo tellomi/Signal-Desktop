@@ -915,7 +915,7 @@
     "messageformat": "Vaata {whatsNew} selles versioonis"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi on mittetulundusühing"
+    "messageformat": "Signal on mittetulundusühing"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "mis on uut"
@@ -8541,7 +8541,7 @@
     "messageformat": "Sinu andmed on privaatsed"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Sõltumatu mittetulundusühinguna  on Tellomi pühendunud privaatsõnumitele ja kõnedele. Ei mingeid reklaame, jälgijaid ega järelevalvet. Anneta nüüd, et Signalit toetada."
+    "messageformat": "Sõltumatu mittetulundusühinguna  on Signal pühendunud privaatsõnumitele ja kõnedele. Ei mingeid reklaame, jälgijaid ega järelevalvet. Anneta nüüd, et Signalit toetada."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Kui annetad, saad oma profiilil kuvada vastavat märki"
@@ -8550,7 +8550,7 @@
     "messageformat": "SInu privaatsus on meie missioon"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi on mittetulundusühing"
+    "messageformat": "Signal on mittetulundusühing"
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Signali logo stiilis südameikoon"

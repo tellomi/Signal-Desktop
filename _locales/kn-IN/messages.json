@@ -915,7 +915,7 @@
     "messageformat": "ಈ ಅಪ್‌ಡೇಟ್‌ನಲ್ಲಿ {whatsNew} ನೋಡಿ"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi ಲಾಭರಹಿತ ಸಂಸ್ಥೆಯಾಗಿದೆ"
+    "messageformat": "Signal ಲಾಭರಹಿತ ಸಂಸ್ಥೆಯಾಗಿದೆ"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "ಹೊಸತೇನು"
@@ -8541,7 +8541,7 @@
     "messageformat": "ನಿಮ್ಮ ಮಾಹಿತಿಯು ಖಾಸಗಿಯಾಗಿದೆ"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "ಸ್ವತಂತ್ರ ಲಾಭರಹಿತ ಸಂಸ್ಥೆಯಾಗಿ, Tellomi ಖಾಸಗಿ ಮೆಸೇಜ್ ಕಳುಹಿಸುವಿಕೆ ಮತ್ತು ಕರೆಗಳಿಗೆ ಬದ್ಧವಾಗಿದೆ. ಜಾಹೀರಾತುಗಳಿಲ್ಲ, ಟ್ರ್ಯಾಕರ್‌ಗಳಿಲ್ಲ, ಕಣ್ಗಾವಲಿಲ್ಲ. Tellomi ಅನ್ನು ಬೆಂಬಲಿಸಲು ಇಂದೇ ದೇಣಿಗೆ ನೀಡಿ."
+    "messageformat": "ಸ್ವತಂತ್ರ ಲಾಭರಹಿತ ಸಂಸ್ಥೆಯಾಗಿ, Signal ಖಾಸಗಿ ಮೆಸೇಜ್ ಕಳುಹಿಸುವಿಕೆ ಮತ್ತು ಕರೆಗಳಿಗೆ ಬದ್ಧವಾಗಿದೆ. ಜಾಹೀರಾತುಗಳಿಲ್ಲ, ಟ್ರ್ಯಾಕರ್‌ಗಳಿಲ್ಲ, ಕಣ್ಗಾವಲಿಲ್ಲ. Signal ಅನ್ನು ಬೆಂಬಲಿಸಲು ಇಂದೇ ದೇಣಿಗೆ ನೀಡಿ."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "ನೀವು ದೇಣಿಗೆ ನೀಡಿದಾಗ ನಿಮ್ಮ ಪ್ರೊಫೈಲ್‌ನಲ್ಲಿ ಐಚ್ಛಿಕ ಬ್ಯಾಡ್ಜ್ ಪಡೆಯಿರಿ"

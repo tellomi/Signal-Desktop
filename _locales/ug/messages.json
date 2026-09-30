@@ -915,7 +915,7 @@
     "messageformat": "بۇ يېڭىلاشتىكى «{whatsNew}» نى كۆرۈش"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi پايدا ئالمايدىغان بىر تەشكىلات"
+    "messageformat": "Signal پايدا ئالمايدىغان بىر تەشكىلات"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "يېڭىلىقلار"
@@ -8541,7 +8541,7 @@
     "messageformat": "ئۇچۇرلىرىڭىز شەخسىي"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "مۇستەقىل پايدا ئالمايدىغان تەشكىلات بولۇش سۈپىتى بىلەن،   Tellomi شەخسىي ئۇچۇر ۋە تېلېفونلىشىشقا كاپالەتلىك قىلىدۇ. ئېلان، ئىز قوغلاش، نازارەت قىلىنىشتىن خالىي. Tellomiنى قوللاش ئۈچۈن بۈگۈنلا ئىئانە قىلىڭ."
+    "messageformat": "مۇستەقىل پايدا ئالمايدىغان تەشكىلات بولۇش سۈپىتى بىلەن،   Signal شەخسىي ئۇچۇر ۋە تېلېفونلىشىشقا كاپالەتلىك قىلىدۇ. ئېلان، ئىز قوغلاش، نازارەت قىلىنىشتىن خالىي. Signalنى قوللاش ئۈچۈن بۈگۈنلا ئىئانە قىلىڭ."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "ئىئانە قىلىش ئارقىلىق قوشۇمچە بىر ئىزنەك تاپشۇرۇۋالىسىز"
@@ -8550,7 +8550,7 @@
     "messageformat": "سىزنىڭ مەخپىيەتلىكىڭىزنى قوغداش بىزنىڭ ۋەزىپىمىز"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi پايدا ئالمايدىغان بىر تەشكىلات. Tellomi پايدا ئالمايدىغان بىر تەشكىلات."
+    "messageformat": "Signal پايدا ئالمايدىغان بىر تەشكىلات. Signal پايدا ئالمايدىغان بىر تەشكىلات."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Tellomi لوگوسى ئۇسلۇبىدىكى يۈرەك سىنبەلگىسى"

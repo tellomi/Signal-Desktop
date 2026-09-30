@@ -915,7 +915,7 @@
     "messageformat": "ഈ അപ്‌ഡേറ്റിൽ {whatsNew} കാണുക"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi ഒരു ലാഭേച്ഛയില്ലാത്ത സ്ഥാപനമാണ്"
+    "messageformat": "Signal ഒരു ലാഭേച്ഛയില്ലാത്ത സ്ഥാപനമാണ്"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "പുതിയതായി എന്തുണ്ട്"
@@ -8541,7 +8541,7 @@
     "messageformat": "നിങ്ങളുടെ വിവരങ്ങൾ സ്വകാര്യമാണ്"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "ഒരു സ്വതന്ത്ര ലാഭേച്ഛയില്ലാത്ത സ്ഥാപനം എന്ന നിലയിൽ,  Tellomi സ്വകാര്യ സന്ദേശമയയ്ക്കലിനും കോളുകൾക്കും പ്രതിജ്ഞാബദ്ധമാണ്. പരസ്യങ്ങളില്ല, ട്രാക്കറുകളില്ല, നിരീക്ഷണമില്ല. Tellomi-നെ പിന്തുണയ്ക്കാൻ ഇന്ന് തന്നെ സംഭാവന നൽകൂ."
+    "messageformat": "ഒരു സ്വതന്ത്ര ലാഭേച്ഛയില്ലാത്ത സ്ഥാപനം എന്ന നിലയിൽ,  Signal സ്വകാര്യ സന്ദേശമയയ്ക്കലിനും കോളുകൾക്കും പ്രതിജ്ഞാബദ്ധമാണ്. പരസ്യങ്ങളില്ല, ട്രാക്കറുകളില്ല, നിരീക്ഷണമില്ല. Signal-നെ പിന്തുണയ്ക്കാൻ ഇന്ന് തന്നെ സംഭാവന നൽകൂ."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "നിങ്ങൾ സംഭാവന നൽകുമ്പോൾ നിങ്ങളുടെ പ്രൊഫൈലിൽ ഒരു ഓപ്ഷണൽ ബാഡ്ജ് നേടുക"
@@ -8550,7 +8550,7 @@
     "messageformat": "നിങ്ങളുടെ സ്വകാര്യതയാണ് ഞങ്ങളുടെ ദൗത്യം"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi ഒരു ലാഭേച്ഛയില്ലാത്ത സ്ഥാപനമാണ്. Tellomi ഒരു ലാഭേച്ഛയില്ലാത്ത സ്ഥാപനമാണ്."
+    "messageformat": "Signal ഒരു ലാഭേച്ഛയില്ലാത്ത സ്ഥാപനമാണ്. Signal ഒരു ലാഭേച്ഛയില്ലാത്ത സ്ഥാപനമാണ്."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Tellomi ലോഗോയുടെ ശൈലിയിലുള്ള ഹൃദയ ഐക്കൺ"

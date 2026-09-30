@@ -939,7 +939,7 @@
     "messageformat": "在此更新中查看{whatsNew}"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi 是一個非營利組織"
+    "messageformat": "Signal 是一個非營利組織"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "有什麼更新"
@@ -8823,7 +8823,7 @@
     "messageformat": "保障你的隱私是我們的使命"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi 是一個非營利組織。"
+    "messageformat": "Signal 是一個非營利組織。"
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "以 Tellomi 標誌風格呈現的心形圖示"

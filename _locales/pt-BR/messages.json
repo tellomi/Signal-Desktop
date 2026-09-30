@@ -915,7 +915,7 @@
     "messageformat": "Conheça as {whatsNew} dessa atualização"
   },
   "icu:signalNonProfit": {
-    "messageformat": "O Tellomi é uma organização sem fins lucrativos"
+    "messageformat": "O Signal é uma organização sem fins lucrativos"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "novidades"
@@ -8541,7 +8541,7 @@
     "messageformat": "Suas informações são privadas"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Como uma organização independente sem fins lucrativos, o Tellomi está comprometido com mensagens e chamadas privadas. Sem anúncios, sem rastreamento, sem vigilância. Faça uma doação agora para apoiar o Tellomi."
+    "messageformat": "Como uma organização independente sem fins lucrativos, o Signal está comprometido com mensagens e chamadas privadas. Sem anúncios, sem rastreamento, sem vigilância. Faça uma doação agora para apoiar o Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Ao fazer uma doação, você ganha um selo opcional no seu perfil"
@@ -8550,7 +8550,7 @@
     "messageformat": "Sua privacidade é nossa missão"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "O Tellomi é uma organização sem fins lucrativos."
+    "messageformat": "O Signal é uma organização sem fins lucrativos."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Ícone de coração no estilo do logotipo do Tellomi"

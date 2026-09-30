@@ -915,7 +915,7 @@
     "messageformat": "Kyk {whatsNew} in hierdie bywerking"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi is 'n niewinsgewende organisasie"
+    "messageformat": "Signal is 'n niewinsgewende organisasie"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "wat is nuut"
@@ -8541,7 +8541,7 @@
     "messageformat": "Jou inligting is privaat"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "As 'n onafhanklike niewinsgewende organisasie is Tellomi verbind tot privaat boodskappe en oproepe. Geen advertensies, geen naspoorders, geen observasie nie. Maak vandag 'n skenking om Tellomi te ondersteun."
+    "messageformat": "As 'n onafhanklike niewinsgewende organisasie is Signal verbind tot privaat boodskappe en oproepe. Geen advertensies, geen naspoorders, geen observasie nie. Maak vandag 'n skenking om Signal te ondersteun."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Kry 'n opsionele wapen op jou profiel wanneer jy skenk"
@@ -8550,7 +8550,7 @@
     "messageformat": "Jou privaatheid is ons missie"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi is 'n niewinsgewende organisasie."
+    "messageformat": "Signal is 'n niewinsgewende organisasie."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Hart-ikoon in die styl van die Tellomi-logo"

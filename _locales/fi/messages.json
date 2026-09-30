@@ -915,7 +915,7 @@
     "messageformat": "Tutustu tämän version {whatsNew}"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi on voittoa tavoittelematon organisaatio."
+    "messageformat": "Signal on voittoa tavoittelematon organisaatio."
   },
   "icu:viewReleaseNotes": {
     "messageformat": "uusiin ominaisuuksiin"
@@ -8541,7 +8541,7 @@
     "messageformat": "Tietosi ovat yksityisiä"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Itsenäisenä, voittoa tavoittelemattomana organisaationa Tellomi on sitoutunut yksityiseen viestintään ja puheluihin. Ei mainoksia, seurantaevästeitä tai valvontaa. Tue Signalia lahjoittamalla."
+    "messageformat": "Itsenäisenä, voittoa tavoittelemattomana organisaationa Signal on sitoutunut yksityiseen viestintään ja puheluihin. Ei mainoksia, seurantaevästeitä tai valvontaa. Tue Signalia lahjoittamalla."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Saat lahjoituksen yhteydessä merkin, jonka voit halutessasi liittää profiiliisi."
@@ -8550,7 +8550,7 @@
     "messageformat": "Sinun yksityisyytesi on tärkein tehtävämme"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi on voittoa tavoittelematon organisaatio."
+    "messageformat": "Signal on voittoa tavoittelematon organisaatio."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Tellomi-logon tyylinen sydänkuvake"

@@ -915,7 +915,7 @@
     "messageformat": "สัมผัส {whatsNew} ในการปรับปรุงครั้งนี้"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi เป็นแอปไม่แสวงหาผลกำไร"
+    "messageformat": "Signal เป็นแอปไม่แสวงหาผลกำไร"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "ฟีเจอร์และบริการใหม่ๆ"
@@ -8541,7 +8541,7 @@
     "messageformat": "ข้อมูลของคุณเป็นส่วนตัว"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Tellomi เป็นแอปอิสระที่ไม่แสวงหาผลกำไร เรามุ่งมั่นให้บริการการส่งข้อความและการโทรที่เป็นส่วนตัว ไม่มีโฆษณา ไม่มีการติดตาม และไม่มีการเก็บข้อมูล บริจาควันนี้เพื่อร่วมสนับสนุน Tellomi"
+    "messageformat": "Signal เป็นแอปอิสระที่ไม่แสวงหาผลกำไร เรามุ่งมั่นให้บริการการส่งข้อความและการโทรที่เป็นส่วนตัว ไม่มีโฆษณา ไม่มีการติดตาม และไม่มีการเก็บข้อมูล บริจาควันนี้เพื่อร่วมสนับสนุน Signal"
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "บริจาคแล้วรับโล่เพื่อเลือกแสดงบนโปรไฟล์ของคุณ"
@@ -8550,7 +8550,7 @@
     "messageformat": "ความเป็นส่วนตัวของคุณคือภารกิจของเรา"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi เป็นแอปไม่แสวงหาผลกำไร"
+    "messageformat": "Signal เป็นแอปไม่แสวงหาผลกำไร"
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "ไอคอนรูปหัวใจในรูปแบบเดียวกับโลโก้ Tellomi"

@@ -915,7 +915,7 @@
     "messageformat": "Se {whatsNew} i den här uppdateringen"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi är en ideell organisation"
+    "messageformat": "Signal är en ideell organisation"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "vad som är nytt"
@@ -8541,7 +8541,7 @@
     "messageformat": "Dina uppgifter är privata"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Som en oberoende ideell organisation är Tellomi engagerad i privata meddelanden och samtal. Inga annonser, inga spårare, ingen övervakning. Donera idag för att stödja Tellomi."
+    "messageformat": "Som en oberoende ideell organisation är Signal engagerad i privata meddelanden och samtal. Inga annonser, inga spårare, ingen övervakning. Donera idag för att stödja Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Få ett valfritt märke på din profil när du donerar"
@@ -8550,7 +8550,7 @@
     "messageformat": "Din integritet är vårt uppdrag"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi är en ideell organisation."
+    "messageformat": "Signal är en ideell organisation."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Hjärtikon i stil med Tellomi-logotypen"

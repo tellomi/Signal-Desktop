@@ -915,7 +915,7 @@
     "messageformat": "Vegeu {whatsNew} d'aquesta actualització."
   },
   "icu:signalNonProfit": {
-    "messageformat": "Tellomi és una organització sense ànim de lucre"
+    "messageformat": "Signal és una organització sense ànim de lucre"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "les novetats"
@@ -8541,7 +8541,7 @@
     "messageformat": "La teva informació és privada"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Com a organització independent sense ànim de lucre, Tellomi té un compromís amb la privacitat en missatges i trucades. Sense anuncis, ni rastrejadors, ni vigilància. Fes avui una donació per ajudar a Tellomi."
+    "messageformat": "Com a organització independent sense ànim de lucre, Signal té un compromís amb la privacitat en missatges i trucades. Sense anuncis, ni rastrejadors, ni vigilància. Fes avui una donació per ajudar a Signal."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Aconsegueix una insígnia opcional al teu perfil quan facis una donació"
@@ -8550,7 +8550,7 @@
     "messageformat": "La teva privacitat és la nostra missió"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Tellomi és una organització sense ànim de lucre."
+    "messageformat": "Signal és una organització sense ànim de lucre."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Icona de cor a l'estil del logo de Tellomi"

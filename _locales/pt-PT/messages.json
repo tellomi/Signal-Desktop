@@ -915,7 +915,7 @@
     "messageformat": "Ver {whatsNew} nesta atualização"
   },
   "icu:signalNonProfit": {
-    "messageformat": "O Tellomi é uma organização sem fins lucrativos"
+    "messageformat": "O Signal é uma organização sem fins lucrativos"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "novidades"
@@ -8550,7 +8550,7 @@
     "messageformat": "A sua privacidade é a nossa missão"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "O Tellomi é uma organização sem fins lucrativos."
+    "messageformat": "O Signal é uma organização sem fins lucrativos."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
     "messageformat": "Ícone de coração no estilo do logo do Tellomi"
