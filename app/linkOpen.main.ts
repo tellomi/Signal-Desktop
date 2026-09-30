@@ -17,11 +17,9 @@ import {
   LINK_REGISTRY_UPDATE_DIR,
   loadBestLinkRegistry,
 } from '../ts/linkPreviews/linkRegistryStore.node.ts';
+import { openLinkWithHost } from '../ts/linkPreviews/linkOpenFlow.std.ts';
 import type { LinkOpenPlanType } from '../ts/linkPreviews/linkOpenPlan.std.ts';
-import {
-  getDesktopOpenAction,
-  parseLinkOpenPlan,
-} from '../ts/linkPreviews/linkOpenPlan.std.ts';
+import { parseLinkOpenPlan } from '../ts/linkPreviews/linkOpenPlan.std.ts';
 
 const log = createLogger('app/linkOpen');
 
@@ -81,9 +79,8 @@ function getLinkOpenPlan(url: string): LinkOpenPlanType | undefined {
   }
 }
 
-// Opens an http(s) link from a message (a card or the text; both end up here, ADR-0063 §4.9):
-// never an `intent:` / `javascript:` / `data:` / `file:` target, a warning first when the domain
-// imitates a well-known one (§6.1), and "link copied" if even the browser fails (§5.5).
+// Opens an http(s) link from a message (a card or the text; both end up here, ADR-0063 §4.9); the
+// flow itself is in ts/linkPreviews/linkOpenFlow.std.ts.
 export async function openExternalLink({
   url,
   i18n,
@@ -93,42 +90,14 @@ export async function openExternalLink({
   i18n: LocalizerType;
   window: BrowserWindow | undefined;
 }>): Promise<void> {
-  const action = getDesktopOpenAction(url, getLinkOpenPlan(url));
-  if (action.type === 'none') {
-    log.warn('not opening a link that is not http(s)');
-    return;
-  }
-
-  if (action.lookalike) {
-    const options = {
-      type: 'warning' as const,
-      message: i18n('icu:TellomiLinkOpen__lookalike_message', {
-        domain: action.lookalike,
-      }),
-      detail: action.url,
-      buttons: [i18n('icu:TellomiLinkOpen__open_anyway'), i18n('icu:cancel')],
-      defaultId: 1,
-      cancelId: 1,
-      noLink: true,
-    };
-    const { response } = window
-      ? await dialog.showMessageBox(window, options)
-      : await dialog.showMessageBox(options);
-    if (response !== 0) {
-      return;
-    }
-  }
-
-  try {
-    await shell.openExternal(action.url);
-  } catch (error) {
-    log.error(`Failed to open url: ${getLinkErrorKind(error)}`);
-    if (action.copyOnFailure) {
-      clipboard.writeText(action.url);
-      await dialog.showMessageBox({
-        type: 'info',
-        message: i18n('icu:TellomiLinkOpen__link_copied'),
-      });
-    }
-  }
+  await openLinkWithHost(url, i18n, {
+    getPlan: getLinkOpenPlan,
+    ask: options =>
+      window
+        ? dialog.showMessageBox(window, options)
+        : dialog.showMessageBox(options),
+    tell: options => dialog.showMessageBox(options),
+    openExternal: target => shell.openExternal(target),
+    copyText: text => clipboard.writeText(text),
+  });
 }
