@@ -179,6 +179,9 @@ describe('performLinkFetch', function (this: Mocha.Suite) {
         'ec',
         '-pkeyopt',
         'ec_paramgen_curve:prime256v1',
+        // LibreSSL writes explicit EC parameters by default; BoringSSL (Electron) rejects them.
+        '-pkeyopt',
+        'ec_param_enc:named_curve',
         '-nodes',
         '-days',
         '1',
