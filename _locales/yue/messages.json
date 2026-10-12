@@ -411,7 +411,7 @@
     "messageformat": "通話"
   },
   "icu:NavTabs__ItemLabel--Stories": {
-    "messageformat": "限時動態"
+    "messageformat": "快拍"
   },
   "icu:NavTabs__ItemLabel--Settings": {
     "messageformat": "設定"
@@ -543,13 +543,13 @@
     "messageformat": "檢查"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, other {你有 {count,number} 個人脈可能重新安裝咗 Tellomi 或者更換咗裝置。同佢哋通訊之前，你可以選擇先檢查佢哋嘅安全碼。}}"
+    "messageformat": "{count, plural, other {你有 {count,number} 個好友可能重新安裝咗 Tellomi 或者更換咗裝置。同佢哋通訊之前，你可以選擇先檢查佢哋嘅安全碼。}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
-    "messageformat": "你已經檢查晒所有人脈，㩒一吓傳送就可以繼續。"
+    "messageformat": "你已經檢查晒所有好友，㩒一吓傳送就可以繼續。"
   },
   "icu:safetyNumberChangeDialog__confirm-remove-all": {
-    "messageformat": "{count, plural, other {你係咪確定要喺 {story} 限時動態入面移除 {count,number} 個接收者？}}"
+    "messageformat": "{count, plural, other {你係咪確定要喺 {story} 快拍入面移除 {count,number} 個接收者？}}"
   },
   "icu:safetyNumberChangeDialog__remove-all": {
     "messageformat": "全部移除"
@@ -558,13 +558,13 @@
     "messageformat": "驗證安全碼"
   },
   "icu:safetyNumberChangeDialog__remove": {
-    "messageformat": "喺限時動態入面移除"
+    "messageformat": "喺快拍入面移除"
   },
   "icu:safetyNumberChangeDialog__actions-contact": {
     "messageformat": "對聯絡人 {contact} 嘅操作"
   },
   "icu:safetyNumberChangeDialog__actions-story": {
-    "messageformat": "對限時動態 {story} 嘅操作"
+    "messageformat": "對快拍 {story} 嘅操作"
   },
   "icu:sendAnyway": {
     "messageformat": "照樣傳送"
@@ -1161,7 +1161,7 @@
     "messageformat": "冇同{name}嘅直接訊息"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Tellomi 人脈"
+    "messageformat": "好友"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} 係你嘅聯絡人"
@@ -2595,7 +2595,7 @@
     "messageformat": "新聊天"
   },
   "icu:stories": {
-    "messageformat": "限時動態"
+    "messageformat": "快拍"
   },
   "icu:contactSearchPlaceholder": {
     "messageformat": "名稱、用戶名稱或號碼"
@@ -5725,7 +5725,7 @@
     "messageformat": "冇其他共同群組"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Tellomi 人脈"
+    "messageformat": "好友"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "最近將佢嘅個人檔名由 {oldName} 改咗做 {newName}"
@@ -7055,16 +7055,16 @@
     "messageformat": "裝置"
   },
   "icu:Preferences__turn-stories-on": {
-    "messageformat": "開啟限時動態"
+    "messageformat": "開啟快拍"
   },
   "icu:Preferences__turn-stories-off": {
-    "messageformat": "閂咗限時動態"
+    "messageformat": "閂咗快拍"
   },
   "icu:Preferences__turn-stories-off--action": {
     "messageformat": "關閉"
   },
   "icu:Preferences__turn-stories-off--body": {
-    "messageformat": "你將會冇得再分享或者瀏覽限時動態㗎喇。你最近分享嘅限時動態更新都會被刪除。"
+    "messageformat": "你將會冇得再分享或者瀏覽快拍㗎喇。你最近分享嘅快拍更新都會被刪除。"
   },
   "icu:Preferences__Language__Label": {
     "messageformat": "語言"
@@ -7709,16 +7709,16 @@
     "messageformat": "前往設定"
   },
   "icu:MyStories__title": {
-    "messageformat": "我嘅限時動態"
+    "messageformat": "我嘅快拍"
   },
   "icu:MyStories__list_item": {
-    "messageformat": "我嘅限時動態"
+    "messageformat": "我嘅快拍"
   },
   "icu:MyStories__story": {
-    "messageformat": "你嘅限時動態"
+    "messageformat": "你嘅快拍"
   },
   "icu:MyStories__download": {
-    "messageformat": "下載限時動態"
+    "messageformat": "下載快拍"
   },
   "icu:MyStories__more": {
     "messageformat": "其他選項"
@@ -7736,10 +7736,10 @@
     "messageformat": "{replyCount, plural, other {<strong>{replyCount,number}</strong> 回覆}}"
   },
   "icu:MyStories__delete": {
-    "messageformat": "係咪要刪除呢個限時動態呀？系統會喺所有收到呢個限時動態嘅人部機度刪除埋佢㗎喎。"
+    "messageformat": "係咪要刪除呢個快拍呀？系統會喺所有收到呢個快拍嘅人部機度刪除埋佢㗎喎。"
   },
   "icu:MyStories__delete-group-story-for-me": {
-    "messageformat": "係咪刪除呢個限時動態？因為個谷已經解散咗，系統剩係會喺你度刪除個限時動態。"
+    "messageformat": "係咪刪除呢個快拍？因為個谷已經解散咗，系統剩係會喺你度刪除個快拍。"
   },
   "icu:payment-event-notification-message-you-label": {
     "messageformat": "你開始咗向 {receiver} 付款"
@@ -7799,7 +7799,7 @@
     "messageformat": "了解詳情"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Tellomi 人脈"
+    "messageformat": "好友"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections}係你透過以下方式揀過而值得信任嘅人："
@@ -7814,31 +7814,31 @@
     "messageformat": "系統通訊錄入面有佢喺度"
   },
   "icu:SignalConnectionsModal__footer": {
-    "messageformat": "你嘅人脈可以見到你嘅名同相。如果你冇隱藏嘅話，對方仲可以睇到你嘅限時動態添"
+    "messageformat": "你嘅好友可以見到你嘅名同相。如果你冇隱藏嘅話，對方仲可以睇到你嘅快拍添"
   },
   "icu:Stories__title": {
-    "messageformat": "限時動態"
+    "messageformat": "快拍"
   },
   "icu:Stories__mine": {
     "messageformat": "我嘅是日花生"
   },
   "icu:Stories__add": {
-    "messageformat": "新增限時動態"
+    "messageformat": "新增快拍"
   },
   "icu:Stories__add-story--text": {
-    "messageformat": "文字限時動態"
+    "messageformat": "文字快拍"
   },
   "icu:Stories__add-story--media": {
     "messageformat": "相片或影片"
   },
   "icu:Stories__hidden-stories": {
-    "messageformat": "隱藏咗嘅限時動態"
+    "messageformat": "隱藏咗嘅快拍"
   },
   "icu:Stories__list-empty": {
-    "messageformat": "暫時冇新嘅限時動態可以顯示"
+    "messageformat": "暫時冇新嘅快拍可以顯示"
   },
   "icu:Stories__list__empty--title": {
-    "messageformat": "唔見有限時動態"
+    "messageformat": "唔見有快拍"
   },
   "icu:Stories__list__empty--subtitle": {
     "messageformat": "最新消息會喺度顯示。"
@@ -7856,7 +7856,7 @@
     "messageformat": "㩒一吓再試"
   },
   "icu:Stories__placeholder--text": {
-    "messageformat": "㩒嚟睇吓限時動態"
+    "messageformat": "㩒嚟睇吓快拍"
   },
   "icu:Stories__placeholder-with-icon--text-2": {
     "messageformat": "㩒一吓 <newStoryButtonIcon></newStoryButtonIcon> 加入更新。"
@@ -7871,25 +7871,25 @@
     "messageformat": "傳送緊心情回應..."
   },
   "icu:Stories__toast--hasNoSound": {
-    "messageformat": "呢個限時動態係冇音效嘅"
+    "messageformat": "呢個快拍係冇音效嘅"
   },
   "icu:Stories__failed-send": {
-    "messageformat": "發送唔到呢個限時動態俾部分聯絡人。請檢查你嘅連線，然後再試一次。"
+    "messageformat": "發送唔到呢個快拍俾部分聯絡人。請檢查你嘅連線，然後再試一次。"
   },
   "icu:StoriesSettings__title": {
-    "messageformat": "限時動態私隱"
+    "messageformat": "快拍私隱"
   },
   "icu:StoriesSettings__description": {
-    "messageformat": "限時動態會喺 24 小時後自動消失。你可以選擇限時動態嘅分享對象，亦都可以建立新嘅限時動態俾特定嘅對象或者群組。"
+    "messageformat": "快拍會喺 24 小時後自動消失。你可以選擇快拍嘅分享對象，亦都可以建立新嘅快拍俾特定嘅對象或者群組。"
   },
   "icu:StoriesSettings__my_stories": {
-    "messageformat": "我嘅限時動態"
+    "messageformat": "我嘅快拍"
   },
   "icu:StoriesSettings__new-list": {
     "messageformat": "整多味是日花生"
   },
   "icu:StoriesSettings__custom-story-subtitle": {
-    "messageformat": "自訂限時動態"
+    "messageformat": "自訂快拍"
   },
   "icu:StoriesSettings__group-story-subtitle": {
     "messageformat": "成谷放送是日花生"
@@ -7898,7 +7898,7 @@
     "messageformat": "{count, plural, other {{count,number} 位花生友}}"
   },
   "icu:StoriesSettings__who-can-see": {
-    "messageformat": "邊個可以睇到呢個限時動態"
+    "messageformat": "邊個可以睇到呢個快拍"
   },
   "icu:StoriesSettings__add-viewer": {
     "messageformat": "加位花生友"
@@ -7919,13 +7919,13 @@
     "messageformat": "允許回覆同心情回應"
   },
   "icu:StoriesSettings__replies-reactions--description": {
-    "messageformat": "睇到你限時動態嘅人都可以俾心情回應同回覆。"
+    "messageformat": "睇到你快拍嘅人都可以俾心情回應同回覆。"
   },
   "icu:StoriesSettings__delete-list": {
-    "messageformat": "刪除自訂限時動態"
+    "messageformat": "刪除自訂快拍"
   },
   "icu:StoriesSettings__delete-list--confirm": {
-    "messageformat": "係咪確定要刪除「{name}」？分享去呢個限時動態嘅更新都會被刪除。"
+    "messageformat": "係咪確定要刪除「{name}」？分享去呢個快拍嘅更新都會被刪除。"
   },
   "icu:StoriesSettings__choose-viewers": {
     "messageformat": "揀選瀏覽者"
@@ -7940,7 +7940,7 @@
     "messageformat": "隱藏是日花生唔俾佢睇"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "所有 Tellomi 人脈"
+    "messageformat": "所有好友"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "All Except..."
@@ -7949,40 +7949,40 @@
     "messageformat": "只係分享俾..."
   },
   "icu:StoriesSettings__mine__disclaimer--link": {
-    "messageformat": "選擇邊個可以睇到你嘅限時動態。呢啲變更唔會影響你已經發送嘅限時動態。<learnMoreLink>了解詳情。</learnMoreLink>"
+    "messageformat": "選擇邊個可以睇到你嘅快拍。呢啲變更唔會影響你已經發送嘅快拍。<learnMoreLink>了解詳情。</learnMoreLink>"
   },
   "icu:StoriesSettings__context-menu": {
-    "messageformat": "限時動態私隱"
+    "messageformat": "快拍私隱"
   },
   "icu:StoriesSettings__view-receipts--label": {
     "messageformat": "瀏覽標記"
   },
   "icu:StoriesSettings__view-receipts--new-description": {
-    "messageformat": "當有人瀏覽限時動態嗰陣就可以睇到同分享。如果停用呢個功能，你就睇唔到其他人有冇瀏覽你嘅限時動態。"
+    "messageformat": "當有人瀏覽快拍嗰陣就可以睇到同分享。如果停用呢個功能，你就睇唔到其他人有冇瀏覽你嘅快拍。"
   },
   "icu:GroupStorySettingsModal__members_title": {
-    "messageformat": "邊個可以睇到呢個限時動態"
+    "messageformat": "邊個可以睇到呢個快拍"
   },
   "icu:GroupStorySettingsModal__members_help": {
-    "messageformat": "「{groupTitle}」群組聊天嘅成員可以瀏覽同埋回覆呢個限時動態。你可以更新呢個聊天嘅群組成員資格。"
+    "messageformat": "「{groupTitle}」群組聊天嘅成員可以瀏覽同埋回覆呢個快拍。你可以更新呢個聊天嘅群組成員資格。"
   },
   "icu:GroupStorySettingsModal__remove_group": {
-    "messageformat": "移除群組限時動態"
+    "messageformat": "移除群組快拍"
   },
   "icu:StoriesSettings__remove_group--confirm": {
     "messageformat": "係咪確定要移除「{groupTitle}」？"
   },
   "icu:SendStoryModal__choose-who-can-view": {
-    "messageformat": "選擇邊個可以睇到你嘅限時動態"
+    "messageformat": "選擇邊個可以睇到你嘅快拍"
   },
   "icu:SendStoryModal__title": {
     "messageformat": "傳畀"
   },
   "icu:SendStoryModal__send": {
-    "messageformat": "傳送限時動態"
+    "messageformat": "傳送快拍"
   },
   "icu:SendStoryModal__custom-story": {
-    "messageformat": "自訂限時動態"
+    "messageformat": "自訂快拍"
   },
   "icu:SendStoryModal__group-story": {
     "messageformat": "成谷放送是日花生"
@@ -7997,16 +7997,16 @@
     "messageformat": "新增"
   },
   "icu:SendStoryModal__new-custom--title": {
-    "messageformat": "新增自訂限時動態"
+    "messageformat": "新增自訂快拍"
   },
   "icu:SendStoryModal__new-custom--name-visibility": {
-    "messageformat": "只有你可以睇到呢個限時動態嘅名。"
+    "messageformat": "只有你可以睇到呢個快拍嘅名。"
   },
   "icu:SendStoryModal__new-custom--description": {
     "messageformat": "指定嘅人限定遊覽"
   },
   "icu:SendStoryModal__new-group--title": {
-    "messageformat": "新增群組限時動態"
+    "messageformat": "新增群組快拍"
   },
   "icu:SendStoryModal__new-group--description": {
     "messageformat": "分享畀現有嘅谷大惠遊覽"
@@ -8015,28 +8015,28 @@
     "messageformat": "揀邊啲谷"
   },
   "icu:SendStoryModal__my-stories-privacy": {
-    "messageformat": "「我嘅限時動態」私隱設定"
+    "messageformat": "「我嘅快拍」私隱設定"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "選擇邊啲 Tellomi 人脈可以睇到你嘅限時動態。你可以隨時喺私隱設定度更改呢個設定。<learnMoreLink>了解詳情。</learnMoreLink>"
+    "messageformat": "選擇邊啲好友可以睇到你嘅快拍。你可以隨時喺私隱設定度更改呢個設定。<learnMoreLink>了解詳情。</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
-    "messageformat": "刪除限時動態"
+    "messageformat": "刪除快拍"
   },
   "icu:SendStoryModal__confirm-remove-group": {
-    "messageformat": "係咪要移除限時動態？系統會喺你嘅清單度移除限時動態，但你仍然可以睇到呢個群組嘅限時動態。"
+    "messageformat": "係咪要移除快拍？系統會喺你嘅清單度移除快拍，但你仍然可以睇到呢個群組嘅快拍。"
   },
   "icu:SendStoryModal__announcements-only": {
-    "messageformat": "只有管理員可以向呢個群組發送限時動態。"
+    "messageformat": "只有管理員可以向呢個群組發送快拍。"
   },
   "icu:Stories__settings-toggle--title": {
-    "messageformat": "分享同睇吓限時動態"
+    "messageformat": "分享同睇吓快拍"
   },
   "icu:Stories__settings-toggle--description": {
-    "messageformat": "如果你選擇閂咗限時動態，就冇得再分享自己或者睇其他人嘅限時動態㗎喇。"
+    "messageformat": "如果你選擇閂咗快拍，就冇得再分享自己或者睇其他人嘅快拍㗎喇。"
   },
   "icu:Stories__settings-toggle--button": {
-    "messageformat": "閂咗限時動態"
+    "messageformat": "閂咗快拍"
   },
   "icu:StoryViewer__pause": {
     "messageformat": "暫停"
@@ -8087,7 +8087,7 @@
     "messageformat": "下載附件"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "啟用「瀏覽標記」就可以知道邊個睇過你嘅限時動態。喺你嘅流動裝置度打開 Tellomi 應用程式，然後去「設定」>「限時動態」。"
+    "messageformat": "啟用「瀏覽標記」就可以知道邊個睇過你嘅快拍。喺你嘅流動裝置度打開 Tellomi 應用程式，然後去「設定」>「快拍」。"
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "未有回覆"
@@ -8102,10 +8102,10 @@
     "messageformat": "回覆"
   },
   "icu:StoryViewsNRepliesModal__reacted--you": {
-    "messageformat": "對限時動態傳送咗心情回應"
+    "messageformat": "對快拍傳送咗心情回應"
   },
   "icu:StoryViewsNRepliesModal__reacted--someone-else": {
-    "messageformat": "對限時動態傳送咗心情回應"
+    "messageformat": "對快拍傳送咗心情回應"
   },
   "icu:StoryViewsNRepliesModal__not-a-member": {
     "messageformat": "You can’t reply to this story because you’re no longer a member of this group."
@@ -8120,13 +8120,13 @@
     "messageformat": "複製時間標記"
   },
   "icu:StoryListItem__label": {
-    "messageformat": "限時動態"
+    "messageformat": "快拍"
   },
   "icu:StoryListItem__unhide": {
-    "messageformat": "取消隱藏限時動態"
+    "messageformat": "取消隱藏快拍"
   },
   "icu:StoryListItem__hide": {
-    "messageformat": "隱藏限時動態"
+    "messageformat": "隱藏快拍"
   },
   "icu:StoryListItem__go-to-chat": {
     "messageformat": "跳去聊天"
@@ -8138,25 +8138,25 @@
     "messageformat": "詳細"
   },
   "icu:StoryListItem__hide-modal--body": {
-    "messageformat": "係咪要隱藏限時動態呀？係嘅話 {name} 嘅限時動態更新就唔會再喺限時動態清單最頂度顯示㗎喇。"
+    "messageformat": "係咪要隱藏快拍呀？係嘅話 {name} 嘅快拍更新就唔會再喺快拍清單最頂度顯示㗎喇。"
   },
   "icu:StoryListItem__hide-modal--confirm": {
     "messageformat": "隱藏"
   },
   "icu:StoryImage__error2": {
-    "messageformat": "下載唔到限時動態。{name} 要再分享一次先得。"
+    "messageformat": "下載唔到快拍。{name} 要再分享一次先得。"
   },
   "icu:StoryImage__error--you": {
-    "messageformat": "下載唔到限時動態。你要再分享一次先得。"
+    "messageformat": "下載唔到快拍。你要再分享一次先得。"
   },
   "icu:StoryCreator__error--video-unsupported": {
-    "messageformat": "系統唔支援呢個檔案格式，所以條片唔可以喺限時動態度發佈"
+    "messageformat": "系統唔支援呢個檔案格式，所以條片唔可以喺快拍度發佈"
   },
   "icu:StoryCreator__error--video-too-long": {
-    "messageformat": "{maxDurationInSec, plural, other {你條片超過咗 {maxDurationInSec,number} 秒，唔可以喺限時動態度發布。}}"
+    "messageformat": "{maxDurationInSec, plural, other {你條片超過咗 {maxDurationInSec,number} 秒，唔可以喺快拍度發布。}}"
   },
   "icu:StoryCreator__error--video-too-big": {
-    "messageformat": "你條片超過咗 {limit,number}{units}，唔可以喺限時動態度發布。"
+    "messageformat": "你條片超過咗 {limit,number}{units}，唔可以喺快拍度發布。"
   },
   "icu:StoryCreator__error--video-error": {
     "messageformat": "載入唔到影片"
@@ -8171,7 +8171,7 @@
     "messageformat": "文字冇背景顏色"
   },
   "icu:StoryCreator__story-bg": {
-    "messageformat": "變更限時動態背景顏色"
+    "messageformat": "變更快拍背景顏色"
   },
   "icu:StoryCreator__next": {
     "messageformat": "下一步"
@@ -8195,7 +8195,7 @@
     "messageformat": "窄體"
   },
   "icu:StoryCreator__control--text": {
-    "messageformat": "加入限時動態文字"
+    "messageformat": "加入快拍文字"
   },
   "icu:StoryCreator__control--link": {
     "messageformat": "加入連結"
@@ -8204,13 +8204,13 @@
     "messageformat": "輸入或者貼上網址"
   },
   "icu:StoryCreator__link-preview-empty": {
-    "messageformat": "為大家新增您嘅限時動態連結"
+    "messageformat": "為大家新增您嘅快拍連結"
   },
   "icu:Stories__failed-send--full": {
-    "messageformat": "限時動態發送失敗"
+    "messageformat": "快拍發送失敗"
   },
   "icu:Stories__failed-send--partial": {
-    "messageformat": "發送唔到呢個限時動態俾所有接收者"
+    "messageformat": "發送唔到呢個快拍俾所有接收者"
   },
   "icu:TextAttachment__placeholder": {
     "messageformat": "加入文字"
@@ -8219,25 +8219,25 @@
     "messageformat": "打開連結"
   },
   "icu:Quote__story": {
-    "messageformat": "限時動態"
+    "messageformat": "快拍"
   },
   "icu:Quote__story-reaction": {
-    "messageformat": "對 {name} 嘅限時動態傳送咗心情回應"
+    "messageformat": "對 {name} 嘅快拍傳送咗心情回應"
   },
   "icu:Quote__story-reaction--you": {
-    "messageformat": "對你嘅限時動態傳送咗心情回應"
+    "messageformat": "對你嘅快拍傳送咗心情回應"
   },
   "icu:Quote__story-reaction--single": {
-    "messageformat": "對限時動態傳送咗心情回應"
+    "messageformat": "對快拍傳送咗心情回應"
   },
   "icu:Quote__story-reaction-notification--incoming": {
-    "messageformat": "對你嘅限時動態傳送咗 {emoji} 心情回應"
+    "messageformat": "對你嘅快拍傳送咗 {emoji} 心情回應"
   },
   "icu:Quote__story-reaction-notification--outgoing": {
-    "messageformat": "你對 {name} 嘅限時動態傳送咗 {emoji} 心情回應"
+    "messageformat": "你對 {name} 嘅快拍傳送咗 {emoji} 心情回應"
   },
   "icu:Quote__story-reaction-notification--outgoing--nameless": {
-    "messageformat": "你對一個限時動態傳送咗 {emoji} 心情回應"
+    "messageformat": "你對一個快拍傳送咗 {emoji} 心情回應"
   },
   "icu:Quote__story-unavailable": {
     "messageformat": "已經冇咗"

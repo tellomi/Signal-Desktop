@@ -1161,7 +1161,7 @@
     "messageformat": "沒有與 {name} 的直接訊息"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Tellomi 人脈"
+    "messageformat": "好友"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} 在你的系統聯絡人中"
@@ -5857,7 +5857,7 @@
     "messageformat": "無其他共同群組"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Tellomi 人脈"
+    "messageformat": "好友"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "最近將他們的個人資料名稱從 {oldName} 更改為 {newName}"
@@ -8150,7 +8150,7 @@
     "messageformat": "我的快拍隱私設定"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "選擇哪些 Tellomi 人脈可以瀏覽你的快拍。你可以隨時在隱私設定中進行更改。<learnMoreLink>了解更多。</learnMoreLink>"
+    "messageformat": "選擇哪些好友可以瀏覽你的快拍。你可以隨時在隱私設定中進行更改。<learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "刪除快拍"
