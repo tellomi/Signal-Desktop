@@ -3961,6 +3961,43 @@ OtherFileTypeDownloading.args = {
   status: 'sent',
 };
 
+// Tellomi (ADR-0068): a photo sent as a file is a file row with its thumbnail where the icon goes.
+export const TellomiPhotoSentAsFile = Template.bind({});
+TellomiPhotoSentAsFile.args = {
+  attachments: [
+    fakeAttachment({
+      contentType: IMAGE_JPEG,
+      fileName: 'IMG_20261013_093012.JPG',
+      url: '/fixtures/tina-rolf-269345-unsplash.jpg',
+      width: 4032,
+      height: 3024,
+      size: 4812345,
+      tellomiAsFile: true,
+    }),
+  ],
+  direction: 'incoming',
+  status: 'delivered',
+};
+
+export const TellomiPhotoSentAsFileUndownloaded = Template.bind({});
+TellomiPhotoSentAsFileUndownloaded.args = {
+  attachments: [
+    fakeAttachment({
+      contentType: IMAGE_JPEG,
+      fileName: 'IMG_20261013_093013.JPG',
+      url: undefined,
+      path: undefined,
+      blurHash: 'LKO2?U%2Tw=w]~RBVZRi};RPxuwH',
+      width: 4032,
+      height: 3024,
+      size: 4812345,
+      tellomiAsFile: true,
+    }),
+  ],
+  direction: 'incoming',
+  status: 'delivered',
+};
+
 export const OtherFileTypeWithCaption = Template.bind({});
 OtherFileTypeWithCaption.args = {
   attachments: [
