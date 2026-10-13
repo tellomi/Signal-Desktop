@@ -222,12 +222,24 @@ export function getExtensionForDisplay({
   return undefined;
 }
 
+/**
+ * Tellomi (ADR-0068 §4.1): sent as a file (`AttachmentPointer.tellomi.asFile`). Whatever its content
+ * type it is a file: the list-level checks below (rendering, notifications, pinned bar, quotes) all
+ * say "not media" for it, so it falls through to the generic file row.
+ */
+export function isTellomiAsFile(
+  attachment?: Pick<AttachmentType, 'tellomiAsFile'>
+): boolean {
+  return attachment?.tellomiAsFile === true;
+}
+
 export function isAudio(attachments?: ReadonlyArray<AttachmentType>): boolean {
   return Boolean(
     attachments &&
     attachments[0] &&
     attachments[0].contentType &&
     !attachments[0].isCorrupted &&
+    !isTellomiAsFile(attachments[0]) &&
     MIME.isAudio(attachments[0].contentType)
   );
 }
@@ -275,6 +287,7 @@ export function isImage(attachments?: ReadonlyArray<AttachmentType>): boolean {
     attachments &&
     attachments[0] &&
     attachments[0].contentType &&
+    !isTellomiAsFile(attachments[0]) &&
     isImageTypeSupported(attachments[0].contentType)
   );
 }
@@ -308,12 +321,14 @@ export function hasImage(attachments?: ReadonlyArray<AttachmentType>): boolean {
 }
 
 export function isVideo(
-  attachments?: ReadonlyArray<Pick<AttachmentType, 'contentType'>>
+  attachments?: ReadonlyArray<
+    Pick<AttachmentType, 'contentType' | 'tellomiAsFile'>
+  >
 ): boolean {
   if (!attachments || attachments.length === 0) {
     return false;
   }
-  return isVideoAttachment(attachments[0]);
+  return !isTellomiAsFile(attachments[0]) && isVideoAttachment(attachments[0]);
 }
 
 export function isVideoAttachment(
@@ -337,7 +352,9 @@ export function isGIF(attachments?: ReadonlyArray<AttachmentType>): boolean {
     // oxlint-disable-next-line no-bitwise
     !isUndefined(attachment?.flags) && (attachment.flags & flag) === flag;
 
-  return hasFlag && isVideoAttachment(attachment);
+  return (
+    hasFlag && !isTellomiAsFile(attachment) && isVideoAttachment(attachment)
+  );
 }
 
 function resolveNestedAttachment<
@@ -546,6 +563,11 @@ export const isVisualMedia = (attachment: AttachmentType): boolean => {
   }
 
   if (isVoiceMessage(attachment)) {
+    return false;
+  }
+
+  // Tellomi (ADR-0068, R-3): sent as a file → listed with files (isFile then says yes)
+  if (isTellomiAsFile(attachment)) {
     return false;
   }
 

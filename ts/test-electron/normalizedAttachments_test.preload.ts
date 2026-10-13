@@ -125,6 +125,8 @@ function composeAttachment(
     isCorrupted: true,
     backfillError: true,
     copied: true,
+    // Tellomi (ADR-0068): column tellomiAsFile (migration 1801)
+    tellomiAsFile: true,
     thumbnail: composeThumbnail(index),
     screenshot: composeScreenshot(index),
     thumbnailFromBackup: composeBackupThumbnail(index),

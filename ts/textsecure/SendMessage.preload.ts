@@ -706,6 +706,8 @@ class Message {
 
       payment: null,
       giftBadge: null,
+      // Tellomi (ADR-0068 §4.7): Desktop doesn't send captionAboveMedia (no "···" menu here)
+      tellomi: null,
     };
     this.dataMessage = dataMessage;
     return dataMessage;
@@ -895,6 +897,7 @@ export class MessageSender {
       pinMessage: null,
       unpinMessage: null,
       adminDelete: null,
+      tellomi: null,
     };
   }
 
@@ -987,6 +990,7 @@ export class MessageSender {
       pinMessage: null,
       unpinMessage: null,
       adminDelete: null,
+      tellomi: null,
     };
   }
 

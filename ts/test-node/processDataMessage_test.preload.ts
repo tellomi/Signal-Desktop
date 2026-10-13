@@ -51,6 +51,7 @@ const EMPTY_DATA_MESSAGE: Proto.DataMessage.Params = {
   pinMessage: null,
   unpinMessage: null,
   adminDelete: null,
+  tellomi: null,
 };
 
 const UNPROCESSED_ATTACHMENT: Proto.AttachmentPointer.Params = {
@@ -73,6 +74,7 @@ const UNPROCESSED_ATTACHMENT: Proto.AttachmentPointer.Params = {
   flags: 1,
   fileName: 'fileName',
   thumbnail: null,
+  tellomi: null,
 };
 
 const PROCESSED_ATTACHMENT: ProcessedAttachment = {

@@ -87,7 +87,9 @@ import {
   isGIF,
   isImage,
   isImageAttachment,
+  isTellomiAsFile,
   isVideo,
+  isVideoAttachment,
 } from '../../util/Attachment.std.ts';
 import type { EmbeddedContactForUIType } from '../../types/EmbeddedContact.std.ts';
 
@@ -128,6 +130,7 @@ import { AttachmentStatusIcon } from './AttachmentStatusIcon.dom.tsx';
 import { TapToViewNotAvailableType } from '../TapToViewNotAvailableModal.dom.tsx';
 import type { TapToViewNotAvailableModalData } from '../TapToViewNotAvailableModal.dom.tsx';
 import { FileThumbnail } from '../FileThumbnail.dom.tsx';
+import { TellomiAsFileThumbnail } from './TellomiAsFileThumbnail.dom.tsx';
 import { FunStaticEmoji } from '../fun/FunEmoji.dom.tsx';
 import { useGroupedAndOrderedReactions } from '../../util/groupAndOrderReactions.std.ts';
 import type { AxoMenuBuilder } from '../../axo/AxoMenuBuilder.dom.tsx';
@@ -1414,7 +1417,14 @@ export class Message extends PureComponent<Props, State> {
           attachment={firstAttachment}
           isIncoming={isIncoming}
         >
-          <FileThumbnail contentType={contentType} fileName={fileName} />
+          {/* Tellomi (ADR-0068): a photo / video sent as a file shows its thumbnail */}
+          {isTellomiAsFile(firstAttachment) &&
+          (isImageAttachment(firstAttachment) ||
+            isVideoAttachment(firstAttachment)) ? (
+            <TellomiAsFileThumbnail attachment={firstAttachment} />
+          ) : (
+            <FileThumbnail contentType={contentType} fileName={fileName} />
+          )}
         </AttachmentStatusIcon>
         <div className="module-message__simple-attachment__text">
           <div

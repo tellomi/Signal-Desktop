@@ -772,6 +772,8 @@ export const MESSAGE_ATTACHMENT_COLUMNS = [
   'copiedFromQuotedAttachment',
   'version',
   'pending',
+  // Tellomi (ADR-0068)
+  'tellomiAsFile',
 ] as const satisfies Array<keyof MessageAttachmentDBType>;
 
 export type MessageAttachmentDBType = {
@@ -831,6 +833,8 @@ export type MessageAttachmentDBType = {
   wasTooBig: 1 | 0 | null;
   pending: 1 | 0 | null;
   copiedFromQuotedAttachment: 1 | 0 | null;
+  /** Tellomi (ADR-0068): sent as a file (`AttachmentPointer.tellomi.asFile`). Migration 1801. */
+  tellomiAsFile: 1 | 0 | null;
 };
 
 // Test to make sure that MESSAGE_ATTACHMENT_COLUMNS &

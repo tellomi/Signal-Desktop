@@ -85,6 +85,7 @@ const IMAGE: Proto.AttachmentPointer.Params = {
   flags: null,
   fileName: null,
   thumbnail: null,
+  tellomi: null,
 };
 
 const SNAPSHOT: Omit<Proto.Preview.Params, 'rich'> = {
@@ -137,6 +138,7 @@ function receivedDataMessage({
       pinMessage: null,
       unpinMessage: null,
       adminDelete: null,
+      tellomi: null,
     })
   );
 }

@@ -133,6 +133,8 @@ export type ProcessedAttachment = {
   downloadPath?: string;
   incrementalMac?: string;
   chunkSize?: number;
+  /** Tellomi (ADR-0068): `AttachmentPointer.tellomi.asFile`. */
+  tellomiAsFile?: boolean;
 };
 
 export type ProcessedGroupV2Context = {

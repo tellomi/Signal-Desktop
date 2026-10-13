@@ -528,7 +528,11 @@ describe('messaging/testLinkPreview', function (this: Mocha.Suite) {
       const content = DesktopProto.Content.encode({
         content: {
           dataMessage: {
-            ...EMPTY_DATA_MESSAGE,
+            // The mock server's protocol description has none of Tellomi's fields (ADR-0068's
+            // DataMessage.tellomi / AttachmentPointer.tellomi), so its types don't fit Desktop's; its
+            // empty message is all nulls, which encodes the same with either.
+            ...(EMPTY_DATA_MESSAGE as unknown as DesktopProto.DataMessage.Params),
+            tellomi: null,
             body: payload.body,
             timestamp: BigInt(timestamp),
             preview: [

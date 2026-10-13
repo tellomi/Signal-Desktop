@@ -135,6 +135,8 @@ export async function uploadAttachment(
     blurHash: blurHash || null,
 
     thumbnail: null,
+    // Tellomi (ADR-0068): Desktop doesn't send as a file
+    tellomi: null,
   };
 }
 

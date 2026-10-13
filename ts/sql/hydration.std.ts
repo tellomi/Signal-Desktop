@@ -371,6 +371,7 @@ export function convertAttachmentDBFieldsToAttachmentType(
     storyTextAttachmentJson,
     copiedFromQuotedAttachment,
     localBackupPath,
+    tellomiAsFile,
   } = messageAttachment;
 
   const result: AttachmentType = {
@@ -403,6 +404,8 @@ export function convertAttachmentDBFieldsToAttachmentType(
     copied: convertOptionalIntegerToBoolean(copiedFromQuotedAttachment),
     isCorrupted: convertOptionalIntegerToBoolean(isCorrupted),
     backfillError: convertOptionalIntegerToBoolean(backfillError),
+    // Tellomi (ADR-0068)
+    tellomiAsFile: convertOptionalIntegerToBoolean(tellomiAsFile),
     textAttachment: storyTextAttachmentJson
       ? jsonToObject(storyTextAttachmentJson)
       : undefined,

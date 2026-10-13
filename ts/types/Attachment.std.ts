@@ -104,6 +104,12 @@ export type AttachmentType = EphemeralAttachmentFields & {
 
   /** For quote attachments, if copied from the referenced attachment */
   copied?: boolean;
+
+  /**
+   * Tellomi (ADR-0068): the sender sent it as a file (`AttachmentPointer.tellomi.asFile`) — drawn as a
+   * file row whatever the content type, listed with files. Column `tellomiAsFile` (migration 1801).
+   */
+  tellomiAsFile?: boolean;
 };
 
 export type LocalAttachmentV2Type = Readonly<{

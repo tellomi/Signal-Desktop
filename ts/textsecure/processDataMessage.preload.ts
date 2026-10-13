@@ -140,6 +140,9 @@ export function processAttachment(
       : undefined,
     key: Bytes.isNotEmpty(key) ? Bytes.toBase64(key) : undefined,
     size,
+    // Tellomi (ADR-0068 §4.1): asFile wins; spoiler / livePhotoVideo are for later releases.
+    // Only present when true, so every other attachment stays exactly as upstream processes it.
+    ...(attachment.tellomi?.asFile === true ? { tellomiAsFile: true } : {}),
   };
 }
 

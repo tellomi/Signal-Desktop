@@ -2907,6 +2907,8 @@ function saveMessageAttachment({
         : undefined,
     version: attachment.version,
     pending: convertOptionalBooleanToInteger(attachment.pending),
+    // Tellomi (ADR-0068)
+    tellomiAsFile: convertOptionalBooleanToInteger(attachment.tellomiAsFile),
   };
 
   try {
@@ -5752,8 +5754,10 @@ function getSortedMedia(
   let contentFilter: QueryFragment;
   if (type === 'media') {
     // see 'isVisualMedia' in ts/util/Attachment.std.ts
+    // Tellomi (ADR-0068, R-3): sent as a file → with the documents, never with media / audio
     contentFilter = sqlFragment`
       message_attachments.flags IS NOT ${VOICE_MESSAGE} AND
+      message_attachments.tellomiAsFile IS NOT 1 AND
       (
         message_attachments.contentType LIKE 'image/%' OR
         message_attachments.contentType LIKE 'video/%'
@@ -5762,17 +5766,25 @@ function getSortedMedia(
   } else if (type === 'audio') {
     // see 'isVoiceMessage'/'isAudio' in ts/util/Attachment.std.ts
     contentFilter = sqlFragment`
-      message_attachments.flags IS ${VOICE_MESSAGE} OR
-      message_attachments.contentType LIKE 'audio/%'
+      message_attachments.tellomiAsFile IS NOT 1 AND
+      (
+        message_attachments.flags IS ${VOICE_MESSAGE} OR
+        message_attachments.contentType LIKE 'audio/%'
+      )
     `;
   } else if (type === 'documents') {
     // see 'isFile' in ts/util/Attachment.std.ts
     contentFilter = sqlFragment`
       message_attachments.flags IS NOT ${VOICE_MESSAGE} AND
       message_attachments.contentType IS NOT 'text/x-signal-plain' AND
-      message_attachments.contentType NOT LIKE 'audio/%' AND
-      message_attachments.contentType NOT LIKE 'image/%' AND
-      message_attachments.contentType NOT LIKE 'video/%'
+      (
+        message_attachments.tellomiAsFile IS 1 OR
+        (
+          message_attachments.contentType NOT LIKE 'audio/%' AND
+          message_attachments.contentType NOT LIKE 'image/%' AND
+          message_attachments.contentType NOT LIKE 'video/%'
+        )
+      )
     `;
   } else {
     throw missingCaseError(type);
