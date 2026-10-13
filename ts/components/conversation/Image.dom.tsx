@@ -149,7 +149,7 @@ export function Image({
     Readonly<{ url: string; fading: boolean; run: number }> | undefined
   >();
   const tellomiLiveRun = useRef(0);
-  const tellomiLiveFadeTimer = useRef<NodeJS.Timeout | undefined>();
+  const tellomiLiveFadeTimer = useRef<NodeJS.Timeout | undefined>(undefined);
   useEffect(() => () => clearTimeout(tellomiLiveFadeTimer.current), []);
   const playTellomiLive = useCallback(async () => {
     if (!canPlayTellomiLive || fetchTellomiLivePhotoVideo == null) {
