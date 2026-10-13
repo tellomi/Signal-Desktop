@@ -315,6 +315,7 @@ function* createRecords({
             linkPreview: null,
             longText: null,
             reactions: null,
+            tellomi: null,
           },
         },
       },

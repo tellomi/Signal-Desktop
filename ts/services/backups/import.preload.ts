@@ -107,6 +107,7 @@ import {
   convertBackupMessageAttachmentToAttachment,
   convertFilePointerToAttachment,
 } from './util/filePointers.preload.ts';
+import { applyTellomiAttachmentFromBackup } from './util/tellomi.preload.ts';
 import { trimMessageWhitespace } from '../../types/BodyRange.std.ts';
 import { filterAndClean } from '../../util/BodyRange.node.ts';
 import {
@@ -2230,14 +2231,27 @@ export class BackupImportStream extends Writable {
         : undefined,
       attachments: data.attachments?.length
         ? data.attachments
-            .map(attachment =>
-              convertBackupMessageAttachmentToAttachment(
+            .map(attachment => {
+              const converted = convertBackupMessageAttachmentToAttachment(
                 attachment,
                 this.#options
-              )
-            )
+              );
+              // Tellomi (ADR-0068 §4.5): as a file, covered, live photo
+              return converted
+                ? applyTellomiAttachmentFromBackup(
+                    converted,
+                    attachment.tellomi,
+                    this.#options,
+                    { quote: false }
+                  )
+                : null;
+            })
             .filter(isNotNil)
         : undefined,
+      // Tellomi (ADR-0068 §4.7)
+      ...(data.tellomi?.captionAboveMedia
+        ? { tellomiCaptionAboveMedia: true }
+        : {}),
       preview: data.linkPreview?.length
         ? this.#fromLinkPreview({
             logId,
@@ -2502,7 +2516,15 @@ export class BackupImportStream extends Writable {
               ? stringToMIMEType(contentType)
               : APPLICATION_OCTET_STREAM,
             thumbnail: thumbnail?.pointer
-              ? convertFilePointerToAttachment(thumbnail.pointer, this.#options)
+              ? applyTellomiAttachmentFromBackup(
+                  convertFilePointerToAttachment(
+                    thumbnail.pointer,
+                    this.#options
+                  ),
+                  thumbnail.tellomi,
+                  this.#options,
+                  { quote: true }
+                )
               : undefined,
           };
         }) ?? [],

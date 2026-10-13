@@ -143,6 +143,7 @@ import {
   hasRequiredInformationForRemoteBackup,
 } from '../../util/Attachment.std.ts';
 import { getFilePointerForAttachment } from './util/filePointers.preload.ts';
+import { getTellomiAttachmentForBackup } from './util/tellomi.preload.ts';
 import { getBackupMediaRootKey } from './crypto.preload.ts';
 import type {
   CoreAttachmentBackupJobType,
@@ -3410,6 +3411,8 @@ export class BackupExportStream extends Readable {
       flag: this.#getMessageAttachmentFlag(message, attachment),
       wasDownloaded: isDownloaded(attachment),
       clientUuid: clientUuid ? uuidToBytes(clientUuid) : null,
+      // Tellomi (ADR-0068 §4.5): as a file, covered, live photo
+      tellomi: getTellomiAttachmentForBackup(attachment),
     };
   }
 
@@ -3664,6 +3667,7 @@ export class BackupExportStream extends Readable {
       | 'reactions'
       | 'received_at'
       | 'timestamp'
+      | 'tellomiCaptionAboveMedia'
     >;
   }): Promise<Backups.StandardMessage.Params | undefined> {
     if (
@@ -3709,6 +3713,10 @@ export class BackupExportStream extends Readable {
           )
         : null,
       reactions: this.#getMessageReactions(message),
+      // Tellomi (ADR-0068 §4.7)
+      tellomi: message.tellomiCaptionAboveMedia
+        ? { captionAboveMedia: true }
+        : null,
     };
 
     if (!result.attachments?.length && !result.text) {
