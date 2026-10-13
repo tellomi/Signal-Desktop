@@ -71,9 +71,6 @@ export type Props = {
   ) => Promise<string | undefined>;
 };
 
-/** Tellomi (spec R-2): live photos that already played once by themselves in this run. */
-const autoplayedTellomiLivePhotos = new Set<string>();
-
 /** Tellomi (spec R-2): back to the still (Telegram: 0.3 s). Same as the CSS transition. */
 const TELLOMI_LIVE_FADE_MS = 300;
 
@@ -136,10 +133,11 @@ export function Image({
   }, [attachment, onTellomiSpoilerRevealed]);
 
   // Tellomi (tellomi/tellomi#1263, spec R-2): a live photo has the live badge in its corner and plays its
-  // moving half once, muted, the first time it is on screen in this run, then fades back to the still
-  // (Telegram: `ChatMessageInteractiveMediaNode` autoplays when the bubble appears; 0.3 s fade). Pointing
-  // at it plays it again (ADR-0068: Desktop plays on hover). Not while it is covered, not before the
-  // still is here.
+  // moving half once, muted, every time it comes on screen, then fades back to the still (owner
+  // 2026-10-13, as Telegram: `ChatMessageInteractiveMediaNode` plays it whenever the bubble becomes
+  // visible; 0.3 s fade). Re-rendering while it is on screen doesn't play it again. Pointing at it plays
+  // it again (ADR-0068: Desktop plays on hover). Not while it is covered, not before the still is here:
+  // then it plays once uncovered / downloaded, if still on screen.
   const rootRef = useRef<HTMLDivElement>(null);
   const liveKey = attachment.tellomiLivePhotoVideo?.cdnKey;
   const isTellomiLive = liveKey != null && fetchTellomiLivePhotoVideo != null;
@@ -176,32 +174,33 @@ export function Image({
     }, TELLOMI_LIVE_FADE_MS);
   }, []);
 
+  const [tellomiLiveOnScreen, setTellomiLiveOnScreen] = useState(false);
+  const tellomiLivePlayedThisAppearance = useRef(false);
   useEffect(() => {
     const root = rootRef.current;
-    if (
-      !canPlayTellomiLive ||
-      liveKey == null ||
-      root == null ||
-      autoplayedTellomiLivePhotos.has(liveKey)
-    ) {
+    if (!isTellomiLive || root == null) {
       return;
     }
-    const observer = new IntersectionObserver(
-      entries => {
-        if (
-          entries.some(entry => entry.isIntersecting) &&
-          !autoplayedTellomiLivePhotos.has(liveKey)
-        ) {
-          autoplayedTellomiLivePhotos.add(liveKey);
-          observer.disconnect();
-          drop(playTellomiLive());
-        }
-      },
-      { threshold: 0.5 }
-    );
+    const observer = new IntersectionObserver(entries => {
+      setTellomiLiveOnScreen(
+        entries[entries.length - 1]?.isIntersecting ?? false
+      );
+    });
     observer.observe(root);
     return () => observer.disconnect();
-  }, [canPlayTellomiLive, liveKey, playTellomiLive]);
+  }, [isTellomiLive]);
+  useEffect(() => {
+    if (!tellomiLiveOnScreen) {
+      // Gone off screen: the next time it comes back is a new appearance
+      tellomiLivePlayedThisAppearance.current = false;
+      return;
+    }
+    if (!canPlayTellomiLive || tellomiLivePlayedThisAppearance.current) {
+      return;
+    }
+    tellomiLivePlayedThisAppearance.current = true;
+    drop(playTellomiLive());
+  }, [canPlayTellomiLive, tellomiLiveOnScreen, playTellomiLive]);
 
   const showVisualAttachmentClick = useCallback(
     (event: MouseEvent) => {
