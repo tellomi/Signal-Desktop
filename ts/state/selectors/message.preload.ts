@@ -202,6 +202,7 @@ import type { PinnedMessageNotificationData } from '../../components/conversatio
 import type { PollTerminateNotificationDataType } from '../../components/conversation/PollTerminateNotification.dom.tsx';
 import { Emoji } from '../../axo/emoji.std.ts';
 import { isDownloadableOrBackfillable } from '../../util/downloadAttachment.preload.ts';
+import { getTellomiBubbleCaption } from '../../util/tellomiCaptions.std.ts';
 
 const { groupBy, isEmpty, isNumber, isObject, map } = lodash;
 
@@ -1103,7 +1104,15 @@ const getPropsForMessage = (
     : undefined;
 
   const isGroup = conversation.type === 'group';
-  const bodyRanges = processBodyRanges(message, isGroup, options);
+  // Tellomi (ADR-0075 §4.4, as Telegram): with per-media captions, the bubble shows one caption
+  // or only the whole message's; the body is then the text for other clients. Its ranges belong
+  // to the body, so they go only with it.
+  const tellomiCaption = getTellomiBubbleCaption(message);
+  const text = tellomiCaption ? tellomiCaption.text : message.body;
+  const bodyRanges =
+    text === message.body
+      ? processBodyRanges(message, isGroup, options)
+      : undefined;
   const quote = getPropsForQuote(message, { ...options, isGroup });
 
   const isGroupTerminated = isGroup && conversation.terminated;
@@ -1236,8 +1245,8 @@ const getPropsForMessage = (
     readStatus: message.readStatus ?? ReadStatus.Read,
     selectedReaction,
     status: getMessagePropStatus(message, ourConversationId),
-    text: message.body,
-    textDirection: getTextDirection(message.body),
+    text,
+    textDirection: getTextDirection(text),
     timestamp: getMessageSentTimestamp(message, { includeEdits: false, log }),
     receivedAtMS: message.received_at_ms,
   };
