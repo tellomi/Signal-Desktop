@@ -48,11 +48,23 @@ function getPinMessageAttachment(
   if (contentType === MIME.IMAGE_GIF || Attachment.isGIF([attachment])) {
     return { type: 'gif' };
   }
+  // Tellomi (tellomi/tellomi#1263, spec R-1): a covered image / video stays blurred here, uncovered or not.
+  const tellomiSpoiler = attachment.tellomiSpoiler
+    ? { tellomiSpoiler: true }
+    : {};
   if (Attachment.isImage([attachment])) {
-    return { type: 'image', url: attachment.thumbnail?.url ?? null };
+    return {
+      type: 'image',
+      url: attachment.thumbnail?.url ?? null,
+      ...tellomiSpoiler,
+    };
   }
   if (Attachment.isVideo([attachment])) {
-    return { type: 'video', url: attachment.thumbnail?.url ?? null };
+    return {
+      type: 'video',
+      url: attachment.thumbnail?.url ?? null,
+      ...tellomiSpoiler,
+    };
   }
   if (Attachment.isVoiceMessage(attachment)) {
     return { type: 'voiceMessage' };

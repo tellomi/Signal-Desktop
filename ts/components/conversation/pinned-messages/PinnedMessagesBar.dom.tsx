@@ -33,8 +33,9 @@ export type PinMessageText = Readonly<{
 }>;
 
 export type PinMessageAttachment = Readonly<
-  | { type: 'image'; url: string | null }
-  | { type: 'video'; url: string | null }
+  // Tellomi (tellomi/tellomi#1263, spec R-1): `tellomiSpoiler` keeps the thumbnail blurred.
+  | { type: 'image'; url: string | null; tellomiSpoiler?: boolean }
+  | { type: 'video'; url: string | null; tellomiSpoiler?: boolean }
   | { type: 'voiceMessage' }
   | { type: 'gif' }
   | { type: 'file'; name: string | null }
@@ -358,6 +359,10 @@ const Content = forwardRef(function Content(
   const thumbnailUrl = useMemo(() => {
     return getThumbnailUrl(pin.message);
   }, [pin.message]);
+  const { attachment } = pin.message;
+  const isTellomiSpoiler =
+    (attachment?.type === 'image' || attachment?.type === 'video') &&
+    attachment.tellomiSpoiler === true;
 
   return (
     <div
@@ -385,7 +390,12 @@ const Content = forwardRef(function Content(
           )
       )}
     >
-      {thumbnailUrl != null && <ImageThumbnail url={thumbnailUrl} />}
+      {thumbnailUrl != null && (
+        <ImageThumbnail
+          url={thumbnailUrl}
+          isTellomiSpoiler={isTellomiSpoiler}
+        />
+      )}
       <div className={tw('min-w-0 flex-1')}>
         <h1 className={tw('type-body-small font-semibold text-primary')}>
           <UserText text={pin.sender.title} />
@@ -472,7 +482,23 @@ function getThumbnailUrl(message: PinMessage): string | null {
   return null;
 }
 
-function ImageThumbnail(props: { url: string }) {
+function ImageThumbnail(props: { url: string; isTellomiSpoiler: boolean }) {
+  // Tellomi (tellomi/tellomi#1263, spec R-1): like a quote, the pinned bar never shows a covered image /
+  // video (Telegram: the pinned panel's thumbnail is blurred for spoilers).
+  if (props.isTellomiSpoiler) {
+    return (
+      <span
+        className={tw('me-2 size-8 shrink-0 overflow-hidden rounded-[10px]')}
+      >
+        <img
+          alt=""
+          src={props.url}
+          className={tw('size-full object-cover')}
+          style={TELLOMI_SPOILER_THUMBNAIL_STYLE}
+        />
+      </span>
+    );
+  }
   return (
     <img
       alt=""
@@ -481,6 +507,12 @@ function ImageThumbnail(props: { url: string }) {
     />
   );
 }
+
+const TELLOMI_SPOILER_THUMBNAIL_STYLE = {
+  filter: 'blur(6px) brightness(0.85)',
+  // Larger than the box so the blur's soft edge stays outside.
+  transform: 'scale(1.3)',
+} as const;
 
 type PreviewIcon = Readonly<{
   symbol: AxoSymbol.Name;

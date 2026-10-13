@@ -159,6 +159,12 @@ export function Variants(): JSX.Element {
         message={{ attachment: { type: 'image', url: IMAGE_URL } }}
       />
       <Variant
+        title="Tellomi: covered (spoiler) image attachment"
+        message={{
+          attachment: { type: 'image', url: IMAGE_URL, tellomiSpoiler: true },
+        }}
+      />
+      <Variant
         title="Video attachment with text"
         message={{
           text: { body: SHORT_TEXT, bodyRanges: [] },

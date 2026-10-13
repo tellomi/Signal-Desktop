@@ -4015,6 +4015,31 @@ TellomiSpoilerImage.args = {
   status: 'delivered',
 };
 
+// Tellomi (spec R-1): a covered GIF doesn't play until it's uncovered.
+export const TellomiSpoilerGif = Template.bind({});
+TellomiSpoilerGif.args = {
+  attachments: [
+    fakeAttachment({
+      contentType: VIDEO_MP4,
+      flags: SignalService.AttachmentPointer.Flags.GIF,
+      fileName: 'cat-gif.mp4',
+      url: '/fixtures/cat-gif.mp4',
+      screenshot: {
+        url: '/fixtures/cat-screenshot.png',
+        size: 100000,
+        width: 400,
+        height: 332,
+        contentType: IMAGE_PNG,
+      },
+      width: 400,
+      height: 332,
+      tellomiSpoiler: true,
+    }),
+  ],
+  direction: 'incoming',
+  status: 'delivered',
+};
+
 export const TellomiSpoilerAlbum = Template.bind({});
 TellomiSpoilerAlbum.args = {
   attachments: [
