@@ -10,6 +10,8 @@ export const TELLOMI_SPOILER_REVEAL_MS = 450;
 export type TellomiSpoilerRevealPoint = Readonly<{ x: number; y: number }>;
 
 type Props = Readonly<{
+  /** The image (or video still) to show blurred; without it, what's under the cover (the blur hash) shows. */
+  url?: string;
   style?: CSSProperties;
   /** Set once to uncover from that point (in the cover's own pixels). */
   revealFrom?: TellomiSpoilerRevealPoint;
@@ -31,8 +33,9 @@ const MIN_PARTICLES = 24;
 const MAX_PARTICLES = 420;
 
 /**
- * Tellomi (tellomi/tellomi#1263, spec R-1): the layer over a covered image / video: what's under it
- * blurred (`backdrop-filter`), dimmed, with slowly drifting, twinkling white dust.
+ * Tellomi (tellomi/tellomi#1263, spec R-1): the layer over a covered image / video: a blurred copy of
+ * the picture (not `backdrop-filter`, which pulls the page in at the edges), dimmed, with slowly
+ * drifting, twinkling white dust.
  *
  * The mechanism follows Telegram's phones (read only, nothing copied; Telegram Desktop isn't in the
  * reference sources): Android `ChatMessageCell.startRevealMedia` and iOS `MediaDustNode.tap(at:)` uncover
@@ -41,6 +44,7 @@ const MAX_PARTICLES = 420;
  * "reduce motion" the dust doesn't move and uncovering is immediate.
  */
 export function TellomiSpoilerCover({
+  url,
   style,
   revealFrom,
   onRevealed,
@@ -157,6 +161,14 @@ export function TellomiSpoilerCover({
       aria-hidden
       data-testid="TellomiSpoilerCover"
     >
+      {url ? (
+        <img
+          className="module-image__tellomi-spoiler__image"
+          src={url}
+          alt=""
+        />
+      ) : null}
+      <div className="module-image__tellomi-spoiler__scrim" />
       <canvas ref={canvasRef} className="module-image__tellomi-spoiler__dust" />
     </div>
   );

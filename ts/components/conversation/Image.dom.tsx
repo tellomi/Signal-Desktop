@@ -299,6 +299,7 @@ export function Image({
       {imageOrBlurHash}
       {showTellomiCover ? (
         <TellomiSpoilerCover
+          url={url}
           style={curveStyles}
           revealFrom={
             typeof tellomiReveal === 'object' ? tellomiReveal : undefined

@@ -297,6 +297,25 @@ ImageAttachment.args = {
   },
 };
 
+// Tellomi (tellomi/tellomi#1263, spec R-1): a quote of a covered image stays blurred.
+export const TellomiSpoilerImageAttachment = Template.bind({});
+TellomiSpoilerImageAttachment.args = {
+  rawAttachment: {
+    contentType: IMAGE_PNG,
+    fileName: 'sax.png',
+    isVoiceMessage: false,
+    thumbnail: {
+      contentType: IMAGE_PNG,
+      height: 100,
+      width: 100,
+      size: 100,
+      path: pngUrl,
+      url: pngUrl,
+      tellomiSpoiler: true,
+    },
+  },
+};
+
 const LONG_UNBREAKABLE_TEXT = 'thisisthewordthatneverends'.repeat(10);
 
 export const LongUnbreakableWord = Template.bind({});

@@ -2721,15 +2721,32 @@ button.module-image__border-overlay:focus {
   background-color: variables.$color-black-alpha-40;
 }
 
-// Tellomi (tellomi/tellomi#1263, spec R-1): over a covered image / video, what's under it is blurred
-// and dimmed, with dust drawn on top (TellomiSpoilerCover). Clicks go to the button above it.
+// Tellomi (tellomi/tellomi#1263, spec R-1): over a covered image / video, a blurred copy of it, dimmed,
+// with dust drawn on top (TellomiSpoilerCover). Clicks go to the button above it.
 .module-image__tellomi-spoiler {
   position: absolute;
   inset: 0;
   overflow: hidden;
   pointer-events: none;
+}
+
+.module-image__tellomi-spoiler__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  // Scaled up so the blur's soft edge stays outside the box. The backing is blurred with it: a
+  // picture with transparent parts must not let the sharp one under it show through.
+  transform: scale(1.25);
+  filter: blur(24px);
+  background-color: variables.$color-gray-75;
+}
+
+.module-image__tellomi-spoiler__scrim {
+  position: absolute;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.18);
-  backdrop-filter: blur(28px) saturate(1.1);
 }
 
 .module-image__tellomi-spoiler__dust {

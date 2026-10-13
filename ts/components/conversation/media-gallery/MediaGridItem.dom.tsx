@@ -104,7 +104,7 @@ export function MediaGridItem(props: Props): JSX.Element {
       {imageOrBlurHash}
       {/* Tellomi (tellomi/tellomi#1263, spec R-1): covered until opened from here or uncovered in the chat. */}
       {isTellomiSpoilerCovered(attachment) ? (
-        <TellomiSpoilerCover onRevealed={noopRevealed} />
+        <TellomiSpoilerCover url={url} onRevealed={noopRevealed} />
       ) : null}
 
       <MetadataOverlay
