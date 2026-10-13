@@ -159,6 +159,7 @@ import updateToSchemaVersion1790 from './1790-notify-for-mentions-if-muted.std.t
 import updateToSchemaVersion1800 from './1800-deleted-fields-for-defunct-call-links.std.ts';
 import updateToSchemaVersion1801 from './1801-tellomi-attachment-as-file.std.ts';
 import updateToSchemaVersion1802 from './1802-tellomi-attachment-spoiler.std.ts';
+import updateToSchemaVersion1803 from './1803-tellomi-attachment-live-photo.std.ts';
 
 import { DataWriter } from '../Server.node.ts';
 import { strictAssert } from '../../util/assert.std.ts';
@@ -1684,6 +1685,7 @@ export const SCHEMA_VERSIONS: ReadonlyArray<SchemaUpdateType> = [
   // Tellomi (ADR-0068): between upstream's steps of ten, see the migration file
   { version: 1801, update: updateToSchemaVersion1801 },
   { version: 1802, update: updateToSchemaVersion1802 },
+  { version: 1803, update: updateToSchemaVersion1803 },
 ];
 
 class DBVersionFromFutureError extends Error {

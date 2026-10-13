@@ -64,6 +64,10 @@ export type PropsType = {
   onSelectAttachment: (index: number) => void;
   hasPrevMessage?: boolean;
   hasNextMessage?: boolean;
+  /** Tellomi (spec R-2): a live photo's moving half, as a URL to play. */
+  fetchTellomiLivePhotoVideo?: (
+    attachment: ReadonlyDeep<MediaItemType>['attachment']
+  ) => Promise<string | undefined>;
 };
 
 const ZOOM_SCALE = 3;
@@ -114,6 +118,7 @@ export function Lightbox({
   onSelectAttachment,
   hasNextMessage,
   hasPrevMessage,
+  fetchTellomiLivePhotoVideo,
 }: PropsType): JSX.Element | null {
   const hasThumbnails = media.length > 1;
   const messageId = media.at(0)?.message.id;
@@ -598,6 +603,55 @@ export function Lightbox({
 
   const caption = attachment?.caption;
 
+  // Tellomi (tellomi/tellomi#1263, spec R-2): a live photo plays its moving half once, muted, when it is
+  // shown; the live button top-left plays it looping with sound until pressed again (Telegram iOS
+  // gallery: `playLivePhotoAutoplayIfNeeded`, LIVE). Played in place of the still, same size.
+  const tellomiLiveKey = attachment?.tellomiLivePhotoVideo?.cdnKey;
+  const isTellomiLive =
+    tellomiLiveKey != null && fetchTellomiLivePhotoVideo != null && url != null;
+  const [tellomiLive, setTellomiLive] = useState<
+    Readonly<{ key: string; url: string; loop: boolean }> | undefined
+  >();
+  const tellomiAutoplayed = useRef(new Set<string>());
+  const playTellomiLive = useCallback(
+    async (loop: boolean) => {
+      if (!isTellomiLive || attachment == null || tellomiLiveKey == null) {
+        return;
+      }
+      const videoUrl = await fetchTellomiLivePhotoVideo?.(attachment);
+      if (videoUrl != null) {
+        setTellomiLive({ key: tellomiLiveKey, url: videoUrl, loop });
+      }
+    },
+    [attachment, fetchTellomiLivePhotoVideo, isTellomiLive, tellomiLiveKey]
+  );
+  useEffect(() => {
+    if (
+      !isTellomiLive ||
+      tellomiLiveKey == null ||
+      tellomiAutoplayed.current.has(tellomiLiveKey)
+    ) {
+      return;
+    }
+    tellomiAutoplayed.current.add(tellomiLiveKey);
+    drop(playTellomiLive(false));
+  }, [isTellomiLive, playTellomiLive, tellomiLiveKey]);
+  const currentTellomiLive =
+    tellomiLive != null && tellomiLive.key === tellomiLiveKey
+      ? tellomiLive
+      : undefined;
+  const toggleTellomiLive = useCallback(
+    (event: ReactMouseEvent) => {
+      event.stopPropagation();
+      if (currentTellomiLive?.loop) {
+        setTellomiLive(undefined);
+      } else {
+        drop(playTellomiLive(true));
+      }
+    },
+    [currentTellomiLive, playTellomiLive]
+  );
+
   let content: JSX.Element;
   if (!contentType) {
     content = <>{children}</>;
@@ -637,6 +691,18 @@ export function Lightbox({
                 ref={imageRef}
               />
             </button>
+            {currentTellomiLive != null ? (
+              <video
+                className="Lightbox__object Lightbox__tellomi-live-video"
+                key={`${currentTellomiLive.url}-${currentTellomiLive.loop}`}
+                src={currentTellomiLive.url}
+                autoPlay
+                muted={!currentTellomiLive.loop}
+                loop={currentTellomiLive.loop}
+                playsInline
+                onEnded={() => setTellomiLive(undefined)}
+              />
+            ) : null}
           </div>
         );
       } else {
@@ -739,6 +805,18 @@ export function Lightbox({
                   ) : (
                     <div />
                   )}
+                  {isTellomiLive ? (
+                    <button
+                      className={classNames('Lightbox__tellomi-live', {
+                        'Lightbox__tellomi-live--active':
+                          currentTellomiLive?.loop === true,
+                      })}
+                      onClick={toggleTellomiLive}
+                      type="button"
+                    >
+                      {i18n('icu:Lightbox--tellomi-live')}
+                    </button>
+                  ) : null}
                   <div className="Lightbox__controls">
                     {!isViewOnce ? (
                       <button

@@ -19,6 +19,7 @@ import {
   getSelectedIndex,
   shouldShowLightbox,
 } from '../selectors/lightbox.std.ts';
+import { fetchTellomiLivePhotoVideo } from '../../messageModifiers/TellomiLivePhoto.preload.ts';
 
 export const SmartLightbox = memo(function SmartLightbox() {
   const i18n = useSelector(getIntl);
@@ -94,6 +95,7 @@ export const SmartLightbox = memo(function SmartLightbox() {
       onSelectAttachment={setSelectedLightboxIndex}
       hasNextMessage={hasNextMessage}
       hasPrevMessage={hasPrevMessage}
+      fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
     />
   );
 });

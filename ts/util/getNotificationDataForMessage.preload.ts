@@ -385,7 +385,12 @@ export function getNotificationDataForMessage(
       return {
         bodyRanges,
         emoji: Emoji.CAMERA,
-        text: body || i18n('icu:message--getNotificationText--photo'),
+        text:
+          body ||
+          // Tellomi (tellomi/tellomi#1263, spec R-2): "Live Photo" (Telegram: Message.LivePhoto)
+          (attachment?.tellomiLivePhotoVideo != null
+            ? i18n('icu:message--getNotificationText--tellomi-live-photo')
+            : i18n('icu:message--getNotificationText--photo')),
       };
     }
     if (Attachment.isVideo(attachments)) {

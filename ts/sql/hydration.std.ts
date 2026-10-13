@@ -374,6 +374,7 @@ export function convertAttachmentDBFieldsToAttachmentType(
     tellomiAsFile,
     tellomiSpoiler,
     tellomiSpoilerRevealed,
+    tellomiLivePhotoVideoJson,
   } = messageAttachment;
 
   const result: AttachmentType = {
@@ -412,6 +413,9 @@ export function convertAttachmentDBFieldsToAttachmentType(
     tellomiSpoilerRevealed: convertOptionalIntegerToBoolean(
       tellomiSpoilerRevealed
     ),
+    tellomiLivePhotoVideo: tellomiLivePhotoVideoJson
+      ? jsonToObject(tellomiLivePhotoVideoJson)
+      : undefined,
     textAttachment: storyTextAttachmentJson
       ? jsonToObject(storyTextAttachmentJson)
       : undefined,

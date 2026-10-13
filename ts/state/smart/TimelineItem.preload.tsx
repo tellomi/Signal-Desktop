@@ -49,6 +49,7 @@ import { DataReader } from '../../sql/Client.preload.ts';
 import { isInternalFeaturesEnabled } from '../../util/isInternalFeaturesEnabled.dom.ts';
 import type { CollapseSet } from '../../util/CollapseSet.std.ts';
 import { isSignalConversation } from '../../util/isSignalConversation.dom.ts';
+import { fetchTellomiLivePhotoVideo } from '../../messageModifiers/TellomiLivePhoto.preload.ts';
 
 export type RenderItemProps = Omit<SmartTimelineItemProps, 'renderItem'>;
 
@@ -282,6 +283,7 @@ export const SmartTimelineItem = memo(function SmartTimelineItem(
       kickOffAttachmentDownload={kickOffAttachmentDownload}
       markAttachmentAsCorrupted={markAttachmentAsCorrupted}
       revealTellomiSpoiler={revealTellomiSpoiler}
+      fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
       messageExpanded={messageExpanded}
       openGiftBadge={openGiftBadge}
       pushPanelForConversation={pushPanelForConversation}

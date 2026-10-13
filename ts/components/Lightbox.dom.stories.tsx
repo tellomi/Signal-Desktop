@@ -214,6 +214,33 @@ export function SingleImage(): JSX.Element {
   );
 }
 
+// Tellomi (tellomi/tellomi#1263, spec R-2): a live photo plays once, muted, when shown; LIVE loops it with sound.
+export function TellomiLivePhoto(): JSX.Element {
+  const item = createMediaItem({
+    objectURL: '/fixtures/cat-screenshot.png',
+  });
+  return (
+    <Lightbox
+      {...createProps({
+        media: [
+          {
+            ...item,
+            attachment: {
+              ...item.attachment,
+              tellomiLivePhotoVideo: {
+                contentType: VIDEO_MP4,
+                size: 456789,
+                cdnKey: 'live-photo-story',
+              },
+            },
+          },
+        ],
+      })}
+      fetchTellomiLivePhotoVideo={async () => '/fixtures/cat-gif.mp4'}
+    />
+  );
+}
+
 export function ImageWithCaptionNormalImage(): JSX.Element {
   return (
     <Lightbox

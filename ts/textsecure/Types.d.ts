@@ -137,6 +137,8 @@ export type ProcessedAttachment = {
   tellomiAsFile?: boolean;
   /** Tellomi (ADR-0068 §4.1, spec R-1): `AttachmentPointer.tellomi.spoiler` on an image / video. */
   tellomiSpoiler?: boolean;
+  /** Tellomi (ADR-0068 §4.1, spec R-2): the moving half of a live photo, on the still. */
+  tellomiLivePhotoVideo?: ProcessedAttachment;
 };
 
 export type ProcessedGroupV2Context = {

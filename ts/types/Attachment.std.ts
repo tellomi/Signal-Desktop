@@ -122,6 +122,14 @@ export type AttachmentType = EphemeralAttachmentFields & {
    * Column `tellomiSpoilerRevealed` (migration 1802).
    */
   tellomiSpoilerRevealed?: boolean;
+
+  /**
+   * Tellomi (ADR-0068 §4.1, spec R-2): this still is a live photo; the moving half's pointer
+   * (`AttachmentPointer.tellomi.livePhotoVideo`). Not an attachment of its own: it is downloaded when it
+   * first plays and kept for the session (`TellomiLivePhoto`). Column `tellomiLivePhotoVideoJson`
+   * (migration 1803).
+   */
+  tellomiLivePhotoVideo?: AttachmentType;
 };
 
 export type LocalAttachmentV2Type = Readonly<{

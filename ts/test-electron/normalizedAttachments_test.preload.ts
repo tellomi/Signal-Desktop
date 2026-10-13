@@ -17,6 +17,7 @@ import {
   IMAGE_JPEG,
   IMAGE_PNG,
   LONG_MESSAGE,
+  VIDEO_MP4,
 } from '../types/MIME.std.ts';
 import type { MessageAttributesType } from '../model-types.d.ts';
 import { ReadStatus } from '../messages/MessageReadStatus.std.ts';
@@ -130,6 +131,13 @@ function composeAttachment(
     // Tellomi (spec R-1): columns tellomiSpoiler / tellomiSpoilerRevealed (migration 1802)
     tellomiSpoiler: true,
     tellomiSpoilerRevealed: true,
+    // Tellomi (spec R-2): column tellomiLivePhotoVideoJson (migration 1803)
+    tellomiLivePhotoVideo: {
+      contentType: VIDEO_MP4,
+      size: 456789,
+      cdnKey: `live-photo-${index}`,
+      cdnNumber: 3,
+    },
     thumbnail: composeThumbnail(index),
     screenshot: composeScreenshot(index),
     thumbnailFromBackup: composeBackupThumbnail(index),

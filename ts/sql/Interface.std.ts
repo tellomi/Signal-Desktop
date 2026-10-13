@@ -776,6 +776,7 @@ export const MESSAGE_ATTACHMENT_COLUMNS = [
   'tellomiAsFile',
   'tellomiSpoiler',
   'tellomiSpoilerRevealed',
+  'tellomiLivePhotoVideoJson',
 ] as const satisfies Array<keyof MessageAttachmentDBType>;
 
 export type MessageAttachmentDBType = {
@@ -841,6 +842,8 @@ export type MessageAttachmentDBType = {
   tellomiSpoiler: 1 | 0 | null;
   /** Tellomi (spec R-1): uncovered on this device; never sent, never backed up. Migration 1802. */
   tellomiSpoilerRevealed: 1 | 0 | null;
+  /** Tellomi (spec R-2): the live photo's moving half, its pointer as JSON. Migration 1803. */
+  tellomiLivePhotoVideoJson: string | null;
 };
 
 // Test to make sure that MESSAGE_ATTACHMENT_COLUMNS &

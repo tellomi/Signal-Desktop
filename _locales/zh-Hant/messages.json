@@ -2948,6 +2948,15 @@
   "icu:message--getNotificationText--photo": {
     "messageformat": "照片"
   },
+  "icu:message--getNotificationText--tellomi-live-photo": {
+    "messageformat": "原況照片"
+  },
+  "icu:Lightbox--tellomi-live": {
+    "messageformat": "原況"
+  },
+  "icu:Image--tellomi-live-photo-badge": {
+    "messageformat": "原況照片"
+  },
   "icu:message--getNotificationText--video": {
     "messageformat": "影片"
   },

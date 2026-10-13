@@ -428,3 +428,59 @@
     }
   }
 }
+
+// Tellomi (tellomi/tellomi#1263, spec R-2): a live photo's moving half over its still, same box, and the
+// live button under the header on the left (Telegram iOS: dark pill, icon + LIVE; filled while it plays).
+.Lightbox__zoomable-container {
+  position: relative;
+}
+
+.Lightbox__tellomi-live-video {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  pointer-events: none;
+}
+
+.Lightbox__tellomi-live {
+  @include mixins.button-reset;
+  & {
+    position: absolute;
+    top: 72px;
+    inset-inline-start: 16px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 30px;
+    padding-block: 0;
+    padding-inline: 8px 10px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: variables.$color-white;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  &::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    @include mixins.color-svg(
+      '../images/icons/v3/tellomi/tellomi-live-photo.svg',
+      variables.$color-white
+    );
+  }
+
+  &--active {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: variables.$color-black;
+
+    &::before {
+      @include mixins.color-svg(
+        '../images/icons/v3/tellomi/tellomi-live-photo.svg',
+        variables.$color-black
+      );
+    }
+  }
+}

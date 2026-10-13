@@ -416,6 +416,10 @@ export type PropsActions = {
     attachment: AttachmentType;
     messageId: string;
   }) => void;
+  /** Tellomi (tellomi/tellomi#1263, spec R-2): a live photo's moving half, as a URL to play. */
+  fetchTellomiLivePhotoVideo?: (
+    attachment: AttachmentType
+  ) => Promise<string | undefined>;
   saveAttachment: SaveAttachmentActionCreatorType;
   saveAttachments: SaveAttachmentsActionCreatorType;
   showLightbox: (options: {
@@ -1258,6 +1262,7 @@ export class Message extends PureComponent<Props, State> {
       quote,
       renderAudioAttachment,
       revealTellomiSpoiler,
+      fetchTellomiLivePhotoVideo,
       renderingContext,
       retryDeleteForEveryone,
       retryMessageSend,
@@ -1387,6 +1392,7 @@ export class Message extends PureComponent<Props, State> {
               onTellomiSpoilerRevealed={attachment => {
                 revealTellomiSpoiler?.({ attachment, messageId: id });
               }}
+              fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
             />
           </div>
         );

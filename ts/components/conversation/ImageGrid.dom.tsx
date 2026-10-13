@@ -56,6 +56,10 @@ export type Props = {
   startDownload: () => void;
   /** Tellomi (spec R-1): a covered image / video was uncovered here. */
   onTellomiSpoilerRevealed?: (attachment: AttachmentForUIType) => void;
+  /** Tellomi (spec R-2): a live photo's moving half, as a URL to play. */
+  fetchTellomiLivePhotoVideo?: (
+    attachment: AttachmentForUIType
+  ) => Promise<string | undefined>;
 };
 
 const GAP = 1;
@@ -130,6 +134,7 @@ export function ImageGrid({
   cancelDownload,
   startDownload,
   onTellomiSpoilerRevealed,
+  fetchTellomiLivePhotoVideo,
   shouldCollapseAbove,
   shouldCollapseBelow,
   tabIndex,
@@ -240,6 +245,7 @@ export function ImageGrid({
           tabIndex={tabIndex}
           showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
           onTellomiSpoilerRevealed={onTellomiSpoilerRevealed}
+          fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
           showVisualAttachment={showAttachmentOrNoLongerAvailableToast(0)}
           cancelDownload={cancelDownload}
           startDownload={startDownload}
@@ -273,6 +279,7 @@ export function ImageGrid({
           url={getThumbnailUrl(attachment1)}
           showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
           onTellomiSpoilerRevealed={onTellomiSpoilerRevealed}
+          fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
           showVisualAttachment={showAttachmentOrNoLongerAvailableToast(0)}
           cancelDownload={cancelDownload}
           startDownload={downloadPill ? undefined : startDownload}
@@ -294,6 +301,7 @@ export function ImageGrid({
           url={getThumbnailUrl(attachment2)}
           showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
           onTellomiSpoilerRevealed={onTellomiSpoilerRevealed}
+          fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
           showVisualAttachment={showAttachmentOrNoLongerAvailableToast(1)}
           cancelDownload={cancelDownload}
           startDownload={downloadPill ? undefined : startDownload}
@@ -329,6 +337,7 @@ export function ImageGrid({
           url={getUrl(attachment1)}
           showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
           onTellomiSpoilerRevealed={onTellomiSpoilerRevealed}
+          fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
           showVisualAttachment={showAttachmentOrNoLongerAvailableToast(0)}
           cancelDownload={cancelDownload}
           startDownload={downloadPill ? undefined : startDownload}
@@ -349,6 +358,7 @@ export function ImageGrid({
             url={getThumbnailUrl(attachment2)}
             showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
             onTellomiSpoilerRevealed={onTellomiSpoilerRevealed}
+            fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
             showVisualAttachment={showAttachmentOrNoLongerAvailableToast(1)}
             cancelDownload={cancelDownload}
             startDownload={downloadPill ? undefined : startDownload}
@@ -369,6 +379,7 @@ export function ImageGrid({
             url={getThumbnailUrl(attachment3)}
             showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
             onTellomiSpoilerRevealed={onTellomiSpoilerRevealed}
+            fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
             showVisualAttachment={showAttachmentOrNoLongerAvailableToast(2)}
             cancelDownload={cancelDownload}
             startDownload={downloadPill ? undefined : startDownload}
@@ -407,6 +418,7 @@ export function ImageGrid({
               url={getThumbnailUrl(attachment1)}
               showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
               onTellomiSpoilerRevealed={onTellomiSpoilerRevealed}
+              fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
               showVisualAttachment={showAttachmentOrNoLongerAvailableToast(0)}
               cancelDownload={cancelDownload}
               startDownload={downloadPill ? undefined : startDownload}
@@ -427,6 +439,7 @@ export function ImageGrid({
               url={getThumbnailUrl(attachment2)}
               showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
               onTellomiSpoilerRevealed={onTellomiSpoilerRevealed}
+              fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
               showVisualAttachment={showAttachmentOrNoLongerAvailableToast(1)}
               cancelDownload={cancelDownload}
               startDownload={downloadPill ? undefined : startDownload}
@@ -450,6 +463,7 @@ export function ImageGrid({
               url={getThumbnailUrl(attachment3)}
               showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
               onTellomiSpoilerRevealed={onTellomiSpoilerRevealed}
+              fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
               showVisualAttachment={showAttachmentOrNoLongerAvailableToast(2)}
               cancelDownload={cancelDownload}
               startDownload={downloadPill ? undefined : startDownload}
@@ -470,6 +484,7 @@ export function ImageGrid({
               url={getThumbnailUrl(attachment4)}
               showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
               onTellomiSpoilerRevealed={onTellomiSpoilerRevealed}
+              fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
               showVisualAttachment={showAttachmentOrNoLongerAvailableToast(3)}
               cancelDownload={cancelDownload}
               startDownload={downloadPill ? undefined : startDownload}
@@ -514,6 +529,7 @@ export function ImageGrid({
             url={getThumbnailUrl(attachment1)}
             showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
             onTellomiSpoilerRevealed={onTellomiSpoilerRevealed}
+            fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
             showVisualAttachment={showVisualAttachment}
             cancelDownload={cancelDownload}
             startDownload={downloadPill ? undefined : startDownload}
@@ -532,6 +548,7 @@ export function ImageGrid({
             url={getThumbnailUrl(attachment2)}
             showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
             onTellomiSpoilerRevealed={onTellomiSpoilerRevealed}
+            fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
             showVisualAttachment={showVisualAttachment}
             cancelDownload={cancelDownload}
             startDownload={downloadPill ? undefined : startDownload}
@@ -555,6 +572,7 @@ export function ImageGrid({
             url={getThumbnailUrl(attachment3)}
             showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
             onTellomiSpoilerRevealed={onTellomiSpoilerRevealed}
+            fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
             showVisualAttachment={showVisualAttachment}
             cancelDownload={cancelDownload}
             startDownload={downloadPill ? undefined : startDownload}
@@ -575,6 +593,7 @@ export function ImageGrid({
             url={getThumbnailUrl(attachment4)}
             showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
             onTellomiSpoilerRevealed={onTellomiSpoilerRevealed}
+            fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
             showVisualAttachment={showVisualAttachment}
             cancelDownload={cancelDownload}
             startDownload={downloadPill ? undefined : startDownload}
@@ -597,6 +616,7 @@ export function ImageGrid({
             url={getThumbnailUrl(attachment5)}
             showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
             onTellomiSpoilerRevealed={onTellomiSpoilerRevealed}
+            fetchTellomiLivePhotoVideo={fetchTellomiLivePhotoVideo}
             showVisualAttachment={showVisualAttachment}
             cancelDownload={undefined}
             startDownload={undefined}

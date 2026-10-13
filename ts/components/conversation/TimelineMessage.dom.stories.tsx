@@ -4040,6 +4040,28 @@ TellomiSpoilerGif.args = {
   status: 'delivered',
 };
 
+// Tellomi (spec R-2): a live photo has its badge, plays once muted when shown, and again when pointed at.
+export const TellomiLivePhoto = Template.bind({});
+TellomiLivePhoto.args = {
+  attachments: [
+    fakeAttachment({
+      url: '/fixtures/cat-screenshot.png',
+      fileName: 'IMG_0001.HEIC',
+      contentType: IMAGE_PNG,
+      width: 400,
+      height: 332,
+      tellomiLivePhotoVideo: {
+        contentType: VIDEO_MP4,
+        size: 456789,
+        cdnKey: 'live-photo-story',
+      },
+    }),
+  ],
+  direction: 'incoming',
+  status: 'delivered',
+  fetchTellomiLivePhotoVideo: async () => '/fixtures/cat-gif.mp4',
+};
+
 export const TellomiSpoilerAlbum = Template.bind({});
 TellomiSpoilerAlbum.args = {
   attachments: [

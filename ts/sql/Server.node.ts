@@ -2913,6 +2913,9 @@ function saveMessageAttachment({
     tellomiSpoilerRevealed: convertOptionalBooleanToInteger(
       attachment.tellomiSpoilerRevealed
     ),
+    tellomiLivePhotoVideoJson: attachment.tellomiLivePhotoVideo
+      ? objectToJSON(attachment.tellomiLivePhotoVideo)
+      : undefined,
   };
 
   try {

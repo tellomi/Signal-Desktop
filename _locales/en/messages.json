@@ -3910,6 +3910,18 @@
     "messageformat": "Photo",
     "description": "Shown in notifications and in the left pane when a photo is received."
   },
+  "icu:message--getNotificationText--tellomi-live-photo": {
+    "messageformat": "Live Photo",
+    "description": "Tellomi (tellomi/tellomi#1263, spec R-2): shown in notifications and in the left pane when a live photo (a still with a few seconds of video) is received."
+  },
+  "icu:Lightbox--tellomi-live": {
+    "messageformat": "Live",
+    "description": "Tellomi (tellomi/tellomi#1263, spec R-2): in the media viewer, the button that plays a live photo's few seconds of video with sound, looping (Telegram: LIVE). Shown upper case."
+  },
+  "icu:Image--tellomi-live-photo-badge": {
+    "messageformat": "Live Photo",
+    "description": "Tellomi (tellomi/tellomi#1263, spec R-2): accessible name of the badge in the corner of a live photo in the conversation."
+  },
   "icu:message--getNotificationText--video": {
     "messageformat": "Video",
     "description": "Shown in notifications and in the left pane when a video is received."

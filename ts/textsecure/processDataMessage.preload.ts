@@ -60,7 +60,7 @@ import { Emoji } from '../axo/emoji.std.ts';
 import { richFromReceivedPreview } from '../linkPreviews/richContent.std.ts';
 import { DurationSecs, SentTimestampMs } from '@signalapp/types';
 
-const { isNumber } = lodash;
+const { isNumber, omit } = lodash;
 
 const log = createLogger('processDataMessage');
 
@@ -140,10 +140,44 @@ export function processAttachment(
       : undefined,
     key: Bytes.isNotEmpty(key) ? Bytes.toBase64(key) : undefined,
     size,
-    // Tellomi (ADR-0068 §4.1): asFile wins; livePhotoVideo is for a later release.
-    // Only present when true, so every other attachment stays exactly as upstream processes it.
+    // Tellomi (ADR-0068 §4.1): asFile wins. Only present when set, so every other attachment stays
+    // exactly as upstream processes it.
     ...(attachment.tellomi?.asFile === true ? { tellomiAsFile: true } : {}),
     ...(isTellomiSpoiler(attachment) ? { tellomiSpoiler: true } : {}),
+    ...getTellomiLivePhotoVideo(attachment),
+  };
+}
+
+/**
+ * Tellomi (ADR-0068 §4.1 rules 1–3, spec R-2): the moving half of a live photo. Only on a still image
+ * and never with asFile; the nested pointer must be a video with CDN info, a key and a digest, one
+ * level only. Anything else ignores the field: the still shows as an ordinary picture.
+ */
+function getTellomiLivePhotoVideo(attachment: Proto.AttachmentPointer): {
+  tellomiLivePhotoVideo?: ProcessedAttachment;
+} {
+  const video = attachment.tellomi?.livePhotoVideo;
+  if (
+    video == null ||
+    attachment.tellomi?.asFile === true ||
+    !(attachment.contentType ?? '').toLowerCase().startsWith('image/') ||
+    !(video.contentType ?? '').toLowerCase().startsWith('video/') ||
+    video.tellomi?.livePhotoVideo != null ||
+    !video.attachmentIdentifier?.cdnKey ||
+    !Bytes.isNotEmpty(video.key) ||
+    !Bytes.isNotEmpty(video.digest) ||
+    !isNumber(video.size) ||
+    video.size <= 0
+  ) {
+    return {};
+  }
+  // The moving half carries nothing of its own: no cover, no file row, no nesting.
+  return {
+    tellomiLivePhotoVideo: omit(processAttachment(video), [
+      'tellomiAsFile',
+      'tellomiSpoiler',
+      'tellomiLivePhotoVideo',
+    ]),
   };
 }
 
