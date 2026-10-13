@@ -122,6 +122,66 @@ describe('Tellomi: attachments sent as a file (ADR-0068)', () => {
     });
   });
 
+  // ADR-0068 §4.7: the caption above the media, a message-level flag.
+  describe('caption above media', () => {
+    function dataMessage(
+      tellomi: Proto.TellomiDataMessage.Params | null
+    ): Proto.DataMessage {
+      return Proto.DataMessage.decode(
+        Proto.DataMessage.encode({
+          body: 'caption',
+          attachments: [pointer(null)],
+          groupV2: null,
+          flags: null,
+          expireTimer: null,
+          expireTimerVersion: null,
+          profileKey: null,
+          timestamp: BigInt(TIMESTAMP),
+          quote: null,
+          contact: null,
+          preview: null,
+          sticker: null,
+          requiredProtocolVersion: null,
+          isViewOnce: null,
+          reaction: null,
+          delete: null,
+          bodyRanges: null,
+          groupCallUpdate: null,
+          payment: null,
+          storyContext: null,
+          giftBadge: null,
+          pollCreate: null,
+          pollTerminate: null,
+          pollVote: null,
+          pinMessage: null,
+          unpinMessage: null,
+          adminDelete: null,
+          tellomi,
+        })
+      );
+    }
+
+    it('is kept from the data message, and only when it is true', () => {
+      const above = processDataMessage(
+        dataMessage({ captionAboveMedia: true }),
+        TIMESTAMP,
+        { _createName: () => 'random-path' }
+      );
+      const no = processDataMessage(
+        dataMessage({ captionAboveMedia: false }),
+        TIMESTAMP,
+        { _createName: () => 'random-path' }
+      );
+      const ordinary = processDataMessage(dataMessage(null), TIMESTAMP, {
+        _createName: () => 'random-path',
+      });
+
+      assert.isTrue(above.tellomiCaptionAboveMedia);
+      assert.notProperty(no, 'tellomiCaptionAboveMedia');
+      assert.notProperty(ordinary, 'tellomiCaptionAboveMedia');
+    });
+  });
+
   describe('the checks that decide how it is drawn and listed', () => {
     const asFile = (contentType: AttachmentType['contentType']) =>
       ({ contentType, size: 1, tellomiAsFile: true }) as const;

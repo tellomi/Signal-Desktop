@@ -231,6 +231,12 @@ export async function handleEditMessage(
     editMessageReceivedAtMs: editedMessage.received_at_ms,
     preview: editedMessage.preview,
     quote: editedMessage.quote,
+    // Tellomi (ADR-0068 §4.7): an edit carries the whole new DataMessage, so the caption
+    // moves with it (above, or back below).
+    tellomiCaptionAboveMedia:
+      upgradedEditedMessageData.tellomiCaptionAboveMedia === true
+        ? true
+        : undefined,
   });
 
   // Queue up any downloads in case they're different, update the fields if so.

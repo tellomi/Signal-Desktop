@@ -593,6 +593,11 @@ export function processDataMessage(
     storyContext: processStoryContext(message.storyContext),
     giftBadge: processGiftBadge(message.giftBadge),
     unpinMessage: processUnpinMessage(message.unpinMessage),
+    // Tellomi (ADR-0068 §4.7): the caption sits above the media. Only set when true, so
+    // every other message stays as upstream processes it.
+    ...(message.tellomi?.captionAboveMedia === true
+      ? { tellomiCaptionAboveMedia: true }
+      : {}),
   };
 
   // oxlint-disable-next-line no-bitwise

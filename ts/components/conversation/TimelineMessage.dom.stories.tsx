@@ -3998,6 +3998,48 @@ TellomiPhotoSentAsFileUndownloaded.args = {
   status: 'delivered',
 };
 
+// Tellomi (ADR-0068 §4.7): the sender moved the caption above the media.
+export const TellomiCaptionAboveImage = Template.bind({});
+TellomiCaptionAboveImage.args = {
+  attachments: [
+    fakeAttachment({
+      url: '/fixtures/tina-rolf-269345-unsplash.jpg',
+      fileName: 'tina-rolf-269345-unsplash.jpg',
+      contentType: IMAGE_JPEG,
+      width: 128,
+      height: 128,
+    }),
+  ],
+  direction: 'incoming',
+  status: 'delivered',
+  text: '说明文字在图片上方',
+  tellomiCaptionAboveMedia: true,
+};
+
+export const TellomiCaptionAboveImagesOutgoing = Template.bind({});
+TellomiCaptionAboveImagesOutgoing.args = {
+  attachments: [
+    fakeAttachment({
+      url: '/fixtures/tina-rolf-269345-unsplash.jpg',
+      fileName: 'tina-rolf-269345-unsplash.jpg',
+      contentType: IMAGE_JPEG,
+      width: 128,
+      height: 128,
+    }),
+    fakeAttachment({
+      url: '/fixtures/tina-rolf-269345-unsplash.jpg',
+      fileName: 'tina-rolf-269345-unsplash.jpg',
+      contentType: IMAGE_JPEG,
+      width: 128,
+      height: 128,
+    }),
+  ],
+  direction: 'outgoing',
+  status: 'sent',
+  text: 'Caption above two photos',
+  tellomiCaptionAboveMedia: true,
+};
+
 export const OtherFileTypeWithCaption = Template.bind({});
 OtherFileTypeWithCaption.args = {
   attachments: [

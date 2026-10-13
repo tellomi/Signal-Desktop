@@ -1215,6 +1215,8 @@ const getPropsForMessage = (
     // Tellomi (card-visual §7.3): in a message request the link text stays: the card is not
     // clickable there, and the long-press menu that would show the full URL does not exist yet.
     isLinkCardOnly: !isMessageRequest && isLinkCardOnly(linkOnlyUrl, previews),
+    // Tellomi (ADR-0068 §4.7)
+    tellomiCaptionAboveMedia: message.tellomiCaptionAboveMedia === true,
     isMessageRequestAccepted,
     isPinned,
     isSelected,

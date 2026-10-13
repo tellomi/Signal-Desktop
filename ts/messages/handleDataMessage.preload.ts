@@ -561,6 +561,10 @@ export async function handleDataMessage(
         flags: dataMessage.flags,
         giftBadge: initialMessage.giftBadge,
         isViewOnce: Boolean(dataMessage.isViewOnce),
+        // Tellomi (ADR-0068 §4.7)
+        ...(dataMessage.tellomiCaptionAboveMedia
+          ? { tellomiCaptionAboveMedia: true }
+          : {}),
         mentionsMe: (dataMessage.bodyRanges ?? []).some(bodyRange => {
           if (!BodyRange.isMention(bodyRange)) {
             return false;

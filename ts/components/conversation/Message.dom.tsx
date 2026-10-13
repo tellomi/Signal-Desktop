@@ -317,6 +317,8 @@ export type PropsData = {
   // Tellomi (card-visual §3.5): the message is just the link of its only preview, so the bubble
   // is the card alone; the link text is not shown (it stays in the tooltip and in "Copy").
   isLinkCardOnly?: boolean;
+  // Tellomi (tellomi/tellomi#1263, ADR-0068 §4.7): the sender put the caption above the media.
+  tellomiCaptionAboveMedia?: boolean;
 
   isTapToView?: boolean;
   isTapToViewExpired?: boolean;
@@ -917,7 +919,46 @@ export class Message extends PureComponent<Props, State> {
       return MetadataPlacement.Bottom;
     }
 
+    // Tellomi (ADR-0068 §4.7): the caption is above, the image is the bottom of the bubble
+    // and the time sits on it, as for an image without a caption.
+    if (this.#isTellomiCaptionAbove()) {
+      return MetadataPlacement.Bottom;
+    }
+
     return MetadataPlacement.InlineWithText;
+  }
+
+  /**
+   * Tellomi (tellomi/tellomi#1263, ADR-0068 §4.7): the caption is drawn above the media,
+   * still in the same bubble (as Telegram does). Only with text and images / videos shown
+   * as media; a file row, a tap-to-view or a deleted message stays as upstream draws it.
+   */
+  #isTellomiCaptionAbove(): boolean {
+    const {
+      attachments,
+      deletedForEveryone,
+      isSticker,
+      isTapToView,
+      tellomiCaptionAboveMedia,
+      text,
+    } = this.props;
+    const { imageBroken } = this.state;
+    if (
+      !tellomiCaptionAboveMedia ||
+      !text ||
+      deletedForEveryone ||
+      isTapToView ||
+      isSticker ||
+      imageBroken ||
+      !attachments ||
+      !attachments[0]
+    ) {
+      return false;
+    }
+    return (
+      canDisplayImage(attachments) &&
+      (isImage(attachments) || isVideo(attachments) || isGIF(attachments))
+    );
   }
 
   public startTargetedTimer(): void {
@@ -1124,7 +1165,11 @@ export class Message extends PureComponent<Props, State> {
         direction={direction}
         expirationLength={expirationLength}
         expirationTimestamp={expirationTimestamp}
-        hasText={Boolean(text || attachmentDroppedDueToSize)}
+        hasText={
+          // Tellomi (ADR-0068 §4.7): the caption is above, so the time is drawn on the image.
+          !this.#isTellomiCaptionAbove() &&
+          Boolean(text || attachmentDroppedDueToSize)
+        }
         i18n={i18n}
         id={id}
         isEditedMessage={isEditedMessage}
@@ -1225,9 +1270,14 @@ export class Message extends PureComponent<Props, State> {
 
     // For attachments which aren't full-frame
     const isStickerReply = Boolean(isSticker && quote);
-    const withContentBelow = Boolean(text || attachmentDroppedDueToSize);
+    // Tellomi (ADR-0068 §4.7): with the caption above, the text is above the image, not below.
+    const isTellomiCaptionAbove = this.#isTellomiCaptionAbove();
+    const withContentBelow = isTellomiCaptionAbove
+      ? Boolean(attachmentDroppedDueToSize)
+      : Boolean(text || attachmentDroppedDueToSize);
     const withContentAbove =
-      !isStickerReply && (Boolean(quote) || this.#shouldRenderAuthor());
+      !isStickerReply &&
+      (Boolean(quote) || this.#shouldRenderAuthor() || isTellomiCaptionAbove);
     const displayImage = canDisplayImage(attachments);
 
     // attachmentDroppedDueToSize is handled in renderAttachmentTooBig
@@ -3510,6 +3560,24 @@ export class Message extends PureComponent<Props, State> {
         <>
           {this.renderTapToView()}
           {this.#renderMetadata()}
+        </>
+      );
+    }
+
+    // Tellomi (ADR-0068 §4.7): the caption above the media, under the quote.
+    if (this.#isTellomiCaptionAbove()) {
+      return (
+        <>
+          {this.renderQuote()}
+          {this.renderStoryReplyContext()}
+          {this.renderText()}
+          {this.renderAttachment()}
+          {this.renderPreview()}
+          {this.renderAttachmentTooBig()}
+          {this.renderUndownloadableTextAttachment()}
+          {this.#renderAction()}
+          {this.#renderMetadata()}
+          {this.renderSendMessageButton()}
         </>
       );
     }

@@ -283,6 +283,8 @@ export type ProcessedDataMessage = {
   giftBadge?: ProcessedGiftBadge;
   unpinMessage?: ProcessedUnpinMessage;
   canReplyToStory?: boolean;
+  // Tellomi (ADR-0068 §4.7): `DataMessage.tellomi.captionAboveMedia`, only when true.
+  tellomiCaptionAboveMedia?: boolean;
 };
 
 export type ProcessedUnidentifiedDeliveryStatus = Readonly<{
