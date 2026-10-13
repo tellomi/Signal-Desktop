@@ -774,6 +774,8 @@ export const MESSAGE_ATTACHMENT_COLUMNS = [
   'pending',
   // Tellomi (ADR-0068)
   'tellomiAsFile',
+  'tellomiSpoiler',
+  'tellomiSpoilerRevealed',
 ] as const satisfies Array<keyof MessageAttachmentDBType>;
 
 export type MessageAttachmentDBType = {
@@ -835,6 +837,10 @@ export type MessageAttachmentDBType = {
   copiedFromQuotedAttachment: 1 | 0 | null;
   /** Tellomi (ADR-0068): sent as a file (`AttachmentPointer.tellomi.asFile`). Migration 1801. */
   tellomiAsFile: 1 | 0 | null;
+  /** Tellomi (ADR-0068 §4.1, spec R-1): covered by the sender (`AttachmentPointer.tellomi.spoiler`). Migration 1802. */
+  tellomiSpoiler: 1 | 0 | null;
+  /** Tellomi (spec R-1): uncovered on this device; never sent, never backed up. Migration 1802. */
+  tellomiSpoilerRevealed: 1 | 0 | null;
 };
 
 // Test to make sure that MESSAGE_ATTACHMENT_COLUMNS &

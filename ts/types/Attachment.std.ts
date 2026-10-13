@@ -110,6 +110,18 @@ export type AttachmentType = EphemeralAttachmentFields & {
    * file row whatever the content type, listed with files. Column `tellomiAsFile` (migration 1801).
    */
   tellomiAsFile?: boolean;
+
+  /**
+   * Tellomi (ADR-0068 §4.1, spec R-1): the sender covered this image / video
+   * (`AttachmentPointer.tellomi.spoiler`); it stays covered until tapped. Column `tellomiSpoiler` (migration 1802).
+   */
+  tellomiSpoiler?: boolean;
+
+  /**
+   * Tellomi (spec R-1, D10): uncovered on this device. Local only: never sent, never backed up.
+   * Column `tellomiSpoilerRevealed` (migration 1802).
+   */
+  tellomiSpoilerRevealed?: boolean;
 };
 
 export type LocalAttachmentV2Type = Readonly<{

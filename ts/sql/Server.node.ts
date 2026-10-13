@@ -2909,6 +2909,10 @@ function saveMessageAttachment({
     pending: convertOptionalBooleanToInteger(attachment.pending),
     // Tellomi (ADR-0068)
     tellomiAsFile: convertOptionalBooleanToInteger(attachment.tellomiAsFile),
+    tellomiSpoiler: convertOptionalBooleanToInteger(attachment.tellomiSpoiler),
+    tellomiSpoilerRevealed: convertOptionalBooleanToInteger(
+      attachment.tellomiSpoilerRevealed
+    ),
   };
 
   try {

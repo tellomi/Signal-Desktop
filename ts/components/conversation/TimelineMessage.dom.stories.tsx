@@ -3998,6 +3998,48 @@ TellomiPhotoSentAsFileUndownloaded.args = {
   status: 'delivered',
 };
 
+// Tellomi (spec R-1): covered by the sender; the first click uncovers it from where it was clicked.
+export const TellomiSpoilerImage = Template.bind({});
+TellomiSpoilerImage.args = {
+  attachments: [
+    fakeAttachment({
+      url: '/fixtures/tina-rolf-269345-unsplash.jpg',
+      fileName: 'tina-rolf-269345-unsplash.jpg',
+      contentType: IMAGE_JPEG,
+      width: 128,
+      height: 128,
+      tellomiSpoiler: true,
+    }),
+  ],
+  direction: 'incoming',
+  status: 'delivered',
+};
+
+export const TellomiSpoilerAlbum = Template.bind({});
+TellomiSpoilerAlbum.args = {
+  attachments: [
+    fakeAttachment({
+      url: '/fixtures/tina-rolf-269345-unsplash.jpg',
+      fileName: 'tina-rolf-269345-unsplash.jpg',
+      contentType: IMAGE_JPEG,
+      width: 128,
+      height: 128,
+      tellomiSpoiler: true,
+    }),
+    fakeAttachment({
+      url: '/fixtures/tina-rolf-269345-unsplash.jpg',
+      fileName: 'tina-rolf-269345-unsplash.jpg',
+      contentType: IMAGE_JPEG,
+      width: 128,
+      height: 128,
+      tellomiSpoiler: true,
+      tellomiSpoilerRevealed: true,
+    }),
+  ],
+  direction: 'outgoing',
+  status: 'delivered',
+};
+
 // Tellomi (ADR-0068 §4.7): the sender moved the caption above the media.
 export const TellomiCaptionAboveImage = Template.bind({});
 TellomiCaptionAboveImage.args = {

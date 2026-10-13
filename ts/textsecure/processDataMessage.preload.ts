@@ -140,10 +140,26 @@ export function processAttachment(
       : undefined,
     key: Bytes.isNotEmpty(key) ? Bytes.toBase64(key) : undefined,
     size,
-    // Tellomi (ADR-0068 §4.1): asFile wins; spoiler / livePhotoVideo are for later releases.
+    // Tellomi (ADR-0068 §4.1): asFile wins; livePhotoVideo is for a later release.
     // Only present when true, so every other attachment stays exactly as upstream processes it.
     ...(attachment.tellomi?.asFile === true ? { tellomiAsFile: true } : {}),
+    ...(isTellomiSpoiler(attachment) ? { tellomiSpoiler: true } : {}),
   };
+}
+
+/**
+ * Tellomi (ADR-0068 §4.1, spec R-1): covered until tapped. Images / videos only; sent as a file wins
+ * (a file row, never covered); anything else is ignored and the message is received as usual.
+ */
+function isTellomiSpoiler(attachment: Proto.AttachmentPointer): boolean {
+  if (
+    attachment.tellomi?.spoiler !== true ||
+    attachment.tellomi?.asFile === true
+  ) {
+    return false;
+  }
+  const contentType = attachment.contentType ?? '';
+  return contentType.startsWith('image/') || contentType.startsWith('video/');
 }
 
 export function processGroupV2Context(

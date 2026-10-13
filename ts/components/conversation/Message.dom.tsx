@@ -402,6 +402,11 @@ export type PropsActions = {
     attachment: AttachmentType;
     messageId: string;
   }) => void;
+  /** Tellomi (tellomi/tellomi#1263, spec R-1): a covered image / video was uncovered here. */
+  revealTellomiSpoiler?: (options: {
+    attachment: AttachmentType;
+    messageId: string;
+  }) => void;
   saveAttachment: SaveAttachmentActionCreatorType;
   saveAttachments: SaveAttachmentsActionCreatorType;
   showLightbox: (options: {
@@ -1243,6 +1248,7 @@ export class Message extends PureComponent<Props, State> {
       pushPanelForConversation,
       quote,
       renderAudioAttachment,
+      revealTellomiSpoiler,
       renderingContext,
       retryDeleteForEveryone,
       retryMessageSend,
@@ -1369,6 +1375,9 @@ export class Message extends PureComponent<Props, State> {
                 cancelAttachmentDownload({ messageId: id });
               }}
               showMediaNoLongerAvailableToast={showMediaNoLongerAvailableToast}
+              onTellomiSpoilerRevealed={attachment => {
+                revealTellomiSpoiler?.({ attachment, messageId: id });
+              }}
             />
           </div>
         );

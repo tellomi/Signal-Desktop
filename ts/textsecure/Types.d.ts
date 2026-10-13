@@ -135,6 +135,8 @@ export type ProcessedAttachment = {
   chunkSize?: number;
   /** Tellomi (ADR-0068): `AttachmentPointer.tellomi.asFile`. */
   tellomiAsFile?: boolean;
+  /** Tellomi (ADR-0068 §4.1, spec R-1): `AttachmentPointer.tellomi.spoiler` on an image / video. */
+  tellomiSpoiler?: boolean;
 };
 
 export type ProcessedGroupV2Context = {

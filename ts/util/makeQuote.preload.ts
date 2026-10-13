@@ -78,12 +78,19 @@ export async function getQuoteAttachment(
     return Promise.all(
       map(attachmentsToUse, async attachment => {
         const { path, fileName, thumbnail, contentType } = attachment;
+        // Tellomi (tellomi/tellomi#1263, spec R-1): quoting a covered image / video keeps the quote's
+        // thumbnail blurred, uncovered here or not.
+        const tellomiSpoiler = attachment.tellomiSpoiler
+          ? { tellomiSpoiler: true }
+          : {};
 
         if (!path) {
           return {
             contentType: isGIFQuote ? IMAGE_GIF : contentType,
             fileName,
-            thumbnail,
+            thumbnail: thumbnail
+              ? { ...thumbnail, ...tellomiSpoiler }
+              : undefined,
           };
         }
 
@@ -95,6 +102,7 @@ export async function getQuoteAttachment(
               ? {
                   ...(await loadAttachmentData(thumbnail)),
                   url: getLocalAttachmentUrl(thumbnail),
+                  ...tellomiSpoiler,
                 }
               : undefined,
         };

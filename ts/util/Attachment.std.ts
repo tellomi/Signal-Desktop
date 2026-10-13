@@ -233,6 +233,20 @@ export function isTellomiAsFile(
   return attachment?.tellomiAsFile === true;
 }
 
+/**
+ * Tellomi (ADR-0068 §4.1, spec R-1): the sender covered this image / video and this device hasn't
+ * uncovered it yet. Covered ones are blurred under moving dust in the chat, left out when paging the
+ * lightbox and blurred in the media gallery.
+ */
+export function isTellomiSpoilerCovered(
+  attachment?: Pick<AttachmentType, 'tellomiSpoiler' | 'tellomiSpoilerRevealed'>
+): boolean {
+  return (
+    attachment?.tellomiSpoiler === true &&
+    attachment?.tellomiSpoilerRevealed !== true
+  );
+}
+
 export function isAudio(attachments?: ReadonlyArray<AttachmentType>): boolean {
   return Boolean(
     attachments &&

@@ -12,6 +12,7 @@ import { getSafeDomain } from '../../types/LinkPreview.std.ts';
 import type { GenericMediaItemType } from '../../types/MediaItem.std.ts';
 import type { AttachmentStatusType } from '../../hooks/useAttachmentStatus.std.ts';
 import { missingCaseError } from '../../util/missingCaseError.std.ts';
+import { isTellomiSpoilerCovered } from '../../util/Attachment.std.ts';
 import { isVoiceMessagePlayed } from '../../util/isVoiceMessagePlayed.std.ts';
 import {
   getIntl,
@@ -49,7 +50,7 @@ export const MediaItem = memo(function MediaItem({
   const getConversation = useSelector(getConversationSelector);
   const { sortOrder } = useSelector(getMediaGalleryState);
 
-  const { showConversation } = useConversationsActions();
+  const { showConversation, revealTellomiSpoiler } = useConversationsActions();
 
   const { message } = mediaItem;
 
@@ -67,9 +68,20 @@ export const MediaItem = memo(function MediaItem({
 
   const onClick = useCallback(
     (state: AttachmentStatusType['state']) => {
+      // Tellomi (tellomi/tellomi#1263, spec R-1): opening a covered image / video uncovers it.
+      if (
+        mediaItem.type === 'media' &&
+        state === 'ReadyToShow' &&
+        isTellomiSpoilerCovered(mediaItem.attachment)
+      ) {
+        revealTellomiSpoiler({
+          messageId: mediaItem.message.id,
+          attachment: mediaItem.attachment,
+        });
+      }
       onItemClick({ mediaItem, state });
     },
-    [mediaItem, onItemClick]
+    [mediaItem, onItemClick, revealTellomiSpoiler]
   );
 
   const showSize = sortOrder === 'size';

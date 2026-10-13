@@ -224,7 +224,8 @@ export function Quote(props: Props): JSX.Element | null {
   function renderImage(
     url: string,
     icon: string | undefined,
-    asGiftBadge?: boolean
+    asGiftBadge?: boolean,
+    isTellomiSpoiler?: boolean
   ): JSX.Element {
     const iconElement = icon ? (
       <div className={getClassName('__icon-container__inner')}>
@@ -245,7 +246,8 @@ export function Quote(props: Props): JSX.Element | null {
           getClassName('__icon-container'),
           isIncoming === false &&
             asGiftBadge &&
-            getClassName('__icon-container__outgoing-gift-badge')
+            getClassName('__icon-container__outgoing-gift-badge'),
+          isTellomiSpoiler && 'module-quote__icon-container--tellomi-spoiler'
         )}
         src={url}
         onError={handleImageError}
@@ -337,6 +339,8 @@ export function Quote(props: Props): JSX.Element | null {
 
     const { contentType, textAttachment, thumbnail } = attachment;
     const url = getUrl(thumbnail);
+    // Tellomi (tellomi/tellomi#1263, spec R-1): a covered image / video stays blurred in quotes.
+    const isTellomiSpoiler = thumbnail?.tellomiSpoiler === true;
 
     if (isViewOnce) {
       return renderIcon('view-once');
@@ -356,12 +360,12 @@ export function Quote(props: Props): JSX.Element | null {
 
     if (GoogleChrome.isVideoTypeSupported(contentType)) {
       return url && !imageBroken
-        ? renderImage(url, 'play')
+        ? renderImage(url, 'play', false, isTellomiSpoiler)
         : renderIcon('movie');
     }
     if (GoogleChrome.isImageTypeSupported(contentType)) {
       return url && !imageBroken
-        ? renderImage(url, undefined)
+        ? renderImage(url, undefined, false, isTellomiSpoiler)
         : renderIcon('image');
     }
     if (MIME.isAudio(contentType)) {

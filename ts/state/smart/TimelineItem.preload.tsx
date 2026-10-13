@@ -166,6 +166,7 @@ export const SmartTimelineItem = memo(function SmartTimelineItem(
     doubleCheckMissingQuoteReference,
     kickOffAttachmentDownload,
     markAttachmentAsCorrupted,
+    revealTellomiSpoiler,
     messageExpanded,
     onPinnedMessageRemove,
     openGiftBadge,
@@ -280,6 +281,7 @@ export const SmartTimelineItem = memo(function SmartTimelineItem(
       cancelAttachmentDownload={cancelAttachmentDownload}
       kickOffAttachmentDownload={kickOffAttachmentDownload}
       markAttachmentAsCorrupted={markAttachmentAsCorrupted}
+      revealTellomiSpoiler={revealTellomiSpoiler}
       messageExpanded={messageExpanded}
       openGiftBadge={openGiftBadge}
       pushPanelForConversation={pushPanelForConversation}

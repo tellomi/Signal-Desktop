@@ -226,6 +226,7 @@ import { getNotificationTextForMessage } from '../../util/getNotificationTextFor
 import { doubleCheckMissingQuoteReference as doDoubleCheckMissingQuoteReference } from '../../util/doubleCheckMissingQuoteReference.preload.ts';
 import { queueAttachmentDownloads } from '../../util/queueAttachmentDownloads.preload.ts';
 import { markAttachmentAsCorrupted as doMarkAttachmentAsCorrupted } from '../../messageModifiers/AttachmentDownloads.preload.ts';
+import { revealTellomiSpoiler as doRevealTellomiSpoiler } from '../../messageModifiers/TellomiSpoiler.preload.ts';
 import {
   isSent,
   SendActionType,
@@ -1208,6 +1209,7 @@ export const actions = {
   loadNewestMessages,
   loadOlderMessages,
   markAttachmentAsCorrupted,
+  revealTellomiSpoiler,
   markMessageRead,
   markConversationRead,
   markChatFolderRead,
@@ -2485,6 +2487,17 @@ function markAttachmentAsCorrupted(
     await doMarkAttachmentAsCorrupted(options.messageId, options.attachment);
 
     dispatch(noopAction('markAttachmentAsCorrupted'));
+  };
+}
+
+/** Tellomi (tellomi/tellomi#1263, spec R-1): a covered image / video was uncovered here; remember it. */
+function revealTellomiSpoiler(
+  options: AttachmentOptions
+): ThunkAction<void, RootStateType, unknown, NoopActionType> {
+  return async dispatch => {
+    await doRevealTellomiSpoiler(options.messageId, options.attachment);
+
+    dispatch(noopAction('revealTellomiSpoiler'));
   };
 }
 

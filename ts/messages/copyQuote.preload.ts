@@ -174,11 +174,17 @@ export const copyQuoteContentFromOriginal = async (
     const queryFirst = queryAttachments[0] as AttachmentType;
     const { thumbnail: quotedThumbnail } = queryFirst;
     const hasMediaBackups = backupsService.hasMediaBackups();
+    // Tellomi (tellomi/tellomi#1263, spec R-1): a quote of a covered image / video stays blurred,
+    // whether the sender's thumbnail said so or the original here does.
+    const isTellomiSpoiler =
+      queryFirst.tellomiSpoiler === true ||
+      quoteAttachment.thumbnail?.tellomiSpoiler === true;
 
     if (quotedThumbnail && quotedThumbnail.path) {
       quoteAttachment.thumbnail = {
         ...quotedThumbnail,
         copied: true,
+        ...(isTellomiSpoiler ? { tellomiSpoiler: true } : {}),
       };
     } else if (
       !quoteAttachment.thumbnail ||

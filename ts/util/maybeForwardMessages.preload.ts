@@ -154,6 +154,9 @@ export async function maybeForwardMessages(
             thumbnailFromBackup: undefined,
             screenshot: undefined,
             reuseToken: undefined,
+            // Tellomi (tellomi/tellomi#1263, spec R-1): forwarding never carries the cover.
+            tellomiSpoiler: undefined,
+            tellomiSpoilerRevealed: undefined,
           }))
         );
         const attachmentsToSend = attachmentsWithData.filter(

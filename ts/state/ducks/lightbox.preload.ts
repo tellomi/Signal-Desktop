@@ -21,6 +21,7 @@ import type { ReadonlyMessageAttributesType } from '../../model-types.d.ts';
 import {
   getUndownloadedAttachmentSignature,
   isIncremental,
+  isTellomiSpoilerCovered,
 } from '../../util/Attachment.std.ts';
 import {
   isImageTypeSupported,
@@ -262,6 +263,16 @@ function filterValidAttachments(
   );
 }
 
+// Tellomi (tellomi/tellomi#1263, spec R-1): paging to another message never lands on a covered image /
+// video; a message with only covered ones counts as having none.
+function filterAttachmentsToPageTo(
+  attributes: ReadonlyMessageAttributesType
+): Array<AttachmentType> {
+  return filterValidAttachments(attributes).filter(
+    item => !isTellomiSpoilerCovered(item)
+  );
+}
+
 function showLightbox(opts: {
   attachment: AttachmentType;
   messageId: string;
@@ -358,7 +369,13 @@ function showLightbox(opts: {
         size: item.size,
         totalDownloaded: item.totalDownloaded,
       }))
-      .filter(item => item.attachment.url || item.attachment.incrementalUrl);
+      .filter(item => item.attachment.url || item.attachment.incrementalUrl)
+      // Tellomi (spec R-1): the album's other covered ones are left out; the one clicked was just uncovered.
+      .filter(
+        item =>
+          !isTellomiSpoilerCovered(item.attachment) ||
+          item.path === attachment.path
+      );
 
     if (!media.length) {
       log.error(
@@ -409,9 +426,9 @@ function showLightbox(opts: {
         media,
         selectedIndex: index === -1 ? 0 : index,
         hasPrevMessage:
-          older[0] != null && filterValidAttachments(older[0]).length > 0,
+          older[0] != null && filterAttachmentsToPageTo(older[0]).length > 0,
         hasNextMessage:
-          newer[0] != null && filterValidAttachments(newer[0]).length > 0,
+          newer[0] != null && filterAttachmentsToPageTo(newer[0]).length > 0,
         playbackDisabled: false,
       },
     });
@@ -488,7 +505,7 @@ function showLightboxForAdjacentMessage(
       return;
     }
 
-    const attachments = filterValidAttachments(adjacent);
+    const attachments = filterAttachmentsToPageTo(adjacent);
     if (!attachments.length) {
       log.warn(
         `showLightboxForAdjacentMessage(${direction}, ${messageId}, ` +

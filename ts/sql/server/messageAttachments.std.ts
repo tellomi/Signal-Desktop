@@ -100,4 +100,6 @@ export const permissiveMessageAttachmentSchema = z.object({
   pending: permissiveOptionalBool,
   // Tellomi (ADR-0068)
   tellomiAsFile: permissiveOptionalBool,
+  tellomiSpoiler: permissiveOptionalBool,
+  tellomiSpoilerRevealed: permissiveOptionalBool,
 }) satisfies z.ZodType<MessageAttachmentDBType>;

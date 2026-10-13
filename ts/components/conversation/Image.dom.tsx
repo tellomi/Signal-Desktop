@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 import type { CSSProperties, JSX, MouseEvent, KeyboardEvent } from 'react';
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 import classNames from 'classnames';
 
 import { ImageOrBlurhash } from '../ImageOrBlurhash.dom.tsx';
@@ -12,9 +12,12 @@ import {
   defaultBlurHash,
   isIncremental,
   isReadyToView,
+  isTellomiSpoilerCovered,
 } from '../../util/Attachment.std.ts';
 import { SpinnerV2 } from '../SpinnerV2.dom.tsx';
 import { useUndownloadableMediaHandler } from '../../hooks/useUndownloadableMediaHandler.dom.tsx';
+import type { TellomiSpoilerRevealPoint } from './TellomiSpoilerCover.dom.tsx';
+import { TellomiSpoilerCover } from './TellomiSpoilerCover.dom.tsx';
 
 export enum CurveType {
   None = 0,
@@ -59,6 +62,8 @@ export type Props = {
   startDownload?: () => void;
   onClickClose?: (attachment: AttachmentForUIType) => void;
   onError?: () => void;
+  /** Tellomi (spec R-1): called once a covered image / video has been uncovered here. */
+  onTellomiSpoilerRevealed?: (attachment: AttachmentForUIType) => void;
 };
 
 export function Image({
@@ -84,6 +89,7 @@ export function Image({
   cancelDownload,
   onClickClose,
   onError,
+  onTellomiSpoilerRevealed,
   overlayText,
   playIconOverlay,
   tabIndex,
@@ -102,28 +108,71 @@ export function Image({
     borderEndEndRadius: curveBottomRight || CurveType.None,
   };
 
+  // Tellomi (tellomi/tellomi#1263, spec R-1): a covered image / video is uncovered by the first click,
+  // from where it was clicked; only the next click opens it. Remembered here once the reveal is done.
+  const [tellomiReveal, setTellomiReveal] = useState<
+    TellomiSpoilerRevealPoint | 'revealed' | undefined
+  >();
+  const showTellomiCover =
+    isTellomiSpoilerCovered(attachment) && tellomiReveal !== 'revealed';
+  const startTellomiReveal = useCallback((point: TellomiSpoilerRevealPoint) => {
+    setTellomiReveal(current => current ?? point);
+  }, []);
+  const handleTellomiRevealed = useCallback(() => {
+    setTellomiReveal('revealed');
+    onTellomiSpoilerRevealed?.(attachment);
+  }, [attachment, onTellomiSpoilerRevealed]);
+
   const showVisualAttachmentClick = useCallback(
     (event: MouseEvent) => {
+      if (showTellomiCover) {
+        event.preventDefault();
+        event.stopPropagation();
+        const rect = event.currentTarget.getBoundingClientRect();
+        startTellomiReveal({
+          x: event.clientX - rect.left,
+          y: event.clientY - rect.top,
+        });
+        return;
+      }
       if (showVisualAttachment) {
         event.preventDefault();
         event.stopPropagation();
         showVisualAttachment(attachment);
       }
     },
-    [attachment, showVisualAttachment]
+    [attachment, showTellomiCover, showVisualAttachment, startTellomiReveal]
   );
   const showVisualAttachmentKeyDown = useCallback(
     (event: KeyboardEvent<HTMLButtonElement>) => {
-      if (
-        showVisualAttachment &&
-        (event.key === 'Enter' || event.key === 'Space')
-      ) {
+      if (event.key !== 'Enter' && event.key !== 'Space') {
+        return;
+      }
+      if (showTellomiCover) {
+        event.preventDefault();
+        event.stopPropagation();
+        startTellomiReveal({
+          x: (width - cropWidth) / 2,
+          y: (height - cropHeight) / 2,
+        });
+        return;
+      }
+      if (showVisualAttachment) {
         event.preventDefault();
         event.stopPropagation();
         showVisualAttachment(attachment);
       }
     },
-    [attachment, showVisualAttachment]
+    [
+      attachment,
+      cropHeight,
+      cropWidth,
+      height,
+      showTellomiCover,
+      showVisualAttachment,
+      startTellomiReveal,
+      width,
+    ]
   );
   const cancelDownloadClick = useCallback(
     (event: MouseEvent) => {
@@ -248,6 +297,15 @@ export function Image({
       }}
     >
       {imageOrBlurHash}
+      {showTellomiCover ? (
+        <TellomiSpoilerCover
+          style={curveStyles}
+          revealFrom={
+            typeof tellomiReveal === 'object' ? tellomiReveal : undefined
+          }
+          onRevealed={handleTellomiRevealed}
+        />
+      ) : null}
       {startDownloadOrUnavailableButton}
       {spinner}
 
@@ -269,6 +327,7 @@ export function Image({
       ) : null}
       {(attachment.path || isIncremental(attachment)) &&
       !isUndownloadable &&
+      !showTellomiCover &&
       playIconOverlay ? (
         <div className="module-image__overlay-circle">
           <div className="module-image__play-icon" />
@@ -291,7 +350,8 @@ export function Image({
           style={curveStyles}
         />
       ) : null}
-      {showVisualAttachment && isReadyToView(attachment) ? (
+      {(showVisualAttachment || showTellomiCover) &&
+      isReadyToView(attachment) ? (
         <button
           type="button"
           className={classNames('module-image__border-overlay', {

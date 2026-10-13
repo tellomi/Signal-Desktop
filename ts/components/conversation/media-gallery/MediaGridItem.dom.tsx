@@ -15,9 +15,11 @@ import {
   getUrl,
   defaultBlurHash,
   isGIF,
+  isTellomiSpoilerCovered,
   isVideoAttachment,
 } from '../../../util/Attachment.std.ts';
 import { ImageOrBlurhash } from '../../ImageOrBlurhash.dom.tsx';
+import { TellomiSpoilerCover } from '../TellomiSpoilerCover.dom.tsx';
 import { SpinnerV2 } from '../../SpinnerV2.dom.tsx';
 import { tw } from '../../../axo/tw.dom.tsx';
 import { AxoSymbol } from '../../../axo/AxoSymbol.dom.tsx';
@@ -100,6 +102,10 @@ export function MediaGridItem(props: Props): JSX.Element {
       aria-label={label}
     >
       {imageOrBlurHash}
+      {/* Tellomi (tellomi/tellomi#1263, spec R-1): covered until opened from here or uncovered in the chat. */}
+      {isTellomiSpoilerCovered(attachment) ? (
+        <TellomiSpoilerCover onRevealed={noopRevealed} />
+      ) : null}
 
       <MetadataOverlay
         i18n={i18n}
@@ -110,6 +116,10 @@ export function MediaGridItem(props: Props): JSX.Element {
       <SpinnerOverlay status={status} />
     </button>
   );
+}
+
+function noopRevealed(): void {
+  // Opening a covered tile uncovers it (SmartMediaItem); the tile itself never animates.
 }
 
 type SpinnerOverlayProps = Readonly<{
