@@ -74,6 +74,9 @@ export type Props = {
 /** Tellomi (spec R-2): live photos that already played once by themselves in this run. */
 const autoplayedTellomiLivePhotos = new Set<string>();
 
+/** Tellomi (spec R-2): back to the still (Telegram: 0.3 s). Same as the CSS transition. */
+const TELLOMI_LIVE_FADE_MS = 300;
+
 export function Image({
   alt,
   attachment,
@@ -143,21 +146,34 @@ export function Image({
   const canPlayTellomiLive =
     isTellomiLive && !showTellomiCover && Boolean(attachment.path);
   const [tellomiLive, setTellomiLive] = useState<
-    Readonly<{ url: string; fading: boolean }> | undefined
+    Readonly<{ url: string; fading: boolean; run: number }> | undefined
   >();
+  const tellomiLiveRun = useRef(0);
+  const tellomiLiveFadeTimer = useRef<NodeJS.Timeout | undefined>();
+  useEffect(() => () => clearTimeout(tellomiLiveFadeTimer.current), []);
   const playTellomiLive = useCallback(async () => {
     if (!canPlayTellomiLive || fetchTellomiLivePhotoVideo == null) {
       return;
     }
     const videoUrl = await fetchTellomiLivePhotoVideo(attachment);
     if (videoUrl != null) {
-      setTellomiLive({ url: videoUrl, fading: false });
+      clearTimeout(tellomiLiveFadeTimer.current);
+      tellomiLiveRun.current += 1;
+      setTellomiLive({
+        url: videoUrl,
+        fading: false,
+        run: tellomiLiveRun.current,
+      });
     }
   }, [attachment, canPlayTellomiLive, fetchTellomiLivePhotoVideo]);
   const fadeTellomiLive = useCallback(() => {
     setTellomiLive(current =>
-      current ? { url: current.url, fading: true } : current
+      current ? { ...current, fading: true } : current
     );
+    clearTimeout(tellomiLiveFadeTimer.current);
+    tellomiLiveFadeTimer.current = setTimeout(() => {
+      setTellomiLive(current => (current?.fading ? undefined : current));
+    }, TELLOMI_LIVE_FADE_MS);
   }, []);
 
   useEffect(() => {
@@ -349,11 +365,13 @@ export function Image({
     <div
       ref={rootRef}
       onMouseEnter={
-        canPlayTellomiLive && tellomiLive == null
+        canPlayTellomiLive && (tellomiLive == null || tellomiLive.fading)
           ? () => drop(playTellomiLive())
           : undefined
       }
-      onMouseLeave={tellomiLive != null ? fadeTellomiLive : undefined}
+      onMouseLeave={
+        tellomiLive != null && !tellomiLive.fading ? fadeTellomiLive : undefined
+      }
       className={classNames(
         'module-image',
         className,
@@ -373,17 +391,13 @@ export function Image({
           className={classNames('module-image__tellomi-live-video', {
             'module-image__tellomi-live-video--fading': tellomiLive.fading,
           })}
+          key={tellomiLive.run}
           src={tellomiLive.url}
           style={curveStyles}
           muted
           autoPlay
           playsInline
           onEnded={fadeTellomiLive}
-          onTransitionEnd={() => {
-            if (tellomiLive.fading) {
-              setTellomiLive(undefined);
-            }
-          }}
         />
       ) : null}
       {isTellomiLive && !showTellomiCover ? (

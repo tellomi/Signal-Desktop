@@ -456,7 +456,8 @@
     padding-block: 0;
     padding-inline: 8px 10px;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.45);
+    // Light on the lightbox's black, like its other buttons
+    background-color: rgba(255, 255, 255, 0.16);
     color: variables.$color-white;
     font-size: 12px;
     text-transform: uppercase;
