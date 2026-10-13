@@ -121,7 +121,9 @@ export function processAttachment(
     flags: flags ?? undefined,
     width: width ?? undefined,
     height: height ?? undefined,
-    caption: caption ?? undefined,
+    // Tellomi (ADR-0075): this attachment's own caption, ahead of upstream's legacy one; kept
+    // where upstream keeps attachment captions, so the lightbox shows it.
+    caption: attachment.tellomi?.caption || caption || undefined,
     blurHash: blurHash ?? undefined,
     uploadTimestamp,
     cdnId:
@@ -647,6 +649,10 @@ export function processDataMessage(
     // every other message stays as upstream processes it.
     ...(message.tellomi?.captionAboveMedia === true
       ? { tellomiCaptionAboveMedia: true }
+      : {}),
+    // Tellomi (ADR-0075): the caption for the whole message; body still carries all captions.
+    ...(message.tellomi?.messageCaption
+      ? { tellomiMessageCaption: message.tellomi.messageCaption }
       : {}),
   };
 

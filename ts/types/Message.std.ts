@@ -114,6 +114,7 @@ const messageAttributesEraseBehavior: Record<
   supportedVersionAtReceive: 'erase',
   // Tellomi (ADR-0068 §4.7): how the caption is laid out goes with the content.
   tellomiCaptionAboveMedia: 'erase',
+  tellomiMessageCaption: 'erase',
   titleTransition: 'erase',
   verified: 'erase',
   verifiedChanged: 'erase',

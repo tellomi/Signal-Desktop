@@ -565,6 +565,10 @@ export async function handleDataMessage(
         ...(dataMessage.tellomiCaptionAboveMedia
           ? { tellomiCaptionAboveMedia: true }
           : {}),
+        // Tellomi (ADR-0075)
+        ...(dataMessage.tellomiMessageCaption
+          ? { tellomiMessageCaption: dataMessage.tellomiMessageCaption }
+          : {}),
         mentionsMe: (dataMessage.bodyRanges ?? []).some(bodyRange => {
           if (!BodyRange.isMention(bodyRange)) {
             return false;

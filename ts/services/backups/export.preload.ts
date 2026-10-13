@@ -3668,6 +3668,7 @@ export class BackupExportStream extends Readable {
       | 'received_at'
       | 'timestamp'
       | 'tellomiCaptionAboveMedia'
+      | 'tellomiMessageCaption'
     >;
   }): Promise<Backups.StandardMessage.Params | undefined> {
     if (
@@ -3714,9 +3715,14 @@ export class BackupExportStream extends Readable {
         : null,
       reactions: this.#getMessageReactions(message),
       // Tellomi (ADR-0068 §4.7)
-      tellomi: message.tellomiCaptionAboveMedia
-        ? { captionAboveMedia: true }
-        : null,
+      // Tellomi (ADR-0075): and the caption for the whole message
+      tellomi:
+        message.tellomiCaptionAboveMedia || message.tellomiMessageCaption
+          ? {
+              captionAboveMedia: message.tellomiCaptionAboveMedia === true,
+              messageCaption: message.tellomiMessageCaption ?? null,
+            }
+          : null,
     };
 
     if (!result.attachments?.length && !result.text) {

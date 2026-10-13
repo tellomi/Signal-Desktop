@@ -289,6 +289,8 @@ export type ProcessedDataMessage = {
   canReplyToStory?: boolean;
   // Tellomi (ADR-0068 §4.7): `DataMessage.tellomi.captionAboveMedia`, only when true.
   tellomiCaptionAboveMedia?: boolean;
+  // Tellomi (ADR-0075): `DataMessage.tellomi.messageCaption`, only when non-empty.
+  tellomiMessageCaption?: string;
 };
 
 export type ProcessedUnidentifiedDeliveryStatus = Readonly<{

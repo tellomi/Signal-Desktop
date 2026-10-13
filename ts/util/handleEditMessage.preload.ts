@@ -237,6 +237,9 @@ export async function handleEditMessage(
       upgradedEditedMessageData.tellomiCaptionAboveMedia === true
         ? true
         : undefined,
+    // Tellomi (ADR-0075): same for the caption of the whole message
+    tellomiMessageCaption:
+      upgradedEditedMessageData.tellomiMessageCaption || undefined,
   });
 
   // Queue up any downloads in case they're different, update the fields if so.

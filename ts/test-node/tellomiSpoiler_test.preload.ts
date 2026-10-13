@@ -93,7 +93,12 @@ describe('Tellomi: covered (spoiler) images and videos (ADR-0068, spec R-1)', ()
     );
   }
 
-  const spoiler = { asFile: null, spoiler: true, livePhotoVideo: null };
+  const spoiler = {
+    asFile: null,
+    spoiler: true,
+    livePhotoVideo: null,
+    caption: null,
+  };
 
   describe('the wire', () => {
     it('accepts messages that need the spoiler version, golden bytes shared by the three clients', () => {

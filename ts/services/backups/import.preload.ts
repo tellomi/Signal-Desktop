@@ -2252,6 +2252,10 @@ export class BackupImportStream extends Writable {
       ...(data.tellomi?.captionAboveMedia
         ? { tellomiCaptionAboveMedia: true }
         : {}),
+      // Tellomi (ADR-0075)
+      ...(data.tellomi?.messageCaption
+        ? { tellomiMessageCaption: data.tellomi.messageCaption }
+        : {}),
       preview: data.linkPreview?.length
         ? this.#fromLinkPreview({
             logId,

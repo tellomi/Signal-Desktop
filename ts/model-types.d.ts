@@ -210,6 +210,9 @@ export type MessageAttributesType = {
   // Tellomi (tellomi/tellomi#1263, ADR-0068 §4.7): the caption is drawn above the media.
   // Only meaningful with text and an image / video shown as media; kept in the message JSON.
   tellomiCaptionAboveMedia?: boolean;
+  // Tellomi (ADR-0075): the caption for the whole message (per-media captions are on each
+  // attachment's `caption`); `body` is the text for clients that don't know these.
+  tellomiMessageCaption?: string;
   editHistory?: ReadonlyArray<EditHistoryType>;
   editMessageTimestamp?: number;
   editMessageReceivedAt?: number;

@@ -80,8 +80,18 @@ describe('Tellomi: attachments sent as a file (ADR-0068)', () => {
           Proto.DataMessage.encode({
             body: null,
             attachments: [
-              pointer({ asFile: true, spoiler: null, livePhotoVideo: null }),
-              pointer({ asFile: false, spoiler: null, livePhotoVideo: null }),
+              pointer({
+                asFile: true,
+                spoiler: null,
+                livePhotoVideo: null,
+                caption: null,
+              }),
+              pointer({
+                asFile: false,
+                spoiler: null,
+                livePhotoVideo: null,
+                caption: null,
+              }),
               pointer(null),
             ],
             groupV2: null,
@@ -125,12 +135,13 @@ describe('Tellomi: attachments sent as a file (ADR-0068)', () => {
   // ADR-0068 §4.7: the caption above the media, a message-level flag.
   describe('caption above media', () => {
     function dataMessage(
-      tellomi: Proto.TellomiDataMessage.Params | null
+      tellomi: Proto.TellomiDataMessage.Params | null,
+      attachments: Array<Proto.AttachmentPointer.Params> = [pointer(null)]
     ): Proto.DataMessage {
       return Proto.DataMessage.decode(
         Proto.DataMessage.encode({
           body: 'caption',
-          attachments: [pointer(null)],
+          attachments,
           groupV2: null,
           flags: null,
           expireTimer: null,
@@ -163,12 +174,12 @@ describe('Tellomi: attachments sent as a file (ADR-0068)', () => {
 
     it('is kept from the data message, and only when it is true', () => {
       const above = processDataMessage(
-        dataMessage({ captionAboveMedia: true }),
+        dataMessage({ captionAboveMedia: true, messageCaption: null }),
         TIMESTAMP,
         { _createName: () => 'random-path' }
       );
       const no = processDataMessage(
-        dataMessage({ captionAboveMedia: false }),
+        dataMessage({ captionAboveMedia: false, messageCaption: null }),
         TIMESTAMP,
         { _createName: () => 'random-path' }
       );
@@ -179,6 +190,61 @@ describe('Tellomi: attachments sent as a file (ADR-0068)', () => {
       assert.isTrue(above.tellomiCaptionAboveMedia);
       assert.notProperty(no, 'tellomiCaptionAboveMedia');
       assert.notProperty(ordinary, 'tellomiCaptionAboveMedia');
+    });
+
+    // ADR-0075: per-media captions and the caption for the whole message.
+    it('decodes the per-media caption golden bytes shared by the three clients', () => {
+      // TellomiAttachment{caption = "a"} = 22 01 61
+      assert.strictEqual(
+        Proto.AttachmentPointer.decode(Bytes.fromHex('ca3e03220161')).tellomi
+          ?.caption,
+        'a'
+      );
+      // TellomiDataMessage{messageCaption = "a"} = 12 01 61
+      assert.strictEqual(
+        Proto.DataMessage.decode(Bytes.fromHex('c23e03120161')).tellomi
+          ?.messageCaption,
+        'a'
+      );
+    });
+
+    it("keeps each attachment's own caption where attachment captions live, ahead of the legacy one", () => {
+      const own = (caption: string): Proto.TellomiAttachment.Params => ({
+        asFile: null,
+        spoiler: null,
+        livePhotoVideo: null,
+        caption,
+      });
+      const out = processDataMessage(
+        dataMessage({ captionAboveMedia: null, messageCaption: 'Trip' }, [
+          pointer(own('Sunset')),
+          { ...pointer(own('Beach')), caption: 'legacy' },
+          { ...pointer(own('')), caption: 'legacy' },
+          pointer(null),
+        ]),
+        TIMESTAMP,
+        { _createName: () => 'random-path' }
+      );
+
+      assert.strictEqual(out.attachments[0]?.caption, 'Sunset');
+      assert.strictEqual(out.attachments[1]?.caption, 'Beach');
+      assert.strictEqual(out.attachments[2]?.caption, 'legacy');
+      assert.isUndefined(out.attachments[3]?.caption);
+      assert.strictEqual(out.tellomiMessageCaption, 'Trip');
+      assert.notProperty(out, 'tellomiCaptionAboveMedia');
+    });
+
+    it('has no caption for the whole message when there is none, or it is empty', () => {
+      const empty = processDataMessage(
+        dataMessage({ captionAboveMedia: null, messageCaption: '' }),
+        TIMESTAMP,
+        { _createName: () => 'random-path' }
+      );
+      const ordinary = processDataMessage(dataMessage(null), TIMESTAMP, {
+        _createName: () => 'random-path',
+      });
+      assert.notProperty(empty, 'tellomiMessageCaption');
+      assert.notProperty(ordinary, 'tellomiMessageCaption');
     });
   });
 

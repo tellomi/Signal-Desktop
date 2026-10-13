@@ -104,6 +104,7 @@ describe('Tellomi: live photos (ADR-0068, spec R-2)', () => {
     asFile: null,
     spoiler: null,
     livePhotoVideo,
+    caption: null,
     ...extra,
   });
 
