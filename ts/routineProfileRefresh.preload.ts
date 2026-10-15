@@ -16,6 +16,7 @@ import { getProfile } from './util/getProfile.preload.ts';
 import { drop } from './util/drop.std.ts';
 import { MINUTE, HOUR, DAY, WEEK } from './util/durations/index.std.ts';
 import { isDirectConversation } from './util/whatTypeOfConversation.dom.ts';
+import { routineRefreshMaxAge } from './util/tellomiProfileRefresh.std.ts';
 
 const { isNil, sortBy } = lodash;
 
@@ -248,9 +249,15 @@ function hasRefreshedProfileRecently(
   conversation: Readonly<ConversationModel>
 ): boolean {
   const profileLastFetchedAt = conversation.get('profileLastFetchedAt');
+  const now = Date.now();
+  // Tellomi (tellomi/tellomi#1366): conversations active in the last 30 days count as stale after 6 hours, not 3 days,
+  // so avatar and name changes show up sooner.
+  const maxAge = routineRefreshMaxAge(
+    conversation.get('active_at'),
+    now,
+    MAX_AGE_TO_BE_CONSIDERED_RECENTLY_REFRESHED
+  );
   return (
-    isNormalNumber(profileLastFetchedAt) &&
-    profileLastFetchedAt + MAX_AGE_TO_BE_CONSIDERED_RECENTLY_REFRESHED >
-      Date.now()
+    isNormalNumber(profileLastFetchedAt) && profileLastFetchedAt + maxAge > now
   );
 }

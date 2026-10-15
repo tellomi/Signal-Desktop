@@ -132,6 +132,8 @@ describe('routineProfileRefresh', () => {
   it('skips unregistered conversations and those fetched in the last three days', async () => {
     const normal = makeConversation();
     const recentlyFetched = makeConversation({
+      // Tellomi (tellomi/tellomi#1366): inactive, so the upstream three days apply.
+      active_at: Date.now() - DAY * 60,
       profileLastFetchedAt: Date.now() - DAY * 2 - HOUR * 3,
     });
     const unregisteredAndStale = makeConversation({
@@ -217,17 +219,24 @@ describe('routineProfileRefresh', () => {
   });
 
   it('skips conversations that were refreshed in last three days', async () => {
-    const neverRefreshed = makeConversation();
+    // Tellomi (tellomi/tellomi#1366): the three days only apply to conversations without activity in the last 30 days;
+    // active ones are tested below.
+    const inactive = { active_at: Date.now() - DAY * 60 };
+    const neverRefreshed = makeConversation(inactive);
     const refreshedToday = makeConversation({
+      ...inactive,
       profileLastFetchedAt: Date.now() - HOUR * 5,
     });
     const refreshedYesterday = makeConversation({
+      ...inactive,
       profileLastFetchedAt: Date.now() - DAY,
     });
     const refreshedTwoDaysAgo = makeConversation({
+      ...inactive,
       profileLastFetchedAt: Date.now() - DAY * 2,
     });
     const refreshedThreeDaysAgo = makeConversation({
+      ...inactive,
       profileLastFetchedAt: Date.now() - DAY * 3 - 1,
     });
 
@@ -269,6 +278,39 @@ describe('routineProfileRefresh', () => {
     sinon.assert.calledWith(getProfileFn, {
       serviceId: refreshedThreeDaysAgo.getServiceId() ?? null,
       e164: refreshedThreeDaysAgo.get('e164') ?? null,
+      groupId: null,
+    });
+  });
+
+  // Tellomi (tellomi/tellomi#1366): conversations active in the last 30 days are stale after 6 hours.
+  it('refreshes active conversations not refreshed in the last six hours', async () => {
+    const refreshedFiveHoursAgo = makeConversation({
+      profileLastFetchedAt: Date.now() - HOUR * 5,
+    });
+    const refreshedSevenHoursAgo = makeConversation({
+      profileLastFetchedAt: Date.now() - HOUR * 7,
+    });
+    const inactiveRefreshedSevenHoursAgo = makeConversation({
+      active_at: Date.now() - DAY * 60,
+      profileLastFetchedAt: Date.now() - HOUR * 7,
+    });
+
+    await routineProfileRefresh({
+      allConversations: [
+        refreshedFiveHoursAgo,
+        refreshedSevenHoursAgo,
+        inactiveRefreshedSevenHoursAgo,
+      ],
+      ourConversationId: generateUuid(),
+      storage: makeStorage(),
+      getProfileFn,
+      id: 1,
+    });
+
+    sinon.assert.calledOnce(getProfileFn);
+    sinon.assert.calledWith(getProfileFn, {
+      serviceId: refreshedSevenHoursAgo.getServiceId() ?? null,
+      e164: refreshedSevenHoursAgo.get('e164') ?? null,
       groupId: null,
     });
   });

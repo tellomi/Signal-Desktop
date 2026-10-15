@@ -69,6 +69,7 @@ import {
 import type { saveAndNotify } from './saveAndNotify.preload.ts';
 import type { MessageModel } from '../models/messages.preload.ts';
 import { safeParsePartial } from '../util/schemas.std.ts';
+import { shouldRefreshProfileOnMessage } from '../util/tellomiProfileRefresh.std.ts';
 import { PollCreateSchema } from '../types/Polls.dom.ts';
 
 import type { SentEventData } from '../textsecure/messageReceiverEvents.std.ts';
@@ -727,6 +728,19 @@ export async function handleDataMessage(
               })
             );
           }
+        }
+
+        // Tellomi (tellomi/tellomi#1366): a 1:1 message is a cheap hint to see whether the sender changed their avatar
+        // or name; the server never tells us.
+        if (
+          type === 'incoming' &&
+          isDirectConversation(conversation.attributes) &&
+          shouldRefreshProfileOnMessage(
+            conversation.get('profileLastFetchedAt'),
+            Date.now()
+          )
+        ) {
+          drop(conversation.throttledGetProfiles?.());
         }
 
         if (isTapToView(message.attributes) && type === 'outgoing') {
