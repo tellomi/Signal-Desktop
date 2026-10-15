@@ -24,6 +24,7 @@ export default {
     arch: 'arm64',
     version: '1.2.3',
     copyText: () => Promise.resolve(),
+    newVersion: undefined,
   },
 } satisfies ComponentMeta<AboutProps>;
 
@@ -31,6 +32,21 @@ export function Basic(args: AboutProps): JSX.Element {
   return (
     <div style={{ height: '100vh' }}>
       <About {...args} />
+    </div>
+  );
+}
+
+// Tellomi (tellomi/tellomi#1399): the update manifest knows a newer version.
+export function WithNewVersion(args: AboutProps): JSX.Element {
+  return (
+    <div style={{ height: '100vh' }}>
+      <About
+        {...args}
+        newVersion={{
+          version: '1.2.4',
+          notesUrl: 'https://www.tellomi.app/changelog/#desktop',
+        }}
+      />
     </div>
   );
 }

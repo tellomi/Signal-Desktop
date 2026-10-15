@@ -9293,5 +9293,23 @@
   },
   "icu:WhatsNew__tellomi--0": {
     "messageformat": "手机端新的发图功能在电脑上也能正常显示：「按文件发送」的附件显示成带缩略图的文件行；说明文字可以在图片上方；相册里每张图可以有自己的说明；被遮住的图片 / 视频点一下才显示；实况照片出现时会播放。备份也会带上这些。"
+  },
+  "icu:TellomiUpdate__available_title": {
+    "messageformat": "发现新版本 {version}"
+  },
+  "icu:TellomiUpdate__available_body": {
+    "messageformat": "更新不会影响电脑上的聊天记录。"
+  },
+  "icu:TellomiUpdate__learn_more": {
+    "messageformat": "了解更新内容"
+  },
+  "icu:TellomiUpdate__later": {
+    "messageformat": "以后再说"
+  },
+  "icu:TellomiUpdate__update_now": {
+    "messageformat": "立即更新"
+  },
+  "icu:TellomiUpdate__about_new_version": {
+    "messageformat": "有新版本 {version}"
   }
 }

@@ -25,6 +25,8 @@ export type AboutProps = Readonly<{
   version: string;
   // Tellomi (about-page.md §3.3): clicking an address copies it.
   copyText: (text: string) => Promise<void>;
+  // Tellomi (tellomi/tellomi#1399): the update manifest says a newer version exists.
+  newVersion?: Readonly<{ version: string; notesUrl?: string }>;
 }>;
 
 export function About({
@@ -35,6 +37,7 @@ export function About({
   i18n,
   version,
   copyText,
+  newVersion,
 }: AboutProps): JSX.Element {
   useEscapeHandling(closeAbout);
 
@@ -79,6 +82,21 @@ export function About({
 
         <h1 className="About__Title">{i18n('icu:signalDesktop')}</h1>
         <div className="About__Body version">{version}</div>
+        {newVersion ? (
+          <div className="About__Body tellomi-new-version">
+            {i18n('icu:TellomiUpdate__about_new_version', {
+              version: newVersion.version,
+            })}
+            {newVersion.notesUrl ? (
+              <>
+                {' · '}
+                <a href={newVersion.notesUrl}>
+                  {i18n('icu:TellomiUpdate__learn_more')}
+                </a>
+              </>
+            ) : null}
+          </div>
+        ) : null}
         <div className="About__Body environment">{env}</div>
         <br />
         <div className="About__Links">

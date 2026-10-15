@@ -72,6 +72,7 @@ import * as StorageService from './services/storage.preload.ts';
 import { usernameIntegrity } from './services/usernameIntegrity.preload.ts';
 import { updateIdentityKey } from './services/profiles.preload.ts';
 import { initializeUpdateListener } from './services/updateListener.preload.ts';
+import { initializeTellomiUpdateTier } from './services/tellomiUpdateTier.preload.ts';
 import { RoutineProfileRefresher } from './routineProfileRefresh.preload.ts';
 import { isOlderThan } from './util/timestamp.std.ts';
 import { safeParsePartial } from './util/schemas.std.ts';
@@ -1294,6 +1295,8 @@ async function startApp(): Promise<void> {
         () => window.getSocketStatus().authenticated.status
       );
       initializeUpdateListener(window.reduxActions.updates);
+      // Tellomi (tellomi/tellomi#1399): the update manifest's recommended card (and, next, the required layer).
+      initializeTellomiUpdateTier();
       calling.initialize(
         {
           ...window.reduxActions.calling,

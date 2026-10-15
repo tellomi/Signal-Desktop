@@ -160,6 +160,8 @@ export type StorageAccessType = {
   // Tellomi (ADR-0063 §8.1 row 9, owner 2026-09-27): open a short link once to find where it leads
   // before previewing it. On unless turned off here; this device only, never synced.
   tellomiExpandShortLinks: boolean;
+  // Tellomi（tellomi/tellomi#1399）：推荐档的卡片弹过的版本（同一版本只弹一次），见 services/tellomiUpdateTier
+  tellomiUpdateCardSeenVersion: string;
   universalExpireTimer: number;
   retryPlaceholders: ReadonlyArray<RetryItemType>;
   donationPermits: string;
@@ -418,6 +420,8 @@ export const STORAGE_KEYS_TO_PRESERVE_AFTER_UNLINK = [
   'zoomFactor',
   // Tellomi (ADR-0063 §8.1 row 9): a setting of this device, not of the account.
   'tellomiExpandShortLinks',
+  // Tellomi (tellomi/tellomi#1399): the recommended-update card this device has already shown.
+  'tellomiUpdateCardSeenVersion',
 
   // Bookkeeping keys
   'attachmentMigration_lastProcessedIndex',

@@ -12360,5 +12360,29 @@
   "icu:WhatsNew__tellomi--0": {
     "messageformat": "Photos and videos sent from the latest Tellomi phones now show properly here: attachments sent as files appear as a file row with a preview, captions can sit above the media, each photo in an album can have its own caption, covered (spoiler) photos and videos stay hidden until you tap them, and live photos play when they appear. Backups keep all of these.",
     "description": "Tellomi release notes; keep in sync with docs/signal/VERSIONS.md, update every release"
+  },
+  "icu:TellomiUpdate__available_title": {
+    "messageformat": "Tellomi {version} is available",
+    "description": "Tellomi (tellomi/tellomi#1399): title of the card shown once per version when the update manifest recommends updating. {version} is the new version, like 0.1.13."
+  },
+  "icu:TellomiUpdate__available_body": {
+    "messageformat": "Updating keeps all the chats on this computer.",
+    "description": "Tellomi (tellomi/tellomi#1399): body of the recommended-update card."
+  },
+  "icu:TellomiUpdate__learn_more": {
+    "messageformat": "What's new",
+    "description": "Tellomi (tellomi/tellomi#1399): link on the update card and the About window that opens the website changelog."
+  },
+  "icu:TellomiUpdate__later": {
+    "messageformat": "Later",
+    "description": "Tellomi (tellomi/tellomi#1399): closes the recommended-update card; it does not come back for the same version."
+  },
+  "icu:TellomiUpdate__update_now": {
+    "messageformat": "Update now",
+    "description": "Tellomi (tellomi/tellomi#1399): main button of the update card: restarts into a downloaded update, or opens the download page."
+  },
+  "icu:TellomiUpdate__about_new_version": {
+    "messageformat": "New version {version}",
+    "description": "Tellomi (tellomi/tellomi#1399): line in the About window when the update manifest says a newer version exists. {version} is the new version."
   }
 }

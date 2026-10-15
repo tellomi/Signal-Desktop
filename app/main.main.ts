@@ -136,6 +136,7 @@ import { appRelaunch } from '../ts/util/relaunch.main.ts';
 import { getAppRootDir } from '../ts/util/appRootDir.main.ts';
 import { openExternalLink } from './linkOpen.main.ts';
 import { startLinkRegistryUpdater } from './linkRegistryUpdater.main.ts';
+import { startTellomiUpdateManifest } from './tellomiUpdateManifest.main.ts';
 import { trackHeapSize } from '../ts/util/oomNotifier.node.ts';
 import { sendDummyKeystroke } from './WindowsNotifications.main.ts';
 import { maybeMigrateSafeStorageBackend } from '../ts/util/linuxPasswordStoreMigration.main.ts';
@@ -1192,6 +1193,8 @@ async function readyForUpdates() {
   // Tellomi (ADR-0063 §4.7): the link registry is data that updates without a release.
   if (!isTestEnvironment(getEnvironment())) {
     startLinkRegistryUpdater();
+    // Tellomi (tellomi/tellomi#1399): the signed update manifest decides the optional / recommended / required tier.
+    startTellomiUpdateManifest();
   }
 
   // Second, start checking for app updates

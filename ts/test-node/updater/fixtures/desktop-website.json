@@ -1,0 +1,17 @@
+{
+  "channel": "website",
+  "issuedAt": "2026-10-15T12:00:00Z",
+  "latest": {
+    "build": 1013,
+    "releaseDate": "2026-10-15T12:00:00Z",
+    "url": "https://www.tellomi.app/download/",
+    "version": "0.1.13"
+  },
+  "name": "tellomi-update",
+  "notesUrl": "https://www.tellomi.app/changelog/#desktop",
+  "platform": "desktop",
+  "recommendedMinBuild": 1013,
+  "requiredMinBuild": 0,
+  "schema": 1,
+  "serial": 20261015120000
+}

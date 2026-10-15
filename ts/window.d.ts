@@ -90,6 +90,12 @@ type AboutWindowPropsType = {
   appEnv: string;
   arch: string;
   platform: string;
+  // Tellomi (tellomi/tellomi#1399): resolves to the main process' UpdateTierState (ts/util/tellomiUpdateManifest.std.ts).
+  getUpdateTier: () => Promise<{
+    tier: 'none' | 'optional' | 'recommended' | 'required';
+    latestVersion?: string;
+    notesUrl?: string;
+  }>;
 };
 
 type DebugLogWindowPropsType = {

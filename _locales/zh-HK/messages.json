@@ -9293,5 +9293,23 @@
   },
   "icu:WhatsNew__tellomi--0": {
     "messageformat": "手機端新的傳圖功能在電腦上也能正常顯示：「以檔案傳送」的附件顯示成附縮圖的檔案列；說明文字可以在圖片上方；相簿裡每張圖可以有自己的說明；被遮住的圖片 / 影片點一下才顯示；實況相片出現時會播放。備份也會帶上這些。"
+  },
+  "icu:TellomiUpdate__available_title": {
+    "messageformat": "發現新版本 {version}"
+  },
+  "icu:TellomiUpdate__available_body": {
+    "messageformat": "更新不會影響電腦上的聊天紀錄。"
+  },
+  "icu:TellomiUpdate__learn_more": {
+    "messageformat": "了解更新內容"
+  },
+  "icu:TellomiUpdate__later": {
+    "messageformat": "以後再說"
+  },
+  "icu:TellomiUpdate__update_now": {
+    "messageformat": "立即更新"
+  },
+  "icu:TellomiUpdate__about_new_version": {
+    "messageformat": "有新版本 {version}"
   }
 }
