@@ -98,12 +98,14 @@ import {
 } from '../selectors/search.preload.ts';
 import {
   getHasPendingUpdate,
+  getTellomiUpdateReadOnly,
   getUpdateDialogType,
   isUpdateDownloaded as getIsUpdateDownloaded,
   isOSUnsupported,
   isUpdateDialogVisible,
 } from '../selectors/updates.std.ts';
 import { getBuildUpgradeAction } from '../../util/buildExpiration.std.ts';
+import { showTellomiUpdateRequired } from '../../services/tellomiUpdateTier.preload.ts';
 import {
   getIntl,
   getIsMacOS,
@@ -368,6 +370,9 @@ export const SmartLeftPane = memo(function SmartLeftPane({
   const hasAppExpired = useSelector(hasExpired);
   // Tellomi (tellomi/tellomi#1269): the "expires soon" warning during the last 14 days.
   const buildExpiresInDays = useSelector(getBuildExpiresInDays);
+  // Tellomi (tellomi/tellomi#1399): read-only until the required update; being offline is expected then, so no
+  // network dialog on top of the red banner.
+  const isTellomiUpdateRequired = useSelector(getTellomiUpdateReadOnly);
   const hasAnyCurrentCustomChatFolders = useSelector(
     getHasAnyCurrentCustomChatFolders
   );
@@ -516,8 +521,10 @@ export const SmartLeftPane = memo(function SmartLeftPane({
       hasClockSkewDialog={hasClockSkewDialog}
       hasExpiredDialog={hasExpiredDialog}
       buildExpiresInDays={hasAppExpired ? undefined : buildExpiresInDays}
+      isTellomiUpdateRequired={isTellomiUpdateRequired}
+      onShowTellomiUpdateRequired={showTellomiUpdateRequired}
       hasFailedStorySends={hasFailedStorySends}
-      hasNetworkDialog={hasNetworkDialog}
+      hasNetworkDialog={hasNetworkDialog && !isTellomiUpdateRequired}
       hasPendingUpdate={hasPendingUpdate}
       hasRelinkDialog={hasRelinkDialog}
       hasUpdateDialog={hasUpdateDialog}

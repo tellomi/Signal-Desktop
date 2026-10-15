@@ -67,3 +67,9 @@ export const getHasPendingUpdate = createSelector(
   getUpdatesState,
   ({ didSnooze }) => didSnooze
 );
+
+// Tellomi (tellomi/tellomi#1399): read-only until the required update (see ducks/updates tellomiReadOnly).
+export const getTellomiUpdateReadOnly = createSelector(
+  getUpdatesState,
+  ({ tellomiReadOnly }) => tellomiReadOnly === true
+);

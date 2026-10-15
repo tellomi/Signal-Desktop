@@ -77,7 +77,12 @@ export type SocketStatuses = Record<
   SocketInfo
 >;
 
-export type SocketExpirationReason = 'remote' | 'build';
+// Tellomi (tellomi/tellomi#1399): 'tellomiUpdateRequired' is the update manifest's read-only mode. Unlike the other two it
+// can be lifted (the manifest revokes the required tier), so the credentials are kept; see tellomiLiftUpdateRequired.
+export type SocketExpirationReason =
+  | 'remote'
+  | 'build'
+  | 'tellomiUpdateRequired';
 
 // This class manages two websocket resources:
 //
@@ -589,6 +594,11 @@ export class SocketManager extends EventListener {
   }
 
   public async onExpiration(reason: SocketExpirationReason): Promise<void> {
+    // Tellomi (tellomi/tellomi#1399): the manifest's read-only mode never replaces a real expiry ('build' / 'remote'),
+    // which only a new version clears; the other way round, a real expiry overrides it (and drops the credentials).
+    if (reason === 'tellomiUpdateRequired' && this.#expirationReason != null) {
+      return;
+    }
     log.info('onRemoteExpiration', reason);
     this.#expirationReason = reason;
 
@@ -596,7 +606,24 @@ export class SocketManager extends EventListener {
     this.#reconnectController?.abort();
 
     // Logout
-    await this.logout();
+    await this.logout({ clearCredentials: reason !== 'tellomiUpdateRequired' });
+  }
+
+  // Tellomi (tellomi/tellomi#1399): the update manifest no longer requires an update -- connect again. `fallback` is
+  // WebAPI's credentials, for when read-only started before the first authenticate (which then never stored them).
+  public async tellomiLiftUpdateRequired(
+    fallback: WebAPICredentials | undefined
+  ): Promise<void> {
+    if (this.#expirationReason !== 'tellomiUpdateRequired') {
+      return;
+    }
+    log.info('tellomiLiftUpdateRequired');
+    this.#expirationReason = undefined;
+    const credentials = this.#credentials ?? fallback;
+    if (credentials) {
+      this.#backOff.reset();
+      await this.authenticate(credentials);
+    }
   }
 
   public async logout(

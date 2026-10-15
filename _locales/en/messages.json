@@ -12384,5 +12384,53 @@
   "icu:TellomiUpdate__about_new_version": {
     "messageformat": "New version {version}",
     "description": "Tellomi (tellomi/tellomi#1399): line in the About window when the update manifest says a newer version exists. {version} is the new version."
+  },
+  "icu:TellomiUpdateRequired__title": {
+    "messageformat": "Update Tellomi to continue",
+    "description": "Tellomi (tellomi/tellomi#1399): title of the full-window page shown when the update manifest requires an update."
+  },
+  "icu:TellomiUpdateRequired__reason_security": {
+    "messageformat": "This version has a security problem. To protect your account and messages, update to keep using Tellomi.",
+    "description": "Tellomi (tellomi/tellomi#1399): reason on the update-required page when the manifest marks this version as having a security problem."
+  },
+  "icu:TellomiUpdateRequired__reason_protocol": {
+    "messageformat": "This version can no longer communicate with the server. Update to keep sending and receiving messages.",
+    "description": "Tellomi (tellomi/tellomi#1399): reason on the update-required page when the manifest requires the update for a protocol change."
+  },
+  "icu:TellomiUpdateRequired__reason_other": {
+    "messageformat": "This version needs an update to keep sending and receiving messages.",
+    "description": "Tellomi (tellomi/tellomi#1399): reason on the update-required page when the manifest requires the update for another reason."
+  },
+  "icu:TellomiUpdateRequired__new_version": {
+    "messageformat": "New version {version}",
+    "description": "Tellomi (tellomi/tellomi#1399): line on the update-required page with the version to update to, like 0.1.13."
+  },
+  "icu:TellomiUpdateRequired__restart": {
+    "messageformat": "Restart and update",
+    "description": "Tellomi (tellomi/tellomi#1399): main button of the update-required page once the update has been downloaded."
+  },
+  "icu:TellomiUpdateRequired__downloading": {
+    "messageformat": "Downloading {percent}%",
+    "description": "Tellomi (tellomi/tellomi#1399): main button of the update-required page while the update downloads; {percent} is a whole number from 0 to 100."
+  },
+  "icu:TellomiUpdateRequired__downloading_unknown": {
+    "messageformat": "Downloading…",
+    "description": "Tellomi (tellomi/tellomi#1399): main button of the update-required page while the update downloads and its size is not known yet."
+  },
+  "icu:TellomiUpdateRequired__view_chats_only": {
+    "messageformat": "Not now, just view my chats",
+    "description": "Tellomi (tellomi/tellomi#1399): the only way out of the update-required page: Tellomi stays read-only until the update."
+  },
+  "icu:TellomiUpdateRequired__view_chats_only_confirm_message": {
+    "messageformat": "Until you update, you can view your chats but can't send or receive messages.",
+    "description": "Tellomi (tellomi/tellomi#1399): confirmation shown before switching to read-only from the update-required page."
+  },
+  "icu:TellomiUpdateRequired__view_chats_only_confirm": {
+    "messageformat": "View chats only",
+    "description": "Tellomi (tellomi/tellomi#1399): confirm button of that confirmation."
+  },
+  "icu:TellomiUpdateRequired__read_only_banner": {
+    "messageformat": "Update Tellomi to keep sending and receiving messages.",
+    "description": "Tellomi (tellomi/tellomi#1399): red banner above the chat list while this version is read-only because an update is required; clicking it opens the update-required page again."
   }
 }

@@ -9311,5 +9311,41 @@
   },
   "icu:TellomiUpdate__about_new_version": {
     "messageformat": "有新版本 {version}"
+  },
+  "icu:TellomiUpdateRequired__title": {
+    "messageformat": "需要更新 Tellomi"
+  },
+  "icu:TellomiUpdateRequired__reason_security": {
+    "messageformat": "此版本存在安全問題，為保護你的帳戶和訊息，請更新後繼續使用。"
+  },
+  "icu:TellomiUpdateRequired__reason_protocol": {
+    "messageformat": "此版本已無法與伺服器正常通訊，更新後才能繼續收發訊息。"
+  },
+  "icu:TellomiUpdateRequired__reason_other": {
+    "messageformat": "此版本需要更新，更新後才能繼續收發訊息。"
+  },
+  "icu:TellomiUpdateRequired__new_version": {
+    "messageformat": "新版本 {version}"
+  },
+  "icu:TellomiUpdateRequired__restart": {
+    "messageformat": "重新啟動並更新"
+  },
+  "icu:TellomiUpdateRequired__downloading": {
+    "messageformat": "下載中 {percent}%"
+  },
+  "icu:TellomiUpdateRequired__downloading_unknown": {
+    "messageformat": "正在下載…"
+  },
+  "icu:TellomiUpdateRequired__view_chats_only": {
+    "messageformat": "暫不更新，只看聊天紀錄"
+  },
+  "icu:TellomiUpdateRequired__view_chats_only_confirm_message": {
+    "messageformat": "更新之前可以看聊天紀錄，但不能收發訊息。"
+  },
+  "icu:TellomiUpdateRequired__view_chats_only_confirm": {
+    "messageformat": "只看聊天紀錄"
+  },
+  "icu:TellomiUpdateRequired__read_only_banner": {
+    "messageformat": "需要更新才能繼續收發訊息。"
   }
 }

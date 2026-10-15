@@ -14,10 +14,13 @@ import {
   loadCachedUpdateManifest,
   updateManifestUrl,
 } from '../../updater/tellomiUpdateManifest.node.ts';
+import { DialogType } from '../../types/Dialogs.std.ts';
 import {
   desktopBuild,
   evaluateUpdateTier,
   parseUpdateManifest,
+  requiredButtonState,
+  shouldAutoShowRequiredLayer,
   shouldShowRecommendedCard,
 } from '../../util/tellomiUpdateManifest.std.ts';
 
@@ -226,6 +229,73 @@ describe('Tellomi update manifest (Desktop)', () => {
         )
       );
       assert.isFalse(shouldShowRecommendedCard({ tier: 'none' }, undefined));
+    });
+  });
+
+  describe('shouldAutoShowRequiredLayer', () => {
+    it('shows the update-required page unless this app version chose read-only', () => {
+      const required = {
+        tier: 'required' as const,
+        latestVersion: '0.1.13',
+        requiredReason: 'security' as const,
+      };
+      assert.isTrue(shouldAutoShowRequiredLayer(required, undefined, '0.1.12'));
+      assert.isFalse(
+        shouldAutoShowRequiredLayer(required, '0.1.12', '0.1.12'),
+        'chose "just view my chats" on this version'
+      );
+      assert.isTrue(
+        shouldAutoShowRequiredLayer(required, '0.1.11', '0.1.12'),
+        'the choice was made on an older version'
+      );
+      assert.isFalse(
+        shouldAutoShowRequiredLayer(
+          { tier: 'recommended', latestVersion: '0.1.13' },
+          undefined,
+          '0.1.12'
+        )
+      );
+    });
+  });
+
+  describe('requiredButtonState', () => {
+    it('follows the self-updater: update, downloading with progress, restart', () => {
+      assert.deepEqual(requiredButtonState({ dialogType: DialogType.None }), {
+        kind: 'update',
+      });
+      assert.deepEqual(
+        requiredButtonState({ dialogType: DialogType.DownloadReady }),
+        { kind: 'update' }
+      );
+      assert.deepEqual(
+        requiredButtonState({
+          dialogType: DialogType.Downloading,
+          downloadSize: 200,
+          downloadedSize: 85,
+        }),
+        { kind: 'downloading', percent: 42 }
+      );
+      assert.deepEqual(
+        requiredButtonState({
+          dialogType: DialogType.Downloading,
+          downloadSize: 100,
+          downloadedSize: 130,
+        }),
+        { kind: 'downloading', percent: 100 }
+      );
+      assert.deepEqual(
+        requiredButtonState({ dialogType: DialogType.Downloading }),
+        { kind: 'downloading', percent: undefined },
+        'size not known yet'
+      );
+      assert.deepEqual(
+        requiredButtonState({ dialogType: DialogType.DownloadedUpdate }),
+        { kind: 'restart' }
+      );
+      assert.deepEqual(
+        requiredButtonState({ dialogType: DialogType.AutoUpdate }),
+        { kind: 'restart' }
+      );
     });
   });
 

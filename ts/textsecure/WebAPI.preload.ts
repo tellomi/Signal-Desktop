@@ -2002,6 +2002,13 @@ export async function reconnect(): Promise<void> {
   await socketManager.reconnect();
 }
 
+// Tellomi (tellomi/tellomi#1399): leave the update manifest's read-only mode.
+export async function tellomiLiftUpdateRequired(): Promise<void> {
+  await socketManager.tellomiLiftUpdateRequired(
+    username && password ? { username, password } : undefined
+  );
+}
+
 export function registerRequestHandler(handler: IRequestHandler): void {
   socketManager.registerRequestHandler(handler);
 }

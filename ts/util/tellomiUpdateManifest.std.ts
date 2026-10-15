@@ -8,6 +8,8 @@
 //   判档：requiredMinBuild > build 且（没有 requiredFrom 或已到时间）→ 必须；否则还没到时间的必须、或 recommendedMinBuild > build → 推荐；
 //         否则 latest.build > build → 可选；否则不提示。
 
+import { DialogType } from '../types/Dialogs.std.ts';
+
 const UPDATE_MANIFEST_NAME = 'tellomi-update';
 const UPDATE_MANIFEST_SCHEMA = 1;
 const UPDATE_MANIFEST_PLATFORM = 'desktop';
@@ -226,4 +228,52 @@ export function shouldShowRecommendedCard(
     state.latestVersion !== undefined &&
     state.latestVersion !== seenVersion
   );
+}
+
+/**
+ * 必须档：选过「暂不更新，只看聊天记录」的同一个 App 版本不再自动弹阻断页（spec §3.4「时机」）；左栏红色横幅的「更新」随时能打开。
+ * `chosenVersion` = 选只读时的 App 版本（tellomiUpdateReadOnlyChosenVersion）。
+ */
+export function shouldAutoShowRequiredLayer(
+  state: UpdateTierState,
+  chosenVersion: string | undefined,
+  appVersion: string
+): boolean {
+  return state.tier === 'required' && chosenVersion !== appVersion;
+}
+
+export type UpdateRequiredButtonState =
+  | Readonly<{ kind: 'update' }>
+  | Readonly<{ kind: 'restart' }>
+  | Readonly<{ kind: 'downloading'; percent: number | undefined }>;
+
+/**
+ * 阻断页主按钮跟着自更新器（redux updates）走：下载好了 → 重启并更新；正在下载 → 下载中 x%（大小未知时不写数）；
+ * 其余 → 立即更新（点了照 getBuildUpgradeAction：更新器手上有包就下载 / 安装，没有就打开下载页）。
+ */
+export function requiredButtonState(
+  updates: Readonly<{
+    dialogType: DialogType;
+    downloadSize?: number;
+    downloadedSize?: number;
+  }>
+): UpdateRequiredButtonState {
+  if (
+    updates.dialogType === DialogType.AutoUpdate ||
+    updates.dialogType === DialogType.DownloadedUpdate
+  ) {
+    return { kind: 'restart' };
+  }
+  if (updates.dialogType === DialogType.Downloading) {
+    const { downloadSize, downloadedSize } = updates;
+    if (downloadSize === undefined || downloadSize <= 0) {
+      return { kind: 'downloading', percent: undefined };
+    }
+    const percent = Math.floor(((downloadedSize ?? 0) * 100) / downloadSize);
+    return {
+      kind: 'downloading',
+      percent: Math.min(100, Math.max(0, percent)),
+    };
+  }
+  return { kind: 'update' };
 }

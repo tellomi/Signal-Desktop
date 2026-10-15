@@ -1295,7 +1295,7 @@ async function startApp(): Promise<void> {
         () => window.getSocketStatus().authenticated.status
       );
       initializeUpdateListener(window.reduxActions.updates);
-      // Tellomi (tellomi/tellomi#1399): the update manifest's recommended card (and, next, the required layer).
+      // Tellomi (tellomi/tellomi#1399): the update manifest's recommended card and update-required page.
       initializeTellomiUpdateTier();
       calling.initialize(
         {

@@ -20,6 +20,10 @@ export type UpdatesStateType = ReadonlyDeep<{
   showEventsCount: number;
   isCheckingForUpdates: boolean;
   version?: string;
+  // Tellomi (tellomi/tellomi#1399): the update manifest requires an update, so this version is read-only -- the socket
+  // is off and the left pane shows a red banner -- until the update or until the manifest withdraws the requirement
+  // (services/tellomiUpdateTier).
+  tellomiReadOnly?: boolean;
 }>;
 
 // Actions
@@ -31,6 +35,7 @@ const START_UPDATE = 'updates/START_UPDATE';
 const CHECK_FOR_UPDATES = 'updates/CHECK_FOR_UPDATES';
 const CHECK_FOR_UPDATES_FINISHED = 'updates/CHECK_FOR_UPDATES_FINISHED';
 const UNSNOOZE_UPDATE = 'updates/UNSNOOZE_UPDATE';
+const TELLOMI_SET_READ_ONLY = 'updates/TELLOMI_SET_READ_ONLY';
 
 export type UpdateDialogOptionsType = ReadonlyDeep<{
   downloadSize?: number;
@@ -71,6 +76,11 @@ type UnsnoozeUpdateActionType = ReadonlyDeep<{
   payload: DialogType;
 }>;
 
+type TellomiSetReadOnlyActionType = ReadonlyDeep<{
+  type: typeof TELLOMI_SET_READ_ONLY;
+  payload: boolean;
+}>;
+
 export type UpdatesActionType = ReadonlyDeep<
   | DismissDialogActionType
   | ShowUpdateDialogActionType
@@ -79,6 +89,7 @@ export type UpdatesActionType = ReadonlyDeep<
   | CheckForUpdatesActionType
   | CheckForUpdatesFinishedActionType
   | UnsnoozeUpdateActionType
+  | TellomiSetReadOnlyActionType
 >;
 
 // Action Creators
@@ -179,12 +190,20 @@ function forceUpdate(): ThunkAction<
   };
 }
 
+function tellomiSetReadOnly(readOnly: boolean): TellomiSetReadOnlyActionType {
+  return {
+    type: TELLOMI_SET_READ_ONLY,
+    payload: readOnly,
+  };
+}
+
 export const actions = {
   dismissDialog,
   showUpdateDialog,
   snoozeUpdate,
   startUpdate,
   forceUpdate,
+  tellomiSetReadOnly,
 };
 
 export const useUpdatesActions = (): BoundActionCreatorsMapObject<
@@ -246,6 +265,13 @@ export function reducer(
     return {
       ...state,
       isCheckingForUpdates: false,
+    };
+  }
+
+  if (action.type === TELLOMI_SET_READ_ONLY) {
+    return {
+      ...state,
+      tellomiReadOnly: action.payload,
     };
   }
 

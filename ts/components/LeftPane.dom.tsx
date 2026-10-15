@@ -51,6 +51,7 @@ import { ContactCheckboxDisabledReason } from './conversationList/ContactCheckbo
 import type { PropsType as DialogClockSkewPropsType } from './DialogClockSkew.dom.tsx';
 import type { PropsType as DialogExpiredBuildPropsType } from './DialogExpiredBuild.dom.tsx';
 import type { PropsType as DialogExpiringBuildPropsType } from './DialogExpiringBuild.dom.tsx';
+import { DialogTellomiUpdateRequired } from './DialogTellomiUpdateRequired.dom.tsx';
 import { LeftPaneBanner } from './LeftPaneBanner.dom.tsx';
 
 import type {
@@ -95,6 +96,10 @@ export type PropsType = {
   hasExpiredDialog: boolean;
   // Tellomi (tellomi/tellomi#1269): days left while inside the "expires soon" window, otherwise undefined.
   buildExpiresInDays: number | undefined;
+  // Tellomi (tellomi/tellomi#1399): read-only because the update manifest requires an update; the banner reopens
+  // the update-required page.
+  isTellomiUpdateRequired: boolean;
+  onShowTellomiUpdateRequired: () => void;
   hasFailedStorySends: boolean;
   hasNetworkDialog: boolean;
   hasPendingUpdate: boolean;
@@ -251,6 +256,8 @@ export function LeftPane({
   hasClockSkewDialog,
   hasExpiredDialog,
   buildExpiresInDays,
+  isTellomiUpdateRequired,
+  onShowTellomiUpdateRequired,
   hasFailedStorySends,
   hasNetworkDialog,
   hasPendingUpdate,
@@ -732,6 +739,13 @@ export function LeftPane({
       ...commonDialogProps,
       isMAS,
     });
+  } else if (isTellomiUpdateRequired) {
+    maybeRedDialog = (
+      <DialogTellomiUpdateRequired
+        {...commonDialogProps}
+        onShowUpdateRequired={onShowTellomiUpdateRequired}
+      />
+    );
   } else if (hasClockSkewDialog) {
     maybeRedDialog = renderClockSkewDialog(commonDialogProps);
   }

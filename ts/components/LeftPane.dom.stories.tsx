@@ -201,6 +201,8 @@ const useProps = (overrideProps: OverridePropsType = {}): PropsType => {
     hasNetworkDialog: false,
     hasExpiredDialog: false,
     buildExpiresInDays: undefined,
+    isTellomiUpdateRequired: false,
+    onShowTellomiUpdateRequired: action('onShowTellomiUpdateRequired'),
     hasRelinkDialog: false,
     hasUpdateDialog: false,
     unsupportedOSDialogType: undefined,
@@ -524,6 +526,17 @@ export function InboxExpiringBuildWithUpdateAndNetworkDialogs(): JSX.Element {
         hasNetworkDialog: true,
         isUpdateDownloaded: true,
         dialogUpdate: { dialogType: DialogType.AutoUpdate },
+      })}
+    />
+  );
+}
+
+// Tellomi（#1399）：清单要求更新、这一版只读时的红色横幅（点了重新打开阻断页）。
+export function InboxTellomiUpdateRequired(): JSX.Element {
+  return (
+    <LeftPaneInContainer
+      {...useProps({
+        isTellomiUpdateRequired: true,
       })}
     />
   );

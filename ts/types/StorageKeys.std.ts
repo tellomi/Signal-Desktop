@@ -162,6 +162,8 @@ export type StorageAccessType = {
   tellomiExpandShortLinks: boolean;
   // Tellomi（tellomi/tellomi#1399）：推荐档的卡片弹过的版本（同一版本只弹一次），见 services/tellomiUpdateTier
   tellomiUpdateCardSeenVersion: string;
+  // Tellomi（tellomi/tellomi#1399）：必须档里选「暂不更新，只看聊天记录」时的 App 版本（同一版本不再自动弹阻断页）
+  tellomiUpdateReadOnlyChosenVersion: string;
   universalExpireTimer: number;
   retryPlaceholders: ReadonlyArray<RetryItemType>;
   donationPermits: string;
@@ -422,6 +424,8 @@ export const STORAGE_KEYS_TO_PRESERVE_AFTER_UNLINK = [
   'tellomiExpandShortLinks',
   // Tellomi (tellomi/tellomi#1399): the recommended-update card this device has already shown.
   'tellomiUpdateCardSeenVersion',
+  // Tellomi (tellomi/tellomi#1399): this device chose read-only for this app version when an update was required.
+  'tellomiUpdateReadOnlyChosenVersion',
 
   // Bookkeeping keys
   'attachmentMigration_lastProcessedIndex',
