@@ -419,6 +419,7 @@ export namespace Emoji {
   export const REPEAT = PARENT_AND_ONLY_VARIANT('🔁');
   export const ROCKET = PARENT_AND_ONLY_VARIANT('🚀');
   export const ROSE = PARENT_AND_ONLY_VARIANT('🌹');
+  export const ROUND_PUSHPIN = PARENT_AND_ONLY_VARIANT('📍');
   export const SHARK = PARENT_AND_ONLY_VARIANT('🦈');
   export const SHRUG = PARENT('🤷');
   export const SHUSHING_FACE = PARENT_AND_ONLY_VARIANT('🤫');

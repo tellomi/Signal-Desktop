@@ -8,6 +8,7 @@ import classNames from 'classnames';
 import type { ReactNode, JSX, KeyboardEvent, MouseEvent } from 'react';
 
 import * as MIME from '../../types/MIME.std.ts';
+import { isTellomiQuotedLocation } from '../../util/tellomiLocationMessage.std.ts';
 import * as GoogleChrome from '../../util/GoogleChrome.std.ts';
 import { MessageBody } from './MessageBody.dom.tsx';
 import { ContactName, GroupMemberLabel } from './ContactName.dom.tsx';
@@ -376,7 +377,13 @@ export function Quote(props: Props): JSX.Element | null {
   }
 
   function renderText() {
-    if (text && !isGiftBadge) {
+    // Tellomi (spec attachment-files-location): a quoted location says "Location" next to its map, like "Photo"
+    // for a photo (Signal-iOS#296, Signal-Android#366; Telegram: Location), not the name, address and link.
+    const isTellomiLocation = isTellomiQuotedLocation(
+      text,
+      getAttachment(rawAttachment)
+    );
+    if (text && !isGiftBadge && !isTellomiLocation) {
       return (
         <div
           dir="auto"
@@ -405,6 +412,8 @@ export function Quote(props: Props): JSX.Element | null {
 
     if (isGiftBadge) {
       typeLabel = i18n('icu:quote--donation');
+    } else if (isTellomiLocation) {
+      typeLabel = i18n('icu:message--getNotificationText--tellomi-location');
     } else if (attachment) {
       const { contentType, isVoiceMessage } = attachment;
       typeLabel = getTypeLabel({

@@ -2948,6 +2948,9 @@
   "icu:message--getNotificationText--photo": {
     "messageformat": "照片"
   },
+  "icu:message--getNotificationText--tellomi-location": {
+    "messageformat": "位置"
+  },
   "icu:message--getNotificationText--tellomi-live-photo": {
     "messageformat": "原況相片"
   },

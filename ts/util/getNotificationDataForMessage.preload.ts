@@ -63,6 +63,7 @@ import { missingCaseError } from './missingCaseError.std.ts';
 import { getUserConversationId } from '../state/selectors/user.std.ts';
 import { itemStorage } from '../textsecure/Storage.preload.ts';
 import { Emoji } from '../axo/emoji.std.ts';
+import { isTellomiLocationMessage } from './tellomiLocationMessage.std.ts';
 
 const log = createLogger('getNotificationDataForMessage');
 const { i18n } = window.SignalContext;
@@ -374,6 +375,14 @@ export function getNotificationDataForMessage(
       };
     }
 
+    // Tellomi (spec attachment-files-location): a location (map image + maps link) reads "📍 Location", not the name,
+    // address and link, as on the phones (Signal-iOS#296, Signal-Android#366) and in Telegram.
+    if (isTellomiLocationMessage(body, attachments)) {
+      return {
+        emoji: Emoji.ROUND_PUSHPIN,
+        text: i18n('icu:message--getNotificationText--tellomi-location'),
+      };
+    }
     if (contentType === MIME.IMAGE_GIF || Attachment.isGIF(attachments)) {
       return {
         bodyRanges,

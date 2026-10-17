@@ -3910,6 +3910,10 @@
     "messageformat": "Photo",
     "description": "Shown in notifications and in the left pane when a photo is received."
   },
+  "icu:message--getNotificationText--tellomi-location": {
+    "messageformat": "Location",
+    "description": "Tellomi (spec attachment-files-location): shown in notifications, in the left pane and in a quote for a location message (a map image and a maps.google.com link), like the phones' \"📍 Location\" (Telegram: Location)."
+  },
   "icu:message--getNotificationText--tellomi-live-photo": {
     "messageformat": "Live Photo",
     "description": "Tellomi (tellomi/tellomi#1263, spec R-2): shown in notifications and in the left pane when a live photo (a still with a few seconds of video) is received."
