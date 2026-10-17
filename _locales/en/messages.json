@@ -12433,6 +12433,22 @@
     "messageformat": "Update Tellomi to keep sending and receiving messages.",
     "description": "Tellomi (tellomi/tellomi#1399): red banner above the chat list while this version is read-only because an update is required; clicking it opens the update-required page again."
   },
+  "icu:TellomiRestriction__stranger": {
+    "messageformat": "Your account can't message people who aren't your contacts until {until} because it broke the Tellomi Community Guidelines. Contacts you've already connected with aren't affected.",
+    "description": "Tellomi (tellomi/tellomi ADR-0078 §3.4): banner above the chat list while the account may not message non-contacts. {until} is a localized date and time."
+  },
+  "icu:TellomiRestriction__all": {
+    "messageformat": "Your account can't send messages until {until} because it broke the Tellomi Community Guidelines. You can still receive messages and read your chats.",
+    "description": "Tellomi (ADR-0078 §3.4): banner above the chat list while the account may not send any messages. {until} is a localized date and time."
+  },
+  "icu:TellomiRestriction__appeal--case": {
+    "messageformat": "If you think this is a mistake, email {email} and include case number {caseNumber}.",
+    "description": "Tellomi (ADR-0078 §3.4): second sentence of the restriction banner. {email} is the appeal address, {caseNumber} the case number to quote."
+  },
+  "icu:TellomiRestriction__appeal": {
+    "messageformat": "If you think this is a mistake, email {email}.",
+    "description": "Tellomi (ADR-0078 §3.4): second sentence of the restriction banner when the server sent no case number."
+  },
   "icu:TellomiUpdateRequired__input_needs_update": {
     "messageformat": "This version needs an update to send and receive messages.",
     "description": "Tellomi (tellomi/tellomi#1399): replaces the message composer while this version is read-only (the server rejected it, an update is required, or the build expired). Same wording as Android."

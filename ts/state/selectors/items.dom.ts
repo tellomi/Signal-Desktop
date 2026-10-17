@@ -306,6 +306,12 @@ export const getServerAlerts = createSelector(
   (state: ItemsStateType) => state.serverAlerts ?? {}
 );
 
+// Tellomi（tellomi/tellomi ADR-0078 §3.4）：服务端最近一次说的人工处置（services/tellomiRestriction 到期时清掉）
+export const getTellomiRestriction = createSelector(
+  getItems,
+  (state: ItemsStateType) => state.tellomiRestriction
+);
+
 export const getSeenPinMessageDisappearingMessagesWarningCount: StateSelector<number> =
   createSelector(
     getItems,

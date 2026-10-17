@@ -16,6 +16,15 @@ import {
 import { SEALED_SENDER } from '../types/SealedSender.std.ts';
 import type { ServiceIdString } from '../types/ServiceId.std.ts';
 import { drop } from './drop.std.ts';
+import { itemStorage } from '../textsecure/Storage.preload.ts';
+import {
+  noteTellomiRestriction,
+  refreshTellomiRestriction,
+} from '../services/tellomiRestriction.preload.ts';
+import {
+  isTellomiRestrictionActive,
+  tellomiRestrictionFromSendError,
+} from './tellomiRestriction.std.ts';
 
 const { isBoolean, isNumber } = lodash;
 
@@ -110,7 +119,33 @@ export function shouldSaveProto(sendType: SendTypesType): boolean {
   return true;
 }
 
+// Tellomi（ADR-0078 §3.4）：被人工处置的账号发消息被拒（403）不是对方的问题——不能因此把对方标成不支持密封发送
+// （「限制全部发送」时证书取不到、全部退回非密封，不挡的话每个联系人都会被标掉，解除后也一直走非密封）。
+// 带说明的 403 记下说明；读不到 body 的 403（libsignal 发送路径）去问一次服务端。
+// 只看 403：401 是密封发送的访问密钥不对，照上游处理。
+function isTellomiRestrictedSendError(error: unknown): boolean {
+  const restriction = tellomiRestrictionFromSendError(error);
+  if (restriction) {
+    noteTellomiRestriction(restriction);
+    return true;
+  }
+  const codes = [error, (error as { cause?: unknown }).cause].map(
+    e => (e as { code?: unknown } | undefined)?.code
+  );
+  if (!codes.includes(403)) {
+    return false;
+  }
+  drop(refreshTellomiRestriction('send-403'));
+  return isTellomiRestrictionActive(
+    itemStorage.get('tellomiRestriction'),
+    Date.now()
+  );
+}
+
 function processError(error: unknown): void {
+  if (isTellomiRestrictedSendError(error)) {
+    return;
+  }
   if (
     error instanceof OutgoingMessageError ||
     error instanceof SendMessageNetworkError

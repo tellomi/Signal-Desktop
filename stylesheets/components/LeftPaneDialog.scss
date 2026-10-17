@@ -370,3 +370,8 @@
     }
   }
 }
+
+// Tellomi (tellomi/tellomi ADR-0078 §3.4): the restriction banner names an appeal address and a case number; let people copy them.
+.DialogTellomiRestriction__text {
+  user-select: text;
+}

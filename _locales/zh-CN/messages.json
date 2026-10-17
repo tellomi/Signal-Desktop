@@ -9348,6 +9348,18 @@
   "icu:TellomiUpdateRequired__read_only_banner": {
     "messageformat": "需要更新才能继续收发消息。"
   },
+  "icu:TellomiRestriction__stranger": {
+    "messageformat": "你的账号因违反《Tellomi 社区规范与平台公约》，暂时不能给还不是你联系人的人发消息，{until} 恢复。已经互相加过的联系人不受影响。"
+  },
+  "icu:TellomiRestriction__all": {
+    "messageformat": "你的账号因违反《Tellomi 社区规范与平台公约》，暂时不能发送消息，{until} 恢复。你仍然可以接收消息、查看聊天记录。"
+  },
+  "icu:TellomiRestriction__appeal--case": {
+    "messageformat": "如有异议，请发邮件到 {email} 申诉，并附上处置编号 {caseNumber}。"
+  },
+  "icu:TellomiRestriction__appeal": {
+    "messageformat": "如有异议，请发邮件到 {email} 申诉。"
+  },
   "icu:TellomiUpdateRequired__input_needs_update": {
     "messageformat": "此版本需要更新才能收发消息。"
   },

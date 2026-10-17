@@ -815,6 +815,8 @@ const CHAT_CALLS = {
   storageToken: 'v1/storage/auth',
   subscriptions: 'v1/subscription',
   subscriptionConfiguration: 'v1/subscription/configuration',
+  // Tellomi (tellomi/tellomi ADR-0078 §3.4): this account's active moderation restriction, if any.
+  tellomiRestriction: 'v1/tellomi/restriction',
   transferArchive: 'v1/devices/transfer_archive',
   confirmUsername: 'v1/accounts/username_hash/confirm',
   whoami: 'v1/accounts/whoami',
@@ -2095,6 +2097,18 @@ export async function getSenderCertificate(
     // TODO DESKTOP-8719
     zodSchema: z.unknown(),
   })) as GetSenderCertificateResultType;
+}
+
+// Tellomi（tellomi/tellomi ADR-0078 §3.4）：这个账号现在有没有生效的人工处置。有就是
+// {tellomiRestriction:{…}}（200），没有是 204（这里拿到空字符串）；由 util/tellomiRestriction 解析。
+export async function getTellomiRestriction(): Promise<unknown> {
+  return _ajax({
+    host: 'chatService',
+    call: 'tellomiRestriction',
+    httpType: 'GET',
+    responseType: 'json',
+    zodSchema: z.unknown(),
+  });
 }
 
 export async function getStorageCredentials(): Promise<StorageServiceCredentials> {

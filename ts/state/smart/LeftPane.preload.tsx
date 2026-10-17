@@ -1,7 +1,7 @@
 // Copyright 2019 Signal Messenger, LLC
 // SPDX-License-Identifier: AGPL-3.0-only
 
-import { memo, useCallback, type JSX } from 'react';
+import { memo, useCallback, useMemo, type JSX } from 'react';
 import { useSelector } from 'react-redux';
 import { createSelector } from 'reselect';
 import type { PropsType as DialogExpiredBuildPropsType } from '../../components/DialogExpiredBuild.dom.tsx';
@@ -76,6 +76,7 @@ import {
   getNavTabsCollapsed,
   getPreferredLeftPaneWidth,
   getServerAlerts,
+  getTellomiRestriction,
   getUsernameCorrupted,
   getUsernameLinkCorrupted,
 } from '../selectors/items.dom.ts';
@@ -144,6 +145,8 @@ import { NavTab, SettingsPage } from '../../types/Nav.std.ts';
 import { SmartNotificationProfilesMenu } from './NotificationProfilesMenu.preload.tsx';
 import { getActiveProfile } from '../selectors/notificationProfiles.dom.ts';
 import type { StateSelector } from '../types.std.ts';
+import { formatTimestamp } from '../../util/formatTimestamp.dom.ts';
+import { tellomiRestrictionMessageKeys } from '../../util/tellomiRestriction.std.ts';
 import {
   DialogClockSkew,
   type PropsType as DialogClockSkewPropsType,
@@ -373,6 +376,7 @@ export const SmartLeftPane = memo(function SmartLeftPane({
   // Tellomi (tellomi/tellomi#1399): read-only until the required update; being offline is expected then, so no
   // network dialog on top of the red banner.
   const isTellomiUpdateRequired = useSelector(getTellomiUpdateReadOnly);
+  const storedTellomiRestriction = useSelector(getTellomiRestriction);
   const hasAnyCurrentCustomChatFolders = useSelector(
     getHasAnyCurrentCustomChatFolders
   );
@@ -382,6 +386,31 @@ export const SmartLeftPane = memo(function SmartLeftPane({
   const hasUnsupportedOS = useSelector(isOSUnsupported);
   const hasUpdateDialog = useSelector(isUpdateDialogVisible);
   const i18n = useSelector(getIntl);
+  // Tellomi（ADR-0078 §3.4）：截止时间按本机语言和时区显示到分钟。过期的由 services/tellomiRestriction 清掉
+  // （启动时、到点时），这里不再判断时间（渲染里不读时钟）
+  const tellomiRestriction = useMemo(() => {
+    if (!storedTellomiRestriction) {
+      return undefined;
+    }
+    const keys = tellomiRestrictionMessageKeys(storedTellomiRestriction);
+    const until = formatTimestamp(storedTellomiRestriction.until, {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+    });
+    return {
+      body: i18n(keys.body, { until }),
+      appeal:
+        keys.appeal === 'icu:TellomiRestriction__appeal--case'
+          ? i18n(keys.appeal, {
+              email: storedTellomiRestriction.appeal,
+              caseNumber: storedTellomiRestriction.caseId ?? '',
+            })
+          : i18n(keys.appeal, { email: storedTellomiRestriction.appeal }),
+    };
+  }, [i18n, storedTellomiRestriction]);
   const isMacOS = useSelector(getIsMacOS);
   const isUpdateDownloaded = useSelector(getIsUpdateDownloaded);
   const modeSpecificProps = useSelector(getModeSpecificProps);
@@ -523,6 +552,7 @@ export const SmartLeftPane = memo(function SmartLeftPane({
       buildExpiresInDays={hasAppExpired ? undefined : buildExpiresInDays}
       isTellomiUpdateRequired={isTellomiUpdateRequired}
       onShowTellomiUpdateRequired={showTellomiUpdateRequired}
+      tellomiRestriction={tellomiRestriction}
       hasFailedStorySends={hasFailedStorySends}
       hasNetworkDialog={hasNetworkDialog && !isTellomiUpdateRequired}
       hasPendingUpdate={hasPendingUpdate}

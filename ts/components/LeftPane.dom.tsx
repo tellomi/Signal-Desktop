@@ -52,6 +52,7 @@ import type { PropsType as DialogClockSkewPropsType } from './DialogClockSkew.do
 import type { PropsType as DialogExpiredBuildPropsType } from './DialogExpiredBuild.dom.tsx';
 import type { PropsType as DialogExpiringBuildPropsType } from './DialogExpiringBuild.dom.tsx';
 import { DialogTellomiUpdateRequired } from './DialogTellomiUpdateRequired.dom.tsx';
+import { DialogTellomiRestriction } from './DialogTellomiRestriction.dom.tsx';
 import { LeftPaneBanner } from './LeftPaneBanner.dom.tsx';
 
 import type {
@@ -100,6 +101,8 @@ export type PropsType = {
   // the update-required page.
   isTellomiUpdateRequired: boolean;
   onShowTellomiUpdateRequired: () => void;
+  // Tellomi（ADR-0078 §3.4）：账号被人工处置时的说明（两句，已按语言拼好）；没有处置是 undefined
+  tellomiRestriction?: { body: string; appeal: string };
   hasFailedStorySends: boolean;
   hasNetworkDialog: boolean;
   hasPendingUpdate: boolean;
@@ -258,6 +261,7 @@ export function LeftPane({
   buildExpiresInDays,
   isTellomiUpdateRequired,
   onShowTellomiUpdateRequired,
+  tellomiRestriction,
   hasFailedStorySends,
   hasNetworkDialog,
   hasPendingUpdate,
@@ -748,6 +752,11 @@ export function LeftPane({
     );
   } else if (hasClockSkewDialog) {
     maybeRedDialog = renderClockSkewDialog(commonDialogProps);
+  } else if (tellomiRestriction) {
+    // Tellomi（ADR-0078 §3.4）：被处置时排在红色那一格（比「快到期」更要紧：现在就发不出去）
+    maybeRedDialog = (
+      <DialogTellomiRestriction {...commonDialogProps} {...tellomiRestriction} />
+    );
   }
 
   // Tellomi（#1269）：owner 规则是「已过期 > 到期前 14 天提示 > 更新提示」，所以没有红色提示时它占红色那一格（后面照旧跟

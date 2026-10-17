@@ -28,6 +28,7 @@ import type { PhoneNumberSharingMode } from './PhoneNumberSharingMode.std.ts';
 import type { LocalBackupExportMetadata } from './LocalExport.std.ts';
 import type { ServerAlertsType } from './ServerAlert.std.ts';
 import type { AssertSameMembers } from './Util.std.ts';
+import type { TellomiRestriction } from '../util/tellomiRestriction.std.ts';
 import type { Emoji } from '../axo/emoji.std.ts';
 import type { PartialRegistrationType } from './StandaloneRegistration.std.ts';
 import type { RegistrationQueueJobState } from '../jobs/registrationJobQueue.preload.ts';
@@ -164,6 +165,9 @@ export type StorageAccessType = {
   tellomiUpdateCardSeenVersion: string;
   // Tellomi（tellomi/tellomi#1399）：必须档里选「暂不更新，只看聊天记录」时的 App 版本（同一版本不再自动弹阻断页）
   tellomiUpdateReadOnlyChosenVersion: string;
+  // Tellomi（tellomi/tellomi ADR-0078 §3.4）：服务端最近一次告诉这台设备的人工处置（截止时间到了自动清掉），
+  // 左栏横幅显示它，见 services/tellomiRestriction
+  tellomiRestriction: TellomiRestriction;
   universalExpireTimer: number;
   retryPlaceholders: ReadonlyArray<RetryItemType>;
   donationPermits: string;
@@ -639,6 +643,8 @@ const STORAGE_KEYS_TO_REMOVE_AFTER_UNLINK = [
   'payments',
   // Tellomi（tellomi/tellomi#1338）：解除关联后清掉，重新关联前再出一次跨境告知（需求说明 6.1 ④「首次打开 / 重新关联时」）
   'tellomiCrossBorderNoticeVersion',
+  // Tellomi（tellomi/tellomi ADR-0078 §3.4）：是这个账号的处置，换账号关联后不该还在
+  'tellomiRestriction',
 ] as const satisfies ReadonlyArray<keyof StorageAccessType>;
 
 // Ensure every storage key is explicitly marked to be preserved or removed on unlink.

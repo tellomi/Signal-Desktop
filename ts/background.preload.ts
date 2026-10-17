@@ -76,6 +76,10 @@ import {
   initializeTellomiUpdateTier,
   tellomiOnServerRejected,
 } from './services/tellomiUpdateTier.preload.ts';
+import {
+  initializeTellomiRestriction,
+  onTellomiAuthConnect,
+} from './services/tellomiRestriction.preload.ts';
 import { RoutineProfileRefresher } from './routineProfileRefresh.preload.ts';
 import { isOlderThan } from './util/timestamp.std.ts';
 import { safeParsePartial } from './util/schemas.std.ts';
@@ -1300,6 +1304,8 @@ async function startApp(): Promise<void> {
       initializeUpdateListener(window.reduxActions.updates);
       // Tellomi (tellomi/tellomi#1399): the update manifest's recommended card and update-required page.
       initializeTellomiUpdateTier();
+      // Tellomi (tellomi/tellomi ADR-0078 §3.4): the moderation-restriction banner.
+      initializeTellomiRestriction();
       calling.initialize(
         {
           ...window.reduxActions.calling,
@@ -2166,6 +2172,8 @@ async function startApp(): Promise<void> {
     drop(challengeHandler.onOnline());
 
     reconnectBackOff.reset();
+    // Tellomi (ADR-0078 §3.4): ask whether this account is restricted (at most every 6 hours).
+    onTellomiAuthConnect();
     drop(initializeGroupCredentialFetcher());
     drop(AttachmentDownloadManager.start());
 

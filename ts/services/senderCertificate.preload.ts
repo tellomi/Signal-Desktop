@@ -15,6 +15,8 @@ import { waitForOnline } from '../util/waitForOnline.dom.ts';
 import { createLogger } from '../logging/log.std.ts';
 import type { StorageInterface } from '../types/Storage.d.ts';
 import * as Errors from '../types/errors.std.ts';
+import { noteTellomiRestriction } from './tellomiRestriction.preload.ts';
+import { tellomiRestrictionFromSendError } from '../util/tellomiRestriction.std.ts';
 import type {
   isOnline,
   getSenderCertificate,
@@ -183,6 +185,11 @@ export class SenderCertificateService {
         )} certificate. Returning undefined`,
         Errors.toLogFormat(err)
       );
+      // Tellomi（ADR-0078 §3.4）：「限制全部发送」时服务端不签证书，403 里带着说明
+      const restriction = tellomiRestrictionFromSendError(err);
+      if (restriction) {
+        noteTellomiRestriction(restriction);
+      }
       return undefined;
     }
     const certificate = Bytes.fromBase64(certificateString);
