@@ -570,6 +570,10 @@ export async function handleDataMessage(
         ...(dataMessage.tellomiMessageCaption
           ? { tellomiMessageCaption: dataMessage.tellomiMessageCaption }
           : {}),
+        // Tellomi (ADR-0079)
+        ...(dataMessage.tellomiViewOnceSeconds != null
+          ? { tellomiViewOnceSeconds: dataMessage.tellomiViewOnceSeconds }
+          : {}),
         mentionsMe: (dataMessage.bodyRanges ?? []).some(bodyRange => {
           if (!BodyRange.isMention(bodyRange)) {
             return false;

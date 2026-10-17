@@ -42,6 +42,8 @@ import { Toast } from './Toast.dom.tsx';
 import { isAbortError } from '../util/isAbortError.std.ts';
 import { strictAssert } from '../util/assert.std.ts';
 import { AxoTheme } from '../axo/AxoTheme.dom.tsx';
+import { TellomiViewOnceCountdown } from './TellomiViewOnceCountdown.dom.tsx';
+import { getTellomiViewOnceViewerDurationMs } from '../util/tellomiViewOnceTimer.std.ts';
 
 const { noop } = lodash;
 
@@ -53,6 +55,8 @@ export type PropsType = {
   getConversation?: (id: string) => ConversationType;
   i18n: LocalizerType;
   isViewOnce?: boolean;
+  /** Tellomi (ADR-0079): a timed view-once closes itself after this many seconds. */
+  tellomiViewOnceSeconds?: number;
   media: ReadonlyArray<ReadonlyDeep<MediaItemType>>;
   playbackDisabled: boolean;
   saveAttachment: SaveAttachmentActionCreatorType;
@@ -108,6 +112,7 @@ export function Lightbox({
   media,
   i18n,
   isViewOnce = false,
+  tellomiViewOnceSeconds,
   saveAttachment,
   selectedIndex,
   toggleForwardMessagesModal,
@@ -167,6 +172,30 @@ export function Lightbox({
   const contentType = attachment?.contentType;
 
   const isAttachmentGIF = isGIF(attachment ? [attachment] : undefined);
+
+  // Tellomi (ADR-0079 §4.3): a timed view-once closes itself — a photo after the seconds, a video
+  // after the seconds or the whole video, whichever is longer (so it waits for the duration).
+  const isTellomiTimed = isViewOnce && tellomiViewOnceSeconds != null;
+  const isTellomiTimedVideo =
+    isTellomiTimed &&
+    contentType != null &&
+    GoogleChrome.isVideoTypeSupported(contentType);
+  const [tellomiVideoDuration, setTellomiVideoDuration] = useState<
+    number | undefined
+  >();
+  let tellomiCountdownMs: number | undefined;
+  if (tellomiViewOnceSeconds != null && isTellomiTimed) {
+    if (!isTellomiTimedVideo) {
+      tellomiCountdownMs = getTellomiViewOnceViewerDurationMs(
+        tellomiViewOnceSeconds
+      );
+    } else if (tellomiVideoDuration != null) {
+      tellomiCountdownMs = getTellomiViewOnceViewerDurationMs(
+        tellomiViewOnceSeconds,
+        tellomiVideoDuration
+      );
+    }
+  }
   const isDownloading =
     attachment &&
     isIncremental(attachment) &&
@@ -381,6 +410,30 @@ export function Lightbox({
       videoElement.removeEventListener('timeupdate', onTimeUpdate);
     };
   }, [isViewOnce, isAttachmentGIF, onTimeUpdate, playVideo, videoElement]);
+
+  // Tellomi (ADR-0079): the video's duration, for how long a timed view-once video stays open.
+  // A video that can't be read closes after the seconds.
+  useEffect(() => {
+    if (!isTellomiTimedVideo || !videoElement) {
+      return noop;
+    }
+    const read = () => {
+      setTellomiVideoDuration(
+        Number.isFinite(videoElement.duration) ? videoElement.duration : 0
+      );
+    };
+    const fail = () => setTellomiVideoDuration(0);
+    if (videoElement.readyState >= HTMLMediaElement.HAVE_METADATA) {
+      read();
+      return noop;
+    }
+    videoElement.addEventListener('loadedmetadata', read);
+    videoElement.addEventListener('error', fail);
+    return () => {
+      videoElement.removeEventListener('loadedmetadata', read);
+      videoElement.removeEventListener('error', fail);
+    };
+  }, [isTellomiTimedVideo, videoElement]);
 
   const [{ scale, translateX, translateY }, springApi] = useSpring(
     () => IMAGE_SPRING_PROPS
@@ -832,6 +885,14 @@ export function Lightbox({
                         className="Lightbox__button Lightbox__button--save"
                         onClick={handleSave}
                         type="button"
+                      />
+                    ) : null}
+                    {tellomiCountdownMs != null ? (
+                      <TellomiViewOnceCountdown
+                        durationMs={tellomiCountdownMs}
+                        i18n={i18n}
+                        key={currentItem?.message.id}
+                        onFinished={closeLightbox}
                       />
                     ) : null}
                     <button

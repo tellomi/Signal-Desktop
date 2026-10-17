@@ -17,6 +17,7 @@ import {
   getHasNextMessage,
   getPlaybackDisabled,
   getSelectedIndex,
+  getTellomiViewOnceSeconds,
   shouldShowLightbox,
 } from '../selectors/lightbox.std.ts';
 import { fetchTellomiLivePhotoVideo } from '../../messageModifiers/TellomiLivePhoto.preload.ts';
@@ -37,6 +38,7 @@ export const SmartLightbox = memo(function SmartLightbox() {
 
   const isShowingLightbox = useSelector(shouldShowLightbox);
   const isViewOnce = useSelector(getIsViewOnce);
+  const tellomiViewOnceSeconds = useSelector(getTellomiViewOnceSeconds);
   const media = useSelector(getMedia);
   const hasPrevMessage = useSelector(getHasPrevMessage);
   const hasNextMessage = useSelector(getHasNextMessage);
@@ -84,6 +86,7 @@ export const SmartLightbox = memo(function SmartLightbox() {
       getConversation={conversationSelector}
       i18n={i18n}
       isViewOnce={isViewOnce}
+      tellomiViewOnceSeconds={tellomiViewOnceSeconds}
       media={media}
       playbackDisabled={playbackDisabled}
       saveAttachment={saveAttachment}

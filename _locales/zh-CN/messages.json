@@ -2954,6 +2954,12 @@
   "icu:Lightbox--tellomi-live": {
     "messageformat": "实况"
   },
+  "icu:Lightbox--tellomi-view-once-closes-after": {
+    "messageformat": "{seconds, number} 秒后关闭"
+  },
+  "icu:Message--tellomi-view-once-with-seconds": {
+    "messageformat": "{title} · {seconds, number} 秒"
+  },
   "icu:Image--tellomi-live-photo-badge": {
     "messageformat": "实况照片"
   },

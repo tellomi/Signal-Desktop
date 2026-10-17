@@ -203,6 +203,7 @@ import type { PollTerminateNotificationDataType } from '../../components/convers
 import { Emoji } from '../../axo/emoji.std.ts';
 import { isDownloadableOrBackfillable } from '../../util/downloadAttachment.preload.ts';
 import { getTellomiBubbleCaption } from '../../util/tellomiCaptions.std.ts';
+import { getTellomiViewOnceSeconds } from '../../util/tellomiViewOnceTimer.std.ts';
 
 const { groupBy, isEmpty, isNumber, isObject, map } = lodash;
 
@@ -1226,6 +1227,11 @@ const getPropsForMessage = (
     isLinkCardOnly: !isMessageRequest && isLinkCardOnly(linkOnlyUrl, previews),
     // Tellomi (ADR-0068 §4.7)
     tellomiCaptionAboveMedia: message.tellomiCaptionAboveMedia === true,
+    // Tellomi (ADR-0079)
+    tellomiViewOnceSeconds: getTellomiViewOnceSeconds({
+      isViewOnce: message.isViewOnce,
+      seconds: message.tellomiViewOnceSeconds,
+    }),
     isMessageRequestAccepted,
     isPinned,
     isSelected,

@@ -3918,6 +3918,14 @@
     "messageformat": "Live",
     "description": "Tellomi (tellomi/tellomi#1263, spec R-2): in the media viewer, the button that plays a live photo's few seconds of video with sound, looping (Telegram: LIVE). Shown upper case."
   },
+  "icu:Lightbox--tellomi-view-once-closes-after": {
+    "messageformat": "{seconds, plural, one {Closes after # second} other {Closes after # seconds}}",
+    "description": "Tellomi (ADR-0079): accessibility label of the countdown ring in a timed view-once's viewer."
+  },
+  "icu:Message--tellomi-view-once-with-seconds": {
+    "messageformat": "{title} · {seconds, number} s",
+    "description": "Tellomi (ADR-0079): a view-once photo / video that closes this many seconds after it is opened says so in its bubble until it is viewed, e.g. \"Photo · 10 s\". title is the upstream label (Photo / Video / Media)."
+  },
   "icu:Image--tellomi-live-photo-badge": {
     "messageformat": "Live Photo",
     "description": "Tellomi (tellomi/tellomi#1263, spec R-2): accessible name of the badge in the corner of a live photo in the conversation."

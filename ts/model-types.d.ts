@@ -213,6 +213,9 @@ export type MessageAttributesType = {
   // Tellomi (ADR-0075): the caption for the whole message (per-media captions are on each
   // attachment's `caption`); `body` is the text for clients that don't know these.
   tellomiMessageCaption?: string;
+  // Tellomi (ADR-0079): a view-once that closes this many seconds after it is opened (3 / 10 / 30;
+  // videos max(duration, seconds)). Not in backups.
+  tellomiViewOnceSeconds?: number;
   editHistory?: ReadonlyArray<EditHistoryType>;
   editMessageTimestamp?: number;
   editMessageReceivedAt?: number;

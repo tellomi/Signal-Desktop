@@ -20,6 +20,15 @@ export const getIsViewOnce = createSelector(
   (state): boolean => (state.isShowingLightbox ? state.isViewOnce : false)
 );
 
+// Tellomi (ADR-0079)
+export const getTellomiViewOnceSeconds = createSelector(
+  getLightboxState,
+  (state): number | undefined =>
+    state.isShowingLightbox && state.isViewOnce
+      ? state.tellomiViewOnceSeconds
+      : undefined
+);
+
 export const getSelectedIndex = createSelector(
   getLightboxState,
   (state): number => {

@@ -485,3 +485,17 @@
     }
   }
 }
+
+// Tellomi (ADR-0079 §4.3): a timed view-once's countdown ring, left of the close button (Telegram's
+// secret media viewer has it top right; white on the lightbox's black, like its other controls).
+.Lightbox__tellomi-countdown {
+  flex: none;
+
+  &__track {
+    stroke: rgba(255, 255, 255, 0.25);
+  }
+
+  &__ring {
+    stroke: variables.$color-white;
+  }
+}

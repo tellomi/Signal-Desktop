@@ -291,6 +291,8 @@ export type ProcessedDataMessage = {
   tellomiCaptionAboveMedia?: boolean;
   // Tellomi (ADR-0075): `DataMessage.tellomi.messageCaption`, only when non-empty.
   tellomiMessageCaption?: string;
+  // Tellomi (ADR-0079): `DataMessage.tellomi.viewOnceSeconds`, only on a view-once and only 3 / 10 / 30.
+  tellomiViewOnceSeconds?: number;
 };
 
 export type ProcessedUnidentifiedDeliveryStatus = Readonly<{

@@ -328,6 +328,8 @@ export type PropsData = {
   isLinkCardOnly?: boolean;
   // Tellomi (tellomi/tellomi#1263, ADR-0068 §4.7): the sender put the caption above the media.
   tellomiCaptionAboveMedia?: boolean;
+  // Tellomi (ADR-0079): a view-once that closes this many seconds after it is opened.
+  tellomiViewOnceSeconds?: number;
 
   isTapToView?: boolean;
   isTapToViewExpired?: boolean;
@@ -3265,6 +3267,19 @@ export class Message extends PureComponent<Props, State> {
     );
   }
 
+  // Tellomi (ADR-0079): "Photo · 10 s" — a timed view-once says its seconds, on both sides,
+  // until it is viewed.
+  #withTellomiViewOnceSeconds(title: string): string {
+    const { i18n, tellomiViewOnceSeconds } = this.props;
+    if (tellomiViewOnceSeconds == null) {
+      return title;
+    }
+    return i18n('icu:Message--tellomi-view-once-with-seconds', {
+      title,
+      seconds: tellomiViewOnceSeconds,
+    });
+  }
+
   public renderTapToViewText(): { title: string; detail: string | undefined } {
     const {
       attachments,
@@ -3277,7 +3292,9 @@ export class Message extends PureComponent<Props, State> {
 
     if (direction === 'outgoing') {
       return {
-        title: i18n('icu:Message--tap-to-view--media'),
+        title: this.#withTellomiViewOnceSeconds(
+          i18n('icu:Message--tap-to-view--media')
+        ),
         detail: undefined,
       };
     }
@@ -3301,12 +3318,16 @@ export class Message extends PureComponent<Props, State> {
 
     if (isVideo(attachments) || isGIF(attachments)) {
       return {
-        title: i18n('icu:Message--tap-to-view--video'),
+        title: this.#withTellomiViewOnceSeconds(
+          i18n('icu:Message--tap-to-view--video')
+        ),
         detail,
       };
     }
     return {
-      title: i18n('icu:Message--tap-to-view--photo'),
+      title: this.#withTellomiViewOnceSeconds(
+        i18n('icu:Message--tap-to-view--photo')
+      ),
       detail,
     };
   }

@@ -174,12 +174,20 @@ describe('Tellomi: attachments sent as a file (ADR-0068)', () => {
 
     it('is kept from the data message, and only when it is true', () => {
       const above = processDataMessage(
-        dataMessage({ captionAboveMedia: true, messageCaption: null }),
+        dataMessage({
+          captionAboveMedia: true,
+          messageCaption: null,
+          viewOnceSeconds: null,
+        }),
         TIMESTAMP,
         { _createName: () => 'random-path' }
       );
       const no = processDataMessage(
-        dataMessage({ captionAboveMedia: false, messageCaption: null }),
+        dataMessage({
+          captionAboveMedia: false,
+          messageCaption: null,
+          viewOnceSeconds: null,
+        }),
         TIMESTAMP,
         { _createName: () => 'random-path' }
       );
@@ -216,12 +224,19 @@ describe('Tellomi: attachments sent as a file (ADR-0068)', () => {
         caption,
       });
       const out = processDataMessage(
-        dataMessage({ captionAboveMedia: null, messageCaption: 'Trip' }, [
-          pointer(own('Sunset')),
-          { ...pointer(own('Beach')), caption: 'legacy' },
-          { ...pointer(own('')), caption: 'legacy' },
-          pointer(null),
-        ]),
+        dataMessage(
+          {
+            captionAboveMedia: null,
+            messageCaption: 'Trip',
+            viewOnceSeconds: null,
+          },
+          [
+            pointer(own('Sunset')),
+            { ...pointer(own('Beach')), caption: 'legacy' },
+            { ...pointer(own('')), caption: 'legacy' },
+            pointer(null),
+          ]
+        ),
         TIMESTAMP,
         { _createName: () => 'random-path' }
       );
@@ -236,7 +251,11 @@ describe('Tellomi: attachments sent as a file (ADR-0068)', () => {
 
     it('has no caption for the whole message when there is none, or it is empty', () => {
       const empty = processDataMessage(
-        dataMessage({ captionAboveMedia: null, messageCaption: '' }),
+        dataMessage({
+          captionAboveMedia: null,
+          messageCaption: '',
+          viewOnceSeconds: null,
+        }),
         TIMESTAMP,
         { _createName: () => 'random-path' }
       );

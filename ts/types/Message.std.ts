@@ -115,6 +115,10 @@ const messageAttributesEraseBehavior: Record<
   // Tellomi (ADR-0068 §4.7): how the caption is laid out goes with the content.
   tellomiCaptionAboveMedia: 'erase',
   tellomiMessageCaption: 'erase',
+  // Tellomi (ADR-0079): a sent or viewed view-once keeps its seconds (the outgoing bubble still
+  // says them); deleting for everyone takes them.
+  tellomiViewOnceSeconds: reason =>
+    VIEW_ONCE_REASONS.has(reason) ? 'preserve' : 'erase',
   titleTransition: 'erase',
   verified: 'erase',
   verifiedChanged: 'erase',

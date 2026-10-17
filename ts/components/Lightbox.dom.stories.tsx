@@ -410,6 +410,60 @@ export function ViewOnceVideo(): JSX.Element {
   );
 }
 
+// Tellomi (ADR-0079): a timed view-once's ring empties and the viewer closes itself — a photo after
+// the seconds, a video after the seconds or the whole video, whichever is longer.
+function TellomiTimedViewOnce({
+  seconds,
+  item,
+}: {
+  seconds: number;
+  item: MediaItemType;
+}): JSX.Element {
+  const [isOpen, setIsOpen] = useState(true);
+  const props = createProps({ isViewOnce: true, media: [item] });
+  if (!isOpen) {
+    return (
+      <button type="button" onClick={() => setIsOpen(true)}>
+        Closed — open again
+      </button>
+    );
+  }
+  return (
+    <Lightbox
+      {...props}
+      closeLightbox={() => {
+        action('closeLightbox')();
+        setIsOpen(false);
+      }}
+      isViewOnce
+      tellomiViewOnceSeconds={seconds}
+    />
+  );
+}
+
+export function TellomiViewOnceImageTimed(): JSX.Element {
+  return (
+    <TellomiTimedViewOnce
+      seconds={10}
+      item={createMediaItem({
+        objectURL: '/fixtures/tina-rolf-269345-unsplash.jpg',
+      })}
+    />
+  );
+}
+
+export function TellomiViewOnceVideoTimed(): JSX.Element {
+  return (
+    <TellomiTimedViewOnce
+      seconds={3}
+      item={createMediaItem({
+        contentType: VIDEO_MP4,
+        objectURL: '/fixtures/cat-gif.mp4',
+      })}
+    />
+  );
+}
+
 export function IncrementalVideo(): JSX.Element {
   const item = createMediaItem({
     contentType: VIDEO_MP4,

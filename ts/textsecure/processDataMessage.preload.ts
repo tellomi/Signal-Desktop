@@ -59,6 +59,7 @@ import { toNumber } from '../util/toNumber.std.ts';
 import { Emoji } from '../axo/emoji.std.ts';
 import { richFromReceivedPreview } from '../linkPreviews/richContent.std.ts';
 import { DurationSecs, SentTimestampMs } from '@signalapp/types';
+import { getTellomiViewOnceSeconds } from '../util/tellomiViewOnceTimer.std.ts';
 
 const { isNumber, omit } = lodash;
 
@@ -611,6 +612,11 @@ export function processDataMessage(
     { logId: `processDataMessage(${timestamp})` }
   );
 
+  const tellomiViewOnceSeconds = getTellomiViewOnceSeconds({
+    isViewOnce: message.isViewOnce,
+    seconds: message.tellomi?.viewOnceSeconds,
+  });
+
   const result: ProcessedDataMessage = {
     body: message.body ?? '',
     bodyAttachment,
@@ -654,6 +660,8 @@ export function processDataMessage(
     ...(message.tellomi?.messageCaption
       ? { tellomiMessageCaption: message.tellomi.messageCaption }
       : {}),
+    // Tellomi (ADR-0079): how long a view-once stays open; only on a view-once, only 3 / 10 / 30.
+    ...(tellomiViewOnceSeconds != null ? { tellomiViewOnceSeconds } : {}),
   };
 
   // oxlint-disable-next-line no-bitwise

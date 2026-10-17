@@ -56,6 +56,7 @@ import { AttachmentDownloadUrgency } from '../../types/AttachmentDownload.std.ts
 import { queueAttachmentDownloadsAndMaybeSaveMessage } from '../../util/queueAttachmentDownloads.preload.ts';
 import { getMessageIdForLogging } from '../../util/idForLogging.preload.ts';
 import { markViewOnceMessageViewed } from '../../services/MessageUpdater.preload.ts';
+import { getTellomiViewOnceSeconds } from '../../util/tellomiViewOnceTimer.std.ts';
 
 const log = createLogger('lightbox');
 
@@ -67,6 +68,8 @@ export type LightboxStateType =
   | {
       isShowingLightbox: true;
       isViewOnce: boolean;
+      // Tellomi (ADR-0079): the view-once closes this many seconds after it is shown.
+      tellomiViewOnceSeconds?: number;
       media: ReadonlyArray<ReadonlyDeep<MediaItemType>>;
       hasPrevMessage: boolean;
       hasNextMessage: boolean;
@@ -89,6 +92,7 @@ type ShowLightboxActionType = {
   type: typeof SHOW_LIGHTBOX;
   payload: {
     isViewOnce: boolean;
+    tellomiViewOnceSeconds?: number;
     media: ReadonlyArray<ReadonlyDeep<MediaItemType>>;
     hasPrevMessage: boolean;
     hasNextMessage: boolean;
@@ -218,6 +222,12 @@ function showLightboxForViewOnceMedia(
       disposition: AttachmentDisposition.Temporary,
     });
 
+    // Tellomi (ADR-0079): read before marking it viewed, which erases the message's contents.
+    const tellomiViewOnceSeconds = getTellomiViewOnceSeconds({
+      isViewOnce: message.get('isViewOnce'),
+      seconds: message.get('tellomiViewOnceSeconds'),
+    });
+
     await markViewOnceMessageViewed(message);
 
     const media = [
@@ -246,6 +256,7 @@ function showLightboxForViewOnceMedia(
       type: SHOW_LIGHTBOX,
       payload: {
         isViewOnce: true,
+        ...(tellomiViewOnceSeconds != null ? { tellomiViewOnceSeconds } : {}),
         media,
         selectedIndex: undefined,
         hasPrevMessage: false,

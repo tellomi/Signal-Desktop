@@ -4230,6 +4230,48 @@ TapToViewVideo.args = {
   status: 'sent',
 };
 
+// Tellomi (ADR-0079): a timed view-once says its seconds, incoming and outgoing, until it is viewed.
+export const TellomiTapToViewImageTimed = Template.bind({});
+TellomiTapToViewImageTimed.args = {
+  attachments: [
+    fakeAttachment({
+      url: '/fixtures/tina-rolf-269345-unsplash.jpg',
+      fileName: 'tina-rolf-269345-unsplash.jpg',
+      contentType: IMAGE_JPEG,
+      width: 128,
+      height: 128,
+    }),
+  ],
+  isTapToView: true,
+  tellomiViewOnceSeconds: 10,
+  status: 'sent',
+};
+
+export const TellomiTapToViewVideoTimed = Template.bind({});
+TellomiTapToViewVideoTimed.args = {
+  attachments: [
+    fakeAttachment({
+      contentType: VIDEO_MP4,
+      fileName: 'pixabay-Soap-Bubble-7141.mp4',
+      height: 128,
+      url: '/fixtures/pixabay-Soap-Bubble-7141.mp4',
+      width: 128,
+    }),
+  ],
+  isTapToView: true,
+  tellomiViewOnceSeconds: 30,
+  status: 'sent',
+};
+
+export const TellomiTapToViewTimedViewed = Template.bind({});
+TellomiTapToViewTimedViewed.args = {
+  readStatus: ReadStatus.Viewed,
+  isTapToView: true,
+  isTapToViewExpired: true,
+  tellomiViewOnceSeconds: 10,
+  status: 'sent',
+};
+
 export const TapToViewGif = Template.bind({});
 TapToViewGif.args = {
   attachments: [
