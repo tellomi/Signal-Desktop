@@ -12358,7 +12358,7 @@
     "description": "Release notes for 8.27"
   },
   "icu:WhatsNew__tellomi--0": {
-    "messageformat": "When a contact changes their photo or name, you now see it as soon as they message you or you open the chat, instead of days later. Tellomi also tells you when a new version is out; if a version must be updated (for example, for a security fix), an update page appears, and you can still view your chats until you update.",
+    "messageformat": "Links written without https:// (starting with http://, or just the address) now get a link card when Tellomi recognises the site, the same as on the latest phones. If this version ever has to be updated, the box where you type now says so, instead of letting messages fail to send.",
     "description": "Tellomi release notes; keep in sync with docs/signal/VERSIONS.md, update every release"
   },
   "icu:TellomiUpdate__available_title": {
