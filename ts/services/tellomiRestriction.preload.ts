@@ -5,7 +5,7 @@ import { createLogger } from '../logging/log.std.ts';
 import * as Errors from '../types/errors.std.ts';
 import { itemStorage } from '../textsecure/Storage.preload.ts';
 import { getTellomiRestriction } from '../textsecure/WebAPI.preload.ts';
-import { HOUR } from '../util/durations/index.std.ts';
+import { HOUR, MINUTE } from '../util/durations/index.std.ts';
 import { drop } from '../util/drop.std.ts';
 import {
   isTellomiRestrictionActive,
@@ -23,6 +23,8 @@ const log = createLogger('tellomiRestriction');
 // 电脑端不会遇到 suspended 的说明：暂停的账号连不上服务器，电脑端看到的是「已解除关联」。
 
 const REFRESH_INTERVAL = 6 * HOUR;
+// 有处置时问得勤一些：提前解除（申诉通过、处置有误）时，横幅不该还挂几个小时
+const REFRESH_INTERVAL_WHILE_RESTRICTED = 15 * MINUTE;
 
 let lastRefreshAt = 0;
 let refreshing: Promise<void> | undefined;
@@ -79,10 +81,11 @@ export function refreshTellomiRestriction(reason: string): Promise<void> {
   if (refreshing) {
     return refreshing;
   }
-  lastRefreshAt = Date.now();
   refreshing = (async () => {
     try {
       const body = await getTellomiRestriction();
+      // 问到了才记时间：断网时获得焦点的那一次失败了，下次还要再问，不能白等 6 小时
+      lastRefreshAt = Date.now();
       await store(parseTellomiRestriction(body));
     } catch (error) {
       log.warn(`refresh (${reason}) failed`, Errors.toLogFormat(error));
@@ -94,7 +97,14 @@ export function refreshTellomiRestriction(reason: string): Promise<void> {
 }
 
 function refreshIfStale(reason: string): void {
-  if (Date.now() - lastRefreshAt >= REFRESH_INTERVAL) {
+  const now = Date.now();
+  const interval = isTellomiRestrictionActive(
+    itemStorage.get('tellomiRestriction'),
+    now
+  )
+    ? REFRESH_INTERVAL_WHILE_RESTRICTED
+    : REFRESH_INTERVAL;
+  if (now - lastRefreshAt >= interval) {
     drop(refreshTellomiRestriction(reason));
   }
 }
