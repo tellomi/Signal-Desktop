@@ -43,7 +43,7 @@
   "serverTrustRoots": ["BcLYlMOrgCUTLuLXSvW5I1FiBAub5uoawfHDNzrzyNg3"],
   "genericServerPublicParams": "AP56nq1D39Uj1w+IDJCLdI4Eu9oqaEVKGELsl9HUlLxsflrRKB+gotelWnixnUDG+8yux4794uDsyWQlGKp1xHq2UH8NB+3VDJWJ1TC0Dp9TaBv3Mm8u09WiycRRslZjQ8qr62rztIru/9qbgsm9nbsgnlu4eKIBSG0BTeNN+MEC0jzZyDBNeG+liynQyFBCAhgzT1Q9a4iBr451Su97P1hO4IQmKDPNwQtulriKtlLBXkqFmzL8GlZpyX1x0NRZDsimO8t+kEmovoAf+Ybbhe12PMQfVWS9IB+kJrOs+00r",
   "backupServerPublicParams": "AJwNSU55fsFCbgaxGRD11wO1juAs8Yr5GF8FPlGzzvdJJIKH5/4CC7ZJSOe3yL2vturVaRU2Cx0n751Vt8wkj1bozK3CBV1UokxV09GWf+hdVImLGjXGYLLhnI1J2TWEe7iWHyb553EEnRb5oxr9n3lUbNAJuRmFM7hrr0Al0F0wrDD4S8lo2mGaXe0MJCOM166F8oYRQqpFeEHfiLnxA1O8ZLh7vMdv4g9jI5phpRBTsJ5IjiJrWeP0zdIGHEssUeprDZ9OUJ14m0v61eYJMKsf59Bn+mAT2a7YfB+Don9O",
-  "stripePublishableKey": "pk_live_6cmGZopuTsV8novGgJJW9JpC00vLIgtQ1D",
+  "stripePublishableKey": "tellomi-donations-disabled",
   "updatesEnabled": true,
   "directoryConfig": {
     "directoryType": "cdsi",

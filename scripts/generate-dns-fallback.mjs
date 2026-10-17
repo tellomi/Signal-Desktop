@@ -9,16 +9,12 @@ import { promisify } from 'node:util';
 const resolve4 = promisify(resolve4Cb);
 const resolve6 = promisify(resolve6Cb);
 
-const FALLBACK_DOMAINS = [
-  'chat.signal.org',
-  'storage.signal.org',
-  'cdsi.signal.org',
-  'cdn.signal.org',
-  'cdn2.signal.org',
-  'cdn3.signal.org',
-  'updates2.signal.org',
-  'sfu.voip.signal.org',
-];
+// Tellomi (tellomi/tellomi#1687, ADR-0077): the upstream list was Signal's own hosts, which this app never
+// connects to, so their IPs were dead weight in every package. Tellomi hosts are not pinned to build-time IPs
+// either (the server moves to the mainland, ADR-0077 / docs/ops/CN_MIGRATION_PLAN.md), so the list is empty and
+// the generated file is `[]`; the loader (app/dns-fallback.main.ts) already treats that as "no fallback".
+/** @type {Array<string>} */
+const FALLBACK_DOMAINS = [];
 
 const config = await Promise.all(
   FALLBACK_DOMAINS.sort().map(async domain => {
