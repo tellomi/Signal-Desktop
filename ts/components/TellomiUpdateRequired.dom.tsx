@@ -108,9 +108,14 @@ export function TellomiUpdateRequired({
           <p className={tw('mt-2 text-center type-body-medium text-secondary')}>
             {i18n('icu:TellomiUpdate__available_body')}
           </p>
-          <p className={tw('mt-4 text-center type-body-medium text-secondary')}>
-            {i18n('icu:TellomiUpdateRequired__new_version', { version })}
-          </p>
+          {/* 只有服务端 499、清单又没说有新版本时不知道版本号：这一行不画 */}
+          {version ? (
+            <p
+              className={tw('mt-4 text-center type-body-medium text-secondary')}
+            >
+              {i18n('icu:TellomiUpdateRequired__new_version', { version })}
+            </p>
+          ) : null}
           <div className={tw('mt-6 flex w-full flex-col items-center gap-4')}>
             <AxoButton.Root
               variant="strong-primary"

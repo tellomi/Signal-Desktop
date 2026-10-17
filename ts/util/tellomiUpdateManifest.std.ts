@@ -242,6 +242,35 @@ export function shouldAutoShowRequiredLayer(
   return state.tier === 'required' && chosenVersion !== appVersion;
 }
 
+/**
+ * 阻断页现在该照哪一份状态画（spec §3.3「客户端收到 499 时显示的是同一个阻断页」）：
+ * - 清单判了必须：照清单（原因、版本、说明链接）；
+ * - 只有服务端 499：原因是「协议」那一句「此版本已无法与服务器正常通信」（同安卓 UpdateRequired.displayReason：清单没写原因的 499 = 协议），
+ *   版本、说明和下载链接照最近一次判档（清单知道有新版本时才有）；
+ * - 都没有：不显示。
+ * `lastTier` = 主进程最近一次判档的结果（不管哪一档）。
+ */
+export function currentRequiredState(
+  manifestRequired: UpdateTierState | undefined,
+  serverRejected: boolean,
+  lastTier: UpdateTierState | undefined
+): UpdateTierState | undefined {
+  if (manifestRequired !== undefined) {
+    return manifestRequired;
+  }
+  if (!serverRejected) {
+    return undefined;
+  }
+  return {
+    tier: 'required',
+    requiredReason: 'protocol',
+    latestVersion: lastTier?.latestVersion,
+    latestBuild: lastTier?.latestBuild,
+    notesUrl: lastTier?.notesUrl,
+    downloadUrl: lastTier?.downloadUrl,
+  };
+}
+
 export type UpdateRequiredButtonState =
   | Readonly<{ kind: 'update' }>
   | Readonly<{ kind: 'restart' }>

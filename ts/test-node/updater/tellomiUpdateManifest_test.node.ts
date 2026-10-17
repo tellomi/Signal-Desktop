@@ -16,6 +16,7 @@ import {
 } from '../../updater/tellomiUpdateManifest.node.ts';
 import { DialogType } from '../../types/Dialogs.std.ts';
 import {
+  currentRequiredState,
   desktopBuild,
   evaluateUpdateTier,
   parseUpdateManifest,
@@ -255,6 +256,70 @@ describe('Tellomi update manifest (Desktop)', () => {
           '0.1.12'
         )
       );
+    });
+  });
+
+  describe('currentRequiredState', () => {
+    const manifestRequired = {
+      tier: 'required' as const,
+      latestVersion: '0.1.14',
+      requiredReason: 'security' as const,
+      notesUrl: 'https://www.tellomi.app/changelog/#desktop',
+    };
+
+    it('nothing to show without a required manifest or a 499', () => {
+      assert.isUndefined(currentRequiredState(undefined, false, undefined));
+      assert.isUndefined(
+        currentRequiredState(undefined, false, {
+          tier: 'recommended',
+          latestVersion: '0.1.14',
+        })
+      );
+    });
+
+    it('a required manifest wins, 499 or not', () => {
+      assert.strictEqual(
+        currentRequiredState(manifestRequired, false, manifestRequired),
+        manifestRequired
+      );
+      assert.strictEqual(
+        currentRequiredState(manifestRequired, true, manifestRequired),
+        manifestRequired
+      );
+    });
+
+    it('a 499 alone is the "protocol" reason, with what the last tier knew about the new version', () => {
+      assert.deepEqual(
+        currentRequiredState(undefined, true, {
+          tier: 'optional',
+          latestVersion: '0.1.14',
+          latestBuild: 1014,
+          notesUrl: 'https://www.tellomi.app/changelog/#desktop',
+          downloadUrl: 'https://tellomi.app/download/',
+        }),
+        {
+          tier: 'required',
+          requiredReason: 'protocol',
+          latestVersion: '0.1.14',
+          latestBuild: 1014,
+          notesUrl: 'https://www.tellomi.app/changelog/#desktop',
+          downloadUrl: 'https://tellomi.app/download/',
+        }
+      );
+      const noManifest = currentRequiredState(undefined, true, undefined);
+      assert.strictEqual(noManifest?.tier, 'required');
+      assert.strictEqual(noManifest?.requiredReason, 'protocol');
+      assert.isUndefined(noManifest?.latestVersion);
+    });
+
+    it('after a 499 the page shows until this app version chooses read-only, like the required tier', () => {
+      const state = currentRequiredState(undefined, true, { tier: 'none' });
+      assert.isDefined(state);
+      if (state === undefined) {
+        return;
+      }
+      assert.isTrue(shouldAutoShowRequiredLayer(state, undefined, '0.1.13'));
+      assert.isFalse(shouldAutoShowRequiredLayer(state, '0.1.13', '0.1.13'));
     });
   });
 

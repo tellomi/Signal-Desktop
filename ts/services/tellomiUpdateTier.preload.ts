@@ -21,6 +21,7 @@ import { openLinkInWebBrowser } from '../util/openLinkInWebBrowser.dom.ts';
 import OS from '../util/os/osPreload.preload.ts';
 import * as Registration from '../util/registration.preload.ts';
 import {
+  currentRequiredState,
   requiredButtonState,
   shouldAutoShowRequiredLayer,
   shouldShowRecommendedCard,
@@ -42,10 +43,16 @@ const DOWNLOAD_PAGE = 'https://tellomi.app/download/';
 //   'tellomiUpdateRequired'），左栏红色横幅；盖上阻断页，除非这个 App 版本已经选过「只看聊天记录」
 //   （tellomiUpdateReadOnlyChosenVersion）。横幅上的「更新」随时打开阻断页。
 // - 撤销（必须档里拿到一份不再判必须的清单）：关掉阻断页、去掉横幅、重新连接；「只看聊天记录」的选择作废，下次再要求时照常弹。
-// 本机构建到期（DialogExpiredBuild）和服务端 499 的只读不归这里管，SocketManager 也不让这里的只读盖掉它们。
+// - 服务端 499（tellomiOnServerRejected，spec §3.3）：同一个阻断页和横幅，原因是「协议」那一句（currentRequiredState）。
+//   连接由 SocketManager 的 'remote' 停掉，这一次运行里清单撤销也不放行（499 是服务端说的）；不落盘，下次启动重新连，
+//   服务端还拒绝就再收到 499，撤了就正常收发。
+// 本机构建到期（DialogExpiredBuild）的只读不归这里管，SocketManager 也不让这里的只读盖掉它。
 
 let isShowingCard = false;
 let required: UpdateTierState | undefined;
+let lastTier: UpdateTierState | undefined;
+let serverRejected = false;
+let isInitialized = false;
 let layer: UpdateRequiredLayer | undefined;
 let unsubscribeLayer: (() => void) | undefined;
 
@@ -96,12 +103,19 @@ function showLayer(state: UpdateTierState): void {
   let lastUpdates = window.reduxStore.getState().updates;
   unsubscribeLayer = window.reduxStore.subscribe(() => {
     const { updates } = window.reduxStore.getState();
-    if (updates === lastUpdates || required === undefined) {
+    if (updates === lastUpdates) {
       return;
     }
     lastUpdates = updates;
-    layer?.render(layerProps(required));
+    const latest = current();
+    if (latest !== undefined) {
+      layer?.render(layerProps(latest));
+    }
   });
+}
+
+function current(): UpdateTierState | undefined {
+  return currentRequiredState(required, serverRejected, lastTier);
 }
 
 async function chooseViewChatsOnly(): Promise<void> {
@@ -115,8 +129,37 @@ async function chooseViewChatsOnly(): Promise<void> {
 
 /** 左栏红色横幅的「更新」：重新打开阻断页。 */
 export function showTellomiUpdateRequired(): void {
-  if (required !== undefined) {
-    showLayer(required);
+  const state = current();
+  if (state !== undefined) {
+    showLayer(state);
+  }
+}
+
+/** 服务端对这个版本回了 499（background 的 httpResponse499；SocketManager 已经按 'remote' 停了连接）。 */
+export function tellomiOnServerRejected(): void {
+  if (serverRejected) {
+    return;
+  }
+  serverRejected = true;
+  // 499 可能在主窗口的服务起来之前就到（启动时的第一个请求）：起来时再接上。
+  if (isInitialized) {
+    enterServerRejected();
+  }
+}
+
+function enterServerRejected(): void {
+  const state = current();
+  if (state === undefined) {
+    return;
+  }
+  log.warn('the server rejected this version (499); read-only');
+  window.reduxActions.updates.tellomiSetReadOnly(true);
+  const chosenVersion = itemStorage.get('tellomiUpdateReadOnlyChosenVersion');
+  if (
+    layer ||
+    shouldAutoShowRequiredLayer(state, chosenVersion, window.getVersion())
+  ) {
+    showLayer(state);
   }
 }
 
@@ -143,6 +186,13 @@ async function leaveRequired(): Promise<void> {
     return;
   }
   required = undefined;
+  if (serverRejected) {
+    // 清单撤了，服务端还是拒绝：横幅、阻断页和「只看聊天记录」的选择都留着（阻断页由 handle 换成 499 那一句）。
+    log.info(
+      'the required update was withdrawn, but the server rejects this version'
+    );
+    return;
+  }
   log.info('the required update was withdrawn; reconnecting');
   closeLayer();
   window.reduxActions.updates.tellomiSetReadOnly(false);
@@ -178,15 +228,28 @@ async function handleRecommended(state: UpdateTierState): Promise<void> {
 }
 
 async function handle(state: UpdateTierState): Promise<void> {
+  lastTier = state;
   if (state.tier === 'required') {
     enterRequired(state);
     return;
   }
   await leaveRequired();
+  if (serverRejected) {
+    // 499 之后只读：不弹推荐卡片；阻断页开着就换上这次判档的版本和说明。
+    const required499 = current();
+    if (layer && required499 !== undefined) {
+      layer.render(layerProps(required499));
+    }
+    return;
+  }
   await handleRecommended(state);
 }
 
 export function initializeTellomiUpdateTier(): void {
+  isInitialized = true;
+  if (serverRejected) {
+    enterServerRejected();
+  }
   ipcRenderer.on(UPDATE_TIER_CHANNEL, (_event, state: UpdateTierState) => {
     drop(handle(state));
   });

@@ -34,6 +34,18 @@ export function Protocol(args: PropsType): JSX.Element {
   return <TellomiUpdateRequired {...args} reason="protocol" />;
 }
 
+// The server answered 499 and no manifest says which version to get: no version line, no notes link.
+export function ServerRejectedWithoutManifest(args: PropsType): JSX.Element {
+  return (
+    <TellomiUpdateRequired
+      {...args}
+      reason="protocol"
+      version=""
+      notesUrl={undefined}
+    />
+  );
+}
+
 export function OtherWithoutNotes(args: PropsType): JSX.Element {
   return (
     <TellomiUpdateRequired {...args} reason="other" notesUrl={undefined} />

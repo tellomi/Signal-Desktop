@@ -72,7 +72,10 @@ import * as StorageService from './services/storage.preload.ts';
 import { usernameIntegrity } from './services/usernameIntegrity.preload.ts';
 import { updateIdentityKey } from './services/profiles.preload.ts';
 import { initializeUpdateListener } from './services/updateListener.preload.ts';
-import { initializeTellomiUpdateTier } from './services/tellomiUpdateTier.preload.ts';
+import {
+  initializeTellomiUpdateTier,
+  tellomiOnServerRejected,
+} from './services/tellomiUpdateTier.preload.ts';
 import { RoutineProfileRefresher } from './routineProfileRefresh.preload.ts';
 import { isOlderThan } from './util/timestamp.std.ts';
 import { safeParsePartial } from './util/schemas.std.ts';
@@ -1462,9 +1465,14 @@ async function startApp(): Promise<void> {
     }
 
     log.error('remote expiration detected, disabling reconnects');
-    drop(itemStorage.put('remoteBuildExpiration', Date.now()));
+    // Tellomi (tellomi/tellomi#1399, spec app-update-and-version-policy.md §3.3): the server rejecting this version
+    // shows the same update-required page as the manifest's required tier, not upstream's "expired" dialog. Not stored
+    // as remoteBuildExpiration, which would make the next launch treat the build as expired (and only a new version
+    // clears it): the next launch connects again, gets 499 again while the server still rejects it, and works normally
+    // once the server stops.
     drop(onExpiration('remote'));
     remotelyExpired = true;
+    tellomiOnServerRejected();
   });
 
   function enableStorageService({ andSync }: { andSync?: string } = {}) {
