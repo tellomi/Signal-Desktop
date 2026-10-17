@@ -5289,7 +5289,7 @@
     "messageformat": "Нових учасників, які приєднуються до групи за посиланням, повинен затверджувати адміністратор."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Копіювати посилання signal.group"
+    "messageformat": "Копіювати посилання tell.cc"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Пошук учасників"

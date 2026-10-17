@@ -5289,7 +5289,7 @@
     "messageformat": "গ্রুপ লিংক ব্যবহার করে যোগদান করার জন্য অনুমোদন পেতে নতুন সদস্যদের একজন অ্যাডমিনের প্রয়োজন হয়"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.group লিংকটি ক্লিপবোর্ডে কপি করুন"
+    "messageformat": "tell.cc লিংকটি ক্লিপবোর্ডে কপি করুন"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "সদস্য খুঁজুন"

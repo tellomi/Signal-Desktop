@@ -5289,7 +5289,7 @@
     "messageformat": "Обавезно је да администратор групе одобри нове чланове који се придружују групи преко линка за групу."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Копирај линк signal.group"
+    "messageformat": "Копирај линк tell.cc"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Претражи чланове"

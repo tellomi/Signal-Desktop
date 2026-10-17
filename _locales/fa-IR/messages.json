@@ -2184,7 +2184,7 @@
     "messageformat": "رد کردن"
   },
   "icu:alwaysRelayCallsDescription": {
-    "messageformat": "عبور تمامی تماس‌ها از سرور سیگنال"
+    "messageformat": "عبور تمامی تماس‌ها از سرور Tellomi"
   },
   "icu:alwaysRelayCallsDetail": {
     "messageformat": "گذراندن تمامی تماس‌ها از سرور Tellomi به منظور جلوگیری از آشکار شدن نشانی اینترنتی شما برای مخاطبانتان. فعال‌سازی این گزینه باعث کاهش کیفیت تماس می‌گردد."
@@ -5289,7 +5289,7 @@
     "messageformat": "نیاز به یک مدیر برای تأیید اعضای جدیدی که از طریق پیوند گروه می‌پیوندند"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "لینک signal.group را در کلیپ‌بورد کپی کنید"
+    "messageformat": "لینک tell.cc را در کلیپ‌بورد کپی کنید"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "جستجوی اعضا"

@@ -5289,7 +5289,7 @@
     "messageformat": "דרוש מנהלן כדי לאשר הצטרפות של חברי קבוצה חדשים באמצעות קישור הקבוצה"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "העתקה של קישור signal.group ללוח"
+    "messageformat": "העתקה של קישור tell.cc ללוח"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "חיפוש חברים"

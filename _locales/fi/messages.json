@@ -5289,7 +5289,7 @@
     "messageformat": "Ylläpitäjän on hyväksyttävä ryhmälinkin kautta liittyvät uudet jäsenet."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopioi signal.group-linkki leikepöydälle"
+    "messageformat": "Kopioi tell.cc-linkki leikepöydälle"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Hae jäseniä"

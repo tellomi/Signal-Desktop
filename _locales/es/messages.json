@@ -5289,7 +5289,7 @@
     "messageformat": "Alguien que sea admin debe aprobar a nuevos participantes que se unan mediante enlace"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Copiar el enlace signal.group al portapapeles"
+    "messageformat": "Copiar el enlace tell.cc al portapapeles"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Buscar participantes"

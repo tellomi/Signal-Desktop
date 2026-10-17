@@ -5289,7 +5289,7 @@
     "messageformat": "Det kræves at en administrator godkender nye medlemmer via gruppelinket"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopiér signal.group-linket til din udklipsholder"
+    "messageformat": "Kopiér tell.cc-linket til din udklipsholder"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Søg blandt medlemmer"

@@ -5289,7 +5289,7 @@
     "messageformat": "Yêu cầu người quản lý chấp duyệt thành viên mới tham gia qua đường dẫn nhóm"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Sao chép đường dẫn signal.group vào clipboard"
+    "messageformat": "Sao chép đường dẫn tell.cc vào clipboard"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Tìm thành viên"

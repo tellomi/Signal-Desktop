@@ -5289,7 +5289,7 @@
     "messageformat": "Administrator je potreban za odobravanje pridruživanja novih članova putem linka grupe"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopirajte vezu signal.group u međuspremnik"
+    "messageformat": "Kopirajte vezu tell.cc u međuspremnik"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Pretraži članove"

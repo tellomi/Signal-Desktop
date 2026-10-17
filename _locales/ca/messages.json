@@ -5289,7 +5289,7 @@
     "messageformat": "Requereix que un administrador aprovi els membres nous que s’afegeixin per l’enllaç del grup."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Copiar l'enllaç signal.group al porta-retalls"
+    "messageformat": "Copiar l'enllaç tell.cc al porta-retalls"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Buscar membres"

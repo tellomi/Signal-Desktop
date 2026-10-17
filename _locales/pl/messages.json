@@ -5289,7 +5289,7 @@
     "messageformat": "Wymagaj zatwierdzania przez administratora nowych osób dołączających do grupy za pomocą linku"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Skopiuj link signal.group do schowka"
+    "messageformat": "Skopiuj link tell.cc do schowka"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Wyszukaj osoby w grupie"

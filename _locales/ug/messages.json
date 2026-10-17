@@ -5289,7 +5289,7 @@
     "messageformat": "بىر باشقۇرغۇچىدىن يېڭى ئەزالارنىڭ گۇرۇپپا ئۇلانمىسى ئارقىلىق گۇرۇپپىغا قوشۇلۇشىنى تەستىقلاشنى تەلەپ قىلىڭ"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.group ئۇلانمىسىنى كۇنۇپكا تاختىسىغا كۆچۈرۈڭ"
+    "messageformat": "tell.cc ئۇلانمىسىنى كۇنۇپكا تاختىسىغا كۆچۈرۈڭ"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "ئەزالارنى ئىزدەش"

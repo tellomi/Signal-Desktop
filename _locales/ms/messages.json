@@ -5289,7 +5289,7 @@
     "messageformat": "Memerlukan pentadbir untuk meluluskan ahli baharu yang menyertai kumpulan melalui pautan kumpulan"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Salin pautan signal.group ke papan klip"
+    "messageformat": "Salin pautan tell.cc ke papan klip"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Cari ahli"

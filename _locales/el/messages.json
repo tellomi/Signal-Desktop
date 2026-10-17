@@ -5289,7 +5289,7 @@
     "messageformat": "Να απαιτείται η έγκριση απο διαχειριστή/τρια για νέα μέλη που μπαίνουν από το σύνδεσμο της ομάδας."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Αντίγραψε τον σύνδεσμο signal.group στο πρόχειρο"
+    "messageformat": "Αντίγραψε τον σύνδεσμο tell.cc στο πρόχειρο"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Αναζήτηση μελών"

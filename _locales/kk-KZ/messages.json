@@ -5289,7 +5289,7 @@
     "messageformat": "Әкімші топ сілтемесі арқылы жаңа мүшелердің қосылуын мақұлдауын сұраңыз"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Буферге signal.group сілтемесін көшіріңіз"
+    "messageformat": "Буферге tell.cc сілтемесін көшіріңіз"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Мүшелерді іздеу"

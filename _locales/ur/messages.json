@@ -5289,7 +5289,7 @@
     "messageformat": "کسی منتظم سے گروپ لینک کے ذریعے نئے ممبران کی شمولیت کی منظوری کی ضرورت ہے"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.group کے لنک کو کلپ بورڈ پر کاپی کریں"
+    "messageformat": "tell.cc کے لنک کو کلپ بورڈ پر کاپی کریں"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "ممبرز تلاش کریں"

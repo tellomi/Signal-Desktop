@@ -5289,7 +5289,7 @@
     "messageformat": "តម្រូវឲ្យអ្នកគ្រប់គ្រងឯកភាពលើសមាជិកថ្មីៗដែលចូល​រួម​តាម​រយៈ​តំណ​ក្រុម"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "ចម្លងតំណ signal.group ទៅឃ្លីបបត"
+    "messageformat": "ចម្លងតំណ tell.cc ទៅឃ្លីបបត"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "ស្វែងរកសមាជិក"

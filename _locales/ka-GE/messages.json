@@ -5289,7 +5289,7 @@
     "messageformat": "მოითხოვე, რომ ადმინმა დაადასტუროს ახალი წევრები, ვინც ჯგუფის ბმულით ცდილობს გაწევრიანებას"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "დააკოპირე signal.group ბმული კლავიატურაზე"
+    "messageformat": "დააკოპირე tell.cc ბმული კლავიატურაზე"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "წევრების მოძებნა"

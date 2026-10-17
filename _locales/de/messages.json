@@ -5289,7 +5289,7 @@
     "messageformat": "Ein Admin muss Beitrittsanfragen von neuen Mitgliedern über den Gruppen-Link bestätigen."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopiere den signal.group-Link in die Zwischenablage"
+    "messageformat": "Kopiere den tell.cc-Link in die Zwischenablage"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Nach Mitgliedern suchen"

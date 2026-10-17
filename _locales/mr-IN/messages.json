@@ -5289,7 +5289,7 @@
     "messageformat": "गट लिंक द्वारे सामील होण्यासाठी नवीन सदस्यांना प्रशासकाने स्वीकार करणे आवश्यक आहे"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.group लिंक क्लिपबोर्डवर कॉपी करा"
+    "messageformat": "tell.cc लिंक क्लिपबोर्डवर कॉपी करा"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "सदस्य शोधा"

@@ -5289,7 +5289,7 @@
     "messageformat": "É necesario que un administrador acepte os novos membros que se unan a través da ligazón do grupo"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Copia a ligazón de signal.group no portapapeis"
+    "messageformat": "Copia a ligazón de tell.cc no portapapeis"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Buscar membros"

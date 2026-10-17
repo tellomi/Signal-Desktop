@@ -5289,7 +5289,7 @@
     "messageformat": "ग्रुप लिंक की मदद से जुड़ने वाले नए सदस्यों के लिए ऐडमिन की मंज़ूरी ज़रूरी है"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.group लिंक को क्लिपबोर्ड पर कॉपी करें"
+    "messageformat": "tell.cc लिंक को क्लिपबोर्ड पर कॉपी करें"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "मेंबर खोजें"

@@ -5289,7 +5289,7 @@
     "messageformat": "Изискване администратор да одобрява нови членове, които се присъединяват чрез линка на групата"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Копирайте signal.group линка в клипборда"
+    "messageformat": "Копирайте tell.cc линка в клипборда"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Търсене на членове"

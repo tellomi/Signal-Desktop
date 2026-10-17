@@ -5289,7 +5289,7 @@
     "messageformat": "Требовать принятия администратором новых участников, присоединяющихся по ссылке на группу"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Скопируйте ссылку на signal.group в буфер обмена"
+    "messageformat": "Скопируйте ссылку на tell.cc в буфер обмена"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Поиск участников"

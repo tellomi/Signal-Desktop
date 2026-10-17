@@ -5289,7 +5289,7 @@
     "messageformat": "ഗ്രൂപ്പ് ലിങ്ക് വഴി പുതിയ അംഗങ്ങൾ ചേരുന്നത് അംഗീകരിക്കാൻ ഒരു അഡ്മിൻ ആവശ്യമാണ്"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "ക്ലിപ്പ്ബോർഡിലേക്ക് signal.group ലിങ്ക് പകർത്തുക"
+    "messageformat": "ക്ലിപ്പ്ബോർഡിലേക്ക് tell.cc ലിങ്ക് പകർത്തുക"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "അംഗങ്ങളെ തിരയുക"

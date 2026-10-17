@@ -5289,7 +5289,7 @@
     "messageformat": "အဖွဲ့လင့်ခ်မှတစ်ဆင့် ပါဝင်သည့် မန်ဘာအသစ်များအား အတည်ပြုရန် အက်ဒ်မင် လိုအပ်ပါသည်"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Tellomi.group လင့်ခ်ကို ကီးဘုတ်သို့ ကူးယူပါ"
+    "messageformat": "tell.cc လင့်ခ်ကို ကီးဘုတ်သို့ ကူးယူပါ"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "အဖွဲ့ဝင်များကို ရှာဖွေရန်"

@@ -5289,7 +5289,7 @@
     "messageformat": "ગ્રુપ લિંક દ્વારા જોડાયેલા નવા મેમ્બર્સને મંજૂરી આપવા માટે એડમિનની જરૂર છે"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.group લિંકને ક્લિપબોર્ડ પર કૉપિ કરો"
+    "messageformat": "tell.cc લિંકને ક્લિપબોર્ડ પર કૉપિ કરો"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "સભ્યો શોધો"

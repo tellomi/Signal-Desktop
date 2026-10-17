@@ -5289,7 +5289,7 @@
     "messageformat": "그룹 링크로 참가하는 새 멤버를 관리자가 승인하도록 설정합니다"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.group 링크를 클립보드에 복사"
+    "messageformat": "tell.cc 링크를 클립보드에 복사"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "멤버 검색"

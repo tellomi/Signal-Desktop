@@ -5289,7 +5289,7 @@
     "messageformat": "Qrup bağlantısı vasitəsilə qoşulan yeni üzvlərin admin tərəfindən təsdiqlənməsi tələb olunsun."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.group keçidini klaviaturaya kopiyalayın"
+    "messageformat": "tell.cc keçidini klaviaturaya kopiyalayın"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Üzvləri axtar"

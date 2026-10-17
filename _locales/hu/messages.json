@@ -5289,7 +5289,7 @@
     "messageformat": "Admin általi jóváhagyás szükséges csoporthivatkozással csatlakozó tagok felvételéhez."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Másold a signal.group hivatkozást a vágólapra"
+    "messageformat": "Másold a tell.cc hivatkozást a vágólapra"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Tagok keresése"

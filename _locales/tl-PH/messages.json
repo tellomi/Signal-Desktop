@@ -5289,7 +5289,7 @@
     "messageformat": "I-require ang admin na mag-approve ng bagong members na nag-join gamit ang group link."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopyahin ang signal.group link sa clipboard"
+    "messageformat": "Kopyahin ang tell.cc link sa clipboard"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Mag-search ng members"

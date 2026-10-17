@@ -5289,7 +5289,7 @@
     "messageformat": "Администратор топко шилтеме аркылуу кошулуп жаткан жаңы мүчөлөрдү ырасташы керек"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.group шилтемесин буферге көчүрүү"
+    "messageformat": "tell.cc шилтемесин буферге көчүрүү"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Мүчөлөрдү издөө"

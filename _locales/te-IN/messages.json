@@ -5289,7 +5289,7 @@
     "messageformat": "సమూహ లింక్ ద్వారా చేరిన కొత్త సభ్యులను ఆమోదించడానికి నిర్వాహకుడు అవసరం"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.group లింక్‌ను క్లిప్‌బోర్డ్‌కు కాపీ చేయండి"
+    "messageformat": "tell.cc లింక్‌ను క్లిప్‌బోర్డ్‌కు కాపీ చేయండి"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "సభ్యులను వెతకండి"

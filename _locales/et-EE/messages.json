@@ -5289,7 +5289,7 @@
     "messageformat": "Nõua grupilingi kaudu liituvate uute liikmete kinnitamist administraatori poolt"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopeeri signal.group link lõikelauale"
+    "messageformat": "Kopeeri tell.cc link lõikelauale"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Otsi liikmeid"

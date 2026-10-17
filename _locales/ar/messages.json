@@ -834,7 +834,7 @@
     "messageformat": "انضم إلى النسخة التجريبية"
   },
   "icu:signalDesktopStickerCreator": {
-    "messageformat": "مُنشِئ مجموعة المُلصَقات في سيجنال"
+    "messageformat": "مُنشِئ مجموعة المُلصَقات في Tellomi"
   },
   "icu:aboutSignalDesktop": {
     "messageformat": "عن Tellomi Desktop"
@@ -5289,7 +5289,7 @@
     "messageformat": "تتطلب موافقة المُشرِف لقبول انضمام أعضاء جُدُد عبر رابط المجموعة."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "انسخ رابط مجموعة سيجنال إلى لوحة المفاتيح"
+    "messageformat": "انسخ رابط مجموعة Tellomi إلى لوحة المفاتيح"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "البحث عن الأعضاء"

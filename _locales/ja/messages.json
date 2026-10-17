@@ -5289,7 +5289,7 @@
     "messageformat": "グループリンク経由での新メンバー参加時に、管理者の承認を要求します。"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.groupのリンクをクリップボードにコピーする"
+    "messageformat": "tell.ccのリンクをクリップボードにコピーする"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "メンバーを検索"

@@ -5289,7 +5289,7 @@
     "messageformat": "Vyžadujte od správcu, aby schválil pripojenie nových členov cez odkaz na skupinu"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Skopírovať odkaz signal.group do schránky"
+    "messageformat": "Skopírovať odkaz tell.cc do schránky"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Vyhľadať členov"

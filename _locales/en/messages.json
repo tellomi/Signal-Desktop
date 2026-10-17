@@ -7383,7 +7383,7 @@
     "description": "Description for the require new member admin approval select area"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Copy signal.group link to clipboard",
+    "messageformat": "Copy tell.cc link to clipboard",
     "description": "GroupLinkManagement > Header > Group link text > Button (looks like normal text) > Accessibility label"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {

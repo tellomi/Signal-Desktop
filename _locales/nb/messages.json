@@ -5289,7 +5289,7 @@
     "messageformat": "Krev administratorgodkjenning for nye medlemmer som blir med via gruppelenken."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopier signal.group-lenken til utklippstavlen"
+    "messageformat": "Kopier tell.cc-lenken til utklippstavlen"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Søk etter medlemmer"

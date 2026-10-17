@@ -5289,7 +5289,7 @@
     "messageformat": "Richiedi a un admin di approvare i nuovi membri che si uniscono tramite il link del gruppo"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Copia il link signal.group negli appunti"
+    "messageformat": "Copia il link tell.cc negli appunti"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Cerca partecipanti"

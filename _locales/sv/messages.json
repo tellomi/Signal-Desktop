@@ -5289,7 +5289,7 @@
     "messageformat": "Kräv att en administratör ska godkänna nya medlemmar som går med via grupplänken"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopiera signal.group-länk till urklipp"
+    "messageformat": "Kopiera tell.cc-länk till urklipp"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Sök medlemmar"

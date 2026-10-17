@@ -5424,7 +5424,7 @@
     "messageformat": "用群組連結加入嘅新成員需要經過管理員嘅批准"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "將 signal.group 連結複製到剪貼簿"
+    "messageformat": "將 tell.cc 連結複製到剪貼簿"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "搵谷友"

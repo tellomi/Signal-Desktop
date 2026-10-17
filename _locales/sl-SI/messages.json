@@ -5289,7 +5289,7 @@
     "messageformat": "Za pridružitev tej skupini preko deljene povezave je potrebna odobritev skrbnika_ce."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopiraj povezavo signal.group v odložišče"
+    "messageformat": "Kopiraj povezavo tell.cc v odložišče"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Iskanje članov"

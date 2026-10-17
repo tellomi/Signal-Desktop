@@ -5289,7 +5289,7 @@
     "messageformat": "’n Admin moet nuwe lede goedkeur wat d.m.v. die groepskakel aansluit"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopieer signal.group-skakel na knipbord"
+    "messageformat": "Kopieer tell.cc-skakel na knipbord"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Soek lede"

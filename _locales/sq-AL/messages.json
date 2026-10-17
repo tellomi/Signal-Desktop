@@ -5289,7 +5289,7 @@
     "messageformat": "Kërko doemos që një përgjegjës të miratojë anëtarë të rinj që vijnë prej një lidhjeje grupi"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopjo lidhjen e Tellomi.group në kujtesën e fragmenteve"
+    "messageformat": "Kopjo lidhjen e tell.cc në kujtesën e fragmenteve"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Kërko anëtarët"

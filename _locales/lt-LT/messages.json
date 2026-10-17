@@ -5289,7 +5289,7 @@
     "messageformat": "Reikalauti, kad administratorius patvirtintų naujus, per grupės nuorodą prisijungiančius, narius"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Nukopijuokite signal.group nuorodą į iškarpinę"
+    "messageformat": "Nukopijuokite tell.cc nuorodą į iškarpinę"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Ieškoti narių"

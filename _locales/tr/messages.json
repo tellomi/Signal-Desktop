@@ -5289,7 +5289,7 @@
     "messageformat": "Grup bağlantısı üzerinden katılan yeni üyelerin yönetici tarafından onaylanması gereksin"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.group bağlantısını panoya kopyala"
+    "messageformat": "tell.cc bağlantısını panoya kopyala"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Üye ara"
