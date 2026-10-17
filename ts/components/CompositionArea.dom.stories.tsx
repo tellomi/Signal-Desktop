@@ -265,6 +265,19 @@ export function TerminatedGroup(args: Props): JSX.Element {
   );
 }
 
+// Tellomi (tellomi/tellomi#1399): read-only until the update.
+export function TellomiUpdateRequired(args: Props): JSX.Element {
+  const theme = useContext(StorybookThemeContext);
+  return (
+    <CompositionArea
+      {...args}
+      theme={theme}
+      tellomiUpdateRequired
+      onTellomiUpdate={action('onTellomiUpdate')}
+    />
+  );
+}
+
 export function Quote(args: Props): JSX.Element {
   const theme = useContext(StorybookThemeContext);
   return (

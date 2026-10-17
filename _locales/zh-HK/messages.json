@@ -9348,6 +9348,9 @@
   "icu:TellomiUpdateRequired__read_only_banner": {
     "messageformat": "需要更新才能繼續收發訊息。"
   },
+  "icu:TellomiUpdateRequired__input_needs_update": {
+    "messageformat": "此版本需要更新才能收發訊息。"
+  },
   "icu:TellomiFeedPostLink__title": {
     "messageformat": "請在手機上開啟"
   },

@@ -56,6 +56,7 @@ import type { LinkPreviewForUIType } from '../types/message/LinkPreviews.std.ts'
 import { isSameLinkPreview } from '../types/message/LinkPreviews.std.ts';
 
 import { MandatoryProfileSharingActions } from './conversation/MandatoryProfileSharingActions.dom.tsx';
+import { TellomiComposerUpdateRequired } from './conversation/TellomiComposerUpdateRequired.dom.tsx';
 import { MediaQualitySelector } from './MediaQualitySelector.dom.tsx';
 import type { Props as QuoteProps } from './conversation/Quote.dom.tsx';
 import { Quote } from './conversation/Quote.dom.tsx';
@@ -136,6 +137,10 @@ export type OwnProps = Readonly<{
   isPollSend1to1Enabled: boolean;
   isSignalConversation: boolean;
   isActive: boolean;
+  // Tellomi (tellomi/tellomi#1399): read-only until the update; the composer becomes TellomiComposerUpdateRequired.
+  // onTellomiUpdate is undefined while an update is already downloading.
+  tellomiUpdateRequired?: boolean;
+  onTellomiUpdate?: () => void;
   lastEditableMessageId: string | null;
   recordingState: RecordingState;
   memberColors: Map<string, ContactNameColorType>;
@@ -265,6 +270,8 @@ export const CompositionArea = memo(function CompositionArea({
   isPollSend1to1Enabled,
   isSignalConversation,
   isActive,
+  tellomiUpdateRequired,
+  onTellomiUpdate,
   lastEditableMessageId,
   pushPanelForConversation,
   platform,
@@ -989,6 +996,12 @@ export const CompositionArea = memo(function CompositionArea({
 
   if (isSignalConversation) {
     return null;
+  }
+
+  if (tellomiUpdateRequired) {
+    return (
+      <TellomiComposerUpdateRequired i18n={i18n} onUpdate={onTellomiUpdate} />
+    );
   }
 
   if (terminated) {

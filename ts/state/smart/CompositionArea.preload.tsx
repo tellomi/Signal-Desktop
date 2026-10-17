@@ -62,6 +62,19 @@ import { isDirectConversation } from '../../util/whatTypeOfConversation.dom.ts';
 import { itemStorage } from '../../textsecure/Storage.preload.ts';
 import { useNavActions } from '../ducks/nav.std.ts';
 import { isFeaturedEnabledSelector } from '../../util/isFeatureEnabled.dom.ts';
+import { hasExpired } from '../selectors/expiration.dom.ts';
+import {
+  getHasPendingUpdate,
+  getTellomiUpdateReadOnly,
+  getUpdateDialogType,
+} from '../selectors/updates.std.ts';
+import { useUpdatesActions } from '../ducks/updates.preload.ts';
+import { getBuildUpgradeAction } from '../../util/buildExpiration.std.ts';
+import OS from '../../util/os/osPreload.preload.ts';
+import { openLinkInWebBrowser } from '../../util/openLinkInWebBrowser.dom.ts';
+import { showTellomiUpdateRequired } from '../../services/tellomiUpdateTier.preload.ts';
+
+const TELLOMI_DOWNLOAD_PAGE = 'https://tellomi.app/download/';
 
 function renderSmartCompositionRecording() {
   return <SmartCompositionRecording />;
@@ -84,6 +97,32 @@ export const SmartCompositionArea = memo(function SmartCompositionArea({
   strictAssert(conversation, `Conversation id ${id} not found!`);
 
   const i18n = useSelector(getIntl);
+  // Tellomi (tellomi/tellomi#1399, spec app-update-and-version-policy.md §3.4 "read-only"): until the update, the
+  // composer is replaced. Read-only = the server rejected this version or the update manifest requires an update
+  // (the button opens the update-required page), or this build expired (the button does what the left pane's "expired"
+  // banner does, see getBuildUpgradeAction).
+  const isTellomiReadOnly = useSelector(getTellomiUpdateReadOnly);
+  const hasBuildExpired = useSelector(hasExpired);
+  const updateDialogType = useSelector(getUpdateDialogType);
+  const didSnoozeUpdate = useSelector(getHasPendingUpdate);
+  const { startUpdate } = useUpdatesActions();
+  const onTellomiUpdate = useMemo((): (() => void) | undefined => {
+    if (isTellomiReadOnly) {
+      return showTellomiUpdateRequired;
+    }
+    const action = getBuildUpgradeAction({
+      isMAS: OS.isMAS(),
+      updateDialogType,
+      didSnoozeUpdate,
+    });
+    if (action === 'updater') {
+      return startUpdate;
+    }
+    if (action === 'download-page') {
+      return () => openLinkInWebBrowser(TELLOMI_DOWNLOAD_PAGE);
+    }
+    return undefined;
+  }, [isTellomiReadOnly, updateDialogType, didSnoozeUpdate, startUpdate]);
   const theme = useSelector(getTheme);
   const emojiSkinToneDefault = useSelector(getEmojiSkinToneDefault);
   const selectedMessageIds = useSelector(getSelectedMessageIds);
@@ -269,6 +308,8 @@ export const SmartCompositionArea = memo(function SmartCompositionArea({
     <CompositionArea
       // Base
       conversationId={id}
+      tellomiUpdateRequired={isTellomiReadOnly || hasBuildExpired}
+      onTellomiUpdate={onTellomiUpdate}
       draftBodyRanges={hydratedDraftBodyRanges ?? null}
       draftEditMessage={draftEditMessage ?? null}
       draftText={conversation.draftText ?? null}
