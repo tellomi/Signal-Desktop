@@ -17,6 +17,7 @@ import {
 import { getLinkErrorKind } from './linkLog.std.ts';
 import {
   classifyLinkPreview,
+  getBodyForLinkRegistry,
   getLinkRegistry,
 } from './linkRegistry.preload.ts';
 
@@ -57,7 +58,8 @@ function decideReceivedLinkPreview(
     check = parseReceiveCheck(
       registry.receiveCheck(
         toPreviewInputJson(input),
-        body,
+        // ADR-0063 §5.6: an `http://` / scheme-less link the registry claims counts as there
+        getBodyForLinkRegistry(body, preview.url),
         toMessageContextJson(context)
       )
     );

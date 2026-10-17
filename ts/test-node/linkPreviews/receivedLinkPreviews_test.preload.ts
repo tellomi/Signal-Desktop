@@ -11,7 +11,10 @@ import { LinkRegistry } from '@signalapp/libsignal-client/dist/links.js';
 import * as Bytes from '../../Bytes.std.ts';
 import { AttachmentDownloadManager } from '../../jobs/AttachmentDownloadManager.preload.ts';
 import { getReceivedLinkPreviews } from '../../linkPreviews/receivedLinkPreviews.preload.ts';
-import { _setLinkRegistryForTesting } from '../../linkPreviews/linkRegistry.preload.ts';
+import {
+  _setLinkRegistryForTesting,
+  claimsHttpsUpgrade,
+} from '../../linkPreviews/linkRegistry.preload.ts';
 import { setOnLogCallback } from '../../logging/log.std.ts';
 import type { MessageAttributesType } from '../../model-types.d.ts';
 import type { MessageModel } from '../../models/messages.preload.ts';
@@ -298,6 +301,47 @@ describe('getReceivedLinkPreviews', () => {
   // that end the whole message, so nothing was stored. Sticker pack and group invite links are
   // not read in a way that can fail when a message arrives: their tests pin that, so the day
   // something starts reading them, these say so.
+  // owner 2026-10-17 (ADR-0063 §5.6): the body writes the link as `http://…` or without a
+  // scheme, the preview is its https form.
+  describe('an http or scheme-less link in the body', () => {
+    it('keeps the preview when the registry claims the https link', () => {
+      const url = 'https://b23.tv/BV1GJ411x7h7';
+      for (const body of [
+        '看这个 b23.tv/BV1GJ411x7h7',
+        '看这个 http://b23.tv/BV1GJ411x7h7',
+      ]) {
+        assert.lengthOf(
+          receive([toPreview({ url, title: 't' }, { withImage: false })], body),
+          1,
+          body
+        );
+      }
+    });
+
+    it('drops it, as Signal does, when the registry does not claim it', () => {
+      const url = 'https://www.wikipedia.org/wiki/Tellomi';
+      assert.lengthOf(
+        receive(
+          [toPreview({ url, title: 't' }, { withImage: false })],
+          '看这个 http://www.wikipedia.org/wiki/Tellomi'
+        ),
+        0
+      );
+    });
+
+    it('never upgrades a first-party link: its card needs https in the body', () => {
+      assert.isTrue(claimsHttpsUpgrade('https://b23.tv/BV1GJ411x7h7'));
+      assert.isFalse(claimsHttpsUpgrade('https://tell.cc/g/abc'));
+      assert.isFalse(
+        claimsHttpsUpgrade('https://www.wikipedia.org/wiki/Tellomi')
+      );
+      assert.isFalse(
+        claimsHttpsUpgrade('http://b23.tv/BV1GJ411x7h7'),
+        'https only'
+      );
+    });
+  });
+
   describe('a preview whose link cannot be read', () => {
     const CALL_KEY = 'bcdf-ghkm-npqr-stxz-bcdf-ghkm-npqr-stxz';
     const GOOD_CALL = `https://tell.cc/call#key=${CALL_KEY}`;

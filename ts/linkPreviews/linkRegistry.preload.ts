@@ -35,6 +35,7 @@ import {
 } from './linkCardVisual.std.ts';
 import type { LinkCardIconType } from './linkCardIcon.std.ts';
 import { readBundledLinkIcon } from './linkCardIcon.node.ts';
+import { getBodyWithHttpsLink } from './linkHttpsUpgrade.std.ts';
 import { getLinkErrorKind } from './linkLog.std.ts';
 import {
   LINK_REGISTRY_UPDATE_DIR,
@@ -43,6 +44,9 @@ import {
 import { parseLinkOpenPlan } from './linkOpenPlan.std.ts';
 
 const log = createLogger('linkRegistry');
+
+// rust/links' first-party provider (`limits.rs` `TELLOMI`).
+const FIRST_PARTY_PROVIDER = 'tellomi';
 
 // The link registry (ADR-0063 §8.1 rows 2–3): the bundled one, or a hot-updated one on top of it when rust/links
 // accepts that (linkRegistryStore.node.ts). The main process downloads updates and says so when one is stored.
@@ -167,9 +171,12 @@ export function classifyLinkPreview(
     return undefined;
   }
 
+  const registryBody = getBodyForLinkRegistry(body, preview.url);
   const previewJson = toPreviewInputJson(preview);
   const messageJson = toMessageContextJson(context);
-  const key = [current.version, previewJson, body, messageJson].join('\u0000');
+  const key = [current.version, previewJson, registryBody, messageJson].join(
+    '\u0000'
+  );
   const cached = cardCache.get(key);
   if (cached !== undefined) {
     return cached === 'none' ? undefined : cached;
@@ -177,7 +184,9 @@ export function classifyLinkPreview(
 
   let card: LinkCardType | undefined;
   try {
-    card = parseLinkCard(current.classify(previewJson, body, messageJson));
+    card = parseLinkCard(
+      current.classify(previewJson, registryBody, messageJson)
+    );
   } catch (error) {
     log.warn(`classify failed: ${getLinkErrorKind(error)}`);
     card = undefined;
@@ -190,6 +199,43 @@ export function classifyLinkPreview(
   }
   cardCache.set(key, card ?? 'none');
   return card;
+}
+
+// Whether an `http://` or scheme-less link may get a card over its https form `httpsUrl`
+// (ADR-0063 §5.6, linkHttpsUpgrade.std.ts): some provider in the registry claims it, and it is not
+// first-party. No registry, or a failure, claims nothing. Never logs the URL.
+export function claimsHttpsUpgrade(httpsUrl: string): boolean {
+  if (!httpsUrl.toLowerCase().startsWith('https://')) {
+    return false;
+  }
+  const current = getLinkRegistry();
+  if (!current) {
+    return false;
+  }
+  try {
+    const identified = current.identify(httpsUrl, false);
+    if (identified == null) {
+      return false;
+    }
+    const parsed: unknown = JSON.parse(identified);
+    const provider =
+      typeof parsed === 'object' && parsed != null && 'provider' in parsed
+        ? parsed.provider
+        : undefined;
+    return typeof provider === 'string' && provider !== FIRST_PARTY_PROVIDER;
+  } catch (error) {
+    log.warn(`identify failed: ${getLinkErrorKind(error)}`);
+    return false;
+  }
+}
+
+// The body rust/links judges a preview of `previewUrl` against: the link spelt https where the
+// body writes it as `http://…` or without a scheme and the registry claims it (§5.6).
+export function getBodyForLinkRegistry(
+  body: string,
+  previewUrl: string
+): string {
+  return getBodyWithHttpsLink(body, previewUrl, claimsHttpsUpgrade);
 }
 
 // The well-known domain `url` imitates (ADR-0063 §6.1), from the same `open_plan` that warns

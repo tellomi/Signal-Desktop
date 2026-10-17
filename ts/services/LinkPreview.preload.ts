@@ -60,7 +60,11 @@ import {
   toLinkFirstPartyResult,
 } from '../linkPreviews/groupLinkState.std.ts';
 import { isAccessControlEnabled } from '../groups/util.std.ts';
-import { getLinkRegistry } from '../linkPreviews/linkRegistry.preload.ts';
+import {
+  claimsHttpsUpgrade,
+  getLinkRegistry,
+} from '../linkPreviews/linkRegistry.preload.ts';
+import { getHttpsUpgrade } from '../linkPreviews/linkHttpsUpgrade.std.ts';
 import {
   forgetUnreachableLinkHosts,
   getUnreachableLinkHosts,
@@ -119,14 +123,14 @@ function _maybeGrabLinkPreview(
   }
 
   if (currentlyMatchedLink) {
-    const allLinks = LinkPreview.findLinks(message);
+    const allLinks = findPreviewCandidates(message);
 
     if (allLinks.includes(currentlyMatchedLink)) {
       return;
     }
   }
 
-  const links = LinkPreview.findLinks(message, caretLocation);
+  const links = findPreviewCandidates(message, caretLocation);
   currentlyMatchedLink = undefined;
   excludedPreviewUrls ??= [];
 
@@ -144,6 +148,20 @@ function _maybeGrabLinkPreview(
       conversationId,
       disableFetch: !getLinkPreviewSetting(),
     })
+  );
+}
+
+// The links of `message` as they are previewed: Signal's `findLinks`, with an `http://` or
+// scheme-less link the registry claims spelt https (Tellomi, ADR-0063 §5.6). Every place that
+// compares a preview with the message uses this, so the same link is not fetched again on every
+// keystroke and its preview is not dropped at send.
+/** @testexport */
+export function findPreviewCandidates(
+  message: string,
+  caretLocation?: number
+): Array<string> {
+  return LinkPreview.findLinks(message, caretLocation).map(
+    link => getHttpsUpgrade(link, claimsHttpsUpgrade) ?? link
   );
 }
 
@@ -306,7 +324,7 @@ export function getLinkPreviewForSend(
     return [];
   }
 
-  const urlsInMessage = new Set<string>(LinkPreview.findLinks(message));
+  const urlsInMessage = new Set<string>(findPreviewCandidates(message));
 
   return (
     linkPreviewResult
