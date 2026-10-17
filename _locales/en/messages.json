@@ -12366,7 +12366,7 @@
     "description": "Release notes for 8.27"
   },
   "icu:WhatsNew__tellomi--0": {
-    "messageformat": "Links written without https:// (starting with http://, or just the address) now get a link card when Tellomi recognises the site, the same as on the latest phones. If this version ever has to be updated, the box where you type now says so, instead of letting messages fail to send.",
+    "messageformat": "When someone sends you a timed view-once photo or video from their phone, the message now says how many seconds you can look at it, and the viewer closes by itself when the time is up: a countdown ring next to the close button shows the time left.",
     "description": "Tellomi release notes; keep in sync with docs/signal/VERSIONS.md, update every release"
   },
   "icu:TellomiUpdate__available_title": {
