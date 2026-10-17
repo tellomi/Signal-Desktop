@@ -3819,13 +3819,13 @@
     "messageformat": "要举报为垃圾消息吗？"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Tellomi 将会通知此用户，其可能发送了垃圾消息。Tellomi 无法看到任何聊天的内容。"
+    "messageformat": "Tellomi 会收到通知：此人可能在发送垃圾消息。Tellomi 无法看到任何聊天的内容。"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Tellomi 将会给邀请您加入群组的用户发送通知，告知其可能发送了垃圾消息。Tellomi 无法看到任何聊天的内容。"
+    "messageformat": "Tellomi 会收到通知：邀请您加入此群组的人可能在发送垃圾消息。Tellomi 无法看到任何聊天的内容。"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Tellomi 将会给邀请您加入群组的{name}发送通知，告知其可能发送了垃圾消息。Tellomi 无法看到任何聊天的内容。"
+    "messageformat": "Tellomi 会收到通知：邀请您加入此群组的{name}可能在发送垃圾消息。Tellomi 无法看到任何聊天的内容。"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "举报垃圾消息"
