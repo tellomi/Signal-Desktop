@@ -42,6 +42,10 @@ describe('getLinkOnlyUrl', () => {
     assert.isUndefined(
       getLinkOnlyUrl('https://www.bili\u200bbili.com/video/x', false)
     );
+    // U+FEFF: String#trim strips it, so the old path returned the bare URL as link-only.
+    assert.isUndefined(getLinkOnlyUrl(`${URL}\ufeff`, false));
+    assert.isUndefined(getLinkOnlyUrl(`\ufeff${URL}`, false));
+    assert.isUndefined(getLinkOnlyUrl(`  ${URL}\ufeff\n`, false));
   });
 
   it('returns the link when it is the whole body, ignoring surrounding white space', () => {

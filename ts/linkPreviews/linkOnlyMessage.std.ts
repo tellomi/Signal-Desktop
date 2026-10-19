@@ -13,6 +13,17 @@ import type { LinkCardType } from './linkCard.std.ts';
 
 const LINK_ONLY = /^https?:\/\/\S+$/i;
 
+// White space String#trim removes, minus U+FEFF. FEFF is also `\s` / trimmed in JavaScript,
+// but it is IRI_HIDDEN (a character a reader cannot see), not ordinary surrounding white space.
+// A body that is a URL plus a trailing FEFF must not become a link-only card (PM 2026-10-19,
+// ADR-0063 §5.6; same as the receiver Linkify filter).
+const ORDINARY_TRIM_WS =
+  /^[\t\n\v\f\r \u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000]+|[\t\n\v\f\r \u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000]+$/gu;
+
+function trimOrdinaryWhiteSpace(text: string): string {
+  return text.replace(ORDINARY_TRIM_WS, '');
+}
+
 // The link the whole body consists of, or undefined. `hasOtherContent`: anything that makes the
 // message more than plain text (formatting, spoilers, mentions, attachments, long text, a sticker,
 // a contact…).
@@ -23,7 +34,8 @@ export function getLinkOnlyUrl(
   if (hasOtherContent || !body) {
     return undefined;
   }
-  const trimmed = body.trim();
+  // Do not use String#trim: it strips U+FEFF, which would hide a trailing hidden character.
+  const trimmed = trimOrdinaryWhiteSpace(body);
   // Most messages are not a link: rule them out without parsing.
   if (!LINK_ONLY.test(trimmed)) {
     return undefined;
