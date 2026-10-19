@@ -139,7 +139,8 @@ describe('getReceivedLinkPreviews', () => {
       // Signal's own "may this URL have a preview" rule stays next to rust/links' (ADR-0063
       // §5.1 rule 4: only the "URL is in the body" check is folded into `receive_check`). It is
       // the stricter of the two: it decodes a punycode host (a look-alike host is mixed script
-      // once decoded) and it distrusts a path with non-ASCII characters.
+      // once decoded). A path with visible non-ASCII text (Chinese) is no longer one of them
+      // (ADR-0063 §5.6, PM 2026-10-19: shouldPreviewHref accepts it, as rust/links does).
       const droppedBySignalAlone: Array<string> = [];
 
       for (const testCase of golden.classify) {
@@ -210,7 +211,6 @@ describe('getReceivedLinkPreviews', () => {
 
       assert.deepEqual(droppedBySignalAlone, [
         '§6.1 lookalike domain (punycode Cyrillic аррӏе.com) → plain link, flagged',
-        '§6.1 official path is shown encoded and truncated, never decoded',
       ]);
 
       // The golden really exercises all three outcomes.
