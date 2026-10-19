@@ -19,7 +19,10 @@ import {
   groupContiguousSpoilers,
 } from '../../types/BodyRange.std.ts';
 import { AtMention } from './AtMention.dom.tsx';
-import { isLinkSneaky } from '../../types/LinkPreview.std.ts';
+import {
+  getLinkifiableLength,
+  isLinkSneaky,
+} from '../../types/LinkPreview.std.ts';
 import { Emojify } from './Emojify.dom.tsx';
 import { AddNewLines } from './AddNewLines.dom.tsx';
 import type { LocalizerType } from '../../types/Util.std.ts';
@@ -441,11 +444,19 @@ export function extractLinks(
     return [];
   }
 
-  return matches.map(match => {
-    return {
-      start: match.index,
-      length: match.lastIndex - match.index,
-      url: match.url,
-    };
+  return matches.flatMap(match => {
+    // Tellomi (PM 2026-10-19): a link with a zero-width / bidi character is not clickable
+    const length = getLinkifiableLength(match.text);
+    if (length === 0) {
+      return [];
+    }
+    const dropped = match.text.length - length;
+    return [
+      {
+        start: match.index,
+        length: match.lastIndex - match.index - dropped,
+        url: dropped === 0 ? match.url : match.url.slice(0, -dropped),
+      },
+    ];
   });
 }

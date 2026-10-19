@@ -6,6 +6,7 @@ import { assert } from 'chai';
 import {
   cutAtIriTerminator,
   findLinks,
+  getLinkifiableLength,
   isLinkSneaky,
   isValidLink,
   shouldLinkifyMessage,
@@ -142,6 +143,75 @@ describe('Link previews', () => {
       );
       assert.strictEqual(cut('https://a.org'), 'https://a.org');
       assert.strictEqual(cut('not a url，x'), 'not a url，x');
+    });
+  });
+
+  describe('#getLinkifiableLength (Tellomi, PM 2026-10-19)', () => {
+    const hidden = [
+      '\u200b',
+      '\u200c',
+      '\u200d',
+      '\u200e',
+      '\u200f',
+      '\u2060',
+      '\u2061',
+      '\u2062',
+      '\u2063',
+      '\u2064',
+      '\u202a',
+      '\u202b',
+      '\u202c',
+      '\u202d',
+      '\u202e',
+      '\u2066',
+      '\u2067',
+      '\u2068',
+      '\u2069',
+      '\ufeff',
+    ];
+
+    it('is 0 for a link with a zero-width or bidi character in it (as linkify-it finds it)', () => {
+      for (const ch of hidden) {
+        assert.strictEqual(
+          getLinkifiableLength(`https://signal.org/a${ch}b`),
+          0,
+          JSON.stringify(ch)
+        );
+        assert.strictEqual(
+          getLinkifiableLength(`https://signal.org/abc${ch}`),
+          0,
+          JSON.stringify(ch)
+        );
+      }
+      assert.strictEqual(
+        getLinkifiableLength('https://signal.org/abc,\u200f'),
+        0
+      );
+      assert.strictEqual(
+        getLinkifiableLength('https://signal.org/a/中\u200b文'),
+        0
+      );
+    });
+
+    it('leaves links without hidden characters exactly as they were', () => {
+      for (const link of [
+        'https://signal.org',
+        'https://signal.org/abc',
+        'https://zh.wikipedia.org/wiki/中国',
+        'https://zh.wikipedia.org/wiki/中国，很好',
+        'https://signal.org/%E4%B8%AD',
+        'signal.org',
+      ]) {
+        assert.strictEqual(getLinkifiableLength(link), link.length, link);
+      }
+    });
+
+    it('stops at Chinese punctuation when a hidden character only follows it', () => {
+      const link = 'https://zh.wikipedia.org/wiki/中国，\u200b很好';
+      assert.strictEqual(
+        link.slice(0, getLinkifiableLength(link)),
+        'https://zh.wikipedia.org/wiki/中国'
+      );
     });
   });
 

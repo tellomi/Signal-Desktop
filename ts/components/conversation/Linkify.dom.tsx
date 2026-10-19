@@ -7,6 +7,7 @@ import LinkifyIt, { type Match as LinkifyItMatch } from 'linkify-it';
 
 import type { RenderTextCallbackType } from '../../types/Util.std.ts';
 import {
+  getLinkifiableLength,
   isLinkSneaky,
   shouldLinkifyMessage,
 } from '../../types/LinkPreview.std.ts';
@@ -372,19 +373,27 @@ export function Linkify(props: Props): JSX.Element {
         results.push(renderNonLink({ text: textWithNoLink, key: count }));
       }
 
-      const { url, text: originalText } = match;
+      // Tellomi (PM 2026-10-19): a link with a zero-width / bidi character is not clickable
+      const linkLength = getLinkifiableLength(match.text);
+      const dropped = match.text.length - linkLength;
+      const url = dropped === 0 ? match.url : match.url.slice(0, -dropped);
+      const originalText = match.text.slice(0, linkLength);
       count += 1;
-      if (SUPPORTED_PROTOCOLS.test(url) && isLinkSneaky(url) !== 'yes') {
+      if (
+        linkLength > 0 &&
+        SUPPORTED_PROTOCOLS.test(url) &&
+        isLinkSneaky(url) !== 'yes'
+      ) {
         results.push(
           <a key={count} href={url}>
             {originalText}
           </a>
         );
+        chunkLastIndex = match.index + linkLength;
       } else {
-        results.push(renderNonLink({ text: originalText, key: count }));
+        results.push(renderNonLink({ text: match.text, key: count }));
+        chunkLastIndex = match.lastIndex;
       }
-
-      chunkLastIndex = match.lastIndex;
     });
 
     if (chunkLastIndex < chunk.length) {

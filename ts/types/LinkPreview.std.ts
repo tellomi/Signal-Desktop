@@ -107,6 +107,27 @@ function isPreviewableIri(href: string): boolean {
   return true;
 }
 
+// Tellomi (PM 2026-10-19, ADR-0063 §5.6): how much of a link linkify found may be shown as a
+// clickable link (and previewed, see `findPreviewCandidates`). A link with a character a reader cannot see in it (`IRI_HIDDEN`, the same set
+// that keeps such a link from getting a preview) is not a link at all: 0. linkify keeps Chinese
+// punctuation and what follows it in the link; a hidden character after that punctuation is not
+// part of the link (it already ended there, as on iOS and Android), so then only the part before
+// the punctuation is clickable. Links without hidden characters are left exactly as they were.
+export function getLinkifiableLength(link: string): number {
+  let index = 0;
+  for (const ch of link) {
+    // Hidden first: U+FEFF is also `\s` in JavaScript, but it is a hidden character, not an end
+    if (IRI_HIDDEN.test(ch)) {
+      return 0;
+    }
+    if (IRI_TERMINATOR.test(ch)) {
+      return IRI_HIDDEN.test(link.slice(index)) ? index : link.length;
+    }
+    index += ch.length;
+  }
+  return link.length;
+}
+
 // `https://zh.wikipedia.org/wiki/中国，很好` → `https://zh.wikipedia.org/wiki/中国`: linkify keeps
 // Chinese punctuation and the text after it in the link (PM 2026-10-19, ADR-0063 §5.6).
 export function cutAtIriTerminator(link: string): string {
