@@ -64,10 +64,19 @@ export function getValidLinkPreviews(
     ) => ReceivedLinkPreviewDecisionType | undefined;
   }
 ): Array<LinkPreviewType> {
-  const urlsInBody = LinkPreview.findLinks(body || '');
+  // Tellomi (PM 2026-10-19, ADR-0063 §5.6): the links of the body as they are shown; a link with a
+  // hidden character in it is not one, so it gets no preview here either (as when sending)
+  const urlsInBody = LinkPreview.findLinkifiableLinks(body || '');
 
   const validated = previews
     .map((item: LinkPreviewType) => {
+      // Tellomi (PM 2026-10-19): with or without rust/links' decision
+      if (
+        item.url &&
+        LinkPreview.isPreviewOfHiddenCharacterLink(item.url, body)
+      ) {
+        return null;
+      }
       const decision = decide?.(item);
       if (decision) {
         if (

@@ -81,6 +81,91 @@ describe('getValidLinkPreviews', () => {
       ['https://url-1.org', 'https://url-2.org']
     );
   });
+  // Tellomi (PM 2026-10-19, ADR-0063 §5.6): a link with a hidden character in it gets no preview on
+  // the receiving side either, with or without a decision from rust/links.
+  describe('with hidden characters (Tellomi)', () => {
+    const KEEP: ReceivedLinkPreviewDecisionType = {
+      keepPreview: true,
+      keepRich: true,
+      keepImage: true,
+    };
+    const HIDDEN_CASES: ReadonlyArray<[string, string]> = [
+      ['https://signal.org/abc', 'https://signal.org/abc\ufeff'],
+      ['https://signal.org/abc', 'https://sig\u200bnal.org/abc'],
+      ['https://sig\u200bnal.org/abc', 'https://sig\u200bnal.org/abc'],
+      ['https://signal.org', 'https://signal.org/a\u2060b'],
+      ['https://signal.org/abc', '看 \u200bhttps://signal.org/abc'],
+    ];
+
+    it('drops such a preview without a decision', () => {
+      for (const [url, body] of HIDDEN_CASES) {
+        assert.lengthOf(
+          getValidLinkPreviews([composePreview(url)], body, {
+            isStory: false,
+          }),
+          0,
+          JSON.stringify([url, body])
+        );
+      }
+    });
+
+    it('drops such a preview although the decision keeps it', () => {
+      for (const [url, body] of HIDDEN_CASES) {
+        assert.lengthOf(
+          getValidLinkPreviews([composePreview(url)], body, {
+            isStory: false,
+            decide: () => KEEP,
+          }),
+          0,
+          JSON.stringify([url, body])
+        );
+      }
+    });
+
+    it('keeps the preview of a link that ended at punctuation before the hidden character', () => {
+      for (const body of [
+        'https://signal.org/abc,\u200f next',
+        'https://signal.org/abc!\u2060',
+        'https://signal.org/abc.\u200e',
+      ]) {
+        assert.lengthOf(
+          getValidLinkPreviews(
+            [composePreview('https://signal.org/abc')],
+            body,
+            {
+              isStory: false,
+            }
+          ),
+          1,
+          JSON.stringify(body)
+        );
+      }
+      assert.lengthOf(
+        getValidLinkPreviews(
+          [composePreview('https://zh.wikipedia.org/wiki/中国')],
+          'https://zh.wikipedia.org/wiki/中国，\u200b很好',
+          { isStory: false }
+        ),
+        1
+      );
+    });
+
+    it('keeps the preview of a clean link next to one with a hidden character', () => {
+      const result = getValidLinkPreviews(
+        [
+          composePreview('https://signal.org/ok'),
+          composePreview('https://signal.org/abc'),
+        ],
+        'https://signal.org/abc\u200b https://signal.org/ok',
+        { isStory: false, decide: () => KEEP }
+      );
+      assert.deepEqual(
+        result.map(item => item.url),
+        ['https://signal.org/ok']
+      );
+    });
+  });
+
   // Tellomi (ADR-0063 §5.1 rule 4, §7.4): rust/links' decision about a received preview, given by
   // the caller.
   describe('with a decision from rust/links', () => {

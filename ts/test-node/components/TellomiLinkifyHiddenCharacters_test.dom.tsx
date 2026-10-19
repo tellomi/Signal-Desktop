@@ -18,7 +18,7 @@ describe('<Linkify /> with hidden characters (Tellomi)', () => {
   it('does not make a link with a hidden character in it clickable', () => {
     assert.deepEqual(anchors('https://signal.org/a\u200bb'), []);
     assert.deepEqual(anchors('see https://signal.org/abc\u200f next'), []);
-    assert.deepEqual(anchors('https://signal.org/abc,\u200f next'), []);
+    assert.deepEqual(anchors('https://signal.org/a,b\u200fc'), []);
     assert.deepEqual(anchors('https://signal.org/abc\u2060'), []);
     assert.deepEqual(anchors('https://signal.org/abc\ufeff x'), []);
     assert.deepEqual(anchors('https://signal.org/abc\u2066x'), []);
@@ -52,6 +52,25 @@ describe('<Linkify /> with hidden characters (Tellomi)', () => {
     assert.deepEqual(anchors('https://zh.wikipedia.org/wiki/中国，很好'), [
       'https://zh.wikipedia.org/wiki/中国，很好',
     ]);
+  });
+
+  // PM 2026-10-19: same as iOS and Android
+  it('ends the link at ASCII end punctuation followed by a hidden character', () => {
+    for (const text of [
+      'https://signal.org/abc,\u200f next',
+      'https://signal.org/abc!\u2060',
+      'https://signal.org/abc.\u200e',
+    ]) {
+      assert.deepEqual(
+        anchors(text),
+        ['https://signal.org/abc'],
+        JSON.stringify(text)
+      );
+    }
+    const html = renderToStaticMarkup(
+      <Linkify text={'https://signal.org/abc,\u200f next'} />
+    );
+    assert.include(html, '</a>,\u200f next');
   });
 
   it('ends the link at Chinese punctuation followed by a hidden character', () => {
@@ -90,6 +109,17 @@ describe('extractLinks with hidden characters (Tellomi)', () => {
     assert.deepEqual(links(chinese), [
       { start: 0, length: chinese.length, url: chinese },
     ]);
+  });
+
+  it('ends the link at ASCII end punctuation followed by a hidden character', () => {
+    const url = 'https://signal.org/abc';
+    for (const after of [',\u200f next', '!\u2060', '.\u200e']) {
+      assert.deepEqual(
+        links(`see ${url}${after}`),
+        [{ start: 4, length: url.length, url }],
+        JSON.stringify(after)
+      );
+    }
   });
 
   it('ends the link at Chinese punctuation followed by a hidden character', () => {

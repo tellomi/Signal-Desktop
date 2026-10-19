@@ -2277,11 +2277,12 @@ export class BackupImportStream extends Writable {
     body: string | null | undefined;
     previews: Array<Backups.LinkPreview>;
   }): Array<LinkPreviewType> {
-    const urlsInBody = LinkPreview.findLinks(body ?? '');
     return previews
       .map(preview => {
+        // Tellomi (PM 2026-10-19, ADR-0063 §5.6): a link with a hidden character in it gets no
+        // preview, as when it is received
         if (
-          !LinkPreview.isValidLinkPreview(urlsInBody, preview, {
+          !LinkPreview.isValidLinkPreviewForBody(body, preview, {
             isStory: false,
           })
         ) {

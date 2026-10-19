@@ -1,7 +1,7 @@
 // Copyright 2026 重庆半格智能科技有限公司
 // SPDX-License-Identifier: AGPL-3.0-only
 
-import { findLinks } from '../types/LinkPreview.std.ts';
+import { findLinks, getLinkifiableLength } from '../types/LinkPreview.std.ts';
 import { maybeParseUrl } from '../util/url.std.ts';
 import type { LinkCardType } from './linkCard.std.ts';
 
@@ -34,8 +34,14 @@ export function getLinkOnlyUrl(
   }
   // The body must show it as one link, all of it: nothing linkify leaves out (trailing
   // punctuation, text after a space) and no text Signal refuses to linkify.
+  // Tellomi (PM 2026-10-19, ADR-0063 §5.6): nor a link with a hidden character in it, which is not
+  // clickable and gets no card, not even the one drawn from the URL alone.
   const links = findLinks(trimmed);
-  return links.length === 1 && links[0] === trimmed ? trimmed : undefined;
+  return links.length === 1 &&
+    links[0] === trimmed &&
+    getLinkifiableLength(trimmed) === trimmed.length
+    ? trimmed
+    : undefined;
 }
 
 // Whether the bubble is the card alone: the body is exactly the link of its only preview, and

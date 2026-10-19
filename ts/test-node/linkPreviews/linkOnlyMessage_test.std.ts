@@ -35,6 +35,15 @@ const CARD: LinkCardType = {
 const URL = 'https://www.bilibili.com/video/BV1YDhJ6ZEL6';
 
 describe('getLinkOnlyUrl', () => {
+  // Tellomi (PM 2026-10-19, ADR-0063 §5.6): no card, not even one drawn from the URL alone
+  it('is undefined for a link with a hidden character in it', () => {
+    assert.isUndefined(getLinkOnlyUrl(`${URL}\u200b`, false));
+    assert.isUndefined(getLinkOnlyUrl(`${URL}\u2060`, false));
+    assert.isUndefined(
+      getLinkOnlyUrl('https://www.bili\u200bbili.com/video/x', false)
+    );
+  });
+
   it('returns the link when it is the whole body, ignoring surrounding white space', () => {
     assert.strictEqual(getLinkOnlyUrl(URL, false), URL);
     assert.strictEqual(getLinkOnlyUrl(`  ${URL}\n`, false), URL);

@@ -5,8 +5,11 @@ import { assert } from 'chai';
 
 import {
   cutAtIriTerminator,
+  findLinkifiableLinks,
   findLinks,
   getLinkifiableLength,
+  isPreviewOfHiddenCharacterLink,
+  isValidLinkPreviewForBody,
   isLinkSneaky,
   isValidLink,
   shouldLinkifyMessage,
@@ -184,7 +187,16 @@ describe('Link previews', () => {
         );
       }
       assert.strictEqual(
-        getLinkifiableLength('https://signal.org/abc,\u200f'),
+        getLinkifiableLength('https://signal.org/a,b\u200fc'),
+        0
+      );
+      assert.strictEqual(
+        getLinkifiableLength('https://en.wikipedia.org/wiki/F_(b)\u200b'),
+        0
+      );
+      // A closing bracket with its opener in the link belongs to it (Android Linkifier)
+      assert.strictEqual(
+        getLinkifiableLength('https://signal.org/(abc)\u200b'),
         0
       );
       assert.strictEqual(
@@ -206,12 +218,137 @@ describe('Link previews', () => {
       }
     });
 
+    // PM 2026-10-19: the link ends at ASCII punctuation that ends a link; a hidden character after
+    // it is not part of the link (Android Linkifier, iOS LinkValidator)
+    it('stops at ASCII end punctuation when a hidden character follows it', () => {
+      for (const [link, expected] of [
+        ['https://signal.org/abc,\u200f next', 'https://signal.org/abc'],
+        ['https://signal.org/abc,\u200f', 'https://signal.org/abc'],
+        ['https://signal.org/abc!\u2060', 'https://signal.org/abc'],
+        ['https://signal.org/abc.\u200e', 'https://signal.org/abc'],
+        ['https://signal.org/abc?\u00ad', 'https://signal.org/abc'],
+        ['https://signal.org/abc,.\u2060', 'https://signal.org/abc'],
+        ['https://signal.org/abc,\u200fdef', 'https://signal.org/abc'],
+        ['https://signal.org/abc)\u200b', 'https://signal.org/abc'],
+        ['https://signal.org/(abc))\u200b', 'https://signal.org/(abc)'],
+      ]) {
+        assert.strictEqual(
+          link?.slice(0, getLinkifiableLength(link ?? '')),
+          expected,
+          JSON.stringify(link)
+        );
+      }
+    });
+
     it('stops at Chinese punctuation when a hidden character only follows it', () => {
       const link = 'https://zh.wikipedia.org/wiki/中国，\u200b很好';
       assert.strictEqual(
         link.slice(0, getLinkifiableLength(link)),
         'https://zh.wikipedia.org/wiki/中国'
       );
+    });
+  });
+
+  describe('#findLinkifiableLinks (Tellomi, PM 2026-10-19)', () => {
+    it('leaves out links with a hidden character, cut as they are shown', () => {
+      assert.deepEqual(
+        findLinkifiableLinks(
+          'a https://signal.org/abc\ufeff b https://sig\u200bnal.org/x c https://signal.org/ok'
+        ),
+        ['https://signal.org/ok']
+      );
+      assert.deepEqual(
+        findLinkifiableLinks('https://signal.org/abc,\u200f next'),
+        ['https://signal.org/abc']
+      );
+      assert.deepEqual(
+        findLinkifiableLinks('https://zh.wikipedia.org/wiki/中国，\u200b很好'),
+        ['https://zh.wikipedia.org/wiki/中国']
+      );
+      assert.deepEqual(findLinkifiableLinks('see https://signal.org/abc'), [
+        'https://signal.org/abc',
+      ]);
+    });
+  });
+
+  describe('#isPreviewOfHiddenCharacterLink (Tellomi, PM 2026-10-19)', () => {
+    it('is true for a preview of a link with a hidden character in the body', () => {
+      for (const [url, body] of [
+        ['https://signal.org/abc', 'https://signal.org/abc\ufeff'],
+        ['https://signal.org/abc', 'see https://signal.org/abc\u2060 next'],
+        ['https://signal.org/abc', 'https://sig\u200bnal.org/abc'],
+        ['https://sig\u200bnal.org/abc', 'https://sig\u200bnal.org/abc'],
+        // where NSDataDetector ends such a link
+        ['https://signal.org', 'https://signal.org/a\u2060b'],
+        ['https://signal.org/', 'see https://signal.org/a\u2060b'],
+        // glued to the start of a link
+        ['https://signal.org/abc', '看 \u200bhttps://signal.org/abc'],
+        ['https://signal.org/abc', '\ufeffhttps://signal.org/abc'],
+      ]) {
+        assert.isTrue(
+          isPreviewOfHiddenCharacterLink(url ?? '', body),
+          JSON.stringify([url, body])
+        );
+      }
+    });
+
+    it('is false for a preview of a clean link', () => {
+      for (const [url, body] of [
+        ['https://signal.org/abc', 'https://signal.org/abc'],
+        ['https://signal.org/abc', 'https://signal.org/abc,\u200f next'],
+        ['https://signal.org/abc', 'https://signal.org/abc!\u2060'],
+        ['https://signal.org/abc', 'https://signal.org/abc.\u200e'],
+        [
+          'https://signal.org',
+          'https://signal.org/a\u2060b https://signal.org',
+        ],
+        ['https://signal.org/abc', 'hi\nhttps://signal.org/abc'],
+        ['https://signal.org/abc', 'hi\r\n\thttps://signal.org/abc'],
+        ['https://signal.org/abcd', 'https://signal.org/abc\u200b'],
+        ['https://signal.org', ''],
+      ]) {
+        assert.isFalse(
+          isPreviewOfHiddenCharacterLink(url ?? '', body),
+          JSON.stringify([url, body])
+        );
+      }
+    });
+  });
+
+  describe('#isValidLinkPreviewForBody (Tellomi, PM 2026-10-19)', () => {
+    const valid = (body: string, url: string) =>
+      isValidLinkPreviewForBody(body, { url, title: 'T' }, { isStory: false });
+
+    it('drops a preview for a link with a hidden character', () => {
+      assert.isFalse(
+        valid('https://sig\u200bnal.org/abc', 'https://sig\u200bnal.org/abc')
+      );
+      assert.isFalse(
+        valid('https://signal.org/abc\ufeff', 'https://signal.org/abc')
+      );
+      assert.isFalse(
+        valid('https://signal.org/abc\u200b', 'https://signal.org/abc\u200b')
+      );
+    });
+
+    it('keeps a preview for a link that ended before the hidden character', () => {
+      assert.isTrue(
+        valid('https://signal.org/abc,\u200f next', 'https://signal.org/abc')
+      );
+      assert.isTrue(
+        valid(
+          'https://zh.wikipedia.org/wiki/中国，\u200b很好',
+          'https://zh.wikipedia.org/wiki/中国'
+        )
+      );
+    });
+
+    it('is Signal’s check otherwise', () => {
+      assert.isTrue(
+        valid('see https://signal.org today', 'https://signal.org')
+      );
+      assert.isFalse(valid('no link', 'https://signal.org'));
+      assert.isFalse(valid('http://signal.org', 'http://signal.org'));
     });
   });
 
