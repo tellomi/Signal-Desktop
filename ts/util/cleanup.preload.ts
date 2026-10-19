@@ -29,6 +29,7 @@ import { getMessageIdForLogging } from './idForLogging.preload.ts';
 import { singleProtoJobQueue } from '../jobs/singleProtoJobQueue.preload.ts';
 import { MINUTE } from './durations/index.std.ts';
 import { drop } from './drop.std.ts';
+import { refreshTellomiPinNotices } from './tellomiPinNoticeRefresh.preload.ts';
 import {
   getFilePathsReferencedByAttachment,
   getFilePathsReferencedByMessage,
@@ -102,6 +103,9 @@ export async function eraseMessageContents(
   }
 
   await DataWriter.deleteSentProtoByMessageId(message.id);
+
+  // Tellomi (ADR-0081 §4.4): a pin's chat event no longer quotes it.
+  drop(refreshTellomiPinNotices([originalAttributes]));
 }
 
 export async function cleanupMessages(
@@ -140,6 +144,9 @@ export async function cleanupMessages(
     )
   );
   await unloadedQueue.onIdle();
+
+  // Tellomi (ADR-0081 §4.4): pin chat events of deleted messages say "pinned a message".
+  drop(refreshTellomiPinNotices(messages));
 
   drop(
     throttledUpdateBackupMediaDownloadProgress(

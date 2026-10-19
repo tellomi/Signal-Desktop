@@ -2799,6 +2799,8 @@ async function startApp(): Promise<void> {
         receivedAtTimestamp: data.receivedAtDate,
         expireTimer: data.message.expireTimer,
         expirationStartTimestamp: null,
+        // Tellomi (ADR-0081 §4.4): "Pin without notifying" doesn't notify.
+        tellomiSilent: data.message.tellomiPinSilent === true,
       });
       confirm();
       return;

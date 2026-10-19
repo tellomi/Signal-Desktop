@@ -1136,6 +1136,11 @@ type ReadableInterface = {
     conversationId: string
   ) => ReadonlyArray<PinnedMessagePreloadData>;
   getNextExpiringPinnedMessageAcrossConversations: () => PinnedMessage | null;
+  // Tellomi (ADR-0081 §4.4): pin chat events by the pinned message's timestamp.
+  getTellomiPinNoticeIdsByTargetSentAt: (
+    conversationId: string,
+    targetSentTimestamps: ReadonlyArray<number>
+  ) => Array<string>;
 
   getMessagesNeedingUpgrade: (
     limit: number,

@@ -64,6 +64,7 @@ import { getUserConversationId } from '../state/selectors/user.std.ts';
 import { itemStorage } from '../textsecure/Storage.preload.ts';
 import { Emoji } from '../axo/emoji.std.ts';
 import { isTellomiLocationMessage } from './tellomiLocationMessage.std.ts';
+import { getTellomiPinNoticeText } from './tellomiPinNotice.std.ts';
 
 const log = createLogger('getNotificationDataForMessage');
 const { i18n } = window.SignalContext;
@@ -532,18 +533,18 @@ export function getNotificationDataForMessage(
   if (isPinnedMessageNotification(attributes)) {
     const { sourceServiceId } = attributes;
     const ourAci = itemStorage.user.getCheckedAci();
+    const pinnedByMe = sourceServiceId === ourAci;
 
-    let text: string;
-    if (sourceServiceId === ourAci) {
-      text = i18n('icu:message--pinned--preview--sent');
-    } else {
-      const sender = findAndFormatContact(sourceServiceId).title;
-      text = i18n('icu:message--pinned--preview--received', { sender });
-    }
-
+    // Tellomi (ADR-0081 §4.4): "×× pinned “…”", the same line as the chat event and the phones.
     return {
       emoji: Emoji.PUSHPIN,
-      text,
+      text: getTellomiPinNoticeText(i18n, {
+        isMe: pinnedByMe,
+        senderTitle: pinnedByMe
+          ? ''
+          : findAndFormatContact(sourceServiceId).title,
+        subject: attributes.tellomiPinSubject,
+      }),
     };
   }
 

@@ -1801,6 +1801,20 @@ WHERE
 </details>
 
 <details>
+<summary>Index: messages → messages_tellomi_pin_notice_target</summary>
+
+```sql
+CREATE INDEX messages_tellomi_pin_notice_target ON messages (
+  conversationId,
+  json ->> '$.pinMessage.targetSentTimestamp'
+)
+WHERE
+  type IS 'pinned-message-notification'
+```
+
+</details>
+
+<details>
 <summary>Index: messages → messages_unexpectedly_missing_expiration_start_timestamp</summary>
 
 ```sql

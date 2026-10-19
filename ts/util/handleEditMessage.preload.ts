@@ -13,6 +13,7 @@ import { getReceivedLinkPreviews } from '../linkPreviews/receivedLinkPreviews.pr
 import { ReadStatus } from '../messages/MessageReadStatus.std.ts';
 import { DataWriter } from '../sql/Client.preload.ts';
 import { drop } from './drop.std.ts';
+import { refreshTellomiPinNotices } from './tellomiPinNoticeRefresh.preload.ts';
 import { upgradeMessageSchema } from './migrations.preload.ts';
 import {
   deliveryReceiptQueue,
@@ -313,6 +314,9 @@ export async function handleEditMessage(
       sentAt: upgradedEditedMessageData.timestamp,
     }
   );
+
+  // Tellomi (ADR-0081 §4.4): a pin's chat event quotes what the message says now.
+  drop(refreshTellomiPinNotices([mainMessageModel.attributes]));
 
   if (conversation) {
     // Clear typing indicator

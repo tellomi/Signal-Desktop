@@ -42,6 +42,7 @@ import { clearTimeoutIfNecessary } from '../util/clearTimeoutIfNecessary.std.ts'
 import { getMessageSentTimestamp } from '../util/getMessageSentTimestamp.std.ts';
 import { getNotificationTextForMessage } from '../util/getNotificationTextForMessage.preload.ts';
 import { getNotificationDataForMessage } from '../util/getNotificationDataForMessage.preload.ts';
+import { getTellomiPinSubjectForPin } from '../util/tellomiPinNoticeRefresh.preload.ts';
 import type { ProfileNameChangeType } from '../util/getStringForProfileChange.std.ts';
 import type { AttachmentType, ThumbnailType } from '../types/Attachment.std.ts';
 import { toDayMillis } from '../util/timestamp.std.ts';
@@ -3685,9 +3686,15 @@ export class ConversationModel {
     receivedAtTimestamp: number;
     expireTimer: DurationInSeconds | null;
     expirationStartTimestamp: number | null;
+    // Tellomi (ADR-0081 §4.1): "Pin without notifying" in a group (`pinSilent`).
+    tellomiSilent?: boolean;
   }): Promise<void> {
     const ourAci = itemStorage.user.getCheckedAci();
     const senderIsMe = params.senderAci === ourAci;
+    // Tellomi (ADR-0081 §4.4): what the pinned message is, for "×× pinned “…”".
+    const tellomiPinSubject = await getTellomiPinSubjectForPin(
+      params.pinMessage
+    );
 
     const message = new MessageModel({
       ...generateMessageId(incrementMessageCounter()),
@@ -3702,12 +3709,24 @@ export class ConversationModel {
       expireTimer: params.expireTimer ?? undefined,
       expirationStartTimestamp: params.expirationStartTimestamp,
       pinMessage: params.pinMessage,
+      ...(tellomiPinSubject != null ? { tellomiPinSubject } : {}),
     });
 
     await window.MessageCache.saveMessage(message, { forceSave: true });
     window.MessageCache.register(message);
 
     drop(this.onNewMessage(message));
+
+    // Tellomi (ADR-0081 §4.4): someone else's pin counts as unread, and in a group it notifies.
+    if (!senderIsMe) {
+      this.throttledUpdateUnread();
+      await maybeNotify({
+        kind: 'tellomiPinNotice',
+        message: message.attributes,
+        conversation: this,
+        isSilent: params.tellomiSilent === true,
+      });
+    }
   }
 
   async addNotification(

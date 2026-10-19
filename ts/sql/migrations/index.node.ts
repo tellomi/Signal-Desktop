@@ -161,6 +161,7 @@ import updateToSchemaVersion1801 from './1801-tellomi-attachment-as-file.std.ts'
 import updateToSchemaVersion1802 from './1802-tellomi-attachment-spoiler.std.ts';
 import updateToSchemaVersion1803 from './1803-tellomi-attachment-live-photo.std.ts';
 import updateToSchemaVersion1804 from './1804-tellomi-pinned-for-me.std.ts';
+import updateToSchemaVersion1805 from './1805-tellomi-pin-notice-target.std.ts';
 
 import { DataWriter } from '../Server.node.ts';
 import { strictAssert } from '../../util/assert.std.ts';
@@ -1688,6 +1689,7 @@ export const SCHEMA_VERSIONS: ReadonlyArray<SchemaUpdateType> = [
   { version: 1802, update: updateToSchemaVersion1802 },
   { version: 1803, update: updateToSchemaVersion1803 },
   { version: 1804, update: updateToSchemaVersion1804 },
+  { version: 1805, update: updateToSchemaVersion1805 },
 ];
 
 class DBVersionFromFutureError extends Error {

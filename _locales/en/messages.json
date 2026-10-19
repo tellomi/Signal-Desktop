@@ -1790,6 +1790,62 @@
     "messageformat": "Go to message",
     "description": "Conversation > Chat Event > Pinned Message > Button to scroll to the pinned message"
   },
+  "icu:TellomiPinNotice__SomeonePinned": {
+    "messageformat": "{sender} pinned {subject}",
+    "description": "Tellomi (ADR-0081 §4.4): chat event, left pane and notification when someone pinned a message. {subject} is a quote of its first words or what it is, e.g. “a photo”."
+  },
+  "icu:TellomiPinNotice__YouPinned": {
+    "messageformat": "You pinned {subject}",
+    "description": "Tellomi (ADR-0081 §4.4): chat event and left pane when you pinned a message. {subject} is a quote of its first words or what it is, e.g. “a photo”."
+  },
+  "icu:TellomiPinNotice__Quote": {
+    "messageformat": "“{text}”",
+    "description": "Tellomi (ADR-0081 §4.4): the first words of a pinned message, quoted, as {subject} in “×× pinned {subject}”."
+  },
+  "icu:TellomiPinNotice__AMessage": {
+    "messageformat": "a message",
+    "description": "Tellomi (ADR-0081 §4.4): {subject} in “×× pinned {subject}” when the pinned message is gone."
+  },
+  "icu:TellomiPinNotice__APhoto": {
+    "messageformat": "a photo",
+    "description": "Tellomi (ADR-0081 §4.4): {subject} in “×× pinned {subject}” for a photo."
+  },
+  "icu:TellomiPinNotice__AVideo": {
+    "messageformat": "a video",
+    "description": "Tellomi (ADR-0081 §4.4): {subject} in “×× pinned {subject}” for a video."
+  },
+  "icu:TellomiPinNotice__AGif": {
+    "messageformat": "a GIF",
+    "description": "Tellomi (ADR-0081 §4.4): {subject} in “×× pinned {subject}” for a GIF."
+  },
+  "icu:TellomiPinNotice__AVoiceMessage": {
+    "messageformat": "a voice message",
+    "description": "Tellomi (ADR-0081 §4.4): {subject} in “×× pinned {subject}” for a voice message."
+  },
+  "icu:TellomiPinNotice__AnAudioFile": {
+    "messageformat": "an audio file",
+    "description": "Tellomi (ADR-0081 §4.4): {subject} in “×× pinned {subject}” for an audio file."
+  },
+  "icu:TellomiPinNotice__AFile": {
+    "messageformat": "a file",
+    "description": "Tellomi (ADR-0081 §4.4): {subject} in “×× pinned {subject}” for a file."
+  },
+  "icu:TellomiPinNotice__ASticker": {
+    "messageformat": "a sticker",
+    "description": "Tellomi (ADR-0081 §4.4): {subject} in “×× pinned {subject}” for a sticker."
+  },
+  "icu:TellomiPinNotice__ALocation": {
+    "messageformat": "a location",
+    "description": "Tellomi (ADR-0081 §4.4): {subject} in “×× pinned {subject}” for a location."
+  },
+  "icu:TellomiPinNotice__AContact": {
+    "messageformat": "a contact",
+    "description": "Tellomi (ADR-0081 §4.4): {subject} in “×× pinned {subject}” for a shared contact."
+  },
+  "icu:TellomiPinNotice__APoll": {
+    "messageformat": "a poll",
+    "description": "Tellomi (ADR-0081 §4.4): {subject} in “×× pinned {subject}” for a poll."
+  },
   "icu:PinMessageDialog__Title": {
     "messageformat": "Pin message for...",
     "description": "Message > Context Menu > Pin Message > Dialog > Title"

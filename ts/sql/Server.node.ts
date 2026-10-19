@@ -277,6 +277,7 @@ import {
   deletePinnedMessageByMessageId,
   deleteAllExpiredPinnedMessagesBefore,
 } from './server/pinnedMessages.std.ts';
+import { getTellomiPinNoticeIdsByTargetSentAt } from './server/tellomiPinNotices.std.ts';
 import {
   getAllMegaphones,
   getAllMegaphoneIds,
@@ -531,6 +532,7 @@ export const DataReader: ServerReadableInterface = {
   getAllPinnedMessages,
   getPinnedMessagesPreloadDataForConversation,
   getNextExpiringPinnedMessageAcrossConversations,
+  getTellomiPinNoticeIdsByTargetSentAt,
 
   callLinkExists,
   getAllCallLinks,

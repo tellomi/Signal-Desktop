@@ -47,6 +47,7 @@ import type { MessageRequestResponseEvent } from './types/MessageRequestResponse
 import type { QuotedMessageForComposerType } from './state/ducks/composer.preload.ts';
 import type { SEALED_SENDER } from './types/SealedSender.std.ts';
 import type { Emoji } from './axo/emoji.std.ts';
+import type { TellomiPinSubject } from './util/tellomiPinNotice.std.ts';
 
 export type LastMessageStatus =
   | 'paused'
@@ -231,6 +232,8 @@ export type MessageAttributesType = {
   quote?: QuotedMessageType;
   reactions?: ReadonlyArray<MessageReactionType>;
   pinMessage?: PinMessageData;
+  // Tellomi (ADR-0081 §4.4): on a pin's chat event, what the pinned message is ("×× pinned “…”"); none = "a message".
+  tellomiPinSubject?: TellomiPinSubject;
   poll?: PollMessageAttribute;
   pollTerminateNotification?: {
     question: string;

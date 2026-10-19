@@ -41,6 +41,8 @@ export type PinnedMessageAddProps = Readonly<{
   // Tellomi (ADR-0081 §4.3): pinned for me only, from another of my devices. It needs no permission and makes no
   // "pinned a message".
   tellomiForMe?: boolean;
+  // Tellomi (ADR-0081 §4.1, §4.4): "Pin without notifying" in a group (`pinSilent`): the chat event doesn't notify.
+  tellomiSilent?: boolean;
 }>;
 
 export type PinnedMessageRemoveProps = Readonly<{
@@ -144,6 +146,7 @@ export async function onPinnedMessageAdd(
       receivedAtTimestamp: props.receivedAtTimestamp,
       expireTimer: props.expireTimer,
       expirationStartTimestamp: props.expirationStartTimestamp,
+      tellomiSilent: props.tellomiSilent,
     });
   }
 

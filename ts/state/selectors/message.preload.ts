@@ -2033,6 +2033,7 @@ function getPropsForPinnedMessageNotification(
   return {
     sender: conversationSelector(message.sourceServiceId),
     pinMessage: message.pinMessage,
+    tellomiSubject: message.tellomiPinSubject ?? null,
     expireTimer: message.expireTimer ?? null,
     expirationStartTimestamp: message.expirationStartTimestamp ?? null,
   };

@@ -99,6 +99,8 @@ const messageAttributesEraseBehavior: Record<
   payment: 'erase',
   phoneNumberDiscovery: 'erase',
   pinMessage: 'erase',
+  // Tellomi (ADR-0081 §4.4): a pin chat event's words about the pinned message.
+  tellomiPinSubject: 'erase',
   poll: 'erase',
   pollTerminateNotification: 'erase',
   preview: 'erase',

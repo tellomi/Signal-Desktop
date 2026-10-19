@@ -13,6 +13,7 @@ import { getMessageSentTimestamp } from '../util/getMessageSentTimestamp.std.ts'
 import {
   isIncoming,
   isPollTerminate,
+  isPinnedMessageNotification,
 } from '../state/selectors/message.preload.ts';
 import { isMessageUnread } from '../util/isMessageUnread.std.ts';
 import { notificationService } from '../services/notifications.preload.ts';
@@ -179,7 +180,10 @@ export async function onSync(sync: ReadSyncAttributesType): Promise<void> {
         reason: logId,
       });
       return (
-        (isIncoming(item) || isPollTerminate(item)) &&
+        // Tellomi (ADR-0081 §4.4): a pin's chat event is unread too, and my phone reads it.
+        (isIncoming(item) ||
+          isPollTerminate(item) ||
+          isPinnedMessageNotification(item)) &&
         sender?.id === readSync.senderId
       );
     });

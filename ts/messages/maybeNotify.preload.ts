@@ -12,7 +12,11 @@ import { shouldNotify as shouldNotifyDuringNotificationProfile } from '../types/
 import { NotificationType } from '../types/notifications.std.ts';
 import { isMessageUnread } from '../util/isMessageUnread.std.ts';
 import { getNotifyWhileMutedForConversation } from '../util/notifyWhileMuted.preload.ts';
-import { isDirectConversation } from '../util/whatTypeOfConversation.dom.ts';
+import {
+  isDirectConversation,
+  isGroup,
+} from '../util/whatTypeOfConversation.dom.ts';
+import { doesTellomiPinNoticeNotify } from '../util/tellomiPinNotice.std.ts';
 import { isExpiringMessage } from '../types/Message2.preload.ts';
 import { notificationService } from '../services/notifications.preload.ts';
 import { getNotificationTextForMessage } from '../util/getNotificationTextForMessage.preload.ts';
@@ -58,12 +62,20 @@ type NormalMessageNotifyData = Readonly<{
   message: Readonly<MessageAttributesType>;
 }>;
 
+// Tellomi (ADR-0081 §4.4): someone else's pin, as its chat event.
+type TellomiPinNoticeNotifyData = Readonly<{
+  kind: 'tellomiPinNotice';
+  message: Readonly<MessageAttributesType>;
+  isSilent: boolean;
+}>;
+
 type NotifyData =
   | ReactionNotifyData
   | PollVoteNotifyData
   | PollTerminateNotifyData
   | DeliveryIssueNotifyData
-  | NormalMessageNotifyData;
+  | NormalMessageNotifyData
+  | TellomiPinNoticeNotifyData;
 
 type MaybeNotifyArgs = {
   conversation: ConversationModel;
@@ -126,6 +138,15 @@ export async function maybeNotify(args: MaybeNotifyArgs): Promise<void> {
       message: args.message,
       conversation,
     });
+  } else if (args.kind === 'tellomiPinNotice') {
+    warrantsNotification =
+      doesTellomiPinNoticeNotify({
+        isGroup: isGroup(conversation.attributes),
+        isMe:
+          args.message.sourceServiceId != null &&
+          itemStorage.user.isOurServiceId(args.message.sourceServiceId),
+        isSilent: args.isSilent,
+      }) && isMessageUnread(args.message);
   } else {
     throw missingCaseError(args);
   }
@@ -177,6 +198,10 @@ export async function maybeNotify(args: MaybeNotifyArgs): Promise<void> {
     messageForNotification = args.message;
   } else if (args.kind === 'normalMessage') {
     sender = getAuthor(args.message);
+    messageForNotification = args.message;
+  } else if (args.kind === 'tellomiPinNotice') {
+    // The chat event is not incoming, so `getAuthor` would say me: the sender is whoever pinned.
+    sender = window.ConversationController.get(args.message.sourceServiceId);
     messageForNotification = args.message;
   } else {
     throw missingCaseError(args);

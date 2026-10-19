@@ -1346,6 +1346,48 @@
   "icu:PinnedMessageNotification__Button": {
     "messageformat": "跳去「訊息」"
   },
+  "icu:TellomiPinNotice__SomeonePinned": {
+    "messageformat": "{sender}置頂咗{subject}"
+  },
+  "icu:TellomiPinNotice__YouPinned": {
+    "messageformat": "你置頂咗{subject}"
+  },
+  "icu:TellomiPinNotice__Quote": {
+    "messageformat": "«{text}»"
+  },
+  "icu:TellomiPinNotice__AMessage": {
+    "messageformat": "一條訊息"
+  },
+  "icu:TellomiPinNotice__APhoto": {
+    "messageformat": "一張相"
+  },
+  "icu:TellomiPinNotice__AVideo": {
+    "messageformat": "一段影片"
+  },
+  "icu:TellomiPinNotice__AGif": {
+    "messageformat": "一個 GIF"
+  },
+  "icu:TellomiPinNotice__AVoiceMessage": {
+    "messageformat": "一段語音訊息"
+  },
+  "icu:TellomiPinNotice__AnAudioFile": {
+    "messageformat": "一段音訊"
+  },
+  "icu:TellomiPinNotice__AFile": {
+    "messageformat": "一個檔案"
+  },
+  "icu:TellomiPinNotice__ASticker": {
+    "messageformat": "一張貼圖"
+  },
+  "icu:TellomiPinNotice__ALocation": {
+    "messageformat": "一個位置"
+  },
+  "icu:TellomiPinNotice__AContact": {
+    "messageformat": "一個聯絡人"
+  },
+  "icu:TellomiPinNotice__APoll": {
+    "messageformat": "一個投票"
+  },
   "icu:PinMessageDialog__Title": {
     "messageformat": "置頂訊息有效期..."
   },
