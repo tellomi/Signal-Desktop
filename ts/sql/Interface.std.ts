@@ -71,6 +71,7 @@ import type {
   PinnedMessageId,
   PinnedMessageParams,
   PinnedMessagePreloadData,
+  TellomiUnpinRule,
 } from '../types/PinnedMessage.std.ts';
 import type { AppendPinnedMessageResult } from './server/pinnedMessages.std.ts';
 import type {
@@ -1538,7 +1539,11 @@ type WritableInterface = {
     pinnedMessagesLimit: number,
     pinnedMessageParams: PinnedMessageParams
   ) => AppendPinnedMessageResult;
-  deletePinnedMessageByMessageId: (messageId: string) => PinnedMessageId | null;
+  deletePinnedMessageByMessageId: (
+    messageId: string,
+    // Tellomi (ADR-0081 §4.3): which pins this unpin may take away (default any).
+    tellomiRule?: TellomiUnpinRule
+  ) => PinnedMessageId | null;
   deleteAllExpiredPinnedMessagesBefore: (
     beforeTimestamp: number
   ) => ReadonlyArray<PinnedMessage>;

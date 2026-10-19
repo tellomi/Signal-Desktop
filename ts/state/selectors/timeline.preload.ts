@@ -16,6 +16,7 @@ import {
   getMessages,
   getCachedConversationMemberColorsSelector,
   getPinnedMessagesMessageIds,
+  getTellomiPinnedForMeMessageIds,
   getSafeConversationWithSameTitle,
   getConversationByServiceIdSelector,
 } from './conversations.dom.ts';
@@ -93,6 +94,7 @@ export const getTimelineItem = (
   const activeCall = getActiveCall(state);
   const accountSelector = getAccountSelector(state);
   const pinnedMessagesMessageIds = getPinnedMessagesMessageIds(state);
+  const tellomiPinnedForMeMessageIds = getTellomiPinnedForMeMessageIds(state);
   const selectedMessageIds = getSelectedMessageIds(state);
   const defaultConversationColor = getDefaultConversationColor(state);
   const hasMediaBackups = getHasMediaBackups(state);
@@ -134,6 +136,7 @@ export const getTimelineItem = (
     activeCall,
     accountSelector,
     pinnedMessagesMessageIds,
+    tellomiPinnedForMeMessageIds,
     selectedMessageIds,
     defaultConversationColor,
     hasMediaBackups,

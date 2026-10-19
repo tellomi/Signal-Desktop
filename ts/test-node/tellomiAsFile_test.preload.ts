@@ -178,6 +178,8 @@ describe('Tellomi: attachments sent as a file (ADR-0068)', () => {
           captionAboveMedia: true,
           messageCaption: null,
           viewOnceSeconds: null,
+          pinForSelfOnly: null,
+          pinSilent: null,
         }),
         TIMESTAMP,
         { _createName: () => 'random-path' }
@@ -187,6 +189,8 @@ describe('Tellomi: attachments sent as a file (ADR-0068)', () => {
           captionAboveMedia: false,
           messageCaption: null,
           viewOnceSeconds: null,
+          pinForSelfOnly: null,
+          pinSilent: null,
         }),
         TIMESTAMP,
         { _createName: () => 'random-path' }
@@ -229,6 +233,8 @@ describe('Tellomi: attachments sent as a file (ADR-0068)', () => {
             captionAboveMedia: null,
             messageCaption: 'Trip',
             viewOnceSeconds: null,
+            pinForSelfOnly: null,
+            pinSilent: null,
           },
           [
             pointer(own('Sunset')),
@@ -255,6 +261,8 @@ describe('Tellomi: attachments sent as a file (ADR-0068)', () => {
           captionAboveMedia: null,
           messageCaption: '',
           viewOnceSeconds: null,
+          pinForSelfOnly: null,
+          pinSilent: null,
         }),
         TIMESTAMP,
         { _createName: () => 'random-path' }

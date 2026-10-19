@@ -15,6 +15,8 @@ import type {
   MessageDeletedActionType,
 } from './conversations.preload.ts';
 import type { MessagePropsType } from '../selectors/message.preload.ts';
+import { canPinMessages } from '../selectors/message.preload.ts';
+import { getTellomiPinChoices } from '../../util/tellomiPinChoice.std.ts';
 import type { RecipientsByConversation } from './stories.preload.ts';
 import type { SafetyNumberChangeSource } from '../../types/SafetyNumberChangeSource.std.ts';
 import type { StateType as RootStateType } from '../reducer.preload.ts';
@@ -72,7 +74,10 @@ import { itemStorage } from '../../textsecure/Storage.preload.ts';
 import type { ErrorModalDataProps } from '../../components/ErrorModal.dom.tsx';
 import { isDownloadableOrBackfillable } from '../../util/downloadAttachment.preload.ts';
 import { backupsService } from '../../services/backups/index.preload.ts';
-import { getHasMediaBackups } from '../selectors/items.dom.ts';
+import {
+  getHasMediaBackups,
+  getSeenPinMessageDisappearingMessagesWarningCount,
+} from '../selectors/items.dom.ts';
 
 const log = createLogger('globalModals');
 
@@ -1575,13 +1580,43 @@ function showPinMessageDialog(
   isPinningDisappearingMessage: boolean
 ): StateThunk<TogglePinMessageDialogActionType> {
   return async (dispatch, getState) => {
-    const hasMaxPinnedMessages = getHasMaxPinnedMessages(getState());
+    const state = getState();
+    const hasMaxPinnedMessages = getHasMaxPinnedMessages(state);
+    // Tellomi (ADR-0081 §4.6): who the pin may be for, by the chat and my pin permission there.
+    const message = state.conversations.messagesLookup[messageId];
+    const conversation =
+      message != null
+        ? getConversationSelector(state)(message.conversationId)
+        : undefined;
+    const tellomiChoices =
+      conversation != null
+        ? getTellomiPinChoices({
+            isNoteToSelf: conversation.isMe,
+            isGroup: conversation.type === 'group',
+            canPinForEveryone: canPinMessages(conversation),
+          })
+        : null;
+    // Note to Self pins forever without asking, unless replacing the oldest pin or a disappearing message needs a yes.
+    const needsDisappearingWarning =
+      isPinningDisappearingMessage &&
+      getSeenPinMessageDisappearingMessagesWarningCount(state) <= 3;
+    if (
+      tellomiChoices == null &&
+      !hasMaxPinnedMessages &&
+      !needsDisappearingWarning
+    ) {
+      window.reduxActions.conversations.onPinnedMessageAdd(messageId, null);
+      return;
+    }
     dispatch({
       type: TOGGLE_PIN_MESSAGE_DIALOG,
       payload: {
         messageId,
         hasMaxPinnedMessages,
         isPinningDisappearingMessage,
+        tellomiChoices,
+        tellomiContactTitle:
+          conversation?.type === 'direct' ? conversation.title : null,
       },
     });
   };

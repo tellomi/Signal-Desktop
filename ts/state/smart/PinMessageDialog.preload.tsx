@@ -9,11 +9,16 @@ import { useItemsActions } from '../ducks/items.preload.ts';
 import { getSeenPinMessageDisappearingMessagesWarningCount } from '../selectors/items.dom.ts';
 import { getPinMessageDialogData } from '../selectors/globalModals.std.ts';
 import { useGlobalModalActions } from '../ducks/globalModals.preload.ts';
+import type { TellomiPinChoice } from '../../util/tellomiPinChoice.std.ts';
 
 export type PinMessageDialogData = Readonly<{
   messageId: string;
   hasMaxPinnedMessages: boolean;
   isPinningDisappearingMessage: boolean;
+  // Tellomi (ADR-0081 §4.6): who the pin may be for; null = Note to Self, pin without asking.
+  tellomiChoices: ReadonlyArray<TellomiPinChoice> | null;
+  // Tellomi: the other side of a 1:1 chat, for "Pin for me and ××".
+  tellomiContactTitle: string | null;
 }>;
 
 export const SmartPinMessageDialog = memo(function SmartPinMessageDialog() {
@@ -52,6 +57,8 @@ export const SmartPinMessageDialog = memo(function SmartPinMessageDialog() {
       isPinningDisappearingMessage={
         pinMessageDialogData.isPinningDisappearingMessage
       }
+      tellomiChoices={pinMessageDialogData.tellomiChoices}
+      tellomiContactTitle={pinMessageDialogData.tellomiContactTitle}
       seenPinMessageDisappearingMessagesWarningCount={
         seenPinMessageDisappearingMessagesWarningCount
       }

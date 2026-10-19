@@ -1818,6 +1818,30 @@
     "messageformat": "Pin",
     "description": "Message > Context Menu > Pin Message > Dialog > Pin Button"
   },
+  "icu:TellomiPinMessageDialog__Title": {
+    "messageformat": "Pin message",
+    "description": "Tellomi (ADR-0081 §4.6, pinned-messages.md 3.1): title of the dialog that asks who a pin is for."
+  },
+  "icu:TellomiPinMessageDialog__ForMeAnd": {
+    "messageformat": "Pin for me and {name}",
+    "description": "Tellomi (ADR-0081 §4.6): in a 1:1 chat, pins the message for both people. {name} is the other person."
+  },
+  "icu:TellomiPinMessageDialog__ForMe": {
+    "messageformat": "Pin for me",
+    "description": "Tellomi (ADR-0081 §4.3): pins the message only for the local user's own devices."
+  },
+  "icu:TellomiPinMessageDialog__NotifyAll": {
+    "messageformat": "Pin and notify all members",
+    "description": "Tellomi (ADR-0081 §4.6): in a group, pins the message for everyone and notifies them."
+  },
+  "icu:TellomiPinMessageDialog__WithoutNotifying": {
+    "messageformat": "Pin without notifying",
+    "description": "Tellomi (ADR-0081 §4.6): in a group, pins the message for everyone without notifying them."
+  },
+  "icu:TellomiPinMessageDialog__Duration": {
+    "messageformat": "Duration",
+    "description": "Tellomi (ADR-0081 §4.6): label next to how long the pin lasts (forever by default)."
+  },
   "icu:PinMessageDialog--HasMaxPinnedMessages__Title": {
     "messageformat": "Replace oldest pin?",
     "description": "Message > Context Menu > Pin Message (when at max pinned messages) > Dialog > Title"

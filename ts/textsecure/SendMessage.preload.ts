@@ -234,6 +234,29 @@ export type SharedMessageOptionsType = Readonly<{
   unpinMessage?: SendUnpinMessageType;
 }>;
 
+// Tellomi (ADR-0081 §4.1): a pin for my devices only (sent only in a sync transcript to myself), or a group pin that
+// doesn't notify; they ride on the pin / unpin itself (the group path copies options field by field). Only true values
+// are written, so an ordinary pin keeps upstream's bytes.
+export function toTellomiPinProto(
+  pinMessage: SendPinMessageType | undefined,
+  unpinMessage: SendUnpinMessageType | undefined
+): Proto.TellomiDataMessage.Params | null {
+  const pinForSelfOnly =
+    pinMessage?.tellomiForSelfOnly === true ||
+    unpinMessage?.tellomiForSelfOnly === true;
+  const pinSilent = pinMessage?.tellomiSilent === true;
+  if (!pinForSelfOnly && !pinSilent) {
+    return null;
+  }
+  return {
+    captionAboveMedia: null,
+    messageCaption: null,
+    viewOnceSeconds: null,
+    pinForSelfOnly: pinForSelfOnly ? true : null,
+    pinSilent: pinSilent ? true : null,
+  };
+}
+
 export type MessageOptionsType = Readonly<
   SharedMessageOptionsType & {
     // Not needed for group messages, lives in group state
@@ -706,8 +729,9 @@ class Message {
 
       payment: null,
       giftBadge: null,
-      // Tellomi (ADR-0068 §4.7): Desktop doesn't send captionAboveMedia (no "···" menu here)
-      tellomi: null,
+      // Tellomi (ADR-0068 §4.7): Desktop doesn't send captionAboveMedia (no "···" menu here). ADR-0081 §4.1: a pin or
+      // unpin may carry pinForSelfOnly / pinSilent.
+      tellomi: toTellomiPinProto(this.pinMessage, this.unpinMessage),
     };
     this.dataMessage = dataMessage;
     return dataMessage;

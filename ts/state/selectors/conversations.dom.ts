@@ -92,6 +92,7 @@ import type { AllChatFoldersMutedStats } from '../../util/countMutedStats.std.ts
 import { countAllChatFoldersMutedStats } from '../../util/countMutedStats.std.ts';
 import { getActiveProfile } from './notificationProfiles.dom.ts';
 import type { PinnedMessage } from '../../types/PinnedMessage.std.ts';
+import { isTellomiPinnedForMe } from '../../types/PinnedMessage.std.ts';
 import { getPinnedMessagesLimit } from '../../util/pinnedMessages.dom.ts';
 import { getSelectedConversationId, getSelectedNavTab } from './nav.std.ts';
 import { getCallHistoryUnreadCount } from './callHistory.std.ts';
@@ -325,6 +326,15 @@ export const getPinnedMessagesMessageIds: StateSelector<ReadonlyArray<string>> =
       return pinnedMessage.messageId;
     });
   });
+
+// Tellomi (ADR-0081 §4.3): the pinned messages that are pinned for me only.
+export const getTellomiPinnedForMeMessageIds: StateSelector<
+  ReadonlyArray<string>
+> = createSelector(getPinnedMessages, pinnedMessages => {
+  return pinnedMessages
+    .filter(pinnedMessage => isTellomiPinnedForMe(pinnedMessage))
+    .map(pinnedMessage => pinnedMessage.messageId);
+});
 
 export const getHasMaxPinnedMessages: StateSelector<boolean> = createSelector(
   getPinnedMessages,

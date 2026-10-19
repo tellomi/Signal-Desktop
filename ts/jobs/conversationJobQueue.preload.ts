@@ -216,6 +216,10 @@ const pinMessageJobDataSchema = z.object({
   targetSentTimestamp: SentTimestampMs.Schema,
   pinDurationSeconds: z.nullable(DurationSecs.Schema),
   pinnedAt: TimestampMs.Schema,
+  // Tellomi (ADR-0081 §4.3): pinned for me only — sent only as a sync to my own devices, flagged pinForSelfOnly.
+  tellomiForSelfOnly: z.boolean().optional(),
+  // Tellomi (ADR-0081 §4.1): a group pin that doesn't notify (pinSilent).
+  tellomiSilent: z.boolean().optional(),
 });
 export type PinMessageJobData = z.infer<typeof pinMessageJobDataSchema>;
 
@@ -299,6 +303,8 @@ const unpinMessageJobDataSchema = z.object({
   targetSentTimestamp: SentTimestampMs.Schema,
   unpinnedAt: TimestampMs.Schema,
   isSyncOnly: z.boolean(),
+  // Tellomi (ADR-0081 §4.3): unpinning a pin for me only — sync only, flagged pinForSelfOnly.
+  tellomiForSelfOnly: z.boolean().optional(),
 });
 export type UnpinMessageJobData = z.infer<typeof unpinMessageJobDataSchema>;
 

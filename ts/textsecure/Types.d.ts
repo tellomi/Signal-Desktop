@@ -293,6 +293,12 @@ export type ProcessedDataMessage = {
   tellomiMessageCaption?: string;
   // Tellomi (ADR-0079): `DataMessage.tellomi.viewOnceSeconds`, only on a view-once and only 3 / 10 / 30.
   tellomiViewOnceSeconds?: number;
+  // Tellomi (ADR-0081 §4.1): `DataMessage.tellomi.pinForSelfOnly`, only with a pin / unpin and only when true. Only my
+  // own sync transcript may carry it (the pin is for my devices); from anyone else the whole pin / unpin is dropped.
+  tellomiPinForSelfOnly?: boolean;
+  // Tellomi (ADR-0081 §4.1): `DataMessage.tellomi.pinSilent`, only with a pin and only when true: pinned for everyone in
+  // a group without notifying them.
+  tellomiPinSilent?: boolean;
 };
 
 export type ProcessedUnidentifiedDeliveryStatus = Readonly<{

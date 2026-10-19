@@ -1367,6 +1367,24 @@
   "icu:PinMessageDialog__Pin": {
     "messageformat": "置頂"
   },
+  "icu:TellomiPinMessageDialog__Title": {
+    "messageformat": "置頂訊息"
+  },
+  "icu:TellomiPinMessageDialog__ForMeAnd": {
+    "messageformat": "為我同{name}置頂"
+  },
+  "icu:TellomiPinMessageDialog__ForMe": {
+    "messageformat": "只為我置頂"
+  },
+  "icu:TellomiPinMessageDialog__NotifyAll": {
+    "messageformat": "置頂並通知所有成員"
+  },
+  "icu:TellomiPinMessageDialog__WithoutNotifying": {
+    "messageformat": "置頂但唔通知"
+  },
+  "icu:TellomiPinMessageDialog__Duration": {
+    "messageformat": "有效期"
+  },
   "icu:PinMessageDialog--HasMaxPinnedMessages__Title": {
     "messageformat": "係咪要取代最舊嘅置頂訊息？"
   },

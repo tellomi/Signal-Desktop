@@ -2784,6 +2784,12 @@ async function startApp(): Promise<void> {
     }
 
     if (data.message.pinMessage != null) {
+      // Tellomi (ADR-0081 §4.1): a pin for me only comes only from my own devices; from anyone else it is dropped.
+      if (data.message.tellomiPinForSelfOnly) {
+        log.warn('Dropping a pin for self only from someone else');
+        confirm();
+        return;
+      }
       await PinnedMessages.onPinnedMessageAdd({
         targetSentTimestamp: data.message.pinMessage.targetSentTimestamp,
         targetAuthorAci: data.message.pinMessage.targetAuthorAci,
@@ -2969,10 +2975,18 @@ async function startApp(): Promise<void> {
     }
 
     if (data.message.unpinMessage != null) {
+      // Tellomi (ADR-0081 §4.1): an unpin for me only comes only from my own devices; from anyone else it is dropped.
+      if (data.message.tellomiPinForSelfOnly) {
+        log.warn('Dropping an unpin for self only from someone else');
+        confirm();
+        return;
+      }
       await PinnedMessages.onPinnedMessageRemove({
         targetSentTimestamp: data.message.unpinMessage.targetSentTimestamp,
         targetAuthorAci: data.message.unpinMessage.targetAuthorAci,
         unpinnedByAci: data.sourceAci,
+        // Tellomi (ADR-0081 §4.3): someone else's unpin leaves my pin for me alone.
+        tellomiRule: 'keepPinForMe',
       });
       confirm();
       return;
@@ -3349,6 +3363,8 @@ async function startApp(): Promise<void> {
         receivedAtTimestamp: data.receivedAtDate,
         expireTimer: data.message.expireTimer,
         expirationStartTimestamp: data.expirationStartTimestamp ?? null,
+        // Tellomi (ADR-0081 §4.3): pinned for me only on another of my devices.
+        tellomiForMe: data.message.tellomiPinForSelfOnly === true,
       });
       confirm();
       return;
@@ -3530,6 +3546,10 @@ async function startApp(): Promise<void> {
         targetSentTimestamp: data.message.unpinMessage.targetSentTimestamp,
         targetAuthorAci: data.message.unpinMessage.targetAuthorAci,
         unpinnedByAci: sourceServiceId,
+        // Tellomi (ADR-0081 §4.3): my "for me only" unpin takes away only a pin for me.
+        tellomiRule: data.message.tellomiPinForSelfOnly
+          ? 'onlyPinForMe'
+          : 'any',
       });
       confirm();
       return;

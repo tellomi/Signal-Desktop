@@ -1367,6 +1367,24 @@
   "icu:PinMessageDialog__Pin": {
     "messageformat": "釘選"
   },
+  "icu:TellomiPinMessageDialog__Title": {
+    "messageformat": "釘選訊息"
+  },
+  "icu:TellomiPinMessageDialog__ForMeAnd": {
+    "messageformat": "為我和{name}釘選"
+  },
+  "icu:TellomiPinMessageDialog__ForMe": {
+    "messageformat": "僅為我釘選"
+  },
+  "icu:TellomiPinMessageDialog__NotifyAll": {
+    "messageformat": "釘選並通知所有成員"
+  },
+  "icu:TellomiPinMessageDialog__WithoutNotifying": {
+    "messageformat": "釘選但不通知"
+  },
+  "icu:TellomiPinMessageDialog__Duration": {
+    "messageformat": "時長"
+  },
   "icu:PinMessageDialog--HasMaxPinnedMessages__Title": {
     "messageformat": "要取代最舊的釘選訊息嗎？"
   },

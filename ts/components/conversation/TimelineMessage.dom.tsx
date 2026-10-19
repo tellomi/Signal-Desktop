@@ -54,6 +54,9 @@ export type PropsData = {
   canReact: boolean;
   canReply: boolean;
   canPinMessage: boolean;
+  // Tellomi (ADR-0081 §4.3): a pin for me only can always be taken back; others need the pin permission. Unset: as
+  // canPinMessage.
+  canUnpinMessage?: boolean;
   selectedReaction?: Emoji.Variant;
   isTargeted?: boolean;
   isSignalConversation: boolean;
@@ -115,6 +118,7 @@ export function TimelineMessage(props: Props): JSX.Element {
     canRetry,
     canRetryDeleteForEveryone,
     canPinMessage,
+    canUnpinMessage = canPinMessage,
     containerElementRef,
     containerWidthBreakpoint,
     conversationId,
@@ -363,7 +367,9 @@ export function TimelineMessage(props: Props): JSX.Element {
           onPinMessage={
             canPinMessage && !isPinned ? handleOpenPinMessageDialog : null
           }
-          onUnpinMessage={canPinMessage && isPinned ? handleUnpinMessage : null}
+          onUnpinMessage={
+            canUnpinMessage && isPinned ? handleUnpinMessage : null
+          }
           onMoreInfo={() =>
             pushPanelForConversation({
               type: PanelType.MessageDetails,
@@ -381,6 +387,7 @@ export function TimelineMessage(props: Props): JSX.Element {
       canEditMessage,
       canForward,
       canPinMessage,
+      canUnpinMessage,
       canRetry,
       canSelect,
       canEndPoll,

@@ -6,8 +6,9 @@ import { createSendMessageJob } from './createSendMessageJob.preload.ts';
 export const sendPinMessage = createSendMessageJob<PinMessageJobData>({
   sendName: 'sendPinMessage',
   sendType: 'pinMessage',
-  isSyncOnly() {
-    return false;
+  isSyncOnly(data) {
+    // Tellomi (ADR-0081 §4.3): a pin for me only goes to my own devices, never to the chat.
+    return data.tellomiForSelfOnly === true;
   },
   getMessageId(data) {
     return data.targetMessageId;
@@ -19,6 +20,8 @@ export const sendPinMessage = createSendMessageJob<PinMessageJobData>({
         targetAuthorAci: data.targetAuthorAci,
         targetSentTimestamp: data.targetSentTimestamp,
         pinDurationSeconds: data.pinDurationSeconds,
+        tellomiForSelfOnly: data.tellomiForSelfOnly,
+        tellomiSilent: data.tellomiSilent,
       },
     };
   },

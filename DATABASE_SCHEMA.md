@@ -1091,6 +1091,10 @@ CREATE TABLE message_attachments (
   receivedAtMs INTEGER,
   isViewOnce INTEGER,
   duration REAL,
+  tellomiAsFile INTEGER,
+  tellomiSpoiler INTEGER,
+  tellomiSpoilerRevealed INTEGER,
+  tellomiLivePhotoVideoJson TEXT,
   PRIMARY KEY (
     messageId,
     editHistoryIndex,
@@ -2993,6 +2997,19 @@ CREATE INDEX syncTasks_type ON syncTasks (type)
 ```
 
 </details>
+
+---
+
+</details>
+
+<details>
+<summary>Table: tellomiPinnedForMe</summary>
+
+```sql
+CREATE TABLE tellomiPinnedForMe (
+  pinnedMessageId INTEGER PRIMARY KEY NOT NULL REFERENCES pinnedMessages (id) ON DELETE CASCADE
+) STRICT
+```
 
 ---
 

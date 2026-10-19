@@ -68,6 +68,8 @@ describe('Tellomi: timed view-once (ADR-0079)', () => {
               captionAboveMedia: null,
               messageCaption: null,
               viewOnceSeconds,
+              pinForSelfOnly: null,
+              pinSilent: null,
             },
     };
   }

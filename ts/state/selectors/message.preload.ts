@@ -110,6 +110,7 @@ import {
 import { isAdminDeleteSendEnabled } from '../../util/isAdminDeleteEnabled.dom.ts';
 import { isAciString } from '../../util/isAciString.std.ts';
 import { isSignalConversation } from '../../util/isSignalConversation.dom.ts';
+import { canTellomiUnpin } from '../../util/tellomiPinChoice.std.ts';
 import * as iterables from '../../util/iterables.std.ts';
 import { strictAssert } from '../../util/assert.std.ts';
 import { canEditMessage } from '../../util/canEditMessage.dom.ts';
@@ -134,6 +135,7 @@ import {
   getCachedConversationMemberColorsSelector,
   getContactNameColor,
   getPinnedMessagesMessageIds,
+  getTellomiPinnedForMeMessageIds,
   getStoriesState,
 } from './conversations.dom.ts';
 import {
@@ -236,6 +238,8 @@ export type GetPropsForBubbleOptions = Readonly<{
   targetedMessageId?: string;
   targetedMessageCounter?: number;
   pinnedMessagesMessageIds: ReadonlyArray<string> | null;
+  // Tellomi (ADR-0081 §4.3): which of those are pinned for me only.
+  tellomiPinnedForMeMessageIds?: ReadonlyArray<string> | null;
   selectedMessageIds: ReadonlyArray<string> | undefined;
   regionCode?: string;
   callSelector: CallSelectorType;
@@ -962,6 +966,7 @@ export type GetPropsForMessageOptions = Pick<
   | 'targetedMessageId'
   | 'targetedMessageCounter'
   | 'pinnedMessagesMessageIds'
+  | 'tellomiPinnedForMeMessageIds'
   | 'selectedMessageIds'
   | 'regionCode'
   | 'accountSelector'
@@ -1094,6 +1099,7 @@ const getPropsForMessage = (
     targetedMessageId,
     targetedMessageCounter,
     pinnedMessagesMessageIds,
+    tellomiPinnedForMeMessageIds,
     selectedMessageIds,
     contactNameColors,
     defaultConversationColor,
@@ -1124,6 +1130,8 @@ const getPropsForMessage = (
 
   const isTargeted = message.id === targetedMessageId;
   const isPinned = pinnedMessagesMessageIds?.includes(message.id) ?? false;
+  const isTellomiPinnedForMe =
+    tellomiPinnedForMeMessageIds?.includes(message.id) ?? false;
   const isSelected = selectedMessageIds?.includes(message.id) ?? false;
   const isSelectMode = selectedMessageIds != null;
 
@@ -1185,6 +1193,9 @@ const getPropsForMessage = (
     canEndPoll: canEndPoll(message) && !isGroupTerminated,
     canForward: canForward(message),
     canPinMessage: canPinMessage(conversation, message),
+    canUnpinMessage: canUnpinMessage(conversation, message, {
+      isTellomiPinnedForMe,
+    }),
     canReact: canReact(message, ourConversationId, conversationSelector),
     canReply: canReply(message, ourConversationId, conversationSelector),
     canRetry: hasErrors(message),
@@ -1273,6 +1284,7 @@ export const getMessagePropsSelector = createSelector(
   getCachedConversationMemberColorsSelector,
   getTargetedMessage,
   getPinnedMessagesMessageIds,
+  getTellomiPinnedForMeMessageIds,
   getSelectedMessageIds,
   getDefaultConversationColor,
   getHasMediaBackups,
@@ -1288,6 +1300,7 @@ export const getMessagePropsSelector = createSelector(
     cachedConversationMemberColorsSelector,
     targetedMessage,
     pinnedMessagesMessageIds,
+    tellomiPinnedForMeMessageIds,
     selectedMessageIds,
     defaultConversationColor,
     hasMediaBackups,
@@ -1309,6 +1322,7 @@ export const getMessagePropsSelector = createSelector(
         targetedMessageCounter: targetedMessage?.counter,
         targetedMessageId: targetedMessage?.id,
         pinnedMessagesMessageIds,
+        tellomiPinnedForMeMessageIds,
         selectedMessageIds,
         defaultConversationColor,
         hasMediaBackups,
@@ -2900,11 +2914,16 @@ export function canPinMessages(conversation: ConversationType): boolean {
   );
 }
 
+// Tellomi (ADR-0081 §4.6, pinned-messages.md 3.1): anyone may pin — without the group's pin permission the dialog only
+// offers "Pin for me" — except in an ended group (as Android's `MenuState`).
 function canPinMessage(
   conversation: ConversationType,
   message: ReadonlyMessageAttributesType
 ): boolean {
-  if (!canPinMessages(conversation)) {
+  if (isSignalConversation(conversation)) {
+    return false;
+  }
+  if (conversation.type === 'group' && conversation.terminated) {
     return false;
   }
   if (message.deletedForEveryone) {
@@ -2914,6 +2933,24 @@ function canPinMessage(
     return false;
   }
   return true;
+}
+
+// Tellomi (ADR-0081 §4.3): a pin for me only can always be taken back; any other pin needs the pin permission
+// (`canPinMessages`).
+function canUnpinMessage(
+  conversation: ConversationType,
+  message: ReadonlyMessageAttributesType,
+  { isTellomiPinnedForMe }: Readonly<{ isTellomiPinnedForMe: boolean }>
+): boolean {
+  if (isSignalConversation(conversation) || isGiftBadge(message)) {
+    return false;
+  }
+  return canTellomiUnpin({
+    isPinnedForMe: isTellomiPinnedForMe,
+    canPinForEveryone: canPinMessages(conversation),
+    isInactiveGroup:
+      conversation.type === 'group' && Boolean(conversation.terminated),
+  });
 }
 
 function getLastChallengeError(

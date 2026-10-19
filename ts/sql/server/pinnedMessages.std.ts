@@ -6,6 +6,7 @@ import type {
   PinnedMessageId,
   PinnedMessageParams,
   PinnedMessagePreloadData,
+  TellomiUnpinRule,
 } from '../../types/PinnedMessage.std.ts';
 import { strictAssert } from '../../util/assert.std.ts';
 import { hydrateMessage } from '../hydration.std.ts';
@@ -53,7 +54,7 @@ export function getAllPinnedMessages(
     SELECT * FROM pinnedMessages;
   `;
 
-  return db.prepare(query).all<PinnedMessage>(params);
+  return _withTellomiForMe(db, db.prepare(query).all<PinnedMessage>(params));
 }
 
 export function getPinnedMessagesPreloadDataForConversation(
@@ -67,12 +68,12 @@ export function getPinnedMessagesPreloadDataForConversation(
       ORDER BY pinnedAt ASC
     `;
 
-    return db
-      .prepare(query)
-      .all<PinnedMessage>(params)
-      .map(pinnedMessage => {
-        return _getPinnedMessagePreloadData(db, pinnedMessage);
-      });
+    return _withTellomiForMe(
+      db,
+      db.prepare(query).all<PinnedMessage>(params)
+    ).map(pinnedMessage => {
+      return _getPinnedMessagePreloadData(db, pinnedMessage);
+    });
   })();
 }
 
@@ -108,7 +109,38 @@ function _insertPinnedMessage(
 
   const row = db.prepare(query).get<PinnedMessage>(params);
   strictAssert(row != null, 'createPinnedMessage: Failed to insert');
+
+  // Tellomi (ADR-0081 §4.3): a pin for me only is marked beside the row.
+  if (pinnedMessageParams.tellomiForMe === true) {
+    const [markQuery, markParams] = sql`
+      INSERT INTO tellomiPinnedForMe (pinnedMessageId) VALUES (${row.id});
+    `;
+    db.prepare(markQuery).run(markParams);
+    return { ...row, tellomiForMe: 1 };
+  }
   return row;
+}
+
+// Tellomi (ADR-0081 §4.3): `tellomiForMe: 1` on the pins that are for me only; every other row stays as upstream reads it.
+function _withTellomiForMe(
+  db: ReadableDB,
+  rows: ReadonlyArray<PinnedMessage>
+): ReadonlyArray<PinnedMessage> {
+  if (rows.length === 0) {
+    return rows;
+  }
+  const [query, params] = sql`
+    SELECT pinnedMessageId FROM tellomiPinnedForMe;
+  `;
+  const forMe = new Set(
+    db.prepare(query, { pluck: true }).all<PinnedMessageId>(params)
+  );
+  if (forMe.size === 0) {
+    return rows;
+  }
+  return rows.map(row =>
+    forMe.has(row.id) ? { ...row, tellomiForMe: 1 } : row
+  );
 }
 
 function _deletePinnedMessageById(db: WritableDB, id: PinnedMessageId): void {
@@ -202,13 +234,33 @@ export function appendPinnedMessage(
 
 export function deletePinnedMessageByMessageId(
   db: WritableDB,
-  messageId: string
+  messageId: string,
+  // Tellomi (ADR-0081 §4.3): which pins this unpin may take away.
+  tellomiRule: TellomiUnpinRule = 'any'
 ): PinnedMessageId | null {
-  const [query, params] = sql`
-    DELETE FROM pinnedMessages
-    WHERE messageId = ${messageId}
-    RETURNING id
-  `;
+  let template: ReturnType<typeof sql>;
+  if (tellomiRule === 'keepPinForMe') {
+    template = sql`
+      DELETE FROM pinnedMessages
+      WHERE messageId = ${messageId}
+      AND id NOT IN (SELECT pinnedMessageId FROM tellomiPinnedForMe)
+      RETURNING id
+    `;
+  } else if (tellomiRule === 'onlyPinForMe') {
+    template = sql`
+      DELETE FROM pinnedMessages
+      WHERE messageId = ${messageId}
+      AND id IN (SELECT pinnedMessageId FROM tellomiPinnedForMe)
+      RETURNING id
+    `;
+  } else {
+    template = sql`
+      DELETE FROM pinnedMessages
+      WHERE messageId = ${messageId}
+      RETURNING id
+    `;
+  }
+  const [query, params] = template;
 
   const result = db
     .prepare(query, { pluck: true })

@@ -248,6 +248,8 @@ import type {
   PinnedMessage,
   PinnedMessagePreloadData,
 } from '../../types/PinnedMessage.std.ts';
+import { isTellomiPinnedForMe } from '../../types/PinnedMessage.std.ts';
+import { TellomiPinChoice } from '../../util/tellomiPinChoice.std.ts';
 import type { ActionCreator, StateThunk } from '../types.std.ts';
 import { getPinnedMessagesLimit } from '../../util/pinnedMessages.dom.ts';
 import { getPinnedMessageExpiresAt } from '../../util/pinnedMessages.std.ts';
@@ -5208,7 +5210,9 @@ function onPinnedMessagesChanged(
 
 function onPinnedMessageAdd(
   targetMessageId: string,
-  pinDurationSeconds: DurationSecs | null
+  pinDurationSeconds: DurationSecs | null,
+  // Tellomi (ADR-0081 §4.6): who the pin is for; none = as upstream (for both of us, or everyone with a notification).
+  tellomiChoice?: TellomiPinChoice
 ): StateThunk {
   return async dispatch => {
     const target = await getPinnedMessageTarget(targetMessageId);
@@ -5222,12 +5226,18 @@ function onPinnedMessageAdd(
     strictAssert(targetConversation != null, 'Missing target conversation');
 
     const pinnedAt = SentTimestampMs.now();
+    // Tellomi (ADR-0081 §4.3): a pin for me only is sent only to my own devices and makes no "You pinned a message".
+    const tellomiForMe = tellomiChoice === TellomiPinChoice.ForMe;
 
     await conversationJobQueue.add({
       type: conversationQueueJobEnum.enum.PinMessage,
       ...target,
       pinDurationSeconds,
       pinnedAt,
+      ...(tellomiForMe ? { tellomiForSelfOnly: true } : {}),
+      ...(tellomiChoice === TellomiPinChoice.ForEveryoneSilent
+        ? { tellomiSilent: true }
+        : {}),
     });
 
     const pinnedMessagesLimit = getPinnedMessagesLimit();
@@ -5239,8 +5249,14 @@ function onPinnedMessageAdd(
       messageId: target.targetMessageId,
       expiresAt,
       pinnedAt,
+      tellomiForMe,
     });
     drop(pinnedMessagesCleanupService.trigger('onPinnedMessageAdd'));
+
+    if (tellomiForMe) {
+      dispatch(onPinnedMessagesChanged(target.conversationId));
+      return;
+    }
 
     await targetConversation.addPinnedMessageNotification({
       pinMessage: {
@@ -5259,16 +5275,26 @@ function onPinnedMessageAdd(
 }
 
 function onPinnedMessageRemove(targetMessageId: string): StateThunk {
-  return async dispatch => {
+  return async (dispatch, getState) => {
     const target = await getPinnedMessageTarget(targetMessageId);
     if (target == null) {
       throw new Error('onPinnedMessageRemove: Missing target message');
     }
+    // Tellomi (ADR-0081 §4.3): unpinning a pin for me only touches only my own devices.
+    const tellomiForMe =
+      getState().conversations.messagesByConversation[
+        target.conversationId
+      ]?.pinnedMessages.some(
+        pinnedMessage =>
+          pinnedMessage.messageId === targetMessageId &&
+          isTellomiPinnedForMe(pinnedMessage)
+      ) ?? false;
     await conversationJobQueue.add({
       type: conversationQueueJobEnum.enum.UnpinMessage,
       ...target,
       unpinnedAt: TimestampMs.now(),
-      isSyncOnly: false,
+      isSyncOnly: tellomiForMe,
+      ...(tellomiForMe ? { tellomiForSelfOnly: true } : {}),
     });
     await DataWriter.deletePinnedMessageByMessageId(targetMessageId);
     drop(pinnedMessagesCleanupService.trigger('onPinnedMessageRemove'));

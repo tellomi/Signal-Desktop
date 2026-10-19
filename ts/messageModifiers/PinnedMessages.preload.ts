@@ -15,6 +15,7 @@ import { getPinnedMessageExpiresAt } from '../util/pinnedMessages.std.ts';
 import { pinnedMessagesCleanupService } from '../services/expiring/pinnedMessagesCleanupService.preload.ts';
 import { drop } from '../util/drop.std.ts';
 import type { AppendPinnedMessageResult } from '../sql/server/pinnedMessages.std.ts';
+import type { TellomiUnpinRule } from '../types/PinnedMessage.std.ts';
 import * as Errors from '../types/errors.std.ts';
 import { isGiftBadge } from '../state/selectors/message.preload.ts';
 import type {
@@ -37,12 +38,17 @@ export type PinnedMessageAddProps = Readonly<{
   receivedAtTimestamp: ReceivedTimestampMs;
   expireTimer: DurationInSeconds | null;
   expirationStartTimestamp: number | null;
+  // Tellomi (ADR-0081 §4.3): pinned for me only, from another of my devices. It needs no permission and makes no
+  // "pinned a message".
+  tellomiForMe?: boolean;
 }>;
 
 export type PinnedMessageRemoveProps = Readonly<{
   targetSentTimestamp: number;
   targetAuthorAci: AciString;
   unpinnedByAci: AciString;
+  // Tellomi (ADR-0081 §4.3): which pins this unpin may take away (default any).
+  tellomiRule?: TellomiUnpinRule;
 }>;
 
 export async function onPinnedMessageAdd(
@@ -63,7 +69,9 @@ export async function onPinnedMessageAdd(
     return;
   }
 
-  const invalid = validatePinnedMessageTarget(target, props.pinnedByAci);
+  const invalid = validatePinnedMessageTarget(target, props.pinnedByAci, {
+    needsPermission: props.tellomiForMe !== true,
+  });
   if (invalid != null) {
     log.info(`Message is invalid target (error: ${invalid.error}), dropping`);
     return;
@@ -90,6 +98,7 @@ export async function onPinnedMessageAdd(
         messageId: targetMessage.id,
         expiresAt,
         pinnedAt: props.receivedAtTimestamp,
+        tellomiForMe: props.tellomiForMe === true,
       });
     } catch (error) {
       log.error(
@@ -123,7 +132,8 @@ export async function onPinnedMessageAdd(
 
   drop(pinnedMessagesCleanupService.trigger('onPinnedMessageAdd'));
 
-  if (result.change?.inserted) {
+  // Tellomi (ADR-0081 §4.3): a pin for me only makes no "pinned a message".
+  if (result.change?.inserted && props.tellomiForMe !== true) {
     await targetConversation.addPinnedMessageNotification({
       pinMessage: {
         targetSentTimestamp: props.targetSentTimestamp,
@@ -161,7 +171,10 @@ export async function onPinnedMessageRemove(
     return;
   }
 
-  const invalid = validatePinnedMessageTarget(target, props.unpinnedByAci);
+  const invalid = validatePinnedMessageTarget(target, props.unpinnedByAci, {
+    // Tellomi (ADR-0081 §4.3): unpinning my own pin for me only needs no permission.
+    needsPermission: props.tellomiRule !== 'onlyPinForMe',
+  });
   if (invalid != null) {
     log.warn(`Message is invalid target: ${invalid.error}, dropping`);
     return;
@@ -171,7 +184,10 @@ export async function onPinnedMessageRemove(
   const targetConversationId = target.targetConversation.id;
 
   const deletedPinnedMessageId =
-    await DataWriter.deletePinnedMessageByMessageId(targetMessageId);
+    await DataWriter.deletePinnedMessageByMessageId(
+      targetMessageId,
+      props.tellomiRule
+    );
 
   if (deletedPinnedMessageId == null) {
     log.warn(`Target message ${targetMessageId} was not pinned, dropping`);
@@ -217,7 +233,8 @@ function canSenderEditGroupAttributes(
 
 function validatePinnedMessageTarget(
   target: MessageModifierTarget,
-  sourceAci: AciString
+  sourceAci: AciString,
+  { needsPermission }: Readonly<{ needsPermission: boolean }>
 ): { error: string } | null {
   const message = target.targetMessage.attributes;
 
@@ -229,7 +246,10 @@ function validatePinnedMessageTarget(
     return { error: 'Sender cannot send to target conversation' };
   }
 
-  if (!canSenderEditGroupAttributes(target.targetConversation, sourceAci)) {
+  if (
+    needsPermission &&
+    !canSenderEditGroupAttributes(target.targetConversation, sourceAci)
+  ) {
     return { error: 'Sender does not have access to edit group attributes' };
   }
 

@@ -19,6 +19,8 @@ export const sendUnpinMessage = createSendMessageJob<UnpinMessageJobData>({
       unpinMessage: {
         targetAuthorAci: data.targetAuthorAci,
         targetSentTimestamp: data.targetSentTimestamp,
+        // Tellomi (ADR-0081 §4.3): unpinning a pin for me only (with isSyncOnly).
+        tellomiForSelfOnly: data.tellomiForSelfOnly,
       },
     };
   },

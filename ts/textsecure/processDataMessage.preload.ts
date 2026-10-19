@@ -662,6 +662,15 @@ export function processDataMessage(
       : {}),
     // Tellomi (ADR-0079): how long a view-once stays open; only on a view-once, only 3 / 10 / 30.
     ...(tellomiViewOnceSeconds != null ? { tellomiViewOnceSeconds } : {}),
+    // Tellomi (ADR-0081 §4.1): the pin is for my devices only / pinned without notifying. Only with a pin (or unpin), and
+    // only when true; on any other message they mean nothing.
+    ...(message.tellomi?.pinForSelfOnly === true &&
+    (message.pinMessage != null || message.unpinMessage != null)
+      ? { tellomiPinForSelfOnly: true }
+      : {}),
+    ...(message.tellomi?.pinSilent === true && message.pinMessage != null
+      ? { tellomiPinSilent: true }
+      : {}),
   };
 
   // oxlint-disable-next-line no-bitwise
