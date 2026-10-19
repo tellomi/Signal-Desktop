@@ -4,6 +4,7 @@
 import { assert } from 'chai';
 
 import {
+  cutAtIriTerminator,
   findLinks,
   isLinkSneaky,
   isValidLink,
@@ -69,6 +70,45 @@ describe('Link previews', () => {
       assert.isFalse(shouldPreviewHref('https://abcd.test'));
     });
 
+    // Tellomi, PM 2026-10-19 (ADR-0063 §5.6): Chinese in the path, query or fragment gets a
+    // preview, as on Telegram.
+    it('returns true for visible non-ASCII text after the host', () => {
+      assert.isTrue(shouldPreviewHref('https://zh.wikipedia.org/wiki/中国'));
+      assert.isTrue(shouldPreviewHref('https://www.baidu.com/s?wd=天气'));
+      assert.isTrue(
+        shouldPreviewHref('https://zh.wikipedia.org/wiki/中国#历史')
+      );
+      assert.isTrue(
+        shouldPreviewHref('https://zh.wikipedia.org/wiki/%E4%B8%AD国')
+      );
+      assert.isTrue(shouldPreviewHref('https://signal.org/aquí-está'));
+    });
+
+    it('returns false for hidden characters or spaces after the host', () => {
+      assert.isFalse(
+        shouldPreviewHref('https://zh.wikipedia.org/wiki/中\u200b国')
+      );
+      assert.isFalse(
+        shouldPreviewHref('https://zh.wikipedia.org/wiki/中\u2066国')
+      );
+      assert.isFalse(
+        shouldPreviewHref('https://zh.wikipedia.org/wiki/中\u00ad国')
+      );
+      assert.isFalse(
+        shouldPreviewHref('https://zh.wikipedia.org/wiki/中\u3000国')
+      );
+      assert.isFalse(
+        shouldPreviewHref('https://zh.wikipedia.org/wiki/中\ue000国')
+      );
+      assert.isFalse(
+        shouldPreviewHref('https://zh.wikipedia.org/wiki/中国，好')
+      );
+      assert.isFalse(shouldPreviewHref('https://signal.org/hello world'));
+      assert.isFalse(shouldPreviewHref('https://signal.org/a"b中'));
+      assert.isFalse(shouldPreviewHref('https://signal.org/\u2500中'));
+      assert.isFalse(shouldPreviewHref('https://中国.signal.org/a'));
+    });
+
     it('returns true for "safe" urls', () => {
       assert.isTrue(shouldPreviewHref('https://signal.org'));
       assert.isTrue(shouldPreviewHref('https://example.signal.org'));
@@ -76,6 +116,32 @@ describe('Link previews', () => {
       assert.isTrue(
         shouldPreviewHref('https://signal.org/foo/bar?query=string#hash')
       );
+    });
+  });
+
+  describe('#cutAtIriTerminator', () => {
+    it('cuts at Chinese sentence punctuation and wide spaces after the host', () => {
+      const cut = cutAtIriTerminator;
+      assert.strictEqual(
+        cut('https://zh.wikipedia.org/wiki/中国，很好'),
+        'https://zh.wikipedia.org/wiki/中国'
+      );
+      assert.strictEqual(
+        cut('https://zh.wikipedia.org/wiki/中国。'),
+        'https://zh.wikipedia.org/wiki/中国'
+      );
+      assert.strictEqual(
+        cut('https://www.baidu.com/s?wd=天气！'),
+        'https://www.baidu.com/s?wd=天气'
+      );
+      assert.strictEqual(cut('https://a.org/中国」x'), 'https://a.org/中国');
+      assert.strictEqual(cut('https://a.org/x\u3000y'), 'https://a.org/x');
+      assert.strictEqual(
+        cut('https://zh.wikipedia.org/wiki/中国'),
+        'https://zh.wikipedia.org/wiki/中国'
+      );
+      assert.strictEqual(cut('https://a.org'), 'https://a.org');
+      assert.strictEqual(cut('not a url，x'), 'not a url，x');
     });
   });
 

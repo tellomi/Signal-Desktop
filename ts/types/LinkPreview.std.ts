@@ -68,12 +68,58 @@ export function isValidLink(maybeUrl: string | undefined): boolean {
 
 export function shouldPreviewHref(href: string): boolean {
   const url = maybeParseUrl(href);
-  return Boolean(
-    url &&
-    url.protocol === 'https:' &&
-    !isDomainExcluded(url) &&
-    isLinkSneaky(href) === false
-  );
+  if (!url || url.protocol !== 'https:' || isDomainExcluded(url)) {
+    return false;
+  }
+  const sneaky = isLinkSneaky(href);
+  // Tellomi (PM 2026-10-19, ADR-0063 §5.6): a link with Chinese (or any other visible non-ASCII
+  // text) in its path, query or fragment gets a preview, as Telegram's does. Signal calls such a
+  // link "maybe" sneaky only because of those characters; every other check has passed by then.
+  return sneaky === false || (sneaky === 'maybe' && isPreviewableIri(href));
+}
+
+// Ends a link inside its path, query or fragment: white space (Telegram's set: NBSP, U+2000-200A,
+// U+2028/2029, U+202F, U+3000) and Chinese sentence punctuation, which in Chinese text follows a
+// link with no space. The same table is in the iOS and Android clients.
+const IRI_TERMINATOR =
+  /[\s\u00a0\u2000-\u200a\u2028\u2029\u202f\u3000，。！？；：、）」』】》〉”’]/u;
+// Characters a reader cannot see or that change how the text around them is shown: never part of
+// a previewed link.
+const IRI_HIDDEN = /[\p{Cc}\p{Cf}\p{Co}\p{Cs}\p{Cn}\p{Zl}\p{Zp}]/u;
+const VALID_URI_CHARACTER = /^[A-Za-z0-9%:/?#[\]@!$&'()*+,;=\-._~]$/;
+
+// The path, query and fragment are made of URI characters and visible non-ASCII text only.
+function isPreviewableIri(href: string): boolean {
+  const url = maybeParseUrl(href);
+  if (!url) {
+    return false;
+  }
+  const start = href.indexOf('/', url.protocol.length + 4);
+  for (const ch of start === -1 ? '' : href.slice(start)) {
+    if ((ch.codePointAt(0) ?? 0) < 0x80) {
+      if (!VALID_URI_CHARACTER.test(ch)) {
+        return false;
+      }
+    } else if (IRI_TERMINATOR.test(ch) || IRI_HIDDEN.test(ch)) {
+      return false;
+    }
+  }
+  return true;
+}
+
+// `https://zh.wikipedia.org/wiki/中国，很好` → `https://zh.wikipedia.org/wiki/中国`: linkify keeps
+// Chinese punctuation and the text after it in the link (PM 2026-10-19, ADR-0063 §5.6).
+export function cutAtIriTerminator(link: string): string {
+  const url = maybeParseUrl(link);
+  if (!url) {
+    return link;
+  }
+  const start = link.indexOf('/', url.protocol.length + 4);
+  if (start === -1) {
+    return link;
+  }
+  const match = IRI_TERMINATOR.exec(link.slice(start));
+  return match ? link.slice(0, start + match.index) : link;
 }
 
 export function isValidLinkPreview(
