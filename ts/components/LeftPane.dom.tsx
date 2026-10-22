@@ -755,7 +755,10 @@ export function LeftPane({
   } else if (tellomiRestriction) {
     // Tellomi（ADR-0078 §3.4）：被处置时排在红色那一格（比「快到期」更要紧：现在就发不出去）
     maybeRedDialog = (
-      <DialogTellomiRestriction {...commonDialogProps} {...tellomiRestriction} />
+      <DialogTellomiRestriction
+        {...commonDialogProps}
+        {...tellomiRestriction}
+      />
     );
   }
 
