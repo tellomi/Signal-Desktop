@@ -194,6 +194,7 @@ import type {
   UnprocessedType,
   WritableDB,
   MessageAttachmentDBType,
+  TellomiCalendarGalleryRow,
   MessageTypeUnhydrated,
   ServerMessageSearchResultType,
   MessageCountBySchemaVersionType,
@@ -493,6 +494,7 @@ export const DataReader: ServerReadableInterface = {
   getOldestMessageWithUnreadReactionToMe,
   getFirstMessageOnOrAfterTimestamp,
   getDaysWithMessagesForConversation,
+  getTellomiCalendarGalleryMedia,
   getTotalUnreadForConversation,
   getTotalUnreadMentionsOfMeForConversation,
   getMessageMetricsForConversation,
@@ -4709,6 +4711,71 @@ function getDaysWithMessagesForConversation(
 
   const rows = db.prepare(query).all<{ sent_at: number }>(params);
   return rows.map(row => row.sent_at);
+}
+
+// Tellomi (desktop audit 7.2 / F03b): first all-media gallery attachment on
+// each local receipt day in [startMs, endMs). Same filter as getSortedMedia
+// type 'media' (keep in sync with isAllMediaGalleryAttachment). Receipt time
+// is receivedAtMs when set, otherwise sentAt (calendar thumbnail bucket).
+function getTellomiCalendarGalleryMedia(
+  db: ReadableDB,
+  conversationId: string,
+  { startMs, endMs }: { startMs: number; endMs: number }
+): Array<TellomiCalendarGalleryRow> {
+  if (!(startMs < endMs)) {
+    return [];
+  }
+
+  const voiceMessageFlag = SignalService.AttachmentPointer.Flags.VOICE_MESSAGE;
+  const [query, params] = sql`
+    SELECT picked.* FROM (
+      SELECT
+        ranged.*,
+        ROW_NUMBER() OVER (
+          PARTITION BY date(ranged.bucketMs / 1000.0, 'unixepoch', 'localtime')
+          ORDER BY ranged.bucketMs ASC, ranged.sentAt ASC, ranged.orderInMessage ASC
+        ) AS tellomiDayRank
+      FROM (
+        SELECT
+          message_attachments.*,
+          CASE
+            WHEN message_attachments.receivedAtMs IS NOT NULL
+              AND message_attachments.receivedAtMs > 0
+            THEN message_attachments.receivedAtMs
+            ELSE message_attachments.sentAt
+          END AS bucketMs
+        FROM message_attachments
+        WHERE
+          message_attachments.conversationId IS ${conversationId} AND
+          message_attachments.editHistoryIndex IS ${ROOT_MESSAGE_ATTACHMENT_EDIT_HISTORY_INDEX} AND
+          message_attachments.attachmentType IS 'attachment' AND
+          message_attachments.flags IS NOT ${voiceMessageFlag} AND
+          message_attachments.tellomiAsFile IS NOT 1 AND
+          (
+            message_attachments.contentType LIKE 'image/%' OR
+            message_attachments.contentType LIKE 'video/%'
+          ) AND
+          message_attachments.isViewOnce IS NOT 1 AND
+          message_attachments.messageType IN ('incoming', 'outgoing')
+      ) AS ranged
+      WHERE ranged.bucketMs >= ${startMs} AND ranged.bucketMs < ${endMs}
+    ) AS picked
+    WHERE picked.tellomiDayRank = 1
+    ORDER BY picked.bucketMs ASC
+  `;
+
+  const rows = db
+    .prepare(query)
+    .all<MessageAttachmentDBType & { bucketMs: number }>(params);
+
+  return rows.map(row => ({
+    bucketMs: row.bucketMs,
+    sentAt: row.sentAt,
+    orderInMessage: row.orderInMessage,
+    attachmentType: row.attachmentType,
+    isViewOnce: row.isViewOnce === 1,
+    attachment: convertAttachmentDBFieldsToAttachmentType(row),
+  }));
 }
 
 function getTotalUnreadForConversation(

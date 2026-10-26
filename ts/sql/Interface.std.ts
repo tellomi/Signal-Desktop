@@ -684,6 +684,20 @@ export type MediaItemDBType = Readonly<{
   message: MediaItemMessageType;
 }>;
 
+/**
+ * Tellomi (desktop audit 7.2 / F03b): one gallery attachment for a jump-to-date
+ * day cell. `bucketMs` is the receipt time used to place it (`receivedAtMs`,
+ * else `sentAt`). Filter matches `getSortedMedia` type `media`.
+ */
+export type TellomiCalendarGalleryRow = Readonly<{
+  bucketMs: number;
+  sentAt: number;
+  orderInMessage: number;
+  attachmentType: string;
+  isViewOnce: boolean;
+  attachment: AttachmentType;
+}>;
+
 export type LinkPreviewMediaItemDBType = Readonly<{
   type: 'link';
   preview: LinkPreviewType;
@@ -981,6 +995,15 @@ type ReadableInterface = {
       includeStoryReplies: boolean;
     }
   ) => Array<number>;
+  // Tellomi (desktop audit 7.2 / F03b): first all-media gallery attachment per
+  // local receipt day inside [startMs, endMs).
+  getTellomiCalendarGalleryMedia: (
+    conversationId: string,
+    range: {
+      startMs: number;
+      endMs: number;
+    }
+  ) => Array<TellomiCalendarGalleryRow>;
 
   getReactionByTimestamp: (
     fromId: string,

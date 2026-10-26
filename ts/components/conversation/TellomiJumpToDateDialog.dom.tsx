@@ -12,12 +12,12 @@ import {
 
 import type { LocalizerType } from '../../types/Util.std.ts';
 import { AxoDialog } from '../../axo/AxoDialog.dom.tsx';
-import { tw } from '../../axo/tw.dom.tsx';
-import { DatePicker } from '../DatePicker.dom.tsx';
 import {
   isJumpDayAvailable,
   jumpLowerBoundMs,
 } from '../../util/tellomiJumpToDate.std.ts';
+import type { TellomiCalendarDayThumbnail } from '../../util/tellomiConversationDayThumbnails.std.ts';
+import { TellomiJumpToDateCalendar } from './TellomiJumpToDateCalendar.dom.tsx';
 
 export type PropsType = Readonly<{
   open: boolean;
@@ -25,26 +25,37 @@ export type PropsType = Readonly<{
   initialTimestamp: number;
   /** Local-midnight ms for days that have messages in this conversation. */
   daysWithMessages: ReadonlySet<number>;
+  /**
+   * Lazy per visible month: first gallery photo/video for days in the range.
+   * The calendar asks again when the user changes months.
+   */
+  loadMonthThumbnails: (
+    startMs: number,
+    endMs: number
+  ) => Promise<ReadonlyArray<TellomiCalendarDayThumbnail>>;
   onJump: (dayStartMs: number) => void;
   onClose: () => void;
 }>;
 
 /**
- * Tellomi (desktop audit 7.2 r2): pick a day and jump to its first message.
- * Days with no messages are grey and not tappable (Telegram / iOS parity).
- * Thumbnails are a later round.
+ * Tellomi (desktop audit 7.2): pick a day and jump to its first message.
+ * Days with no messages are grey and not tappable. Days with a photo or
+ * video show that day's first gallery thumbnail in the cell.
  */
 export function TellomiJumpToDateDialog({
   open,
   i18n,
   initialTimestamp,
   daysWithMessages,
+  loadMonthThumbnails,
   onJump,
   onClose,
 }: PropsType): JSX.Element {
-  const [date, setDate] = useState<CalendarDate | null>(() =>
-    toCalendarDate(fromDateToLocal(new Date(initialTimestamp)))
+  const initialDate = useMemo(
+    () => toCalendarDate(fromDateToLocal(new Date(initialTimestamp))),
+    [initialTimestamp]
   );
+  const [date, setDate] = useState<CalendarDate | null>(initialDate);
 
   const isDateUnavailable = useCallback(
     (d: DateValue) => {
@@ -94,16 +105,15 @@ export function TellomiJumpToDateDialog({
           </AxoDialog.Title>
           <AxoDialog.Close />
         </AxoDialog.Header>
-        <AxoDialog.Body>
-          <div className={tw('flex items-center gap-2')}>
-            <DatePicker
-              i18n={i18n}
-              aria-label={i18n('icu:TellomiJumpToDateDialog__dateLabel')}
-              value={date}
-              onUpdateDate={setDate}
-              isDateUnavailable={isDateUnavailable}
-            />
-          </div>
+        <AxoDialog.Body padding="md">
+          <TellomiJumpToDateCalendar
+            i18n={i18n}
+            value={date}
+            onChange={setDate}
+            isDateUnavailable={isDateUnavailable}
+            initialFocused={initialDate}
+            loadMonthThumbnails={loadMonthThumbnails}
+          />
         </AxoDialog.Body>
         <AxoDialog.Footer>
           <AxoDialog.Actions>

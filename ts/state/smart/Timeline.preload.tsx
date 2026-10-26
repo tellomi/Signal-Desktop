@@ -45,6 +45,7 @@ import {
   buildDaysWithMessagesSet,
   jumpLowerBoundMs,
 } from '../../util/tellomiJumpToDate.std.ts';
+import { loadTellomiCalendarDayThumbnails } from '../../util/tellomiCalendarDayThumbnails.preload.ts';
 import { DataReader } from '../../sql/Client.preload.ts';
 import { isGroup } from '../../util/whatTypeOfConversation.dom.ts';
 import { drop } from '../../util/drop.std.ts';
@@ -250,6 +251,21 @@ export const SmartTimeline = memo(function SmartTimeline({
     () => ({ onTapDateHeader }),
     [onTapDateHeader]
   );
+  const loadMonthThumbnails = useCallback(
+    (startMs: number, endMs: number) => {
+      const days = jumpDialog?.daysWithMessages;
+      if (days == null) {
+        return Promise.resolve([]);
+      }
+      return loadTellomiCalendarDayThumbnails({
+        conversationId: id,
+        startMs,
+        endMs,
+        daysWithMessages: days,
+      });
+    },
+    [id, jumpDialog]
+  );
 
   return (
     <TellomiJumpToDateContext.Provider value={jumpContextValue}>
@@ -319,6 +335,7 @@ export const SmartTimeline = memo(function SmartTimeline({
           i18n={i18n}
           initialTimestamp={jumpDialog.timestamp}
           daysWithMessages={jumpDialog.daysWithMessages}
+          loadMonthThumbnails={loadMonthThumbnails}
           onClose={() => setJumpDialog(null)}
           onJump={dayStartMs => {
             setJumpDialog(null);
